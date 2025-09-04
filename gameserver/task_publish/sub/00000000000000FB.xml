@@ -1,0 +1,497 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000FB" name="炼日大法" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=541&gt;：“除恶即是扬善，佛祖以身饲虎似乎有违常道！”</Pop>
+      <Start>&lt;npc=541&gt;：“老衲年事已高，却膝下无徒，空有一身本领而无人传承，真是一件可悲的事情啊！”&lt;end&gt;
+&lt;playername&gt;：“风闻老禅师武艺高强，佛法高深，怎么会没有传人呢？”&lt;end&gt;
+&lt;npc=541&gt;：“万物皆有定数，一切全靠缘法，无缘对面难相逢，相见尤且如此，何况是择徒？施主可有心一试？”&lt;end&gt;
+&lt;playername&gt;：“如何试法？”&lt;end&gt;
+&lt;npc=541&gt;：“佛法讲究悟性和慧根，而武学则要考究体格和机警，施主若能赢过居住在那边的火工和尚，老衲再和施主详谈。”&lt;end&gt;
+&lt;playername&gt;：“既然如此，那我就试试看吧！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=542&gt;：“以后莫要轻信他人！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>543</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败了火工和尚，回去找达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>541</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>炼日大法</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=541&gt;：“施主果然厉害，老衲都差点看走了眼！不过施主有没有发现一些不妥的地方呢？”&lt;end&gt;
+&lt;playername&gt;：“刚才的臭和尚竟然向我施毒，究竟是什么意思？”&lt;end&gt;
+&lt;npc=541&gt;：“这个嘛就看施主你是什么意思了！”&lt;end&gt;
+&lt;playername&gt;：“什么什么意思？”&lt;end&gt;
+&lt;npc=541&gt;：“老衲就打开天窗说亮话吧，老衲无心收徒，不过为练一门神功而需要施主帮老衲做些事情而已。老衲又害怕施主会反悔，便先在施主身上动了一点小手脚。施主只要为我取得一些乌蛮神巫和大祭司的心脏，老衲自然就会为施主解毒了！”&lt;end&gt;
+&lt;playername&gt;：“老和尚，你算什么出家人，竟然要用活人的心来练功？”&lt;end&gt;
+&lt;npc=541&gt;：“无知顽童，你懂什么，见识短浅，又怎么知道炼日大法的厉害。老衲的毒无色无味，不过是为了警告才刻意让你发现，如今毒性已经侵入你的体内，你最好在毒发之前为老衲办妥此事，老衲念你辛苦，自不会亏待你，你若想耍滑头也由得你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=541&gt;：“去不去由得你，若你敢泄露老衲的半分底细，老衲保证你会后悔生下来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找到达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value>回去找达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>从乌蛮神巫身上获得神巫之心</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2137</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <taskitem>
+                <Value>{84,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1224</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,306,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将神巫之心和大祭司的心脏带给达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>541</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>炼日大法</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=541&gt;：“不错不错！老衲没有看错人，施主果然是同道中人，他日老衲修成炼日大法，无敌于天下，你便是第一功臣。”&lt;end&gt;
+&lt;playername&gt;：“我的解药呢？”&lt;end&gt;
+&lt;npc=541&gt;：“现在无需解药，他日你毒性发作之日，便是老衲需你之时，老衲现在要潜心练功，你可以走了。除却稻香村的毒医张善德，只怕无人能解此毒，不过那老儿出了名的小气，老夫怕你去了也是白去。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value>将神巫之心带给达日阿赤</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{84,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去稻香村找张善德解毒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{306,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>656</Value>
+              </dialognpc>
+              <number>
+                <Value>4</Value>
+              </number>
+              <txt>
+                <Value>炼日大法</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=656&gt;：“这位&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;眉宇间透出一股黑气，莫不是中了什么奇毒了吧？”&lt;end&gt;
+&lt;playername&gt;：“老先生果然医道精湛，一眼便看出了，不错，晚辈正是中毒了。下毒之人夸口便是先生也不能解去，但是晚辈相信先生必有办法应对，因此强自支撑到现在。”&lt;end&gt;
+&lt;npc=656&gt;：“你这娃儿嘴倒是乖巧，待我仔细看看。唔！果然有些棘手，不过我天蜈珠在手，什么奇毒都不在话下。你看看感觉怎么样？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找张善德解毒</Value>
+              </txt>
+              <txt>
+                <Value>找张善德解毒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

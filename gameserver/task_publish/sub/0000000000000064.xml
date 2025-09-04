@@ -1,0 +1,261 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000064" name="江湖小小僧" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“眼下我有一项绝密任务要找人去办，只是合适的人手太少，真是让我忧虑！”&lt;end&gt;
+&lt;playername&gt;：“秋姨让我去吧！”&lt;end&gt;
+&lt;npc=3570&gt;：“此事有些凶险，若非力所能及千万不能逞强！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>提升等级到50级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到50级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回新手村找白秋琳领取绝密任务</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我想我可以胜任了！”&lt;end&gt;
+&lt;npc=3570&gt;：“看到你成长得这么快，我真替你感到高兴，这项任务我可以告诉你了。”&lt;end&gt;
+&lt;playername&gt;：“秋姨请说！”&lt;end&gt;
+&lt;npc=3570&gt;：“事情的起因是这样的：皇上病情加重，无力临朝，朝中大权便尽数掌握在奸后李凤娘手里。她为防朝中阁臣另择新主夺她权力，便令禁军趁夜控制了所有皇子，只有嘉王知机逃出了京城。朝中大臣韩侂胄连夜寻到天王帮杨帮主，请他保护嘉王免为李后所害。杨帮主深觉事态紧急，便飞鸽传书请我们义军相助，丐帮、漕帮和马帮也在受邀之列。”&lt;end&gt;
+&lt;playername&gt;：“原来是这样，不知秋姨作何打算？”&lt;end&gt;
+&lt;npc=3570&gt;：“此事对我义军有利无害，一则攘王除奸是我义军份内之事；二则也可趁此机会鼓舞士气，令江湖中人刮目相看。如今漕帮已有嘉王下落，漕帮总舵设在襄阳，他们帮主殷卜元是我故交。你可以找他探询嘉王下落，然后相机行事。你是我义军中的佼佼者，应当可以独当一面了。”&lt;end&gt;
+&lt;playername&gt;：“我会努力的，秋姨等我的好消息吧。请转告龙老太爷，下次回来我再去看他老人家！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回去找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往襄阳找殷卜元打听嘉王下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>801</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;:“见过殷帮主！我是&lt;=me.szName&gt;，奉义军首领白秋琳之命来找您打听嘉王的下落，还请殷帮主不吝相告！”&lt;end&gt;
+&lt;npc=801&gt;：“白秋琳？哦！你说的是秋琳妹子啊！此番大家受杨帮主所托保护嘉王，理当相告，更何况你是秋琳妹子所遣。几年不见，不知道秋琳妹子现在身体可好？”&lt;end&gt;
+&lt;Playername&gt;:“有劳殷帮主挂念，我秋姨一切安好！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找殷卜元打探嘉王下落</Value>
+              </txt>
+              <txt>
+                <Value>找殷卜元打探嘉王下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000060</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

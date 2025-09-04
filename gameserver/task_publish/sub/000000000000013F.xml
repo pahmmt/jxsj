@@ -1,0 +1,463 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000013F" name="不堪回首" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;:“许大哥，你说这沈姓猎户活不过五年了？”&lt;end&gt;
+&lt;npc=3583&gt;：“此事说来话长。我许氏与他沈家是世交，铁石兄的父亲曾是先帝朝兵部侍郎，我父亲则在户部任职。铁石自幼起便英武不凡，好打不平，总是替我出头。我二人相识多年，情谊胜过寻常骨肉同胞。”&lt;end&gt;
+&lt;playername&gt;:“许大哥，你说这沈姓猎户活不过五年了？”&lt;end&gt;
+&lt;npc=3583&gt;：“哎，是我，是我害了他！”&lt;end&gt;
+&lt;playername&gt;:“你？”&lt;end&gt;
+&lt;npc=3583&gt;：“朝中帝君不纳忠言，更且奸臣当道，我二人家中皆遇不测，这才与沈家大小姐荷叶一道逃出京城。路遇义军龙五太爷与秋琳姐，得他们好心收留，便一直在义军中扎下根来。义军中人慷慨仗义，与金狗势不两立，真是一派勃勃生机，大不似朝中积重难返的局面。我二人如鱼得水，那段日子过得好不快活！”&lt;end&gt;
+&lt;playername&gt;:“既然甘之如饴，许大哥又怎会害了铁石大哥呢？”&lt;end&gt;
+&lt;npc=3583&gt;：“有一次在襄阳城外，我等遭遇了金军左翼游击的精锐。我记得那天雾很大，伸手看不到五指。双方狭路相逢，敌我不辨，厮杀之惨烈至今难忘。大雾到了夜里也没有退散，反而越发浓烈了。当时我在战场上医治伤患，忽然有数骑从雾中杀来……当时，真的以为要死了。”&lt;end&gt;
+&lt;npc=3583&gt;：“命悬一刻的关头，铁石忽然出现，拼着被利刃穿身的凶险，生生将我救下。胸口却被一个神秘人连拍三掌，回营后便吐血不止，中了莫名寒毒。”&lt;end&gt;
+&lt;playername&gt;:“金人向来修炼天忍秘术，擅长火劲。怎么忽然间又会了寒毒之术？”&lt;end&gt;
+&lt;npc=3583&gt;：“四年了，铁石兄每每遇上寒冷天气，脑病便会发作。我也活在自责中四年！这些年来，许某无时无刻不想找到那仇人，亲手将他碎尸万段，却一直毫无寸进。看着铁石兄一条铮铮铁骨的汉子，被病魔侵蚀成如此这般，我……我有罪啊！”&lt;end&gt;
+&lt;playername&gt;:“许大哥莫要过于悲伤，我也没料到，铁石大哥如此情深义重，是我误会他了。”&lt;end&gt;
+&lt;npc=3582&gt;：“黑珍珠，珍珠！呼噜，呼噜。”&lt;end&gt;
+&lt;npc=3583&gt;：“铁石兄又在说梦话了。他姐姐沈荷叶过几日便要过生辰，铁石兄听路过的旅人讲，幼熊窝里有许多珠宝，其中尤以&lt;color=red&gt;黑珍珠&lt;color&gt;最为珍贵。女子若戴上一串黑珍珠，便如天女下凡一般。铁石兄自此便一直念叨，梦话也是反复说来说去。可那黑珍珠却无人见过，只是传闻罢了。”&lt;end&gt;
+&lt;playername&gt;:“空穴来风，未必无音。”&lt;end&gt;
+&lt;npc=3583&gt;：“幼熊的窝岂是常人可入？虽然我一力想替铁石兄完成这夙愿，奈何心有余而力不足，不知少主能否再出手，帮许某，也助铁石兄完成这个心愿？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2010</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{451,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>1</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>终于取来了黑珍珠，该回去找许兄了吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddMoney</Function>
+            <Parameter>
+              <number>
+                <Value>200</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3583</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“许大哥，真的是有黑珍珠!我已经拿到足够的数量，可以拼成一串珠链。”&lt;end&gt;
+&lt;npc=3583&gt;：“太好了，这真是太好了！少主人不仅为人心地善良，手上功夫也已登堂入室。麻烦少主立即将这珍珠送予&lt;color=red&gt;荷叶姐&lt;color&gt;，完成铁石兄的心愿。甜酒那里我稍后自会去将少主所为细细告之。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与许仕伟对话</Value>
+              </txt>
+              <txt>
+                <Value>与许仕伟对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>许兄让我速将珍珠送予沈荷叶。想着她的神情，有喜悦暗自浮上心头</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3562</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“荷叶姐，这是你弟弟铁石费尽辛苦，从熊窝中取来的黑珍珠。他让我转交予你，祝姐姐生辰之喜！”&lt;end&gt;
+&lt;npc=3562&gt;：“这几日秋寒逼骨，小石头的脑病该又犯了吧。他何必费如此功夫，我这当姐姐的……哎……”&lt;end&gt;
+&lt;playername&gt;:“姐姐莫难过，我刚从村外回来，铁石兄能吃能睡，身体眼见着有转好的迹象。”&lt;end&gt;
+&lt;npc=3562&gt;：“是吗？算日子，我也有几日没去看过小石头了，这便收拾收拾，去村外陪他住几日。对了，秋琳姐似乎在着急找少主人，怕是有急事，还请少主速去寻她。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>听荷叶姐称沈铁石为小石头，我不由暗自落泪。可惜得回去找秋姨了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{451,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，我回来了。”&lt;end&gt;
+&lt;npc=3570&gt;：“少主人，你真是让我担心坏了！村外并不安生，你如今功力尚弱，如何能轻易外出呢？”&lt;end&gt;
+&lt;playername&gt;：“不！秋姨，这趟行程我收获很大。了解了独行猎户沈铁石惨烈的往事，我对义军似乎了解得更多了些。”&lt;end&gt;
+&lt;npc=3570&gt;：“铁石吗？原来的他真是条好汉子！如今变做这样……这村子里许多人家都有伤残，无不是与金贼血战的后果。秋姨照顾村中老幼已是不易，少主人就别再让我担心了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000136</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>225</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

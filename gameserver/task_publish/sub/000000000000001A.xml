@@ -1,0 +1,731 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000001A" name="反间之计[男]" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“那么我何时混入五毒？”&lt;end&gt;
+&lt;npc=76&gt;：“在五毒教中有一对双胞胎兄妹，哥哥叫殷方，妹妹叫殷童。这对兄妹是五毒教的宝贝，他们掌管着教内的药房，种植了许多奇花异草。总有些罹患重症者的家人慕名寻来，找五毒教求一味极难找的药材，只要出得起价，十有八九殷氏兄妹都拿得出来。有时教内人中了巨毒无法自解，殷氏兄妹总能药到病除。我们就从这两个人身上下手。”&lt;end&gt;
+&lt;playername&gt;：“怎么做？”&lt;end&gt;
+&lt;npc=76&gt;：“我已安排手下伪装成夷人刀客，将他们围困在采药的勿归谷中。你现在过去，以银蟾香主后人的身份把刀客们打败，救出殷氏兄妹，就是一件大功。剩下的事情，我也无能为力，只能靠你自己了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>79</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击溃了围攻的刀客，终于到了与殷氏兄妹接触的时候</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>81</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=81&gt;：“谢谢哥哥的救命之恩。”&lt;end&gt;
+&lt;playername&gt;：“姑娘太客气了。你是哪家的小姐，怎会在这原始森林中迷路。”&lt;end&gt;
+&lt;npc=81&gt;：“我叫殷童，哥哥也可以叫我小童，我是和大哥一同来林子里采药的。”&lt;end&gt;
+&lt;npc=80&gt;：“谢谢侠客的救命之恩。”&lt;end&gt;
+&lt;playername&gt;：“举手之劳，何足挂齿。你们是采药人？在下有一件事想向你打听。”&lt;end&gt;
+&lt;npc=81&gt;：“哥哥只管说。”&lt;end&gt;
+&lt;playername&gt;：“请问，你可知道有一个叫五毒的教派在这林子中存在？”&lt;end&gt;
+&lt;npc=81&gt;：“哥哥问这做啥？”&lt;end&gt;
+&lt;playername&gt;：“哦，我乃是五毒教后人，如今是来寻根的。”&lt;end&gt;
+&lt;npc=81&gt;：“知道是知道，可是那个教派的人好象很凶哦，哥哥没有证据证明自己是他们的传人，会被打的。”&lt;end&gt;
+&lt;playername&gt;：“哦，呵呵这个姑娘放心。我这里有一面银蟾腰牌，乃是父亲传下来的信物。”&lt;end&gt;
+&lt;npc=81&gt;：“我看看。哇！原来你真是我五毒教后人，哥哥跟我走，我便是五毒教中专门管理药房的弟子。”&lt;end&gt;
+&lt;playername&gt;：“太巧了，如此有劳。”&lt;end&gt;
+&lt;npc=81&gt;：“哥哥，我们五毒教现在的红旗旗主蝶飘飘姐姐是我的好姐妹，你去找她，一准会录用你的。就拿着这腰牌，说是我推荐的。”&lt;end&gt;
+&lt;playername&gt;：“谢谢小童。”&lt;end&gt;
+&lt;npc=81&gt;：“嘻嘻。恩……恩……还不知道哥哥叫什么名字呢？”&lt;end&gt;
+&lt;playername&gt;：“哦，在下木一楼。”&lt;end&gt;
+&lt;npc=81&gt;：“一楼哥哥，你快点去吧。回头记得来药房玩。恩，还有一点要告诉你，飘飘姐，是一个比较奇怪的人哦，不过她的心是很善的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=81&gt;：“一楼哥哥，你快点去吧。回头记得来药房玩。恩，还有一点要告诉你，飘飘姐，是一个比较奇怪的人哦，不过她的心是很善的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>击溃了围攻的刀客，去和殷氏兄妹对话</Value>
+              </txt>
+              <txt>
+                <Value>击溃了围攻的刀客，去和殷氏兄妹对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>殷童将我推荐给红旗旗主蝶飘飘，可以去找她了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>82</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“您可是红旗旗主蝶飘飘？”&lt;end&gt;
+&lt;npc=82&gt;：“是姑娘我，有什么事情吗？”&lt;end&gt;
+&lt;playername&gt;：“我受药房殷氏兄妹的推荐，想投效五毒。我的父亲是前任银蟾香主木无言，有腰牌为证。”&lt;end&gt;
+&lt;npc=82&gt;：“哦，这腰牌倒是真的，刚才药房小厮也过来通禀过了。最近确实有一些失散的五毒教众又来归附，不过其中也不乏细作呀。”&lt;end&gt;
+&lt;playername&gt;：“我不是细作。”&lt;end&gt;
+&lt;npc=82&gt;：“急什么？我也没说是你。那几个当细作的臭男人都被我用药熏得失去了神智，你替我将他们解决掉吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=82&gt;：“那几个当细作的臭男人，你替我将他们解决掉吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找到红旗旗主蝶飘飘</Value>
+              </txt>
+              <txt>
+                <Value>找到红旗旗主蝶飘飘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>29</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>蝶飘飘的第一个任务让我解决掉几个冒充五毒教众的男人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{154,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>83</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,155,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>29000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败了冒充五毒教的男人，回去找蝶飘飘复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>82</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=82&gt;：“喂，你再替我把那些臭男人的骨头都埋在乱葬岗吧，别扔在这里更臭。”&lt;end&gt;
+&lt;playername&gt;：“旗主，这些人若是细作，死不足惜。何不曝尸荒野，豺狗们自然会将他们的骨肉吃掉。”&lt;end&gt;
+&lt;npc=82&gt;：“呀，呀呀呀，你这个人好无情的呀。人家怎么说也是有身份的人，何况人都死了，还算什么账，入土为安嘛。”&lt;end&gt;
+&lt;playername&gt;：“既然如此，刚才为何又要下狠手杀他们呢？囚禁着不就好了。”&lt;end&gt;
+&lt;npc=82&gt;：“到底我是旗主你是旗主啊，罗里罗嗦，烦死了。快去快去。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=82&gt;：“把那些臭男人的骨头都埋在乱葬岗吧，别扔在这里更臭。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>完成了任务回去找蝶飘飘复命</Value>
+              </txt>
+              <txt>
+                <Value>完成了任务回去找蝶飘飘复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{155,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去乱葬岗好生埋葬武林高手的尸骨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,155,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1537</Value>
+              </dialognpc>
+              <txt>
+                <Value>埋葬的尸骨</Value>
+              </txt>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1804</Value>
+              </number>
+              <number>
+                <Value>3297</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>乱葬岗</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>7000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>尸骨埋葬后，不知这蝶飘飘又要耍什么花样</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>82</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“旗主，我已将尸骨都埋葬好了，您还有什么吩咐？”&lt;end&gt;
+&lt;npc=82&gt;：“呸呸呸，呸呸呸。那些个臭男人，怎么埋了还这么臭？早知道就不埋了，让野狗吃了他们去。”&lt;end&gt;
+&lt;playername&gt;：“……您不会，又让我挖出来吧？”&lt;end&gt;
+&lt;npc=82&gt;：“说什么呀，我又不是虐待狂。好了，你以后就在我红旗旗下办差吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>尸骨埋葬后，回去找蝶飘飘吧</Value>
+              </txt>
+              <txt>
+                <Value>尸骨埋葬后，回去找蝶飘飘吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000001B</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,716 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E9" name="人各有别" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=492&gt;：“哎，虽然师傅的手令在此，我怎么能再去受那些人的羞辱？”&lt;end&gt;</Pop>
+      <Start>&lt;playername&gt;：“兄台何事这样沮丧呢？”&lt;end&gt;
+&lt;npc=492&gt;：“哎，我修炼的碎雨梨花针法到达第三层楼后，便不得寸进。为此苦恼不已，幸得功夫房长老唐如师傅的指引，才知道要借重三样本门功法，方能收速效。”　&lt;end&gt;
+&lt;playername&gt;：“那便修习啊，这是好事。”&lt;end&gt;
+&lt;npc=492&gt;：“可那三门功法都为其他唐门子弟所修习，唐重楼专练春绝心法，唐武主修洒云手，唐飞在心意之间轻身术上也颇有造诣。他们平日对我甚为苛刻……或者，这偌大的唐门，也只有唐如师傅还将我唐遇当做一家人吧，其他人根本不给我好脸色瞧。”&lt;end&gt;
+&lt;playername&gt;：“若大家都是如此，定有什么你做得不对的地方吧。”&lt;end&gt;
+&lt;npc=492&gt;：“呵呵……不对？不对就不对在我唐遇不过是唐一尘酒醉后与远房表妹唐欢所生，可是，身份有别难道就能证明我唐遇也是一滩烂泥吗？”&lt;end&gt;
+&lt;playername&gt;：“……不必说了，你的难处我都知道，此事我替你办便是。”&lt;end&gt;
+&lt;npc=492&gt;：“如此……大恩不言谢。无论结果如何，我都当你是我的朋友！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=492&gt;：“受尽了白眼吧……此事我会永远铭刻在心，他日武功有成，必报以重谢！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>493</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐飞，麻烦你交出《心意之间》心法。”&lt;end&gt;
+&lt;npc=493&gt;：“哦，是小遇让你来的吧。”&lt;end&gt;
+&lt;playername&gt;：“恩，确是。”&lt;end&gt;
+&lt;npc=493&gt;：“不巧呀，这心法都被我泡到水里去了，你若要看时，怕得先自行晒干了哦。你把心法书页都拿去插在空地上晒干咯，然后回来找我拿整书吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=493&gt;：“你把心法书页都拿去插在空地上晒干咯，然后回来找我拿整书吧。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{书页,20,1,66,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>首先要找唐飞询问心意之间轻身之术</Value>
+              </txt>
+              <txt>
+                <Value>首先要找唐飞询问心意之间轻身之术</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>要先把书页晒干才能拿到，看来要等些时候了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkill</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,66,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>书页干得差不多了，整理一下去交给唐飞吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>493</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=493&gt;：“不错，都晒干了，这本心意之间你就拿回去吧。”&lt;end&gt;
+&lt;playername&gt;：“多谢公子。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=493&gt;：“这本心意之间你就拿回去吧。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{心意之间,20,1,65,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将晒干的书页交给唐飞</Value>
+              </txt>
+              <txt>
+                <Value>将晒干的书页交给唐飞</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>得到了心意之间，下一步要去唐重楼那里询问春绝心法的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>495</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐重楼先生吗？”&lt;end&gt;
+&lt;npc=495&gt;：“你是何人？”&lt;end&gt;
+&lt;playername&gt;：“我这里有唐如先生手令，请你交出《春绝心法》，让我带给唐遇修炼碎雨梨花针法。”&lt;end&gt;
+&lt;npc=495&gt;：“哼！别人要学便可以，那个狗崽子要学便不行。”&lt;end&gt;
+&lt;playername&gt;：“我看你才是狗！狗眼看人低。我没有功夫和你罗嗦，手令在此，交是不交？”&lt;end&gt;
+&lt;npc=495&gt;：“哼。心法在我二弟唐重岚手中，你要便去找他要吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=495&gt;：“心法在我二弟唐重岚手中，你要便去找他要吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去唐重楼那里询问春绝心法的下落</Value>
+              </txt>
+              <txt>
+                <Value>去唐重楼那里询问春绝心法的下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>唐重楼态度相当恶劣，幸好春绝心法不再他手中，去找唐重岚问问看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>496</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=496&gt;：“是来帮唐遇取春绝心法吧，就在这里，拿去用吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=496&gt;：“唐遇修行如何了？。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{春绝心法,20,1,63,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>去找唐重岚问问看春绝心法</Value>
+              </txt>
+              <txt>
+                <Value>去找唐重岚问问看春绝心法</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>要得到第三本秘籍洒云手，去找唐武询问一下</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>494</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐武先生吗？麻烦您将《洒云手》的诀要交给我，唐遇需要这手法来修炼碎雨梨花针法。”&lt;end&gt;
+&lt;npc=494&gt;：“哦，是这样吗？没有。”&lt;end&gt;
+&lt;playername&gt;：“你！”&lt;end&gt;
+&lt;npc=494&gt;：“哼，少拿手令来压我。《洒云手》被我扔在乱葬岗了，要时自己去寻。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=494&gt;：“《洒云手》被我扔在乱葬岗了，要时自己去寻。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>去找唐武询问一下洒云手的下落</Value>
+              </txt>
+              <txt>
+                <Value>去找唐武询问一下洒云手的下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>洒云手被唐武丢在乱葬岗，月黑风高，也要自己去寻找</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1539</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>洒云手搜索中</Value>
+              </txt>
+              <txt>
+                <Value>得到洒云手秘籍</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{洒云手,20,1,64,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d个洒云手秘籍</Value>
+              </txt>
+              <txt>
+                <Value>取得洒云手秘籍</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>终于找齐了三本秘籍，可以回去交给唐遇了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>492</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=492&gt;：“真的……真的要到了吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{心意之间,20,1,65,1,0,1}
+{春绝心法,20,1,63,1,0,1}
+{洒云手,20,1,64,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

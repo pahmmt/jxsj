@@ -1,0 +1,252 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000103" name="城守和驻军的矛盾" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=568&gt;：“唉……眼看日子就要到了，难道这次又是我输了？”&lt;end&gt;
+&lt;playername&gt;：“这位大人有何难事？”&lt;end&gt;
+&lt;npc=568&gt;：“你有所不知，我和驻军统领张寒两人向来喜欢打赌，可谓是什么赌都打。上次我打赌他不敢偷李寡妇晾的衣服，他竟然真去偷了。这把我输的真是窝囊，于是我又跟他打赌，可是这次……唉……我说我在三日之日能拿到他的帅旗和他统帅的禁军的铠甲。这不是自己找事做嘛……还有一天，我看来是真的输了……”&lt;end&gt;
+&lt;playername&gt;：“这倒也未必！”&lt;end&gt;
+&lt;npc=568&gt;：“那还能怎么样？难道你愿意帮我这个忙？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1599</Value>
+              </dialognpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>正在取下帅旗</Value>
+              </txt>
+              <txt>
+                <Value>得到帅旗</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{帅旗,20,1,89,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>取到%d/1个张寒帅旗</Value>
+              </txt>
+              <txt>
+                <Value>寒山古刹张寒营地</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2128</Value>
+              </fightnpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <taskitem>
+                <Value>{305,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将赌注带给寒山古刹的张寒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>559</Value>
+              </dialognpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <txt>
+                <Value>赌约</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=559&gt;：“这是何物？”&lt;end&gt;
+&lt;playername&gt;：“这是扬州的孙庭骆托我给带来的赌注，请你看好了！”&lt;end&gt;
+&lt;npc=559&gt;：“这……这……这个死东西，非要我叫他大叔才肯罢休！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将赌注带给张寒</Value>
+              </txt>
+              <txt>
+                <Value>将赌注带给张寒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{89,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{305,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

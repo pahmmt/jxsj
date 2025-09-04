@@ -1,0 +1,332 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000015" name="汗血宝马" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=66&gt;：“帮主让你去找管马栏的蔡老头。事情已相当急迫了，看来帮主要提前发动。”&lt;end&gt;
+&lt;playername&gt;：“提前发动？和蔡老头有什么关系？”&lt;end&gt;
+&lt;npc=66&gt;：“没时间了，我得立即送韩大人走，你去了自己问。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>70</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“老蔡，帮主吩咐我来找你，究竟何事？”&lt;end&gt;
+&lt;npc=70&gt;：“哎呀，哎呀……”&lt;end&gt;
+&lt;playername&gt;：“怎么回事？”&lt;end&gt;
+&lt;npc=70&gt;：“那匹来自西域的汗血宝马昨天夜里自己挣脱缰绳逃跑了。”&lt;end&gt;
+&lt;playername&gt;：“汗血宝马？”&lt;end&gt;
+&lt;npc=70&gt;：“帮主是准备在誓师祭旗时候用它的。”&lt;end&gt;
+&lt;playername&gt;：“居然现在这世上还留存着这种宝贝。”&lt;end&gt;
+&lt;npc=70&gt;：“那马儿可是匹通灵活物，它一定是预感到有什么灾祸要发生，才会拼了性命也要逃跑的，昨晚上俺就听到它一直叫唤。请你一定要帮俺把这马抓回来！否则帮主怪罪下来，俺承担不起啊。”&lt;end&gt;
+&lt;playername&gt;：“放心吧，马儿逃去哪个方向了？”&lt;end&gt;
+&lt;npc=70&gt;：“它的蹄印是朝着见子溪那边去的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=70&gt;：“它的蹄印是朝着见子溪那边去的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去找燕子坞上管理马栏的蔡老头</Value>
+              </txt>
+              <txt>
+                <Value>去找燕子坞上管理马栏的蔡老头</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>蔡老头请我一定帮忙把汗血宝马抓回来，否则自己承担不起</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>71</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,205,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把汗血宝马带去石轩辕那里吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，这宝马似乎预感到自己要死了，属下虽然花了大力气抓住它，它却成天不吃不喝，衰弱得很快。”&lt;end&gt;
+&lt;npc=30&gt;：“哦？这并非吉兆啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把汗血宝马带去石轩辕那里吧</Value>
+              </txt>
+              <txt>
+                <Value>把汗血宝马带去石轩辕那里吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000016</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{205,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddGatherPoint</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddMakePoint</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

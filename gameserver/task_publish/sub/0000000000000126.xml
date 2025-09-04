@@ -1,0 +1,381 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000126" name="脱围而出" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=651&gt;：“我们大日罗寨是大理最大的七寨之一，而寨主大日罗则是七大寨主中最年轻有为的一位。不过自从去年深秋带回妖妖之后，一切便都变了。妖妖此女狡黠异常，她蛊惑大日罗将其师父逍遥子提为军师，管理寨中一切事务。逍遥子初始时候还对寨民很是和善，但渐渐凶相毕露，不过他似乎对寨中的蛮兵最感兴趣。”&lt;end&gt;
+&lt;Playername&gt;：“这是何意？”&lt;end&gt;
+&lt;npc=651&gt;：“妖妖蛊惑大日罗让逍遥子为其练兵，逍遥子不仅可以随时训练，还可全权调动寨中蛮兵。我也是读过书的人，深知大权旁落便是危机暗伏之时。大日罗于我和阿布有恩，我不忍看他被如此迷惑下去。但我一介女流也无力有所作为。今日有幸结识&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;仗义援手，相助这里即将受害的寨民。”&lt;end&gt;
+
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1720</Value>
+              </number>
+              <number>
+                <Value>3780</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>前往上仙庄刺探</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1077&gt;：“兵器都准备的怎么样了？”&lt;end&gt;
+&lt;npc=625&gt;：“回师父，已经命令铁匠季茹加紧打造了，今日他要交出第一批兵器。”&lt;end&gt;
+&lt;npc=1077&gt;：“如此甚好，你们都盯着点，这些蛮子不给他们苦头吃怕是不肯就范。还有，妖妖那里让她盯着点，下药不要太猛，你去吧！”&lt;end&gt;
+&lt;Playername&gt;：(看来逍遥子确实有所行动！这铁匠季茹似乎便是山寨里的那名铁匠，且找他暗中打探一下。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往大日山寨找铁匠季茹打探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>627</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=627&gt;：“客官要打东西还是去别家吧，我这里实在腾不出手来。”&lt;end&gt;
+&lt;Playername&gt;：“这一不是农忙二不是战乱，一个小小的铁匠铺怎么会有如此多的活要做？”&lt;end&gt;
+&lt;npc=627&gt;：“客官有所不知，我们军师下令要我打好五百件兵刃，每隔五日交一批。我这小铺子又没有什么帮手，累死累活才打了不足五十件。今日便要交付第一批，可是还差得远，我正在着急呢。”&lt;end&gt;
+&lt;Playername&gt;：“原来是这样，若是操练也无须如此心急，敢莫是有别的急事？”&lt;end&gt;
+&lt;npc=627&gt;：“急事？他有屁的急事！打好的兵器不是立马要用而是要我送到西边的库房存起来，我这里忙的死去活来哪里有时间去送。”&lt;end&gt;
+&lt;Playername&gt;：“不如这样吧，让我替你去送吧，也好让你腾出点时间来帮我修理一下兵器。”&lt;end&gt;
+&lt;npc=627&gt;：“当真？那可真是太好了！往西有一座亭子，你只要牵着我的骆驼将兵器交给那里的看守摩摩尔就可以了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找铁匠季茹打探</Value>
+              </txt>
+              <txt>
+                <Value>找铁匠季茹打探</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将季茹打好的兵器带给西边库房的摩摩尔。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1079</Value>
+              </dialognpc>
+              <number>
+                <Value>1834</Value>
+              </number>
+              <number>
+                <Value>3715</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=627&gt;：“当心别惹毛了它，会踢人！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1078</Value>
+              </fightnpc>
+              <number>
+                <Value>85</Value>
+              </number>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1619</Value>
+              </number>
+              <number>
+                <Value>3399</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1842,3702
+1853,3672
+1868,3642
+1854,3622
+1840,3604
+1829,3565
+1834,3533
+1830,3477
+1819,3455
+1799,3473
+1768,3486
+1755,3518
+1726,3546
+1703,3521
+1688,3485
+1675,3440
+1654,3415
+1641,3388
+1627,3378
+1618,3389
+1619,3399</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“这位大哥，这是铁匠季茹交付的武器，请查收！”&lt;end&gt;
+&lt;npc=653&gt;：“唉！我都替他难受，这么多的兵器一个人怎么能打得完？要不是寨主被那淫妇迷惑住，我们也不必如此辛苦……罢了，我也不该对着你一个外乡人说这些。”&lt;end&gt;
+&lt;Playername&gt;：“这位大哥可知道这些兵器做何用途？”&lt;end&gt;
+&lt;npc=653&gt;：“这我怎么会知道？只是这杀人的玩意除了杀人还能做什么？区别只是杀谁罢了，但愿这东西不会用到我们山寨自己人身上。唉……要是罗姆司老爷能劝劝寨主就好了，眼下只有他一个人的话寨主能听得进去。可是罗姆司老爷……唉……谁又能说得动他……”&lt;end&gt;
+&lt;Playername&gt;：(看来找罗姆司也许会有新发现！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往大日山寨寻找罗姆司</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>631</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“敢问老丈可是罗姆司老爷？”&lt;end&gt;
+&lt;npc=631&gt;：“唔……是我！你找我有什么事？”&lt;end&gt;
+&lt;Playername&gt;：“眼下军师正在暗中命人打造兵器并且将之囤积起来，不知老爷是如何看待这件事情的？”&lt;end&gt;
+&lt;npc=631&gt;：“这个……唔……寨主自有主意，何须我这老骨头劳神费力？”&lt;end&gt;
+&lt;Playername&gt;：“寨主被妖妖迷得七荤八素的，哪里还有想过这些。听闻老爷是寨主敬重之人，还请将此事禀告寨主，令他有所提防。”&lt;end&gt;
+&lt;npc=631&gt;：“这……唔……此事无凭无据单听一面之言只会无功而返。此事我也曾暗中有过留意，不过仍需进一步查证不能操之过急，否则打草惊蛇反而不美。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到罗姆司</Value>
+              </txt>
+              <txt>
+                <Value>找到罗姆司</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,512 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000288" name="游龙使" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“小姑娘你为何独自一人呆在这阴暗的地下宝库之中，若是迷路了，我自可以带你出去。”&lt;end&gt;
+&lt;npc=5182&gt;：“此地乃宋军禁地，况且异常危险，还请少侠速速离开吧。”&lt;end&gt;
+&lt;playername&gt;：“姑娘误会了，我乃义军中人，来到此地并非贪图钱财，只是不明了姑娘为何孤身在此密室。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5182</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5182&gt;：“少侠有所不知，这游龙宝库乃皇家秘密之所在，如今大宋的许多军备军饷的经费都出自这宝库之中。现如今宋金两国正处于酣战之际，对这宝库的防备自然不如以前，很多贼人趁机对这宝库中的宝物起了歹念。”&lt;end&gt;
+&lt;playername&gt;：“原来如此，姑娘小小年纪便背起了家族甚至国家的重担，我&lt;playername&gt;着实敬佩。”&lt;end&gt;
+&lt;npc=5182&gt;：“少侠过誉了，我和妹妹冉冉即便集成了家族的强大能力，但寡不敌众，我二人并不是那些窃贼的对手，还望少侠能够出手相助。”&lt;end&gt;
+&lt;playername&gt;：“妹妹请讲，&lt;playername&gt;必将全力以赴。”&lt;end&gt;
+&lt;npc=5182&gt;：“就在这宝库之中就四座机关，扣动四座机关宝库之内便充满毒气，那些敌人自然知难而退，不过这宝库入口却被鬼灵占据着，它们并不畏惧这毒气。”&lt;end&gt;
+&lt;playername&gt;：“妹妹这便等着我的好消息吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与游龙使徐香香对话</Value>
+              </txt>
+              <txt>
+                <Value>与游龙使徐香香对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>扣动游龙宝库中的四方机关</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5183</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>扣动中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经扣动了了%d/1个贪狼机关。</Value>
+              </txt>
+              <txt>
+                <Value>你已经扣动了了1个贪狼机关。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5184</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>扣动中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经扣动了了%d/1个破军机关。</Value>
+              </txt>
+              <txt>
+                <Value>你已经扣动了了1个破军机关。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5185</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>扣动中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经扣动了了%d/1个朱雀机关。</Value>
+              </txt>
+              <txt>
+                <Value>你已经扣动了了1个朱雀机关。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5186</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>扣动中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经扣动了了%d/1个玄武机关。</Value>
+              </txt>
+              <txt>
+                <Value>你已经扣动了了1个玄武机关。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>机关已经扣动，毒气即将弥漫整个宝库，不过宝库入口的鬼灵似乎并不怕这毒气，现在就由我亲自将他们消灭吧。&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5187</Value>
+              </fightnpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败了难缠的鬼灵，快将好消息告诉香香吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5182</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“香香妹妹，我按照你的指引扣动了四方机关，并且赶走了那些难缠的鬼灵。”&lt;end&gt;
+&lt;npc=5182&gt;：“&lt;playername&gt;少侠果然厉害，相信这些盗宝贼短时间内并不会来了，我和妹妹冉冉也能够好好的松口气了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>与游龙使徐香香对话</Value>
+              </txt>
+              <txt>
+                <Value>与游龙使徐香香对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

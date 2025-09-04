@@ -1,0 +1,152 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000CE" name="愤怒的机关" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=404&gt;：“木人巷里的木人失控，伤了我寺几个弟子，此事无比早些解决。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=404&gt;：“木人巷内的一些机关木人出了问题，关闭机关因年久失修，无法停止下来。希望施主能进入木人巷，打败机关木人，并将其身上关闭机关的零件拆卸下来，带回来我看。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2033</Value>
+              </fightnpc>
+              <number>
+                <Value>56</Value>
+              </number>
+              <taskitem>
+                <Value>{40,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.2</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将获得的机关木人行动的零件拿回去给澄光仔细查看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>404</Value>
+              </dialognpc>
+              <number>
+                <Value>56</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=404&gt;：“恩，这些机关的机头已经坏死，难怪关闭不上，如今修复后就该无事了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{木人零件,20,1,40,1,0,10}</Value>
+              </string>
+              <txt>
+                <Value>将获得的机关木人行动的零件拿回去给澄光仔细查看</Value>
+              </txt>
+              <txt>
+                <Value>将获得的机关木人行动的零件拿回去给澄光仔细查看</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{40,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

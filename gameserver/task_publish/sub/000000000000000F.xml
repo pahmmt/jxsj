@@ -1,0 +1,460 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000000F" name="猛虎巷" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“请问巩少榛巩长老在哪里？”&lt;end&gt;
+&lt;npc=48&gt;：“顺着这条路直走不远，就能见到巩长老了。”&lt;end&gt;
+&lt;playername&gt;：“就此谢过。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>50</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“巩长老，在下是&lt;playername&gt;，受石轩辕帮主所派，前来听候您的调遣。”&lt;end&gt;
+&lt;npc=50&gt;：“嘿嘿，什么调遣不调遣的，客套个啥。罗锋兄弟可是说过了，&lt;playername&gt;是个少见的人才。这话从他嘴里说出来，那分量可不轻啊。”&lt;end&gt;
+&lt;playername&gt;：“罗锋喜欢吹牛，切不可听他胡言。”&lt;end&gt;
+&lt;npc=50&gt;：“哈，那你与他当面对质。”&lt;end&gt;
+&lt;playername&gt;：“老罗你不厚道，又在巩长老面前乱讲话。”&lt;end&gt;
+&lt;npc=51&gt;：“我没乱讲话呀。”&lt;end&gt;
+&lt;playername&gt;：“那你说了什么？”&lt;end&gt;
+&lt;npc=51&gt;：“我就是说&lt;playername&gt;太有才了。”&lt;end&gt;
+&lt;playername&gt;：“你……真是要气死我啊。”&lt;end&gt;
+&lt;npc=51&gt;：“哈哈，好了不罗嗦，给你介绍个人。这位是冷秋云冷长老，也是我们丐帮的大能人，以后多接触。”&lt;end&gt;
+&lt;playername&gt;：“冷长老。”&lt;end&gt;
+&lt;npc=52&gt;：“恩。”&lt;end&gt;
+&lt;npc=51&gt;：“&lt;playername&gt;，你可别介意。冷长老对谁都是这副家里死了亲人的样子，其实他是面冷心热。”&lt;end&gt;
+&lt;npc=52&gt;：“罗锋，少说两句。事关重大，要找个能力出众值得信赖的人才好。”&lt;end&gt;
+&lt;npc=51&gt;：“自当如此。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向白山石场的诸位长老报到</Value>
+              </txt>
+              <txt>
+                <Value>向白山石场的诸位长老报到</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>21100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>和冷秋云长老对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>52</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“林东山，你不是来挖石头的吗？怎么跑这来了。”&lt;end&gt;
+&lt;npc=53&gt;：“这……”&lt;end&gt;
+&lt;npc=51&gt;：“这小子嘴笨，还是我来讲吧。”&lt;end&gt;
+&lt;playername&gt;：“你讲就你讲。”&lt;end&gt;
+&lt;npc=51&gt;：“你可知这白山石场的来历？”&lt;end&gt;
+&lt;playername&gt;：“不知。”&lt;end&gt;
+&lt;npc=51&gt;：“北宋时历朝皇帝都极为喜欢形态奇卓的花石冈，大臣们无不尽一己能事满世界的搜寻奇石，这种嗜好到南宋时才有所收敛。可那些富得流油的商人，都把获得一尊花石冈当成很有面子的事情。”&lt;end&gt;
+&lt;npc=51&gt;：“我们丐帮原本就没有什么产业，偌大的帮会要发展，资本从哪里来？所以石帮主一发现燕子坞上多的是这种奇石，就组织弟子修建了这座石场，采集后以巨船运往各地销售，一改帮中财力拮据的状况。”&lt;end&gt;
+&lt;playername&gt;：“原来是这样，难怪我们丐帮现在有能力接待天下英雄。”&lt;end&gt;
+&lt;npc=51&gt;：“不过我瞧这林东山有个好身体，挖石料别给他挖废了，所以给他另一条路走。”&lt;end&gt;
+&lt;playername&gt;：“什么路？”&lt;end&gt;
+&lt;npc=53&gt;：“当死士。”&lt;end&gt;
+&lt;playername&gt;：“死士？”&lt;end&gt;
+&lt;npc=51&gt;：“我们丐帮和金国结下的梁子，是死结，解不开了的。金国人害我南宋多少人家破人亡？不击败他们，还会有更多的人遭遇不幸。所以石帮主组建的死士队伍，专入金国境地刺杀其大臣将领。这都是九死一生的差事，所以帮主从来没有强迫过大家。”&lt;end&gt;
+&lt;playername&gt;：“既然知道是九死一生，人家也没有把命卖给丐帮，你这么问林东山，有些过分了吧。”&lt;end&gt;
+&lt;npc=53&gt;：“不必再说了，我做。受崔长老的蛊惑，原本便是我不对。我林东山一家也饱受金国人的侮辱，我这条命与其因犯戒而死，还不如痛痛快快的杀一番金狗来得舒坦。”&lt;end&gt;
+&lt;playername&gt;：“我始终觉得这样不好。”&lt;end&gt;
+&lt;npc=51&gt;：“放心，我知道你担心什么。实话告诉你吧，我老罗就是丐帮第一代的死士，你看我现在不是生龙活虎的？帮主不是个无脑之人，他办的事情你想不通，可一定是存了为丐帮着想的心。丐帮会组建死士这么些年，真死了几个？”&lt;end&gt;
+&lt;npc=50&gt;：“东山，你虽然下定决心，也要经过猛虎巷的考验，才能达到我们训练你的标准。猛虎巷里危机重重，你现在后悔还来得及。”&lt;end&gt;
+&lt;npc=53&gt;：“巩长老，我不后悔。”&lt;end&gt;
+&lt;npc=52&gt;：“&lt;playername&gt;，你要不要也试试？”&lt;end&gt;
+&lt;npc=51&gt;：“冷长老，&lt;playername&gt;又不是死士，那猛虎巷并不好过，你何必出言刁难。”&lt;end&gt;
+&lt;playername&gt;：“罗兄不必再说，林东山都去得，我难道还会怕吗？”&lt;end&gt;
+&lt;npc=51&gt;：“好，有道是自古英雄出少年，只需杀掉30只猛虎便可出巷，多保重。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和冷秋云长老对话</Value>
+              </txt>
+              <txt>
+                <Value>和冷秋云长老对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>22600</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>进入猛虎巷一试，向冷秋云长老证明我的能力</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>101</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>54</Value>
+              </fightnpc>
+              <number>
+                <Value>407</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>23400</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>从猛虎巷全身而退，回去向冷秋云复命吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>52</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“冷长老，猛虎巷并没有你说得那样恐怖。”&lt;end&gt;
+&lt;npc=52&gt;：“恩，你是有实力的人，我没有话讲，帮主果然没有看错你。方才是我的不对，言语挑衅的过失，向你道歉。”&lt;end&gt;
+&lt;playername&gt;：“这……长老，其实我也有些气盛。”&lt;end&gt;
+&lt;npc=51&gt;：“呵呵，好啦，你们两个就不要在这里互相客套了，说辞越来越暧昧。别忘了，林东山还没出来呢。”&lt;end&gt;
+&lt;playername&gt;：“呀，是啊。”&lt;end&gt;
+&lt;npc=52&gt;：“有罗锋在，出不了什么大乱子，最多就是个轻伤。”&lt;end&gt;
+&lt;npc=51&gt;：“哟，冷长老难得夸我一次啊，那我可得把这句夸奖坐实咯。我去巷子里瞧瞧，别真出点什么事。巩长老带着&lt;playername&gt;四处转转吧。”&lt;end&gt;
+&lt;npc=50&gt;：“就你话多，我晓得。”&lt;end&gt;
+&lt;npc=51&gt;：“对了，那件事，帮主交代过，可以讲给&lt;playername&gt;听。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>从猛虎巷全身而退，回去向冷秋云复命吧</Value>
+              </txt>
+              <txt>
+                <Value>从猛虎巷全身而退，回去向冷秋云复命吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000010</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

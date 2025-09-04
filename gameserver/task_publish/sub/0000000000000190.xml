@@ -1,0 +1,726 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000190" name="新的征程" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“当日在太祖宝库，完颜襄得意之余将其野心暴露无遗。我恐其言语有诈曾亲自派人前往金国查探，孰料和他所言竟然相符。我大惊之下连夜前往京城面见韩大人，将此事再次禀告给他以谋良策。韩大人思虑再三，连夜进宫面圣并带回了皇上的密旨。”&lt;end&gt;
+&lt;Playername&gt;：“此事竟然惊动了皇上？”&lt;end&gt;
+&lt;npc=3570&gt;：“事关国之安危，岂能等闲视之。皇上下密旨给韩大人让其暗中布置，先做防御。韩大人和我商议之后，在宋金边境的伏牛山选了一处地界作为备战之地。此地得天独厚，又极为隐秘。”&lt;end&gt;
+&lt;Playername&gt;：“此事竟然从未听秋姨说过。”&lt;end&gt;
+&lt;npc=3570&gt;：“事关国之机密，岂可随意泄露？我派人前往营建已有数月，如今军营即将营建妥当。刚接到大将军卢必克的飞鸽传书，言说另有要事需要人手相助，我便打算派你前去。”&lt;end&gt;
+&lt;Playername&gt;：“秋姨说得如此神秘，只不知那处军营该从何处进入？”&lt;end&gt;
+&lt;npc=3570&gt;：“为防此事泄露，此后通往伏牛山军营需由军营传送官&lt;color=red&gt;王苍恩&lt;color&gt;领路方可前往，你请他送你去军营，再找卢必克将军候命。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4041</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“大将军，首领接到将军的飞鸽传书后派我前来候命。”&lt;end&gt;
+&lt;npc=4041&gt;：“如此甚好，我这里近来缺乏人手，若是有你相助就省心多了。此处军营修建的始末想必首领已经对你言明，我便不复多说了。此番叫你前来是向你说下这一带的戒备以及备战物资筹集的相关事宜。”&lt;end&gt;
+&lt;Playername&gt;：“大将军请讲！”&lt;end&gt;
+&lt;npc=4041&gt;：“咱们义军虽然奉命在此修建军营以期备战，但朝廷国库空虚，并未下拨太多军费，不足之处仍需亲自筹集。当初之所以选择在此地修建军营，一则是因为此地僻静，一则是看中了此地得天独厚的条件。”&lt;end&gt;
+&lt;Playername&gt;：“什么条件？”&lt;end&gt;
+&lt;npc=4041&gt;：“后山之中有丰富的矿产、木料和石料，对于备战有不可或缺的作用，我已经派遣一组斥候前往那里勘探了。你可以通过&lt;color=red&gt;副本传送官&lt;color&gt;的指引前往伏牛山后山，找到我派去那里的斥候校尉&lt;color=red&gt;胡嘉&lt;color&gt;；协助他勘探后山的资源，并尽快带一批资源回来。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到大将军卢必克</Value>
+              </txt>
+              <txt>
+                <Value>前往伏牛山军营找到大将军卢必克</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>通过副本传送官进入伏牛山后山找到校尉胡嘉</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{379,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{380,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4030</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>新的征程</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“这个想必就是胡校尉了，我奉大将军之命前来协助你取回一些资源。”&lt;end&gt;
+&lt;npc=4030&gt;：“我等虽说已经将此地勘探清楚，但想要取回资源却有些难。不过如今有你相助，便如囊中取物了。这后山分为三处地界，一处可以伐木，称作&lt;color=red&gt;枫叶林&lt;color&gt;；一处可以采矿，称作&lt;color=red&gt;犀角矿&lt;color&gt;；最末一处可以采石，称作&lt;color=red&gt;乱石滩&lt;color&gt;。”&lt;end&gt;
+&lt;Playername&gt;：“那胡校尉所说的难处又在哪里？”&lt;end&gt;
+&lt;npc=4030&gt;：“首先说这&lt;color=red&gt;枫叶林&lt;color&gt;，以你的身手，可以一路由破损的栈道之间用&lt;color=red&gt;轻功&lt;color&gt;飞跃上去，看到&lt;color=red&gt;枫树&lt;color&gt;采伐便是。需要注意的是那里的野人，这枫树林是他们的猎场，如若相遇当要小心才是。”&lt;end&gt;
+&lt;Playername&gt;：“那犀角矿呢？”&lt;end&gt;
+&lt;npc=4030&gt;：“由枫叶林东面的小径一路往前可达&lt;color=red&gt;犀角矿&lt;color&gt;，不过这犀角矿早已被牛栏寨占据。如不能将守矿的喽罗先行除掉，则势必难以进入矿区。一旦进入了矿区，便须兵分两路鱼贯而入；皆因矿道中设有各路机关，这一侧开启的枢纽恰在另一侧，所以兵分两路最为相宜。矿道的末端是看守矿道的监工头领，将其制服则矿石可随意取走了。”&lt;end&gt;
+&lt;Playername&gt;：“没想到山贼防范如此严密，那乱石滩又该如何前往？”&lt;end&gt;
+&lt;npc=4030&gt;：“矿道监工附近有一处地下水道，那里有一条&lt;color=red&gt;旧船&lt;color&gt;，用此船可经由地下水道离开矿洞前往&lt;color=red&gt;乱石滩&lt;color&gt;。乱石滩内有牛栏寨奴役的数名采石工匠，你可将他们手里的刀具放入那里的切石器中，将其损坏。此时乱石滩的监工便会出现责罚这些工匠。将其击倒便可随意取走石料。”&lt;end&gt;
+&lt;Playername&gt;：“那我取回资源之后是否应当原路返回？”&lt;end&gt;
+&lt;npc=4030&gt;：“无须，你可从乱石滩的河畔坐船回来。初次前往难免会有疏忽，若有不明之处要及时询问，我在各处安置了义军暗哨，你找他们问话便可。军营修建需要资源颇多，你即刻启程前去搜集资源吧。对了，听说附近有好多农户被强拉去犀角矿做苦工，你去了以后记得取一些犀角矿的出入令牌回来，我好派人营救这些农户。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到校尉胡嘉</Value>
+              </txt>
+              <txt>
+                <Value>前往伏牛山后山找到校尉胡嘉</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>使用轻功前往枫叶林采集枫木</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4023</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>砍伐中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>砍伐被意外中止了</Value>
+              </txt>
+              <string>
+                <Value>{上等枫木,20,1,600,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>获得%d/10块上等枫木</Value>
+              </txt>
+              <txt>
+                <Value>前往枫叶林砍伐枫木</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>我照胡嘉所说取得了上等枫木，此后便需前往犀角矿采矿。据胡嘉所说，前往犀角矿需先制服看守矿道的牛栏寨喽罗，否则便无法进入矿道。</Value>
+              </txt>
+              <txt>
+                <Value>击败看守矿道的喽罗头目后进入矿道</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>72000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4004</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{601,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4001</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{619,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>击败看守矿洞的监工头领后，我获得了不少矿石。此去最后一站是乱石滩，我需要通过旧船前往那里。</Value>
+              </txt>
+              <txt>
+                <Value>使用旧船前往乱石滩获取石料</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4002</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{602,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>我击败了大工匠，获得了其保管的石料，后山一行的任务已经全部完成。我可以请乱石滩的船夫将我送往伏牛山军营向大将军卢必克复命。</Value>
+              </txt>
+              <txt>
+                <Value>向伏牛山军营的大将军卢必克复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4041</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“大将军，这是我从后山搜集到的一些资源，请查收！”&lt;end&gt;
+&lt;npc=4041&gt;：“我知道首领推荐的人必有过人之处，但没想到你会这么快便将资源带回。备战是一件艰苦而又持久的事情，今后你便留着我身边为我搜集资源吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向卢必克复命</Value>
+              </txt>
+              <txt>
+                <Value>前往伏牛山军营找到卢必克</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{600,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{602,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{601,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{619,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

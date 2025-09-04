@@ -1,0 +1,285 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D1" name="巧计平乱" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=412&gt;：“掌门师叔什么任务不给，给我这么个郁闷的事情做。”</Pop>
+      <Start>&lt;npc=412&gt;：“哎，掌门师叔让我去劝告天柱峰上两批女子离开。俗话说得好，唯女子与小人难养也，何况这两边的女子还都带刺。”&lt;end&gt;
+&lt;playername&gt;：“究竟怎么一回事？”&lt;end&gt;
+&lt;npc=412&gt;：“说来话长，我就长话短说吧。这天柱峰上的人分为两批，一批是金国细作，一批是想投入武当门下的风尘女子。金国细作的大首领，皇宫侍卫长郜楠曾来信言明，这批细作都是官吏后裔，受了些巾帼不让须眉之类说法的蛊惑，一心想闯荡江湖，碍于他们长辈的情面，侍卫长也无法不应允，请我武当看在他面子上看开些。”&lt;end&gt;
+&lt;playername&gt;：“郜楠是什么人？”&lt;end&gt;
+&lt;npc=412&gt;：“此人在金国大大的有名，通吃黑白二道，与洞虚、一叶两位真人都是极好的朋友。他的面子我们一定要卖的。”&lt;end&gt;
+&lt;playername&gt;：“那些风尘女子身世虽然凄苦，但收留她们又不知要招惹多少麻烦，自然也是不好应对的。”&lt;end&gt;
+&lt;npc=412&gt;：“正是如此。不过掌门师叔既然将这件事交给我了，无论如何都要办的。我这里有两件礼物，你将书信交给金国女子的统领，将包袱交给风尘女子的统领，自然可以逼退她们。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>49</Value>
+              </number>
+              <number>
+                <Value>1746</Value>
+              </number>
+              <number>
+                <Value>3838</Value>
+              </number>
+              <dialognpc>
+                <Value>429</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=413&gt;：“你是何人？”&lt;end&gt;
+&lt;playername&gt;：“我是何人不重要，这里有一封书信，是武当中人托我转交予你。”&lt;end&gt;
+&lt;npc=413&gt;：“拿来我瞧……啊！这这这是横行南方的采花大盗龙归云的信物！他居然藏身在武当山吗？看来这地方不能呆了，太危险了！”&lt;end&gt;
+&lt;playername&gt;：“哈哈……”&lt;end&gt;
+&lt;npc=413&gt;：“你笑什么？我怎么看你这么不顺眼？走之前要教训教训你。”&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>413</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>将路晓然的书信交给细作统领</Value>
+              </txt>
+              <txt>
+                <Value>将路晓然的书信交给细作统领</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddTaskItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{41,}</Value>
+              </taskitem>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddTaskItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{42,}</Value>
+              </taskitem>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将路晓然的包袱交给拜师者统领</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>411</Value>
+              </dialognpc>
+              <number>
+                <Value>49</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位姑娘，我这里有一个包袱，是武当中人托我交给你的。”&lt;end&gt;
+&lt;npc=411&gt;：“拿来我看……老老……老鼠，这包袱里有只活老鼠啊！”&lt;end&gt;
+&lt;playername&gt;：“嘿嘿，武当弟子的厢房里什么都缺，就是不缺这乌漆抹黑的玩意啊。”&lt;end&gt;
+&lt;npc=411&gt;：“不学了，不学了，这武功没法学了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddTaskItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{42,}</Value>
+              </taskitem>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>略施小计，两批女子就纷纷退下山去，将情况回去告知路晓然吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>412</Value>
+              </dialognpc>
+              <number>
+                <Value>49</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=412&gt;：“恩，果然不出我所料。虽然这招数有些下三滥，也是不得已而为之了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回去告知路晓然吧</Value>
+              </txt>
+              <txt>
+                <Value>将情况回去告知路晓然吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

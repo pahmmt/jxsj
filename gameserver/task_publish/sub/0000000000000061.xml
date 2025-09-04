@@ -1,0 +1,237 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000061" name="麻衣神相" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;:“先生居此洞天福地，想必是隐居的奇人。实不相瞒，此番我为了寻访嘉王的下落而来到此处，打扰先生清修，还请先生莫怪。不知嘉王可曾到过此地？还请先生明示！”&lt;end&gt;
+&lt;npc=807&gt;：“老夫这个飞龙谷数年来连个鸟都没飞过，不想今天竟然先后两帮贵客造访。李后的人早来一步，他们的来意老夫已知。不知道你找嘉王有何打算？”&lt;end&gt;
+&lt;Playername&gt;:“我是义军成员，奉命保护嘉王。”&lt;end&gt;
+&lt;npc=807&gt;：“原来如此，听闻义军是一名叫白秋琳的女子在领导，没想到她这么深明大义。老夫是前朝的老臣，退居此地已久，没想到离开朝野也无法真正清净。你既说你是义军，前来相助嘉王，那么你便去老夫摆下的飞龙阵证明自己身份吧。那里是被老夫困住的李后走狗。你为老夫除去他们，老夫便信了你。"&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>945</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=807&gt;：“很好，老夫并没有看错人，不过以你目前的实力只怕想要保护嘉王有些心有余而力不足。你若能稍加历练，做足准备，老夫倒是可以为你打探嘉王的下落。"&lt;end&gt;
+&lt;Playername&gt;:“怎么个历练法？”&lt;end&gt;
+&lt;npc=807&gt;：“保护嘉王，你的手下功夫要过硬才是，将你的等级提升到52级再来找老夫吧。嘉王这里，老夫自会妥善安排。"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到52级后再来找飞龙先生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>347000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>52</Value>
+              </number>
+              <txt>
+                <Value>将等级提升到52级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到52级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在可以前往飞龙谷找飞龙先生了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>807</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>飞龙谷</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;:“老先生，我又来了！”&lt;end&gt;
+&lt;npc=807&gt;：“不错，你果然已经又有进步了。既然这样，老夫也不能食言！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去飞龙谷找飞龙先生</Value>
+              </txt>
+              <txt>
+                <Value>去飞龙谷找飞龙先生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000062</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

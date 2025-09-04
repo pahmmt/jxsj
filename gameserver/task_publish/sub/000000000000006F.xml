@@ -1,0 +1,787 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000006F" name="无脸大师" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“这次遇到的问题倒是真有些棘手，要说舞刀弄枪咱们义军倒是人人在行，要说起这猜谜可就难办了。从这张图上，我是什么都看不出来。不动先生和你龙五太爷也没看出个究竟。想起想去我倒是想起了一个人。”&lt;end&gt;
+&lt;Playername&gt;：“谁？”&lt;end&gt;
+&lt;npc=3570&gt;：“武当派的一叶真人号称武林中的万事通，见多识广；也许他可以看出点什么门道。这段时间，我会派人通知天王帮和丐帮不再搜寻李元哲的下落，以免对他造成不必要的伤害。关于游龙珏的事情你也要保守秘密，不要轻易对人说起。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3552</Value>
+              </dialognpc>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“真人请了！我这里有一张图案，很是少见，不知真人可否指点一下其中的奥妙？”&lt;end&gt;
+&lt;npc=3552&gt;：“呵呵……让贫道看看……嗯……确实很少见，但是还有一点眼熟，好像在哪里见过……是哪里来着？”&lt;end&gt;
+&lt;Playername&gt;：“还请真人好好想想！”&lt;end&gt;
+&lt;npc=3552&gt;：“不急不急，让贫道再想想。喔，对了，想起来了。数十年前贫道曾和一名异族武士有过比试，败在他手下。印象中，他的剑鞘上就有这样的图案。还有……嗯……没错，伏牛山的一处庄园也有同样的图案，几年前贫道路过那里曾看到过，不过当时有要事在身也没细究。”&lt;end&gt;
+&lt;Playername&gt;：“当真如此，真是太感谢真人了。”&lt;end&gt;
+&lt;npc=3552&gt;：“无需客气，伏牛山听说现在山贼横行，若是你要前往那里寻找线索，可要小心一些。另外，依贫道之见，你这张图还是莫要在人前拿出为好，以免招来祸端。”&lt;end&gt;
+&lt;Playername&gt;：“多谢真人指点，告辞！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向武当一叶真人求教</Value>
+              </txt>
+              <txt>
+                <Value>向武当一叶真人求教</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>提升等级到64级</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>64</Value>
+              </number>
+              <txt>
+                <Value>提升等级到64级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到64级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>动身前往伏牛山的那处庄园</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>1847</Value>
+              </number>
+              <number>
+                <Value>3851</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>前往伏牛山庄园</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=975&gt;：“老不死的，还敢反抗！哎呀，他妈的这是什么玩意！”&lt;end&gt;
+&lt;npc=978&gt;：“叫你出言不逊，哼！想要老夫的庄园，先要看看你们有没有这个实力。”&lt;end&gt;
+&lt;Playername&gt;：“什么人在此横行？”&lt;end&gt;
+&lt;npc=975&gt;：“识相的就快点给老子滚！小心等下打得你尿裤子！”&lt;end&gt;
+&lt;Playername&gt;：“我倒是要看看到底谁会尿裤子！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>驱逐牛栏寨先锋</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>119000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>975</Value>
+              </fightnpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=977&gt;：“老东西，看你没了那些烂木头怎么防范！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进去山庄内部相助山庄主人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>299000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>529</Value>
+              </number>
+              <number>
+                <Value>1604</Value>
+              </number>
+              <number>
+                <Value>3187</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>进入山庄内部</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“老人家你还好吧？”&lt;end&gt;
+&lt;npc=978&gt;：“老夫还好了，这些牛栏寨的恶贼想要谋取老夫的宅子，老夫怎么能让他们得逞？”&lt;end&gt;
+&lt;Playername&gt;：“老人家暂候一旁，看我收拾这帮恶贼。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>惩戒闯入老人屋中的快攻手</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>977</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=977&gt;：“&lt;if me.nSex==0&gt;大侠&lt;else&gt;女侠饶命，我们再也不敢了&lt;endif&gt;。”&lt;end&gt;
+&lt;Playername&gt;：“还不快滚！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>239000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>978</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“老人家受惊了，这些恶贼已经被我教训过了，应该不敢再胡来了。”&lt;end&gt;
+&lt;npc=978&gt;：“唉，想老夫当年也是勇武过人。没想到如今虎落平阳，被这么几个兔崽子欺负。”&lt;end&gt;
+&lt;Playername&gt;：“老人家可有什么难事需要晚辈帮忙的？”&lt;end&gt;
+&lt;npc=978&gt;：“老夫隐居在此久矣，和此地的牛栏寨互不干涉，倒也过了些年安生日子，多半也是因为老夫武艺了得。自从得知老夫染病不能动武之后，牛翠花这猴崽子就隔三岔五的派她手下的这些虾兵蟹将前来骚扰，想要谋取老夫的这处宅子。老夫倘使一日不断气，就一日不能容她在老夫的地盘上撒野。”&lt;end&gt;
+&lt;Playername&gt;：“原来是这样，这牛栏寨也太过分了，待晚辈前去教训一番给老人家出出气。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯</Value>
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>教训牛翠花和她的手下</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>951</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>952</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>538000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“都给我听着，要是谁敢再来李古纳斯老人的山庄胡闹，决不轻饶！”&lt;end&gt;
+&lt;npc=952&gt;：“不敢……不敢……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯老人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>978</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“老人家，我回来了！这帮人再也不敢来这里放肆了。”&lt;end&gt;
+&lt;npc=978&gt;：“很好！我这里轻易不会有外人来，你来这里想必是为了什么事情吧？”&lt;end&gt;
+&lt;Playername&gt;：“老人家当真是火眼金睛，我来这里的确是为了求证一件事情。不知道老人家是否认识这张图上的图案？”&lt;end&gt;
+&lt;npc=978&gt;：“待老夫仔细看上看一眼……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯</Value>
+              </txt>
+              <txt>
+                <Value>回去找李古纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000070</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{319,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

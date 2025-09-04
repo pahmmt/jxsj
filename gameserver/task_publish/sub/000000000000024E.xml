@@ -1,0 +1,395 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000024E" name="盐帮行" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4618&gt;：“这不是义军之中鼎鼎大名的&lt;playername&gt;么？怎么有时间到我这儿，我这儿刚从北边儿运来了上好的腊肉腊鱼，还有这些上等的小黄花儿鱼，一起用膳如何？” &lt;end&gt;
+&lt;playername&gt;：“宁帮主，不必忙活了。&lt;playername&gt;此次是有些重要的事情想前来和帮主商量。” &lt;end&gt;
+&lt;npc=4618&gt;：“这两年盐帮生意越做越好了，全靠各路朋友相帮，不是我吹牛啊，无论是黑道白道，绿林好汉还是朝中大员，只要是我们盐帮一声号令，下面能聚齐数百上千个兄弟死心塌地给盐帮做事。” &lt;end&gt;
+&lt;npc=4618&gt;：“不论是做事还是运盐，我们讲究的是啥子？就是个义字嘛……哦，对了你看我又犯起了唠叨病了。话说少侠此次前来到底是为了什么事？” &lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4618</Value>
+              </dialognpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我大宋休养生息几十年，时下又值北方金国与蒙古散部交战频繁，朝中上下一致认为现在是北伐金国收复故土的好时机，盐帮与黑白两道交好，生意范围上至金国下至南宋鼓浪屿都有分支机构，朝廷希望以盐帮做为一个情报聚集和散布的枢纽。” &lt;end&gt;
+&lt;npc=4618&gt;：“这……此事事关重大，我一个人也做不了主，要知道这需要盐帮旗下几个分部的同意，而且是光复我大宋河山的大事……此事我尚需要时间考虑考虑。”&lt;end&gt;
+&lt;npc=4618&gt;：“不如趁着这段时间&lt;playername&gt;帮我点小忙，由于天气原因，我帮在鼓浪屿港口晾晒的食盐要提前收回，你且帮我将这些盐收回来，顺便赶走那些绿林混混吧。” &lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;一定尽力办好。” &lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与盐帮首领宁志飙对话</Value>
+              </txt>
+              <txt>
+                <Value>与盐帮首领宁志飙对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败捣乱的绿林混混还盐帮一个安宁</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4619</Value>
+              </fightnpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将绿林混混们夺走的食盐收回</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>90000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4620</Value>
+              </dialognpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{一担食盐,20,1,833,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经采集了%d/8担食盐</Value>
+              </txt>
+              <txt>
+                <Value>夺回绿林混混看守的食盐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1731,3263
+1735,3265
+1722,3270
+1720,3275
+1706,3302
+1709,3305
+1773,3318
+1772,3322</Value>
+              </string>
+              <string>
+                <Value>25</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将夺回的东西交给宁志飙吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4618</Value>
+              </dialognpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“宁帮主，我已经将晒盐场的绿林混混赶跑了，那些混混果然贪得无厌，身上还藏了不少食盐。这些盐已经从场中收回了，请帮主妥善放置吧。”&lt;end&gt;
+&lt;npc=4618&gt;：“传说义军是为百姓谋福的情义之师，我今天算是见识了，这么点小事&lt;playername&gt;也愿意亲历亲为去帮忙。宁某实在佩服。”&lt;end&gt;
+&lt;playername&gt;：“宁帮主客气了。” &lt;end&gt;
+&lt;npc=4618&gt;：“经过一番思量，我又召集了盐帮几个副帮主。我们都一致决定协助朝廷在北伐金国之时建立情报网，至于具体的事宜还有劳朝中作出详细安排了。”&lt;end&gt;
+&lt;playername&gt;：“如此甚好，有了盐帮的情报网作为情报支持，我军北伐胜算又多一分。时间不早了&lt;playername&gt;不做打扰。宁帮主，你我后会有期。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与宁志飙对话</Value>
+              </txt>
+              <txt>
+                <Value>与宁志飙对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{833,}</Value>
+              </taskitem>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

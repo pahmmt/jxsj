@@ -1,0 +1,378 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000078" name="剿灭马贼" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=838&gt;：“我想起来了，李元哲前一段时间曾经来过这里，我记得当时梁项林说他是自己的义兄。两个人的关系刚开始的时候还不错，但是后来却越来越坏。梁项林怪李元哲不把自己当兄弟，可能是李元哲藏着什么秘密或者是东西不愿意给梁项林。”&lt;end&gt;
+&lt;playername&gt;：“那后来呢？”&lt;end&gt;
+&lt;npc=838&gt;：“后来啊……后来好象是梁项林把李元哲软禁起来了。软禁的地方就在大营西面的一处庄园，听说那里的看守都很厉害，你要多加小心。”&lt;end&gt;
+&lt;playername&gt;：“好了，我知道了，多谢你了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>提升等级到63级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到63级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往居延泽营救李元哲</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>840</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>护送李元哲离开这里</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>179000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>969</Value>
+              </dialognpc>
+              <number>
+                <Value>1731</Value>
+              </number>
+              <number>
+                <Value>3462</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“李元哲是么？我们快点离开这里吧！”&lt;end&gt;
+&lt;npc=969&gt;：“你是谁？我并不认识你，你要我跟你去哪里？”&lt;end&gt;
+&lt;playername&gt;：“放心好了，我不会害你的，我只是有几个问题想要问你，若是你不愿意回答，我也不会勉强。现在先别说那么多，先离开这里再说吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>970</Value>
+              </fightnpc>
+              <number>
+                <Value>65</Value>
+              </number>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1603</Value>
+              </number>
+              <number>
+                <Value>3408</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>1727,3467
+1722,3473
+1717,3479
+1713,3484
+1708,3489
+1704,3493
+1701,3498
+1697,3504
+1693,3509
+1685,3512
+1677,3513
+1668,3513
+1662,3508
+1657,3500
+1654,3494
+1651,3485
+1647,3478
+1641,3467
+1634,3464
+1629,3462
+1625,3454
+1619,3448
+1619,3445
+1606,3440
+1602,3432
+1600,3423
+1601,3414
+1603,3408</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.3</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=972&gt;：“元哲哥哥，你逃出来了？我在这里守了好久了，一直找不到机会救你出来！现在你能逃出来，真是太好了！”&lt;end&gt;
+&lt;npc=969&gt;：“辛苦你了，小正！是这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;救我出来的。我不能在此地久留，关于我逃离唐门的事情，就由你告诉这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;吧。”&lt;end&gt;
+&lt;playername&gt;：“等等！”&lt;end&gt;
+&lt;npc=969&gt;：“还有什么事情？”&lt;end&gt;
+&lt;playername&gt;：“小荷让我告诉你她很想你！”&lt;end&gt;
+&lt;npc=969&gt;：“小荷……谢谢你……我知道了……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找郭正询问李元哲逃离唐门的内情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>299000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>972</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=972&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;救出了元哲哥哥，就是我的恩人。元哲哥哥要我告诉你什么，我就告诉你什么。”&lt;end&gt;
+&lt;playername&gt;：“那你先告诉我李元哲为什么会离开唐门吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>询问郭正</Value>
+              </txt>
+              <txt>
+                <Value>询问郭正</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000079</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,545 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001A0" name="长歌往事" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1829&gt;：“这位是&lt;playername&gt;吧，我听江湖上的朋友都提起过你的名字。真是英雄出少年。”&lt;end&gt;
+&lt;playername&gt;：“辛老先生一代词曲大家，今日得以一见，是我的荣幸。”&lt;end&gt;
+&lt;npc=1829&gt;：“呵呵，你也是来送朱晦庵入京任职的吗？”&lt;end&gt;
+&lt;playername&gt;：“正是。没料到先生也在此处，真是此行不虚了。”&lt;end&gt;
+&lt;npc=1829&gt;：“我长歌门得以为帝君授课，士人们的理想终于能上达天庭，是普天下仕子的心愿哪。”&lt;end&gt;
+&lt;playername&gt;：“长歌门中真是人才荟萃，众星云集。我倒是很好奇，为何长歌门居然是个由名士组成的团体，却与江湖又有千丝万缕的联系？”&lt;end&gt;
+&lt;npc=1829&gt;：“呵呵，这也并非难事。在我长歌门中藏有三卷前人所留下的手抄本，其中详细记述了长歌门的来历。你有兴趣，可以去我门中寻来一阅。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1639</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>手卷拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{长歌往事手卷一,20,1,268,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了长歌往事手卷一</Value>
+              </txt>
+              <txt>
+                <Value>获得长歌往事手卷一</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1640</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>手卷拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{长歌往事手卷二,20,1,269,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了长歌往事手卷二</Value>
+              </txt>
+              <txt>
+                <Value>获得长歌往事手卷二</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1641</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>手卷拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{长歌往事手卷三,20,1,270,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了长歌往事手卷三</Value>
+              </txt>
+              <txt>
+                <Value>获得长歌往事手卷三</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将长歌门手卷交给辛弃疾老前辈</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1829</Value>
+              </dialognpc>
+              <number>
+                <Value>120</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“老前辈，手稿我已找到，却无法阅读，其中空无一字呀。”&lt;end&gt;
+&lt;npc=1829&gt;：“呵呵，用这特殊的药水刷在纸页上，便能见到字迹了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{特制药水,20,1,271,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>向辛弃疾请教如何阅读</Value>
+              </txt>
+              <txt>
+                <Value>向辛弃疾请教如何阅读</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>必须用特制的药水刷在纸页上才能见到其中的字迹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,271,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>120</Value>
+              </number>
+              <number>
+                <Value>1758</Value>
+              </number>
+              <number>
+                <Value>3767</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我终于见到了书页上记录的文字，原来长歌门的来历是如此这般</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1829</Value>
+              </dialognpc>
+              <number>
+                <Value>120</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“原来长歌门是由一位名唤柴嵩的前辈所建。原本是一个亦文亦侠的组织。后来由于名望卓著，名士们纷纷加入，渐渐有了今日的规模。不过门中仕子都严守若入朝为官，绝不结党营私的门规，彼此之前交游都出自自愿。门中组织更是松散，入门出门都不似江湖门派那样严格。”&lt;end&gt;
+&lt;npc=1829&gt;：“是的。我南宋自建立以来，与北方金人誓不两立。书生仗剑，保家卫国者，多过历朝历代。是以长歌门中人，也有些会行走江湖，但我们并不似那些帮派，自给自足，以自己的利益为先。”&lt;end&gt;
+&lt;playername&gt;：“学生明白了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>我终于见到了书页上记录的文字，原来长歌门的来历是如此这般</Value>
+              </txt>
+              <txt>
+                <Value>我终于见到了书页上记录的文字，原来长歌门的来历是如此这般</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{268,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{269,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{270,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

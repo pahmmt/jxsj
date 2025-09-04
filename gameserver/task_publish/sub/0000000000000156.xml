@@ -1,0 +1,131 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000156" name="机关兽骨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1435&gt;：“&lt;if me.nSex==0&gt;兄台&lt;else&gt;侠女&lt;endif&gt;，咱影社的战场中，有好些机关兽。是我之前的一位工匠所制。在下早就想弄清楚如何制作出机关兽来，奈何对这机关兽的四肢如何能灵活行动始终琢磨不透，你能否替我弄些兽骨来研究研究？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=1435&gt;：“辛苦你了，这下我又可以继续我的研究了。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>55</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <taskitem>
+                <Value>{243,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将取得的机关兽骨交给死心眼的工匠</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1435</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1435&gt;：“机关兽骨取来了吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{机关兽骨,20,1,243,1,0,10}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

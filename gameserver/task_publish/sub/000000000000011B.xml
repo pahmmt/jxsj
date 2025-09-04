@@ -1,0 +1,185 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000011B" name="先下手为强" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1041&gt;：“道一天教这帮恶贼将老子骗来此地，说是有这般那般的好处，没想到是要将老子活生生的饿死给他们的神作贡品。好在老子运气好被安排在最后一个，趁此机会挖了条通道出去。只是这口气咽不下去，若是有人替老子铲除这帮天杀的邪教徒，老子就将死了的那些人留下的宝贝全部相赠。”&lt;end&gt;
+&lt;npc=1097&gt;：“你倒是大方的紧。”&lt;end&gt;
+&lt;npc=1041&gt;：“你别说风凉话，有本事别用老子挖好的地道逃生啊！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2164</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2162</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2163</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将邪教弟子已经被惩治过的消息带给三胖子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1041</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你可以放心离开这里了，我已经帮你好好教训了一番。”&lt;end&gt;
+&lt;npc=1041&gt;：“很好，这是给你的。”&lt;end&gt;
+&lt;npc=1097&gt;：“兄弟后会有期啊！”&lt;end&gt;
+&lt;npc=1041&gt;：“奶奶的，你个乌鸦嘴，老子可不要再在这里看见你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找三胖子</Value>
+              </txt>
+              <txt>
+                <Value>回去找三胖子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

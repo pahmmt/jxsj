@@ -1,0 +1,678 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000147" name="赶走那些强盗" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1204&gt;：“呜呜呜……”&lt;end&gt;
+&lt;playername&gt;：“这位大嫂，你怎么一个人在这里哭，发生什么事情了？”&lt;end&gt;
+&lt;npc=1204&gt;：“我家被人占了，我丈夫还被人逼着使唤，官差不管，我一个人无依无靠的还怎么活啊……呜呜……”&lt;end&gt;
+&lt;playername&gt;：“还有这样的事情，你向我细说一下，我看能不能帮上你什么忙。”&lt;end&gt;
+&lt;npc=1204&gt;：“我丈夫人称全叔，是一个渔夫，我们夫妇俩在那边的渡口开了一家茶铺子，平日里卖点茶水和食物给过路的客人，日子也算过的去。前几天来了一伙强人，不仅占了我们的铺子还逼使我丈夫给他们打渔、煮食。我丈夫怕我受欺负，叫我偷偷跑了，自己却留了下来。我去报官，可是官差说太远了不愿意来。我无依无靠，只能在这里哭……”&lt;end&gt;
+&lt;playername&gt;：“太没有天理了，你先别哭，既然官差不管，我来替你打抱不平。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1205</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“请问你是不是全叔？”&lt;end&gt;
+&lt;npc=1205&gt;：“是我啊，你是谁？怎么会知道我的名字？”&lt;end&gt;
+&lt;playername&gt;：“我从祥嫂那里知道了你们的遭遇，来帮助你们。你想要我怎么样帮你的忙，将他们赶走？还是？”&lt;end&gt;
+&lt;npc=1205&gt;：“你见过我娘子了？她还好吗？唉……其实这几天这些人对我也不算是太坏，他们可能是要找地方养病，我估计过几天差不多就该走了。但是他们的手下却蛮横的很，听说是叫什么杀魂镖，戮心弩，你替我教训一下他们吧。还有我在坛子附近藏了一袋银子，我娘子把她的首饰藏在了我家的煤筐里，你帮我拿回来吧，放那里我总是觉得不安全。”&lt;end&gt;
+&lt;playername&gt;：“好！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>在渡口找到全叔</Value>
+              </txt>
+              <txt>
+                <Value>在渡口找到全叔</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>教训那些强人并拿回全叔家的东西</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>941</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>943</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1603</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>拿起钱袋</Value>
+              </txt>
+              <txt>
+                <Value>得到钱袋</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{钱袋,20,1,301,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到%d/1个钱袋</Value>
+              </txt>
+              <txt>
+                <Value>在全叔的铺子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1590,3387</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1605</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>寻找首饰</Value>
+              </txt>
+              <txt>
+                <Value>得到祥嫂的首饰</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{首饰,20,1,303,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>找回%d/3件首饰</Value>
+              </txt>
+              <txt>
+                <Value>在煤筐里</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1600,3349
+1591,3373
+1607,3423
+1619,3414
+1630,3426</Value>
+              </string>
+              <string>
+                <Value>20</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将东西带给渡口的全叔</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1205</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这是你家的东西，快收好。”&lt;end&gt;
+&lt;npc=1205&gt;：“谢谢，真是太谢谢了。我想过几天他们就会走了。这是我家的账簿，请你交给我娘子，家里的大小事情都是她一手打理的，她说只要账簿在手就会踏实很多。请你告诉她，过几天我去接她。”&lt;end&gt;
+&lt;playername&gt;：“好的，你一个人在这里要小心，别惹恼他们，我先告辞了。”&lt;end&gt;
+&lt;npc=1205&gt;：“等一下，我可以再请你带一样东西去吗？我娘子去年生日的时候，我送她一只小白兔，我娘子疼爱的不得了，叫它小白。前几天这些人来的时候，我怕他们会吃掉我娘子的小白，就把它偷偷藏在那边的树林里，你可以将她带给我娘子吗？有它陪我娘子，她就不会感到害怕和孤单了。”&lt;end&gt;
+&lt;playername&gt;：“好吧，我会把小白带过去的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{账簿,20,1,302,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>回渡口找全叔</Value>
+              </txt>
+              <txt>
+                <Value>回渡口找全叔</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到祥嫂的爱宠小白</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{301,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{303,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1206</Value>
+              </dialognpc>
+              <number>
+                <Value>1636</Value>
+              </number>
+              <number>
+                <Value>3403</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小白！这就是小白了吗？小白，跟我走吧！哎呀！这兔子还咬人哪？”&lt;end&gt;
+&lt;npc=1206&gt;：(呲着牙冲着你……)&lt;end&gt;
+&lt;playername&gt;：“乖小白，我带你去见祥嫂，你要乖啊！”&lt;end&gt;
+&lt;npc=1206&gt;：(听到祥嫂两个字，耳朵唰得竖了起来，又慢慢放了下来，变得非常温驯……)&lt;end&gt;
+&lt;playername&gt;：“好吧，我们出发吧！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1207</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1710</Value>
+              </number>
+              <number>
+                <Value>3487</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value>1636,3403
+1640,3400
+1643,3398
+1648,3396
+1653,3395
+1658,3394
+1662,3397
+1666,3401
+1668,3405
+1669,3441
+1670,3419
+1671,3426
+1671,3433
+1673,3439
+1676,3447
+1678,3455
+1680,3462
+1681,3470
+1683,3478
+1685,3484
+1687,3488
+1691,3492
+1694,3491
+1697,3489
+1701,3486
+1705,3488
+1707,3489
+1710,3487</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1204&gt;：“小白，这不是我的小白吗？小白！”&lt;end&gt;
+&lt;npc=1206&gt;：(冲到祥嫂身边，歪着脑袋看着你……)&lt;end&gt;
+&lt;playername&gt;：“我见到了全叔，他让我带小白和账簿给你。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>将账簿交给祥嫂</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1204</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1204&gt;：“这果然是我家的账簿，辛苦你了，我丈夫怎么不跟你一起来呢？”&lt;end&gt;
+&lt;playername&gt;：“他说过几天这些人就会走了，到时候他来接你，让小白陪你作伴。”&lt;end&gt;
+&lt;npc=1204&gt;：“太好了，谢谢你了！真是太感谢了！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将账簿交给祥嫂</Value>
+              </txt>
+              <txt>
+                <Value>将账簿交给祥嫂</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{302,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

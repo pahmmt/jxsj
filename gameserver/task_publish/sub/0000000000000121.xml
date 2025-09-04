@@ -1,0 +1,377 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000121" name="解除劫运仪式" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1088&gt;：“&lt;playername&gt;，你相信这个世界上有因果吗？”&lt;end&gt;
+&lt;Playername&gt;：“仁者见仁，智者见智！你说有便有，你说无便无。”&lt;end&gt;
+&lt;npc=1088&gt;：“是这样吗？看不出你说话还蛮有深意！几年前我曾和完颜襄一同捣毁过一个淫窟，救出了一名叫做图雅的女子和一名刚刚满月的男婴，我给他取名叫阿布。并将他们安顿在了一处叫做大日罗寨的蛮人山寨里，那里的寨主和我也颇有交情。隔了这么多年，我突然很想知道一些他们的事，你可以帮我这个忙吗？”&lt;end&gt;
+&lt;Playername&gt;：“古教主但讲无妨！”&lt;end&gt;
+&lt;npc=1088&gt;：“那好，我想请你前往大日山寨看看图雅和阿布。这几日我总是梦到阿布在哭，这并不是一个好兆头。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>651</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“这位可是图雅大嫂？”&lt;end&gt;
+&lt;npc=651&gt;：“正是，你是？”&lt;end&gt;
+&lt;Playername&gt;：“是这样，古嫣然派我来看看大嫂和阿布的近况如何，怎么没有看到阿布？”&lt;end&gt;
+&lt;npc=651&gt;：“这……呜呜……”&lt;end&gt;
+&lt;Playername&gt;：“你别哭啊，阿布怎么了？”&lt;end&gt;
+&lt;npc=651&gt;：“前些日子军师路过我家，看到阿布后说他天资聪颖，硬是带了回去给他做徒弟。我请寨主说情找回阿布，可是他却说军师是当世奇人，阿布成为他的弟子是前世修来的福气。但是依我看，这军师一脸的邪气，所作所为多与常人有异。且男女混居，毫不避嫌。那名叫做妖妖的女弟子更是将寨主迷得七荤八素，我哪里敢让阿布随他们一起。”&lt;end&gt;
+&lt;Playername&gt;：“那后来呢？”&lt;end&gt;
+&lt;npc=651&gt;：“我曾数次去军师居住的上仙庄寻找阿布，却被他们赶了出来。我这几日日盼夜盼就是期盼古姑娘能和完颜公子一起出现，帮我将阿布寻回……呜呜……”&lt;end&gt;
+&lt;Playername&gt;：“你先别哭，待我前去那里一探。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到图雅和阿布</Value>
+              </txt>
+              <txt>
+                <Value>找到图雅和阿布</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往上仙庄寻找阿布的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1747</Value>
+              </number>
+              <number>
+                <Value>3820</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>前往寻找小阿布的下落</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=629&gt;：“呜呜……我要回家……我要回家……”&lt;end&gt;
+&lt;npc=625&gt;：“嘘……我的祖爷爷，你可别哭了，要是让军师听到又要生气了……”&lt;end&gt;
+&lt;Playername&gt;：(看来阿布就在这里，我先设法将他救出再说。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将阿布带离这里</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>662</Value>
+              </dialognpc>
+              <number>
+                <Value>1703</Value>
+              </number>
+              <number>
+                <Value>3759</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“阿布乖！&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;带你回去找图雅妈妈好不好？”&lt;end&gt;
+&lt;npc=629&gt;：“真的？你不会骗我吧？我们现在就走吧！”&lt;end&gt;
+&lt;npc=625&gt;：“什么人敢擅自闯进军事的宅邸？”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>629</Value>
+              </fightnpc>
+              <number>
+                <Value>85</Value>
+              </number>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1857</Value>
+              </number>
+              <number>
+                <Value>3606</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1703,3767
+1701,3782
+1715,3794
+1723,3803
+1730,3796
+1733,3801
+1736,3805
+1753,3818
+1761,3794
+1762,3753
+1778,3741
+1791,3732
+1796,3725
+1807,3717
+1827,3701
+1844,3698
+1855,3670
+1869,3644
+1860,3630
+1850,3616
+1857,3606</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=629&gt;：“妈妈，阿布回来了！”&lt;end&gt;
+&lt;npc=651&gt;：“赶快躲进房间里，我和这位&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;还有话说！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>看看图雅有什么话要对我说</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>651</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“图雅大嫂还有什么话要和我说？”&lt;end&gt;
+&lt;npc=651&gt;：“嘘，此事不可声张。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和图雅对话</Value>
+              </txt>
+              <txt>
+                <Value>和图雅对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

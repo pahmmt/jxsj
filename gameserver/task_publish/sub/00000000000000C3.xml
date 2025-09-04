@@ -1,0 +1,599 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C3" name="大雪之冢" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=146&gt;：“从前西昆仑的惨祸，后辈们都应该时刻铭记，不再犯那些愚蠢的错误。”</Pop>
+      <Start>&lt;npc=146&gt;：“十年前，昆仑派上一代中最出色的门人璇玑子、青莲子、玉衡子互相之间勾心斗角。虽然璇玑子被选为掌门，青莲子、玉衡子却也拥有足够的人望和支持。长时间的割据与对抗，最终愤怒像火药桶般不可遏止的爆发。那是个大雪的夜晚，见性峰顶火光如龙，人影闪动，惨嚎声不绝于耳。”&lt;end&gt;
+&lt;npc=146&gt;：“杀红了眼的昆仑弟子们没有发觉，一场罕见的雪崩即将来临。不知是谁临死前那一声凄厉的呼呵终于引发了雪崩，昆仑一代无数的精英子弟被永远埋葬在雪山脚下。多年后大雪融化，人们居然见到了已被冻做冰雕的掌门人璇玑子与他的两个师弟。”&lt;end&gt;
+&lt;playername&gt;：“昆仑，原来曾经历过这样一场惨祸。”&lt;end&gt;
+&lt;npc=146&gt;：“新春快到了，我希望率众弟子去大雪山上祭奠前辈的亡灵，也让弟子们知道，再苦的时候也不要内乱，这样的悲剧再也不能重演了。我需要一个人去打前站，先行到坟墓中查看一番，不知你是否愿替我走一趟？”&lt;end&gt;
+&lt;playername&gt;：“义不容辞。”&lt;end&gt;
+&lt;npc=146&gt;：“大雪山上的先灵们不愿外人打扰，因此昆仑弟子在坟冢前修建了一座墓园，用三道大锁锁住入口。要开启大门，需得先行找到三位守墓人，获得开启大门的钥匙。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>373</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“齐四先生，谢雨田先生让我来取墓园的钥匙。昆仑弟子每年的祭奠大礼要开始了。”&lt;end&gt;
+&lt;npc=373&gt;：“哎，这山中苦寒，前几日实在没有肉食，偷偷从雪猿洞里偷了些它们捕获的野兽鲜肉。结果被这群家伙寻仇过来了，不要多说废话，先替我解决了这些半人半猴的东西。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{黄铜钥匙甲,20,1,25,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>先要去找第一个守墓人齐四</Value>
+              </txt>
+              <txt>
+                <Value>先要去找第一个守墓人齐四</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮助齐四打败雪猿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1453</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>得到了第一把钥匙，接下去要找第二个守墓人慕容老八</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>374</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“慕容先生，谢雨田先生让我来取墓园的钥匙。昆仑弟子每年的祭奠大礼要开始了。”&lt;end&gt;
+&lt;npc=374&gt;：“说来惭愧……老朽的钥匙被那带刀人给窃走了，自己却老得腿脚都不便走动。希望你能助老朽夺回钥匙。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=374&gt;：“带刀人凶狠了得，少侠要小心。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>去找第二个守墓人慕容老八</Value>
+              </txt>
+              <txt>
+                <Value>去找第二个守墓人慕容老八</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>慕容老八的钥匙被一伙带刀人抢走了，要先帮他抢回来再说</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1452</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <taskitem>
+                <Value>{26,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.25</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1452&gt;：“好厉害，钥匙你拿去吧，我们兄弟不奉陪了。”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>375</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“百策先生，谢雨田先生让我来取墓园的钥匙。昆仑弟子每年的祭奠大礼要开始了。”&lt;end&gt;
+&lt;npc=375&gt;：“哎……常年在这雪山上困守，连老婆都顾不上了。前几日她上山看我，原本还好好的，今天出去猎了几只山鸡回来，本想两口子好好吃顿饭，没成想，她却拿了钥匙跑掉了啊。这是在与我赌气呢。”&lt;end&gt;
+&lt;playername&gt;：“先生不必着急，我这就去将嫂子寻回来。”&lt;end&gt;
+&lt;npc=375&gt;：“那真是有劳小友了。我老婆叫叶佩佩，是个美女，恩……应该说，美老太婆。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=375&gt;：“那老太婆就在屋子后面。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去找第三个守墓人薛百策</Value>
+              </txt>
+              <txt>
+                <Value>去找第三个守墓人薛百策</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>要找到薛百策的老婆叶佩佩才能得到钥匙</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>376</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,27,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>这个老不要脸的，还派人来羞辱我。哎，钥匙你拿走，人我不会随你回去的！</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>372</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=146&gt;：“能取到三把钥匙是相当不易之事，守墓人都是难与之人。辛苦你了。不过，守墓人都是昆仑上一辈的弟子，他们的心里，也很苦啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{黄铜钥匙甲,20,1,25,1,0,1}
+{黄铜钥匙乙,20,1,26,1,0,1}
+{黄铜钥匙丙,20,1,27,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将钥匙交给大雪之冢的谢雨田</Value>
+              </txt>
+              <txt>
+                <Value>将钥匙交给大雪之冢的谢雨田</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{25,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{26,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{27,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

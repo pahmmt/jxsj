@@ -1,0 +1,212 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000081" name="一点仇恨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“有什么重要的事情还是离开这里再说吧。”&lt;end&gt;
+&lt;npc=873&gt;：“此事较之离开这里更加重要，想必萧大哥已经告诉你我二人是尾随五毒教和一伙金国人而来到此地的吧？当时我暗中从金国人那里得到了一封密令，在带回分舵的途中被五毒教弟子发现劫来此处。据我推测，这伙金国人有可能就是夺走游龙珏的人，而五毒教想必也是因为此事一直尾随其后，准备相机下手。想要证实此事，需尽快寻回密令。”&lt;end&gt;
+&lt;Playername&gt;：“那此密令现在落入谁手？”&lt;end&gt;
+&lt;npc=873&gt;：“我被劫来此地之后，密令也被随之搜去。据说是交给了一位新来的旗主钱秉诚的手里，此人此刻应当就在此地。你可暗中寻到此人将密令取回，我仍旧留在这里，装作无人来过。他们希望从我这里得知情报，一时间也不会将我怎样。密令上写的都是金国文字，否则也不至于如此费事。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=873&gt;：“接下来的事情也许会更难呢！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>541</Value>
+              </number>
+              <number>
+                <Value>1623</Value>
+              </number>
+              <number>
+                <Value>3213</Value>
+              </number>
+              <fightnpc>
+                <Value>876</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>948</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=891&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;饶命那，我可是善良百姓！”&lt;end&gt;
+&lt;Playername&gt;：“一派胡言，你等来这里做什么？韩忠取到的密令可在你手里，说出来免你一死。”&lt;end&gt;
+&lt;npc=891&gt;：“我们也是奉了帮主之命追踪一伙金国人，至于韩忠取到的密令已经被帮主派来的特使索取了。”&lt;end&gt;
+&lt;Playername&gt;：“你们追踪这帮金国人做什么？”&lt;end&gt;
+&lt;npc=891&gt;：“说是和游龙珏有关，其他的我也不知道了。”&lt;end&gt;
+&lt;Playername&gt;：“此事莫要声张，否则取你狗命！”&lt;end&gt;
+&lt;npc=891&gt;：“我哪里敢，要是被特使知道我也难逃责罚。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>制服钱秉诚取回密令</Value>
+              </txt>
+              <txt>
+                <Value>制服钱秉诚取回密令</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找韩忠商量对策</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>372000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>873</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“密令已经被五毒教特使索取去了，这可如何是好？”&lt;end&gt;
+&lt;npc=873&gt;：“这样一来就有些难办了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找韩忠商量对策</Value>
+              </txt>
+              <txt>
+                <Value>找韩忠商量对策</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000082</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

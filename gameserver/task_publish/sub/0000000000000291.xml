@@ -1,0 +1,284 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000291" name="结伴上路" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“还请太爷指点和同伴相处的诀窍！”&lt;end&gt;
+&lt;npc=3571&gt;：“在&lt;color=yellow&gt;人物头像右下方&lt;color&gt;有一按钮，点击可以弹出同伴界面。在&lt;color=yellow&gt;“同伴界面”&lt;color&gt;中选中同伴，点击&lt;color=yellow&gt;[出手相助]&lt;color&gt;按钮同伴就会出现，同时按钮变为&lt;color=yellow&gt;[袖手旁观]&lt;color&gt;，点击此按钮同伴就会再次隐藏起来，按钮又变成&lt;color=yellow&gt;[出手相助]&lt;color&gt;。特别要注意&lt;color=yellow&gt;[解散]&lt;color&gt;按钮，点此按钮会抛弃你的同伴，一定要慎重才行。”&lt;end&gt;
+&lt;playername&gt;：“我看到同伴有&lt;color=yellow&gt;“亲密度”&lt;color&gt;这个属性，这有什么用？”&lt;end&gt;
+&lt;npc=3571&gt;：“亲密度&lt;color=yellow&gt;大于40&lt;color&gt;的同伴才可以被叫出来，亲密度可以通过&lt;color=yellow&gt;使用道具&lt;color&gt;获得，你可以在我这里用月影之石来兑换。&lt;end&gt;
+&lt;playername&gt;：“那我的同伴可以&lt;color=yellow&gt;升级&lt;color&gt;吗？”&lt;end&gt;
+&lt;npc=3571&gt;：“当然可以，同伴的积累经验满了以后，点击同伴界面中&lt;color=yellow&gt;[升级]&lt;color&gt;按钮就可以升级了。需要注意的是，同伴的经验值来自于与同伴等级&lt;color=yellow&gt;相差15级&lt;color&gt;的精英怪和首领怪，当然你也可以在我这里换取道具来增加同伴经验。如果你回答对我的问题，完成这个任务，我会奖励给你一个。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=3571&gt;：“来！这是答应给你的先拿着，稍后我再告诉你同伴的秘密所在！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AnsewerTheQuestion_A</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>同伴升级是一段艰辛的路程，在此之前你先要对升级的诀窍有所把握才行！</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“回答的很不错，那么把你的同伴&lt;color=yellow&gt;升级到2级&lt;color&gt;再来见我吧！&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>仔细再想想吧！</Value>
+              </txt>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <string>
+                <Value>41,42,43,44,45,46,47</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将同伴的等级提升到2级</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>提升同伴等级到2级</Value>
+              </txt>
+              <txt>
+                <Value>提升同伴等级到2级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在可以携同伴去见龙五太爷了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“看你二人神采飞扬的样子，想必没有辜负我的期望！想来也是时候告诉你同伴的秘密了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>携同伴去见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>携同伴去见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnStart</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000292</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

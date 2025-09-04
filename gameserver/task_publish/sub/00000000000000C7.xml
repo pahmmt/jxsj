@@ -1,0 +1,115 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C7" name="冰穴悲嚎" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“小妹妹，你为何哭得如此伤心？”&lt;end&gt;
+&lt;npc=388&gt;：“好心人，求求你，求求你救救我的未婚夫吧。”&lt;end&gt;
+&lt;playername&gt;：“你的未婚夫怎么了？”&lt;end&gt;
+&lt;npc=388&gt;：“我们原本在这雪洞中游玩，方铎为了替我去摘一朵珍贵的并蒂雪莲，掉入了冰窟中间。我，我自己不会水，无法下去救他，求求你，一定要救他啊。”&lt;end&gt;
+&lt;playername&gt;：“小妹妹你放心，我会救出他来的。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=1&gt;
+&lt;npc=388&gt;：“呜呜呜……好心人你按照任务面板上的自动寻路就可以到达出事地点，一定要救一救方铎啊！”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=1&gt;
+&lt;npc=388&gt;：“谢谢你，恩人！我和方铎这辈子都不会忘记您的救命之恩。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="1">388</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>382</Value>
+              </dialognpc>
+              <number>
+                <Value>1842</Value>
+              </number>
+              <number>
+                <Value>2919</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：你就是方铎吧，苏苏让我来救你！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>389</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>58</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1633</Value>
+              </number>
+              <number>
+                <Value>3356</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1801,2877
+1773,2888
+1759,2914
+1754,2958
+1732,2995
+1721,3023
+1688,3006
+1664,3003
+1661,3035
+1664,3055
+1663,3082
+1669,3108
+1682,3119
+1682,3139
+1675,3164
+1683,3182
+1667,3204
+1668,3249
+1652,3268
+1660,3288
+1646,3310</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,493 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000008" name="忠义之心" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4&gt;：“现在战事吃紧，这杆枪，到见血的时候了。打仗我不怕，倒是有一件事情，让我担心。我不久前收到知枢密院事赵汝愚大人的秘信，道韩侂胄大人将携带一封太上皇孝宗的秘诏前往襄阳大营。这诏书中道明，当今皇上光宗的皇后李氏擅权钻营，内外勾结，吓疯光宗，又下毒导致太上皇身染重病。”&lt;end&gt;
+&lt;playername&gt;：“竟有此事？”&lt;end&gt;
+&lt;npc=4&gt;：“千真万确。那李后为人狡黠，没有被人拿住证据，无法治罪。可若将来她真的弑君篡位，襄阳的八万龙捷军可以此诏入京平乱。当年我杨铁心学艺有成，回到临安却因无权无势，受尽了冷眼，幸而得到赵汝愚赵大人的收留。天王帮前辈之所以要反朝廷，就是因为朝廷昏聩！如今眼见大宋中兴，人民得治，难道要让它重新陷入劫难的深渊吗？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，你若早些说出这些话来，何至今日的局面。”&lt;end&gt;
+&lt;npc=4&gt;：“此事干系重大，我若不守口如瓶，一旦泄露出去，是会出大乱子的。现下虽然青螺岛危急，可李后的动作却不会停，情势所迫，我们必须先她一手。你即刻启程，将近日所见悉数告之义军白首领，看她如何定夺游龙珏一事。义军若不吝相援，杨某自是感激不尽。”&lt;end&gt;
+&lt;playername&gt;：“我明白了，此行必定不负所托。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>与杨铁心对话</Value>
+              </txt>
+              <txt>
+                <Value>与杨铁心对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先解决掉去神秘码头路上的宋军刀兵吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>27</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>突破宋军统领刘阔这最后一关，就能登上小舟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>28</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>速去与接应我的渔夫汇合，离开青螺岛</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>85</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11044</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=11044&gt;：“留君夜饮对潇湘，从此归舟客梦长。江面风大，客官衣衫单薄，可想好要去哪儿了么？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=11044&gt;：“留君夜饮对潇湘，从此归舟客梦长。江面风大，客官衣衫单薄，可想好要去哪儿了么？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>请青剪码头船夫载我一程</Value>
+              </txt>
+              <txt>
+                <Value>请青剪码头船夫载我一程</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task:_Specil_SelectCountry()</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到义军首领白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，我从青螺岛历练归来了！”&lt;end&gt;
+&lt;npc=3570&gt;：“好孩子，这段日子苦了你了，在外食宿可还趁心？可受了些许委屈？杨帮主早先曾修书于我，说你勤于练功，进益良多呢！”&lt;end&gt;
+&lt;playername&gt;：“回秋姨，此趟出行所获颇丰，奔劳委屈自不敢言。只是天王帮此次突遭变故，元气大伤，不知能否迈过这个坎儿……”&lt;end&gt;
+&lt;npc=3570&gt;：“天王帮遭袭一事我已知晓，你放心，此事我自会安排妥当。你一路车马困顿，先喝杯接风酒，把身上的倦乏都冲了去吧。”&lt;end&gt;
+&lt;playername&gt;：“数月不见，乡亲们都还好吗？”&lt;end&gt;
+&lt;npc=3570&gt;：“好呢，前阵子你不在，咱们这儿又多了两件喜事！其一是你军需官白大哥喜得一子，上月才过了添盆之喜；其二是你甜酒叔刚步入知天命之年，数日前在村里大摆寿宴呢。那时我悄悄留了个心，取巧为你备了两份贺礼，只待你回来把它们送过去，就说是你的心意罢。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“天王帮遭袭一事我已知晓，你放心，此事我自会安排妥当。你一路车马困顿，先喝杯接风酒，把身上的倦乏都冲了去吧。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{长命缕,20,1,945,1,0,1}
+{绍兴花雕,20,1,944,1,0,1}
+
+</Value>
+              </string>
+              <txt>
+                <Value>与秋姨叙旧</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨叙旧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002F1</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>91</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

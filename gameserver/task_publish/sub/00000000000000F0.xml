@@ -1,0 +1,97 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F0" name="钻天燕子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>雁巧云乃翠烟门轻功第一人，江湖人送外号钻天燕子。你见你轻身功夫不错，有意与你比试。就以这百花阵四大阵角处的旗杆为标志。看谁先将旗杆上的旗帜都取来。</Pop>
+      <Start>&lt;npc=512&gt;：“最近已经没有遇到过对手了呢。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=1&gt;
+&lt;npc=512&gt;：“你的功夫看来不错，有没有兴趣与我比试比试轻功。”&lt;end&gt;
+&lt;playername&gt;：“怎么比试法？”&lt;end&gt;
+&lt;npc=512&gt;：“就以这百花阵四大阵角处的旗杆为标志。看谁先将旗杆上的旗帜都取来。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize>&lt;npc=512&gt;：“呵呵，大家差距不大，你也很厉害。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="1">512</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,73,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,74,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,75,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,76,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>64000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

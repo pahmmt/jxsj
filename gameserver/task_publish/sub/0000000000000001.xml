@@ -1,0 +1,611 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000001" name="瑛姑归来" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=8&gt;：“咦，你就是季总管要收的徒弟？他嘱咐我在这儿等着你呢！”&lt;end&gt;</Pop>
+      <Start>&lt;playername&gt;:“船夫大哥，请问季管事身在何处？义军首领白秋琳让我来青螺岛跟着他历练一番。”&lt;end&gt;
+&lt;npc=8&gt;：“呵呵，原来你就是季总管要收的徒弟。可巧，在外云游多年的老帮主瑛姑今天就要回岛了。现在帮里几个管事都去码头旁的座舰上迎接她了，季管事特地嘱咐我载你过去呢！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>8</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;:“既是如此，那就太好了，烦劳您现在就送我过去吧。”&lt;end&gt;
+&lt;npc=8&gt;：“好叻，赶紧上船吧，别错过了拜见老帮主的时辰。”&lt;end&gt; </Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=8&gt;：“赶紧上船吧，别错过了拜见老帮主的时辰。”&lt;end&gt; </Value>
+              </txt>
+              <txt>
+                <Value>让结绳码头船夫载我一程</Value>
+              </txt>
+              <txt>
+                <Value>让结绳码头船夫载我一程</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Npc:GetClass("chuanfu"):ClimbBoat(8, me.nMapId);</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>登上了帮主的坐舰，看看季管事在哪里吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“&lt;playername&gt;给老帮主请安了，恭迎老帮主回岛。”&lt;end&gt;
+&lt;npc=1&gt;：“呵呵，好个乖巧的孩子，起来吧。我瞧瞧，这模样真俊啊。”&lt;end&gt;
+&lt;playername&gt;:“不知您身边这位是？”&lt;end&gt;
+&lt;npc=1&gt;：“来来来，老身替大家引见。这是老身此趟出行，在外认的义子杨铁心。铁心啊，见过各位叔伯长辈。”&lt;end&gt;
+&lt;npc=2&gt;：“铁心初来乍到，有许多不懂的地方，希望各位叔伯多加指点，在此拜谢了。”&lt;end&gt;
+&lt;npc=5&gt;：“大家都是一门兄弟，铁心不可太客气……帮主此次回岛，是长住还是？”&lt;end&gt;
+&lt;npc=1&gt;：“不走了！老身此次回来，不愿再过问江湖纷争，帮中的一应事务，都打算逐步地移交到铁心手中。不过，咱们天王帮前辈当年以武创帮，不如在这船上设擂，比武定出新任帮主。”&lt;end&gt;
+&lt;npc=302&gt;:“我看，此事是否缓缓。就这样打，来了不少人，恐怕铁心体力不支。”&lt;end&gt;
+&lt;npc=1&gt;：“恩，有道理。那便如此吧。&lt;playername&gt;你过来，刚才老身见你一面，知道你身负不俗武功。若你胜了，便歇上一柱香，由&lt;playername&gt;与铁心决一雌雄。”&lt;end&gt;
+&lt;npc=5&gt;：“那便如此吧。我们这些老家伙就不下去献丑了。天王帮新一代的高手有四人，分别是裴翼飞、秦公尺、黎越和刘墨。翼飞今日有事不在，&lt;playername&gt;可与秦公尺、黎越和刘墨三人较量，胜者再与铁心交手定胜负如何？”&lt;end&gt;
+&lt;npc=1&gt;：“好吧。”&lt;end&gt;
+&lt;npc=5&gt;：“&lt;playername&gt;，往里走些，他们在船舱深处等着你呢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5&gt;：“&lt;playername&gt;，往里走些，他们在船舱深处等着你呢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>先找到季管事在哪里</Value>
+              </txt>
+              <txt>
+                <Value>先找到季管事在哪里</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>挑战船舱二层的秦公尺、黎越和刘墨三大高手</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>9</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>11</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>挑战完三大高手后，前往船舱三层与杨铁心试手</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1610</Value>
+              </number>
+              <number>
+                <Value>3227</Value>
+              </number>
+              <fightnpc>
+                <Value>1406</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <dialognpc>
+                <Value>3</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3&gt;：“看来自古英雄出少年这句话一点都不假。”&lt;end&gt;
+&lt;playername&gt;:“承蒙杨大哥关照，才有了和杨兄切磋的机会。”&lt;end&gt;
+&lt;npc=3&gt;：“过谦了，愚兄方才只不过用了三成功力，&lt;Playername&gt;你实在出乎我的意料，下面我开始动真格的了。”&lt;end&gt;
+杨铁心嘴上说得客气，真动起手来也丝毫不留情面，说时迟，那时快，一个不留神，我眼前一黑…………&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>与船舱三层的杨铁心试手</Value>
+              </txt>
+              <txt>
+                <Value>与船舱三层的杨铁心试手</Value>
+              </txt>
+              <txt>
+                <Value>qingluodao_cang3</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:NewWorldWithState</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1661</Value>
+              </number>
+              <number>
+                <Value>3809</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetPlayerLife</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>杨铁心已成为实至名归的新一任天王帮帮主，回去向瑛姑复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1&gt;：“铁心的功夫老身是知道的。没有料到，&lt;Playername&gt;也有一手这么俊的功夫。”&lt;end&gt;
+&lt;npc=5&gt;：“铁心……不，帮主的枪法竟到了这等匪夷所思的地步，真是江湖后浪推前浪。”&lt;end&gt;
+&lt;npc=2&gt;：“是各位老前辈谦让铁心，将来许多帮务，少不了要劳烦各位。”&lt;end&gt;
+&lt;npc=1&gt;：“好了，此间事了，希望大家排除杂念，一心一意的帮助铁心，共同治理好天王帮。老身便去那湖心孤岛上静养了，这江湖的风雨，希望就此过去吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向瑛姑复命</Value>
+              </txt>
+              <txt>
+                <Value>向瑛姑复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000002</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetPlayerLife</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

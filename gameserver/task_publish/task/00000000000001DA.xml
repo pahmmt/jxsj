@@ -1,0 +1,101 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="00000000000001DA" name="真元考验" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>false</Share>
+    <TaskIconIndex>1</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>true</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="000000000000029C" name="真元考验" describe="天地万物相生相克，人体和大自然的奥秘你又知道几许？你在外经过了许多年的历练，现在是时候让你知晓一些更加奥妙的武学玄机了！&#xD;&#xA;&lt;stepdesc&gt;&lt;npcpos=龙五太爷,0,3571&gt;略显神秘的唤我过去，似乎有什么特别的事情要告诉我。&#xD;&#xA;&lt;stepdesc&gt;打开你的同伴界面，选则好准备转化为真元的同伴，点击转化为真元按钮，试着将一个符合条件的同伴转化为真元吧。&#xD;&#xA;&lt;stepdesc&gt;真元的升级是通过历练和修炼完成的，现在就去参加相关活动，让主真元增加经验。&#xD;&#xA;&lt;stepdesc&gt;真元的升级是通过历练和修炼完成的，现在就去阅读同伴经验书，使真元增加经验吧。（请保证背包中有一格或以上的空间）&#xD;&#xA;&lt;stepdesc&gt;满120级的真元可以炼化，炼化需要符合条件的主副真元，直接在真元界面中点击炼化进行修炼吧。&#xD;&#xA;&lt;stepdesc&gt;&lt;npcpos=龙五太爷,0,3571&gt;正在军中等待着我的好消息，现在就把我对真元的认知回报给他老人家吧。" refer="000000000000029C">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>3571</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="item",varValue={18,1,1,8,0,-1,},nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",szAddParam1=1,},{szType="item",varValue={18,1,541,6,0,-1,},nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",szAddParam1=1,},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>false</Value>
+          </bool>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>3571</Value>
+          </dialognpc>
+          <txt>
+            <Value>找到&lt;pos=龙五太爷,0,3571&gt;，领取任务奖励。</Value>
+          </txt>
+          <number>
+            <Value>2</Value>
+          </number>
+          <number>
+            <Value>100</Value>
+          </number>
+          <txt>
+            <Value>去新手村找到&lt;pos=龙五太爷,0,3571&gt;，可以接到任务【真元考验】。
+</Value>
+          </txt>
+          <number>
+            <Value>1</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>110</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskCond:IsZhenYuanOpen</Function>
+            <Parameter />
+          </Grid>
+        </Condition>
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>110</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskCond:IsZhenYuanOpen</Function>
+            <Parameter />
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

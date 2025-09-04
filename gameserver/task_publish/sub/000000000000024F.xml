@@ -1,0 +1,433 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000024F" name="聚贤大会" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=2606&gt;：“时下正值我朝北伐金国前期准备之际，我朝自开国以来便沿用了宋太祖制定的重文轻武之策。如今军中正缺少得力武将，文武双全的人才更是稀罕。” &lt;end&gt;
+&lt;playername&gt;：“这件事确实棘手，习武者炼成一套身法不是一朝一夕可为的事情，但伐金大计却没有更多的时间让我们准备了。” &lt;end&gt;
+
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2606</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2606&gt;：“朝廷正派人在临安、扬州、大理等地广撒英雄贴，邀请天下英雄共商武林大计。若有德才兼备者，希望可以招到军中效力。” &lt;end&gt;
+&lt;playername&gt;：“这个提议甚好，武林大会确实是个广纳天下英豪的办法，只是参赛的选手难免良莠不齐，不知该如何定制胜负规则呢？”&lt;end&gt;
+&lt;npc=2606&gt;：“这个都已经安排好了，比赛不在城中进行以免太过招摇引来金国细作的注意，比赛分为三关分别比的是武艺，定性和品德。朝廷决定派你作为代表，前去检验几位江湖高手的实力，胜负点到即可不可伤及性命。” &lt;end&gt;
+&lt;npc=2606&gt;：“薛家三虎、余氏双雄等数名江湖高手已经准备好了，你稍作准备便启程吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与武林盟主特使黄裳对话</Value>
+              </txt>
+              <txt>
+                <Value>与武林盟主特使黄裳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这便前去与薛氏三杰进行比试吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4621</Value>
+              </fightnpc>
+              <number>
+                <Value>137</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4622</Value>
+              </fightnpc>
+              <number>
+                <Value>137</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4623</Value>
+              </fightnpc>
+              <number>
+                <Value>137</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败了薛氏三杰接下来便是余氏双雄的挑战</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>130000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4624</Value>
+              </fightnpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>1821</Value>
+              </number>
+              <number>
+                <Value>3661</Value>
+              </number>
+              <fightnpc>
+                <Value>4625</Value>
+              </fightnpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <dialognpc>
+                <Value>4626</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4626&gt;：“哈哈，我余氏兄弟从来没输过给师父以外的任何人，就连天王帮主杨铁心也要敬我师父三分。今儿真是棋逢对手了，我们输的心服口服。”&lt;end&gt;
+&lt;npc=4626&gt;：“金狗确实可恨，我们两兄弟早就闲不住，想为大宋出一份力了。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;今日获胜实乃侥幸，两位兄弟人品武功皆是极佳，若想加入义军我们双手欢迎，待我回去向武林盟主特使禀明此事。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>击败余雷并与其对话</Value>
+              </txt>
+              <txt>
+                <Value>击败余雷并与其对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将比赛结果回禀武林盟主特使</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2606</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2606&gt;：“&lt;playername&gt;，听说你数战告捷，果然是深藏不露。”&lt;end&gt;
+&lt;playername&gt;：“特使过奖，几名对手与我实力相当，我两战下来也都是险胜，让人高兴的是薛家三兄弟和余氏双雄的武品甚好，行武出招之间都很规矩，人品都很不错，他们也都有加入义军的意思。”&lt;end&gt;
+&lt;npc=2606&gt;：“聚贤大会果然起到了积极的作用，我回头跟白首领详细探讨一下江湖中人加入军中的细节问题，你一定累了吧，快些回去休息整顿，以后还有更重要的任务要委派给你呢。” &lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与武林盟主特使黄裳对话</Value>
+              </txt>
+              <txt>
+                <Value>与武林盟主特使黄裳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

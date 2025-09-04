@@ -1,0 +1,314 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000017" name="遗恨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=72&gt;：“我柳某在燕子坞上八年，石帮主只来找过我一次。养兵千日，用在一朝。柳某再也没有脸替帮主办事了，请告知帮主，柳某将离开燕子坞，从此不再为人算一卦。”&lt;end&gt;
+&lt;playername&gt;：“柳先生，您何必……”&lt;end&gt;
+&lt;npc=72&gt;：“不必多言，我主意已定，就此去吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，柳神算连卜三卦，结果都是算不准。”&lt;end&gt;
+&lt;npc=30&gt;：“算不准？我丐帮三十年来卧薪尝胆，难道这份苦吃得还不够吗？”&lt;end&gt;
+&lt;playername&gt;：“帮主，其实我觉得，鬼神之说信则有，不信则无。”&lt;end&gt;
+&lt;npc=30&gt;：“你可知道柳鬼的身份？”&lt;end&gt;
+&lt;playername&gt;：“不知。”&lt;end&gt;
+&lt;npc=30&gt;：“他乃是当世第一大师麻衣神相安静渊的嫡传弟子！他说的话分量很重，对鼓舞士气大有裨益。”&lt;end&gt;
+&lt;playername&gt;：“可是柳神算已经走了。他说对不住帮主，从此归隐山林，不为世人卜一卦。”&lt;end&gt;
+&lt;npc=30&gt;：“哎，随他去吧。世外高人的想法，不是人人都能懂的。看来只能另作打算了。”&lt;end&gt;
+&lt;playername&gt;：“帮主，虽然我来丐帮的时间不长，可见你为了丐帮如此操劳，有时还不被人所理解，这心里真不是滋味。你这么拼，究竟是为了什么呢？”&lt;end&gt;
+&lt;npc=30&gt;：“&lt;playername&gt;，当年我做为丐帮奔赴沙场的数千子弟之一，亲眼目睹自己的弟兄死在金国人的刀枪下。石某最要好的朋友，在那一仗中死得一干二净，去的时候浩浩荡荡，回来时却只剩下不足十人！”&lt;end&gt;
+&lt;npc=30&gt;：“经历了丐帮的辉煌，又经历了这个帮会的沉沦，要说急，谁的心里比我更急？可是急又有什么用呢？这样破败的家底，拿什么去和金国的强弓硬马比拼？所以我一直忍！”&lt;end&gt;
+&lt;npc=30&gt;：“到了现在，影社训练出了一大批精锐，各方豪杰纷纷来投；而李后对朝局的干预越来越过分，我们已经无路可退。没有路走的时候，只好自己站出来走一条路，无论这条路能走到哪里，总是为后来者踏出了方向。总有一天，黎民百姓会不再为战火硝烟所累，过他们想要的日子。”&lt;end&gt;
+&lt;playername&gt;：“帮主……”&lt;end&gt;
+&lt;npc=30&gt;：“不得已，只能借那些金国士兵的头颅一用了。我将那批求亲的队伍囚禁在了鹰隼角，你去替我将他们的头颅取来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将卜卦的结果回报石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>将卜卦的结果回报石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>19</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>22</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>石轩辕决定以这些金人的头颅祭旗，他们现在聚集在鹰隼角</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>63</Value>
+              </fightnpc>
+              <number>
+                <Value>406</Value>
+              </number>
+              <taskitem>
+                <Value>{153,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>36000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>金国人一一在我面前倒下，回去找石轩辕吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，我已将金人的头颅取来了。”&lt;end&gt;
+&lt;npc=30&gt;：“没有办法，他们的死我有责任。不过现在不是还债的时候，生此乱世，就要有一将功成万骨枯的觉悟。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{金国人的头颅,20,1,153,1,0,3}</Value>
+              </string>
+              <txt>
+                <Value>带着金国人的头颅回去找石轩辕吧</Value>
+              </txt>
+              <txt>
+                <Value>带着金国人的头颅回去找石轩辕吧</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000018</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>22</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,153,1,0,-1,}</Value>
+              </itemid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

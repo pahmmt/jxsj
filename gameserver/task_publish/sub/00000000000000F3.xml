@@ -1,0 +1,121 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F3" name="荣皎皎的身世" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=520&gt;：“罗锋的信使居然自己误闯了百花阵，这可如何是好。我真是救他也不是，不救他也不是。”</Pop>
+      <Start>&lt;npc=520&gt;：“丐帮罗锋送信前往翠烟门时，与奴家有过一面之缘，之后每每借故来访。这人也是混，我都不知道要怎么对待他了。”&lt;end&gt;
+&lt;playername&gt;：“若荣姑娘对罗锋也有意，便对他好些又如何，那罗锋也是条英雄的汉子。”&lt;end&gt;
+&lt;npc=520&gt;：“不可如此直白，不过……罗锋确是有英雄气概。一来二去，奴家便说出了自己的身世。当年奴家仍在襁褓中时，不知被谁放在湘江边的小舟上，若非当年七代掌门郦秋水路过搭救，如今还不知是否活在世上。自艺成后无日不想查明父母是否还在人世。唯一的线索就是一把刻有荣皎皎姓名的长命锁。罗锋感触之下，答应帮助奴家。”&lt;end&gt;
+&lt;npc=520&gt;：“此刻罗锋派来的弟子携带着信笺到达了百花阵。可这弟子却误入了阵法之中，无力自保，危在旦夕之间。奴家与罗锋之间的关系不便挑明，我真是救他也不是，不救他也不是。”&lt;end&gt;
+&lt;playername&gt;：“这好办，一切交给我，包准替你办得妥帖。”&lt;end&gt;
+&lt;npc=520&gt;：“那奴家这厢谢过了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;npc=520&gt;：“此事，这不知该如何感谢你。哎，真是不敢拆看这封信函哪。”&lt;end&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>528</Value>
+              </dialognpc>
+              <number>
+                <Value>2152</Value>
+              </number>
+              <number>
+                <Value>3718</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：你就是被困的丐帮弟子吧，我这就带你出去！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>521</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>2002</Value>
+              </number>
+              <number>
+                <Value>3575</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value>2129,3702
+2077,3654
+1996,3727
+1970,3700
+2022,3641
+2055,3601
+2025,3576</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>护送那丐帮弟子谢韧离开百花阵</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

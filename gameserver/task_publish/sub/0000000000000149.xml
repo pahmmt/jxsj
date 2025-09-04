@@ -1,0 +1,133 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000149" name="螳螂拳师" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=36&gt;：“这些螳螂拳师蛮横的很，不但打伤了兄弟们，还抢走了大家辛苦筹集到的祭奠用具。虽然说现在我帮的声望大不如前，但是让这些杂碎骑在头顶上欺负，还是咽不下这口气。”&lt;end&gt;
+&lt;playername&gt;：“哼，这些人胆子也未免太大了，我去会会他们。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=36&gt;：“谢谢你帮我们出气，都是一家人说谢字有点多余，以后要是有用到兄弟的地方尽管开口。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2232</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <taskitem>
+                <Value>{239,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将取得的祭奠物品归还给丐帮执事弟子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>36</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=36&gt;：“祭奠用品取回来了吗？”&lt;end&gt;
+&lt;playername&gt;：“拿到了这些，你看看。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{祭奠物品,20,1,239,1,0,12}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

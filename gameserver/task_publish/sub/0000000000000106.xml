@@ -1,0 +1,242 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000106" name="骷髅飞马旗" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=846&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;是否想接一笔大生意？要是能做成，保证你财源滚滚。”&lt;end&gt;
+&lt;playername&gt;：“什么生意？你且说来听听！”&lt;end&gt;
+&lt;npc=846&gt;：“成都的富豪钱公子酒后失言，允诺当红歌姬菱花送她马贼的骷髅飞马旗把玩，因此开高价请我们快刀门拿到此旗。我来到此地后不仅找到马贼老巢，还发现他们身上竟然有福隆草。佩戴这种草的人浑身被浓郁的香气笼罩，据说这种草还能给佩戴者带来好运。此草现在成都被炒作天价，不过却是有价无市。若是能得到骷髅飞马旗，再拿到一些福隆草，岂不是天大的财富？”&lt;end&gt;
+&lt;playername&gt;：“有这么好的生意你自己怎么不去做？”&lt;end&gt;
+&lt;npc=846&gt;：“不是我不愿意做，而是手底功夫不够硬。只怕生意没做成，小命先没了。我也是怕拿不到骷髅飞马旗砸了我们快刀门的招牌才告诉你。你若是想做这笔生意，就直接杀去马贼巢穴好了。骷髅飞马旗就在他们旗手手里，福隆草却要看你的运气了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>841</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <taskitem>
+                <Value>{366,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.2</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>854</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,93,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将骷髅飞马旗带给菱花</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>529</Value>
+              </dialognpc>
+              <number>
+                <Value>27</Value>
+              </number>
+              <txt>
+                <Value>转手买卖</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“菱花姑娘，这是钱公子给你的骷髅飞马旗。”&lt;end&gt;
+&lt;npc=529&gt;：“这真的是……果然是这面旗帜，钱公子果然是信人，为了一句戏言用心如此，教菱花如何安心啊……咦，你身上是什么味道？难不成是福隆草？太好了，卖给我好不好？我出高价买你的，我太想要了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将旗帜带给菱花</Value>
+              </txt>
+              <txt>
+                <Value>将旗帜带给菱花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{93,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{366,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

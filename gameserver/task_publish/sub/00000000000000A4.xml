@@ -1,0 +1,340 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000A4" name="照简行事" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“到底是怎么回事？”&lt;end&gt;
+&lt;playername&gt;：“我听杨帮主说，上次偷袭他们三人的是天忍教教主完颜襄和其手下。古教主被完颜襄重创之后将游龙珏怒而毁去，不过游龙珏的秘密也恰在那时被参透。杨帮主说是“稻花田里菊花香”这句话，我不知道这句话代表了什么。”&lt;end&gt;
+&lt;npc=3570&gt;：“想不到竟然会是完颜襄！我曾听人说，古嫣然初出江湖时曾被完颜襄的才华所吸引爱恋着他。可惜落花有意，流水无情。完颜襄醉心于权力，只是将古嫣然当作一枚棋子，助他成就事业，却从未留意过古嫣然的内心感受。伤心之余，古嫣然离开金国辗转之下入了五毒。自从听说古嫣然陷入昏乱， 我便想到是完颜襄，却没想到他会如此绝情。”&lt;end&gt;
+&lt;playername&gt;：“想不到古教主还有这么一段故事！不知道秋姨对游龙珏上的话怎么理解？”&lt;end&gt;
+&lt;npc=3570&gt;：“这话对旁人来说不好理解，对我来说则再容易不过了。小的时候祖母曾经教过我一首歌谣，凡人若想求富贵，稻花田里菊花香。我曾问祖母这是什么意思，她说距离我们居住的稻香村不远的荐菊洞有宝藏。老人们都这么说，不过传说毕竟是传说，谁也没有当真，却没想和游龙珏真的有关系。”&lt;end&gt;
+&lt;playername&gt;：“那荐菊洞现在有人问津不？”&lt;end&gt;
+&lt;npc=3570&gt;：“当然有，那里现在是盐帮的总库房，堆积了大量的私盐。想要从那里找到宝藏的，倒是一件棘手的事。可笑徐彬剑守着宝山不自知还要四处夺取，真是愚妄。稻香村唐氏盐号的老板唐不咸和盐帮交往甚密，你可以找他打探一下荐菊洞内的情况。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>87</Value>
+              </number>
+              <txt>
+                <Value>提升等级到87级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到87级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往稻香村找唐不咸</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1006</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐老板，秋姨让我来向你打听一下荐菊洞内的情形。”&lt;end&gt;
+&lt;npc=1006&gt;：“荐菊洞？那个地方可去不得！你也知道盐帮干得事情都是掉脑袋的事情，那里存着的都是他们的命根子，外人一律不许进入，否则便是有意同他们为敌。那是一个非请莫入的地方，你可别跑那里去。”&lt;end&gt;
+&lt;playername&gt;：“真是如此那我还真要去那里闯上一闯了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到唐不咸</Value>
+              </txt>
+              <txt>
+                <Value>找到唐不咸</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往荐菊洞内查探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>183000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>110</Value>
+              </number>
+              <number>
+                <Value>1445</Value>
+              </number>
+              <number>
+                <Value>2956</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>前往荐菊洞查探</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(看来这里果然和唐不咸说的一般不二，还是赶紧回去找秋姨要紧！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>366000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“如何？”&lt;end&gt;
+&lt;playername&gt;：“荐菊洞里四处都是盐帮的人，想要在他们眼皮子底下找到宝藏还真不是一件简单的事！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000000A5</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

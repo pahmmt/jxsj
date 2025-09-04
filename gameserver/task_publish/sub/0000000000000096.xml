@@ -1,0 +1,605 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000096" name="长歌门人" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=894&gt;：“我家主人在前面的小屋中等你，他说如果将军派人前来，可去那里见他，他有事吩咐。”&lt;end&gt;
+&lt;playername&gt;：“不知你家主人有何事吩咐？”&lt;end&gt;
+&lt;npc=894&gt;：“你去了便知。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>提升等级到74级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到74级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往查探剑阁蜀道的小屋</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>1613</Value>
+              </number>
+              <number>
+                <Value>3566</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>前往前面小屋</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=910&gt;：“主人都走了，我们还留在这里做什么？”&lt;end&gt;
+&lt;npc=911&gt;：“再等等吧，去接头的小三不是派人回来说有人冒充吴将军的下属让我们在这里守株待兔吗？我们将其擒住，等主人从将军那里回来也好请赏。”&lt;end&gt;
+&lt;npc=910&gt;：“说的也是！”&lt;end&gt;
+&lt;playername&gt;：(虽然不知道他们说的小三是不是和我接头的人，但是有一点可以肯定就是我的身份有可能泄露了。他们口中所说的主人想必就是和吴曦有密谋的人，我不如将屋内的两人制服，也许可以问出他们的来历。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进屋制服山虎和梁天</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>539</Value>
+              </number>
+              <number>
+                <Value>1571</Value>
+              </number>
+              <number>
+                <Value>3161</Value>
+              </number>
+              <fightnpc>
+                <Value>887</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>910</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=910&gt;：“你是什么人？你想干什么？”&lt;end&gt;
+&lt;playername&gt;：“这话应该我问你。”&lt;end&gt;
+&lt;npc=910&gt;：“我什么都不会说的，要么你就杀了我吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>制服山虎</Value>
+              </txt>
+              <txt>
+                <Value>制服山虎</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>539</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>3156</Value>
+              </number>
+              <fightnpc>
+                <Value>888</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>911</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=911&gt;：“饶命啊！”&lt;end&gt;
+&lt;playername&gt;：“你们是什么人，来这里找吴曦做什么？”&lt;end&gt;
+&lt;npc=911&gt;：“我们从大理来……”&lt;end&gt;
+&lt;npc=910&gt;：“不能说！”&lt;end&gt;
+&lt;npc=911&gt;：“事到如今还有什么好隐瞒的，我们从大理来，我们随主人来找吴曦商议一件重大的事。不过事关机密，我也不知道太多，只知道要是泄露出去就是满门抄斩的事。我们主人已经去吴曦的别院了。小三说有人冒充吴曦部下，我们才会在此伏击的。”&lt;end&gt;
+&lt;playername&gt;：“你们主人是谁？”&lt;end&gt;
+&lt;npc=911&gt;：“我们主人是大理贵族司空杜。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>制服梁天</Value>
+              </txt>
+              <txt>
+                <Value>制服梁天</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(看来梁天所说有几分可信，他们口中的主人已经前去吴曦别院了，趁吴曦尚未发现我的身份之前前去刺探一番。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往吴曦别院刺探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>463000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>1924</Value>
+              </number>
+              <number>
+                <Value>3305</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>暗中接近吴曦别院的会客室</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=881&gt;：“让你帮我盯一会你怎么一转眼就不见人了，好在没出什么事情。将军正在会客室议事，可不能乱闯。”&lt;end&gt;
+&lt;playername&gt;：“我有急事禀报将军，顾不上那么多了。”&lt;end&gt;
+&lt;npc=881&gt;：“那你进去吧，将军怪罪下来可不要推在我头上。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>悄悄潜入吴曦会客室不要惊动里面的人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>538</Value>
+              </number>
+              <number>
+                <Value>1559</Value>
+              </number>
+              <number>
+                <Value>3107</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>通过会客厅悄悄潜入密室</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=884&gt;：“诚如先生所说，这事倒是也急不得。那段氏在大理深得民心，虽然如今耽于国事，沉迷女色，毕竟树大根深。先生应该回去知会一声诸位皇亲贵族，静待时机。”&lt;end&gt;
+&lt;npc=890&gt;：“将军所言极是，我等此番确实有些心急。不知游龙珏的下落，将军可曾查到？”&lt;end&gt;
+&lt;npc=884&gt;：“此物为我梦寐以求之物，只可惜还是镜里观花。前不久听说从唐门被窃，真是一大憾事。唐门就在川蜀，我竟然一点风声没收到。你等身处大理，难道对点苍山之事一无所知？”&lt;end&gt;
+&lt;npc=890&gt;：“我等也是后来才听说的，唐一尘当真不可小觑。如今游龙珏的下落再次不明，看来将军兴国立业的时机尚未来到。”&lt;end&gt;
+&lt;npc=884&gt;：“生不逢时，真是人生一大憾事，我等此后当同舟共济，若有游龙珏的消息，先生一定要及早通知我。”&lt;end&gt;
+&lt;playername&gt;：(看吴曦和司空杜的对话，想来是司空杜等人要密谋推翻大理段氏前来找吴曦相助，而吴曦此人也有分疆裂土的野心。吴曦虽然对游龙珏觊觎已久，好在尚未得手。看来取走游龙珏的应当是另有其人了。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将从吴曦处探听到的消息带给新手村的白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>92000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“你一去这么久，可是有了游龙珏的下落？”&lt;end&gt;
+&lt;Playername&gt;：“此事说来话长，事情是如此这般的……”&lt;end&gt;
+&lt;npc=3570&gt;：“竟然还有此事，看来大理国国运不久矣。吴曦此人城府极深，好在游龙珏未落入他的手中。不过日后仍然不得不防。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到新手村白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>找到新手村白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000080</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>32</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,342 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001E1" name="大禹台" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4349&gt;：“话说上古年间大禹治水，使得中原的无数生灵免遭涂炭。后人为了纪念他的功绩修建了大禹台。今年江南水患肆虐，于是人们又聚集在大禹台，祈祷上苍的庇佑。”&lt;end&gt;
+&lt;playername&gt;：“我也想为老百姓做些事情，我该如何做呢？”&lt;end&gt;
+&lt;npc=4349&gt;：“不愧是义军的好兄弟，懂得为百姓分忧，这样吧，现在围聚在大禹台的百姓越来越多，粮食和饮水都是问题，你去取些粮食和水备用如何。”&lt;end&gt;
+&lt;playername&gt;：“好的，我这就去做。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>得到一瓶饮水</Value>
+              </txt>
+              <txt>
+                <Value>不好意思</Value>
+              </txt>
+              <txt>
+                <Value>取得饮水</Value>
+              </txt>
+              <taskitem>
+                <Value>{460,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{20,1,300,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>125</Value>
+              </number>
+              <number>
+                <Value>1943</Value>
+              </number>
+              <number>
+                <Value>3527</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>在河边取得的饮水</Value>
+              </string>
+              <string>
+                <Value>在河边取得的饮水</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1671</Value>
+              </dialognpc>
+              <number>
+                <Value>125</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>干粮收集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{干粮,20,1,513,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经取得了%d/10个干粮</Value>
+              </txt>
+              <txt>
+                <Value>在义军粮库取得粮食</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1831,3723
+1835,3726
+1832,3734
+1840,3726
+1825,3731
+1845,3725</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将取得的粮食和饮水交给大禹台的义军首领张赤诚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{460,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4349</Value>
+              </dialognpc>
+              <number>
+                <Value>125</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“粮食和饮水已经取来了。”&lt;end&gt;
+&lt;npc=4349&gt;：“&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;，我替百姓们感谢你。”&lt;end&gt;
+&lt;playername&gt;：“岂敢岂敢，这都是义军份内之事。”&lt;end&gt;
+&lt;npc=4349&gt;：“&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;的赤诚之心清晰可见，我义军拥有你这样的人才当真一大幸事。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将取得的粮食和饮水交给大禹台的义军首领张赤诚</Value>
+              </txt>
+              <txt>
+                <Value>将取得的粮食和饮水交给大禹台的义军首领张赤诚</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{513,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{300,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

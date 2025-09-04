@@ -1,0 +1,185 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000148" name="刺杀行动" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“这位大嫂，这里的村子怎么这么冷清？村民们怎么不耕作？”&lt;end&gt;
+&lt;npc=438&gt;：“我看你是外乡人并不知道这里的情况。我们这里原本是世外桃源一样的地方，自从一些行脚商发现这里有金矿之后，官府便派了很多人来采掘金子。派来的人不仅破坏了我们的田地，还强迫我们给他们采掘金矿。后来我们忍不住便开始反抗，却遭到了更严厉的对待。”&lt;end&gt;
+&lt;playername&gt;：“什么样的对待？”&lt;end&gt;
+&lt;npc=438&gt;：“他们派来了一支官兵驻守在这里，帮着官府欺压我们。我们被逼的无路可退，只能起来继续反抗，我们并不打算妥协，一定会坚持到底。听说驻守的统领已经上报朝廷说我们是暴民，很快就要前来围剿，村民们没有信心战胜他们，所以一个个的才会如此颓丧。”&lt;end&gt;
+&lt;playername&gt;：“那可有什么我能帮得上忙的？”&lt;end&gt;
+&lt;npc=438&gt;：“这帮官兵由一个叫庞太清的统领带领，手下两个前锋一个叫小漆，一个叫小武，这两人异常骁勇，杀了我们不少村民。我们已经决定派人去刺杀他们三个，但是村里实在没有像样的好手。如果&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;愿意相助，我们定然感激不尽。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>437</Value>
+              </fightnpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1219</Value>
+              </fightnpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1218</Value>
+              </fightnpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>438</Value>
+              </dialognpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=438&gt;：“真是太感谢你了，虽然这三个人已经被杀，但是不知道官府会怎么样对我们，我们心里依旧还是忐忑不安。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value>回去找月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

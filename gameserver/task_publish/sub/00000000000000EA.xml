@@ -1,0 +1,294 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000EA" name="倾心之交" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=497&gt;：“那头豹子还是很生猛的，忽然从芦苇荡里窜出来，来我都惊了片刻。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=497&gt;：“哎，这脚迟不伤早不伤，偏是在节骨眼上伤了。”&lt;end&gt;
+&lt;playername&gt;：“如长老伤了脚踝，耽误了何事？”&lt;end&gt;
+&lt;npc=497&gt;：“我本与一位至交好友约定，八月十五赏月论武，好不快哉。现下那友人怕是已到了，我却无法前往，如此爽约，岂是君子所为。”&lt;end&gt;
+&lt;playername&gt;：“谅那朋友不会介意。”&lt;end&gt;
+&lt;npc=497&gt;：“但我想还是要将不能赴约的消息告诉他，待来日我腿伤痊愈，必定登门拜访到他的府邸。”&lt;end&gt;
+&lt;playername&gt;：“这样的话，我倒可以替如长老走上一趟。”&lt;end&gt;
+&lt;npc=497&gt;：“如此甚好，此事也不想被我唐门中人所知。你此去竹林需得小心。每年论武，我那朋友都喜欢设置些精致机关来与我做乐。”&lt;end&gt;
+&lt;playername&gt;：“一切放心。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=498&gt;：“这里有些小玩意，不值什么钱财，送予你玩吧。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>499</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <taskitem>
+                <Value>{68,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>500</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <taskitem>
+                <Value>{69,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>阴阳双符重合在一起，发出奇妙的光，阵门打开了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>502</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败混在在人偶剑士中的乾坤护法，打败他们应该就可以通过了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>501</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>通过了重重考验，终于进入圆阵中心，找到神秘客人，究竟是谁呢？</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>498</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“您，您就是唐如先生的道友吗？”&lt;end&gt;
+&lt;npc=498&gt;：“正是贫道。”&lt;end&gt;
+&lt;playername&gt;：“唐如先生前几日狩猎时伤了脚踝，无法赴约。千叮万嘱在下将这消息带给道长。待来日唐如先生腿伤痊愈必当登门回访贵府。”&lt;end&gt;
+&lt;npc=498&gt;：“无量佛！贫道真是对唐老弟多有亏欠。我乃武当洞虚，小友若无事时，不妨来武当一聚。在此谢过了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到神秘客人，究竟是谁呢？</Value>
+              </txt>
+              <txt>
+                <Value>找到神秘客人，究竟是谁呢？</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

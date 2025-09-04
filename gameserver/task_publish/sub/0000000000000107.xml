@@ -1,0 +1,165 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000107" name="疯狂的报复" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=579&gt;：“唉，老婆每日啼啼哭哭，可真是烦死我了！”&lt;end&gt;
+&lt;playername&gt;：“这是为何？”&lt;end&gt;
+&lt;npc=579&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，本方向来民生安乐。自从朝廷在西南山谷建了一座铸剑坊以后，便开始鸡犬不宁了。这铸剑坊由权贵掌权，所铸的东西直接提供给军队，不受地方管束。因此这里的监工头领和他的手下便肆无忌惮的作威作福，奸淫民女的事情时有发生。”&lt;end&gt;
+&lt;playername&gt;：“这和你老婆又有什么关系？”&lt;end&gt;
+&lt;npc=579&gt;：“唉！我妻妹在回家的途中遭到这般歹人凌辱，羞愧之下投河自尽，我老婆这才每日以泪洗面……若是有人能痛惩这帮歹人一番，整个山寨的人必定感激不尽。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=1046&gt;：“有时候人总是会很无奈的去反抗和争取一些事情！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>580</Value>
+              </fightnpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>582</Value>
+              </fightnpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将铸剑坊的歹人被痛惩的消息带给阿诺的老婆马氏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1046</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大嫂不要太难过了，我已经狠狠的教训过铸剑坊的那帮恶贼了。”&lt;end&gt;
+&lt;npc=1046&gt;：“真的吗？&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;真是我们山寨的大恩人！我那可怜的妹子，就算死也该瞑目了……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到马氏</Value>
+              </txt>
+              <txt>
+                <Value>找到马氏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

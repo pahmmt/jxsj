@@ -1,0 +1,162 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B3" name="打狗阵法" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=346&gt;：“那位朋友过来一下，我怎觉得你如此眼熟呢？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=346&gt;：“原来是&lt;playername&gt;啊。当年令师曾于罗某有大恩，如今你若有什么要求，罗某赴汤蹈火，也一定完成。”&lt;end&gt;
+&lt;playername&gt;：“这样吗？我看影者们正在修习打狗阵法，丐帮镇帮之艺不敢觊觎，只求能学些皮毛防身便可。”&lt;end&gt;
+&lt;npc=346&gt;：“这样……也无不可。反正我丐帮凡七袋以上弟子尽皆打狗阵法精要，要泄露也不在一二人。这打狗阵的精髓仍是打狗棍法，只要棍法不外传，其他都好商量。那么这样，这阵法精髓在于以快制快，以快克强。你在一柱香时间内，若能打败我指定的影者数量，便能粗通一二了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2086</Value>
+              </fightnpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2085</Value>
+              </fightnpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把考验的结果回报给罗锋</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>346</Value>
+              </dialognpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=346&gt;：“好！没有料到你悟性如此之高，到这个地步，罗某也不能再教下去了，再教下去，石帮主怕是要找我麻烦咯。不如就此别过，青山不改，相见有期。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把考验的结果回报给罗锋</Value>
+              </txt>
+              <txt>
+                <Value>把考验的结果回报给罗锋</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

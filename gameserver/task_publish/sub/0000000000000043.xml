@@ -1,0 +1,243 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000043" name="溃堤之谜" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“方丈，若真如那朱自力所言，这黄河决堤恐怕是有人故意所为！这简直是耸人听闻！”&lt;end&gt;
+&lt;npc=223&gt;：“无论如何，你悄悄下山查探查探，不要惊动任何人。”&lt;end&gt;
+&lt;playername&gt;：“弟子明白。”&lt;end&gt;
+&lt;playername&gt;：“朱自力，我问你。你所说的那人，姓什么，叫什么，现在何处？”&lt;end&gt;
+&lt;npc=226&gt;：“据俺听来的说法，此人叫郝威锁，现在混入了金刚岭附近的难民中。”&lt;end&gt;
+&lt;playername&gt;：“好，我这就去查。你在这里等着，若查不出端倪，瞧我怎么收拾你。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1772</Value>
+              </number>
+              <number>
+                <Value>3891</Value>
+              </number>
+              <fightnpc>
+                <Value>227</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <dialognpc>
+                <Value>228</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=228&gt;：“&lt;if me.nSex==0&gt;好汉&lt;else&gt;女侠&lt;endif&gt;饶命，饶命啊！！”&lt;end&gt;
+&lt;playername&gt;：“据说，当日黄河洪灾，是因你私掘堤坝造成的。从实招来，是与不是？”&lt;end&gt;
+&lt;npc=228&gt;：“我的天哪，&lt;if me.nSex==0&gt;好汉&lt;else&gt;女侠&lt;endif&gt;听谁在这里信口雌黄。小人，小人最大的罪责，就是与那些民众一同抢了些粮食。挖堤这种事情，小人就是有十个脑袋，也不够砍的啊。”&lt;end&gt;
+&lt;playername&gt;：“哼哼，你还想骗人。哪个难民能有你这样的身手！今日你若不说，自有人会说。活生生的人你不做，偏要做鬼，那也怪不得我了。”&lt;end&gt;
+&lt;npc=228&gt;：“刀下留人，留人！小的招，小的全招了。小的乃是天忍教众，受首领派遣，来少室山中蛊惑民众，意图在削弱少林的力量。最好能寻到把柄，治少林寺的重罪。小的是金人，怎么可能去挖自己的堤坝，这，这都是上面的意思啊。”&lt;end&gt;
+&lt;playername&gt;：“上面的意思？”&lt;end&gt;
+&lt;npc=228&gt;：“就是直接统领小人的完颜宗亲指使小人们干的。”&lt;end&gt;
+&lt;playername&gt;：“他现在何处？”&lt;end&gt;
+&lt;npc=228&gt;：“就在这金刚岭最高处的密林中。”&lt;end&gt;
+&lt;playername&gt;：“我这便去，若你所言有一字虚假，休想再有活命。我可不是玄慈大师，慈悲为怀不杀一人。”&lt;end&gt;
+&lt;npc=228&gt;：“借小的个天做胆，也不敢欺瞒&lt;if me.nSex==0&gt;好汉&lt;else&gt;侠女&lt;endif&gt;哪！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=228&gt;：“完颜宗亲就在这金刚岭最高处的密林中。”&lt;end&gt;</Value>
+              </txt>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>捉拿掘堤之人郝威锁盘问一番</Value>
+              </txt>
+              <txt>
+                <Value>捉拿掘堤之人郝威锁盘问一番</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>88000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去不远处的金刚岭盘问真正的首领</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>69</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>230</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“完颜宗亲，你的手下郝威锁已将你们的计划和盘托出，你还是招了吧，免得受罪。”&lt;end&gt;
+&lt;npc=230&gt;：“哼。”&lt;end&gt;
+&lt;playername&gt;：“你招不招？”&lt;end&gt;
+&lt;npc=230&gt;：“杀了我吧。”&lt;end&gt;
+&lt;playername&gt;：“杀了你？你可知道，因为你私掘堤坝，多少人家妻离子散？杀了你难道能换回他们的性命吗！这些人中间，不仅有宋人，也有无数你们金国人啊！”&lt;end&gt;
+&lt;npc=230&gt;：“我！……”&lt;end&gt;
+&lt;playername&gt;：“你怎么？你还是天忍教的首领，居然干出这种大逆不道之事。纵然是我也要唾弃你完颜家！”&lt;end&gt;
+&lt;npc=230&gt;：“你住口！我完颜家一门忠烈，不允许你污蔑他们。是，这事是我干的，那是因为，我的妻子女儿都被他们抓住了！他们扬言我要是不照他们的说法去做，就要杀我全家！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去不远处的金刚岭盘问真正的首领</Value>
+              </txt>
+              <txt>
+                <Value>去不远处的金刚岭盘问真正的首领</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000044</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

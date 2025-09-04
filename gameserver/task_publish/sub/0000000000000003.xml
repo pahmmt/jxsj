@@ -1,0 +1,588 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000003" name="神秘信使" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=12&gt;：“对了，适才有弟子发现，岛上来了个叫花子。对丐帮的切口他也不会，瞧着有点神神道道，摸不清楚他的来路。你替我去见见，顺便多熟悉熟悉岛上的环境。”&lt;end&gt;
+&lt;playername&gt;:“什么花子会坐船到岛上来乞讨？恐怕略有蹊跷。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>15</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“那边的花子，你来这岛上要的是什么饭？”&lt;end&gt;
+&lt;npc=15&gt;:“要的是千家饭，尝的是万般味。你又是谁？”&lt;end&gt;
+&lt;playername&gt;：“在下乃天王帮的客作，现在替新帮主杨铁心大哥跑跑腿。”&lt;end&gt;
+&lt;npc=15&gt;:“杨铁心！你与他熟识吗？”&lt;end&gt;
+&lt;npc=16&gt;:“李泉，你以为你能跑得了吗？”&lt;end&gt;
+&lt;npc=15&gt;:“没时间解释了，我本是朝廷二品带刀侍卫，此次奉命前来有急事相托。你先替我解决了这几个狗贼！快！”&lt;end&gt;
+&lt;playername&gt;：“且慢——我如何能相信你？”&lt;end&gt;
+&lt;npc=15&gt;:“我这里有二品侍卫的令牌！还能有假？”&lt;end&gt;
+&lt;playername&gt;：（将令牌拿过来仔细翻看）“果然是朝廷的令牌！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=15&gt;:“先替我解决了这几个狗贼！快！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>裴翼飞希望我去查看那个奇怪的花子</Value>
+              </txt>
+              <txt>
+                <Value>裴翼飞希望我去查看那个奇怪的花子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮助花子李泉摆脱神秘杀手的纠缠</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1170</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>暂时击退了杀手，继续问问李泉究竟带着什么情报</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>15</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“那些杀手都已经解决掉了，不知大人为何如此狼狈？”&lt;end&gt;
+&lt;npc=15&gt;：“那些杀手本是宫廷侍卫，身怀绝世武功，若不是我一路用计击败了三个首领，怎么也跑不到这青螺岛上来。”&lt;end&gt;
+&lt;playername&gt;:“究竟何事如此着急？”&lt;end&gt;
+&lt;npc=15&gt;：“我不便多留，几个弟兄用调虎离山计引开了他们的注意力，我得回去救兄弟们。韩大人现在也身陷危机，命悬一线，须立即离开此地。你先想办法将此信筒交给杨铁心，再想办法搭救韩大人吧。”&lt;end&gt;
+&lt;playername&gt;:“大人放心，事关重大，我即刻就用飞鸽传书的法子把信筒呈与杨帮主过目。”&lt;end&gt;
+&lt;npc=15&gt;：“多谢少侠相助，江湖路远，各自保重！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=15&gt;：“江湖路远，各自保重！”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{蜡封的信筒,20,1,134,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>仔细询问这李泉究竟带着什么情报</Value>
+              </txt>
+              <txt>
+                <Value>仔细询问这李泉究竟带着什么情报</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去前方寻找鸽舍信鸽，用飞鸽传书的法子把信筒交给杨铁心</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11048</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value>信鸽已经飞走了</Value>
+              </txt>
+              <txt>
+                <Value>将信筒重新绑在信鸽腿上</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>将信筒绑在传信飞奴的腿上</Value>
+              </txt>
+              <txt>
+                <Value>将信筒绑在传信飞奴的腿上</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>Task:_Specil_FlyABird()</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>不妙！传信的事被刺客发现了，先把他们解决掉吧！</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{134,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>11043</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=13&gt;：“此地不宜久留，快随我来！”&lt;end&gt;
+&lt;playername&gt;:“裘老？您怎么会在这里？”&lt;end&gt;
+&lt;npc=13&gt;：“说来话长，你我去前方万松坡一叙，那里方便说话。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去前方的万松坡与裘长老会合吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>13</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“裘老，您怎么会出现在这里？”&lt;end&gt;
+&lt;npc=13&gt;：“老朽已被杨帮主驱逐出帮，承蒙帮主恩泽，准我三日之内自行离岛，免死罪。”&lt;end&gt;
+&lt;playername&gt;:“难道帮主连旧日的情面也不顾了么？就这样将您驱逐出帮？”&lt;end&gt;
+&lt;npc=13&gt;：“天下之大，江湖之远，裘某自有容身的去处。说来蹊跷，约摸一个时辰以前，我在飞云台巧遇一位韩姓大人，他举止不凡，谈吐也颇有见地，应是庙堂中人。”&lt;end&gt;
+&lt;playername&gt;:“韩姓？可是韩节夫大人？”&lt;end&gt;
+&lt;npc=13&gt;：“正是，他在林间遇到了刺客埋伏，老朽虽帮他暂时解了围，但他的护卫都身受重伤。可惜老朽离岛的限期已至，不然定会帮他一把。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与裘止水对话</Value>
+              </txt>
+              <txt>
+                <Value>与裘止水对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000004</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

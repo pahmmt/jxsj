@@ -1,0 +1,854 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002AE" name="奇珍谜题" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3574&gt;：“我这里的强化手艺你已经学会了，想要让自己变得更强，日后便要勤于练武，日后能做的事情多了，自然能获得许多玄晶进行装备的强化，有了一套好行头你在江湖上行走也不会吃太多亏。现在你便去找&lt;color=red&gt;钱庄老板谢贤&lt;color&gt;，看他有啥好教你的。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3567</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3567&gt;：“尽屠金狗，复我山河！”&lt;end&gt;
+
+&lt;npc=3567&gt;:“这个月进项又少了两成。哎……这么多张嘴等着吃饭，可怎么办。哦，孩子你来了，正好，替我做件事。”&lt;end&gt;
+
+&lt;npc=3567&gt;:“这几个月死伤了不少弟兄，抚恤费用出得我心头肉痛啊。我现在得赶紧把今年放贷出去的利钱都算算，看哪个帮还没还清，得抓紧时间找人去收了，否则银根吃紧，周转会出问题。边上那几个&lt;color=red&gt;破旧箱子&lt;color&gt;里，放着往年的账册，你替我都取来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>找到钱庄老板谢贤</Value>
+              </txt>
+              <txt>
+                <Value>找到钱庄老板谢贤</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>谢老板让我去打开破旧箱子，取些陈年账册回来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3578</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>物品已收集</Value>
+              </txt>
+              <string>
+                <Value>{账册,20,1,444,1,1,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开破旧箱子一拿到义军的账册</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3579</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>物品已收集</Value>
+              </txt>
+              <string>
+                <Value>{账册,20,1,444,1,1,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开破旧箱子二拿到义军的账册</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3580</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>物品已收集</Value>
+              </txt>
+              <string>
+                <Value>{账册,20,1,444,1,1,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开破旧箱子三拿到义军的账册</Value>
+              </txt>
+              <txt>
+                <Value>成功获得义军账册</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“恩？这箱子里似乎有把白铜的钥匙。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我意外获得了一把白铜钥匙，看其形状，似乎是开启那奇怪箱子的</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3581</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value>获得了白疆的信函</Value>
+              </txt>
+              <txt>
+                <Value>开启失败，请重新开启</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1个物品。</Value>
+              </txt>
+              <txt>
+                <Value>你已经收集了1个箱子中的物品。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“这不是物品保管人邹德侩的信吗？怎么存在义军钱庄中了。其中有什么重要信息吧……反正没人知道，我偷瞧一眼。”&lt;end&gt;
+
+德侩兄亲启：上月于汉水古渡与金狗遭遇，血战三昼夜，死伤赢野。主人夫妇下落不明。然秋琳姐已于月前护送主人幼子返乡，请妥善安置，万勿为仇家寻得。
+                                                                                                           弟白疆百拜&lt;end&gt;
+
+&lt;playername&gt;：“这封信中所说的主人夫妇幼子就是我吗？原来那物品保管人邹德侩居然知道我的身世！我父母在我幼年时就失踪了？那如今究竟如何呢？我得去找秋姨问个明白！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{444,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“秋姨，我从钱庄柜台里翻出了这封书信，你瞧瞧！”&lt;end&gt;
+&lt;npc=3570&gt;:“白疆的信？天意，天意啊！孩子，是时候让你知道生身父母之事了。”&lt;end&gt;
+&lt;playername&gt;:“终于到这一天了吗？”&lt;end&gt;
+&lt;npc=3570&gt;:“你爹当年乃是&lt;color=red&gt;麻衣谷&lt;color&gt;天机相师安静渊先生最得意的弟子！有可通神鬼，推断天数的异能。他满腹经纶，有经天纬地之才。为了救身处水深火热之中的南宋朝廷，你爹秘寻天下豪杰，进行着一桩逆转天命的伟业。也就是在那时，认识了你的母亲。”&lt;end&gt;
+&lt;playername&gt;:“秋姨是如何结识我父母的？”&lt;end&gt;
+&lt;npc=3570&gt;:“我与你母亲当年一同闯荡江湖，情同手足。她和你爹成婚后，我、白疆、邹德侩一直追随左右。没有料到，就在你爹去追查一条事关重大的线索时，在汉水古渡边遇到了金国绝顶高手的狙击……当时你母亲刚刚坐完月子，本可逃过此劫。可她却似乎有所预感，将你交给我后，随你爹去了汉水，却从此一去不返。”&lt;end&gt;
+&lt;playername&gt;:“白疆，白疆不是活下来了吗？他人呢？”&lt;end&gt;
+&lt;npc=3570&gt;:“哎……已经十八年没有她的消息了。”&lt;end&gt;
+&lt;playername&gt;:“难道，难道结局就是这样吗？”&lt;end&gt;
+&lt;npc=3570&gt;:“孩子，我早说过了天意难测。就在今日，我收到了白疆的来信，他即将赶返此处。你可去邹德侩那里询问详情，找到白疆，一切就该有个确切的答案了吧。”&lt;end&gt;
+&lt;playername&gt;:“我现在就去！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>与白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddTaskItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{441,}</Value>
+              </taskitem>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>秋姨告诉我，物品保管人邹德侩那里有白疆的消息</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2599</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2599&gt;：“少主人，大事不好！我们派去接应白疆的人在半路上遭人劫杀，白疆下落不明！”&lt;end&gt;
+
+&lt;playername&gt;：“什么！我立即通知秋姨。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>向物品保管人邹德侩打听白疆的消息</Value>
+              </txt>
+              <txt>
+                <Value>向物品保管人邹德侩打听白疆的消息</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>新手村、门派、城市里的物品保管人可以设置复活回城点</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>白疆竟遭人半路截杀，我必须立即回禀秋姨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>物品保管员处可设置重生点，存取道具和银两</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;:“什么？白疆居然遭人追杀？我立即派一队精锐前去接应。此事与先前义军叛徒破坏水流机关一事同时发生，恐怕是贼人想引开我等的注意。此事或许要你跑一趟了，蜀南竹海处有我军安插的一个内应，他的掩护身份乃是一个渔夫，义军中人都叫他糊涂翁。你去找他或许会有些收获！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddMakePoint</Function>
+            <Parameter>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddGatherPoint</Function>
+            <Parameter>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002AF</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

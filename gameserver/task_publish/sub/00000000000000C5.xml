@@ -1,0 +1,358 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C5" name="游氏兄妹" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=381&gt;：“父母大仇一日不报，青素一日如火焚身，寝食难安。”</Pop>
+      <Start>&lt;npc=381&gt;：“当年我父亲母亲惨死时，我才只有三岁，乐天只有一岁半。如今游家的儿女们已经长大了，家族的血仇到了该报的时候了！”&lt;end&gt;
+&lt;playername&gt;：“你知道仇人是谁吗？”&lt;end&gt;
+&lt;npc=381&gt;：“这件事情，我们的师傅谢雨田先生应该清楚。可是先生总说我们还小，不肯告诉我们。您是外人，先生如果信任您的话，应该会告诉您的。您可以替我们去问清楚吗？游家一族都会感恩不尽的。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=381&gt;：“原来……原来当年，父亲母亲是因为昆仑派的内斗而丧生的吗？为什么昆仑弟子要互相惨杀呢？为什么啊！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“谢先生，我想知道，当年谋杀游氏兄妹父母的凶手究竟是谁？”&lt;end&gt;
+&lt;npc=372&gt;：“是青素这孩子让你来问的吧。”&lt;end&gt;
+&lt;playername&gt;：“是我自己要问的。”&lt;end&gt;
+&lt;npc=372&gt;：“哎，这么多年过去了，要隐瞒也瞒不住了。那件事情的结果我早已写成书信，埋葬在中原夫妇的坟前。你若自信能胜过我放在那里的两个守坟之人，便可以从坟墓中挖出信笺，得到确切的答案。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=372&gt;：“守坟人身手高强，你要估量清楚自己的实力，再做定夺。切不可逞强丢了性命。这也是我要游氏姐弟艺成之日，再告诉他们的原委。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找谢雨田打听事情的真相</Value>
+              </txt>
+              <txt>
+                <Value>找谢雨田打听事情的真相</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到了游氏的先坟，打败护坟左，右将才能进入墓地</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>383</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>384</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>摸索的找到谢雨田的书信，真相应该就在不远的前方</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1546</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>信笺开启中</Value>
+              </txt>
+              <txt>
+                <Value>得到谢雨田的信</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{谢雨田的书信,20,1,28,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1封谢雨田的信</Value>
+              </txt>
+              <txt>
+                <Value>找到谢雨田的书信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将找到的谢雨田的书信交给游青素吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>381</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=381&gt;：“书信拿到了吗？！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{谢雨田的书信,20,1,28,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{28,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

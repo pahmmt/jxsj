@@ -1,0 +1,382 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000012" name="奇怪的猎人" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=51&gt;：“&lt;playername&gt;,你走北边的小路追过去。发现情况就举烟火为号，我们马上过来。看到我们这边施放烟火，你也立即过来。如果真是奸细，恐怕他还有接应的同伙。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>59</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>60</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这条路荒芜了许久，探索前面的草丛中似乎有什么动静</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1359</Value>
+              </number>
+              <number>
+                <Value>2741</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>探索前面的草丛</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>林东山离奇倒毙，旁边有一个奇怪的猎人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1359</Value>
+              </number>
+              <number>
+                <Value>2741</Value>
+              </number>
+              <dialognpc>
+                <Value>62</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这个人，不是林东山吗？他竟然死了。这猎人怎会出现在他身边？”&lt;end&gt;
+&lt;npc=62&gt;：“不是我干的，不是我干的。”&lt;end&gt;
+&lt;playername&gt;：“你是打猎的？”&lt;end&gt;
+&lt;npc=62&gt;：“在附近打猎，误入了这里。这人是自己踩到捕兽夹上死掉的，我万万想不到这人烟罕至的地方会有人忽然出现。侠客饶命，饶命啊。”&lt;end&gt;
+&lt;playername&gt;：“你慌什么。这人看样子真是自己踩上的捕兽夹。”&lt;end&gt;
+&lt;npc=62&gt;：“是啊！侠客好眼力。”&lt;end&gt;
+&lt;playername&gt;：“我记得冷秋云说过，白山石场附近撒下了一条暗中的封锁线，这猎人怎么进得来。而且附近的居民，似乎都是丐帮中人假扮，看来我得试试这猎人的真假。”&lt;end&gt;
+&lt;playername&gt;：“你们猎人的头王二昨天是不是又去李大姐家寄宿了？怎么今天都没见他。”&lt;end&gt;
+&lt;npc=62&gt;：“王二？”&lt;end&gt;
+&lt;playername&gt;：“王二你不认识吗，远近百里的猎人，没有不知道他手准箭快的。”&lt;end&gt;
+&lt;npc=62&gt;：“我这几天没见过王二啊，不清楚他去没去李大姐家。”&lt;end&gt;
+&lt;playername&gt;：“没想到，一试还真把你给试出来了，哪里有什么王二、李大姐！你根本就不是猎人！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>61</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>调查滴水洞猎人的虚实</Value>
+              </txt>
+              <txt>
+                <Value>调查滴水洞猎人的虚实</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>得到滴水洞地图，将情况回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>51</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“罗锋，你怎么会在这里？”&lt;end&gt;
+&lt;npc=51&gt;：“嘘，洞里有金国人。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000013</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>17</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

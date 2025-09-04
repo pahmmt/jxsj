@@ -1,0 +1,265 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000072" name="驻颜新方" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“那你准备怎么做呢？”&lt;end&gt;
+&lt;npc=981&gt;：“老族长总是说我们是为了报恩，为了承诺。我们纳斯人在这个地方守护了这么久难道还不够吗？为什么要我们来承担这些虚无缥缈的责任？为什么我们不能过自己想要过的自由生活？我们并没有想要丢下老人们离开这里，我们希望他们能够和我们一起开心的离开这里去过幸福的生活。所以，我们决定答应老族长的条件。但是……我并不知道是不是真的可以打败噬龙兽。”&lt;end&gt;
+&lt;Playername&gt;：“原来你们是这样想的，如果真的是这样，我想老族长的担心其实是多余的。你放心吧，我会帮你们的！”&lt;end&gt;
+&lt;npc=981&gt;：“那可真是太好了！对于噬龙兽，乔女知道的更多，她从小就和噬龙兽在一起，深知它的脾性。如果你去找她问，她一定会告诉你。知道噬龙兽的脾性就好办多了。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>982</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你就是乔女？你可以告诉我关于噬龙兽的一些事情吗？老族长说只有打败它金部的人才能离开这里！我希望你能告诉我关于噬龙兽的一些情况！”&lt;end&gt;
+&lt;npc=982&gt;：“噬龙兽坚硬的壳可以抵御土龙尖锐的牙齿和爪子，又能吐出毒汁攻击土龙。不过说到和人战斗，我就不是很清楚了，毕竟从来没有人和噬龙兽搏斗过。现在照顾噬龙兽的是我妹妹，她不赞成金佐哥哥的做法，所以如果要战斗，就要多加小心。”&lt;end&gt;
+&lt;Playername&gt;：“我知道了，我会小心的！噬龙兽现在在哪里？”&lt;end&gt;
+&lt;npc=982&gt;：“我妹妹带着它在浅滩那里！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找乔女商量</Value>
+              </txt>
+              <txt>
+                <Value>找乔女商量</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往浅滩击败噬龙兽</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>956</Value>
+              </fightnpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将击败噬龙兽的消息带给老族长神木纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>239000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>979</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“老族长，金部已经击败噬龙兽了！”&lt;end&gt;
+&lt;npc=979&gt;：“什么！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到神木纳斯</Value>
+              </txt>
+              <txt>
+                <Value>找到神木纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000073</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

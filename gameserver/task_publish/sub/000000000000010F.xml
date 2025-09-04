@@ -1,0 +1,282 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000010F" name="搜集罪证" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=667&gt;：“我有一个老友叫阿土伯，是一个老顽童一样的人物。他听人家说有一种狼孩，介乎于半人半狼之间，就对其产生了浓厚的兴趣，一心想要找到他。不过我听人家说，狼孩是由母狼带大的，有人的智慧和狼的凶残，非常恐怖。我也劝说过他，可惜他仍旧执意要寻找狼孩。”&lt;end&gt;
+&lt;playername&gt;：“那结果呢？”&lt;end&gt;
+&lt;npc=667&gt;：“至今尚无结果。他听行脚商说彭蠡古泽有狼孩出没以后，便匆匆赶去那里了，至今音讯全无。阿土伯早些年做过镖师，寻常山野蟊贼倒不是他的对手。我就怕他惹怒了狼孩，会丢了老命。要是你有机会路过彭蠡古泽见到他，一定要帮我劝劝他，让他早点回家，我老嫂子还在家等着他呢。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>855</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=855&gt;：“要是见过狼孩，你一定会感到非常惊奇的。可惜我刚刚找到他，就被他给抓伤了。要不是纳斯族兄弟出手相救，我早就被那帮野狼撕成碎片了。好险！好险！”&lt;end&gt;
+&lt;playername&gt;：“看来您一定就是阿土伯了！卖炭的胡伯让我转告你早点回家，不要再寻找狼孩了，你家里的老婆还在等着你回家呢。”&lt;end&gt;
+&lt;npc=855&gt;：“我不回去，我一定要再去看看狼孩到底是什么样子，上次我都没看清楚。看你一身装束像是练过武的人，你要是能帮我抓住狼孩，我一定不会亏待你。狼孩就在北方的破屋一带，那里还盘踞着很多野狼。如果你要去，可一定要小心！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到阿土伯</Value>
+              </txt>
+              <txt>
+                <Value>找到阿土伯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>阿土伯请我前往北方的破屋寻找狼孩的踪迹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1549</Value>
+              </number>
+              <number>
+                <Value>2532</Value>
+              </number>
+              <dialognpc>
+                <Value>856</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=856&gt;：(一脸凶狠的看着你，一边发出一声长啸……)&lt;end&gt;
+&lt;playername&gt;：“你别害怕，我不会伤害你！你跟我一起去村子里吧！”&lt;end&gt;
+&lt;npc=856&gt;：(双目发出凶狠的光，突然向你扑了过来！)&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>857</Value>
+              </fightnpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>找到狼孩</Value>
+              </txt>
+              <txt>
+                <Value>找到狼孩</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“狼孩突然攻击了我，被我打伤后便逃离了这里。看来阿土伯想要抓住狼孩的想法太过天真了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将狼孩逃去的消息告诉阿土伯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>855</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=855&gt;：“怎么样？可曾见到狼孩？抓住他了吗？”&lt;end&gt;
+&lt;playername&gt;：“惭愧！我刚一靠近他，他就开始攻击我。被我打伤以后就一溜烟跑掉了，我看想要抓住他可真是有点难呢！”&lt;end&gt;
+&lt;npc=855&gt;：“什么？你竟然打伤了他，可怜的孩子……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到阿土伯</Value>
+              </txt>
+              <txt>
+                <Value>找到阿土伯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,804 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000087" name="罗氏兄弟" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“那古教主可曾查出这伙金国人的来历和此刻的下落？”&lt;end&gt;
+&lt;npc=3524&gt;：“来历倒是略有眉目，如果我没有猜错的话这批人便是金国近年来崛起的影子会。这伙人来历不明，不过有一点可以肯定，他们做的是拿人钱财与人消灾的行当。正因为如此我才会如此谨慎处理此事，为的便是尽快查出幕后买主。影子会每次行动不过数人，这次却有这么多人同时出动，可见买主实力之强。”&lt;end&gt;
+&lt;Playername&gt;：“那古教主可曾猜出这幕后的买主是谁？”&lt;end&gt;
+&lt;npc=3524&gt;：“这可就有点难了！影子会口风甚紧，我只是从密令猜出他们的身份，至于买主身份向来是他们首要保密的，怎么会如此轻易泄露？更何况影子会的人善于追踪和反追踪，我从点苍山跟随未出大理便给识破。一路上他们使尽诡计都没将我甩掉，所以才一直保持距离未敢动手。而后我去找杨帮主派属下继续跟踪，他们才得以有机会突围而去。”&lt;end&gt;
+&lt;Playername&gt;：“这可如何是好？”&lt;end&gt;
+&lt;npc=3524&gt;：“突围不过是计而已，我早已派人伏在他们突围之后的必经之路上了。这伙人诡计多端，突围之后便分作几批以掩人耳目，殊不知我教弟子已经尾随其后了。其中一波弟子钱海已经送回消息，说有一批人一路北上去了鸡冠洞。我因杨教主说你要来，才一直等待未派人前去。既然你来了，便由你前去吧，我会送你前去那里。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>77</Value>
+              </number>
+              <txt>
+                <Value>提升等级到77级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到77级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往五毒教找古嫣然</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3524</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>1594</Value>
+              </number>
+              <number>
+                <Value>3205</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>现在前往鸡冠洞？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>前往鸡冠洞</Value>
+              </txt>
+              <txt>
+                <Value>前往鸡冠洞</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到追踪影子会成员的五毒教弟子钱海</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>898</Value>
+              </dialognpc>
+              <number>
+                <Value>102</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你便是钱海了吧，我从五毒教来。古教主派我前来相助你们追踪影子会成员，不知你可有他们下落？”&lt;end&gt;
+&lt;npc=898&gt;：“原来这伙人是影子会的，我们一路追踪来到此地，眼看着他们来到这里。我唯恐中途会有意外，便让罗成兄弟先行一步，我紧随其后。不想还真出了意外，这些人突然失去影踪，一伙神秘人忽然涌出，将罗成兄弟劫了去。我因为远远尾随在后，未被他们发现。我一直在此地等待教主派来援手，好救出罗成兄弟，找到失踪的金国人。”&lt;end&gt;
+&lt;Playername&gt;：“你可看清劫去罗成的是什么人了吗？那些金国人是怎么消失的？”&lt;end&gt;
+&lt;npc=898&gt;：“据我看此地像是一处道场，似有什么教派聚集在此，至于他们和影子会是什么关系我就不知道了。这些也许找到罗成兄弟会有答案，此刻他生死不明，真让我愁急。希望&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;能暗中潜入此处，找到罗成兄弟下落。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到钱海</Value>
+              </txt>
+              <txt>
+                <Value>找到钱海</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在鸡冠洞中找到罗成</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>92000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1097</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你可是五毒教弟子罗成？”&lt;end&gt;
+&lt;npc=1097&gt;：“正是，你是何人？”&lt;end&gt;
+&lt;Playername&gt;：“你放心好了，我是五毒教的盟友。此番前来是来救你，并找到游龙珏的下落。你可知道这里的都是些什么人，那些影子会成员去了何处？他们将你关押在此意欲何为？”&lt;end&gt;
+&lt;npc=1097&gt;：“听这里的人说这里似乎是一个叫做道一天教的教派的总坛所在，这些金国人和他们的教主似乎有什么关系，所以才会相助他们脱离我们的追踪。至于你说的影子会就是那些金国人吧，也许他们的圣女任玉英知道。他们将我关起来想作为下月的活祭，不过我发现了一条前人挖下的暗道随时可以逃出。你还是尽快找任玉英查找他们的下落吧，以免给他们逃走了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到罗成</Value>
+              </txt>
+              <txt>
+                <Value>找到罗成</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找圣女任玉英问明影子会成员下落。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>1276</Value>
+              </number>
+              <number>
+                <Value>2615</Value>
+              </number>
+              <dialognpc>
+                <Value>1095</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你便是这里的圣女？那些逃来这里的金国人躲在哪里了？”&lt;end&gt;
+&lt;npc=1095&gt;：“你……是你……这些金国人是我们圣教主的救命恩人，你找他们做什么？”&lt;end&gt;
+&lt;Playername&gt;：“任姑娘，我不知道你怎么会成为这里的圣女，不过请你告诉我那些金国人的下落。”&lt;end&gt;
+&lt;npc=1095&gt;：“这些金国人是金国的血影，非常厉害，你还是不要招惹他们的好。”&lt;end&gt;
+&lt;Playername&gt;：“这个有劳挂心了，我一定要找到他们。”&lt;end&gt;
+&lt;npc=1095&gt;：“他们在洞的西南，在找他们之前请将我刺伤，否则教主回来我也无法交待。动手吧！”&lt;end&gt;
+&lt;Playername&gt;：“这……”&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>1096</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>找任玉英打探</Value>
+              </txt>
+              <txt>
+                <Value>找任玉英打探</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去鸡冠洞西南找到藏匿在此地的影子会成员</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>371000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>1396</Value>
+              </number>
+              <number>
+                <Value>2961</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>在鸡冠洞西南找到血影</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：(血影果然躲藏在这里，看样子他们也受伤不轻，还是抓住其中一个从中问出游龙珏和其他血影的下落。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>从血影口中问出游龙珏下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>1450</Value>
+              </number>
+              <number>
+                <Value>2983</Value>
+              </number>
+              <fightnpc>
+                <Value>1004</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>1015</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你们把游龙珏带到哪里去了？别的血影逃到哪里去了？快说！”&lt;end&gt;
+&lt;npc=1015&gt;：“别想从我们这里问出什么，我们血影宁死都不会出卖组织。你就问吧，等你们知道我们兄弟到哪里的时候，游龙珏就再也找不回来了，哈哈哈！”&lt;end&gt;
+&lt;Playername&gt;：(看来想要从这些亡命之徒口中问出游龙珏的下落有些困难，还是找钱海看看是否有别的法子。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>从血影处问出游龙珏下落</Value>
+              </txt>
+              <txt>
+                <Value>从血影处问出游龙珏下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找鸡冠洞的钱海商议对策</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>464000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>898</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=898&gt;：“可曾见到罗成兄弟，他还好不？”&lt;end&gt;
+&lt;Playername&gt;：“罗成被这些的邪教弟子抓了起来，不过自有脱身之法，你不用担心。我已经找到了隐藏在此地的血影的下落，但是却问不出游龙珏的下落。看他们安然在此休养的情势，游龙珏必定不在他们身上。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找钱海商议对策</Value>
+              </txt>
+              <txt>
+                <Value>找钱海商议对策</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000088</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>33</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

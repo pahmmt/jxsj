@@ -1,0 +1,210 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002F4" name="古墓迷影" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=11017&gt;："江湖之大，谁能笃定人心如初。我教上任教主余威未散，竟有弟子携带我教隐秘叛离师门，相信这些你也有耳闻，叛离是不能容忍的，不论是情感还是人心……。“&lt;end&gt;
+&lt;playername&gt;:"苏姑娘所言，&lt;playername&gt;谨记。不过此次前来是想加入古墓派，不知加入古墓派有什么要求？”&lt;end&gt;
+&lt;npc=11017&gt;："我派近年来所收弟子屈指可数，并大多数以女弟子居多， 千针诛相负，一剑乱浮生……你若当真想加入我派便先显示你的诚心吧。每周去那辰虫镇与阴阳时光殿走一趟，随后再来与我禀报，我若能看见你的诚心，自然允你加入我古墓一派。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CompleteTask</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>87</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>通关一次阴阳时光殿副本</Value>
+              </txt>
+              <txt>
+                <Value>通关一次阴阳时光殿副本</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>CompleteTask</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>通关一次辰虫镇副本</Value>
+              </txt>
+              <txt>
+                <Value>通关一次辰虫镇副本</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回报古墓派的苏清泠</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11017</Value>
+              </dialognpc>
+              <number>
+                <Value>2261</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=11017&gt;："剑回流转，一语成谶，吸引你的应当不止是那权利与更强的力量，一定……还有些别的什么。你的情况我会与林掌门交待，不过在掌门点头之前，你依然还是每天来我这儿领取任务吧，掌门是个外冷内热的女子，相信你的诚意终能打动她，祝你早日拜与我门之下。”&lt;end&gt;
+&lt;playername&gt;："多谢苏姑娘，在下就此告辞。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>与苏清泠对话</Value>
+              </txt>
+              <txt>
+                <Value>与苏清泠对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>87</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

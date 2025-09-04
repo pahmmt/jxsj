@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="0000000000000021" name="鳄鱼之灾" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>4</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="00000000000000B5" name="鳄鱼之灾" describe="在青螺岛上的池塘中，寄生着许多凶猛的鳄鱼。多年前，杨帮主曾率领弟兄们围剿过一次，后来漏网的鳄鱼又迅速繁殖起来，近来常常爬出池塘害人。情报房的首领裴翼飞原本希望率众剿灭毒鳄，可惜因游龙诀忽然在江湖中出现，不得不紧急离岛查探此事，驱鳄的重任就交到弟兄们身上了。这些鳄鱼狡猾非常，如果没有诱饵，很难被捕捉到。只有一种称为雄胆香的药材能够驱使它们离开寄居处，回到陆地上来。&#xD;&#xA;&lt;stepdesc&gt;雄胆香这种药材产量极少，青螺岛上唯一拥有这些药材的&lt;pos=神秘商人,55,1917,3482&gt;又不肯出售，很是令人恼火。为了岛民们的安全，裴翼飞在走之前透露，实在不行就暗抢。&#xD;&#xA;&lt;stepdesc&gt;把雄胆草带回给&lt;pos=熊挺,55,1889,3515&gt;制药。&#xD;&#xA;&lt;stepdesc&gt;按照熊挺的指点，在&lt;pos=火堆,55,1953,3528&gt;上架好大锅，开始熬制雄胆香。&#xD;&#xA;&lt;stepdesc&gt;顺利得到了雄胆香，可以回去交给&lt;pos=情报房弟子,55,1899,3480&gt;了。" refer="00000000000000B5">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>308</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=102000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=400,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="makepoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="gatherpoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>21</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>308</Value>
+          </dialognpc>
+          <txt>
+            <Value>顺利得到了雄胆香，可以回去交给&lt;pos=情报房弟子,55,1828,3471&gt;了。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>23</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=情报房弟子,55,1899,3480&gt;，可以接到任务【鳄鱼之灾】。</Value>
+          </txt>
+          <number>
+            <Value>1</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>23</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

@@ -1,0 +1,489 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002CB" name="绑一个回来" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=10055&gt;：“我方的内应好像遇见了一点问题，已经很久没把蒙古军内部的情报传回来了。”&lt;end&gt;
+&lt;playername&gt;：“那怎么办才好！”&lt;end&gt;
+&lt;npc=10055&gt;：“我想让人前去蒙古军后方大营绑架一名火儿赤回来问一下情况，不知你可否前去？”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10088</Value>
+              </fightnpc>
+              <number>
+                <Value>2150</Value>
+              </number>
+              <taskitem>
+                <Value>{881,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>1</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddTaskValueOnStart</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>241</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnStart</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>254</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>总算捆了一个！</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10055</Value>
+              </dialognpc>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“将军，人我给您绑回来了！”&lt;end&gt;
+&lt;npc=10055&gt;：“不错，给押到后面去。”&lt;end&gt;
+&lt;playername&gt;：“将军还有事要吩咐的吗？”&lt;end&gt;
+&lt;npc=10055&gt;：“正好人也抓回来了，你就去审问一番吧！”&lt;end&gt;
+&lt;playername&gt;：“我这就前去，保管他祖上十八代姓甚名谁都说出来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{皮鞭,20,1,888,1,0,1}
+{烙铁,20,1,889,1,0,1}
+{小刀,20,1,890,1,0,1}
+{冷水,20,1,891,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将绑回的人送至仁多保忠处</Value>
+              </txt>
+              <txt>
+                <Value>将绑回的人送至仁多保忠处</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{881,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,888,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <number>
+                <Value>1499</Value>
+              </number>
+              <number>
+                <Value>2962</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,889,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <number>
+                <Value>1499</Value>
+              </number>
+              <number>
+                <Value>2962</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,890,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <number>
+                <Value>1499</Value>
+              </number>
+              <number>
+                <Value>2962</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,891,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <number>
+                <Value>1499</Value>
+              </number>
+              <number>
+                <Value>2962</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这么不经打，才这么几下就昏死过去了。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10055</Value>
+              </dialognpc>
+              <number>
+                <Value>2148</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：将军，被抓住火儿赤士兵一用刑就昏死过去了！&lt;end&gt;
+&lt;npc=10058&gt;：什么？才一炷香的时间就不行了？蒙古军向来标榜自己悍勇，也不过如此啊！&lt;end&gt;
+&lt;playername&gt;：将军说的极是。&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与仁多保忠对话</Value>
+              </txt>
+              <txt>
+                <Value>与仁多保忠对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>254</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>248</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

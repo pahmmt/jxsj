@@ -1,0 +1,491 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000016" name="鬼神之卦" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=30&gt;：“想必你已知道，我要借那汗血宝马来祭旗。”&lt;end&gt;
+&lt;playername&gt;：“恩。”&lt;end&gt;
+&lt;npc=30&gt;：“天时地利人和，缺一不可；若势必逆天，当然要继续发动，却是另一种做法。这样，你去找一个叫柳鬼的卜师，向他问一卦。此事绝不能让帮中其他弟兄知道。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=5&gt;
+&lt;npc=72&gt;：“般若菠萝蜜，蜜菠萝，蜜菠萝~~~~。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=5&gt;
+&lt;playername&gt;：“柳先生，如何？”&lt;end&gt;
+&lt;npc=72&gt;：“哎，柳某一世的声名毁在今日了……我连算三次，居然都是算不准。这卦在卦书中称为藏天之卦，万不出一，今日竟连遇三次，丐帮的未来，柳某才疏学浅，无法断定。”&lt;end&gt;
+&lt;playername&gt;：“那我便如实上报了？”&lt;end&gt;
+&lt;npc=72&gt;：“请听柳某再说一句。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1448</Value>
+              </number>
+              <number>
+                <Value>3121</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>找到神算柳鬼居住的长江别院</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>19</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>神算柳鬼受高人真传，精通九宫八卦之术，石轩辕十分信任他</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>72</Value>
+              </dialognpc>
+              <number>
+                <Value>411</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“柳鬼先生，石轩辕帮主让我来向你请卦。”&lt;end&gt;
+&lt;npc=72&gt;：“几日前已算到，日间也曾试占一卦，卦象紊乱，柳某深恐会辜负帮主的信任。”&lt;end&gt;
+&lt;playername&gt;：“您只管算来，我如实回报，不要有什么负担。”&lt;end&gt;
+&lt;npc=72&gt;：“既然你如此坚持，我便问一问鬼神。”&lt;end&gt;
+&lt;npc=72&gt;：“这卦象？柳某几十年来卜过上千卦，居然从来没有看过如此毫无头绪的卦象！我要再算一次。”&lt;end&gt;
+&lt;playername&gt;：“可需要什么材料？”&lt;end&gt;
+&lt;npc=72&gt;：“需灼烧过的白骨。你只管替我取些骨头来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=72&gt;：“需灼烧过的白骨。你只管替我取些骨头来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>请神算柳鬼卜卦</Value>
+              </txt>
+              <txt>
+                <Value>请神算柳鬼卜卦</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>柳鬼请我去取一些动物的白骨来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>73</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <taskitem>
+                <Value>{151,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>74</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <taskitem>
+                <Value>{152,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>获得足够的白骨，柳鬼可以重新问卦了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>72</Value>
+              </dialognpc>
+              <number>
+                <Value>411</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“柳先生，白骨我替你弄来了。”&lt;end&gt;
+&lt;npc=72&gt;：“恩，不问苍天问鬼神，神鬼之力不是你我凡夫俗子可以预料。尽人事知天命吧。我现在要开始灼烧这些白骨了，你过一个时辰再来找我。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找柳鬼重新问卦</Value>
+              </txt>
+              <txt>
+                <Value>回去找柳鬼重新问卦</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{151,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{152,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>柳神算需要静静的与鬼神交流，等上一炷香的时间再去找他</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">72</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000017</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

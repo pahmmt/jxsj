@@ -1,0 +1,480 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000019" name="密林深处" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=75&gt;：“有很多事情要你去办，稍候片刻，我这里还有些事情要处理，趁这时间先给你些五毒教的任务做做吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>75</Value>
+              </dialognpc>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1857</Value>
+              </number>
+              <number>
+                <Value>3571</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>这里不是说话的地方，随我去原始森林。</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>找捕蛇人带我去原始森林</Value>
+              </txt>
+              <txt>
+                <Value>找捕蛇人带我去原始森林</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>捕蛇人到底有什么话要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>76</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=76&gt;：“你是帮主亲信，将来打交道的机会也多，有事我不瞒你。我乃丐帮岭南分舵的舵主，姓姬名铸。五年前一家老小俱为五毒教众残杀，当时我正在外地办事，赶回家时已经晚了。为此我吞服巨毒，将这付皮囊弄得糜烂恶臭，暗中潜入五毒教，就是发誓要报此大仇。”&lt;end&gt;
+&lt;playername&gt;：“姬舵主……”&lt;end&gt;
+&lt;npc=76&gt;：“可我在这原始森林中呆的时间越长，就越感觉到五毒教内并非没有好人。当年杀我全家那恶贼，后来因为冒犯了夷人部族首领的女儿，被古嫣然教主丢进了蟾宫前的毒池。当时一想到大仇得报，真想一死了之。”&lt;end&gt;
+&lt;npc=76&gt;：“不久后的一天夜里，石帮主找到了我，告诉姬某潜伏在五毒教的重要性。到今天我依然记得帮主所言：我们做武人的，到了最后，总要为家国为黎民百姓做点什么。哪怕只是趟出一条路，在这路上走一步，也会有后来人踩着我们的尸骨前进。那样我们的生命就有了价值。”&lt;end&gt;
+&lt;playername&gt;：“我也听帮主说过同样的话。”&lt;end&gt;
+&lt;npc=76&gt;：“姬某虽是井底之蛙，却并不愚钝。帮主这样的人，跟随他真能为天下做些事情吧。自那以后，我再无死志，整个人都已交给丐帮，交给帮主了。”&lt;end&gt;
+&lt;playername&gt;：“最起码帮主一席话，已救了姬舵主一条命。”&lt;end&gt;
+&lt;npc=76&gt;：“是。当年朝廷发旨全境追剿五毒教众时，只有极少数人被古嫣然带领着侥幸避入这原始森林深处。可是流落各地的五毒教中人也有侥幸生还的，他们的后人近几年获得五毒教所在的确切位置，便来投靠。你可以伪装成五毒后人，混入五毒教。”&lt;end&gt;
+&lt;playername&gt;：“没有身份证明，他们如何肯信？”&lt;end&gt;
+&lt;npc=76&gt;：“这个自然。距此不远有一处定陶岭，当年五毒教银蟾香主木无言的后人被我击伤，避在山岭上疗伤。你此去可将此二人击毙，取其信物扮做木氏后人。”&lt;end&gt;
+&lt;playername&gt;：“此二人……”&lt;end&gt;
+&lt;npc=76&gt;：“放心，他们是一对亲姐弟。我一路跟踪，二人竟有乱伦之举，而且一路奸淫青年男女，乃十恶不赦之辈。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>问问捕蛇人还有什么话要告诉我</Value>
+              </txt>
+              <txt>
+                <Value>问问捕蛇人还有什么话要告诉我</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>31</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击毙两个邪恶的男女，获取他们的信物混入五毒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>77</Value>
+              </fightnpc>
+              <number>
+                <Value>425</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>78</Value>
+              </fightnpc>
+              <number>
+                <Value>425</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,154,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>可以让姬舵主替我安排混入五毒教了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>76</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=76&gt;：“信物拿到了吗？”&lt;end&gt;
+&lt;playername&gt;：“拿到这腰牌。”&lt;end&gt;
+&lt;npc=76&gt;：“太好了，此物是当年银蟾香主证明身份的腰牌。木无言早年为五毒立过大功，他们不会不收你的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>得到了银蟾腰牌，回去交给姬铸处理吧</Value>
+              </txt>
+              <txt>
+                <Value>得到了银蟾腰牌，回去交给姬铸处理吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>29</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>31</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

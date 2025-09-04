@@ -1,0 +1,200 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000118" name="与东乌蛮的合作" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1039&gt;：“这位&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;，看你打扮像个有绝世武功之人，可愿答应我一个不情之请？你放心，我绝对不会请你做什么坏事，等我说完，你一定会帮我的。”&lt;end&gt;
+&lt;playername&gt;：“你且说说！”&lt;end&gt;
+&lt;npc=1039&gt;：“&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;来此全神戒备，想来也知道此为何地了。不错，这里正是如影的秘密基地。我是附近村民，被强行拉来烧火做饭，村里人都叫我癞痢头。这里面的那名小女孩叫二丫，也村里马铁匠的女儿。马铁匠有一颗铁母，据说可以锻造神兵利器。如影知道后强行索买，被马铁匠拒绝。如影便将二丫掳来此处，若马铁匠不愿交出铁母就杀掉二丫。”&lt;end&gt;
+&lt;playername&gt;：“竟然还有此事，那马铁匠怎么说？”&lt;end&gt;
+&lt;npc=1039&gt;：“这个狼心狗肺的东西竟然眼看着二丫被杀，不愿交出铁母。我看着二丫长大，不忍看她被如影所害。所以请&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;将二丫救出，带到马铁匠那里。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1037</Value>
+              </dialognpc>
+              <number>
+                <Value>1727</Value>
+              </number>
+              <number>
+                <Value>3350</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“丫头，跟我走吧，我带你回你到你爹爹那里。”&lt;end&gt;
+&lt;npc=1037&gt;：“不要，我不要，爹爹总是打我骂我，我要在这里玩，我不回去。”&lt;end&gt;
+&lt;playername&gt;：“这……你待在这里会没命的啊！”&lt;end&gt;
+&lt;npc=1037&gt;：“我……那我跟你走。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1038</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>100</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1893</Value>
+              </number>
+              <number>
+                <Value>3410</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1729,3378
+1747,3407
+1774,3413
+1809,3421
+1836,3426
+1872,3395
+1893,3410</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1037&gt;：“爹爹……我回来了……”&lt;end&gt;
+&lt;npc=1040&gt;：“死丫头，你还回来做什么？”&lt;end&gt;
+&lt;playername&gt;：(这马铁匠也太可气了，定要和他理论一番。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>和马铁匠理论</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1040</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你这人怎么如此可恶，死守着一块烂铁连女儿都不要了。现在女儿平安回来，你竟然是这种态度。太可恨了！”&lt;end&gt;
+&lt;npc=1040&gt;：“死丫头，你带了个什么人回来？你带回来给你出气是吗？你滚啊，滚去找你那不要脸的娘去啊！跟你娘一个德性，就知道勾人。”&lt;end&gt;
+&lt;npc=1037&gt;：“爹爹……我……”&lt;end&gt;
+&lt;npc=1040&gt;：“我们家的事谁也别想管！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和马铁匠理论</Value>
+              </txt>
+              <txt>
+                <Value>和马铁匠理论</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

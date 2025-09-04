@@ -1,0 +1,716 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000002" name="通敌叛帮" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1&gt;：“好了，此间事了，铁心那里正是用人之季。季管事向我推荐了你，你便跟随铁心办差，先历练历练吧。”&lt;end&gt;
+&lt;playername&gt;：“是，老帮主。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1692</Value>
+              </number>
+              <number>
+                <Value>3691</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>准备好了就跟随杨铁心去天王帮行营</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>跟随杨铁心去天王帮行营</Value>
+              </txt>
+              <txt>
+                <Value>跟随杨铁心去天王帮行营</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,0,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>此刻，刚当上帮主的杨铁心似乎就对什么事烦恼起来了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2&gt;：“前阵子帮里捉到一个行刺娄道领的刺客，事后审问，他招出自己乃是受本帮长老裘止水的指使。更可怕的是，这刺客受刑不住，还供出了他是金国天忍教的人，裘止水便是他的统领，秘密潜伏在天王帮许多年了。”&lt;end&gt;
+&lt;playername&gt;:“倘若裘长老潜伏了这么久，为何忽然要做直接指使他人行刺这样危险的事情？”&lt;end&gt;
+&lt;npc=2&gt;：“因为当时义母和我还没有回来，帮主一位空悬已久，帮中兄弟们都在议论此事。若真改选帮主，只有裘止水、娄一关、季叔班三人最够资格。”&lt;end&gt;
+&lt;playername&gt;:“这样就解释得通了，不过裘长老在江湖上向来有极好的人望。虽然脾气火暴了些，说他通敌我却不太相信。”&lt;end&gt;
+&lt;npc=2&gt;：“此事虽然有人证，我也有些疑虑。若妄加处置，定会寒了帮中弟兄的心。这样吧，你替我去看望裘长老，顺道带些点心瓜果过去。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{果篮,20,1,132,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>去议事厅找杨铁心看有何分派</Value>
+              </txt>
+              <txt>
+                <Value>去议事厅找杨铁心看有何分派</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>杨铁心请我带着水果去探望前辈耆老裘止水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>13</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“裘长老，新任杨帮主托我来看看您，这是他让我给您带的一些点心瓜果，请您收下。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{果篮,20,1,132,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=13&gt;：“有劳帮主费心，裘某因悉心悔过不便四处走动。听兄弟们说，新任杨帮主待人宽厚，是个好首领。”&lt;end&gt;
+&lt;playername&gt;:“裘老，帮主对您……通敌一事的意见有所保留，您有没有什么可以替自己开脱的证据？”&lt;end&gt;
+&lt;npc=13&gt;：“呵呵，我裘止水脾气火暴，这辈子得罪过不少人。若有人存心整我，又怎会留下证据。”&lt;end&gt;
+&lt;playername&gt;:“裘老为何不与那刺客当面对质？”&lt;end&gt;
+&lt;npc=13&gt;：“都是徒劳，人家把一切都算计好了。那刺客是附近益阳分舵的弟子，还是我亲自引荐入帮的。与他对质，怎么对？谁会相信？”&lt;end&gt;
+&lt;playername&gt;:“哎。既然如此，那我便回去复命了。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“帮主，我去探望过裘长老了，他对行刺一事并不愿多作解释。”&lt;end&gt;
+&lt;npc=4&gt;：“若裘长老真是幕后之人，面对死期将近，怎能如此平静不做辩驳？此事可有蹊跷，容我再想想先。对了，方才帮中有弟子来报，言成都分舵八百里加急送来了一封书信。平日帮众都用信鸽传递消息，如今由专人护送，可见事情紧迫，你速去将信取来吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4&gt;：“成都分舵弟子八百里加急送来了一封书信，你速去取回来吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>先把情况回复杨铁心吧</Value>
+              </txt>
+              <txt>
+                <Value>先把情况回复杨铁心吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>成都分舵弟子加急送来了一封书信，杨铁心派我速去取来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>14</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“杨帮主遣我来取书信。”&lt;end&gt;
+&lt;npc=14&gt;：“书信在此，请速速转交帮主。事情紧迫，万不可耽误。”&lt;end&gt;
+&lt;playername&gt;:“究竟何事如此紧急？”&lt;end&gt;
+&lt;npc=14&gt;：“大理境内的翠烟门数日前获得了那块凶玉游龙珏！天下要乱了，要大乱了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{天王分舵来信,20,1,133,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>去成都分舵弟子那取来书信</Value>
+              </txt>
+              <txt>
+                <Value>去成都分舵弟子那取来书信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>凶玉游龙珏重现江湖，速把书信呈与杨铁心帮主亲览</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“帮主，书信在此。”&lt;end&gt;
+&lt;npc=4&gt;：“游龙珏？不是那块传说中拥有颠倒乾坤，改朝换代之力的奇玉吗？一百多年前便失踪的古玉，怎么会在此时出现？信上讲，翠烟门获得了此玉。既然我们知道，其他帮派也一定获得了消息。这封信或非详兆，江湖恐怕又要刮起一场腥风血雨了。”&lt;end&gt;
+&lt;playername&gt;:“此玉竟如此重要？我们要不要出手夺玉？”&lt;end&gt;
+&lt;npc=4&gt;：“此事须从长计议，你先去找鸽舍统领裴翼飞，命他亲自前往西南查探游龙珏的详细情况。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{天王分舵来信,20,1,133,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将游龙珏出世的消息转告裴翼飞</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>12</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“翼飞，帮主接到成都分舵来信，信中说游龙珏在翠烟门出现，但真假难辨。帮主希望你亲自去查探一番。”&lt;end&gt;
+&lt;npc=12&gt;：“此事我已听说，这便去了。恐怕此事会引出许多祸端。你在岛上要勤加练功，将来好为帮主分忧。若身处野外不便通信，可将急报绑在信鸽的腿上，它自会把消息带回帮中。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到鸽舍统领裴翼飞</Value>
+              </txt>
+              <txt>
+                <Value>找到鸽舍统领裴翼飞</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,0,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000003</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

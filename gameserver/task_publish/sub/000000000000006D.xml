@@ -1,0 +1,905 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000006D" name="圆光秘术" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1193&gt;：“刚才本宫已经听&lt;=me.szName&gt;详说了太皇太后的计策，诸位认为此举是否可行？”&lt;end&gt;
+&lt;npc=1194&gt;：“臣以为可行，臣可请丐帮石帮主和天王帮杨帮主共同相助，将皇后拦在灵隐寺中，直到殿下登基成功。”&lt;end&gt;
+&lt;npc=1193&gt;：“留大人和赵大人呢？”&lt;end&gt;
+&lt;npc=1195&gt;：“臣觉得可行！”&lt;end&gt;
+&lt;npc=1189&gt;：“臣也觉可行！”&lt;end&gt;
+&lt;npc=1193&gt;：“那好，韩大人可速速通知杨、石两位帮主。&lt;=me.szName&gt;也可一并前去，待杨、石两位帮主将皇后困住便立刻回来报给本宫。”&lt;end&gt;
+&lt;Playername&gt;：“遵命！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>29</Value>
+              </number>
+              <number>
+                <Value>1437</Value>
+              </number>
+              <number>
+                <Value>3859</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>前往灵隐寺大殿后埋伏</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1184&gt;：“石帮主你来了！”&lt;end&gt;
+&lt;npc=1185&gt;：“杨帮主来的好早！”&lt;end&gt;
+&lt;Playername&gt;：“两位帮主都来了，我怎么看不到你们？”&lt;end&gt;
+&lt;npc=1185&gt;：“我们在屋顶瞭望！看样子李后还没来，我们耐心等等，莫要被她的手下发现！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>等待李后前来还愿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>38</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1184&gt;：“要来了，噤声！”&lt;end&gt;
+&lt;npc=1185&gt;：“人已经进入大殿，今天来的人不是很多，待会听我口令一下我们就一起冲进去。我二人守住门口，你冲进去制服李后的手下，记住莫要伤了奸后，给嘉王留下骂名。”&lt;end&gt;
+&lt;Playername&gt;：“是！”&lt;end&gt;
+&lt;npc=1185&gt;：“差不多了，我数一二三我们就一起冲进去！一！二！三！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>冲进大殿制服李后侍卫</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>38</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>949</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=950&gt;：“什么人胆敢在此行凶，可知哀家是谁？”&lt;end&gt;
+&lt;npc=1185&gt;：“奸后，你的恶行到头了！&lt;=me.szName&gt;，快去通知嘉王，时机已经成熟！”&lt;end&gt;
+&lt;Playername&gt;：“那这里怎么办？”&lt;end&gt;
+&lt;npc=1184&gt;：“放心，有我二人在此，她就是插了翅膀也飞不走！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>速速通知嘉王时机已经成熟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>260000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1188</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“禀报殿下，皇后已被杨、石两位帮主困在灵隐寺中。请殿下速速回宫。”&lt;end&gt;
+&lt;npc=1188&gt;：“诸位随我一起回宫！”&lt;end&gt;
+&lt;npc=1181&gt;：“嘉王和韩、赵两位大人先去，老臣随后就到！”&lt;end&gt;
+&lt;npc=832&gt;：“臣已经通知我门下弟子随后即到！”&lt;end&gt;
+&lt;npc=1187&gt;：“&lt;=me.szName&gt;，你去通知郭统领去请太皇太后她老人家！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>通知嘉王</Value>
+              </txt>
+              <txt>
+                <Value>通知嘉王</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>通知郭节去请太皇太后吴氏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>823</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“见过郭统领！皇后已被杨、石两位帮主困在灵隐寺中，嘉王和韩赵两位大人正在回京的路上。请你速速前去请太皇太后前来主持内禅仪式。”&lt;end&gt;
+&lt;npc=823&gt;：“太皇太后已经动身前去了，嘉王登基，你出力最多，定要前去观礼！我这就带你去吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>通知郭节</Value>
+              </txt>
+              <txt>
+                <Value>通知郭节</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在郭节带领下前往大殿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>823</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>523</Value>
+              </number>
+              <number>
+                <Value>1610</Value>
+              </number>
+              <number>
+                <Value>3228</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>准备好的话我们现在便前往大殿！</Value>
+              </txt>
+              <txt>
+                <Value>准备好了！</Value>
+              </txt>
+              <txt>
+                <Value>稍等片刻</Value>
+              </txt>
+              <txt>
+                <Value>随郭节前往大殿</Value>
+              </txt>
+              <txt>
+                <Value>随郭节前往大殿</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1183&gt;：“诸位大臣，皇上痼疾在身，无力亲政。前日写下手谕，欲觅新君。赵大人，可是如此？”&lt;end&gt;
+&lt;npc=1195&gt;：“正是如此！皇上亲笔写有手谕，臣和韩大人以及宰相大人均已见过。”&lt;end&gt;
+&lt;npc=1183&gt;：“既是如此，老身当为我大宋皇朝择一新君。嘉王赵扩平日深受皇上宠爱，人又明智，老身欲选其接掌皇位，诸位大臣意下如何？”&lt;end&gt;
+&lt;npc=1194&gt;：“太皇太后圣明！此举实乃我大宋江山之福，大宋百姓之福！”&lt;end&gt;
+&lt;npc=1198&gt;：“且慢，诸位皆知皇上龙体欠恙，又如何会写下什么手谕？手谕何在？待我等一看。”&lt;end&gt;
+&lt;npc=1193&gt;：“放肆，此等言语也是你可轻易说的？今日为平众位大臣疑虑，本宫暂不与你计较。&lt;=me.szName&gt;，你将皇上的手谕打开给各位大臣一观。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将皇上的手谕打开给各位大臣观看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1500</Value>
+              </dialognpc>
+              <number>
+                <Value>523</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>打开手谕</Value>
+              </txt>
+              <txt>
+                <Value>打开手谕</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开手谕</Value>
+              </txt>
+              <txt>
+                <Value>打开手谕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1616,3222</Value>
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1197&gt;：“这……果然是出自圣上的手笔！”&lt;end&gt;
+&lt;npc=1192&gt;：“还有何人持有异议？”&lt;end&gt;
+&lt;npc=1198&gt;：“新皇登基需有皇上和皇后亲临，如今两位均未来临，怎么冒然禅位？”&lt;end&gt;
+&lt;npc=1183&gt;：“住口！尔等还敢妄言皇上皇后？太上皇驾崩多日无人除丧，若是皇上皇后能担此任为何不作？尔等身为朝臣，在危急之时不思报效朝廷，只知觍颜奉迎。如今老身出面另择新主，尔等又来胡声乱吠！若是不加惩治，天子威严何在？朝廷威严何在？&lt;=me.szName&gt;，你去教训一下这帮恶逆，老身倒要看看还有谁敢阻拦？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>教训违抗圣令的李后心腹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>523</Value>
+              </number>
+              <number>
+                <Value>1609</Value>
+              </number>
+              <number>
+                <Value>3237</Value>
+              </number>
+              <dialognpc>
+                <Value>1199</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“无耻奸臣，论罪当诛！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1198</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>教训李后心腹</Value>
+              </txt>
+              <txt>
+                <Value>教训李后心腹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1191&gt;：“还有何人持有异议？”&lt;end&gt;
+&lt;npc=1197&gt;：“愿听太皇太后懿旨！”&lt;end&gt;
+&lt;npc=1198&gt;：“任凭太皇太后主持！”&lt;end&gt;
+&lt;npc=1191&gt;：“如此老身就宣布，即日起由嘉王赵扩登基，另开新朝。众位大臣要全力辅弼，若有人敢心怀异心，坏我宋室江山，国法不容！”&lt;end&gt;
+&lt;npc=1197&gt;：“万岁！万岁！万万岁！”&lt;end&gt;
+&lt;npc=1193&gt;：“众位平身！朕有封赏！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找嘉王请赏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1192</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1193&gt;：“朕今日得以登基为帝，离不开诸位大臣的相助。朕特要感谢的是丐帮、天王帮和义军的兄弟，当日朕落难江湖，流落民间，若无他们相助，只怕早已身首异处。&lt;=me.szName&gt;，朕要感谢你！感谢义军中有你这样出色的成员。”&lt;end&gt;
+&lt;npc=1197&gt;：“陛下洪福齐天，定有天佑！”&lt;end&gt;
+&lt;npc=1193&gt;：“许是如此，在危难时刻总有人相助。&lt;=me.szName&gt;，朕要感谢你！感谢义军中有你这样出色的成员。你从一开始便追寻朕的下落，又屡次救朕和朕的随从于危难。朕得以和赵韩等大人联络，也均是你的功劳。朕今日特封你所在义军为忠义义军，封你为勤王大将军，遇三品以下朝臣可以不拜，你可愿意？”&lt;end&gt;
+&lt;Playername&gt;：“陛下登基乃是朝廷之幸，万民之幸。草民等人不过是顺应民意，何敢居功？此是丐帮、天王帮、漕帮等兄弟均有出力，草民岂能专美于前？草民身处江湖已久，难以适应朝廷戒律，还请陛下恩准草民回到江湖，过那自由自在的生活！”&lt;end&gt;
+&lt;npc=1193&gt;：“好个自由自在的生活！朕准你就是！”&lt;end&gt;
+&lt;Playername&gt;：“谢陛下圣恩！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找嘉王请赏</Value>
+              </txt>
+              <txt>
+                <Value>找嘉王请赏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000006E</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

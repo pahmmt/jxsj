@@ -1,0 +1,387 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000021F" name="愚人恋" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5062&gt;：“我乃大理城东三十里外牛家村村长的女娃小希。听说大侠乃义军精锐，特有一事相求！”&lt;end&gt;
+&lt;playername&gt;:“小妹妹你神情如此忧伤，可是碰到了什么难事，旁边这个男子又是谁？”&lt;end&gt;
+&lt;npc=5062&gt;：“他是我的哥哥阿力，自从三年前在大理刘老爷府上因修葺房屋被砸伤了头以后就变得如此痴傻，现在我俩只靠着我每日卖艺挣的点儿银子勉强填肚子。哥哥虽是傻傻的，却有一桩心愿未了，我明白哥哥所想。”&lt;end&gt;
+&lt;playername&gt;:“小希莫着急，我能帮上什么忙吗？”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5062</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5062&gt;：“哥哥在刘老爷府上帮工的时候与府上的丫鬟小月很是情投意合，可自从哥哥出了事后小月姐姐也仿佛销声匿迹了，难道她是故意躲着我们不见？”&lt;end&gt;
+&lt;playername&gt;：“凡事也不能妄下定论，那你哥哥的心愿是与小月有关吗？”&lt;end&gt;
+&lt;npc=5062&gt;：“小月姐姐身体不好，哥哥的心愿便是将手中存下的这些野味送与刘府上的丫鬟小月。他们从前总是形影不离的，可怜这傻哥哥心底还惦记着小月。”&lt;end&gt;
+&lt;playername&gt;：“小希放心，就包在我身上吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{山珍野味,20,1,573,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与小希对话</Value>
+              </txt>
+              <txt>
+                <Value>与小希对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>询问小月近况</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5063</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“是小月姑娘么，我是受小希和阿力之托将这些山珍野味交给你。阿力自从三年前帮刘老爷家修葺房屋被砸伤后便是傻傻的，而他却整天念叨着要将这些补身子的东西给你。”&lt;end&gt;
+&lt;npc=5063&gt;：“力哥哥的事情我已经听说了，可是无奈天意弄人，我如今已经是……刘老爷已强迫我为其小妾，我上有老母下有兄弟姐妹，如今也都是靠我一人养活。我很想见见力哥哥，可老爷他一听我这样说便是气的打我。”&lt;end&gt;
+&lt;playername&gt;：“真是个欺人太甚的老淫虫，姑娘莫着急，待我替你出这口恶气。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小月对话</Value>
+              </txt>
+              <txt>
+                <Value>与小月对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>教训刘老爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{573,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5064</Value>
+              </fightnpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回到小月处与其交谈</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5063</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5063&gt;：“少侠就是小月的恩人，是英雄。我再也不用在刘府之中受气了。”&lt;end&gt;
+&lt;playername&gt;：“小月姑娘有何打算？”&lt;end&gt;
+&lt;npc=5063&gt;：“打算？小月不曾为自己做过什么打算，若是一定要有的话第一个便是要去看看力哥哥。我听说他傻了但倘若他还记得小月一丝半点，小月也欢喜。”&lt;end&gt;
+&lt;playername&gt;：“如此看来，小月姑娘真是个重情义之人，小希年岁尚小，若姑娘肯时不时照看着两兄妹那便是再好也不过了。”&lt;end&gt;
+&lt;npc=5063&gt;：“恩，我也是这样想，只是我怕他们兄妹二人讨厌我，毕竟这么久了小月都不曾前去探望力哥哥。”&lt;end&gt;
+&lt;playername&gt;：“你放心吧，他们乃善良之人，小希也是善解人意的女娃儿，你去了他们欣喜还来不及，又怎会责怪？”&lt;end&gt;
+&lt;npc=5063&gt;：“如此小月便放心了，小月告辞，少侠你也要多保重，若有机会再见，小月一定做几道拿手菜亲自款待。”&lt;end&gt;
+&lt;playername&gt;：“姑娘不必如此多礼，若真的要谢，便好好对待阿力吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小月对话</Value>
+              </txt>
+              <txt>
+                <Value>与小月对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,477 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000292" name="更加强大" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“适才太爷提到同伴的秘密，不知道所指何事？”&lt;end&gt;
+&lt;npc=3571&gt;：“同伴的秘密其实是指&lt;color=yellow&gt;同伴技能&lt;color&gt;！每个同伴都会有技能，不等品质的同伴技能数量不同，最多会有10个技能。这些技能对你的战斗有辅助作用，而且可以将技能等级提升到最高6级。&lt;color=yellow&gt;同伴等级每提升五级&lt;color&gt;，会有&lt;color=yellow&gt;一定几率&lt;color&gt;提升技能等级；决定这个几率的属性是&lt;color=yellow&gt;同伴的领悟度&lt;color&gt;。”&lt;end&gt;
+&lt;playername&gt;：“&lt;color=yellow&gt;同伴的领悟度&lt;color&gt;？”&lt;end&gt;
+&lt;npc=3571&gt;：“&lt;color=yellow&gt;同伴的领悟度&lt;color&gt;决定了提升技能的概率，领悟度最低为40，即40%的几率。它可以通过&lt;color=yellow&gt;赠送礼物&lt;color&gt;来提升，当悟性提升到100时则意味着技能100%会升级一级。同伴的技能很多，每次技能提升只会随机提升其中一个技能，每次技能提升会降低领悟度10点。”&lt;end&gt;
+&lt;playername&gt;：“&lt;color=yellow&gt;同伴等级每提升5级&lt;color&gt;会有技能升级的机会，想要提升技能升级的概率，就要给同伴&lt;color=yellow&gt;赠送礼物提高领悟度&lt;color&gt;是这样吧？”&lt;end&gt;
+&lt;npc=3571&gt;：“是这样没错，让我再考考你别的都记住了没！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=3571&gt;：“以后升级的历程会很艰难，你要勉励自己才是！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AnsewerTheQuestion_A</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>同伴技能非常重要，你要想好再回答！</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“答得都不错！现在把同伴的领悟度提升一下吧，这样他会有更大的几率提升技能等级！我这里有一个6级玄晶给你，你可以用来提升同伴领悟度。机会难得，你可别挪为它用。”</Value>
+              </txt>
+              <txt>
+                <Value>这都会错？不行啊！</Value>
+              </txt>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>4</Value>
+              </number>
+              <string>
+                <Value>48,49,50,51</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找龙五太爷领取6级玄晶</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“打开&lt;color=yellow&gt;“同伴界面”&lt;color&gt;，点击打开&lt;color=yellow&gt;[赠送礼物]&lt;color&gt;，将这个6级玄晶放进去，就可以提升同伴的领悟度了！”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{有裂痕的玄晶（6级玄晶）,18,1,114,6,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找龙五太爷领取6玄</Value>
+              </txt>
+              <txt>
+                <Value>找龙五太爷领取6玄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>提高同伴领悟度以获得更大的提升技能的机会</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>提升同伴领悟度大于40点</Value>
+              </txt>
+              <txt>
+                <Value>提升同伴领悟度大于40点</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“你已经意识到同伴领悟度的重要性了，现在需要&lt;color=yellow&gt;提高同伴任意技能到2级&lt;color&gt;。同伴的&lt;color=yellow&gt;等级每提升5级&lt;color&gt;，就会有一次提升技能的机会。你击杀野外的精英怪或首领怪，或者来我这里兑换道具使用都可以提高同伴的经验。要记住，领悟度越高则技能提升的机会就越大！”</Value>
+              </txt>
+              <txt>
+                <Value>提升同伴等级以获得提升技能的机会</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>65</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>提升同伴任意技能到2级</Value>
+              </txt>
+              <txt>
+                <Value>提升同伴任意技能到2级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在可以携同伴回去见龙五太爷了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“这次回来的有点晚啊！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>携同伴去见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>携同伴去见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnStart</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>65</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnStart</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

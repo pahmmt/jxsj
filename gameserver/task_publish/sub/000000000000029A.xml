@@ -1,0 +1,551 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000029A" name="荣耀铁浮城" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=6863&gt;：“&lt;playername&gt;！你来的正好啊。你戎马沙场，飒爽的英姿让无数佑鲁人记在心上，百年来，我们所等的便是这一天，铁浮城地理位置特殊，除了众所周知的矿产资源丰富以外，我想你应该了解更多铁浮城背后的故事。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;愿闻其详。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6863</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=6863&gt;：“二百年前的北宋年间，有一奇人张择端，夜观星相后绘制了流传后世的名画《清明上河图》。靖康之变后，宋徽宗得到此画，并发现画中秘密，此画之中竟藏有一副地图！地图直指铁浮城，旁边还有一行小字——稀世矿藏，得此地者百年天下。”&lt;end&gt;
+&lt;playername&gt;：“原来铁浮城是如此来历，得此地者百年天下何以解释？”&lt;end&gt;
+&lt;npc=6863&gt;：“金太宗派武将前去探究，果然在此地发现大量矿藏，不但有稀缺的铁矿石，竟有一群常年隐匿在深山之中，以铸造熔炼稀有矿藏为生的人佑鲁氏族。”&lt;end&gt;
+&lt;npc=6863&gt;：“佑鲁人男女老少都娴善骑术，却不善与人交流。他们善良朴实，甚至不知此间年号。手中却有着能让当今武林惊叹的铸熔技艺，金使者亲自和佑鲁大长老谈判，希望帮助佑鲁人建城，然而醉翁之意不在酒。”&lt;end&gt;
+&lt;playername&gt;：“铁浮城的矿藏确实可以为战争提供锋锐的兵器！当年金太宗看中的一定是这一点！”&lt;end&gt;
+&lt;npc=6863&gt;：“&lt;playername&gt;果然智勇双全，后来的事情你也都了解了，我便不再多讲，但接下来有一件事是你必须完成的，先去找佑鲁伯乐吧，他会指引着你前进的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与修木泽对话</Value>
+              </txt>
+              <txt>
+                <Value>与修木泽对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到佑鲁伯乐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItemOnAccept</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{870,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6864</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=6864&gt;：“来者可是&lt;playername&gt;大人？”&lt;end&gt;
+&lt;playername&gt;：“老先生客气了！来者正是&lt;playername&gt;，是佑鲁使者修木泽让我前来寻您。”&lt;end&gt;
+&lt;npc=6864&gt;：“果然如此，老夫本名修正阳，因为佑鲁氏族相马医马而闻名，现在男女老少多数已经忘记了我的本名，只恭称老夫一声伯乐。&lt;playername&gt;认为一匹良驹所具备的条件应该有哪些呢？”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;不是行家，不过我认为一匹好马的基本要素有以下几点：速度快、耐力好、力量大、灵活柔韧。”&lt;end&gt;
+&lt;npc=6864&gt;：“很好，你已经答对了其一。不过达到这一点的也只能称为良驹。这其二一点更为重要，那便是人马合一，马要体会主人的心意，马要成为你身体的一部分，成为你的手你的脚，为你所想为你所用。不用发号施令，马儿便可知会你的心意，这便是传说中的神驹。”&lt;end&gt;
+&lt;playername&gt;：“不用发号施令，马儿便可体会主人心意？世间上难道真有如此神驹？”&lt;end&gt;
+&lt;npc=6864&gt;：“我佑鲁氏族在白山黑水之间扎根数百年，确实养育有此种神驹，不过数量及其稀少，我为这神驹起了个名字--逐日。至于是否能驯服此马还要看缘分。有一种望心草，可以让你与神驹沟通，获得驾驭此马的资格。但此种望心草却是需要九十九个月影之石和三个和氏璧来换取。”&lt;end&gt;
+&lt;playername&gt;：“神驹难求，&lt;playername&gt;愿意以九十九个月影之石和三个和氏璧换取望心草，驯服逐日。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{1,月影之石,18,1,476,1,0,99}
+{1,和氏璧,18,1,377,1,0,3}</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>请将99个月影之石和3个和氏璧交给佑鲁伯乐。</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,871,1,0,-1,}</Value>
+              </itemid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带上望心草，试着与传说中的神驹逐日进行沟通</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6866</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>与神驹逐日沟通中</Value>
+              </txt>
+              <txt>
+                <Value>神驹逐日已经认可你</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你与逐日进行了%d/1次沟通</Value>
+              </txt>
+              <txt>
+                <Value>你与逐日进行了1次沟通</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看来逐日已经认你为主了，将这个喜讯告诉伯乐吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{871,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6864</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“伯乐，我成功了，逐日对我已完全消除了戒备，这也多亏了那一株神奇的望心草！”&lt;end&gt;
+&lt;npc=6864&gt;：“&lt;playername&gt;，我要恭喜你，这逐日并非人人可以驯服，在你之前不下百名勇士拿着望心草前去试探，结果都是失败而回！逐日是我佑鲁氏族神驹，它能选中你，自然有它的道理。希望你能带领佑鲁氏族，带领铁浮城的百姓走向繁荣！好了，现在便去找使者木泽吧，他会告知你接下来该怎么做。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;多谢伯乐教导，这便告辞了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与佑鲁伯乐对话</Value>
+              </txt>
+              <txt>
+                <Value>与佑鲁伯乐对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回到城中与佑鲁使者修木泽对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6863</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=6863&gt;：“我听闻你已经驯服神驹逐日？这可是真的？”&lt;end&gt;
+&lt;playername&gt;：“使者这么快就知道了？是的，在佑鲁伯乐的相助之下，我驯服了神驹逐日，自我看到第一眼就感觉与它心灵相通，日后便要与它戎马天涯了。”&lt;end&gt;
+&lt;npc=6863&gt;：“你的功绩已被佑鲁氏族老少一致认可，佑鲁人勤劳善良，他们渴望有英明神勇的人帮助和指引他们通向未来。而&lt;playername&gt;，你善良、勇敢、睿智、更有着一颗纯净的心灵。佑鲁人的选择不会错！”&lt;end&gt;
+&lt;npc=6863&gt;：“从现在起，你已经通过考验，可以从我这里获得逐日神驹以及披风了。”&lt;end&gt;
+&lt;playername&gt;：“铁浮城的兴衰是我义不容辞的责任，&lt;playername&gt;一定不辱使命！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与修木泽对话</Value>
+              </txt>
+              <txt>
+                <Value>与修木泽对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>你已拥有从佑鲁使者处获得马匹和披风的权利</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,872,2,0,-1,}</Value>
+              </itemid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

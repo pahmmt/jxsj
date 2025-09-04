@@ -1,0 +1,191 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001B4" name="营啸" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1808&gt;：“糟了，这下糟了！”&lt;end&gt;
+&lt;playername&gt;：“大人急急差人找我来，不知有何要事？”&lt;end&gt;
+&lt;npc=1808&gt;：“哎呀&lt;playername&gt;你终于来了，大事不好啦!”&lt;end&gt;
+&lt;playername&gt;：“何事令大人如此惊慌?”&lt;end&gt;
+&lt;npc=1808&gt;：“我军中一些好逸恶劳的军卒，近日因军饷少发了几两，居然率众营啸。我命刘五领人打了带头者几个板子，那些天煞的居然就领着一些军卒反出营去。这如何是好，如何是好。”&lt;end&gt;
+&lt;playername&gt;：“原来如此。大人再多派些军士去将闹事者擒回不就好了?”&lt;end&gt;
+&lt;npc=1808&gt;：“你有所不知啊。若在平时，自可如此处置。现下我军与义军合练，若被人知晓一状子上告朝廷，说我御下无方，朝廷正有用得上义军之处，必会拿我是问。虽然韩大人会一力保我，多少受到牵连。”&lt;end&gt;
+&lt;playername&gt;：“大人思虑深远。”&lt;end&gt;
+&lt;npc=1808&gt;：“此事只能秘密进行。请你替我去将那些军卒捉回营中。”&lt;end&gt;
+&lt;playername&gt;：“即使捉回来，这些军卒如何肯就此罢休？”&lt;end&gt;
+&lt;npc=1808&gt;：“这个我自有办法。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1811</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,266,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替皇甫斌捉回了叛军，只不知他会如何处置</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1808</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大人，叛逃军卒我都替大人抓回来了。只不知大人要如何处置他们？”&lt;end&gt;
+&lt;npc=1808&gt;：“哈哈，真是能干。你定然以为大人我要杀人灭口吧？这种残暴的事情，我绝不会干。”&lt;end&gt;
+&lt;playername&gt;：“大人能如此做，我替军卒们谢谢大人了。可是，我实在想不到大人要如何平息他们的怨气？”&lt;end&gt;
+&lt;npc=1808&gt;：“这个，容我再想想，再想想。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>看皇甫斌如何处置捉回的叛军</Value>
+              </txt>
+              <txt>
+                <Value>看皇甫斌如何处置捉回的叛军</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{266,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,163 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002F7" name="碧落之围" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=2711&gt;：“&lt;playername&gt;，大事不妙了！”&lt;end&gt;
+&lt;playername&gt;：“大哥休要着急，发生什么事了？”&lt;end&gt;
+&lt;npc=2711&gt;：“我义军有几处据点，多藏于空谷隐秘之处。谷中兰芷齐芳、水泊棋布，并藏大量奇珍，原为我军操练训诫之所，其贮存的军粮给养也可应对战乱的不时之需。不料，守谷弟子今日来报，称我义军的多个据点内闯入了大量来路不明的强盗，他们打伤义军将士，抢夺谷内财宝，更放言要一把火烧掉险固的碧落谷，简直无法无天了！”&lt;end&gt;
+&lt;playername&gt;：“竟有如此嚣张的强盗？大哥暂且宽心，我这就去会会那些贼子，以报义军生养之恩。”&lt;end&gt;
+&lt;npc=2711&gt;：“如此甚好。我还教你个法子，按‘K’键打开活动日历，领取藏宝图活动次数，我就能带你去藏宝图一探。此行凶险，你若愿意前去，定要召集一队人马结伴组队同行，切莫孤身试险啊！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>完成任意一次藏宝图副本</Value>
+              </txt>
+              <txt>
+                <Value>完成任意一次藏宝图副本</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>义军据点之围已解，向义军军需官说明此事</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2711</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“白大哥，据点之围已解，我等率义军援军其中，将谷中强盗一一铲除，还活捉了几个俘虏呢！”&lt;end&gt;
+&lt;npc=2711&gt;：“做得好！待我将他们细细拷问。多亏了像你这样的骁勇将才，我义军得之幸甚，得之幸甚啊！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把好消息告诉义军军需官</Value>
+              </txt>
+              <txt>
+                <Value>把好消息告诉义军军需官</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

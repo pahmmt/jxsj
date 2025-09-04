@@ -1,0 +1,352 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000BE" name="孤坟" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=356&gt;：“究竟当年的那户人家到底在哪里呢？居然消失了一样找不到半点痕迹。”</Pop>
+      <Start>&lt;playername&gt;，你好！！
+
+有户人家的男人，原来曾经参加过朝廷征伐南夷的小规模战争。退伍后在洞庭湖边住过一段时间，因避祸又重新逃入了原始森林。我知道他目前住在不远处的一座茅屋中。你暂且去查探一番。近来附近有南夷勇士在四处抓壮丁，若不曾发觉踪影，则可能那个叫王尔褚的男人被南夷人抓走了。若真的有这么坏的运气，那么没有办法，我们必须去救出他来。一路上你必须打败南夷勇士和祭祀，并且从他口中问出一个叫卢度雪的人的下落。
+
+卢笑贫  敬上&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2068</Value>
+              </fightnpc>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2069</Value>
+              </fightnpc>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>救出被俘的王尔褚，询问卢度雪的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>358</Value>
+              </dialognpc>
+              <number>
+                <Value>64</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=358&gt;：“谢谢你勇士，谢谢你！”&lt;end&gt;
+&lt;playername&gt;：“不客气，需要帮忙吗？”&lt;end&gt;
+&lt;npc=358&gt;：“啊，不需要了。我自己可以走的。”&lt;end&gt;
+&lt;playername&gt;：“请问你可认识一位叫卢度雪的人？”&lt;end&gt;
+&lt;npc=358&gt;：“你是他什么人？”&lt;end&gt;
+&lt;playername&gt;：“是一位朋友托付之事。我那位朋友也姓卢，名笑贫。”&lt;end&gt;
+&lt;npc=358&gt;：“难怪了！那卢笑贫便是度雪之子。当年度雪曾与我一道在这原始森林里战斗过，却死得早。后来我多方辗转探访，也没有找到笑贫。他现在可好？”&lt;end&gt;
+&lt;playername&gt;：“很好。”&lt;end&gt;
+&lt;npc=358&gt;：“哎，王某无颜见故人之子啊。他父亲的坟墓救葬在附近，你可以领他去看看。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向王尔褚询问卢度雪的下落</Value>
+              </txt>
+              <txt>
+                <Value>向王尔褚询问卢度雪的下落</Value>
+              </txt>
+              <txt>
+                <Value>向王尔褚询问卢度雪的下落</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带领卢笑贫来到荒村</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>356</Value>
+              </dialognpc>
+              <number>
+                <Value>1754</Value>
+              </number>
+              <number>
+                <Value>3723</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：我带你去家父的坟墓吧！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>271</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1864</Value>
+              </number>
+              <number>
+                <Value>3792</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <string>
+                <Value>1784,3738
+1803,3764
+1818,3794
+1857,3809
+
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=356&gt;：“父亲！不孝儿来迟了！！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>358</Value>
+              </dialognpc>
+              <number>
+                <Value>64</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=358&gt;：“这孩子，命苦啊！！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与王尔褚对话</Value>
+              </txt>
+              <txt>
+                <Value>与王尔褚对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

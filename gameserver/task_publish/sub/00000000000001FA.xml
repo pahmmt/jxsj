@@ -1,0 +1,432 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001FA" name="人心叵测" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4388&gt;：“你就是&lt;playername&gt;吗？果然仪表不凡！你的名字我最近常常听到，是一个江湖上名声鹊起的侠客。我乃大理国谋士邹康！”&lt;end&gt;
+&lt;playername&gt;：“哈哈，邹谋士如此夸我，&lt;playername&gt;担当不起，可是有什么能帮的上忙的地方？”&lt;end&gt;
+&lt;npc=4388&gt;：“恩！事情有点棘手。”&lt;end&gt;
+&lt;playername&gt;：“且细细说来，说不定我能想到什么良策呢！”&lt;end&gt;
+&lt;npc=4388&gt;：“事情是这样的，我大理西南部这一年来过往行人财物被劫达三百十七起，死二十一人，伤残不计其数，方圆十里内的百姓全部逃光了，千亩良田无人耕种荒芜在那里。”&lt;end&gt;
+&lt;playername&gt;：“可有官兵对盗匪的活动进行打击？”&lt;end&gt;
+&lt;npc=4388&gt;：“当然！那里盗匪猖獗，大理朝几次去围剿都无劳而返。我思来想去找不到原因，现在真是有些束手无策了。”&lt;end&gt;
+&lt;playername&gt;：“邹谋士先不要着急，既然事情有蹊跷，便要先行调查原因，你刚才提到很多次对盗匪进行围剿都无功而返？”&lt;end&gt;
+&lt;npc=4388&gt;：“是的，我也感到很蹊跷。”&lt;end&gt;
+&lt;playername&gt;：“如果是这样，我怀疑在我们自己的军中有内鬼对盗匪通风报信。可否允许我在你军营帐之内进行查看？”&lt;end&gt;
+&lt;npc=4388&gt;：“当然，&lt;playername&gt;说的对，之前我怎么没想到呢，或许是我对我手下的将士们太过信任的缘故。”&lt;end&gt;
+&lt;playername&gt;：“害人之心不可有，防人之心不可无。这句话放到什么时候都是对的！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>1687</Value>
+              </number>
+              <number>
+                <Value>3727</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>探查帐房前院</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>1663</Value>
+              </number>
+              <number>
+                <Value>3694</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>探查帐房后院</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1663</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜集信件</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{蜡封的信筒,20,1,134,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>收集到了一个蜡封的信筒</Value>
+              </txt>
+              <txt>
+                <Value>收集到了一个蜡封的信筒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1661,3695</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将蜡封的信筒呈现给邹康</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4388</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4388&gt;：“这，内鬼果然有，不过让我没想到的竟然是为了将士们做饭多年的胡胖子。我不愿意相信……”&lt;end&gt;
+&lt;playername&gt;：“人总是会犯错误，人本身就是善变的动物，只是或许胡胖子没有想象这样做的后果，多少百姓流离失所，多少孤儿失去双亲，又有多少人被活活饿死……”&lt;end&gt;
+&lt;npc=4388&gt;：“你说的是！这也正是我心疼的地方啊！虽然我对此感到惋惜，但军纪不可乱。你这便前去将胡胖子正法吧。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;明白了！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将蜡封的信筒呈现给邹康</Value>
+              </txt>
+              <txt>
+                <Value>将蜡封的信筒呈现给邹康</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我现在就要执行军纪，将胡胖子正法。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{134,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4389</Value>
+              </fightnpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将情况回报给邹康</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4388</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我已经将胡胖子正法，邹谋士请放心！”&lt;end&gt;
+&lt;npc=4388&gt;：“你果然才智过人，军中奸细已除，相信下次围剿定然能成功，那样的话我大理西南又能恢复到往日的生机勃勃了！”&lt;end&gt;
+&lt;playername&gt;：“是，希望那些流离失所离开家园的百姓们早日回来建设自己的美好家园，那么&lt;playername&gt;也就此告辞，我们后会有期！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报给邹康</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报给邹康</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

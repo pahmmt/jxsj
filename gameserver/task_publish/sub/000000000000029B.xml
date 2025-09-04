@@ -1,0 +1,505 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000029B" name="同心情缘" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=9637&gt;：“迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。终日不成章，泣涕零如雨。河汉清且浅，相去复几许。盈盈一水间，脉脉不得语。”&lt;end&gt;
+&lt;playername&gt;：“七夕佳节将至，鹊神所诵的这首《迢迢牵牛星》却甚是伤感，&lt;playername&gt;能做点什么？”&lt;end&gt;
+&lt;npc=9637&gt;：“&lt;playername&gt;，找一个和你情投意合的人一起来找我吧！”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>9637</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=9637&gt;：“&lt;playername&gt;，今天二位来的正巧，关于牛郎织女和七夕的传说想必你们已经知道不少，那么你们又可曾知道七夕佳节的一些民间习俗呢？”&lt;end&gt;
+&lt;playername&gt;：“七夕佳节的习俗&lt;playername&gt;自然是知道一些，鹊神且听我细细说来。七夕佳节全国各地有穿针乞巧、喜蛛应巧、投针验巧、种生求子、供奉“磨喝乐”、拜织女、拜魁星、晒书·晒衣、为牛庆生、吃巧果等习俗。”&lt;end&gt;
+&lt;npc=9637&gt;：“想不到&lt;playername&gt;还真对七夕佳节的习俗了如指掌呢，不过除了这些习俗，各地也有不同的七夕风俗，广东地区的七娘会；陕西地区的结扎巧姑；广西地区的七夕储水；山东地区的种巧菜作巧花；绍兴地区的南瓜棚下听悄悄话；福建仙游地区的白糖炒黄豆花生，哎呀真是说也说不尽。不过我现在有更重要的事情交给你二人共同去做。”&lt;end&gt;
+&lt;playername&gt;：“鹊神您有啥要帮忙的尽管说吧！我二人一定全力帮你。”&lt;end&gt;
+&lt;npc=9637&gt;：“农历七月，我们喜鹊不辞辛劳的加紧筑桥，然王母麾下兵将却正极力阻止牛郎织女二人七夕相会，鹊神恳请二位前去玉露村采摘相思果，传说喜鹊们吃了这果子能以加倍的速度筑鹊桥哟。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与鹊神对话</Value>
+              </txt>
+              <txt>
+                <Value>与鹊神对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我现在就送你们去玉露村吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6883</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>两情若是久长时</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{相思果,20,1,873,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/3相思果。</Value>
+              </txt>
+              <txt>
+                <Value>去传说中的玉露村摘取相思果。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>传说中牛郎的弟弟晓牛就在这村寨某处</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>6872</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=6872&gt;：“哥哥姐姐们，牛郎哥哥曾有恩于晓牛，现牛郎哥哥有难，晓牛有一事相求。”&lt;end&gt;
+&lt;playername&gt;：“弟弟有什么事情但说无妨，哥哥姐姐们也是初来乍到，对此地并不熟悉，究竟发生了什么事？”&lt;end&gt;
+&lt;npc=6872&gt;：“我的这头老牛其实是天上的金牛星下界，能预知未来。王母麾下兵将已前来阻止牛郎织女的鹊桥相会，可神牛在梦里告诉我说不必担心，有缘人将会前来搭救，牛郎织女一定能够成功相会，想必老牛说的就是你们二人了。哥哥姐姐快把这帮讨人厌的兵将赶走吧！”&lt;end&gt; 
+&lt;playername&gt;：“对付山贼盗匪我们倒是有些经验，可这天兵天将……我们能行么？”&lt;end&gt;
+&lt;npc=6872&gt;：“你们有所不知， 这天神下凡后便是到了别的地界儿了，实力与常人差异甚小，哥哥姐姐不必担心。”&lt;end&gt;
+&lt;playername&gt;：“既然如此，我们便去试上一试。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与晓牛对话</Value>
+              </txt>
+              <txt>
+                <Value>与晓牛对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>挑战王母麾下重兵将</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>6877</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>6878</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>通过玉露村车夫回到现实找到鹊神</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>9637</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=9637&gt;：“&lt;playername&gt;，你从玉露村成功的返回了，听说还将王母麾下一干兵将击退！这是真的吗？”&lt;end&gt;
+&lt;playername&gt;：“是的，玉露村仿佛并不属于的世界，似在梦中又很真实。这到底是怎么回事呢？”&lt;end&gt;
+&lt;npc=9637&gt;：“相信你心里所想的，有时看见的并不是真的，看不见的也并非虚无。今年的七夕，相信你一定很难忘，因为你们在这特殊的时刻经历过特殊的事情，现在你们应该拥有了共同的回忆。请珍惜眼前人。”&lt;end&gt;
+&lt;playername&gt;：“又是一年七夕月，&lt;playername&gt;只希望人间少些苦楚，多些幸福！”&lt;end&gt;
+&lt;npc=9637&gt;：“这七夕红烛和七夕之愿分别赠与你二人，两样物品配合可在各大城、新手村或野外，燃起象征幸福红烛，围坐周围可获得一定经验，并且收获一份七夕的惊喜！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与鹊神对话</Value>
+              </txt>
+              <txt>
+                <Value>与鹊神对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{873,}</Value>
+              </taskitem>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

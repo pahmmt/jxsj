@@ -1,0 +1,723 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002FB" name="桥边红药" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4&gt;：“&lt;playername&gt;，近闻有一高道云游至青螺岛，你可知晓？”&lt;end&gt;
+&lt;playername&gt;：“未曾听说，帮主有何见教？”&lt;end&gt;
+&lt;npc=4&gt;：“家慈年事已高，回岛一路舟车劳顿，又目睹帮中遭遇劫难，多少受了些惊扰。连日来，老人家眼赤作痛、茶汤未尽，郎中把脉抓药均未见效，这该如何是好？”&lt;end&gt;
+&lt;playername&gt;：“俗言道，‘病来如山倒，病去如抽丝’。老帮主身染贵恙，对症下药还需慢慢调养才是，不可太过心急啊。”&lt;end&gt;
+&lt;npc=4&gt;：“那些江湖郎中的药方并不对症，我才不得不另想他法……恰逢有道人游历来此。我听说，他们大多身怀异术，有召神劾鬼之灵通。你能否将他寻来，为老帮主请几道符篆，以彰天尊为民解厄之德？”&lt;end&gt;
+&lt;playername&gt;：“得令，我这就去找那位高人。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11052</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“拜揖道长。”&lt;end&gt;
+&lt;npc=11052&gt;：“福生无量天尊！居士何事？”&lt;end&gt;
+&lt;playername&gt;：“我天王老帮主年事渐高，身体小恙数日有余，服了几帖汤药却未见好转。真人云游四海，无量度人而劝化四方，能否为老帮主请符驱邪，以解其病痛困厄？”&lt;end&gt;
+&lt;npc=11052&gt;：“贵帮之忧，贫道悉已知晓。然心虚赤浊之状，非云篆道符可除也。若欲返本还元，还需药引五味。不过想寻得它们，怕是需要些本事呢！”&lt;end&gt;
+&lt;playername&gt;：“请真人指点，敢问是哪五味药引？”&lt;end&gt;
+&lt;npc=11052&gt;：“居士请看，贫道身边的这片荷塘，莲实饱满，已到了采摘的季节。你若会轻功的法子，能登萍渡水而行，采得五色莲中的莲实各一捧，把它们交给对岸水榭的那位裙钗，她自会将药引之用详诉与你。若你尚未习得轻功，可打开背包中的&lt;color=red&gt;礼物&lt;color&gt;获得&lt;color=red&gt;门派初级秘籍&lt;color&gt;，装备它即可学会轻功。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=11052&gt;：“贵帮之忧，贫道悉已知晓。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与邋遢老道对话</Value>
+              </txt>
+              <txt>
+                <Value>与邋遢老道对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>施展轻功，采摘五味莲实</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11075</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>金凤钩，彩凤凄飞锦书断</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{金凤莲实,20,1,947,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/1株金凤钩</Value>
+              </txt>
+              <txt>
+                <Value>念桥边红药，年年知为谁生？</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>me.AddExp(6000)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11078</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>白鹤子，白鹤杳杳无寻处</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{白鹤莲实,20,1,948,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/1株白鹤子</Value>
+              </txt>
+              <txt>
+                <Value>二十四桥仍在，波心荡、冷月无声。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>me.AddExp(6000)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11074</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>一萼红，红花如练飘香砌</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{绛朱莲实,20,1,950,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/1株一萼红</Value>
+              </txt>
+              <txt>
+                <Value>纵豆蔻词工，青楼梦好，难赋深情。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>me.AddExp(6000)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11077</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>乌夜啼，夜阑幽恨迟难度</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{乌夜莲实,20,1,949,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/1株乌夜啼</Value>
+              </txt>
+              <txt>
+                <Value>……杜郎俊赏，算而今、重到须惊。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>me.AddExp(6000)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11076</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>青玉盏，觥筹千杯入愁肠</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{青玉莲实,20,1,946,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/1株青玉盏</Value>
+              </txt>
+              <txt>
+                <Value>淮左名都，竹西佳处，解鞍少驻初程……</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>me.AddExp(6000)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>歌声飘渺而至，登岸一探究竟吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>11050</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“好一曲《扬州慢》，姑娘唱得缠绵凄婉，想必是精通音律之人。”&lt;end&gt;
+&lt;npc=11050&gt;：“少侠见笑了，奴家曲艺荒疏已久，今重访故园，睹物伤情才唱一曲。少侠登萍渡水而来，不知所为何事？”&lt;end&gt;
+&lt;playername&gt;：“我受杨帮主之托，为老帮主寻符问药，途中幸得高道指引，让我采五色莲实给姑娘过目，这五味药引可采摘齐全了？”&lt;end&gt;
+&lt;npc=11050&gt;：“青玉盏、金凤钩、白鹤子……确实五味不差。以莲实为引，可是犯了眼赤作痛、气逆热渴之症？”&lt;end&gt;
+&lt;playername&gt;：“正是，姑娘好见识。”&lt;end&gt;
+&lt;npc=11050&gt;：“气逆热渴，乃外感风邪、肺胃实热之症。当取五味莲实半升，酒浸三宿后，入莲于猪肚内缝定煮熟，取出晒干为末。眼赤作痛时，和粳米作粥，分次服下即可。”&lt;end&gt;
+&lt;playername&gt;：“姑娘年纪轻轻便有如此见识，敢问姑娘何许人士，家住何方，他日定当登门拜谢。”&lt;end&gt;
+&lt;npc=11050&gt;：“奴家本从扬州来，开禧三年后，家园被金人尽毁，只剩那断壁残垣。新婚宴尔，夫君即应召入伍，戍边一去三载，家书未曾寄过一封。夫君在临安有一脉远室宗亲，奴家正欲动身前往，打听夫君的下落，途中在此小憩，所以少侠不必还礼了。”&lt;end&gt;
+&lt;playername&gt;：“去临安路途遥远，不如让我与姑娘同去，如何？”&lt;end&gt;
+&lt;npc=11050&gt;：“悲莫悲兮生别离，乐莫乐兮新相知……不劳少侠费心，还请回吧，奴家即刻就启程了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=11050&gt;：“奴家曲艺荒疏已久，今重访故园，睹物伤情才不禁高歌一曲。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与红药儿对话</Value>
+              </txt>
+              <txt>
+                <Value>与红药儿对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:NewWorldWithState</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1828</Value>
+              </number>
+              <number>
+                <Value>3734</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将药引回报杨铁心</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4&gt;：“此行可有收获？”&lt;end&gt;
+&lt;playername&gt;：“回禀帮主，属下已拜访过高道，采得五色莲实为药引，方子已经记录下来，请过目。”&lt;end&gt;
+&lt;npc=4&gt;：“甚好，但愿家母能尽早康复。你寻药不易，这一点心意就收下吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4&gt;：“我不过是临安城里的混混。天王帮主一位，并不珍贵，又很珍贵，有了它，许多的抱负才能得以施展。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回禀杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>回禀杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{946,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{947,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{948,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{949,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{950,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

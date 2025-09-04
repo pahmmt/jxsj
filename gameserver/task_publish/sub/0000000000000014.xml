@@ -1,0 +1,234 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000014" name="惊天之变" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“帮主，还有什么吩咐？”&lt;end&gt;
+&lt;npc=30&gt;：“有件大事……先去礼场边的观涛阁吧，韩大人在那里等着我们。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=2&gt;
+&lt;playername&gt;：“罗锋，你一路护送韩大人定要尽心尽力，韩大人如果少了一根汗毛，我饶不了你。”&lt;end&gt;
+&lt;npc=66&gt;：“哎呀，我很怕的呀，你放心吧。有我罗锋在，韩大人可以塌塌实实的一路睡到襄阳。”&lt;end&gt;
+&lt;playername&gt;：“韩大人，没想到这么快又要告别了，将来重逢之日，一定与您好好喝几杯。”&lt;end&gt;
+&lt;npc=68&gt;：“&lt;playername&gt;，韩某不会忘记你的。等到这桩事情完了，随时欢迎你来找我。”&lt;end&gt;
+&lt;playername&gt;：“一定！”&lt;end&gt;
+&lt;npc=66&gt;：“对了，&lt;playername&gt;，帮主让你先办完一件事再转回去。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>69</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大人，究竟出了什么事？这么紧急的把我召来。”&lt;end&gt;
+&lt;npc=68&gt;：“太上皇龙体欠恙，已经数日无法进食，恐怕……时日无多……”&lt;end&gt;
+&lt;playername&gt;：“什么？孝宗皇帝病入膏肓？是不是，是不是李后所为？”&lt;end&gt;
+&lt;npc=68&gt;：“今晨接到赵汝愚大人飞鸽传书，信上没有写明原因。”&lt;end&gt;
+&lt;npc=69&gt;：“这一代中兴之主要是就此撒手人寰，将他成千上万的子民留在了这个乱世里面。我大宋朝的气运，究竟要如何才能扭转过来呢？”&lt;end&gt;
+&lt;npc=68&gt;：“哎，事情紧迫，那些都等到日后朝纲稳固之后再说吧。现在我必须立即前往襄阳大营，将这封秘诏交给统军将领。”&lt;end&gt;
+&lt;npc=69&gt;：“大人，在这个节骨眼上，万不可冲动啊。无论是不是李后下的手，此刻她的爪牙都密布在各条干道上，根本走不通的。”&lt;end&gt;
+&lt;npc=68&gt;：“我何尝不知道？咬咬牙，拼一把吧。自古以来富贵都向险中求，我韩某人也不是个清心寡欲之人，在朝为臣，就希望能说得上话，真正为天下人做几件事。这次是一个机会，我不能放弃。”&lt;end&gt;
+&lt;npc=69&gt;：“韩大人既然如此决绝，我也不便再劝。丐帮倾其所有，也会安全将大人送抵襄阳大营。”&lt;end&gt;
+&lt;npc=68&gt;：“如此再好不过。我有一不情之请，不知轩辕可否允诺。”&lt;end&gt;
+&lt;npc=69&gt;：“大人所说何事？”&lt;end&gt;
+&lt;npc=68&gt;：“我想请&lt;playername&gt;做个见证，韩某愿与轩辕结为异姓兄弟，他日有福同享，有难同当。”&lt;end&gt;
+&lt;npc=69&gt;：“在下求之不得，大哥！”&lt;end&gt;
+&lt;npc=68&gt;：“哈哈哈，在这样激烈动荡的时刻，我韩侂胄能够有幸与轩辕老弟结拜，天不弃我，此行必能成功。”&lt;end&gt;
+&lt;npc=69&gt;：“事不宜迟，&lt;playername&gt;你护送韩大人前往歇马渡，我这就组织韩大人的护卫人手。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去观涛阁找韩侂胄和石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>去观涛阁找韩侂胄和石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>护送韩大人前往歇马渡</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">66</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>68</Value>
+              </dialognpc>
+              <number>
+                <Value>1494</Value>
+              </number>
+              <number>
+                <Value>3155</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>惊天之变</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“韩大人，我们出发吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>67</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>1200</Value>
+              </number>
+              <number>
+                <Value>1482</Value>
+              </number>
+              <number>
+                <Value>3043</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1476,3132
+1487,3088
+1481,3044</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000015</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,422 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000046" name="偷梁换柱" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“兀萨长老，在下龙战堂弟子&lt;playername&gt;，回教接受您的调遣。”&lt;end&gt;
+&lt;npc=3545&gt;：“恩，已经收到消息了。据说你发现了一个极有价值的情报，究竟是什么？”&lt;end&gt;
+&lt;playername&gt;：“黄河三次大决堤的真相！”&lt;end&gt;
+&lt;npc=3545&gt;：“此事朝廷多次廷议，已成盖棺定论，其中还有什么蹊跷？”&lt;end&gt;
+&lt;playername&gt;：“乃是天忍教中人挖开了黄河大堤，放洪淹田，害了这方圆千里的百姓。”&lt;end&gt;
+&lt;npc=3545&gt;：“天忍教中人？是谁。”&lt;end&gt;
+&lt;playername&gt;：“汴京分坛坛主完颜宗亲。”&lt;end&gt;
+&lt;npc=3545&gt;：“是他？此人出身贵族，衣食无忧，对朝廷忠心耿耿，为何做出如此出格之事！”&lt;end&gt;
+&lt;playername&gt;：“因为他的妻女遭蒙古人绑架，以她们的性命要挟完颜宗亲。”&lt;end&gt;
+&lt;npc=3545&gt;：“你的意思是，前两次的堤坝溃决，也是蒙古人在暗中捣鬼？”&lt;end&gt;
+&lt;playername&gt;：“有这个可能。”&lt;end&gt;
+&lt;npc=3545&gt;：“这消息果然价值连城。你立即随我前往皇陵二层。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3545</Value>
+              </dialognpc>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1604</Value>
+              </number>
+              <number>
+                <Value>3364</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>准备好了吗？我们这就出发去金国皇陵二层了</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就随兀萨去金国皇陵二层</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就随兀萨去金国皇陵二层</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到金国皇陵二层的兀萨长老</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>238</Value>
+              </dialognpc>
+              <number>
+                <Value>451</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=238&gt;：“谨慎起见，你演练一个龙战堂的绝技黑龙缠给我瞧瞧，好确认身份。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到金国皇陵二层的兀萨长老</Value>
+              </txt>
+              <txt>
+                <Value>找到金国皇陵二层的兀萨长老</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>兀萨要我使出黑龙缠绝技，才会对我完全信任</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,185,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>307</Value>
+              </number>
+              <number>
+                <Value>451</Value>
+              </number>
+              <number>
+                <Value>1613</Value>
+              </number>
+              <number>
+                <Value>3213</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>22000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>展示了黑龙缠绝技后，已取得兀萨的绝对信任</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>238</Value>
+              </dialognpc>
+              <number>
+                <Value>451</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=238&gt;：“恩，不愧是龙战堂出来的弟子。如今的年轻人中，有你这样敏捷身手的不多了。不过黄河决堤一事，在没有明确蒙古人的意图前，我们不能轻举妄动。倒是有个同样重要的差使，得交给你。”&lt;end&gt;
+&lt;playername&gt;：“长老何需与属下客套，只管讲吧。”&lt;end&gt;
+&lt;npc=238&gt;：“你在诗文琴艺上的造诣如何？”&lt;end&gt;
+&lt;playername&gt;：“还行。”&lt;end&gt;
+&lt;npc=238&gt;：“那就好。有个叫李师儿的女子，我们必须用最快的时间将她培养成谙熟音律、精通诗赋的才人，这个职责交给大老粗不合适，还是由你来协助我吧。”&lt;end&gt;
+&lt;playername&gt;：“弟子遵命。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去向兀萨复命</Value>
+              </txt>
+              <txt>
+                <Value>回去向兀萨复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000047</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

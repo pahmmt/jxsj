@@ -1,0 +1,196 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000008D" name="杀喳拉悍" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“不知道周大哥怎么会在此地出现，将我拦住所为何事？”&lt;end&gt;
+&lt;npc=907&gt;：“我曾在义军和你有过一面之缘，所以才会贸然将你止住不令你闯将进去，实则是一番好意。此地是西夏一品堂所属，若你贸然闯了进去，只怕会招来杀生之祸。此事事关机密，若是&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;信得过在下，便请带信给我昆仑代掌门谢雨田先生，就说猜测已被证实，请先生速速定夺。”&lt;end&gt;
+&lt;playername&gt;：“这是什么意思？”&lt;end&gt;
+&lt;npc=907&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;见到谢先生，他自会择重相告，请恕我不敢多言。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3557</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过谢先生，晚辈在西夏境内的一处见到一名自称周寰的昆仑弟子。他请晚辈带信给先生，说猜测已经被证实，请先生速速定夺。不知此中有何深意，先生能否相告？若有用得着的地方，晚辈定当效犬马之劳。”&lt;end&gt;
+&lt;npc=3557&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;言重了！义军和昆仑说来也不算是什么外人，此事和&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;倒是也有一番渊源呢。周寰之所以前往沙漠迷宫，其实是为了查明李升阳是不是回转一品堂，以及游龙珏失窃的事是否同一品堂有关。”&lt;end&gt;
+&lt;playername&gt;：“竟然是这样，那想来周寰所说的猜测已经被证实，就是说这两者都是确定的了？”&lt;end&gt;
+&lt;npc=3557&gt;：“正是如此！李升阳堪称西夏近些年来第一能人，雄韬伟略非他人所能。当年便曾以游龙珏为饵想要诱使掌门人与其一起侵吞天下，不想反被掌门困入冰穴。如今其脱困而出，甫一出困便将游龙珏一举夺入手中，其勇猛可想而知。掌门曾说近日会有福星前来，我等了几日只有&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;前来，看来掌门人说的便是你。&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;请去见下掌门人，他定会有机密事宜相告。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去昆仑派找谢雨田</Value>
+              </txt>
+              <txt>
+                <Value>去昆仑派找谢雨田</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到昆仑派掌门人宋秋石</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>279000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3560</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过宋掌门！”&lt;end&gt;
+&lt;npc=3560&gt;：“想必雨田已经将他知道的事都告诉你了，老夫知道你们义军同其余几派携手想要夺得游龙珏，不过天王、丐帮两派此事处置也太无理。你秋姨也是一样，竟然将如此凶险的事情交由你来做。虽说与你而言，此事是一番磨炼。但是若他们知道此事是李升阳一手策划，血影协助之后，还会如此安稳吗？”&lt;end&gt;
+&lt;playername&gt;：“血影和晚辈有过交手，倒也不是非常难斗……”&lt;end&gt;
+&lt;npc=3560&gt;：“唉，你哪里知道其中究竟。一则与你缠斗的不过是些小角色，真正厉害的都在暗中静待时机以防杨铁心等人；二则李升阳明知伤了你便等于立时同几派结仇，才暗令血影不得伤你，以防天王、丐帮、义军阻其行动。否则，你的小命不知已经丢了几次了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找神秘的官兵</Value>
+              </txt>
+              <txt>
+                <Value>回去找神秘的官兵</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000008E</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

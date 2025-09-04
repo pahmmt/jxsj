@@ -1,0 +1,142 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000BA" name="刀客之赌" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=325&gt;:“喂，那个谁，留步留步。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=325&gt;:“我俩比试比试如何？”&lt;end&gt;
+&lt;playername&gt;：“比试什么？”&lt;end&gt;
+&lt;npc=325&gt;:“这芦苇荡方圆广阔，其中藏着许多快刀手，我们比试在一柱香之内，谁能干掉更多的刀手！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>陆小岚：“出了什么问题，这任务居然进行不下去了？”</Error>
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2087</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去看看陆小岚的战果吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>325</Value>
+              </dialognpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=325&gt;：“高手！将来有机会再比过！只要不遇到胡献姬那个臭女人就好了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去看看陆小岚的战果吧</Value>
+              </txt>
+              <txt>
+                <Value>回去看看陆小岚的战果吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

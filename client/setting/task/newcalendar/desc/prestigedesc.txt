@@ -1,0 +1,14 @@
+MatchId	MatchName	CurCount	MaxCount
+活动id与Match表对应	活动名称，以ID为准	当前已获得威望	最多可获得威望
+3	藏宝图	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,2);%>	<%return Player.PRESTIGE_LIMIT["treasuremap"][2];%>
+10	宋金战场	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,5);%>	<%return Player.PRESTIGE_LIMIT["battle"][2];%>
+7	挑战白虎堂	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,4);%>	<%return Player.PRESTIGE_LIMIT["baihutang"][2];%>
+13	武林联赛	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,7);%>	<%return 123;%>
+8	家族趣味竞技	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,1021);%>	<%return Player.PRESTIGE_LIMIT["kingame_quwei"][2];%>
+23	武林高手	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,9);%>	<%return Player.PRESTIGE_LIMIT["uniqueboss"][2];%>
+4	逍遥谷	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,10);%>	<%return Player.PRESTIGE_LIMIT["xoyogame"][2]; %>
+9	门派竞技	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,11);%>	<%return Player.PRESTIGE_LIMIT["factionbattle"][2];%>
+21	官府通缉	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,12);%>	<%return Player.PRESTIGE_LIMIT["tongji"][2];%>
+15	跨服战场	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,13);%>	<%return Player.PRESTIGE_LIMIT["superbattle"][2];%>
+35	高级藏宝图	<% if tonumber(GetLocalDate("%W")) ~= me.GetTask(2015,1) then return 0 end; return me.GetTask(2015,1010);%>	<%return Player.PRESTIGE_LIMIT["newcangbaotu"][2];%>
+24	商会任务	<% if me.GetTask(2036,1) == 1 then return 80; end; return 0;%>	<%return 80;%>

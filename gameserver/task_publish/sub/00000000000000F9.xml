@@ -1,0 +1,546 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F9" name="赎回壮丁" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=534&gt;：“唉！这一去都几天了，不知道远儿吃了多少苦啊！”&lt;end&gt;</Pop>
+      <Start>&lt;playername&gt;：“老先生看起来一脸愁容，可是有什么难事？”&lt;end&gt;
+&lt;npc=534&gt;：“我看你是外乡人有所不知，这川蜀一带多半是吴家的地盘。以前吴老将军在世的时候对我们很好，百姓生活也还过的去。如今是他儿子吴曦掌权，气度远不如其父。不仅猛增赋税，还不断扩军，闹得是鸡飞狗跳，人仰马翻。令我发愁的也正是这件事情。”&lt;end&gt;
+&lt;playername&gt;：“老先生可是有家人被拉去充军？”&lt;end&gt;
+&lt;npc=534&gt;：“可不正是如此！官兵借口备战、防护我大宋边境，上至五十五，下到一十五统统在所难免。有钱的人家花钱疏通，没钱的人家只能等着被抓。老夫粗通商道，还算富裕。膝下有一爱子还不成年，花了不少银子上下打点。原本已经说的好好的了，没想到我的远儿仍在外出时被拉去充军。更可气的是隔日老夫就收到消息，要老夫拿钱赎人！！！”&lt;end&gt;
+&lt;playername&gt;：“拿钱赎人？？？这不是绑匪干的勾当吗？？？怎么会？？？”&lt;end&gt;
+&lt;npc=534&gt;：“老夫曾经因为生意的事情和军营副将严木林有过过节，此番远儿所在的正是此人的大营。严木林是吴曦的得力手下，在地方上更是一手遮天。老夫若不花钱酬军，远儿就无法回家。若要酬军，那天大的数字又岂是老夫这样的人家能拿的出手的。只盼有虬须客一样的人物，能救我们这些老百姓于水火，惩治这些恶人。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>1832</Value>
+              </number>
+              <number>
+                <Value>3830</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>找到吴家军军营</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找严木林交涉</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=537&gt;：“没出息的东西，都给我挺起精神！谷志远，你好好看着，等下就该你来练习了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>和严木林交涉</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>1852</Value>
+              </number>
+              <number>
+                <Value>3796</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>和严木林交涉</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=535&gt;：“什么人？军营也是你乱闯的？”&lt;end&gt;
+&lt;playername&gt;：“我来带谷志远回去，他尚未到服役的年龄，不该来这里。”&lt;end&gt;
+&lt;npc=535&gt;：“有意思，那就先破了我的长枪阵再说。我的长枪阵全靠长枪迎战，你可要小心着点。”&lt;end&gt;
+&lt;playername&gt;：“雕虫小技能奈我何？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>击破长枪阵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>539</Value>
+              </fightnpc>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>要求严木林放人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>1852</Value>
+              </number>
+              <number>
+                <Value>3787</Value>
+              </number>
+              <dialognpc>
+                <Value>535</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“长枪阵已破，严副将可以按约放人了吧？”&lt;end&gt;
+&lt;npc=535&gt;：“放人？哪里有这么简单的事情？谷老儿酬军的银子你带来了吗？没有就别想把人领走！”&lt;end&gt;
+&lt;playername&gt;：“你这不是出尔反尔么？”&lt;end&gt;
+&lt;npc=535&gt;：“话可不能这么说，我只说让你破阵，又没说破了阵就放人。”&lt;end&gt;
+&lt;playername&gt;：“你……那就得罪了！”&lt;end&gt;
+&lt;npc=535&gt;：“你想干什么？”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>536</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>要求严木林放人</Value>
+              </txt>
+              <txt>
+                <Value>要求严木林放人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=535&gt;：“好，算你狠，人让你带走！”&lt;end&gt;
+&lt;playername&gt;：“早这么说不就完了么！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>带谷志远离开军营</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1212</Value>
+              </dialognpc>
+              <number>
+                <Value>1838</Value>
+              </number>
+              <number>
+                <Value>3805</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我们快点离开这里吧！”&lt;end&gt;
+&lt;npc=1212&gt;：“是我父亲请你来的吗？”&lt;end&gt;
+&lt;playername&gt;：“现在不是说这些的时候，我们快点离开这里吧，免得等下他又后悔了。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1213</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1840</Value>
+              </number>
+              <number>
+                <Value>3975</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>1838,3805
+1839,3810
+1838,3819
+1836,3828
+1833,3837
+1830,3845
+1828,3853
+1826,3860
+1824,3868
+1823,3876
+1823,3883
+1825,3891
+1826,3898
+1828,3903
+1831,3910
+1834,3916
+1835,3926
+1835,3935
+1834,3945
+1832,3954
+1832,3966
+1840,3975</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.2</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1211&gt;：“志远哥哥！志远哥哥！”&lt;end&gt;
+&lt;npc=1212&gt;：“阿福？你怎么会在这里？”&lt;end&gt;
+&lt;npc=1211&gt;：“人家来这里救你嘛！”&lt;end&gt;
+&lt;npc=1212&gt;：“你那点本事打架还可以，救人嘛……说吧，你来这里做什么？”&lt;end&gt;
+&lt;npc=1211&gt;：“我就知道瞒不过你，姨夫让我带酬金给这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;，还让我带你去别的地方躲躲，不要回家了。”&lt;end&gt;
+&lt;npc=1212&gt;：“原来是这样，我就知道你这个小鬼头不会这么好心来救我。说起来还真的是要谢谢这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;，要不然我还要被他们逼着练什么长弓阵呢。依我看，他们的阵法也真是够差劲的了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找阿福领取酬金</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1211</Value>
+              </dialognpc>
+              <number>
+                <Value>90</Value>
+              </number>
+              <txt>
+                <Value>赎回壮丁</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1211&gt;：“这是姨夫的一点心意，还请笑纳！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找阿福领取酬金</Value>
+              </txt>
+              <txt>
+                <Value>找阿福领取酬金</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

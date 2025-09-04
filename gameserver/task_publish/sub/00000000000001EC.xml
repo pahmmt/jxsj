@@ -1,0 +1,968 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001EC" name="起死回生" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4303&gt;：“那小毛头进步还蛮快，已经可以找到我了呢……哈哈!哦……原来是罗雪姑娘的要求，老身正欠她一个人情呢，前几年若不是她对我爱徒出手相救，怕是我那爱徒早就不在了。不过这个药倒是有些奇怪。”&lt;end&gt;
+&lt;playername&gt;：“此话怎讲呢？”&lt;end&gt;
+&lt;npc=4303&gt;：“迷魂丹乃起死回生之丹药，服下此药之人将会立刻闭气，全身血液静脉停止流动。和死人并无二至。一日以后，药力消散，服用者自然苏醒。这便是所谓的迷魂丹。”&lt;end&gt;
+&lt;playername&gt;：“原来此药竟有如此奇效。我想罗姑娘之所以需要此药定然有她的道理，不知前辈现在可有此药？”&lt;end&gt;
+&lt;npc=4303&gt;：“这药并不普通，我也没有现成的，不过若能找到材料，我可以立刻炼制。”&lt;end&gt;
+&lt;playername&gt;：“如此……需要何种材料，我去找来。”&lt;end&gt;
+&lt;npc=4303&gt;：“阿房宫废墟中的岩灵石粉；神女峰之上的离魂草。其他的材料我此处尚有余存。”&lt;end&gt;
+&lt;playername&gt;：“知道这个就好办，我这便去采摘了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <txt>
+                <Value>将等级提升到114级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到114级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>4080</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到3级4080点</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到3级4080点</Value>
+              </txt>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1682</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>岩灵石粉采集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{岩灵石粉,20,1,527,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10个岩灵石粉</Value>
+              </txt>
+              <txt>
+                <Value>已经收集了足够的岩灵石粉</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1922,3149
+1927,3173
+1934,3156
+1938,3171
+1948,3194
+1960,3184
+1970,3204
+1981,3191</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1683</Value>
+              </dialognpc>
+              <number>
+                <Value>137</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>离魂草采集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{离魂草,20,1,528,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10个离魂草</Value>
+              </txt>
+              <txt>
+                <Value>已经收集了足够的离魂草</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1900,3720
+1907,3730
+1903,3748
+1917,3738
+1913,3749
+1922,3746
+1922,3764
+1928,3754</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将收集到的东西交给灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>44000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4403</Value>
+              </dialognpc>
+              <number>
+                <Value>818</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“前辈，&lt;playername&gt;回来了，采摘好的石粉和离魂草都在这里。”&lt;end&gt;
+&lt;npc=4403&gt;：“&lt;playername&gt;果然好身手，这些材料生长之地异常凶险，义军之中各个都如你这般俊的武功吗？”&lt;end&gt;
+&lt;playername&gt;：“我义军之中都是肝胆相照的兄弟，义军是仁义之师，他们各个身手不凡。”&lt;end&gt;
+&lt;npc=4403&gt;：“恩，这些啊我都知道，这些年来我在外游历，江湖上的异动都逃不过老身的耳朵哟。”&lt;end&gt;
+&lt;playername&gt;：“是……前辈，不知何时可以开始制作那还魂丹？”&lt;end&gt;
+&lt;npc=4403&gt;：“哎哟哟……你看我这脑子糊涂的，差点儿把正经事儿给忘了，现在便开始吧。炼制这丹药还需一段时间。年轻人，要给点儿耐性等一等咯。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将收集到的东西交给灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value>将收集到的东西交给灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>等待鬼母终于开始炼制还魂丹药</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{527,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{528,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>一颗闪烁着奇异光芒的丹药已经炼制完成</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4403</Value>
+              </dialognpc>
+              <number>
+                <Value>818</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4403&gt;：“这丹药我已经十年没有做过了，这药是祸亦是福。使用不当的话，当真会要人性命，正常状况下使用后十二个时辰便可苏醒。用药后的这十二个时辰内其身体不可受到攻击。”&lt;end&gt;
+&lt;playername&gt;：“恩，晚辈知道了，我且回去与罗姑娘细细讲来，这丹药显然是有着重要用处的……”&lt;end&gt;
+&lt;npc=4403&gt;：“如此……我便放心了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{迷魂丹,20,1,529,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与鬼母对话获得迷魂丹</Value>
+              </txt>
+              <txt>
+                <Value>与鬼母对话获得迷魂丹</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把迷魂丹交给罗雪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4430</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“罗姑娘，我回来了。”&lt;end&gt;
+&lt;npc=4430&gt;：“你回来了，太好了！如何？丹药可是已经拿到了？”&lt;end&gt;
+&lt;playername&gt;：“要相信&lt;playername&gt;的能力，什么事情我办砸过？不过这次却真是几经周折。好在终于将药拿到了……罗姑娘，我听说这丹药是用来起死回生之用。”&lt;end&gt;
+&lt;npc=4430&gt;：“不是起死回生，算是假死吧。十二个时辰之内便可以苏醒。”&lt;end&gt;
+&lt;playername&gt;：“这意欲为何？”&lt;end&gt;
+&lt;npc=4430&gt;：“多少年……是第几个年头了，当我刚刚来到大理之时，我便每日帮助西夏一品堂搜集大理的各类秘密消息。直到现在……每个月都要到御书房之中偷取相关的奏折。可我爱上了段皇爷啊，我不想再做对不起他，对不起大理的事情，这里是我的第二个家……我想过很多法子想要摆脱一品堂，但或许是因为我在那里生长的缘故，那里的根恐怕我是去不掉了。”&lt;end&gt;
+&lt;playername&gt;：“你的意思是，让一品堂得知你的死讯？从此不再要挟你了？”&lt;end&gt;
+&lt;npc=4430&gt;：“正是，这丹药我准备今日服下，你且将我的死讯传递开来，尤其是让一品堂的细作们知道，这样的话不必你我自然有人向哥哥汇报我的死讯。至于段皇爷不在皇城之中。待他归来问起我此事我也可自圆其说。明日你便去西夏一品堂打探一下，看看他们是何态度。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把迷魂丹交给罗雪</Value>
+              </txt>
+              <txt>
+                <Value>把迷魂丹交给罗雪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>人们议论纷纷，各方面反应不一</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{529,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>13</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>3348</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>偷听一品堂内官员对话</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4405&gt;：“昨天上午！昨天上午罗大人的妹子罗雪死了！”&lt;end&gt;
+&lt;npc=4406&gt;：“为何？前一天不是还派人送来情报了么？得病死的还是被皇帝老儿发现了？”&lt;end&gt;
+&lt;npc=4407&gt;：“我听说是得病死的，哎那丫头从小乖巧伶俐，是我看着长大的，不想到底是落得个如此下场！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>偷听罗日旺对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>13</Value>
+              </number>
+              <number>
+                <Value>1775</Value>
+              </number>
+              <number>
+                <Value>3323</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>偷听罗日旺对话</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4404&gt;：“什么！你说的竟是真的？是他们亲眼所见？”&lt;end&gt;
+&lt;npc=127&gt;：“确实。”&lt;end&gt;
+&lt;npc=4404&gt;：“老天啊！在捉弄我吗，为了培养那丫头我花了多少心血，用了多少年时间，眼看这计划便差一步了啊！”&lt;end&gt;
+&lt;npc=127&gt;：“确实可惜，如今看来我们或需要另觅他法了。罗雪所得到的那些情报本身利用价值不大，这其实并不能影响我们的计划。”&lt;end&gt;
+&lt;npc=4404&gt;：“说的也是，到了最近一段时间，那些情报简直是在糊弄老子……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将调查的结果告诉罗雪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4430</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“姑娘，你醒了。身体感觉如何有没有什么不适。”&lt;end&gt;
+&lt;npc=4430&gt;：“恩我醒了，身体还好。一品堂的人可都知道了我的死讯？你有听得什么消息吗？”&lt;end&gt;
+&lt;playername&gt;：“我刚才听到了一品堂官员还有……你哥哥罗日旺的交谈，他们都确信你已经不在了。这段时间姑娘还是安生躲起来好，等西夏一品堂的细作们都撤走以后再出现不迟，刚好皇爷尚未归来不知此事。”&lt;end&gt;
+&lt;npc=4430&gt;：“呵呵……果然如此吗？我的死没有一个人为我伤心或者难过，哪怕只是那么一句惋惜和留恋！我罗雪，果然就只是一颗棋子。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将调查的结果告诉罗雪</Value>
+              </txt>
+              <txt>
+                <Value>将调查的结果告诉罗雪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>159</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000001ED</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

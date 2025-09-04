@@ -1,0 +1,462 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000FD" name="秋天的蝴蝶" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=1123&gt;：“现在是深秋，怎么这几天总是有一只小蝴蝶在窗外飞来飞去，小蝶，你现在在哪里……”&lt;end&gt;</Pop>
+      <Start>&lt;npc=1123&gt;：“昨夜做梦又梦到了小蝶，浑身是血，好可怕……呜呜，小蝶已经好多天没有消息了，离散多年才得以相聚却不料又会再次分开……”&lt;end&gt;
+&lt;playername&gt;：“请问姑娘因为何事担忧？小蝶又是谁？”&lt;end&gt;
+&lt;npc=1123&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;有所不知，小蝶是这大理府最有名的歌姬，也是我从小失散多年的玩伴，不想竟会在大理重新相遇。方自庆幸没有几天，小蝶便被乌蛮鬼主的儿子皮罗阁趁夜抢了去。小蝶生性倔傲，流落风尘多年依旧完璧无暇，我生怕她因为不愿被污而寻死自尽。如今皇家和乌蛮关系微妙，乌蛮人不敢轻易入城，而官府又不敢外出拿人，因此无人敢管此事。我一介女流也只能在此流泪了……”&lt;end&gt;
+&lt;playername&gt;：“如此，不如由我替姑娘走一趟吧？”&lt;end&gt;
+&lt;npc=1123&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;当真愿意，小女子感激不尽。近日有一叫做细诺罗的巨盗被擒获，此人便是皮罗阁的客卿，问他一定可以得知小蝶的消息。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>550</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>秋天的蝴蝶</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=550&gt;：“有朝一日能够出去一定要手刃达日阿赤那个老贼！”&lt;end&gt;
+&lt;playername&gt;：“你就是细诺罗？”&lt;end&gt;
+&lt;npc=550&gt;：“爷爷就是，有话就说，有屁就放！”&lt;end&gt;
+&lt;playername&gt;：“（死到临头还发威，先忍忍吧……）我问你，你可知道皮罗阁抢走的蓝梦蝶的下落？”&lt;end&gt;
+&lt;npc=550&gt;：“蓝梦蝶？哦，就是那个大理名妓小蝶吧，原来她叫蓝梦蝶，名字倒是不错，不过可惜啊，红颜薄命啊，死了！”&lt;end&gt;
+&lt;playername&gt;：“死了？怎么死的？”&lt;end&gt;
+&lt;npc=550&gt;：“哼哼！不愿意和皮罗阁交好，新婚之夜身藏剪刀刺伤了皮罗阁被他杀了。这种女人留着也没什么用！皮罗阁爱她多年待她不薄，她也真下得了手，真是最毒妇人心。你问这个干吗？”&lt;end&gt;
+&lt;playername&gt;：“没你的事，你就好好在这里待着吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>询问细诺罗</Value>
+              </txt>
+              <txt>
+                <Value>询问细诺罗</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将小蝶的死讯带给南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1123</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1123&gt;：“你回来了，见到细诺罗了吗？”&lt;end&gt;
+&lt;playername&gt;：“见到了，只是……婉儿姑娘……小蝶她……已经死了……”&lt;end&gt;
+&lt;npc=1123&gt;：“我早就知道……我早就知道……小蝶……呜呜……我知道每天见到的那只蝴蝶就是小蝶，小蝶……小蝶是一个苦命的女子，你一定要替她报仇啊，杀死皮罗阁那个混蛋，用他的头颅祭奠小蝶……为小蝶报仇啊……呜呜……”&lt;end&gt;
+&lt;playername&gt;：“婉儿姑娘放心，我一定会带着皮罗阁的狗头祭奠小蝶姑娘的！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将小蝶死讯带给南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value>将小蝶死讯带给南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往洱海摩岩杀死皮罗阁为小蝶报仇</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>551</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,86,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将皮罗阁头颅放在小蝶的坟前</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,86,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1598</Value>
+              </dialognpc>
+              <txt>
+                <Value>被惩戒的皮罗阁</Value>
+              </txt>
+              <number>
+                <Value>91</Value>
+              </number>
+              <number>
+                <Value>1628</Value>
+              </number>
+              <number>
+                <Value>3723</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>乌蛮山寨后面的坟堆前</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的结果告诉南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{86,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1123</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>秋天的蝴蝶</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1123&gt;：“怎么样了？”&lt;end&gt;
+&lt;playername&gt;：“已经按照婉儿姑娘说的做了！”&lt;end&gt;
+&lt;npc=1123&gt;：“小蝶……可怜的小蝶……想不到我们姐妹相聚短短几日便永远的分开了，我真恨自己当初没有学武，否则便可以为小蝶报仇了。这些是小蝶替一个侠士收藏的珍宝，如今小蝶已死，我就将它转赠给你吧！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回大理找南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value>回大理找南宫婉儿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

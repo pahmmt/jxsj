@@ -1,0 +1,140 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DF" name="灭口" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=462&gt;：“皇陵中将会有丰厚的陪葬品，若让如何开启帝陵的秘密泄露出去，定会招来许多盗贼，让这些下作之辈侵扰了祖宗陵墓，是我们后辈最大的不敬。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=462&gt;：“哎，如今皇陵竣工在即，我这心头却像压着块千斤石头般沉重，怎么也睡不着觉。”&lt;end&gt;
+&lt;playername&gt;：“是为了什么呢？”&lt;end&gt;
+&lt;npc=462&gt;：“那些修建陵墓的工匠，其中难保人不会泄露口风。历朝历代的皇帝陵墓，没有不被盗墓贼盯上的。我必须想一个法子以策万全。”&lt;end&gt;
+&lt;playername&gt;：“这有什么法子，难道还能让他们永远都说不出话？”&lt;end&gt;
+&lt;npc=462&gt;：“哼哼，我正有此意。”&lt;end&gt;　
+&lt;playername&gt;：“你难道……难道想把他们都杀了？”&lt;end&gt;
+&lt;npc=462&gt;：“不可以吗？秦始皇就这么干过，古人可以，我们为何不行？况且，出了什么事情，有我姐姐蒲察皇后在前面顶着，你怕什么？只管放心去办。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=462&gt;：“我再也，再也不敢打这个主意了，请侠士饶恕了我吧。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1734</Value>
+              </number>
+              <number>
+                <Value>3386</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>到达建陵工匠的聚集地</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>工匠们终日勤恳劳作，蒲察风奴却要杀人灭口，存心太狠毒，不能让他如此嚣张，定要教训教训他，让他再不敢想那些杀工匠灭口的阴毒伎俩。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">462</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1682</Value>
+              </number>
+              <number>
+                <Value>3338</Value>
+              </number>
+              <dialognpc>
+                <Value>790</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=790&gt;：“你想做什么？”&lt;end&gt;
+&lt;playername&gt;：“我下不了手，不能杀那些工匠。”&lt;end&gt;
+&lt;npc=790&gt;：“你要造反吗？”&lt;end&gt;
+&lt;playername&gt;：“不是造反，是要教训教训你这个没有人性的畜生！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>789</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>惩罚一下来视察工地的蒲察风奴</Value>
+              </txt>
+              <txt>
+                <Value>惩罚一下来视察工地的蒲察风奴</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

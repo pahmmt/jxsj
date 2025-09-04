@@ -1,0 +1,473 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000008B" name="进入军营" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=905&gt;：“你既然能找到这里，想来之前发生的事情已经全部知晓了。我因为善于驯服毒物而被那些血影挟持到此，想要逼问我的绝技。虽然我不知道他们此刻的去向，但是看这情形，必定和此处的大人物有关联。他们将我安置在此处后便匆匆离去了。不过他们没有留意到我在他们身上撒下了追踪粉，有了这些粉我的小青就可以轻松找到他们的下落。”&lt;end&gt;
+&lt;Playername&gt;：“那萧大哥快让你的小青带我去追踪他们的下落吧。”&lt;end&gt;
+&lt;npc=905&gt;：“也好，我让小青带你去找血影的踪迹。我仍旧留在此地等待本教弟子前来援助，余下的土兵不足为惧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>79</Value>
+              </number>
+              <txt>
+                <Value>提升等级到79级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到79级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>跟随小青寻找血影的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>903</Value>
+              </dialognpc>
+              <number>
+                <Value>1824</Value>
+              </number>
+              <number>
+                <Value>3419</Value>
+              </number>
+              <number>
+                <Value>35</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=905&gt;：“小青，你随着这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;去找那帮兔崽子的下落，找到后自己回来。”&lt;end&gt;
+&lt;npc=903&gt;：“嘶嘶！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>904</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>101</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1709</Value>
+              </number>
+              <number>
+                <Value>3504</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1825,3431
+1816,3452
+1799,3456
+1784,3456
+1788,3441
+1743,3451
+1743,3477
+1732,3494
+1716,3511
+1709,3504</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1004&gt;：“容老大去交货了，怎么到现在还不回来？”&lt;end&gt;
+&lt;Playername&gt;：(没想到血影果然藏匿在此处，上前逼问出容老大的去向。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>从血影处问出容老大的去向</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>557000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>101</Value>
+              </number>
+              <number>
+                <Value>1694</Value>
+              </number>
+              <number>
+                <Value>3502</Value>
+              </number>
+              <fightnpc>
+                <Value>1004</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>1015</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“快说，容老大去了哪里？说出来饶你狗命！”&lt;end&gt;
+&lt;npc=1015&gt;：“他去西北的……啊……”&lt;end&gt;
+&lt;Playername&gt;：(这名血影只说了个西北就被同伴杀死。看来想要从血影口中问出消息，不如亲自往西北去探寻。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>从血影处问出容老大下落</Value>
+              </txt>
+              <txt>
+                <Value>从血影处问出容老大下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>一路向西北寻找容老大的踪迹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>464000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>101</Value>
+              </number>
+              <number>
+                <Value>1769</Value>
+              </number>
+              <number>
+                <Value>3306</Value>
+              </number>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>往西北寻找容老大下落</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：(我向着西北一路追查容老大的下落，却发现路的尽头是一处戒备森严的军营。容老大是不是进入这处军营，我不能肯定。此时也不能轻举妄动，还是回去找龙吟大哥，也许他能有办法。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往沙漠迷宫的哨站找到龙吟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>905</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=905&gt;：“看你匆匆赶回，是不是有什么发现？小青有没有带你找对地方？”&lt;end&gt;
+&lt;npc=903&gt;：“嘶！嘶！！”&lt;end&gt;
+&lt;npc=905&gt;：“呀！你还不服气！”&lt;end&gt;
+&lt;Playername&gt;：“小青没有带错路，眼下有新的难题。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到龙吟</Value>
+              </txt>
+              <txt>
+                <Value>找到龙吟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000008C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

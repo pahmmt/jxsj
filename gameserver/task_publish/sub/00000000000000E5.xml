@@ -1,0 +1,190 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E5" name="宫室之女" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=475&gt;：“那苦命的人如今也不知到了何处？”</Pop>
+      <Start>&lt;npc=475&gt;：“金国皇宫中有一侍女因得罪了皇上宠爱的元妃而出逃。她有个姐姐在峨嵋山上学艺，便逃离金境，上山寻找其姐避祸。按理说，峨嵋山可以不理这一趟祸水，也不可能管得尽天下的不平。既然让我知道了，就一定要搭救那宫女。金国秘探已遁迹而来，我希望你能将宫女初屏成功的从九老洞中护送出来。我就在这洞口接应你们。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>474</Value>
+              </dialognpc>
+              <number>
+                <Value>1791</Value>
+              </number>
+              <number>
+                <Value>3566</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：我是来救你的，快跟我走吧！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>477</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>71</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1618</Value>
+              </number>
+              <number>
+                <Value>3820</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <string>
+                <Value>1804,3596
+1788,3609
+1772,3623
+1754,3634
+1736,3652
+1719,3688
+1718,3735
+1705,3740
+1678,3751
+1657,3756
+1639,3773
+1636,3814</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>仇雪就在洞口接应，将初屏交给她就可以了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>475</Value>
+              </dialognpc>
+              <number>
+                <Value>71</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=475&gt;：“金国人暴虐无性，残酷噬杀。他们要杀的人，我仇雪就一定要救！好，做得不错，这是给你的奖励，拿去吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将初屏交给仇雪就可以了</Value>
+              </txt>
+              <txt>
+                <Value>将初屏交给仇雪就可以了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

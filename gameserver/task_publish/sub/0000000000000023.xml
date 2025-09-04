@@ -1,0 +1,268 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000023" name="苦战" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;:“我立刻去赤田古径看看究竟。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>120</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;，我是罗锋，沿着赤田古径走到头，我在这里等我。有要事相告，见信即毁，勿留隐患</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>41000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>121</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“罗锋，能再见到你实在太好了。”&lt;end&gt;
+&lt;npc=121&gt;：“同感同感，事情完了喝酒。现在时间太紧迫，我和你大致讲讲外面的情况。”&lt;end&gt;
+&lt;playername&gt;:“好的。”&lt;end&gt;
+&lt;npc=121&gt;：“不久前，先皇重病卧床，宫廷内杀机重重，光宗与太子的对立渐现，而李后则在暗中操控着一切，宰相因此感到心惊胆战，于是托病求去。知枢密院事赵汝愚请动宗室赵彦逾劝说殿前司长官郭杲，再三劝告下郭杲勉强接受了枢密院的命令，准备兵荐。韩侂胄则设法联络太皇太后另有打算。”&lt;end&gt;
+&lt;playername&gt;:“李后怎么可能坐视这样的事情发生？”&lt;end&gt;
+&lt;npc=121&gt;：“李后自然不会坐视，在大军被韩侂胄牢牢控制的情况下，她转而求助了五毒教。五毒教精锐已整顿完毕，克日便要北上。”&lt;end&gt;
+&lt;playername&gt;:“什么，有这回事？我竟全然不知。”&lt;end&gt;
+&lt;npc=121&gt;：“哼，古嫣然此人狡黠非常，她不可能完全信你。红旗旗主蝶飘飘近来是不是经常失踪？”&lt;end&gt;
+&lt;playername&gt;:“对了！她最近确实在忙一件古教主让她做的事，究竟是什么我一点不知道。原来就是召集精锐。”&lt;end&gt;
+&lt;npc=121&gt;：“五毒教十年生聚，实力的强横超出了我们的预料。这次若不发起试探攻击，根本不知道古嫣然的能耐大到这种程度。我们的损失很惨重，若不是我率断后的丐帮弟子从赤田古径突袭，天王武士恐怕一个都走不脱。”&lt;end&gt;
+&lt;playername&gt;:“我也遇到翼飞了，他已成功撤离。”&lt;end&gt;
+&lt;npc=121&gt;：“那就好。你现在立即回去，设法打探清楚五毒的行军路线和人员规模，最好能弄到他们的行军计划，这样我们看能不能在杨铁心帮主和石大哥赶到前先阻截住他们。”&lt;end&gt;
+&lt;playername&gt;:“好，那我立即回去见蝶飘飘，查清计划。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=121&gt;：“你现在立即回去见蝶飘飘，查清计划。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>速去古径尽头见罗锋</Value>
+              </txt>
+              <txt>
+                <Value>速去古径尽头见罗锋</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去找蝶飘飘复命吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>82</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“旗主，我回来了。”&lt;end&gt;
+&lt;npc=82&gt;：“来得正好，龙冠口和赤田古径那边的战事如何？”&lt;end&gt;
+&lt;playername&gt;:“幸亏我教高手如云，都已经成功守住，打退了对方的进攻。”&lt;end&gt;
+&lt;npc=82&gt;：“这次遭遇战我们的探子已查明，是天王帮与丐帮联手所为，看来他们在朝廷中也有极大的势力撑腰。”&lt;end&gt;
+&lt;playername&gt;:“啊？朝廷。”&lt;end&gt;
+&lt;npc=82&gt;：“别的不再多说，建立盖世功业的机会就在眼前。教主刚才已经紧急召开临时会议，决定即日起五毒全教精锐将集体北上入京，我们要做一场大事。”&lt;end&gt;
+&lt;playername&gt;:“大事？是何大事？”&lt;end&gt;
+&lt;npc=82&gt;：“现在还不到你知道的时候，过几日我在路上详细告诉你。我教现在分为三路人马，古教主与黄旗胡献姬为一路，黑旗韩破山与白旗卢笑贫为一路，红旗我与你为一路。今晚便要出发，还有什么事情没有办的，速去办妥。殷氏兄妹那里，最好去打个招呼。”&lt;end&gt;
+&lt;playername&gt;:“我知道了。”&lt;end&gt;
+&lt;npc=82&gt;：“我得立即去摘星坪整理队伍，你完事了立刻赶过来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找蝶飘飘复命吧</Value>
+              </txt>
+              <txt>
+                <Value>去找蝶飘飘复命吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000024</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

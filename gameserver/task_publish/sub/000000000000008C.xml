@@ -1,0 +1,217 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000008C" name="寻回贡品" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=905&gt;：“有什么难题你且说来听听，难道是血影人手太多，你怕动起手来有麻烦？还是你已经发现他们的雇主是谁了？”&lt;end&gt;
+&lt;Playername&gt;：“虽然不全是，但是也和龙大哥猜想的差不多了。我跟着小青找到了血影的下落，从他们那里得知他们的头子容老大已经带着游龙珏去见雇主了。但是按照血影所说的方向往西北寻去之后只有一处戒备森严的军营，我不敢打草惊蛇所以回来找龙大哥商量对策。”&lt;end&gt;
+&lt;npc=905&gt;：“这倒不是问题，我有办法。我养了一条蛇王，此番被擒之后为了防止血影将其杀了取胆而令它向北逃了出去。只要找到蛇王，将它带到军营引起骚动，你便可以趁机查探。蛇王对付血影可能不行，但是对一般的兵卒绰绰有余。我在你身上撒了特殊的香粉，蛇王会跟着你走，你往北一定可以找到它。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1024</Value>
+              </dialognpc>
+              <number>
+                <Value>1870</Value>
+              </number>
+              <number>
+                <Value>3268</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“乖蛇儿，快跟我走！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1025</Value>
+              </fightnpc>
+              <number>
+                <Value>100</Value>
+              </number>
+              <number>
+                <Value>101</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1763</Value>
+              </number>
+              <number>
+                <Value>3264</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>1862,3284
+1854,3300
+1834,3286
+1811,3305
+1792,3324
+1780,3337
+1769,3325
+1769,3306
+1770,3280
+1767,3263
+1775,3256
+1782,3277
+1763,3264</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=971&gt;：“哎呀我的天，这是什么玩意？”&lt;end&gt;
+&lt;npc=907&gt;：“这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，请过来一叙。”&lt;end&gt;
+&lt;Playername&gt;：(龙吟的蛇王果然将这里搅得一片混乱，我正在营帐外窃听，有一名服饰和此间士兵一般无二的人招呼我过去。 看看他要说什么，不过也不要放松警惕。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>和沙漠迷宫军营中的周寰对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>651000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>907</Value>
+              </dialognpc>
+              <number>
+                <Value>101</Value>
+              </number>
+              <txt>
+                <Value>蛇王</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=907&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;敢莫是义军的&lt;playername&gt;么？如是，我们就是自己人了。”&lt;end&gt;
+&lt;playername&gt;：“正是我没错，你是？”&lt;end&gt;
+&lt;npc=907&gt;：“我是昆仑门下周寰。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和周寰对话</Value>
+              </txt>
+              <txt>
+                <Value>和周寰对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000008D</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

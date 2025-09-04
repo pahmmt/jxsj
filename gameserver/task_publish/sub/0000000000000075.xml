@@ -1,0 +1,745 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000075" name="匠心别院" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“你不是要告诉我李元哲的事情吗？”&lt;end&gt;
+&lt;npc=1225&gt;：“嗯！元哲哥哥说小孩子不能撒谎，所以我不撒谎。元哲哥哥来唐门有一年多了，大家都说他是西夏人，是坏人，都不愿意和他玩。可是我知道元哲哥哥不是坏人，他给我做风筝，带我摘山果。大黄欺负我的时候还帮我拿石头砸大黄，气得看门的老苏头跳着骂了一上午。你说元哲哥哥怎么可能是坏人呢？”&lt;end&gt;
+&lt;playername&gt;：“嗯，我想也不是！”&lt;end&gt;
+&lt;npc=1225&gt;：“看到你我忍不住想起了元哲哥哥！对了，元哲哥哥走的时候要我玩一个藏宝游戏，他说他在唐门藏了五样东西，分别是暖玉佛、琉璃珠、瑶纸扇、五彩香囊和翡翠簪。这五样东西都藏的很隐蔽，不过只有翡翠簪最难找。元哲哥哥说只要我找到这五样东西他就会回来看我，可是我现在一件都没找到。”&lt;end&gt;
+&lt;playername&gt;：“他真的是这样说的吗？”&lt;end&gt;
+&lt;npc=1225&gt;：“那当然，元哲哥哥从来没有骗过我，他说藏了就是藏了，你愿意和我一起玩这个藏宝游戏吗？我好想快点见到元哲哥哥！你帮我一起找好不好？好不好嘛？”&lt;end&gt;
+&lt;playername&gt;：“我……”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1232</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜寻中</Value>
+              </txt>
+              <txt>
+                <Value>得到暖玉佛</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{暖玉佛,20,1,313,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到暖玉佛</Value>
+              </txt>
+              <txt>
+                <Value>在唐门找到暖玉佛</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3514</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>藏宝游戏</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3514&gt;：“你在唐门走来走去的想要做什么？”&lt;end&gt;
+&lt;playername&gt;：“我丢失了一把瑶纸扇，正在寻找。”&lt;end&gt;
+&lt;npc=3514&gt;：“瑶纸扇？说到瑶纸扇，我前几天倒是在窗台上找到一把，你要就给你吧。”&lt;end&gt;
+&lt;playername&gt;：“如此就多谢了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{瑶纸扇,20,1,314,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到瑶纸扇</Value>
+              </txt>
+              <txt>
+                <Value>找到瑶纸扇</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1233</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜寻中</Value>
+              </txt>
+              <txt>
+                <Value>得到琉璃珠</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{琉璃珠,20,1,312,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到琉璃珠</Value>
+              </txt>
+              <txt>
+                <Value>在唐门找到琉璃珠</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1231</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜寻中</Value>
+              </txt>
+              <txt>
+                <Value>得到五彩香囊</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{五彩香囊,20,1,315,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到五彩香囊</Value>
+              </txt>
+              <txt>
+                <Value>在唐门找到五彩香囊</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“找到了四样东西，就差翡翠簪就齐全了，去牢房附近找找看。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>在牢房附近寻找翡翠簪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>236000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1683</Value>
+              </number>
+              <number>
+                <Value>3275</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在牢房附近搜索</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“牢房附近没有找到翡翠簪，也许会在店铺那边。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>在店铺附近寻找翡翠簪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1690</Value>
+              </number>
+              <number>
+                <Value>3090</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在店铺附近搜索</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“店铺附近也没有找到翡翠簪，去祭坛那边看看！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>在祭坛附近寻找翡翠簪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1737</Value>
+              </number>
+              <number>
+                <Value>3204</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在祭坛附近搜索</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“找来找去都没有找到翡翠簪，唐门可以藏东西的地方就只剩下竹林了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>在竹林一带寻找翡翠簪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1581</Value>
+              </number>
+              <number>
+                <Value>3299</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在竹林附近搜索</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“我找遍唐门都没有找到李元哲藏起的翡翠簪，我突然有种感觉，李元哲根本就没有藏翡翠簪这件东西。他之所以这样说，就是不想让小荷很快见到他，或者就是想告诉小荷，他也许永远不会回来唐门了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将李元哲的用意告诉小荷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1225</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>藏宝游戏</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1225&gt;：“怎么样，你找到元哲哥哥藏起来的东西了吗？”&lt;end&gt;
+&lt;playername&gt;：“我找到了四样东西，还有一样还没有找到。不过……依我看，李元哲只藏了四样东西，最后一样翡翠簪是他故意骗你的。我想他也许知道自己以后不会再回来了，所以才让你找根本就没有的东西。如果你找不全五样东西，他就不会出现，这样你也就不会难过了。”&lt;end&gt;
+&lt;npc=1225&gt;：“你骗我……你骗我……元哲哥哥不会这样的，他不会骗我的……你骗我……呜……呜……你骗我……”&lt;end&gt;
+&lt;playername&gt;：“我……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到小荷</Value>
+              </txt>
+              <txt>
+                <Value>找到小荷</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000076</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{313,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{314,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{312,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{315,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

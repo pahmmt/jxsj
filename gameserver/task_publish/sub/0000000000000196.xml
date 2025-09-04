@@ -1,0 +1,848 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000196" name="为国为民" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“游龙珏一事已告一段落。现下新皇初立，国家动荡不安。周边各国在旁虎视眈眈，我义军打算与朝廷携手抵御外敌。&lt;playername&gt;你这些年来已在江湖上历练成了一代侠客。然古之大侠，都是为国为民的大英雄。要达成这样的心愿，还需要付出许多努力。”&lt;end&gt;
+&lt;playername&gt;：“一切旦听秋姨的吩咐。我赴汤蹈火，再所不辞。”&lt;end&gt;
+&lt;npc=3570&gt;：“当年我曾承诺过兄嫂，若他们有所不测，会尽心照顾好你。可当下国家身处危难之秋，却又不得不借重于你的能力。因此，秋姨想将你调回义军，不知你意下如何？”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;求之不得。能常常在秋姨身边，是我的梦想。”&lt;end&gt;
+&lt;npc=3570&gt;：“可惜，国家局势，却容不得我们时时团聚。义军与国家都需要你，秋姨不敢因私废公。今后你还需要在各地奔波。”&lt;end&gt;
+&lt;playername&gt;：“那也是好的。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“如今我朝虽然与金国相安无事，但百年仇怨已无法抹去。宋金之间，早晚必有一战。金国在中原地区的统治激起了民变，中原地区有多股新兴的义军势力，金国内外交困，反攻的时机恐怕即将到来。”&lt;end&gt;
+&lt;playername&gt;：“在我看来，金国虽然已现颓势，但实力仍在。以我朝军队羸弱的实力，勉强一战恐怕会有所损失。”&lt;end&gt;
+&lt;npc=3570&gt;：“正因如此，赵汝愚大人几日前来信，希望义军能与朝廷军队合练。借助我们的力量，一同抗金。”&lt;end&gt;
+&lt;playername&gt;：“这……虽然赵相有此想法，然后义军毕竟不是朝廷在编的官军。合练一事，恐怕颇多阻挠。”&lt;end&gt;
+&lt;npc=3570&gt;：“所以我想委派你为义军代表，前往临安与赵相当面谈一谈。”&lt;end&gt;
+&lt;playername&gt;：“我恐怕无法担当如此大任！”&lt;end&gt;
+&lt;npc=3570&gt;：“我已与龙五太爷，村中诸位首领谈过了，大家都认为你是最合适的人选。此时此刻，义军需要你这样的人才，秋姨也希望你能成为像你的父母那样世所公认的大侠。”&lt;end&gt;
+&lt;playername&gt;：“那&lt;playername&gt;就去试上一试。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>秋姨希望我回到义军中效力同时也多帮助她</Value>
+              </txt>
+              <txt>
+                <Value>秋姨希望我回到义军中效力同时也多帮助她</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往临安与赵相协商合练一事</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>168000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>515</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“相爷，我奉命代表义军，前来与您会谈合练事宜。”&lt;end&gt;
+&lt;npc=813&gt;：“呵呵，&lt;playername&gt;年少老成，已是义军的中坚人物，真是令人钦佩。与义军合练一事，本相已有决议，定要促成此事。朝中诸官，本相都已事先通气，今日早朝时禀明圣上，已获恩准。”&lt;end&gt;
+&lt;playername&gt;：“事情竟如此顺利？”&lt;end&gt;
+&lt;npc=813&gt;：“如今外敌当前，任何事都必须以国事为重。义军这些年来在抗金战线上取得的成绩，无人可以抹去。我朝军队，赵某说句实话，让他们督粮催税，压榨百姓，个个都是好手。真与铁马硬弓的金国军队对阵，敌人没见到就已经作鸟兽散了。”&lt;end&gt;
+&lt;playername&gt;：“看来相爷对军中情况了解得很清楚。”&lt;end&gt;
+&lt;npc=813&gt;：“身为一国之相，这都是分内之事。如今的当务之急，是调一支可用之师与义军合练，借助朝廷的武器辎重和义军的军事素养，练成一只百战雄师！”&lt;end&gt;
+&lt;playername&gt;：“相爷思虑深远，我无可补充。”&lt;end&gt;
+&lt;npc=813&gt;：“嗯，具体选择哪只军队与义军合练，你可替我去考察考察。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>前往临安与赵相协商合练一事</Value>
+              </txt>
+              <txt>
+                <Value>前往临安与赵相协商合练一事</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往考察考察各地驻军</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>336000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2276</Value>
+              </fightnpc>
+              <number>
+                <Value>119</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2281</Value>
+              </fightnpc>
+              <number>
+                <Value>121</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2262</Value>
+              </fightnpc>
+              <number>
+                <Value>116</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将考察的结果回报赵相</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2019000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>515</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“相爷，我已考察完毕。”&lt;end&gt;
+&lt;npc=813&gt;：“不要讲出来，你我都写在纸上，看是否所见略同。”&lt;end&gt;
+&lt;playername&gt;：“好。”&lt;end&gt;
+……&lt;end&gt;
+&lt;playername&gt;：“相爷，原来您一早便定好了武陵山守军与义军合练啊。”&lt;end&gt;
+&lt;npc=813&gt;：“呵呵，你能有如此眼光，可见义军中的小英雄里真是藏龙卧虎，青出于蓝哪。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将考察的结果回报赵相</Value>
+              </txt>
+              <txt>
+                <Value>将考察的结果回报赵相</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>赵相已选中了武陵山守军与义军合练，我可以回去向秋姨复命了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>168000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，圣上已准许义军与官军合练。赵相选中了武陵山守军，不日即将开拔伏牛山。”&lt;end&gt;
+&lt;npc=3570&gt;：“太好了。这宰相赵汝愚倒是比韩侂胄大人来的爽净不少。我军已在伏牛山修筑营寨，整军操练。你可替我将这消息告知军中诸将。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>我可以回去向秋姨复命了</Value>
+              </txt>
+              <txt>
+                <Value>我可以回去向秋姨复命了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先找到传送人王苍恩，进入伏牛山军营</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>168000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4042</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4042&gt;：“秋姨命我专门负责送大家去军营地图的，以后如果想去军营记得来找我啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>先找到传送人王苍恩，进入伏牛山军营</Value>
+              </txt>
+              <txt>
+                <Value>先找到传送人王苍恩，进入伏牛山军营</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将合练之事告知机关大师天机子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>336000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4033</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“天机子前辈，圣上已准许义军与官军合练。赵相选中了武陵山守军，不日即将开拔伏牛山。”&lt;end&gt;
+&lt;npc=4033&gt;：“如此甚好，甚好！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将合练之事告知机关大师天机子</Value>
+              </txt>
+              <txt>
+                <Value>将合练之事告知机关大师天机子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将合练之事告知义军大将卢必克将军</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>168000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4041</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“卢将军，圣上已准许义军与官军合练。赵相选中了武陵山守军，不日即将开拔伏牛山。”&lt;end&gt;
+&lt;npc=4041&gt;：“卢某没有想到，居然有与朝廷官军合练的一日。这些官军胆小如鼠，又狡黠多诈，希望不要闹出什么事来。我当尽力约束所部，不负白首领所托。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将合练之事告知义军大将卢必克将军</Value>
+              </txt>
+              <txt>
+                <Value>将合练之事告知义军大将卢必克将军</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000197</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

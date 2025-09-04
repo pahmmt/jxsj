@@ -1,0 +1,457 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000020E" name="领土争夺" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4446&gt;：“自打朱熹被贬出朝，赵汝愚身死异乡之后，朝廷上下便陷入了纷乱当中。朱熹门人和赵汝愚旧部认为皇上偏信偏听韩侂胄，以莫须有的罪名加害此二人，立誓要报复朝廷，刺杀韩侂胄。这两派党人联合了地方上不满朝廷的各方势力，意欲起兵造反，现以大溪岛起义为号刺探朝廷虚实。”&lt;end&gt;
+&lt;playername&gt;：“那朝廷又是如何应对的？”&lt;end&gt;
+&lt;npc=4446&gt;：“皇上听说赵汝愚死于流放途中懊悔不已，对于朱熹门下和赵汝愚旧部已有宽容之意，但对韩侂胄又有倚重之心，仍在两难之间。后在太皇太后规劝之下降下圣旨，一则大赦天下，二则广纳贤良。朱韩两党若肯归顺朝廷则既往不咎，若执迷不悟则必不姑息。对于叛乱独立者，若有能将之降服者，定可加官晋爵。”&lt;end&gt;
+&lt;playername&gt;：“这是何故？”&lt;end&gt;
+&lt;npc=4446&gt;：“赵大人拥皇有功，如今惨死皇上心有不忍，因此才下此旨意。一则可以广纳贤良，二则可以令朱韩两党与韩侂胄矛盾不再激化，是有两全之心。我看你身怀绝技，可以为国效力，参与这场混战。不过此战凶险，必须要有帮会作为后盾才行，你若是帮会正式成员，可以去找领土战官员。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>JoinTong</Function>
+            <Parameter>
+              <txt>
+                <Value>成为帮会正式成员</Value>
+              </txt>
+              <txt>
+                <Value>成为帮会正式成员</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3406</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3406&gt;：“你既然找到了我，想必是来参加领土争夺战的。参加领土争夺战的必须是帮会的正式成员，这点你符合了。领土战若是没有占领领土的需要先向新手村宣战，只有占领了新手村，将来才可以向别的地图宣战。也就是说新手村是帮会开启领土争夺的第一站。拥有宣战权限的是帮主或者帮主指定的其他官员，每周六和周日晚上八点到十点的领土战前要来我这里宣战。”&lt;end&gt;
+&lt;playername&gt;：“帮主宣战新手村以后，我们就可以攻打新手村了吗？”&lt;end&gt;
+&lt;npc=3406&gt;：“是的，帮主可以决定宣战对象，确定了宣战目标，帮会成员便可以前往攻占。现在我们做一个演习，假设我是帮主，向新手村之一的江津村宣战，那我们的目标便是打下江津村外的五级地图长江河谷。开战之后那里会刷出很多龙柱，打掉敌人的龙柱会刷出属于我们的龙柱。我们要做的就是打掉敌人的龙柱，并且保护属于我们的龙柱，现在你去长江河谷打掉那里试炼的龙柱去吧”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到领土战官员</Value>
+              </txt>
+              <txt>
+                <Value>找到领土战官员</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打掉长江河谷内的试炼龙柱</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4447</Value>
+              </fightnpc>
+              <number>
+                <Value>34</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3406&gt;：“战斗是计算积分的，按照帮会为单位来计算，守护龙柱和攻打龙柱都会有相应的积分。新手村是不可被持续占领的，当下一次争夺战开始的时候，这一次的获胜方将会自动失去占领权。”&lt;end&gt;
+&lt;playername&gt;：“那我们攻打了新手村能做什么？”&lt;end&gt;
+&lt;npc=3406&gt;：“当一个帮会攻占了新手村后，下一次的领土争夺战便可以向其他的任意未被玩家占领的地图宣战。现在我们已经占领了新手村，假设到了下一次的领土战时间，我们就可以宣战任意未被玩家占领的地图，作为我们的目标。现在三峡栈道没被攻占，你去打掉那里的试炼龙柱吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>打掉三峡栈道的试炼龙柱</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>25000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4448</Value>
+              </fightnpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3406&gt;：“占领这张地图，帮会才算是有了自己真正的领土，可以以这个领土为据点开始向四周扩展了。但是扩展必须从相邻的领土开始才可以。如果相邻的领土是被NPC占领的，则需要宣战，如果是被玩家占领的，则自然获得征战权。”&lt;end&gt;
+&lt;playername&gt;：“不管是NPC占领还是玩家占领都可以攻打吗？”&lt;end&gt;
+&lt;npc=3406&gt;：“是的，都可以攻打！现在和三峡栈道相邻的是神女峰和丰都鬼城，这两个都可以攻打。不过是要下一次的领土战的时间才可以。现在假设下一次领土争夺战已经来了，我们向NPC占领的神女峰宣战，你去打掉那里的试炼龙柱吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>打掉神女峰的试炼龙柱</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>25000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4449</Value>
+              </fightnpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3406&gt;：“征战的流程大致就是这样了，参与征战的帮众都会获得功勋，功勋达到一定程度可以获得领土战的称号等奖励。参与领土战的帮众同样可以获得领土战的声望，用来兑换稀有的装备和其他奖励。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回临安府找领土战官员</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>25000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3406</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3406&gt;：“以后宣战或者领取奖励都是在我这里，不要走错路了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到领土战官员</Value>
+              </txt>
+              <txt>
+                <Value>找到领土战官员</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

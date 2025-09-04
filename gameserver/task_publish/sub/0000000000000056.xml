@@ -1,0 +1,518 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000056" name="游龙出世" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=739&gt;：“待老夫先行看看，嗯……看来这翠烟门还真是一片宝地，宝物加宝地，一到夜间必有宝气冲天，行家一眼便能望出。如今却没有任何迹象，从罗盘的方针来看，吉位应当在这四所花园的中心，请问姑娘，这四所花园的中心之处是什么地方？”&lt;end&gt;
+&lt;npc=738&gt;：“此处是百花阵，是本门秘密所在，与本门的存亡休戚相关，先生这么问，难道游龙珏便在这百花阵中？”&lt;end&gt;
+&lt;npc=739&gt;：“想必便是在这百花阵中了，想必这阵法摆得奇妙，不令宝气外泄，因此游龙珏藏在此地多年也未曾被人发觉。”&lt;end&gt;
+&lt;playername&gt;：“既是如此，先生又怎么得知这游龙珏就在翠烟门中呢？”&lt;end&gt;
+&lt;npc=739&gt;：“问得好，老夫不仅研习风水之道，而且精通天相易理，宝气虽然可以遮蔽，天相难以遮蔽呢！老夫观天即知天下事，些许小事又何足道哉！”&lt;end&gt;
+&lt;npc=738&gt;：“怪不得这数年来，百花阵外群狼云集，原来有宝物在此。之前由于本门一直相安无事，也无人造那杀孽，由得这些狼群去了。如今既要掘出游龙珏，这些狼群倒也是碍事。”&lt;end&gt;
+&lt;playername&gt;：“不如就由在下前往除去这些狼群好了！”&lt;end&gt;
+&lt;npc=738&gt;：“如此甚好，就有劳&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;了，百花阵虽然有四处入口，不过春花园前往最近，就烦请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;除去靠近春花园入口处的狼群即可。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>741</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>42000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>抢先那些外来的江湖高手进入百花阵内部</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1972</Value>
+              </number>
+              <number>
+                <Value>3692</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>到达百花阵内部</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先击败那里面厉害的几个红衣高手，才可以技摄群雄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>742</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>52000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>紫衣高手武艺非常高强，阻止他们带走游龙珏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>743</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>52000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败了众多江湖高手，尽快取出游龙珏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1502</Value>
+              </dialognpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>金乌飞，玉兔走，游龙宛转惊翩鸿</Value>
+              </txt>
+              <txt>
+                <Value>得到游龙珏</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{游龙珏,20,1,200,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1个游龙珏</Value>
+              </txt>
+              <txt>
+                <Value>得到游龙珏</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>游龙珏已经在我手中了，现在要尽快将它带到春梅雅筑</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>738</Value>
+              </dialognpc>
+              <number>
+                <Value>464</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=738&gt;：“看你浑身是血，出了什么事情？”&lt;end&gt;
+&lt;playername&gt;：“出……出事了……”&lt;end&gt;
+&lt;npc=738&gt;：“出世了？你是说游龙珏出世了？”&lt;end&gt;
+&lt;playername&gt;：“也对，也不对啊！唉！这么和你说吧，百花阵内早就有人闯了进去了。要不是我无意中发现，急急的赶了过去，连抢带夺的拿了出来，只怕现在游龙珏早就被人带走了？”&lt;end&gt;
+&lt;npc=739&gt;：“那游龙珏现在何处？”&lt;end&gt;
+&lt;playername&gt;：“这个便是！据我看来，此番前来的不过是些庸手，真正厉害的角色必然也会闻风而至，需要尽快做些准备才是啊！”&lt;end&gt;
+&lt;npc=738&gt;：“我早就想到游龙珏一出，必然有人来夺，却没有想到会来的这么快。”&lt;end&gt;
+&lt;npc=738&gt;：“百花阵离门中还有一些距离，此事想必门中姐妹尚未知悉，此处有告急用的烟火楼台，放在百花阵的外围，这是我翠烟门中告急中的烟火弹，烦劳&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;拿着它填入到告急的烟火楼台中，本门弟子便自会看到。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=738&gt;：“百花阵离门中还有一些距离，此事想必门中姐妹尚未知悉，此处有告急用的烟火楼台，放在百花阵的外围，这是我翠烟门中告急中的烟火弹，烦劳&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;拿着它填入到告急的烟火楼台中，本门弟子便自会看到。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{烟火,20,1,145,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>把游龙珏带给郦秋水</Value>
+              </txt>
+              <txt>
+                <Value>把游龙珏带给郦秋水</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000057</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{200,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

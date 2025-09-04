@@ -1,0 +1,805 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000004A" name="终极营救" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“长老，请问这陵墓中何处，何处可以买到酒呢？”&lt;end&gt;
+&lt;npc=254&gt;：“哈哈哈，你&lt;if me.nSex==1&gt;一个女子&lt;endif&gt;也饮酒的吗？”&lt;end&gt;
+&lt;playername&gt;：“这陵墓中气氛压抑，晚上总是睡不着，要借助些酒才睡得沉。”&lt;end&gt;
+&lt;npc=254&gt;：“去火神殿，我在墙壁的夹缝中藏了两坛好酒，便送予你了。”&lt;end&gt;
+&lt;playername&gt;：“谢谢长老！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1526</Value>
+              </dialognpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>北斗酌美酒，劝龙各一觞</Value>
+              </txt>
+              <txt>
+                <Value>得到陈年烈酒</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{陈年烈酒,20,1,187,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d瓶陈年烈酒</Value>
+              </txt>
+              <txt>
+                <Value>在火神殿取得陈年烈酒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>68000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与地字牢狱卒对话，灌醉这厮，好让他一直开着牢门</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>251</Value>
+              </dialognpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“狱卒大哥，你看我带什么来了！”&lt;end&gt;
+&lt;npc=251&gt;：“酒？好东西啊。从哪搞到的，这陵墓里老子连酒味都没闻到过。”&lt;end&gt;
+&lt;playername&gt;：“啥都不说了，喝吧。”&lt;end&gt;
+&lt;npc=251&gt;：“干！”&lt;end&gt;
+&lt;playername&gt;：“再来。”&lt;end&gt;
+&lt;npc=251&gt;：“干！”&lt;end&gt;
+……半个时辰后&lt;end&gt;
+&lt;npc=251&gt;：“嗝，嗝，我不行了，不能再喝了。”&lt;end&gt;
+&lt;playername&gt;：“&lt;if me.nSex==0&gt;小弟&lt;else&gt;小妹&lt;endif&gt;这里有一万两银票，不成敬意，送给你了。”&lt;end&gt;
+&lt;npc=251&gt;：“这，这如何敢受？太贵重了，太贵重了。”&lt;end&gt;
+&lt;playername&gt;：“何必客套，将来总有求你帮忙的时候。”&lt;end&gt;
+&lt;npc=251&gt;：“哈哈，好，那在下就愧受了。将来有什么事情，只管来找我。”&lt;end&gt;
+&lt;playername&gt;：“这银票带在身上可安全？”&lt;end&gt;
+&lt;npc=251&gt;：“是啊。若被那群厮鸟见到，还不都抢光了。我得找个地方藏起来。”&lt;end&gt;
+&lt;playername&gt;：“大哥只管去，这里我替你看守片刻。”&lt;end&gt;
+&lt;npc=251&gt;：“有你在我放心，我，我去去就来。这路，这路怎么老是晃来晃去啊。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=251&gt;：“有你在我放心，我，我去去就来。。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>与地字牢狱卒对话，灌醉这厮，好让他一直开着牢门</Value>
+              </txt>
+              <txt>
+                <Value>与地字牢狱卒对话，灌醉这厮，好让他一直开着牢门</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>用美酒金钱将地字牢狱卒打发后，我该去灌醉铁浮图高手</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>266</Value>
+              </dialognpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“兵大哥，你看我拿什么来了！”&lt;end&gt;
+&lt;npc=266&gt;：“好酒啊，隔着十里俺也能闻到酒香。&lt;if me.nSex==0&gt;你这个家伙&lt;else&gt;你这个妮子&lt;endif&gt;还真是神通广大！”&lt;end&gt;
+&lt;playername&gt;：“来，我们喝。”&lt;end&gt;
+&lt;npc=266&gt;：“慢，我这里还在职守呢，不能喝不能喝，等晚上喝个痛快。”&lt;end&gt;
+&lt;playername&gt;：“怕什么，你醉了里面不是还有四大高手吗？况且这陵墓里三层外三层的把守着，别说鸟都飞不进来，就算能飞进来，那能飞得进来的人你挡得住？这酒可只此一坛，我是觉得与你投缘才拿过来。你要不喝，我可就拿走了。”&lt;end&gt;
+&lt;npc=266&gt;：“别别，来来来，&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;会说话哟，喝！”&lt;end&gt;
+&lt;playername&gt;：“再来。”&lt;end&gt;
+&lt;npc=266&gt;：“来就来。”&lt;end&gt;
+……酒过三巡&lt;end&gt;
+&lt;npc=266&gt;：“不行咯，晕咯，胡噜。”&lt;end&gt;
+&lt;playername&gt;：“兵大哥，兵大哥？”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=266&gt;：“晕咯，胡噜。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>用美酒金钱将地字牢狱卒打发后，我该去灌醉铁浮图高手</Value>
+              </txt>
+              <txt>
+                <Value>用美酒金钱将地字牢狱卒打发后，我该去灌醉铁浮图高手</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>供神台内这四大护卫看来是只能硬闯了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{187,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>267</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>4</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>136000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败了四大铁浮图护卫，快去解救供神台上的天目道长</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1586</Value>
+              </number>
+              <number>
+                <Value>3205</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>找到被囚禁的天目道长</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>终于见到了天目道长，快护送他离开此地</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>269</Value>
+              </dialognpc>
+              <number>
+                <Value>1586</Value>
+              </number>
+              <number>
+                <Value>3205</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“天目道长，在下&lt;playername&gt;，受少林玄慈大师，武当重阳真人所托，前来救您逃出生天。快随我走吧！”&lt;end&gt;
+&lt;npc=269&gt;：“此事贫道已经知道了。”&lt;end&gt;
+&lt;playername&gt;：“您知道了？您是怎么知道的，在下原本还准备了许多口舌来说服您，让您相信我呢。”&lt;end&gt;
+&lt;npc=269&gt;：“就在昨日午夜，有人丢了个纸条进来，告诉贫道此事。”&lt;end&gt;
+&lt;playername&gt;：“道长怎知那人非假？”&lt;end&gt;
+&lt;npc=269&gt;：“因为这十年来他一直都不间断的扔一些纸条过来，屡屡救过贫道性命，可贫道却一直守口如瓶，怕的就是他是一只鬼。”&lt;end&gt;
+&lt;playername&gt;：“此人可能是玄慈大师埋伏在金国的一个厉害细作，可惜在下也不知道他的底细。”&lt;end&gt;
+&lt;npc=269&gt;：“我们走吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>268</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1543</Value>
+              </number>
+              <number>
+                <Value>3257</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value>1547,3251
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>天目道长甫出地牢，一只毒箭冷不丁地从墓道墙上的机关中射出，正中道长右肩。道长脚下不稳，踉跄着栽入深不可测的漆黑暗道里。&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>85000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>270</Value>
+              </dialognpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“道长！道长！你怎么样了。”&lt;end&gt;
+&lt;npc=270&gt;：“呵呵，这么多年过去了，终于是能见到一次阳光。贫道终于可以完全相信你。若……若是金人，他们不会射杀我的！”&lt;end&gt;
+&lt;playername&gt;：“道长，你可以的。只要出了陵墓，我找人替您医治！”&lt;end&gt;
+&lt;npc=270&gt;：“晚了。这里有一封信，你们想知道的内容，都在信上。”&lt;end&gt;
+&lt;playername&gt;：“道长！”&lt;end&gt;
+&lt;npc=270&gt;：“信中内容关乎整个武林，乃至江山社稷，绝非武当一派可以承担，环顾天下，只有一人可以托付。将信交给义军首领白秋琳，相信她会妥善处理，快走！”&lt;end&gt;
+&lt;playername&gt;：“我不能就这么走了，不可以！”&lt;end&gt;
+&lt;npc=270&gt;：“呵呵，贫道……云泉师弟，师兄来黄泉看你了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{天目道长的信,20,1,188,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>搀扶中箭的天目道长</Value>
+              </txt>
+              <txt>
+                <Value>搀扶中箭的天目道长</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“等了这么久，你终于来了！”&lt;end&gt;
+&lt;playername&gt;：“天目道长已然仙逝，这封信关系重大，让我务必交给您！”&lt;end&gt;
+&lt;npc=3570&gt;：“好的，我会用心对待的，你先去休息一下吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去新手村找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回去新手村找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{188,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>236</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000013C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

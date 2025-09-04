@@ -1,0 +1,352 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000099" name="护送信使" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1007&gt;：“照你所说，铁骝军副帅亲卫兵和铁骝军先锋应当合力来攻才是，但他们却偏偏没有来……对了！他们定是不知我营地的蓄势，所以才不敢贸然来攻。这也恰好为我们提供了准备的时间。军中有一名许老伯，精通火器火药，他向我提议用火器来击退铁骝军。不过火器所需消耗很大，军中被围无人能够顺利出去，所以此事还想请你相助。”&lt;end&gt;
+&lt;Playername&gt;：“聂将军尽管吩咐！”&lt;end&gt;
+&lt;npc=1007&gt;：“北方有一处硝石谷，是守关的官兵用来存放硝石等物的地方。这些官兵和我义军素无往来，明求定然不予，所以请你前去暗借一些回来。那谷里木材众多，还请顺便砍些回来，以供许老伯所需。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>81</Value>
+              </number>
+              <txt>
+                <Value>提升等级到81级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到81级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>可以前往硝石谷了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1068</Value>
+              </dialognpc>
+              <number>
+                <Value>545</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>收集中</Value>
+              </txt>
+              <txt>
+                <Value>得到硝石</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{硝石,20,1,335,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/9袋硝石</Value>
+              </txt>
+              <txt>
+                <Value>去硝石谷找硝石</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1593,3208
+1599,3237
+1612,3248
+1620,3228
+1623,3254
+1639,3220
+1641,3239
+1654,3211
+1694,3212
+1681,3216
+1680,3246
+1692,3277
+1681,3265
+1710,3230
+1702,3265</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1067</Value>
+              </dialognpc>
+              <number>
+                <Value>545</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>伐木中</Value>
+              </txt>
+              <txt>
+                <Value>得到木材</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{木材,20,1,336,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/9堆木材</Value>
+              </txt>
+              <txt>
+                <Value>去硝石谷找木材</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1592,3217
+1611,3226
+1607,3247
+1628,3246
+1636,3216
+1638,3238
+1649,3215
+1660,3233
+1673,3227
+1665,3240
+1691,3224
+1685,3257
+1706,3218
+1704,3256
+1707,3241
+1697,3283</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将木材和硝石带给聂文成</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1189000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1007</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“聂将军，我已经将东西带回来了！”&lt;end&gt;
+&lt;npc=1007&gt;：“真是辛苦你了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将材料带给聂文成</Value>
+              </txt>
+              <txt>
+                <Value>将材料带给聂文成</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000009A</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

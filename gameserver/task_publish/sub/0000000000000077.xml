@@ -1,0 +1,771 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000077" name="钦定主持" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1229&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，虎口镇的赌坊真正的老板是梁项林。以前他是一个混子，现在摇身一变成为了这里的驻军统领。梁项林虽然入身仕途却依然劣行不改，和地方上的恶势力相互勾结、鱼肉百姓，俨然就是地方上一霸，老百姓对他无不恨之入骨。”&lt;end&gt;
+&lt;playername&gt;：“有这么严重吗？”&lt;end&gt;
+&lt;npc=1229&gt;：“不仅如此，他还和游荡在居延泽的马贼暗中勾结，收受好处；对马贼的恶行不闻不问，对朝廷剿灭马贼的命令置若罔闻，着实令人气愤。我们这些做手下的敢怒不敢言，这不，还要被逼着帮他看赌坊。要不然，看场子的怎么会让你来我这里？”&lt;end&gt;
+&lt;playername&gt;：“竟然还有这样的人，若是不好好教训下他，老百姓还怎么活？”&lt;end&gt;
+&lt;npc=1229&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;所言极是，眼下为害居延泽的马贼头子是也暮光和追风，他手下的飞枪手很是厉害。若是&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;能够一举荡平这些马贼，必定可以让他心生恐慌，不敢再如此嚣张。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=2&gt;
+&lt;npc=979&gt;：“阿弥陀佛！施主请随便看看，方丈等下就会过来！”&lt;end&gt;
+&lt;playername&gt;：“无妨，我再等等看吧！”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>842</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>843</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>841</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <taskitem>
+                <Value>{327,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将马贼被荡平的消息带给鲁兵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>597000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1229</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1229&gt;：“看&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;一脸喜气，想来事情办得很顺利吧？”&lt;end&gt;
+&lt;playername&gt;：“托鲁副将的福还算顺利，这是从马贼手里夺回的财物，请鲁副将分给受害的百姓。”&lt;end&gt;
+&lt;npc=1229&gt;：“鲁某愿意代劳！不知&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;因何事前来居延泽这偏僻之地，若有需要差遣之处，鲁某绝不含糊。”&lt;end&gt;
+&lt;playername&gt;：“不知鲁副将可曾在梁项林那里见过一个叫做李元哲的人？”&lt;end&gt;
+&lt;npc=1229&gt;：“李元哲？见过，见过！听说是梁项林的义兄，前段时间来到这里。你若是想找李元哲，可以再等一等。马贼被荡平的消息应该很快就会传到梁项林耳中，等下你再去帅营，梁项林必然会对你毕恭毕敬。此时前去，不合时宜。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找鲁兵</Value>
+              </txt>
+              <txt>
+                <Value>回去找鲁兵</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将等级提升到62级以后再去找梁项林</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{327,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>62</Value>
+              </number>
+              <txt>
+                <Value>提升等级到62级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到62级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在可以去找梁项林打听李元哲的事情了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>527</Value>
+              </number>
+              <number>
+                <Value>1615</Value>
+              </number>
+              <number>
+                <Value>3217</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>前往梁项林大营</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=844&gt;：“什么人擅闯我大营帅帐？”&lt;end&gt;
+&lt;playername&gt;：“幸会了，梁大将军！我来没有别的意思，只是向你打听一下李元哲的下落。居延泽这个地方治理太差，小小马贼竟然敢在我的头上动土，我一气之下便替本地的百姓除了一害。不知梁大将军是否觉得我多事？”&lt;end&gt;
+&lt;npc=844&gt;：“不敢……不敢……&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;靠一己之力便平定了猖獗已久的马贼，梁某怎敢数落&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;的不是。说到李元哲，他就在我身后的密室，&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;可以进密室去找他。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进密室找李元哲</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>528</Value>
+              </number>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3237</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>进密室找李元哲</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1229&gt;：“哈哈哈哈！&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，我们又见面了。”&lt;end&gt;
+&lt;playername&gt;：“是你？你怎么会在这里？”&lt;end&gt;
+&lt;npc=1229&gt;：“我怎么就不该在这里？实话告诉你，从你踏进忘归赌坊起，我便开始注意你了。那伙马贼不听我们的话已经很久了，若不是他们手里握有对我们不利的证据，早就将他们灭了。刚好这个时候你来找李元哲，我便将计就计，设下这圈套，让你替我们除掉那帮不听话的家伙。怎么样，被人利用的滋味不好受吧？”&lt;end&gt;
+&lt;playername&gt;：“你……混账……”&lt;end&gt;
+&lt;npc=1229&gt;：“别生气，忍耐一下，等到了阎王爷那里再发飙。弟兄们，给我上！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>除掉鲁兵和他设下的伏兵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1230</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>966</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>从梁项林那里问出李元哲的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>238000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>527</Value>
+              </number>
+              <number>
+                <Value>1622</Value>
+              </number>
+              <number>
+                <Value>3215</Value>
+              </number>
+              <dialognpc>
+                <Value>844</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=844&gt;：“你……你怎么还没死？”&lt;end&gt;
+&lt;playername&gt;：“想我死可没那么容易！快说，李元哲在哪里？”&lt;end&gt;
+&lt;npc=844&gt;：“我……我跟你拼了……”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>965</Value>
+              </fightnpc>
+              <number>
+                <Value>65</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>问出李元哲下落</Value>
+              </txt>
+              <txt>
+                <Value>问出李元哲下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找阿雅询问李元哲的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>179000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>838</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=838&gt;：“别杀我……”&lt;end&gt;
+&lt;playername&gt;：“我不杀你，我问你，你知不知道李元哲的下落？”&lt;end&gt;
+&lt;npc=838&gt;：“李元哲？让我想想……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>询问阿雅</Value>
+              </txt>
+              <txt>
+                <Value>询问阿雅</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000078</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

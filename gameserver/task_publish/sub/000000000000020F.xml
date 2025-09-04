@@ -1,0 +1,1364 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000020F" name="翱翔天地" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“&lt;playername&gt;！来，让秋姨好好瞧瞧。”&lt;end&gt;
+&lt;Playername&gt;：“&lt;playername&gt;此次去了西南多日，不知军中兄弟姐妹们可还好？”&lt;end&gt;
+&lt;npc=3570&gt;：“军中将士们都好，几员大将也已担待起重任，军中兄弟姐妹们尽心尽力为军力后勤做足准备，有备无患。”&lt;end&gt;
+&lt;Playername&gt;:“如今边宋金边境局势紧张，经过这些年的安逸日子，大宋将士早已外强中干了。虽然表面一片太平，可是实际却是危机四伏。随着能征惯战的将士损耗怠尽，大宋朝已和百年前无法相比。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>120</Value>
+              </number>
+              <txt>
+                <Value>提升等级到120级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到120级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到4级</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到4级</Value>
+              </txt>
+              <string>
+                <Value>4</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>返回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“秋姨竟也有如此眼界，大宋朝经过几十年的休养生息，实力却是恢复不少，但依然无法与从前相提并论。”&lt;end&gt;
+&lt;npc=3570&gt;：“山外青山楼外楼， 西湖歌舞几时休。 暖风熏得游人醉, 直把杭州作汴州！多少年来，朝中群臣，富商儒生们还有多少记得我们的使命？”&lt;end&gt;
+&lt;Playername&gt;：“是啊，真正能体会到国难之苦的也只有平民百姓。”&lt;end&gt;
+&lt;npc=3570&gt;：“前些日子，义军接到当朝重臣韩侂胄密信。信中韩侂胄对自己曾经对朱熹老先生犯下的错误表示悔意和无奈。并说由于金与蒙不断酣战，金朝府库空匮，国势日弱。韩侂胄认为金连年穷于对蒙战争，边防空虚，竟有兴师北上之意！”&lt;end&gt;
+&lt;Playername&gt;：“秋姨，姓韩那老贼屡次三番做出让人发指之事，如今竟还有颜面……”&lt;end&gt;
+&lt;npc=3570&gt;：“国难当前，万事当以国为重！由于宋自开国以来便是采取了重文轻武之政策，朝中尽是些靠嘴吃饭的闲人。几员大将也各自把守在最重要的位置不得抽身，韩侂胄希望义军能慷慨相助，派出绝顶高手深入金国内部搜集金国军事布防等关键资料。我已派出一些高手前往蒙古搜集情报，而金国方面事关重大，秋姨还是对你比较放心。”&lt;end&gt;
+&lt;Playername&gt;：“我明白了，请秋姨静待佳音。”&lt;end&gt;
+&lt;npc=3570&gt;：“不忙！前几日我的故友唐一尘书信于我，有事相求，此事正好与你此行相照应，你且先去唐门走一趟吧。”&lt;end&gt;
+&lt;Playername&gt;：“是，告辞。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往唐门拜见唐一尘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4487</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4487&gt;：“是&lt;playername&gt;吗？是秋琳让你来的？”&lt;end&gt;
+&lt;Playername&gt;：“是……秋姨嘱咐我特地前来唐门听从您老吩咐。”&lt;end&gt;
+&lt;npc=4487&gt;：“这几日我一直在想，若是你能来便是再好不过了！哈哈，你知道我和含烟一对儿女都已长大成人，筱雨如今任翠烟掌门，年纪不大却也将门内大小事务打理得有声有色。只是筱雨自幼跟在我和含烟身边长大，回到翠烟门几年，却并未体验过真正的江湖。此次我希望筱雨能够进入江湖之中历练。”&lt;end&gt;
+&lt;Playername&gt;：“这是好事儿。”&lt;end&gt;
+&lt;npc=4487&gt;：“但是江湖之内鱼龙混杂，筱雨虽武功高强，江湖经验却也不多，安全也是个大问题！此次我已安排了翠烟门丹碧秀随同前往，此人心思缜密，武功不俗，当真是个合适的人选，只是……”&lt;end&gt;
+&lt;Playername&gt;：“前辈但说无妨。”&lt;end&gt;
+&lt;npc=4487&gt;：“她二人一行武功不俗却并无多少行走江湖的阅历，老夫想请你出马，随行左右暗中保护。”&lt;end&gt;
+&lt;Playername&gt;：“我此行也正要北上，能随行筱雨左右暗中保护怕是最好不过，我定会保筱雨周全。”&lt;end&gt;
+&lt;npc=4487&gt;：“近年来江湖上都传说&lt;playername&gt;乃真正的侠客，武功自是不俗。我这唐家堡今年擂台赛选出了三大高手，不知你能否赢过他们，若能赢，我筱雨交于你保护我便放足了心啦！”&lt;end&gt;
+&lt;Playername&gt;：“我这便去试上一试。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜见唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>拜见唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往翡翠湖打败唐门三杰</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4488</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4489</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4490</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找唐一尘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>60000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4487</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4487&gt;：“好好！我唐家堡三位高手竟都败下阵来。果然一身俊俏功夫，怕是我唐一尘年轻时也不及你。现在我让你保护筱雨也能放心了。莫怪我人老多事，毕竟就这么一个宝贝女儿，我是又心疼又心急啊，哈哈。”&lt;end&gt;
+&lt;Playername&gt;：“您的心情晚辈能理解，我自是竭尽全力保护筱雨周全。”&lt;end&gt;
+&lt;npc=4487&gt;：“那么，现在就与筱雨丹碧秀二人会合去吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>找到唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往翠烟门拜见尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3536</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3536&gt;：“你竟这么快就到了！家父三日前来信说你将会前来助我此次入江湖历练！”&lt;end&gt;
+&lt;playername&gt;：“正是。我受唐堡主所托后立马星夜兼程赶往，不敢怠慢。不知筱雨你可准备好了。”&lt;end&gt;
+&lt;npc=3536&gt;：“门中事物已经交代下去，翠烟门几个管事姐妹也将各司其职。碧秀那边也正在准备，我可能还要准备些衣装，毕竟北方这个时节异常寒冷，多带些衣物有备无患。”&lt;end&gt;
+&lt;playername&gt;：“筱雨尽管慢慢准备，可有能帮上忙的地方？”&lt;end&gt;
+&lt;npc=3536&gt;：“我打小儿爱吃核桃糕，此去北方想必路途漫漫，北方的口味我和碧秀未必吃得习惯。这后山上有一片核桃林，你去那儿帮我采摘些新鲜核桃吧，到时候我们还能吃到核桃糕。近来那里似有虫害，你就便帮忙除下吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜见尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>拜见尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往采摘核桃</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4491</Value>
+              </dialognpc>
+              <number>
+                <Value>17</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采摘中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{山核桃,20,1,546,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>采摘%d/15筐山核桃</Value>
+              </txt>
+              <txt>
+                <Value>采摘15筐山核桃</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4492</Value>
+              </dialognpc>
+              <number>
+                <Value>17</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>灭虫中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>消灭%d/15条吱吱虫</Value>
+              </txt>
+              <txt>
+                <Value>消灭15条吱吱虫</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1444,2807
+1443,2811
+1447,2810
+1442,2803</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将采摘好的山核桃带给尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3536</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3536&gt;：“&lt;Playername&gt;好身手，一下子采来了这么多，往日我与门内姐妹们采个几日也没有这么多。这下子有口福咯！对了，筱雨还想再麻烦&lt;playername&gt;一件事！”&lt;end&gt;
+&lt;playername&gt;：“筱雨尽管吩咐，此去我便是以你的随从身份出现，你若是客客气气的只怕还要引起他人的怀疑呢！”&lt;end&gt;
+&lt;npc=3536&gt;：“那真是委屈你了，我等一行人的马车已经准备好了，却缺少一个上好的马鞍。好马配好鞍，你且前去山下林中帮我觅几块狼皮回来，我自有办法将其加工成鞍。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>找到尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往寻找狼皮</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{546,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2058</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{547,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将狼皮带给尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>90000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3536</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“筱雨, 我总算将狼皮顺利拿到了。”&lt;end&gt;
+&lt;npc=3536&gt;：“辛苦你了，有了这狼皮，做成了马鞍子，我们日后要赶路也舒服多了。”&lt;end&gt;
+&lt;Playername&gt;：“筱雨，你看这马车只有一匹马在拉，若是装载过重，只怕……”&lt;end&gt;
+&lt;npc=3536&gt;：“这……你说的很对，我带的东西太过多了些，我这就精简些衣物，碧秀的就都带上吧。”&lt;end&gt;
+&lt;Playername&gt;：“此次到江湖之中历练万望二位时时刻刻小心，二位武功高强却不可菩萨心肠，轻易相信陌生人。快要抵达金国之时我会易容出现，以免节外生枝。若是没有其他遗漏的话，我们这便启程吧！”&lt;end&gt;
+&lt;npc=3536&gt;：“你尽管放心，我们有武功会保护自己，闲事自是不会多管，就让我们放松心情，体验这大好河山！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>找到尹筱雨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>和尹筱雨一起离开翠烟门</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{547,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4494</Value>
+              </dialognpc>
+              <number>
+                <Value>1409</Value>
+              </number>
+              <number>
+                <Value>2989</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“筱雨, 我们可以出发了吗?”&lt;end&gt;
+&lt;npc=3536&gt;：“这就动身吧!”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4495</Value>
+              </fightnpc>
+              <number>
+                <Value>150</Value>
+              </number>
+              <number>
+                <Value>17</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1628</Value>
+              </number>
+              <number>
+                <Value>3017</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <string>
+                <Value>1417,3003
+1432,3019
+1439,3024
+1455,3007
+1466,3001
+1489,3023
+1508,3044
+1552,3087
+1572,3063
+1602,3056
+1617,3031
+1628,3017</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3536&gt;：“我们先走了,你尽快跟上来吧!”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往望龙山和尹筱雨会和</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4523</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“我们现在已经出了大理境外了。”&lt;end&gt;
+&lt;npc=3536&gt;：“辛苦你了，这么快就出了大理了，离北方还有多少路程啊！”&lt;end&gt;
+&lt;Playername&gt;：“筱雨，我们现在走了三天，行到金国境内尚有半月的路程，这一路上时而会经过繁华闹市，时而会遇上荒无人烟的地界，万不可掉以轻心了。”&lt;end&gt;
+&lt;npc=3536&gt;：“这……&lt;Playername&gt;说的是，不过这几天都未曾遇见什么不顺心的事情呢！这山，这草，这些个村庄，都让筱雨觉得快乐自在！深呼吸，方知大自然如此美妙，碧秀，你说是么？”&lt;end&gt;
+&lt;npc=4505&gt;：“门主……呃，该改口叫小姐了，呵呵。我等此去的目的是历练，增加阅历。这大自然的景色纵然好，却也不能乐不思蜀耽误了行程。”&lt;end&gt;
+&lt;npc=3536&gt;：“碧秀，我怎会不明白这个道理。我只是看着这辽阔的自然感到心情愉悦。&lt;Playername&gt;这些天来也真是辛苦了。”&lt;end&gt;
+&lt;Playername&gt;：“&lt;Playername&gt;此行心情也甚好，哪里有辛苦之感！只望我们早日到达目的地。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和尹筱雨对话</Value>
+              </txt>
+              <txt>
+                <Value>和尹筱雨对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000210</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

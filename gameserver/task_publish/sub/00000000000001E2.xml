@@ -1,0 +1,204 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001E2" name="伏牛山庄" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“义军在伏牛山盘踞多年，在各位首领的呕心经营下，家业颇具规模。几天前，颇具规模的伏牛山庄园也终于竣工了，&lt;playername&gt;，你要不要去参观下？”&lt;end&gt;
+&lt;playername&gt;：“可以吗？”&lt;end&gt;
+&lt;npc=3570&gt;：“你去军营找白福，他会带你参观的，记得看完了回来和我说下感受，我很重视你的意见的。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4367</Value>
+              </dialognpc>
+              <number>
+                <Value>1657</Value>
+              </number>
+              <number>
+                <Value>3152</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我们走吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4368</Value>
+              </fightnpc>
+              <number>
+                <Value>150</Value>
+              </number>
+              <number>
+                <Value>556</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>1659</Value>
+              </number>
+              <number>
+                <Value>3003</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1653,3149
+1666,3118
+1655,3087
+1648,3078
+1639,3063
+1657,3025
+1667,3016
+1676,3022
+1689,3009
+1695,3012
+1708,3003
+1721,2977
+1707,2964
+1687,2945
+1670,2977</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>向秋姨诉说游园的感触</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“当真气势恢宏，鬼斧神工，山庄凝聚了我义军工匠无数心血，也算是我义军茁壮发展的见证了。”&lt;end&gt;
+&lt;npc=3570&gt;：“确实如此。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向秋姨诉说游园的感触</Value>
+              </txt>
+              <txt>
+                <Value>向秋姨诉说游园的感触</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,386 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000024C" name="漕帮之义" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4611&gt;：“这不是义军之中鼎鼎大名的&lt;playername&gt;么？怎么有时间到我这儿，我这儿刚从北边儿运来了上好的毛尖茶，快请品上一杯。” &lt;end&gt;
+&lt;playername&gt;：“殷帮主，不必忙活了。&lt;playername&gt;此次前来是因有些重要的事情要和帮主商议。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4611</Value>
+              </dialognpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4611&gt;：“这两年漕帮生意越做越好了，帮众们都是些庄稼汉和渔民出身，知道知恩图报，不过这漕运也是靠天吃饭的行业，老天给面子让我们发展壮大了。”&lt;end&gt;
+&lt;npc=4611&gt;：“义军的军纪作风在我帮众之中口碑甚好，只要是不违背原则的事情，我们一定帮忙！“&lt;end&gt;
+&lt;playername&gt;：“我大宋休养生息几十年，时下又值北方金国与蒙古散部交战频繁，朝中上下一致认为现在是北伐金国收复故土的好时机，打仗讲究兵马未动粮草先行。而粮草的运输还要通过陆路和水路，水路方面我想没有比漕帮更在行的朋友了，若殷帮主愿意协助义军的后勤工作，怕是再好不过了！”&lt;end&gt;
+&lt;npc=4611&gt;：“这……此事事关重大，我一个人也做不了主，不过既是恢复我大宋河山的大事，我心里是支持的。不过近几年来漕运方面的运作细节都由领船祁田丰负责，你去找他商量此事更好些。”&lt;end&gt;
+&lt;playername&gt;：“多谢漕帮主提点，&lt;playername&gt;这便去找祁领船。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与漕帮帮主殷卜元对话</Value>
+              </txt>
+              <txt>
+                <Value>与漕帮帮主殷卜元对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到漕帮领船祁田丰</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4612</Value>
+              </dialognpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位大哥可是漕帮领船祁田丰？”&lt;end&gt;
+&lt;npc=4612&gt;：“正是，你是何人？是新来的舵手么？新人培训我现在已经不负责了。”&lt;end&gt;
+&lt;playername&gt;：“呵呵祁大哥误会了，我是义军&lt;playername&gt;，此次前来特想和祁大哥商量一件事。”&lt;end&gt;
+&lt;npc=4612&gt;：“原来是义军的大侠。我现在没时间招待大侠，码头那边现正有些不知天高地厚的恶贼劫我漕帮货物，我现在正在召集人马处理此事。”&lt;end&gt;
+&lt;playername&gt;：“这样……&lt;playername&gt;愿意前往协助擒贼。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与漕帮领船祁田丰对话</Value>
+              </txt>
+              <txt>
+                <Value>与漕帮领船祁田丰对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮助漕帮惩罚那些劫货贼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4613</Value>
+              </fightnpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4614</Value>
+              </fightnpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将隐患解除的消息告诉漕帮领船祁田丰</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>90000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4612</Value>
+              </dialognpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“祁大哥，我已经将那些擅自抢夺漕帮港口的恶徒击退，请祁大哥放心。”&lt;end&gt;
+&lt;npc=4612&gt;：“那些恶徒并不了解我漕帮雄厚的实力，若是知道想必不敢轻易得罪我帮，念在他们是初犯，我便不再追究了。这次还要多谢大侠相助啊，大侠说有事情来与我祁某商议，是什么事？”&lt;end&gt;
+&lt;playername&gt;：“经过朝中大臣们的商议，朝中上下一致认为现在是北伐金国收复故土的好时机，打仗讲究兵马未动粮草先行。而粮草的运输还要通过陆路和水路，水路方面若是贵帮能够协助后勤便是再好不过。这件事情我已经与贵帮殷帮主商量过，他表示愿意协助，具体事宜还要与祁大哥您商量。”&lt;end&gt;
+&lt;npc=4612&gt;：“朝廷中那些官员多是些腐败无能的孬货，我祁某平生最是讨厌这些人。”&lt;end&gt;
+&lt;playername&gt;：“祁大哥这话可是一棍子打翻了一船人，其实朝廷之中确实有为百姓谋福的好官，况且此次北伐金国收复故土之战是关乎大宋山河社稷的大事，更是关乎到你我和大宋每位百姓的利益，还希望贵帮能够全力相助啊。”&lt;end&gt;
+&lt;npc=4612&gt;：“你说的也在理，金狗这些年来也对我漕帮多有阻碍，虽不敢有什么大动作破坏我帮漕运，却也有几个小的运输组织恶意竞争，实在可恨。若是真能灭了金狗，我祁某是绝对支持的。好，具体怎么个协助法？”&lt;end&gt;
+&lt;playername&gt;：“具体事项还有待朝中秘密制定了伐金方案后通知贵帮，时下贵帮还可继续正常运作帮中事务。&lt;playername&gt;不再过多打扰，先行告辞了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与漕帮领船祁田丰对话</Value>
+              </txt>
+              <txt>
+                <Value>与漕帮领船祁田丰对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

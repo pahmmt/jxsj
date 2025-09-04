@@ -1,0 +1,185 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000020A" name="叛逃-队友" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=2757&gt;：“你们来了。我早就知道，她们终究还是挡不住。”&lt;end&gt;
+&lt;npc=2757&gt;：“早在三年前，当霜然密会李后并囚禁冷云师兄的那时候起，我就想到总会有这么一天。所幸的是，嘉王早被冷云师兄转到别处，才幸免于难。”&lt;end&gt;
+&lt;npc=2757&gt;：“这些年来，霜然借助李后所予的宫中禁书，修习各种奇门邪术，早已丧失心智，连同这外逃的一班人等四处滋扰百姓，侵占她们所看上的任何钱财宝物……她已经不是一开始我所遇到的霜然姐了。”&lt;end&gt;
+&lt;npc=2757&gt;：“可是，我的命是她给的，我的这一切也是她给的。所以我不会帮你们，但是我也不会阻拦，你们从我身边过去吧，我只希望自己的下半辈子，能在一个无人所知的地方安安静静的过完。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>2015</Value>
+              </number>
+              <number>
+                <Value>303</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value>进入千琼宫杀死冷霜然</Value>
+              </txt>
+              <txt>
+                <Value>进入千琼宫杀死冷霜然</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将除掉冷霜然的消息回报给李春兰</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2757</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2757&gt;：“谢谢，从这里走出去之后，你们应该不会再看到我了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将除掉冷霜然的消息回报给李春兰</Value>
+              </txt>
+              <txt>
+                <Value>将除掉冷霜然的消息回报给李春兰</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>2015</Value>
+              </number>
+              <number>
+                <Value>303</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

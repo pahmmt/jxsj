@@ -1,0 +1,139 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000014F" name="夺回法器" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1417&gt;：“那些逃跑的和尚卷走了寺中一些重要的法器，当真十恶不赦，要趁他们走远之前把法器夺回来。”&lt;end&gt;
+&lt;playername&gt;：“好的，澄峙师傅您放心，谅他们也跑不远，我这就去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1609</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>取回被盗的法器</Value>
+              </txt>
+              <txt>
+                <Value>得到法器</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{被盗的法器,20,1,241,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/5个被盗的法器</Value>
+              </txt>
+              <txt>
+                <Value>收集被盗的法器</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1635,3381
+1646,3493
+1660,3351
+1655,3577
+1674,3481
+1709,3422
+1710,3536</Value>
+              </string>
+              <string>
+                <Value>15</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1417</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“澄峙师傅，是这些法器吗？。”&lt;end&gt;
+&lt;npc=1417&gt;：“正是，这几件法器各个价值连城，多谢施主援手，少林才免遭此劫。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{被盗的法器,20,1,241,1,0,5}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

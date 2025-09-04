@@ -1,0 +1,337 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B2" name="影者" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=344&gt;：“这一路上的考验，大抵能够让影者们对自我修行的程度有个确切了解了。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=344&gt;：“我受石帮主石的秘密嘱托，以裘止水、冷秋云、罗锋和我四人为核心，秘密组织影社。影社弟子必为丐帮精锐，其人需持重沉稳，武艺高强，有舍身取义的勇气。”&lt;end&gt;
+&lt;npc=344&gt;：“通过我们四人轮番的打造，锤炼出一支属于丐帮的铁军，铲恶除奸，惩戒金狗。自影社成立以来，影者们已小有所成，如今希望让他们出去一试身手。”&lt;end&gt;
+&lt;npc=344&gt;：“因此需要你在这燕子坞中段沿途打探一番，在各个路口留下标记，并绘制出燕子坞中部的地图来。如此方可安排考试的时限以及路线。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=3&gt;
+&lt;npc=345&gt;：“慢工出细活，绘制地图是需要时间的。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=3&gt;
+&lt;npc=345&gt;：“已经画好了，将这张燕子坞的地图带给巩少榛长老吧。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>1562</Value>
+              </number>
+              <number>
+                <Value>2723</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>到达鹊仙桥</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>1414</Value>
+              </number>
+              <number>
+                <Value>2770</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>到达白石口</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>70</Value>
+              </number>
+              <number>
+                <Value>1493</Value>
+              </number>
+              <number>
+                <Value>3154</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>到达荷花荡</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将得到的地点信息带给应邀来燕子坞绘制地图的画师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>345</Value>
+              </dialognpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，我受巩少榛长老委托请您帮忙绘制地图画册。”&lt;end&gt;
+&lt;npc=345&gt;：“影者暗记是否都放好了，毛笔和宣纸都带了吗？”&lt;end&gt;
+&lt;playername&gt;：“都完成了。”&lt;end&gt;
+&lt;npc=345&gt;：“好，我现在就开始绘制，稍等片刻。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将地点信息带给画师</Value>
+              </txt>
+              <txt>
+                <Value>将地点信息带给画师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>等画师绘图完毕再来取地图吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">345</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将画好的的地图带给巩少榛</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>344</Value>
+              </dialognpc>
+              <number>
+                <Value>70</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=344&gt;：“非常好，这样我的计划可以如期进行了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将画好的的地图带给巩少榛</Value>
+              </txt>
+              <txt>
+                <Value>将画好的的地图带给巩少榛</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

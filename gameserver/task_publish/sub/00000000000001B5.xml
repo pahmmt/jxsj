@@ -1,0 +1,272 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001B5" name="武节郎" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1808&gt;：“那些叛乱的军卒虽然被擒回营中，始终是不服。此事若不妥善处置，恐怕留下后患。”&lt;end&gt;
+&lt;playername&gt;：“大人想怎么办？”&lt;end&gt;
+&lt;npc=1808&gt;：“当务之急自然是要解除这帮瘟神的心头之患，补发军饷。不过得找个合适的说客。”&lt;end&gt;
+&lt;playername&gt;：“大人难道想让我当此重任？”&lt;end&gt;
+&lt;npc=1808&gt;：“不不不。我心中已有合适人选。只是我堂堂将军，怎可向区区一个武节郎屈尊降贵，还是劳烦你了。”&lt;end&gt;
+&lt;playername&gt;：“此人是谁？”&lt;end&gt;
+&lt;npc=1808&gt;：“此人姓毕，名再遇。是个赳赳武夫，上不得台面。偏生与营中军士交好。现下想必又与些军士去犀角矿中狩猎去了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1813</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1812&gt;：“好功夫！毕大人追着一头白狸跑到矿道深处去了。你往前走走，看其他人知不知道吧。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1815</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1814&gt;：“大人就在不远处的岔道口埋伏着呢。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1817</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“毕大人，别打了吧。”&lt;end&gt;
+&lt;npc=1816&gt;：“哈哈哈，&lt;if me.nSex==0&gt;小伙子&lt;else&gt;小姑娘&lt;endif&gt;功夫不错。说吧，找我何事？”&lt;end&gt;
+&lt;playername&gt;：“我是奉了皇甫斌的令，来找大人当说客的。”&lt;end&gt;
+&lt;npc=1816&gt;：“果然所料不差。”&lt;end&gt;
+&lt;playername&gt;：“大人已经猜到了？”&lt;end&gt;
+&lt;npc=1816&gt;：“呵呵，你回去告诉大人，就说毕某一定妥善处理好那些兵士的情绪。”&lt;end&gt;
+&lt;playername&gt;：“不知大人为何会替人擦屁股？”&lt;end&gt;
+&lt;npc=1816&gt;：“呵呵。那些叛军都是好男儿，热血英武，只是皇甫斌此人无才无德，偏又贪财好色，管束不住手下而已。换一人来带兵，便能练出一只威武雄师来。”&lt;end&gt;
+&lt;playername&gt;：“毕大人真是老黄忠，有万丈雄心。”&lt;end&gt;
+&lt;npc=1816&gt;：“满腔抱负，无从施展，只能替人当当说客，总好过那些弟兄身首异处。对了，我此番话，敬你是位英雄，方才讲给你听。不可落到皇甫大人耳朵里。”&lt;end&gt;
+&lt;playername&gt;：“我自然知道！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过向皇甫斌复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1808</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“皇甫大人，武节郎已答应充任说客一事了。”&lt;end&gt;
+&lt;npc=1808&gt;：“甚好，哈哈甚好。这毕老儿虽然不知变通，答应下来的事情倒是能一言九鼎。这下我可以安心睡觉咯。三儿，替老爷我斟一壶好酒上来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过向皇甫斌复命</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过向皇甫斌复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,372 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001F6" name="善恶有报" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4380&gt;：“我是大理国宫内御医，我崔某一生磊落，过完明年便可安逸的告老还乡，怎么知道临了来件这样的事情，老夫心中的疙瘩解不开，实在难受啊。”&lt;end&gt;
+&lt;playername&gt;：“崔太医，我是义军&lt;playername&gt;，发生了什么事，或许我可以帮你。”&lt;end&gt;
+&lt;npc=4380&gt;：“&lt;playername&gt;，虽然老夫对江湖中的事情不甚了解，但义军的大名我还是听说过的……前些日子大理贵妃兰贵人的亲信找到我，要我开一张安胎的药方，可兰贵人并未有孕，兰贵人谎称自己有孕，妄图重新得到皇上的倚重，她一面要挟我的家人，要我作为御医代表出面证明，这可是掉脑袋的欺君之罪啊。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2340</Value>
+              </fightnpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将情况回报给崔太医</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4380</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“在下已经帮太医赶走了那帮不义之徒。”&lt;end&gt;
+&lt;npc=4380&gt;：“老夫替家里人谢谢你了。可这是个漩涡，怕是没那么容易就能摆脱的。”&lt;end&gt;
+&lt;playername&gt;：“此话怎讲？”&lt;end&gt;
+&lt;npc=4380&gt;：“我原以为兰贵人要让皇爷知道自己怀孕，是想要在后宫得宠，不想这只是猜中其一，在她将自己有孕的消息传开后，制造滑胎假象，并将藏红花藏在新进贵妃罗雪房中，陷害罗雪，称是罗雪使人在自己的安胎药中投放了藏红花。”&lt;end&gt;
+&lt;playername&gt;：“没想到这兰贵妃的心竟如此恶毒。”&lt;end&gt;
+&lt;npc=4380&gt;：“老夫几十年来为我大理王室甚至是百姓医治疾病，却不能医治人的心病……当下紧要的是要让段皇爷了解此事，皇爷日理万机，你替我将这封亲笔书信送给皇爷吧。”&lt;end&gt;
+&lt;playername&gt;：“好的，晚辈这便去办。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报给崔太医</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报给崔太医</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我必须将崔太医的亲笔书信带给段皇爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4431</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=800&gt;：“是&lt;playername&gt;！许久不见，白首领可好？”&lt;end&gt;
+&lt;playername&gt;：“谢皇爷记挂，秋姨她很好。”&lt;end&gt;
+&lt;npc=800&gt;：“这次来一定要多留些日子，朕要好好与你叙叙。”&lt;end&gt;
+&lt;playername&gt;：“皇爷，现在有一件比叙旧还要紧急的事情。你后宫中可有一位兰贵人最近滑胎了。”&lt;end&gt;
+&lt;npc=800&gt;：“恩……这件事朕觉得有些蹊跷，也正在调查之中。”&lt;end&gt;
+&lt;playername&gt;：“这里有一封宫中崔太医的亲笔书信，请皇爷过目。”&lt;end&gt;
+……&lt;end&gt;
+&lt;npc=800&gt;：“果真是这样……兰贵妃陷害雪妃，并且根本就没有怀上朕的子嗣，这妇人的心底如斯狠毒！其实在事发的时候朕就觉得有些蹊跷，凭朕对雪妃的了解，她断然不是这种狠毒之人。”&lt;end&gt;
+&lt;playername&gt;：“那么皇爷现在打算怎么做？”&lt;end&gt;
+&lt;npc=800&gt;：“兰贵人在宫中势力挖的很深，朝中很多重臣也是她的亲信，只是这树根太深太广，还动不得啊……这样，将我这封书信交给兰贵人，我在信中已经提醒她做事情不可如此过分，再发现有这样的事情，我便也顾不得她那些亲信们的颜面了。”&lt;end&gt;
+&lt;playername&gt;：“希望她能有所警醒，我这便去办。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>我必须将崔太医的亲笔书信带给段皇爷</Value>
+              </txt>
+              <txt>
+                <Value>我必须将崔太医的亲笔书信带给段皇爷</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将段皇爷的亲笔信送给兰贵人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4381</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“请问是兰贵人吗？”&lt;end&gt;
+&lt;npc=4381&gt;：“哪里来的无理之人？没看见我正在调养身体吗！你快下去吧，莫要打扰。”&lt;end&gt;
+&lt;playername&gt;：“我这里有段皇爷给你的亲笔信，不知道你有没有兴趣呢？”&lt;end&gt;
+&lt;npc=4381&gt;：“真的？快拿给我看！一定是皇爷他想起我来了……”&lt;end&gt;
+……&lt;end&gt;
+&lt;npc=4381&gt;：“这……不可能……他竟然全都知道了！可笑可笑！我兰贵人在宫中陪伴皇帝十几年，竟然还比不过那个才刚刚进宫不久的死丫头吗！我不甘心啊！”&lt;end&gt;
+&lt;playername&gt;：“为人不要太苛刻，若想得到别人的爱是要用一颗真心去交换的，或许你以后就能理解了吧！&lt;playername&gt;先行告辞了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将段皇爷的亲笔信送给兰贵人</Value>
+              </txt>
+              <txt>
+                <Value>将段皇爷的亲笔信送给兰贵人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

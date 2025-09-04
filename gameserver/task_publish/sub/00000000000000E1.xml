@@ -1,0 +1,350 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E1" name="求亲" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=466&gt;：“若傅某此生能与风雁长相斯守，便在无憾事了。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=466&gt;：“峨嵋山，不知有多少女子的青春，都埋葬在这佛家的大山中。青灯长伴，在夜里也会想一想红尘，想一想不曾忘记的故人吧。”&lt;end&gt;
+&lt;playername&gt;：“你这汉子，倒是个痴人。”&lt;end&gt;
+&lt;npc=466&gt;：“傅某早就知道峨嵋山戒律森严，原本不愿趟这趟混水。不过年前在成都府时，偶然邂逅了峨嵋俗家弟子凌风雁，竟朝思暮想，无法安睡。若不了此心愿，恐怕一辈子也要被噩梦围绕的。”&lt;end&gt;
+&lt;playername&gt;：“那你想怎么办？”&lt;end&gt;
+&lt;npc=466&gt;：“提亲！向风雁的师父无念师太提亲！”&lt;end&gt;
+&lt;playername&gt;：“你这人倒是不知害羞，居然动不动就称呼人家姑娘风雁，倒好似与她多么熟稔一般。”&lt;end&gt;
+&lt;npc=466&gt;：“也不是这样讲，我与风雁有过数面之缘，每每见面总觉时日飞逝，转眼便到了离别的时刻。这样想来，风雁对我傅聪也并非那样没有惦念。”&lt;end&gt;
+&lt;playername&gt;：“你可知无念师太乃是峨嵋第一高手，可不是一个好说话的人物。”&lt;end&gt;
+&lt;npc=466&gt;：“怎么不知。所以，想请你代为媒妁，将这些聘礼都送上峨嵋。并转告师太，她提的任何要求，傅某无有不从。便是要这天上的星月，傅某也想办法替风雁摘来。”&lt;end&gt;
+&lt;playername&gt;：“罢了，看你如此痴心，我便走一趟吧。”&lt;end&gt;
+&lt;npc=466&gt;：“有劳之处，傅某都记在心里。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>467</Value>
+              </dialognpc>
+              <number>
+                <Value>454</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“师太，成都府的贵族子弟傅聪请我代为媒妁，替他向凌风雁姑娘求婚。您是凌姑娘的授业恩师，就像她的高堂一样的身份。希望您能够从中主持，玉成这桩人间美事。”&lt;end&gt;
+&lt;npc=467&gt;：“傅聪？倒是听风雁提过，不过此事最好作罢，我是无论如何不会答应的。”&lt;end&gt;
+&lt;playername&gt;：“师太？难道您真的如传说中那样不近人情吗？”&lt;end&gt;
+&lt;npc=467&gt;：“呵呵，年轻人如干柴烈火，一点就着。他们之间有什么感情，知道什么是感情？”&lt;end&gt;
+&lt;playername&gt;：“师太，您太独断了。既然他们情投意合，总有转圜之地。纵有什么考验，都可以提。在下来时，傅聪这样讲过。”&lt;end&gt;
+&lt;npc=467&gt;：“如此吗？那好。你这做媒妁的，先替我去九老峰上杀些恶猿，割下它们的耳朵，来证明你的身份吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=467&gt;：“先替我去九老峰上杀些恶猿，来证明你的身份吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找到无念师太替傅聪提亲</Value>
+              </txt>
+              <txt>
+                <Value>找到无念师太替傅聪提亲</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>答应师太提出的条件，先杀些恶猿割下它们的耳朵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2041</Value>
+              </fightnpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <taskitem>
+                <Value>{452,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找无念师太看她怎么说</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>467</Value>
+              </dialognpc>
+              <number>
+                <Value>454</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“师太，在下已完成你所交代的任务。”&lt;end&gt;
+&lt;npc=467&gt;：“好，你告诉傅聪，若想娶我风雁，便取三万只恶猿首级来，为我峨嵋除害，我便将风雁嫁给他。”&lt;end&gt;
+&lt;playername&gt;：“三万只？”&lt;end&gt;
+&lt;npc=467&gt;：“怎么？”&lt;end&gt;
+&lt;playername&gt;：“好，我通知他。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{恶猿的耳朵,20,1,452,1,0,20}</Value>
+              </string>
+              <txt>
+                <Value>杀够了恶猿看无念师太怎么说</Value>
+              </txt>
+              <txt>
+                <Value>杀够了恶猿看无念师太怎么说</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>无念师太确实无意将凌风雁许配给傅聪，回去告诉他吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>466</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“傅聪兄，无念师太答应，只要你取三万只恶猿的首级亲上峨嵋，便将凌风雁许配与你。”&lt;end&gt;
+&lt;npc=466&gt;：“什么！三万只，这贼老尼……师太她明明就是在为难我！容我再想想，再想想。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把事情的经过回报傅聪吧</Value>
+              </txt>
+              <txt>
+                <Value>把事情的经过回报傅聪吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>92</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

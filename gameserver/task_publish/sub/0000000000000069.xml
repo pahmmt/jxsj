@@ -1,0 +1,976 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000069" name="紧急营救" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=864&gt;：“如你所说，江湖中只传闻嘉王失踪，却无人知道嘉王人在何处。朝廷没有，徐长福处也没有。难不成还会飞天遁地不成？连日来我和心如师伯四处走访，并无人看到嘉王出现。倒是从一个小僧的口中我发现了问题所在。”&lt;end&gt;
+&lt;Playername&gt;：“什么问题？”&lt;end&gt;
+&lt;npc=830&gt;：“据老僧的小徒讲，这分舵的舵主岳有情是被逐出军营的人，后投入丐帮，成为了舵主。和虎师的大将徐长福乃是至交。红儿在南营的时候曾听说徐长福的虎符被抢，又经老僧略一推敲，断定嘉王此刻仍在那秘道之中。岳有情玩了一个掩人耳目的小把戏。”&lt;end&gt;
+&lt;Playername&gt;：“此话怎讲？”&lt;end&gt;
+&lt;npc=864&gt;：“试想，徐长福丢失虎符要掉脑袋正愁无计可施。恰巧王教头遇到我夫妻，认出是嘉王随从擒下。徐长福便欲借此将功赎罪，从骆浩口中得知嘉王在丐帮之后顺藤摸瓜找到了岳有情。想必许给岳有情不少好处，岳有情才会如此胆大包天，骗石轩辕嘉王无故走失。”&lt;end&gt;
+&lt;npc=830&gt;：“只等时机成熟，便将嘉王送交给李后。故此老僧和红儿认为嘉王必然还在那秘道中，或者尚不知发生的这些事情。红儿和骆浩的失踪必定也是岳有情令做谎言欺骗嘉王。如今嘉王时刻身处危难之中，老僧已经遣徒儿去通知石轩辕前来清理门户。”&lt;end&gt;
+&lt;npc=864&gt;：“在此之前还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;前去秘道，暗中保护嘉王，以免嘉王会有危险。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1666</Value>
+              </number>
+              <number>
+                <Value>3797</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>前往秘道保护嘉王</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=910&gt;：“王守义，看你能跑到哪里去！乖乖的和我们回去陪你的嘉王吧。”&lt;end&gt;
+&lt;npc=871&gt;：“你们这帮狗贼，不会有好下场的。”&lt;end&gt;
+&lt;npc=910&gt;：“哼，看看是老子的刀子硬还是你的嘴硬！弟兄们，上！”&lt;end&gt;
+&lt;Playername&gt;：(定是嘉王有什么不测 ，速度进去援助王守义)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>援助王守义</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GuardNpc</Function>
+            <Parameter>
+              <number>
+                <Value>505</Value>
+              </number>
+              <number>
+                <Value>1601</Value>
+              </number>
+              <number>
+                <Value>3195</Value>
+              </number>
+              <dialognpc>
+                <Value>871</Value>
+              </dialognpc>
+              <txt>
+                <Value>秘道</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=871&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;救我！”&lt;end&gt;
+&lt;Playername&gt;：“嘉王殿下可有危险？”&lt;end&gt;
+&lt;npc=871&gt;：“殿下此刻无恙，先杀死这些人，以免走漏风声。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>872</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>5000</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>相助王守义</Value>
+              </txt>
+              <txt>
+                <Value>相助王守义</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=871&gt;：“红娘子和骆浩连续多日不见影踪，嘉王殿下十分担心要派人寻找。岳有情支支吾吾，借故推诿，故此嘉王殿下便派我暗中出去寻找，没想到会被他们拦在此地。”&lt;end&gt;
+&lt;Playername&gt;：“这里的事情我都知道了，嘉王现在何处？”&lt;end&gt;
+&lt;npc=871&gt;：“殿下在秘道深处，此刻应当和岳有情在一起。”&lt;end&gt;
+&lt;Playername&gt;：“你多保重，我进秘道去寻嘉王。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进入秘道寻找嘉王</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>173000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>505</Value>
+              </number>
+              <number>
+                <Value>1693</Value>
+              </number>
+              <number>
+                <Value>3153</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>深入秘道</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=821&gt;：“何人擅闯丐帮禁地，还不给我快快退出，莫要自寻死路！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>打败十一郎</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>505</Value>
+              </number>
+              <number>
+                <Value>1684</Value>
+              </number>
+              <number>
+                <Value>3131</Value>
+              </number>
+              <fightnpc>
+                <Value>869</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <dialognpc>
+                <Value>821</Value>
+              </dialognpc>
+              <txt>
+                <Value>秘道</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你武艺不行，口气倒是不小。我问你，嘉王殿下现在何处？”&lt;end&gt;
+&lt;npc=821&gt;：“嘉王殿下？你可是来救嘉王的？敢问尊姓大名？”&lt;end&gt;
+&lt;Playername&gt;：“义军&lt;=me.szName&gt;！”&lt;end&gt;
+&lt;npc=821&gt;：“失敬失敬！你既然能来到这里，想必已经洞悉岳有情的阴谋了。我随岳有情一起离开军中投入丐帮，虽没做下什么轰轰烈烈的事情，却也知道什么叫忠义。可惜我那三位义兄为岳有情所惑，妄想出卖嘉王以博取富贵。我忍辱留下便是为了暗中保护嘉王。可怜他到现在都不知道自己已经被人出卖。”&lt;end&gt;
+&lt;Playername&gt;：“想不到在这里还有你这样的忠义之士，你可知如何才能救嘉王出去？”&lt;end&gt;
+&lt;npc=821&gt;：“我那三位义兄龙断，梁昆贤，许源个个武艺高强，是岳有情的得力助手，你若先将他制服便可救走嘉王。嘉王手下虽然也有好手，却不是我义兄的敌手。至于岳有情，智谋有余，武力则不如我们弟兄四人的。”&lt;end&gt;
+&lt;Playername&gt;：“好！我现在便去将他们拿下！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>打败拦路的十一郎</Value>
+              </txt>
+              <txt>
+                <Value>打败拦路的十一郎</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>制服岳有情的党羽</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>130000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>868</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>866</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>867</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在秘道中寻找嘉王和岳有情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>258000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>505</Value>
+              </number>
+              <number>
+                <Value>1551</Value>
+              </number>
+              <number>
+                <Value>2996</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>找到嘉王</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“嘉王殿下，我来救你了！”&lt;end&gt;
+&lt;npc=1180&gt;：“救我？这是怎么回事？”&lt;end&gt;
+&lt;Playername&gt;：“殿下有所不知，岳有情这厮伙同虎师大将徐长福欲将你献给李后。红娘子和骆浩便是被徐长福手下所擒，殿下派出的王守义也被岳有情的手下拦在了秘道出口，好在这些人现在已经被我救出。岳有情，你听着，速速束手就擒，否则等石帮主来了给你上三刀六洞之刑有你好受的。”&lt;end&gt;
+&lt;npc=870&gt;：“&lt;if me.nSex==0&gt;小子&lt;else&gt;丫头&lt;endif&gt;，口气别那么狂！不用我出手，光是我手下便可以拍扁你！来人！快来人！都死哪里去了？”&lt;end&gt;
+&lt;Playername&gt;：“你的手下早就被我统统制服了，你就乖乖的束手就擒吧！”&lt;end&gt;
+&lt;npc=870&gt;：“你休想！我绝不会让你坏我的好事！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>制服岳有情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>870</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>营救嘉王离开秘道</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>173000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1180</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>秘道</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“岳有情已不足为祸，嘉王殿下还是随我赶快离开这里吧！”&lt;end&gt;
+&lt;npc=820&gt;：“是啊，殿下我们快点离开这里吧！”&lt;end&gt;
+&lt;npc=1180&gt;：“这次又是蒙你相救，本宫落难之下无以为报，记在心里了。不知道红娘子夫妇和王守义现在何处？”&lt;end&gt;
+&lt;Playername&gt;：“王守义在秘道口守着，红娘子夫妇现在山神庙等着殿下。”&lt;end&gt;
+&lt;npc=1185&gt;：“殿下！殿下！石某来迟一步，还请殿下恕罪！”&lt;end&gt;
+&lt;npc=1180&gt;：“石帮主无需多礼！这次多亏义军相助才得以脱难，我这里有一支信号烟花，你从那边的出口捷径出去点燃，红娘子看到就会来和我们会合了。我这里有石帮主他们定会安全，放过信号之后，你可以前往临安将我的消息告诉韩侂胄，并请他全力设法，我决定潜入京城中去。”&lt;end&gt;
+&lt;Playername&gt;：“好！我这就去！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{信号烟花,20,1,333,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>救出嘉王</Value>
+              </txt>
+              <txt>
+                <Value>救出嘉王</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在秘道外点击背包中的信号烟花放出信号</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtAreaWithDesc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,333,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>306</Value>
+              </number>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1665</Value>
+              </number>
+              <number>
+                <Value>3799</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在秘道外释放信号烟花</Value>
+              </txt>
+              <txt>
+                <Value>在秘道外释放信号烟花</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将嘉王的消息带给韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>37</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>556</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=556&gt;：“你终于回来了，可有找到嘉王殿下的下落？”&lt;end&gt;
+&lt;Playername&gt;：“殿下现在和丐帮石帮主在一起。失踪一事全是丐帮分舵舵主岳有情和虎师大将徐长福一手筹划的。殿下请大人安排他返回京城，还请大人早作准备。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value>找到韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000006A</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>27</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

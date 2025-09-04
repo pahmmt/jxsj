@@ -1,0 +1,332 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000123" name="出其不意" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=643&gt;：“姆妈……呜呜……”&lt;end&gt;
+&lt;Playername&gt;：“这位姑娘你这是怎了？”&lt;end&gt;
+&lt;npc=643&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，我和大壮哥从小青梅竹马，早就私定终身。可是我爹爹却嫌弃大壮哥家里穷，不愿将我许配给他。大壮哥一气之下去大理城中赚钱，听回来的寨民说，他在那里靠卖艺为生。我本想采些仙蜜果让他去换钱，却被我爹爹悉数丢掉。爹爹为人固执若是没有足够的聘礼他定然不会将我许配给大壮哥，我该怎么办才好……呜呜……”&lt;end&gt;
+&lt;Playername&gt;：“那我可有能帮得上的地方？”&lt;end&gt;
+&lt;npc=643&gt;：“我听说大理城的人喜欢吃仙蜜果，这种果实在我们山寨多得很。若是&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;能带一些给大壮哥，他一定可以赚不少钱。我爹爹这几日一直看得很紧，我不敢再去采果了。”&lt;end&gt;
+&lt;Playername&gt;：“这个倒是容易！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1807</Value>
+              </dialognpc>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>采集中</Value>
+              </txt>
+              <txt>
+                <Value>得到仙蜜果</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{仙蜜果,20,1,381,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/15份仙蜜果</Value>
+              </txt>
+              <txt>
+                <Value>采集仙蜜果</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1837,3568
+1844,3599
+1832,3620
+1866,3623
+1905,3660
+1912,3676
+1914,3690
+1912,3700
+1915,3722
+1913,3735
+1909,3738
+1913,3757
+1906,3773
+1893,3787
+1887,3771
+1884,3752
+1876,3740
+1886,3728
+1893,3716
+1900,3725
+1897,3675
+1885,3676
+1870,3685
+1860,3679
+1855,3728
+1863,3746
+1867,3764
+1871,3784
+1873,3798
+1864,3796
+1856,3810
+1845,3788
+1838,3799
+1812,3777
+1833,3758
+1854,3756</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将仙蜜果带给大理城中的大壮</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>650</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你可是从天龙寺出来卖艺的大壮？”&lt;end&gt;
+&lt;npc=650&gt;：“是我，你是？”&lt;end&gt;
+&lt;Playername&gt;：“这是黎慕姑娘托我带给你的仙蜜果，她让你将这些仙蜜果卖了换钱。”&lt;end&gt;
+&lt;npc=650&gt;：“这……我知道了，我一定不会辜负她。要是有空路过天龙寺，请转告黎慕，让她千万要等我，我一定会回去娶她的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到大壮</Value>
+              </txt>
+              <txt>
+                <Value>找到大壮</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回转天龙寺找蛮女黎慕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{381,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>643</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“黎慕姑娘，我刚从大理回来。大壮让我转告你，一定要等他回来娶你！”&lt;end&gt;
+&lt;npc=643&gt;：“多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;相助，将来我和大壮成亲，请一定前来喝杯喜酒。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到黎慕</Value>
+              </txt>
+              <txt>
+                <Value>找到黎慕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

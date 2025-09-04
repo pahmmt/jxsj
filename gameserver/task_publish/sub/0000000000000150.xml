@@ -1,0 +1,162 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000150" name="蒙古烈酒" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=458&gt;：“前些天皇陵的监牢中抓进来了几个蒙古要犯，不知道他们身上会不会带有蒙古烈酒，这个&lt;playername&gt;，能否替老夫去查探一番，弄几瓶酒回来？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=458&gt;：“此等美酒，当真让我大快朵颐，辛苦你了。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1610</Value>
+              </dialognpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>蒙古烈酒取得中</Value>
+              </txt>
+              <txt>
+                <Value>得到蒙古烈酒</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{蒙古烈酒,20,1,242,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/5瓶蒙古烈酒</Value>
+              </txt>
+              <txt>
+                <Value>取得五瓶蒙古烈酒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1461,3372
+1473,3383
+1485,3362
+1492,3340
+1506,3353</Value>
+              </string>
+              <string>
+                <Value>15</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>取得了蒙古烈酒，快回去交给荣屠长老</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>458</Value>
+              </dialognpc>
+              <number>
+                <Value>453</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“长老，蒙古烈酒我已替您取来啦。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{蒙古烈酒,20,1,242,1,0,5}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

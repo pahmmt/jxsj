@@ -1,0 +1,145 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000FC" name="内忧外患(大理)" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=545&gt;：“本帮的事情倒是解决了，却连累了殷帮主，叫我如何过意得去啊，该要想个办法才是。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=802&gt;：“我这里尚有一事要烦劳&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;仗义相助。”&lt;end&gt;
+&lt;playername&gt;：“请讲！”&lt;end&gt;
+&lt;npc=802&gt;：“这段时间我帮机密消息不断外泄，导致我帮生意受到极大损失。我连经查探才得知是帮一名叫做莫诸年的道领所为。此人嗜赌成性，欠下巨额赌债。为了还清债务将帮内物资进出情况尽数泄露出去。”&lt;end&gt;
+&lt;playername&gt;：“泄露这些又有什么用？”&lt;end&gt;
+&lt;npc=802&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，那间赌坊的后台老板是盐帮的徐帮主。我帮物资进出情况实为我帮生意上的最大机密，内行人略一推算便可得知贩卖何物最为赚钱。也正是如此，我帮生意连受重挫。我本想押解此人回帮处置，谁曾想被他滑溜走了，听说也去了汉水古渡。&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;若是遇到，定要为我帮除此大害。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>548</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将莫诸年的死讯带给襄阳府的毕舒扬</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>802</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>清理门户</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“莫诸年这厮已被我除去，贵帮大可以放心了。”&lt;end&gt;
+&lt;npc=802&gt;：“多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;除此大害，莫诸年这厮也真是罪有应得，听说嘉王行踪便是他泄露给阴山那三个怪物的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将莫诸年死讯带给毕舒扬</Value>
+              </txt>
+              <txt>
+                <Value>将莫诸年死讯带给毕舒扬</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

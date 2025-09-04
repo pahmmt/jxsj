@@ -1,0 +1,770 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000036" name="大变突起" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=153&gt;：“天庆三年，越王李仁友亡。桓宗治国之初，国家便骤失肱骨，而北方鞑靼部中的蒙古已经对西夏虎视眈眈。他急需左膀右臂来协助自己，在皇族李升阳和越王之子李安全之间，桓宗选择了卓而不群的李升阳，并立即擢拔他担任一品堂堂主，而将李安全降封为镇夷郡王。这两个人，是西夏新一代权力层中最耀眼的两颗巨星，争斗在所难免。”&lt;end&gt;
+&lt;playername&gt;：“西夏一品堂？就是传说中拥有三千黑衣死士的一品堂吗？”&lt;end&gt;
+&lt;npc=153&gt;：“正是。李升阳获得一品堂的堂主之位后实力大涨，所以李安全才急于扩充实力，与之抗衡。”&lt;end&gt;
+&lt;playername&gt;：“那李升阳此来，必是想争取秋石先生加入他的派系。”&lt;end&gt;
+&lt;npc=153&gt;：“先生却也不会答允。”&lt;end&gt;
+&lt;playername&gt;：“这样一来不是两边都得罪了？”&lt;end&gt;
+&lt;npc=153&gt;：“那要看你怎么想，两边都得罪有时候反而是两边都没有得罪。”&lt;end&gt;
+&lt;playername&gt;：“……有道理。”&lt;end&gt;
+&lt;npc=154&gt;：“只不过置身事外的念头怕是走不通了。李升阳这一来，其中藏有极大的玄机，我昆仑派不趟这淌混水，也得趟了。”&lt;end&gt;
+&lt;npc=153&gt;：“先生的意思是？”&lt;end&gt;
+&lt;npc=154&gt;：“那李升阳是不是携众前来，而且直接驱逐了马贼？”&lt;end&gt;
+&lt;npc=153&gt;：“据弟子所报，确是如此。”&lt;end&gt;
+&lt;npc=154&gt;：“他是在逼我昆仑出手救他啊。”&lt;end&gt;
+&lt;npc=153&gt;：“这中间的意思，我想不透。”&lt;end&gt;
+&lt;playername&gt;：“弟子也不懂。”&lt;end&gt;
+&lt;npc=154&gt;：“李升阳携众出城，李安全不会不知道。他当众驱逐马贼，就是把双方的底线一脚踏破了。既然如此，李安全再无顾及，必会狠下辣手。到时我昆仑若不救他，李安全得势之后，西夏将生灵涂炭。”&lt;end&gt;
+&lt;playername&gt;：“若我们真的不救，李升阳难道不会自救吗？弟子不能相信。”&lt;end&gt;
+&lt;npc=154&gt;：“他真的不会。所谓成败，赌的就是性命。而且，这是十赌十胜的局。李升阳赌的，就是我昆仑派不会坐视他死后西夏四分五裂的惨剧出现。到那时苍生涂炭，战火不息，最终苦的是民众。李升阳赌得很准，他看透了我的心思。”&lt;end&gt;
+&lt;playername&gt;：“那如何是好？”&lt;end&gt;
+&lt;npc=154&gt;：“&lt;playername&gt;你立即下山帮助李升阳脱困，我会命雨田全力支持你的。事成后将李升阳引往文曲洞，我会在那里等他。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>163</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄弟，你可知一品堂主李升阳现在何处？”&lt;end&gt;
+&lt;npc=163&gt;：“原本在此处驱逐马贼，后来忽然来了一批武艺高强的蒙面人，将一品堂众人逼入了剑齿峡。我们没有掌门人的命令，不敢轻举妄动。”&lt;end&gt;
+&lt;playername&gt;：“谢谢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与巡山弟子打听下李升阳现在的情况</Value>
+              </txt>
+              <txt>
+                <Value>与巡山弟子打听下李升阳现在的情况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>剑齿峡被马贼堵得水泄不通，看样子除了硬闯别无他法了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>165</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>179</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,173,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我必须用获得的马贼令牌通过剑齿峡谷口</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1722</Value>
+              </number>
+              <number>
+                <Value>3268</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>速到剑齿峡</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“令牌在此，速速放我进入峡谷，有重要军情通禀，不得延误。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{173,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>166</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>167</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>168</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>169</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>61000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>飘萍剑客口讯突至，先回去找他吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>153</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=153&gt;:“打败了4大护卫，也算是暂时解了李升阳的围，这剑齿峡，我已派人上去探查，你先稍等片刻，那时消息应该差不多会回来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=153&gt;:“你先将等级提升到27级，那时消息应该差不多会回来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>飘萍剑客口讯突至，先回去找他吧</Value>
+              </txt>
+              <txt>
+                <Value>飘萍剑客口讯突至，先回去找他吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>71000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=153&gt;:“探查的人回报说，李升阳就在剑齿峡顶部，你去接他下来吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>李升阳的手下并不认识我，看来一场苦斗是避免不了了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,0,90*18,1,1,1,0,1) </Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>170</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>171</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>172</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>173</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>终于能面见李升阳了，和护在他前面的一品堂铁卫对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>178</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“您就是西夏一品堂主李升阳先生吗？”&lt;end&gt;
+&lt;npc=178&gt;：“大胆，堂主名讳是你这种人可以直呼的吗？”&lt;end&gt;
+&lt;npc=175&gt;：“算了，一个名字，有什么打紧。&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;能突破重围来找我，想必是昆仑弟子。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和护在李升阳前面的一品堂铁卫对话</Value>
+              </txt>
+              <txt>
+                <Value>和护在李升阳前面的一品堂铁卫对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000037</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

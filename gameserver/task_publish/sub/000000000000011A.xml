@@ -1,0 +1,571 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000011A" name="釜底抽薪" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=562&gt;：“近来扬州发生了一件大案，司马中恒老板家的千金司马芊芊在闺房中神秘失踪。司马中恒是这一带最大的米商，日进斗金，因此有人猜测此举是有歹人想要借机索取巨额赎金。不过司马芊芊失踪多日，却无人上门投书索取赎金。司马老板和知府大人关系要好，大人因为此事大发雷霆，要我等三日内寻回司马芊芊，这可如何是好？”&lt;end&gt;
+&lt;playername&gt;：“官府难道没有派人寻找吗？”&lt;end&gt;
+&lt;npc=562&gt;：“找了，怎么敢不找呢？事情蹊跷，司马中恒却只说千金失踪，其他一概不知，让我们实在无从找起啊。我想此事并不简单，还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;仗义援手，不然我等的屁股怕是要被知府大人打开花了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>909</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“司马老板，我为令千金失踪一事而来。请问司马老板，令千金失踪前后可有什么异常？”&lt;end&gt;
+&lt;npc=909&gt;：“异常？什么异常，我女儿清清白白能有什么异常？你们这些捕快找不到我女儿却总是乱加猜疑，小心我告到知府那里，让知府好好修理你们一顿。”&lt;end&gt;
+&lt;playername&gt;：“司马老板看来是无心找回令千金了，那就告辞！”&lt;end&gt;
+&lt;npc=909&gt;：“且慢！你……你当真能找回芊芊？”&lt;end&gt;
+&lt;playername&gt;：“事在人为，还请司马老板将自己知道全盘托出。若是有半点隐瞒，我便不敢保证能寻回令千金了。”&lt;end&gt;
+&lt;npc=909&gt;：“这……也罢，事到如今也没什么好顾忌的了。芊芊约在半年前认识了徐府的少爷徐良，两人背着我多次见面，之后便妄自私定终身。我知道此事后大发雷霆，将芊芊锁在房里不令外出。徐良这小子仗着祖上传下的那点家私，终日游手好闲，我怎么能将女儿嫁给他这样的人？”&lt;end&gt;
+&lt;playername&gt;：“此事若当真和徐良有关，那令千金的安危倒是暂无可虑。我这就去徐府走一趟去，看看徐良是否在府上。”&lt;end&gt;
+&lt;npc=909&gt;：“若能找回芊芊，老夫必定重金酬谢！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到司马中恒</Value>
+              </txt>
+              <txt>
+                <Value>找到司马中恒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往徐良府上打探一番</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1028</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“请问老丈这里可是徐良府上？”&lt;end&gt;
+&lt;npc=1028&gt;：“是你啊小猴子！你这么多天了怎么也不来看看我老人家？来找你徐良哥吗？你这猴崽子就知道跟三叔公开玩笑，这算是你半个家，你还能不认识不成？你徐良哥去蜀岗山了，说是过一段才能回来呢。刚好你来了就陪我三叔公住上几日吧。”&lt;end&gt;
+&lt;playername&gt;：(这位三叔公显然是认错人了，不过看起来徐良当真有些古怪，不如去蜀岗山一探。)&lt;end&gt;
+&lt;npc=1028&gt;：“哎！小猴子你别走啊！这孩子……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去徐府打探</Value>
+              </txt>
+              <txt>
+                <Value>去徐府打探</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往蜀冈山寻找徐良和司马芊芊的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>103</Value>
+              </number>
+              <number>
+                <Value>1858</Value>
+              </number>
+              <number>
+                <Value>3624</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>找到徐良和司马芊芊</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1034&gt;：“良哥，我想回家，我想我爹了……”&lt;end&gt;
+&lt;npc=1030&gt;：“芊芊，再忍忍吧。再过几天你爹服软了我们再回去吧，现在回去我们岂不是前功尽弃了？”&lt;end&gt;
+&lt;npc=1034&gt;：“都是你不好，说都不说便花那么多钱雇了那帮血影，深更半夜的把我扛来此地。我娘死了以后，我爹又当爹又当妈的把我拉扯大，现在我还这样对他，将来我怎么还有脸去见我娘……呜呜……”&lt;end&gt;
+&lt;npc=1030&gt;：“你别哭啊，你爹看得那么紧，若不是花钱请影子会的人，我哪里能见得到你？”&lt;end&gt;
+&lt;npc=1034&gt;：“我不管，我要回家，我要回家……”&lt;end&gt;
+&lt;playername&gt;：(徐良和司马芊芊果然在一起，看徐良的意思并不愿司马芊芊回转扬州，我且试着劝说一番。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>劝说徐良带着司马芊芊回转扬州</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>103</Value>
+              </number>
+              <number>
+                <Value>1858</Value>
+              </number>
+              <number>
+                <Value>3616</Value>
+              </number>
+              <dialognpc>
+                <Value>1031</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄台，既然芊芊姑娘要回家，你便带她回去吧。你们这样和私奔何异？将来又如何面对司马老板？”&lt;end&gt;
+&lt;npc=1030&gt;：“你是谁？要你来多管闲事？”&lt;end&gt;
+&lt;playername&gt;：“我受司马老板所托前来带芊芊姑娘回去，请你不要阻拦。”&lt;end&gt;
+&lt;npc=1030&gt;：“什么？我怎么可能让你带芊芊回去？她是我的，谁也不能从我身边夺走！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1030</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>说服徐良</Value>
+              </txt>
+              <txt>
+                <Value>说服徐良</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1034&gt;：“良哥！良哥！你怎么了？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>带司马芊芊回转扬州</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1035</Value>
+              </dialognpc>
+              <number>
+                <Value>1858</Value>
+              </number>
+              <number>
+                <Value>3622</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“芊芊姑娘，我们还是尽快回去扬州吧。你这一走，不仅你爹着急，也害苦了扬州的一干衙役。”&lt;end&gt;
+&lt;npc=1034&gt;：“可是良哥他……”&lt;end&gt;
+&lt;playername&gt;：“他没事，只是昏过去而已，你还是尽快返回扬州吧！”&lt;end&gt;
+&lt;npc=1034&gt;：“我……那我们走吧……”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1034</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>103</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1801</Value>
+              </number>
+              <number>
+                <Value>3908</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1854,3622
+1845,3631
+1833,3655
+1830,3680
+1819,3699
+1803,3729
+1783,3757
+1765,3802
+1776,3845
+1784,3881
+1801,3908</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1034&gt;：“前面就是扬州城了，我想独自静静回去，免得被人看到又要说三道四。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>找司马中恒领取酬金</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>909</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“司马老板，令千金想必已经安然回来了吧？”&lt;end&gt;
+&lt;npc=909&gt;：“回来了，回来，多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;相助，酬金是少不了你的。”&lt;end&gt;
+&lt;playername&gt;：“这倒不急，只是婚姻之事还请司马老板看开一些才是。”&lt;end&gt;
+&lt;npc=909&gt;：“这……发生了这样的事情，老夫也很为难哪……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找司马中恒领取酬金</Value>
+              </txt>
+              <txt>
+                <Value>找司马中恒领取酬金</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

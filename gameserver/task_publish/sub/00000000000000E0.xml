@@ -1,0 +1,210 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E0" name="峨嵋往事" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=464&gt;：“三十年前，峨嵋山七仙子的绝代姿容曾倾倒江湖。可如今，当年的容貌都已逝去，仙子们芳踪何处呢？我辗转探访，居然丝毫也打听不出来。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=464&gt;：“三十年前，峨嵋山七仙子的绝代姿容曾倾倒江湖，三十年人生变幻莫测，如今那些女人的故事似乎都成了美丽的传说。我一直希望查出七仙子后来的经历，替她们立传以记之。或许是保密，又或许是其他的原因，寻访了许久也不得要领。”&lt;end&gt;
+&lt;playername&gt;：“你要如何才能查得出来？”&lt;end&gt;
+&lt;npc=464&gt;：“机缘巧合，一日峨嵋派无心师太的女徒在山下修行时遇到惯偷，被窃去了随身钱财，而当时她又身负着极重要的使命，必须在七日内赶到。危难之时恰好被我遇到，援助了她一些钱财，助其成事。后来才知，此事关系峨嵋派生死存亡。所以去找无心师太打听，承我的人情她必不会拒绝。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>463</Value>
+              </dialognpc>
+              <number>
+                <Value>454</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“无心师太，有位叫李元楷的书生，想向您打听峨嵋七仙子的下落。”&lt;end&gt;
+&lt;npc=463&gt;：“阿弥陀佛，罢了罢了，此事既然已遮掩不住，不如交给李生这样的善良之辈载录后世吧。”&lt;end&gt;
+&lt;playername&gt;：“那请问师太，这峨嵋人物书录现在何处，可否借我拿去给李元楷一阅。”&lt;end&gt;
+&lt;npc=463&gt;：“书录早已交给峨嵋下院保存，据说散落在下院众多苦修尼手中，你可去找她们问问，但苦修尼不谙世事，大多性格暴躁，能不能顺利得到，就看你的本事了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拿着李元楷的名帖去拜访无心师太</Value>
+              </txt>
+              <txt>
+                <Value>拿着李元楷的名帖去拜访无心师太</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照无心师太的指示，打败苦修尼将是获得书录的关键</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2042</Value>
+              </fightnpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <taskitem>
+                <Value>{54,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>得到了峨嵋人物书录，该回去找李元楷了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>464</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=464&gt;：“秦倚风出家为尼，何怜飘横死剑门关？当年的仙子们，结局竟这样的凄凉？难道真是天妒红颜吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{峨嵋人物书录,20,1,54,1,0,7}</Value>
+              </string>
+              <txt>
+                <Value>得到了书录回去找李元楷吧</Value>
+              </txt>
+              <txt>
+                <Value>得到了书录回去找李元楷吧</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

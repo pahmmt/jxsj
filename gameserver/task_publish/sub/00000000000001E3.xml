@@ -1,0 +1,260 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001E3" name="三足鼎立" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4350&gt;：“三峡的崇山峻岭中地势险要，依据天险，易守难攻，各方势力也都瞄准了这块战略要地，宋国和金国分守南北两岸，最近听说蒙古人也在上游建立了据点，各方势力汇聚于此，对义军来说，正好是探听各方情报，测探各方实力的好机会。”&lt;end&gt;
+&lt;playername&gt;：“将军，您的意思是？”&lt;end&gt;
+&lt;npc=4350&gt;：“早就听闻&lt;playername&gt;武功高强，可否帮忙去那敌方营寨探听虚实。”&lt;end&gt;
+&lt;playername&gt;：“…………”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>1633</Value>
+              </number>
+              <number>
+                <Value>3625</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>去蒙古营地探听情报</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4356&gt;：“大家吃好喝好啊，喝好吃好啊。”&lt;end&gt;
+&lt;npc=4356&gt;：“啥也不说了，都在酒里呢。”&lt;end&gt;
+&lt;npc=4356&gt;：“喝，不喝脸都掉地上了。”&lt;end&gt;
+&lt;npc=4356&gt;：“咋也得把掉地上的脸拾起来啊。”&lt;end&gt;
+&lt;npc=4356&gt;：“八匹马呀，六六六啊。”&lt;end&gt;
+&lt;npc=4356&gt;：“ZZZZZ……。”&lt;end&gt;
+
+&lt;playername&gt;：“蒙古将领嗜酒如命。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>1937</Value>
+              </number>
+              <number>
+                <Value>3658</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>去金国营地探听情报</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4357&gt;：“沿着那几根弦的轨迹，命运是一张沉重的弯弓，被一颗颤抖的心拉着。”&lt;end&gt;
+&lt;npc=4357&gt;：“这是哪条迂回的溪上流淌出来的声音？从一个琴音开始，萦绕在琴弦上的双蝶，翩翩的飞。”&lt;end&gt;
+&lt;npc=4357&gt;：“梁祝！ 一段哀婉动人的爱情，就是一曲荡气回肠的音乐，如水。 暗香浮动。穿过梁祝翩飞的花丛，所有的柔情纷纷化蝶：我分明看见了一对古典的情侣，正出落成双飞的蝶，醉入花荫。”&lt;end&gt;
+&lt;npc=4357&gt;：“幽怨的旋律，潺潺凄诉生死的盟约。双飞之蝶，泪流成河。 情到深处，命定的情缘，萦绕琴弦。”&lt;end&gt;
+&lt;npc=4357&gt;：“千古的绝唱，不可承受的痛。 一片片粼粼的波光，就是一串串如泣如诉的音符。 琴声呜咽，声声触及痛处。我的心情不自禁的跟着颤栗。”&lt;end&gt;
+&lt;npc=4357&gt;：“琴声幽幽的涉过泉水， 水中的月亮凄凉的度过无边的寒夜。 苦，是一种什么样的味道? 痛，又是一种什么样的挣扎？ 世界静寂。悠扬着永恒的琴声...”&lt;end&gt;
+
+&lt;playername&gt;：“金国将领附庸风雅，喜欢诗词歌赋。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>126</Value>
+              </number>
+              <number>
+                <Value>1713</Value>
+              </number>
+              <number>
+                <Value>3876</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>去宋朝营地探听情报</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4358&gt;：“来，抬头让本官看看，果然是个绝色的美人，喔呵呵呵。”&lt;end&gt;
+&lt;npc=4358&gt;：“美人儿,你也已经不是什么黄花闺女了,还不若就乖乖的从了本官吧。”&lt;end&gt;
+&lt;npc=4358&gt;：“金银，豪宅，车马任你挑。”&lt;end&gt;
+&lt;npc=4358&gt;：“那以后的日子你就可以吃香的喝辣的,也再不会有人敢欺负你了。”&lt;end&gt;
+&lt;npc=4358&gt;：“酒菜已备好，美人请入席。”&lt;end&gt;
+&lt;npc=4358&gt;：“什么？夫人来探营。来人呐，快把这丫头带下去。”&lt;end&gt;
+
+&lt;playername&gt;：“宋国将领风流倜傥，喜欢美色。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4350</Value>
+              </dialognpc>
+              <number>
+                <Value>126</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“报告将军，我已经分别查探了三方营地，这个是我总结的材料。”&lt;end&gt;
+&lt;npc=4350&gt;：“辛苦&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;了，这样我也好针对他们的喜好采取下一步对策，呵呵呵。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将探营得情况回报给义军将领李天科</Value>
+              </txt>
+              <txt>
+                <Value>将探营得情况回报给义军将领李天科</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

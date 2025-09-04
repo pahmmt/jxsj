@@ -1,0 +1,433 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001F5" name="情意无价" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4379&gt;：“你是何人？我乃宋军副将秋鸣志，是蒙古的狗贼吗？我现在无力迎战，要杀要剐悉听尊便！”&lt;end&gt;
+&lt;playername&gt;：“莫要激动，在下乃义军人士&lt;playername&gt;，你为何如此憔悴，究竟发生了什么，为何这里附近一片狼藉……”&lt;end&gt;
+&lt;npc=4379&gt;：“是义军……我这里……我……”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1687</Value>
+              </dialognpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>金银草采集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{金银草,20,1,542,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10株金银草</Value>
+              </txt>
+              <txt>
+                <Value>收集到足够的金银草回去交给秋鸣志</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1935,3457
+1940,3470
+1924,3469
+1931,3482
+1948,3475
+1942,3489</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>听秋鸣志与我讲述他的遭遇</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4379</Value>
+              </dialognpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“服下这金银草后，你可感觉好些了？”&lt;end&gt;
+&lt;npc=4379&gt;：“恩，我感到体力恢复了一些，谢谢你！”&lt;end&gt;
+&lt;playername&gt;：“不知道在你身上发生了什么事情，这附近又为何如此破败？”&lt;end&gt;
+&lt;npc=4379&gt;：“实不相瞒，我本是蒙古边境的巡逻侍卫，在与蒙古兵士在一场小规模的冲突中与主力军队失散，并且被埋在瓦砾之下。”&lt;end&gt;
+&lt;playername&gt;：“有如此际遇，怪不得看上去已经憔悴不堪。”&lt;end&gt;
+&lt;npc=4379&gt;：“整整十七日只下过一场小雨，但那并不能解决什么。就在已经绝望的时候，一只家狗每日定时为这我舔脸和舌才使他活了下来，我在心里唤它做阿呆。现在我逃出了废墟，可那狗儿却不再来了。我想拜托大侠帮我将那狗儿找到，我要好好感谢它。”&lt;end&gt;
+&lt;playername&gt;：“动物的情谊有时候竟比人真挚的多，那狗儿在蒙古兵营附近？我这便前去将它带到你面前。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>听秋鸣志与我讲述他的遭遇</Value>
+              </txt>
+              <txt>
+                <Value>听秋鸣志与我讲述他的遭遇</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去蒙古大营找到阿呆带它回来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{542,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4377</Value>
+              </dialognpc>
+              <number>
+                <Value>1973</Value>
+              </number>
+              <number>
+                <Value>3651</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4377&gt;：“汪汪……。”&lt;end&gt;
+&lt;playername&gt;：“乖，快跟我走吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4378</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>1979</Value>
+              </number>
+              <number>
+                <Value>3401</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1961,3612
+1971,3532
+1968,3552</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将阿呆交还给秋鸣志</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4379</Value>
+              </dialognpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“阿呆很机灵，在我突围的时候一直紧紧跟着我，它可是你的救命恩人呢。”&lt;end&gt;
+&lt;npc=4379&gt;：“谢谢&lt;playername&gt;！阿呆救了我的命，我一定好好对待他就如对待自己一般。”&lt;end&gt;
+&lt;playername&gt;：“动物是我们最真诚的朋友，你和它有缘分！&lt;playername&gt;就先行告辞。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将阿呆交还给秋鸣志</Value>
+              </txt>
+              <txt>
+                <Value>将阿呆交还给秋鸣志</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

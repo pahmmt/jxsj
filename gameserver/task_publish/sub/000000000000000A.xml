@@ -1,0 +1,363 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000000A" name="变乱之局" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=31&gt;：“落枫坡并不是主入口，宾客也较少，那里会出什么乱子？&lt;playername&gt;，你去看看吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>36</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄弟，裘止水长老遣我来查看查看，究竟出了何事？”&lt;end&gt;
+&lt;npc=36&gt;：“方才有一伙人自称是螳螂拳的传人，来我帮观礼。我自己本家就是螳螂拳师，见这些人面生，忍不住多问几句，便问出了破绽。结果这些人索性耍赖，堵住了山坡。上去呵斥他们走开的弟子，都被打伤了。”&lt;end&gt;
+&lt;playername&gt;：“哼，这些人胆子也未免太大了，我去会会他们。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>到落枫坡询问丐帮执事弟子发生了什么事</Value>
+              </txt>
+              <txt>
+                <Value>到落枫坡询问丐帮执事弟子发生了什么事</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败来敌首领陆沉舟，从他嘴里解开谜团</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>100</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1573</Value>
+              </number>
+              <number>
+                <Value>2874</Value>
+              </number>
+              <fightnpc>
+                <Value>38</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <dialognpc>
+                <Value>39</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“陆沉舟，我不知道这是不是你的真实姓名，但你若不招出幕后主谋，今日恐怕不能活着离开了。”&lt;end&gt;
+&lt;npc=39&gt;：“要杀要剐，痛快点。”&lt;end&gt;
+&lt;playername&gt;：“看不出来，还是条汉子。”&lt;end&gt;
+&lt;npc=39&gt;：“哼，三十年后，老子依然是条好汉。”&lt;end&gt;
+&lt;playername&gt;：“既是好汉，为何做出如此卑劣之事？这祭奠礼上祭奠的亡灵，三十年前就是好汉，他们都是为国捐躯的英雄！你和他们比起来，死得有价值吗？这就是你的好汉作为吗？”&lt;end&gt;
+&lt;npc=39&gt;：“不必废话，要杀便杀。”&lt;end&gt;
+&lt;playername&gt;：“懦夫！”&lt;end&gt;
+&lt;npc=39&gt;：“谁是懦夫！我陆某人八岁上被爹娘遗弃，抢过狗食，干过苦工，就是没做过对不起自己良心的事。”&lt;end&gt;
+&lt;playername&gt;：“你来丐帮捣乱，却敢做不敢当，不是懦夫是什么？”&lt;end&gt;
+&lt;npc=39&gt;：“狗屁！你丐帮的人要活，就不给其他帮会的人活路走吗？”&lt;end&gt;
+&lt;playername&gt;：“奇怪，我们几时不给你路走了？”&lt;end&gt;
+&lt;npc=39&gt;：“你们私贩盐货……”&lt;end&gt;
+&lt;playername&gt;：“哈哈，陆沉舟啊陆沉舟，你还真是条梗直的汉子，说漏嘴了吧，原来是盐帮的英雄。”&lt;end&gt;
+&lt;npc=39&gt;：“是盐帮的怎么了？老子一人做事一人当，就是老子干的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>打败来敌首领陆沉舟</Value>
+              </txt>
+              <txt>
+                <Value>打败来敌首领陆沉舟</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19200</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将落枫坡的情况带给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“石帮主，在落枫坡捣乱的人已经抓起来了。为首者叫陆沉舟，乃是盐帮中人。”&lt;end&gt;
+&lt;npc=30&gt;：“明白了。”&lt;end&gt;
+&lt;playername&gt;：“陆沉舟道此事全是他的主意，不过我看此人有几分傲骨，不像会做出这种事的样子。”&lt;end&gt;
+&lt;npc=30&gt;：“当然。盐帮因为是贩卖盐货的帮会，所以门规极严，哪怕私拿一包盐货都是斩手之刑。没有盐帮帮主徐彬剑的指令，借他个天做胆，也不敢来我丐帮招惹是非。”&lt;end&gt;
+&lt;playername&gt;：“那徐彬剑恐怕也是被逼急了。”&lt;end&gt;
+&lt;npc=30&gt;：“若他是个商人，我还可以谅解，十商九奸。可盐帮毕竟也是江湖上混的帮会，这样的龌龊做法很为人不齿。”&lt;end&gt;
+&lt;playername&gt;：“话说到这，围攻青螺岛的势力中，就有盐帮。”&lt;end&gt;
+&lt;npc=30&gt;：“哦？那徐彬剑与官府的关系竟这样深，这倒是令人不得不防。叫陆沉舟的男子，听你说是条汉子？”&lt;end&gt;
+&lt;playername&gt;：“恩。”&lt;end&gt;
+&lt;npc=30&gt;：“武艺如何？”&lt;end&gt;
+&lt;playername&gt;：“极强，属下拿他也颇费了番功夫。”&lt;end&gt;
+&lt;npc=30&gt;：“人可带来了？”&lt;end&gt;
+&lt;npc=36&gt;：“禀帮主，人已带到。”&lt;end&gt;
+&lt;npc=30&gt;：“陆英雄，让你受苦了。”&lt;end&gt;
+&lt;npc=39&gt;：“你是？”&lt;end&gt;
+&lt;npc=30&gt;：“在下丐帮帮主石轩辕。”&lt;end&gt;
+&lt;npc=39&gt;：“石帮主。明人不说暗话，我陆沉舟对你是顶佩服的。咱们二帮离得近，这几年丐帮从一蹶不振到日益强大，陆某看在眼里。可你抢了我帮生意，这就是你不对。”&lt;end&gt;
+&lt;npc=30&gt;：“哈哈哈，好个梗直汉子。那么我问你，天下盐货生意，是不是只盐帮一家做得？”&lt;end&gt;
+&lt;npc=39&gt;：“……当然不是。”&lt;end&gt;
+&lt;npc=30&gt;：“那我丐帮可曾抢过贵帮盐货，去贵帮总舵闹事？”&lt;end&gt;
+&lt;npc=39&gt;：“也没有。”&lt;end&gt;
+&lt;npc=30&gt;：“这我就奇怪了。既然是做生意，你也做得我也做得，那就各凭本事。贵帮帮主难免有些小家子气了。”&lt;end&gt;
+&lt;npc=39&gt;：“恩，你这么说也对，可是你们短短两年，抢去了我们四成生意，让不让人活了？”&lt;end&gt;
+&lt;npc=30&gt;：“怎么不让？陆兄这样的人才，怎会有人不让你活。你若肯来我丐帮，大家同碗喝酒，就是兄弟。待我丐帮壮大之日，总要仗三尺剑锋做几件大事让天下人看看，我大宋朝的男人究竟是七尺男儿还是熊包蛋货。”&lt;end&gt;
+&lt;npc=39&gt;：“说得好！”&lt;end&gt;
+&lt;npc=30&gt;：“那是答应了。”&lt;end&gt;
+&lt;npc=39&gt;：“不答应。”&lt;end&gt;
+&lt;npc=30&gt;：“这样吧，陆英雄暂且去我帐中歇息，想清楚再回答也不迟。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将落枫坡的情况带给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>将落枫坡的情况带给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000000B</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,0,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

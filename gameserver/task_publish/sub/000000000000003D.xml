@@ -1,0 +1,945 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000003D" name="神僧空无" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=198&gt;：“来，&lt;playername&gt;。这位是少林证道院的高僧空无大师，快来见过。”&lt;end&gt;
+&lt;playername&gt;：“弟子拜见空无大师。”&lt;end&gt;
+&lt;npc=199&gt;：“阿弥陀佛，小施主切莫以大师相称。贫僧云游四海，只是个风餐露宿求一个佛缘的行脚僧罢了。”&lt;end&gt;
+&lt;npc=198&gt;：“空无大师与我派的灵鹤真人相约，每年的五月举行论法，去岁在少林寺的辩驳精彩纷呈，直辩了三昼夜依然不分胜负，被认为是天下禅宗和道家的一件大事。你不可不知。”&lt;end&gt;
+&lt;playername&gt;：“弟子很想听一听天下佛道二宗的前辈论法。”&lt;end&gt;
+&lt;npc=198&gt;：“今年的盛会恐要延期。灵鹤真人得知游龙珏现世的消息，焚香沐浴潜心打卦，希望以一己之力上窥天机，找出此事来龙去脉。因此，我才邀了空无大师前来云麓水居清谈。”&lt;end&gt;
+&lt;playername&gt;：“既如此，弟子就不打扰二位师傅了。”&lt;end&gt;
+&lt;npc=198&gt;：“不忙，此刻恰有一事与你有关。”&lt;end&gt;
+&lt;playername&gt;：“哦？”&lt;end&gt;
+&lt;npc=198&gt;：“空无大师不仅以佛法闻名于世，药理上的钻研与药王院首座玄苦大师亦不分轩轾。一叶曾拜托过我，替永昌寻一位良医治疗筋脉，如今通擅易筋经的大师在此，我们怎能错过？”&lt;end&gt;
+&lt;playername&gt;：“哎呀，太好了！大师，请您一定要看一看永昌兄的病！他实在是一个好人。”&lt;end&gt;
+&lt;npc=199&gt;：“阿弥陀佛。王掌教已将陶施主受伤一事道于贫僧，贫僧甚感钦佩，这病是一定要看的。”&lt;end&gt;
+&lt;playername&gt;：“这真是太好了。”&lt;end&gt;
+&lt;npc=198&gt;：“近来武当并不太平，今日还有蒙面刺客潜入。空无大师体质异于常人，并不曾修习武术，这趟需要你护送前去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>199</Value>
+              </dialognpc>
+              <number>
+                <Value>1213</Value>
+              </number>
+              <number>
+                <Value>2532</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，走吧。”&lt;end&gt;
+&lt;npc=199&gt;：“施主请。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>202</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>1200</Value>
+              </number>
+              <number>
+                <Value>1262</Value>
+              </number>
+              <number>
+                <Value>2562</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1234,2551
+1256,2558
+
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>“叶落秋风起，数里入雪峰，寂寞空山里，拔芒觅旧踪……”空无大师口诵谒语，消失在远山蔼蔼的暮色中。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>37000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>跟随空无大师的步伐，去看望陶永昌吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>201</Value>
+              </dialognpc>
+              <number>
+                <Value>440</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;，你看我带谁来了！”&lt;end&gt;
+&lt;npc=201&gt;：“这位大师是？”&lt;end&gt;
+&lt;npc=200&gt;：“阿弥陀佛，贫僧少林空无。”&lt;end&gt;
+&lt;playername&gt;：“空无大师精通药理，大师肯来看你，你断掉的筋脉有望复原了！”&lt;end&gt;
+&lt;npc=201&gt;：“……真是如此……永昌做牛做马，也要报答大师的恩德。”&lt;end&gt;
+&lt;npc=200&gt;：“阿弥陀佛，救人一命，胜造七级浮屠，贫僧自当尽力，施主不要客套。贫僧方才眼观施主面色，虽形容枯槁，双目尚且有神，血气不曾亏损，这就好办得多。施主伸出手来，让贫僧搭一搭脉……”&lt;end&gt;
+&lt;npc=201&gt;：“大师请。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和空无大师一同探视陶永昌</Value>
+              </txt>
+              <txt>
+                <Value>和空无大师一同探视陶永昌</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>向空无大师咨询陶永昌的状况</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>200</Value>
+              </dialognpc>
+              <number>
+                <Value>440</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，如何？”&lt;end&gt;
+&lt;npc=200&gt;：“若换做常人，筋脉断绝之症，绝无重续可能，因药性太过刚烈，承受不住。陶施主内力深厚，筋脉虽断，丹田之气充盈，贫僧虽没有十成把握，九成是能医好的，不过陶施主得吃些苦头。”&lt;end&gt;
+&lt;npc=201&gt;：“吃苦算不得什么，请大师只管动手吧。”&lt;end&gt;
+&lt;npc=200&gt;：“呵呵，施主莫急，要续脉活筋，需以草药调制膏剂，还得请&lt;playername&gt;施主帮贫僧去采两味药。一味是世间稀有的连根草，将之熬成草浆，敷在断掉的筋脉上，则一年内便可以促成手筋重新长好。龙虎幻境中便有这种药材，只是因此药太过珍贵，许多采药人聚集此处，要想采得此药，恐需费一番功夫。”&lt;end&gt;
+&lt;playername&gt;：“在何处？”&lt;end&gt;
+&lt;npc=200&gt;：“白鹤溪。”&lt;end&gt;
+&lt;playername&gt;：“另外一样不知是何物？”&lt;end&gt;
+&lt;npc=200&gt;：“蝮蛇之皮。此物拿来做药引，方可冲淡连根草的至阳之性，否则纵有一甲子功力之人，也必为内火焚成灰烬。”&lt;end&gt;
+&lt;playername&gt;：“弟子知道了，请大师稍候。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向空无大师咨询陶永昌的状况</Value>
+              </txt>
+              <txt>
+                <Value>向空无大师咨询陶永昌的状况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替空无大师去白鹤溪采摘可续筋脉的连根草</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1523</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>袍轻低草露，盖侧舞松风</Value>
+              </txt>
+              <txt>
+                <Value>采集到一株连根草</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{连根草,20,1,178,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/3株连根草。</Value>
+              </txt>
+              <txt>
+                <Value>采集的到连根草</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1467,2656
+1459,2674
+1474,2630
+1481,2685
+1485,2658
+1487,2715
+1500,2643
+1500,2725
+1516,2635
+1519,2662
+1504,2761
+1532,2646
+1528,2742
+1521,2771
+1547,2673
+1536,2694
+1549,2716
+1545,2749</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>31000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替空无大师去雷神洞杀死腹蛇，取其至阴的蛇皮制作药引</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>203</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <taskitem>
+                <Value>{179,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>42000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>拿到了药材，可以回去找空无大师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>200</Value>
+              </dialognpc>
+              <number>
+                <Value>440</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;！药草药引我都找来了！”&lt;end&gt;
+&lt;npc=200&gt;：“贫僧看看。恩，确是这两味，辛苦&lt;playername&gt;施主了。”&lt;end&gt;
+&lt;playername&gt;：“大师要我不说客套话，怎么如今大师反而客气起来了，这个接下来我该怎么做呢？”&lt;end&gt;
+&lt;npc=200&gt;：“将这两味药材拿去门口交给弟子晓音，三蒸三晒之后制成接筋续脉散。”&lt;end&gt;
+&lt;npc=201&gt;：“大师，&lt;playername&gt;，你们俩的恩情，我陶永昌没齿……也不会忘记！”&lt;end&gt;
+&lt;npc=200&gt;：“好了，施主好生歇息，不要多说话，一会药性发作起来，得多留些力对抗。”&lt;end&gt;
+&lt;playername&gt;：“好的，我这就去办。”&lt;end&gt;
+&lt;npc=200&gt;：“&lt;playername&gt;，等药熬好后，每隔一段时间，你就给陶施主涂抹在伤处。王掌教与贫僧还有些事需要商谈，&lt;playername&gt;施主处理好陶施主的病情，再来云麓水居相商。”&lt;end&gt;
+&lt;playername&gt;：“大师请！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去向空无大师复命</Value>
+              </txt>
+              <txt>
+                <Value>回去向空无大师复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1416</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“晓音师弟，空无大师叮嘱了，这两味药材要经过三蒸三晒的熬制，才能使用！”&lt;end&gt;
+&lt;npc=1416&gt;：“好嘞，我从小和一叶真人学习医术，但怎奈天资驽钝，他老人家高超的医术没学多少，这研磨熬药的下手活倒也是样样精通。交给我你就放心吧。”&lt;end&gt;
+&lt;playername&gt;：“那就辛苦你了。”&lt;end&gt;
+&lt;npc=1416&gt;：“我现在就开始弄，把采集好的药材交给我吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{连根草,20,1,178,1,0,3}
+{腹蛇皮,20,1,179,1,0,10}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{178,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1416&gt;：“我处理这些药材需要一定时间，你过一段时间再来找我吧。”&lt;end&gt;
+&lt;playername&gt;：“没关系，我就在这里等你。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{179,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>UserTrackInfo</Function>
+            <Parameter>
+              <txt>
+                <Value>等待武当弟子晓音煲药</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>时间过了这么久,药熬得应该差不多了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1416</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1416&gt;：“终于好了，这个应该就是大师需要的，快拿进去交给陶大哥疗伤吧。”&lt;end&gt;
+&lt;playername&gt;：“好，我这厢替他谢谢你了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{接筋续脉散,20,1,180,1,0,4}</Value>
+              </string>
+              <txt>
+                <Value>时间差不多了,找晓音去拿接筋续脉散</Value>
+              </txt>
+              <txt>
+                <Value>时间差不多了,找晓音去拿接筋续脉散</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000003E</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

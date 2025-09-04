@@ -1,0 +1,801 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002E9" name="花灯初上" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start />
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1925</Value>
+              </number>
+              <number>
+                <Value>3460</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>离开渡头，回去好好想想今日之事。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:ApplyGame(me.nId)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9030</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10249</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10249&gt;：“真慢！花灯会都开始了！你要再不出来，我可就打算闯进去了。”&lt;end&gt;
+&lt;playername&gt;:“过几日你姐姐都要出嫁了，你怎还是一副野小子的样子？”&lt;end&gt;
+&lt;npc=10249&gt;：“你有何不满？恩？……你看，花灯我可都买好了！来放吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10249&gt;：“愣着干啥？我的花灯都要飘走啦，快把你的也放下去！记得要祈福许愿。”</Value>
+              </txt>
+              <string>
+                <Value>{莲花灯,20,1,928,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>去临水小阶找书青</Value>
+              </txt>
+              <txt>
+                <Value>去临水小阶找书青</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>书青让我和她一起放花灯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:FindNpcInMap()</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9480</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtAreaWithDesc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,928,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>2030</Value>
+              </number>
+              <number>
+                <Value>3370</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去临水小阶放花灯</Value>
+              </txt>
+              <txt>
+                <Value>去临水小阶放花灯</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=10249&gt;：“真美……可惜先生教的诗词一句也想不起来……”&lt;end&gt;
+&lt;playername&gt;:“让你平时总逃学，把夫子气得半死。找我打架，打不过还耍赖。”&lt;end&gt;
+&lt;npc=10249&gt;：“胡说！虽然……那个……我现在确实是打不过……哈、哈哈……那边还有人在钓金鱼！我们也去！”&lt;end&gt;
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{928,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:AddLight()</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9950</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10176</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10176&gt;：“咦！这不是&lt;playername&gt;和吕家的小丫头！来来，前面风荷小筑那还有很多人钓金鱼玩儿，这小钓竿也拿去！”&lt;end&gt;
+&lt;playername&gt;：“何大叔，这怎么好意思！”&lt;end&gt;
+&lt;npc=10176&gt;：“不许和我客气！平时龙五太爷也帮衬我们不少！拿着！去耍吧！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10176&gt;：“我们平民百姓不求富贵,只求平安！不管是太爷还是吕老爷都很是关照我们!拿着！去耍吧！”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{小钓竿,20,1,929,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与小贩对话</Value>
+              </txt>
+              <txt>
+                <Value>与小贩对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去风荷小筑试试看能不能钓上小金鱼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10600</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtAreaWithDesc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,929,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>2092</Value>
+              </number>
+              <number>
+                <Value>3461</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去风荷小筑钓金鱼</Value>
+              </txt>
+              <txt>
+                <Value>去风荷小筑钓金鱼</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=10249&gt;：“哈哈，你笨死了！你看我钓的……”&lt;end&gt;
+&lt;playername&gt;：“……真像你六岁那年丢了的布娃娃。”&lt;end&gt;
+&lt;npc=10249&gt;：“……今天庙会。花灯钱是我付的……刚才那碗酒酿丸子也是我付的……能不能少说我两句。”&lt;end&gt;
+&lt;playername&gt;：“哈哈，好说好说，来，带你去岸上放烟花！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{929,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.CastSkill(2221, 8, 2100*32,3469*32);me.CastSkill(2230, 8, -1, me.GetNpc().nIndex)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11090</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10175</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>点燃烟火...</Value>
+              </txt>
+              <txt>
+                <Value>烟花点燃映亮苍穹</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你已经点燃了%d/3束烟花。</Value>
+              </txt>
+              <txt>
+                <Value>你已经点燃了一束烟花。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>Task.NewPrimerLv20:AddYanhua(%s)</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>我原以为，此间年华，真的会年年岁岁一如今夜。
+那个时候，绚烂的烟花，温暖的灯火，鼎沸的人声，还有我身边白衣芊芊的小姑娘 …… 想来竟如一场幻梦。
+&lt;Chahua:chahua_yanhua.spr,2000,3000,1000&gt;&lt;end&gt;
+&lt;npc=10249&gt;：“那边还有杂耍！”&lt;end&gt;
+&lt;playername&gt;：“呵呵，怎么有谁关了你一年没出门似的。”&lt;end&gt;
+&lt;npc=10249&gt;：“诶，难得我们两人都没被人管束着，就不能不挖苦我嘛！快来！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与书青挤进人群中看杂耍</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.CastSkill(2934,1,-1,me.GetNpc().nIndex)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11980</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>79</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>挤进人群，看杂耍表演</Value>
+              </txt>
+              <txt>
+                <Value>挤进人群，看杂耍表演</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12050</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10262</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“李婶，发生何事？”&lt;end&gt;
+&lt;npc=10262&gt;：“……吕家、吕家夺回来的贺礼爆炸了！现在镇里到处是金兵和水贼！造孽啊！”&lt;end&gt;
+&lt;playername&gt;：“这、这究竟怎么回事？！”&lt;end&gt;
+&lt;npc=10249&gt;：“……莫要问了，一定是金兵与水贼联手，引你去救人，然后把贺礼给掉包了。”&lt;end&gt;
+&lt;playername&gt;：“想不到那水贼为了钱财，竟和金狗联手！太可恨了！李婶你先别慌，我和书青，得先把镇民送到安全的地方，跟我来。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10262&gt;：“现在怎么办……怎么办……”。</Value>
+              </txt>
+              <txt>
+                <Value>询问李婶发生何事</Value>
+              </txt>
+              <txt>
+                <Value>询问李婶发生何事</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>沿路击退金兵，救出镇民</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002EB</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12980</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

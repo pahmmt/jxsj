@@ -1,0 +1,419 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000028" name="夷人的狩猎" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=116&gt;：“报！”&lt;end&gt;
+&lt;npc=82&gt;：“报什么报，讲嘛。”&lt;end&gt;
+&lt;npc=116&gt;：“有夷人攻打我教的狩猎营寨！人数众多，请红旗旗主支援。”&lt;end&gt;
+&lt;npc=82&gt;：“哦，是哪一旗的营寨呀。”&lt;end&gt;
+&lt;npc=116&gt;：“是黑旗的营寨。”&lt;end&gt;
+&lt;npc=82&gt;：“那不急，让他们打一会儿。”&lt;end&gt;
+&lt;playername&gt;：“旗主，为何黑旗的就不去救呢？”&lt;end&gt;
+&lt;npc=82&gt;：“你不懂。自从古教主带着教众避居到这原始森林中，我们就没过上一天好日子。带来的种子种不出稻子来，没有办法，只好学夷人们狩猎野兽，都快变成商朝人了。这林子本是夷人的，后来我们人数越来越多，他们就觉得土地被侵占了，这几年时有火并。”&lt;end&gt;
+&lt;playername&gt;：“各旗都要狩猎吗？”&lt;end&gt;
+&lt;npc=82&gt;：“恩，都是各自为战。不过黑旗旗主韩破山是个很讨厌的家伙，让他的人吃点苦头，没什么坏处。”&lt;end&gt;
+&lt;playername&gt;：“那我什么时候上路？”&lt;end&gt;
+&lt;npc=82&gt;：“时辰差不多了，现在去吧。路上慢着点走，夷人可不是吃素的。”&lt;end&gt;
+&lt;playername&gt;：“我和他们交过一回手了。就是在来的路上，恰好救了殷方殷童。”&lt;end&gt;
+&lt;npc=82&gt;：“哼哼，你倒没有骗我。去吧，到了那里和黑旗的管事关万山打个招呼，让他知道是哪一旗的人情，将来好还给我们。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>84</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“关管事，我乃红旗弟子，奉命前来救援营寨。”&lt;end&gt;
+&lt;npc=84&gt;：“我们黑旗的老少们谢谢蝶旗主，谢谢红旗的弟兄了。”&lt;end&gt;
+&lt;playername&gt;：“关老爷子，你这么大的年纪，不必对我一个小辈如此客套。”&lt;end&gt;
+&lt;npc=84&gt;：“哎，你看看这营寨里的人吧。不是女人就是孩子，还有些老叟老妪。就是这样的一群人，他夷人也下得了狠手啊！”&lt;end&gt;
+&lt;playername&gt;：“竟死了这么多人？”&lt;end&gt;
+&lt;npc=84&gt;：“年轻女人和孩子都被他们掳走了，老人和成年男子则见一个杀一个！”&lt;end&gt;
+&lt;playername&gt;：“关老爷子，韩旗主的名声……他万一知道，您会不会？”&lt;end&gt;
+&lt;npc=84&gt;：“你放心。旗主在外面名声确实很差，可他对自己的武士却好得像他们的大哥，他们的父亲。这件事，旗主会把愤怒撒到夷人身上去的。”&lt;end&gt;
+&lt;playername&gt;：“等到他来，怎么还赶得及？他们往哪个方向跑了？我一定替黑旗报了这笔血仇！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向黑旗管事关万山了解情况</Value>
+              </txt>
+              <txt>
+                <Value>向黑旗管事关万山了解情况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>当务之急是击退围攻黑旗狩猎营寨的南夷武士</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>85</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我决定追过去三箭岩击杀他们的首领</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1636</Value>
+              </number>
+              <number>
+                <Value>3544</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>登上三箭岩高地</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在三箭岩的高地上，与夷人首领的一场恶战在所难免</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>86</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将三箭岭血洗之后，可以给关万山一个交代了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>84</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“关老爷子，我已经将那些天杀的夷人铲除了，女人和孩子马上就能回来。”&lt;end&gt;
+&lt;npc=84&gt;：“&lt;playername&gt;，黑旗的弟兄们都会记住你的！将来在五毒教遇到任何的困难，你只管来找我关万山，就是刀山火海，我也豁出这条老命陪你闯一闯。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>可以回去给关万山一个交代了</Value>
+              </txt>
+              <txt>
+                <Value>可以回去给关万山一个交代了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000029</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,277 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000111" name="密探回报" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=579&gt;：“有件事想请&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;相助，不知能否仗义援手？”&lt;end&gt;
+&lt;playername&gt;：“且说来听听！”&lt;end&gt;
+&lt;npc=579&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，我们乌蛮族是一个很大的部族，信奉的神叫做苦神。我们的祖先留下了一块记载着乌蛮族历史的石碑，这块石碑后来不慎被摔成了十八块，我们称它十八灵碑石。十八灵碑石和苦神雕像是我们乌蛮族的圣物，一直保存在我们族长那里，可是十多年前却先后不翼而飞了。”&lt;end&gt;
+&lt;playername&gt;：“怎么会不翼而飞的？”&lt;end&gt;
+&lt;npc=579&gt;：“唉，早在好多年前曾经有一部的族长由于和族长意见不合而率领那一部离开了大理，从此杳无音讯。后来我们才得知他们在北方的药王洞扎了根，并派人偷走了我们的苦神雕像和十八灵碑石。我想请&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;相助的就是前往药王洞从他们的祭司手里夺回灵碑石，并找回苦神雕像。真正的苦神雕像的底座有一行细小的文字，千万别忘了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1530</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>检查中</Value>
+              </txt>
+              <txt>
+                <Value>检查完毕</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>检查苦神雕像</Value>
+              </txt>
+              <txt>
+                <Value>前往药王洞</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>苦神雕像并没有像阿诺说的那样在神像的座子上刻有细小的文字，看来是后来仿造的。</Value>
+              </txt>
+              <txt>
+                <Value>从兽王祭司手里夺回十八灵碑石</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2138</Value>
+              </fightnpc>
+              <number>
+                <Value>93</Value>
+              </number>
+              <taskitem>
+                <Value>{111,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将十八灵碑石带给点苍山的阿诺</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>579</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=579&gt;：“找到了吗？”&lt;end&gt;
+&lt;playername&gt;：“灵碑石倒是找到了，不过苦神雕像看来不是真品，也许并不是他们得去了。”&lt;end&gt;
+&lt;npc=579&gt;：“即便是这样已经非常感激了，&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;的恩情，我们乌蛮族人记下了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到阿诺</Value>
+              </txt>
+              <txt>
+                <Value>找到阿诺</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{111,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

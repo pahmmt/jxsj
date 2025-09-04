@@ -1,0 +1,864 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000041" name="雷霆手段" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“大师，我正觉得奇怪。为何少林周围涌入了这么多难民？”&lt;end&gt;
+&lt;npc=212&gt;：“哎，小施主不知道啊。近几年天灾频降，黄河三次决堤，沿岸百姓深受其苦，多少人家妻离子散，那景况真是惨不忍睹。本寺素来有向遇难的可怜人舍几口饭食的规矩，难民们便都涌到少室山上来咯。”&lt;end&gt;
+&lt;playername&gt;：“如此一来，寺中的粮食怎么接济呢？这上千僧众每日可也得吃掉不少粮食啊。”&lt;end&gt;
+&lt;npc=212&gt;：“原本庙里香火旺，攒下了一些钱财，拿来置了不少田地，供给周围穷困的农人耕种，每年收些租子。这几个月下来，寺中余粮也是越来越少咯。每日舍两顿粥给饥民，如今只有一顿，就这还是从武僧们嘴里抢来的。”&lt;end&gt;
+&lt;npc=212&gt;：“说起这事，僧人们还是有些情绪。你替我去看看达摩院首座澄惠，就说弟子们若心气盛时念经压不住，可来找我玄苦，我给他们熬些药汤驱除嗔念。”&lt;end&gt;
+&lt;playername&gt;：“弟子这就去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>213</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=213&gt;：“真是气煞人了，这些难民，也太不将武僧们放在眼里了。”&lt;end&gt;
+&lt;playername&gt;：“澄惠师傅，玄苦大师让我替他带个话……”&lt;end&gt;
+&lt;npc=213&gt;：“别说了，你就是那位重阳道长荐来少林修炼的弟子吧。”&lt;end&gt;
+&lt;playername&gt;：“在下正是。”&lt;end&gt;
+&lt;npc=213&gt;：“替贫僧办件事吧。”&lt;end&gt;
+&lt;playername&gt;：“澄惠师傅请讲。”&lt;end&gt;
+&lt;npc=213&gt;：“那些逃难的难民们，受了一些居心叵测之辈的蛊惑，正嚷嚷着要入寺抢粮，贫僧恐怕局势失控。武僧们原本就对口粮遭减心存怨怼，若难民真闹到寺里，僧人们都是会家子，一个失手就是人命。”&lt;end&gt;
+&lt;npc=213&gt;：“你是寺外人，所以贫僧想请你去惩罚惩罚蛊惑众人的暴民头子，不知你意下如何？”&lt;end&gt;
+&lt;playername&gt;：“这……”&lt;end&gt;
+&lt;npc=213&gt;：“若局势一旦失控，后果不堪设想。你放心，万事自有我澄惠一肩担之，你只管放手去做。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=213&gt;：“局势若一旦失控，后果不堪设想。你放心，万事自有我澄惠一肩担之，你只管放手去做。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去找达摩院首座澄惠</Value>
+              </txt>
+              <txt>
+                <Value>去找达摩院首座澄惠</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>澄惠请我出手教训捣乱的暴民头子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>214</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>215</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>216</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>217</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>104000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>虽说教训了几个暴民头子，觉得这样做有些过分了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>213</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“澄惠师傅，那几个暴民头子我教训过了，不过我总觉得有些不妥。”&lt;end&gt;
+&lt;npc=213&gt;：“哎，有人已经给方丈报信了。你现在随我去见方丈吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报澄惠吧</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报澄惠吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:NewWorldWithState</Function>
+            <Parameter>
+              <number>
+                <Value>447</Value>
+              </number>
+              <number>
+                <Value>1776</Value>
+              </number>
+              <number>
+                <Value>3848</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>71</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>刚来少林就捅了这么大的篓子，不知道方丈会如何责罚我</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>218</Value>
+              </dialognpc>
+              <number>
+                <Value>447</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“方丈大师，我……”&lt;end&gt;
+&lt;npc=218&gt;：“阿弥陀佛，此事原委老衲早已得知。&lt;playername&gt;初来少林，何罪之有？澄惠。”&lt;end&gt;
+&lt;npc=213&gt;：“弟子在。”&lt;end&gt;
+&lt;npc=218&gt;：“不经许可，擅做决断，指使&lt;playername&gt;打伤逃难的民众，你可知罪？”&lt;end&gt;
+&lt;npc=213&gt;：“方丈，那些暴民头子分明就是挑衅；寺中僧众已尽量勒紧腰带，余出不多的口粮，可他们还是不满足。哪有如此偏狭的难民？”&lt;end&gt;
+&lt;npc=218&gt;：“阿弥陀佛，你自不知，却已犯了嗔戒。难民们饱受饥荒，每日一碗粥可能填饱他们的肚子？仔细想想，你达摩院的和尚每日喝一碗粥够是不够？”&lt;end&gt;
+&lt;npc=213&gt;：“……不够。”&lt;end&gt;
+&lt;npc=218&gt;：“既是如此，何不好生劝解，难道民众们就是愚昧之徒了？会受几个居心叵测之人的挑拨？澄惠，你太冲动了。这次若非&lt;playername&gt;下手较轻，真闹出人命官司，就正中了别人的圈套。”&lt;end&gt;
+&lt;npc=213&gt;：“弟子……知错了。”&lt;end&gt;
+&lt;npc=218&gt;：“好了，你自回达摩院面壁三月吧，好好的读一读经书，不要让心魔扰乱了神智。”&lt;end&gt;
+&lt;playername&gt;：“方丈大师，其实此事弟子也有责任。”&lt;end&gt;
+&lt;npc=213&gt;：“&lt;playername&gt;并无过失，都是弟子吩咐&lt;if me.nSex==0&gt;他&lt;else&gt;她&lt;endif&gt;去做的。错在弟子，弟子甘愿受罚。”&lt;end&gt;
+&lt;npc=218&gt;：“很好，当初你澄字辈诸僧中，老方丈为何独取你一人赠名惠字，要多想想。”&lt;end&gt;
+&lt;npc=218&gt;：“各位乡亲！今日我少林武僧犯下大错，是玄慈治寺无能！请大家放心，只要我少林有最后一口粮，也绝不眼睁睁看着一个难民在寺前饿倒。请大家散了吧。”&lt;end&gt;
+&lt;npc=292&gt;：“方丈大师都如此说了，我等若再闹事，就是无理取闹了，大伙散了吧，散了吧。”&lt;end&gt;
+&lt;npc=218&gt;：“阿弥陀佛，自今日起，老衲的禅房中不必再送饭食。出家人六根清净，辟谷百日也是种修行。”&lt;end&gt;
+&lt;playername&gt;：“方丈！”&lt;end&gt;
+&lt;npc=218&gt;：“老衲决议已定，不必再说了。请你回去找一找玄苦，让他妥善安置难民，再想些增粮的计策吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=218&gt;：“老衲决议已定，不必再说了。请你回去找一找玄苦，让他妥善安置难民，再想些增粮的计策吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>向方丈请罪</Value>
+              </txt>
+              <txt>
+                <Value>向方丈请罪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>71</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照方丈的吩咐，去找玄苦大师吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>212</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，方丈将澄惠师傅罚去达摩院面壁三月了。”&lt;end&gt;
+&lt;npc=212&gt;：“我知道了，这个澄惠！贫僧还是说晚了一步啊。”&lt;end&gt;
+&lt;playername&gt;：“方丈请您再想些增粮的计策。”&lt;end&gt;
+&lt;npc=212&gt;：“这些先放一边，现在的当务之急是安抚寺内僧众的情绪。”&lt;end&gt;
+&lt;playername&gt;：“怎么？难道寺里真的到了山穷水尽的地步？”&lt;end&gt;
+&lt;npc=212&gt;：“方丈带头，许多僧人也跟着每日粒米不进。武僧们饿肚子久了，难免闹情绪。刚才有弟子来报，几个罗汉堂的弟子实在饿不过，跑到伙房向伙头僧求施一口馒头，被伙头僧拒绝。饥饿难当之下，打了伙头僧，抢了馒头。”&lt;end&gt;
+&lt;playername&gt;：“居然出了这种事，真是稀罕。”&lt;end&gt;
+&lt;npc=212&gt;：“罗汉堂首座澄光已经率弟子们追这几个饿僧了，按理贫僧不该管这闲事。不过这塔林西是药王院的地界，澄光请我代他将几个跑入塔林的弟子擒了，也不好推辞。你就替贫僧走一趟吧。”&lt;end&gt;
+&lt;playername&gt;：“行的，弟子一定竭尽全力。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>按照方丈的吩咐去找玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>按照方丈的吩咐去找玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去将这些逃跑的和尚捉回来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2239</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,183,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>69</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>22000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>到回风角草堂向罗汉堂首座澄光复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>220</Value>
+              </dialognpc>
+              <number>
+                <Value>448</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“澄光师傅，我乃药王院玄苦大师委派来的弟子，已替您擒住了那几个强抢馒头的和尚。”&lt;end&gt;
+&lt;npc=220&gt;：“他们可好？受没受伤？”&lt;end&gt;
+&lt;playername&gt;：“弟子下手有分寸，都是些皮外伤罢了。”&lt;end&gt;
+&lt;npc=220&gt;：“如此就好。”&lt;end&gt;
+&lt;playername&gt;：“方丈大师，您怎么也来了。”&lt;end&gt;
+&lt;npc=219&gt;：“是不是嫌老衲烦了？如今寺内人心浮动，这些看似小的事情，若处置不当，就将酿成更大的危局。少林寺数百年的基业，不能毁在老衲手中啊。”&lt;end&gt;
+&lt;npc=220&gt;：“方丈，如何处置那几个犯戒和尚？”&lt;end&gt;
+&lt;npc=219&gt;：“阿弥陀佛，给他们一顿饱饭吃吧。”&lt;end&gt;
+&lt;npc=220&gt;：“什么？”&lt;end&gt;
+&lt;npc=219&gt;：“待弟子们吃饱，替他们收拾收拾行囊，发给些散碎银两，让他们离寺下山去吧。”&lt;end&gt;
+&lt;playername&gt;：“大师是要，要将和尚们逐出寺墙？方丈，这会不会有些过了？”&lt;end&gt;
+&lt;npc=220&gt;：“方丈！求方丈开恩，给罗汉堂弟子一次机会吧，澄光担保他们不敢再犯。”&lt;end&gt;
+&lt;npc=219&gt;：“当下非常时期，如何能开此口？若不严加处置，总有弹压不住的一天。”&lt;end&gt;
+&lt;npc=220&gt;：“方丈！我澄光愿与他们一同接受惩处，给全寺僧众看。只求方丈法外施恩！”&lt;end&gt;
+&lt;npc=219&gt;：“阿弥陀佛。”&lt;end&gt;
+&lt;npc=220&gt;：“方丈！”&lt;end&gt;
+&lt;npc=219&gt;：“阿弥陀佛，我不入地狱，谁入地狱。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>到回风角草堂向罗汉堂首座澄光复命</Value>
+              </txt>
+              <txt>
+                <Value>到回风角草堂向罗汉堂首座澄光复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000042</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{183,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,290 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000131" name="燕小六的报复" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“眼下朝里各派党同伐异闹得不可开交，这实在是我等当初未曾料到的。虽说新朝更迭免不了有一番权势争斗以趋于稳定，然现在看这情形似乎是愈演愈烈。而今争斗的双方以韩侂胄和赵汝愚为首，韩侂胄略占上风。我也曾派人打探过此中种种内情，但其关系之复杂实非我等江湖中人所能体会得了的。”&lt;end&gt;
+&lt;playername&gt;：“那秋姨决定相助哪方？”&lt;end&gt;
+&lt;npc=3570&gt;：“两不相帮，不过眼下却有一件事要你去办。朝中有一名李学士乃是我父的故交，此番党争中误信佞友与韩侂胄为仇受到激烈打击。如今一路逃往帮源秘洞。我得知韩侂胄派了锦衣卫前去拿他，你可将锦衣卫击退，将他带到安全的地方，也算是替我了却一段故人之情。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1086</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1126</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到李学士并将其带离帮源秘洞</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1089</Value>
+              </dialognpc>
+              <number>
+                <Value>1891</Value>
+              </number>
+              <number>
+                <Value>3449</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位便是李学士吧？我奉义军首领白秋琳之命带你前往一个安全所在。”&lt;end&gt;
+&lt;npc=1085&gt;：“啊？是秋琳让你来的，没想到她还记得我老夫，老夫真是惭愧！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1085</Value>
+              </fightnpc>
+              <number>
+                <Value>85</Value>
+              </number>
+              <number>
+                <Value>113</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1892</Value>
+              </number>
+              <number>
+                <Value>3707</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1892,3448
+1888,3440
+1863,3429
+1849,3415
+1837,3422
+1830,3443
+1803,3453
+1785,3459
+1778,3475
+1785,3501
+1799,3521
+1787,3579
+1795,3616
+1825,3631
+1846,3634
+1861,3639
+1871,3646
+1869,3670
+1871,3677
+1876,3685
+1879,3703
+1892,3707</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“此处出去以后是龙泉村，是我义军的营地所在，你就在这里住下吧。”&lt;end&gt;
+&lt;npc=1085&gt;：“相助之情还请日后再为报答！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“回秋姨，我已经将李学士带到了龙泉村，那里的义军兄弟会照顾好他。”&lt;end&gt;
+&lt;npc=3570&gt;：“如此甚好，我们不可与朝中任意一方为敌，以免引火上身。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>找到白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

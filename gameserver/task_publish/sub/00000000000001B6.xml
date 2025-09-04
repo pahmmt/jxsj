@@ -1,0 +1,412 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001B6" name="妙计捕盗" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1821&gt;：“哈哈哈，&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;，咱们又见面了。”&lt;end&gt;
+&lt;playername&gt;：“不知大人找我来有何要事？”&lt;end&gt;
+&lt;npc=1821&gt;：“是这样。上回去那犀角矿中捕捉白狸时，异外发现了一角红巾，上面绣有一只寒梅。这是江南侠盗一只梅的标记。几月前听闻这伙盗贼被黑道人物追杀，销声匿迹。却原来是躲来了伏牛山中。我有心收服他们，为抗金效力。”&lt;end&gt;
+&lt;playername&gt;：“大人，我有一计！”&lt;end&gt;
+&lt;npc=1821&gt;：“哦？说来听听。”&lt;end&gt;
+&lt;playername&gt;：“我们可在矿道中放上许多干草，引火将梅花盗们逼出洞穴。”&lt;end&gt;
+&lt;npc=1821&gt;：“哈哈哈，若在山野中，这不失为一条计策。不过矿道内通风极差，草率使用火攻，恐要伤及无辜。我有一计，定可生擒这伙盗贼。”&lt;end&gt;
+&lt;playername&gt;：“大人快说给我听听。”&lt;end&gt;
+&lt;npc=1821&gt;：“他们深居矿洞中，缺少粮食饮水，必已疲乏不堪。你可伪装成一名盗贼，多带干粮饮水进入矿道，其中已下好蒙汗药。进入矿道后，你伪装与我的士卒拼斗，逃入那盗贼藏身之处。取水来喝时，事先服用解药，必可骗住疲惫干渴的盗贼。”&lt;end&gt;
+&lt;playername&gt;：“大人妙计。”&lt;end&gt;
+&lt;npc=1821&gt;：“呵呵，依计行事吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1818</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>成功取得了梅花大盗的信任,趁此节骨眼,赶紧服下蒙汗药的解药</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1819</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1819&gt;：“你是何人？”&lt;end&gt;
+&lt;playername&gt;：“在下在中原一代行事，早就听闻梅花盗的声名，与各位是一条道上的人物。如今事情败露，被官军追捕至此，还望各位好汉收留。”&lt;end&gt;
+&lt;npc=1819&gt;：“我等自保尚且凶险，又怎能收留你？”&lt;end&gt;
+&lt;playername&gt;：“我这里随身携带了许多干粮饮水，只求一处栖身之所，请好汉们开恩。”&lt;end&gt;
+&lt;npc=1819&gt;：“我等怎知你不是朝廷奸细，在水中下药迷翻我等？”&lt;end&gt;
+&lt;playername&gt;：“好，我先喝几口。”&lt;end&gt;
+&lt;npc=1819&gt;：“……果然。既是同道中人，便同生共死吧。兄弟们，先吃些东西垫垫肚子。要拼杀也有把力气！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与梅花盗的首领对话</Value>
+              </txt>
+              <txt>
+                <Value>与梅花盗的首领对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>和梅花大盗们一起吃下带有蒙汗药的干粮和饮水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1637</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>吃带有蒙汗药的干粮</Value>
+              </txt>
+              <txt>
+                <Value>吃带有蒙汗药的干粮</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>吃带有蒙汗药的干粮</Value>
+              </txt>
+              <txt>
+                <Value>吃带有蒙汗药的干粮</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1638</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>喝下有蒙汗药的饮水</Value>
+              </txt>
+              <txt>
+                <Value>喝下有蒙汗药的饮水</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>喝下有蒙汗药的饮水</Value>
+              </txt>
+              <txt>
+                <Value>喝下有蒙汗药的饮水</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>成功迷翻了一众梅花盗，将情况回报给毕再遇大人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1821</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大人妙计，那梅花盗已尽数被迷翻在地。”&lt;end&gt;
+&lt;npc=1821&gt;：“呵呵，若非疲惫饥渴难当，此计也不能成功。”&lt;end&gt;
+&lt;playername&gt;：“大人智勇双全，不能得朝廷重用，真是可惜。”&lt;end&gt;
+&lt;npc=1821&gt;：“毕某不过区区武节郎，还是不要以大人称呼，可直呼我的字德卿。”&lt;end&gt;
+&lt;playername&gt;：“大人切不可妄自菲薄。依我看，若宋金两国交兵，则大人必可一展所长！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报给毕再遇大人</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报给毕再遇大人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

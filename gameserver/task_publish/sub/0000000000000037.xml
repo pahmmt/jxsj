@@ -1,0 +1,1128 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000037" name="惊心动魄" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“形势急迫，剑齿峡外已被李安全的部下围得水泄不通。在下受宋掌门之命，前来相助李堂主突围。”&lt;end&gt;
+&lt;npc=175&gt;：“如此有劳&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;了。”&lt;end&gt;
+&lt;playername&gt;：“这里似乎有一条从后山走的山路？”&lt;end&gt;
+&lt;npc=175&gt;：“恩，不过那条路上有雪狼群挡路，走不通。”&lt;end&gt;
+&lt;playername&gt;：“总比面对潮水一样的西夏武士要好，我来开路，请李先生随我同去见掌门人。”&lt;end&gt;
+&lt;npc=175&gt;：“呵呵，&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;好大的气魄。好！李某就随你走一遭！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>175</Value>
+              </dialognpc>
+              <number>
+                <Value>1763</Value>
+              </number>
+              <number>
+                <Value>3196</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“李先生准备好了吗？”&lt;end&gt;
+&lt;npc=175&gt;：“呵呵，许久没有这般豪情壮志了，走吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>176</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1802</Value>
+              </number>
+              <number>
+                <Value>3258</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1769,3196
+1773,3211
+1781,3224
+1790,3222
+1791,3232
+1796,3248
+1796,3262</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>终于将西夏一品堂主成功护送到了文曲洞，不知会发生什么事情</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>174</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“哎，拼死拼活将李升阳护送到这里，却听不到掌门和他说些什么，说起来真不划算。”&lt;end&gt;
+&lt;npc=153&gt;：“呵呵，你不就是想偷听嘛。”&lt;end&gt;
+&lt;playername&gt;：“这个……嘿嘿。”&lt;end&gt;
+&lt;npc=153&gt;：“掌门早就料到，你去开启右边石像机关，就能听到他们的对话了。当你听到‘升阳兄当世人杰’这句话时，必须立即将文曲洞外的三座石碑机关全部开启；若听不到这句话，便一切无事。”&lt;end&gt;
+&lt;playername&gt;：“明白，这其中有何蹊跷？”&lt;end&gt;
+&lt;npc=153&gt;：“哎，此刻不必多问，总之这关系到天下安危。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{石像机关,20,1,174,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>看看飘萍剑客有没有什么好办法，能听到洞内的说话</Value>
+              </txt>
+              <txt>
+                <Value>看看飘萍剑客有没有什么好办法，能听到洞内的说话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在文曲洞右边使用石像机关，就能听到洞内的对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,174,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1802</Value>
+              </number>
+              <number>
+                <Value>3257</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=175&gt;：“如今李安全手下为昆仑弟子击破，他必以为先生与我已结成一线，将来怎么肯放过先生？若与升阳合作，先生知道升阳为人，必使西夏万民安居乐业，国力强盛，如此有何不好？”&lt;end&gt;
+&lt;npc=154&gt;：“升阳兄的为人与手段在下清楚得很；当年我昆仑一代剑皇楚欺天先生平生只教过两个徒弟，一个是现任天王帮主杨铁心，一个就是升阳兄。所以镇夷郡王我宋秋石可以不相信，剑皇的弟子我不敢不信。”&lt;end&gt;
+&lt;npc=175&gt;：“既然对升阳的师承来历清清楚楚，先生还犹豫什么呢？实话告诉先生，如今我西夏所以国力衰弱，只因地穷民稀；我已派出数名得力手下潜入各国，有相当把握取得周边诸国的资源；到时先灭大理，再攻川蜀，获此二处膏腴之地，大业可图！”&lt;end&gt;
+&lt;npc=154&gt;：“这正是秋石无法帮助升阳兄的原因。若升阳兄生在南宋，或大金，我宋秋石必倾昆仑一派之力助你速平天下，还黎民一个朗朗乾坤。可西夏国力贫乏，周边强敌环肆，升阳兄要一展宏愿，这天下有多少年兵连祸结，民不聊生？秋石为何救先生，你必比我更清楚。”&lt;end&gt;
+&lt;npc=175&gt;：“哈哈哈，若是如此，先生大不必担心！游龙珏这块宝玉不知先生可曾听闻？”&lt;end&gt;
+&lt;npc=154&gt;：“游龙珏？莫不是那块传说中能够倒置乾坤，改朝换代的凶玉？”&lt;end&gt;
+&lt;npc=175&gt;：“正是！如今这块玉珏已在大理境内出现，可惜此玉需与一张神秘的图纸并用，方可找到宋朝龙脉所在。如今我已有一个周密计划来获取那张图纸，可惜期间牵扯甚广，若得先生协助，有望速成此事。若能获此玉，则天下可定。”&lt;end&gt;
+&lt;npc=154&gt;：“升阳兄真乃当世人杰！”&lt;end&gt;
+&lt;playername&gt;：“先生居然真说了这话，看来必得依他所言行事了，这李升阳好大的野心。”&lt;end&gt;
+听到秋石先生发出的秘令，我启动文曲洞石像机关，随着一声巨响，内洞巨石落下，李升阳和秋石先生已经被封锁在文曲洞内。&lt;end&gt;
+但按照飘萍剑客的嘱咐，要去开启三座石碑上的雕像，把三重石门全部放下，才能确保万无一失。&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1573</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>428</Value>
+              </number>
+              <number>
+                <Value>1521</Value>
+              </number>
+              <number>
+                <Value>3301</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>三座石像就是三重考验，你愿意接受吗？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>接受第一座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>接受第一座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>第一重考验：雪山之灵凝聚着昆仑山千百年来的大地之气，只有真正的勇士才能取得他，打败他的守护着，取得四个雪山之灵。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>81</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1576</Value>
+              </dialognpc>
+              <number>
+                <Value>428</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>春生雪山草，香下棘林天</Value>
+              </txt>
+              <txt>
+                <Value>得到雪山之灵</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{雪山之灵,20,1,195,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1个雪山之灵</Value>
+              </txt>
+              <txt>
+                <Value>取得1个雪山之灵</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1489,3239
+1530,3173
+1537,3289
+1579,3121
+1594,3332
+1624,3174
+1646,3281
+1681,3216</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>81</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>第一道闸门已放下，下面要去第二座石像机关</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1574</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>429</Value>
+              </number>
+              <number>
+                <Value>1640</Value>
+              </number>
+              <number>
+                <Value>3137</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已通过第一重考验，现在开始第二重吗？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>接受第二座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>接受第二座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>恭喜你完成了第一重的考验，相对来说第二重会更加困难，把刚才得到的雪山之灵放到应该存在的位置吧，这样它们才能发挥出最大的功效。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>82</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{195,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,60,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1456</Value>
+              </dialognpc>
+              <txt>
+                <Value>雪山之灵（西）</Value>
+              </txt>
+              <number>
+                <Value>429</Value>
+              </number>
+              <number>
+                <Value>1546</Value>
+              </number>
+              <number>
+                <Value>3205</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>神台西边角</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,194,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1456</Value>
+              </dialognpc>
+              <txt>
+                <Value>雪山之灵（北）</Value>
+              </txt>
+              <number>
+                <Value>429</Value>
+              </number>
+              <number>
+                <Value>1604</Value>
+              </number>
+              <number>
+                <Value>3101</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>神台北边角</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,193,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1456</Value>
+              </dialognpc>
+              <txt>
+                <Value>雪山之灵（东）</Value>
+              </txt>
+              <number>
+                <Value>429</Value>
+              </number>
+              <number>
+                <Value>1674</Value>
+              </number>
+              <number>
+                <Value>3210</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>神台东边角</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,61,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>1456</Value>
+              </dialognpc>
+              <txt>
+                <Value>雪山之灵（南）</Value>
+              </txt>
+              <number>
+                <Value>429</Value>
+              </number>
+              <number>
+                <Value>1613</Value>
+              </number>
+              <number>
+                <Value>3289</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>神台南边角</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:NewWorldWithState</Function>
+            <Parameter>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1799</Value>
+              </number>
+              <number>
+                <Value>3297</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>82</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>26000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>到达第三座石像机关，也是最后的考验</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1575</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>430</Value>
+              </number>
+              <number>
+                <Value>1576</Value>
+              </number>
+              <number>
+                <Value>3218</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>第三重也是最后的考验，现在就开始吗？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>接受第三座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>接受第三座石像机关的考验</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>挑战石像守护者首领，这才是最后的终极的考验</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>83</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>799</Value>
+              </fightnpc>
+              <number>
+                <Value>430</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>伴随着三座石像机关的开启，轰隆之声不绝于耳，我听到什么沉重的东西压迫大地的巨大声响！难道这些石碑内的考验就是使得文曲洞倒塌的机关吗？那秋石先生和李升阳岂不是要被埋葬其中了？</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>83</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>174</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“飘萍先生，这是什么声音？”&lt;end&gt;
+&lt;npc=153&gt;：“唉……掌门人……”&lt;end&gt;
+&lt;playername&gt;:“掌门怎么了？？”&lt;end&gt;
+&lt;npc=153&gt;：“掌门人将自己和李升阳都困死在这文曲洞中了。”&lt;end&gt;
+&lt;playername&gt;:“什么？”&lt;end&gt;
+&lt;npc=153&gt;：“那三尊人像中的机关，是八道千斤重闸的开关；如今这八道重闸已全部封死，神鬼的力量也不能开启它们。掌门用自己一条命，换了李升阳这条命！”&lt;end&gt;
+&lt;playername&gt;:“掌门为何要，要这样做呢！”&lt;end&gt;
+&lt;npc=153&gt;：“那李升阳乃当世奇才，可惜为西夏所用。他有卧龙凤雏之才，若得良机必可令西夏强横一时，那时必然烽火四起，民众陷于水火。先生原本希望劝服他，收制衡李安全之效。可是先生也讲过，若李升阳一意为之，李安全必不是升阳对手。两祸相权取其轻，万不得已时，只能启用这文曲洞的机关，将李升阳封死在这千年雪洞中！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>问一下飘萍剑客情况如何</Value>
+              </txt>
+              <txt>
+                <Value>问一下飘萍剑客情况如何</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000038</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

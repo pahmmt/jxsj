@@ -1,0 +1,178 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000014A" name="影社英灵" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=50&gt;：“孩子，你愿意听我讲讲这白石山场的来历吗？”&lt;end&gt;
+&lt;playername&gt;：“愿听巩长老告知。”&lt;end&gt;
+&lt;npc=50&gt;：“丐帮白石山场表面上是把犯过失的弟子送到这里改造，实际暗地中却是通过影社一系列超越体力胆识极限的考验，将他们训练为影社秘密部队的死士。”&lt;end&gt;
+&lt;npc=50&gt;：“在残酷的淘汰过程中，很多意志不坚强，武艺欠佳的弟子败下阵来，沦为了虎口之食。”&lt;end&gt;
+&lt;playername&gt;：“哦，是这样啊。”&lt;end&gt;
+&lt;npc=50&gt;：“你愿意帮我做一件事吗？”&lt;end&gt;
+&lt;playername&gt;：“长老请说。”&lt;end&gt;
+&lt;npc=50&gt;：“拜托你将他们的遗骨收敛来，埋葬在石场山后，追念为影社丧生的英灵。”&lt;end&gt;
+&lt;playername&gt;：“恩，本该如此，我这就去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=50&gt;：“望众弟子的在天之灵保佑丐帮兴旺通达。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1608</Value>
+              </dialognpc>
+              <number>
+                <Value>407</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>丐帮弟子遗骨收集中</Value>
+              </txt>
+              <txt>
+                <Value>得到丐帮弟子遗骨</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{丐帮弟子遗骨,20,1,240,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8副丐帮弟子遗骨</Value>
+              </txt>
+              <txt>
+                <Value>进入猛虎巷收集丐帮弟子的尸骨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1552,3129
+1565,3117
+1563,3223
+1575,3110
+1574,3160
+1569,3143
+1579,3205
+1583,3244
+1572,3236
+1588,3133
+1595,3229
+1584,3222</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将收集的尸骨交给巩少榛长老处理</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>50</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=50&gt;：“都收敛起来了吗？”&lt;end&gt;
+&lt;playername&gt;：“是，都在这里了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{丐帮弟子遗骨,20,1,240,1,0,8}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

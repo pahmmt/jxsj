@@ -1,0 +1,257 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001B3" name="兵血" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1810&gt;：“&lt;if me.nSex==0&gt;兄台&lt;else&gt;姑娘&lt;endif&gt;，皇甫大人命我将一只黄铜大箱抬到枫叶林去。此事关系甚大，我知道你武功高强，麻烦你陪我走一趟吧。”&lt;end&gt;
+&lt;playername&gt;：“这箱中究竟有何物？如此小心。”&lt;end&gt;
+&lt;npc=1810&gt;：“这……在下实在有难言之隐。”&lt;end&gt;
+&lt;playername&gt;：“嗯，那便不问了。”&lt;end&gt;
+&lt;npc=1808&gt;：“刘五！”&lt;end&gt;
+&lt;npc=1810&gt;：“大人，小的在，有何吩咐。”&lt;end&gt;
+&lt;npc=1808&gt;：“你辛苦一趟，立即去城中寻仙客栈，三儿马上要来了。原本让沈六去的，可那家伙现在却告假，说是闹肚子。妈拉个巴子，早不闹晚不闹，真他娘的闹性。”&lt;end&gt;
+&lt;playername&gt;：“三儿是？”&lt;end&gt;
+&lt;npc=1810&gt;：“是皇甫大人的第三房小妾。”&lt;end&gt;
+&lt;playername&gt;：“喔……”&lt;end&gt;
+&lt;npc=1810&gt;：“可是，大人您叫我……”&lt;end&gt;
+&lt;npc=1808&gt;：“啰嗦什么？再啰嗦老子打断你的狗腿。”&lt;end&gt;
+&lt;npc=1810&gt;：“是！”&lt;end&gt;
+&lt;npc=1810&gt;：“唉，看来这口箱子只能麻烦你一趟了，实在抱歉。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,265,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1679</Value>
+              </number>
+              <number>
+                <Value>3240</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“不好，这箱子居然摔破在地上了！究竟什么东西如此之沉……居然是，银子！今日正要发军饷，这口箱子里多半是皇甫斌克扣的军饷！”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>56000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，现在伏牛山中与义军一同操练的朝廷军队将军皇甫斌克扣军饷私饱中囊，我已掌握足够的证据，咱们向朝廷告发这狗官吧!”&lt;end&gt;
+&lt;npc=3570&gt;：“哦？你是从哪里得到的消息？”&lt;end&gt;
+&lt;playername&gt;：“说来话长，皇甫斌的亲信刘五因为要去城中接皇甫斌的小妾，脱不开身，所以委托我去枫树林找一隐秘地点埋藏个铜箱子。此事本无出奇，但我意外发现箱子里装的乃是皇甫斌私藏的克扣军饷。这笔财目数额巨大，侄儿不敢私自处置，故速来禀报秋姨，再作定夺。”&lt;end&gt;
+&lt;npc=3570&gt;：“嗯，此人所作所为我也有所耳闻。不过此事太过凑巧，当前义军与官军合作练兵，不能因小失大。还是忍了吧。”&lt;end&gt;
+&lt;playername&gt;：“唉，那便如此处置吧。”&lt;end&gt;
+&lt;npc=3570&gt;：“你即刻去回复刘五，别让他看出了端倪。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将皇甫斌居然克扣军饷的事告知秋姨</Value>
+              </txt>
+              <txt>
+                <Value>将皇甫斌居然克扣军饷的事告知秋姨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>秋姨觉得不能因小失大，主张暂不告发皇甫斌的贪墨之举</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1810</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“刘兄，你嘱咐我的事，已经处置妥当。”&lt;end&gt;
+&lt;npc=1810&gt;：“哈哈，我刘五虽然没有太大的本事，但这双眼睛看人从不走火。走走走，去喝两盅。”&lt;end&gt;
+&lt;playername&gt;：“下次吧，我还有事，先行告辞。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去告诉刘五，一切已妥善处置了</Value>
+              </txt>
+              <txt>
+                <Value>回去告诉刘五，一切已妥善处置了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

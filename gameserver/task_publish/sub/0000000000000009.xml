@@ -1,0 +1,1140 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000009" name="祭奠礼" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3541&gt;：“对了，你们天王帮的礼盒不是早送来了吗？”&lt;end&gt;
+&lt;playername&gt;：“事情紧急，一时间我也不便多说。总之这与国家安危之间有着极大的干系。请千万通禀一声，我这里有一封杨铁心帮主写给石帮主的信，请代为转交。”&lt;end&gt;
+&lt;npc=3541&gt;：“奇怪，天王帮啥时候换帮主了？我竟一点也不知道，不能够啊。”&lt;end&gt;
+&lt;playername&gt;：“哎呀兄台，十万火急，请多加帮忙。”&lt;end&gt;
+&lt;npc=3541&gt;：“哈哈，我是逗你玩的。信马上送去，我叫罗锋，你这人还真有意思。”&lt;end&gt;
+&lt;playername&gt;：“罗兄，你若知道事情的紧迫，就不会如此想了。”&lt;end&gt;
+&lt;npc=3541&gt;：“哎，罗某多说一句。你这件事，哪怕能顶破了天，帮主现在也不会管。对帮主来讲，这世上没有比祭奠礼更重要的事情了。”&lt;end&gt;
+&lt;playername&gt;：“这倒奇怪了，既然礼年年都举行，怎么能这样看重？对了，举行的是什么典礼呢？祭奠的又是谁？”&lt;end&gt;
+&lt;npc=3541&gt;：“看来你刚出江湖不久，对往事并不了解啊。”&lt;end&gt;
+&lt;playername&gt;：“烦请指教。”&lt;end&gt;
+&lt;npc=3541&gt;：“三十年前，金主完颜亮举倾国之兵犯我边境，是时由于我军调防，在边境上军力空虚，长江天险居然无兵可守。一旦金人突破长江，则大宋危矣。当时老帮主何人我率领丐帮数千子弟星夜驰援，终于在金军攻打采石矶时成功赶到。”&lt;end&gt;
+&lt;playername&gt;：“原来，是三十年前那场采石之战。”&lt;end&gt;
+&lt;npc=3541&gt;：“恩，虽然在虞允文大人的巧妙计算下击溃了金人，我丐帮精锐却也在是役中损失殆尽。四大长老两死两伤，老帮主更是与天忍教前代教主完颜宏烈互拼内力而亡。为了祭奠死去的英灵，石帮主上任后，便决定每年举行一次礼。”&lt;end&gt;
+&lt;playername&gt;：“难怪看得如此重要。”&lt;end&gt;
+&lt;npc=3541&gt;：“其中原因甚多，细的就不讲了。”&lt;end&gt;
+&lt;npc=36&gt;：“老罗，帮主让那天王的信使去见他。”&lt;end&gt;
+&lt;npc=3541&gt;：“现在这忙得晕头转向的，帮主还能拨冗相见，你的面子够大。快去吧。”&lt;end&gt;
+&lt;playername&gt;：“那回头聊。” &lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3541</Value>
+              </dialognpc>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1476</Value>
+              </number>
+              <number>
+                <Value>2983</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>准备好了吗？我们这就出发去燕子坞外围。</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>和罗锋对话让他带我去燕子坞</Value>
+              </txt>
+              <txt>
+                <Value>和罗锋对话让他带我去燕子坞</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15200</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去祭奠礼场找到丐帮帮主石轩辕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“石帮主。”&lt;end&gt;
+&lt;npc=30&gt;：“是天王的信使吧，杨铁心帮主的信我已经看过了，你先在我身边办差吧。其它的事情不急。”&lt;end&gt;
+&lt;playername&gt;：“石帮主，天王帮现在危在旦夕，五毒教随时会北上临安，若不截住他们，朝廷危矣。”&lt;end&gt;
+&lt;npc=30&gt;：“天王帮的情况，我丐帮弟子随时有急报送来。现下江南靠近青螺岛的三个分舵都全力回援，围岛官军也渐渐撤除了，不必担心。”&lt;end&gt;
+&lt;playername&gt;：“撤除？”&lt;end&gt;
+&lt;npc=30&gt;：“他们是为了韩侂胄大人和那封太上皇的密诏，如今韩大人已不在岛上了，何必再围困下去？给自己多树立一个敌人。”&lt;end&gt;
+&lt;playername&gt;：“既然如此，在下告辞了。石帮主抽不出功夫，我总得去其他门派碰碰运气，不能让五毒众人入京暗助那毒妇。”&lt;end&gt;
+&lt;npc=30&gt;：“你这个人，怎么如此性急？我没有说过不帮忙吧。倒是你，难道杨铁心帮主没有讲过，让你留在丐帮历练吗？”&lt;end&gt;
+&lt;playername&gt;：“帮主信上写了？”&lt;end&gt;
+&lt;npc=30&gt;：“是的。待祭奠礼一完，我必会处理此事。现在你先替我办一件事，也算历练一番，让我不负杨铁心帮主的良苦用心。”&lt;end&gt;
+&lt;playername&gt;：“好吧，不知是何事？”&lt;end&gt;
+&lt;npc=30&gt;：“我丐帮祭奠礼邀请了一些相熟的武林同道，却也有些生面孔前来观礼。从蛛丝马迹中可以看出，恐怕有人对我丐帮图谋不轨，你以丐帮弟子的名义与他们闲聊一番，查查这些人的底细。另外再帮我看看各门各派送来的礼盒，瞧瞧其中有没有什么问题。”&lt;end&gt;
+&lt;playername&gt;：“不知具体安排各路英雄的接待人是谁？”&lt;end&gt;
+&lt;npc=30&gt;：“你不是刚从天王帮来吗，就是原来天王的长老裘止水。”&lt;end&gt;
+&lt;playername&gt;：“让裘长老招待天下英雄，这样的安排恐怕不太好吧？”&lt;end&gt;
+&lt;npc=30&gt;：“正是因为裘长老曾在天王担任要职，这个差使才必须他来做。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=30&gt;：“正是因为裘长老曾在天王担任要职，这个差使才必须他来做。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去祭奠礼场找到丐帮帮主石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>去祭奠礼场找到丐帮帮主石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{137,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>丐帮的祭奠礼，搀杂进了来历不明的人物，我要查清此事</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>31</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“裘长老，又见面了。”&lt;end&gt;
+&lt;npc=31&gt;：“是&lt;playername&gt;啊，怎么大老远跑来丐帮了。”&lt;end&gt;
+&lt;playername&gt;:“您走后不久，天王帮受到了朝廷军队和一些武林门派的围攻，其中原因复杂，一言难尽。总之我来丐帮，一方面是带信给石帮主，让他率众阻截住五毒教北上暗助李后夺取帝位的阴谋，一方面是过来历练历练。”&lt;end&gt;
+&lt;npc=31&gt;：“杨铁心……是个好帮主。他这是怕你受难啊。”&lt;end&gt;
+&lt;playername&gt;:“我晓得。帮主在我临行前交给了我一封信，你先看看。”&lt;end&gt;
+&lt;npc=31&gt;：“这……哎，何必多此一举，被好事之徒拿住，又来反诬他。他信上讲，为了顾全大局，虽明知奸细另有其人，却不得不如此。我老裘一把岁数了，什么没有见过，杨铁心是好是歹，我怎会看不出来。”&lt;end&gt;
+&lt;playername&gt;:“既然如此，将来真相大白之日，还回天王帮吗？”&lt;end&gt;
+&lt;npc=31&gt;：“哪里不是江湖？若存心做一些事情，在哪里都可以做。石轩辕是一个有雄图大志之人，留在丐帮或许对我更好。不过我相信天王在杨铁心的治理下，也会焕然一新。到了哪里，我也不会忘记，自己是天王帮的人。”&lt;end&gt;
+&lt;playername&gt;:“恩，对了，石帮主让我来跟着你办些事。检查检查过来观礼的宾客，以及各个门派送来的礼盒。帮主担心有人会暗中捣乱。”&lt;end&gt;
+&lt;npc=31&gt;：“恩，我正为此事发愁，自己一个人确实忙不过来。这些宾客中有些是不请自来，并非每个人的意图都那么光明正大，你的能力我清楚，能替我省不少事。活干得漂亮点，石帮主不是个嫉妒贤能之人，你在他手里会有大用的。”&lt;end&gt;
+&lt;playername&gt;:“明白。”&lt;end&gt;
+&lt;npc=31&gt;：“这样，崆峒派、青城山和霹雳火雷家的门人都已经抵达了，你替我接待接待他们。另外江南神枪方氏、翠烟门、少林、武当、盐帮五派也遣人送来了贺礼，你都检查检查。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=31&gt;：“先替我接待接待崆峒派、青城山和霹雳火雷家的门人吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>询问裘止水关于祭奠礼的事情</Value>
+              </txt>
+              <txt>
+                <Value>询问裘止水关于祭奠礼的事情</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{136,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16300</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看看这些没有接到请柬之人，来燕子坞是否心怀叵测</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>33</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“崆峒传人，欢迎来我丐帮参与祭奠礼。”&lt;end&gt;
+&lt;npc=33&gt;：“不请自来，望贵帮体谅。本派早听闻丐帮的祭奠礼赫赫有名，尽显江南第一大帮气象，今日有幸能参与此会，荣幸之至。”&lt;end&gt;
+&lt;playername&gt;：“您太客气了，请问你是崆峒派哪位高人？”&lt;end&gt;
+&lt;npc=33&gt;：“在下乃临安分舵的弟子。”&lt;end&gt;
+&lt;playername&gt;：“这样低的身份……”&lt;end&gt;
+&lt;npc=33&gt;：“你说什么？”&lt;end&gt;
+&lt;playername&gt;：“哦，请贵客好生歇息。”&lt;end&gt;
+&lt;npc=33&gt;：“烦劳了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>测探崆峒派门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>测探崆峒派门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>34</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“青城传人，长路劳顿，可歇息得好。”&lt;end&gt;
+&lt;npc=34&gt;：“龟儿子就歇得好，上千里的路，跑死老子咯。”&lt;end&gt;
+&lt;playername&gt;：“呵呵，青城传人能不远千里而来，是我丐帮的荣幸。”&lt;end&gt;
+&lt;npc=34&gt;：“是老子的不幸。掌门那死老头就是喜欢讲虚礼。如今我青城剑派称霸巴蜀，你丐帮早就沦为三流道会，观礼个屁啊。”&lt;end&gt;
+&lt;playername&gt;：“青城传人，请你说话自重。”&lt;end&gt;
+&lt;npc=34&gt;：“格老子，我要睡觉了，你走吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>测探青城派门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>测探青城派门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>35</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“雷家子弟能来，我丐帮脸上有光。”&lt;end&gt;
+&lt;npc=35&gt;：“呵呵，早听闻丐帮新帮主雷厉风行，家主特令我送来贺礼，小小意思，不成敬意。”&lt;end&gt;
+&lt;playername&gt;：“能来就已够给面子，再客套就折煞我等了。”&lt;end&gt;
+&lt;npc=35&gt;：“不巧啊，在下另有要事去办，不能多留，就此别过了。”&lt;end&gt;
+&lt;playername&gt;：“既然有事，不便强留。”&lt;end&gt;
+&lt;npc=35&gt;：“&lt;if me.nSex==0&gt;仁兄&lt;else&gt;侠女&lt;endif&gt;是个明白人。”&lt;end&gt;
+&lt;playername&gt;：“多嘴一问，究竟何事如此匆忙？”&lt;end&gt;
+&lt;npc=35&gt;：“啊，我们家主的二小姐有一位闺中秘友来到江南，在下需得去临安迎接她。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>测探霹雳火雷家门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>测探霹雳火雷家门人的目的</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17800</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>各个门派送来的礼盒，需要一一查看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1504</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <txt>
+                <Value>北斗七星横夜半，清歌一曲断君肠</Value>
+              </txt>
+              <txt>
+                <Value>这是传说中“北斗枪”后人的秘谱？</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{七星枪谱,20,1,138,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开江南神枪方氏的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>打开江南神枪方氏的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1505</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <txt>
+                <Value>花候，花候，岁岁年年人瘦</Value>
+              </txt>
+              <txt>
+                <Value>紫金牡丹含苞欲放，似有暗香袭来……</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{紫星牡丹,20,1,139,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开翠烟门的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>打开翠烟门的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1506</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <txt>
+                <Value>凡所有相，皆是虚妄</Value>
+              </txt>
+              <txt>
+                <Value>一本《金刚般若波罗蜜经》，南无阿弥陀佛！</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{金刚经,20,1,140,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开少林派的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>打开少林派的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1507</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <txt>
+                <Value>三界之上，眇眇大罗。上无色根，云层峨峨</Value>
+              </txt>
+              <txt>
+                <Value>“符箓三宗”分衍超度经，稀有可见一斑。</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{超度亡魂经,20,1,141,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开武当派的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>打开武当派的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1508</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <txt>
+                <Value>腰缠万贯，非贵即贾</Value>
+              </txt>
+              <txt>
+                <Value>五……五十万两，真是财大气粗啊！</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{五十万两银票,20,1,142,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>打开盐帮的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>打开盐帮的礼盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到裘止水回复调查得到的情况</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>31</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“裘前辈，我已与崆峒、青城、雷家三派的门人对过话，并没有听出他们有图谋不轨之心，反倒发现这些小门小派的门人都已经瞧不起丐帮了。或者派身份低下之人前来观礼，或者匆匆路过，或者出言不逊，这些人的言行，再好涵养的人，也有些受不了。”&lt;end&gt;
+&lt;npc=31&gt;：“哼，无知之辈。对了，礼盒验看得如何？”&lt;end&gt;
+&lt;playername&gt;：“礼物都恰如其分，没有问题。”&lt;end&gt;
+&lt;npc=31&gt;：“奇怪了，难道是帮主的感觉错了？”&lt;end&gt;
+&lt;playername&gt;：“不知为何，我总有种不太好的预感。”&lt;end&gt;
+&lt;npc=31&gt;：“恩，裘某也同你一样。还是小心些好。”&lt;end&gt;
+&lt;npc=36&gt;：“裘长老，落枫坡那一路好象出了问题，宾客们被堵在坡下上不来了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到裘止水回复调查得到的情况</Value>
+              </txt>
+              <txt>
+                <Value>找到裘止水回复调查得到的情况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000000A</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{138,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{139,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{140,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{141,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{142,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

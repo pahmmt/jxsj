@@ -1,0 +1,430 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001A2" name="秘访鞑靼" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1835&gt;：“&lt;playername&gt;，你是否认识当朝宰相赵汝愚呀？”&lt;end&gt;
+&lt;playername&gt;：“认识呀，怎么了？”&lt;end&gt;
+&lt;npc=1835&gt;：“这就对了。赵府的家丁方才来请老爷赴宴，听说你也在此，回去禀报了赵宰相。他马上让家丁回来了一趟，说是请你过去一叙。”&lt;end&gt;
+&lt;playername&gt;：“嗯，好吧，我这便去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“赵相，您找我？”&lt;end&gt;
+&lt;npc=813&gt;：“正是。有一件机密要事，想请你帮忙。”&lt;end&gt;
+&lt;playername&gt;：“相爷请讲。”&lt;end&gt;
+&lt;npc=813&gt;：“你可知道鞑靼人？”&lt;end&gt;
+&lt;playername&gt;：“是北方草原上的游牧人吧。”&lt;end&gt;
+&lt;npc=813&gt;：“正是。这些人精擅骑射，比故辽，金国擅骑的战士有过之而无不及。只是部落之间不齐心，没有出众的领袖，所以一直分崩离析，无从捏成一只铁拳。近来我听闻金国在加强北方边境的防御，料到草原上出了什么变故。便派了一队斥候乔装成商队去草原打探。”&lt;end&gt;
+&lt;playername&gt;：“大人是担心鞑靼人为患北方？”&lt;end&gt;
+&lt;npc=813&gt;：“前有群狼，不要再添一只猛虎啊。不过我们与这队斥候已有一周失去了联络。”&lt;end&gt;
+&lt;playername&gt;：“会不会是路上耽搁了？”&lt;end&gt;
+&lt;npc=813&gt;：“不会。这些斥候经过精心训练，绝不可能出差池。过了通信时间，肯定出了问题。所以我想派一位得力的人去调查，可巧你现在京师。你对北方也有所了解，此事你便是最合适的人选，事关国家命运，请万勿推辞。”&lt;end&gt;
+&lt;playername&gt;：“好吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去一趟赵汝愚的相府</Value>
+              </txt>
+              <txt>
+                <Value>去一趟赵汝愚的相府</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>受赵相之命前往北方草原寻访那只失踪的商队</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1907</Value>
+              </number>
+              <number>
+                <Value>3589</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去桑干河寻访商队</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1763</Value>
+              </number>
+              <number>
+                <Value>3869</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去克烈部营地寻访商队</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1622</Value>
+              </number>
+              <number>
+                <Value>3549</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去阴山马场寻访商队</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找遍了敕勒川，只能看看白音谷中有没有商队的踪迹了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1808</Value>
+              </number>
+              <number>
+                <Value>3355</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>看看白音谷中有没有商队的踪迹</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=2253&gt;：“前面是什么人？站住！”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2253</Value>
+              </fightnpc>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我意外的在白音谷中发现了商队的痕迹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1836</Value>
+              </dialognpc>
+              <number>
+                <Value>114</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄弟，你等可是南人？”&lt;end&gt;
+&lt;npc=1836&gt;：“正是。”&lt;end&gt;
+&lt;playername&gt;：“兄弟可认识一位姓赵的宰相？”&lt;end&gt;
+&lt;npc=1836&gt;：“你是？”&lt;end&gt;
+&lt;playername&gt;：“在下乃是赵相派来接应你们之人。一发觉与你们失去联络，赵相便派我快马赶来草原。”&lt;end&gt;
+&lt;npc=1836&gt;：“我们正是被谷口外那队克烈部的骑兵盯上了。他们并不知道我等乃是南宋斥候，只是想抢我等货物。可货物中藏有克烈部敌人的信物，若被发现必遭横死。我们一路躲避，也不敢发信号通知大人，就是怕被鞑靼人知道我们的来历。”&lt;end&gt;
+&lt;playername&gt;：“原来如此，现下谷外已被我杀出一条血路，你等速速离去吧。”&lt;end&gt;
+&lt;npc=1836&gt;：“多谢英雄！后会有期。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与商队首领对话</Value>
+              </txt>
+              <txt>
+                <Value>与商队首领对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

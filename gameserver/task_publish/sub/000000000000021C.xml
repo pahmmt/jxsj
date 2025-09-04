@@ -1,0 +1,535 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000021C" name="醉翁之意" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5054&gt;：“你是何人？嘿嘿……嘿，这儿来了个外乡人！侍卫，侍卫快来啊。”&lt;end&gt;
+&lt;playername&gt;：“嘘，莫要声张，我是好人。”&lt;end&gt;
+&lt;npc=5054&gt;：“啊……好人！哦，嘘……我不喊啦！你是外乡人哦，能潜入这地宫之内，好厉害哇！”&lt;end&gt;
+&lt;playername&gt;：“你烂醉成这样，舌头都捋不直了，可是有什么心事！”&lt;end&gt;
+&lt;npc=5054&gt;：“心事？我一介草民醉汉有何心事可言啊，哈哈哈哈……呜呜呜……”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5054</Value>
+              </dialognpc>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5054&gt;：“好人啊，你是不是很厉害，你能潜入这天忍教必然是很厉害了！”&lt;end&gt;
+&lt;playername&gt;：“嘿嘿，自然是不赖了，说说看，你一个汉子哭个什么劲儿？说不定我能帮你呢，我可是认识很多厉害的人哦。”&lt;end&gt;
+&lt;npc=5054&gt;：“我本也是一介粗汉，年轻的时候喜好喝酒，日后也慢慢喜欢上了酒这奇怪的东西。二十年前我参军打仗，空闲之余也常常想方设法的和战友们一起喝酒吹牛，现如今我只能独饮独醉了。”&lt;end&gt;
+&lt;playername&gt;：“是啊，天下无不散之宴席。你的战友们现在何方你可知道？”&lt;end&gt;
+&lt;npc=5054&gt;：“自然是天涯海角各奔东西，加之世道不好能联系上的也就更少了，与我最要好的便是老徐，听说是在凤翔附近安了家，可我现下要伺候着金国老儿，想去和他聚聚也不得啊！”&lt;end&gt;
+&lt;playername&gt;：“人生自是有许多无奈，不过或许我可以成为你们的信使，帮你去一趟凤翔可好？”&lt;end&gt;
+&lt;npc=5054&gt;：“真的？哈哈……嘿嘿……真遇到好人了哦！不过别急，去之前帮我搞些材料，我平日给金国老儿酿酒并不那么上心，这次想弄点佳酿给老朋友尝尝！你且去帮我采集些特殊材料吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与塔拉对话</Value>
+              </txt>
+              <txt>
+                <Value>与塔拉对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮塔拉搜集到足够的酿酒材料</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5056</Value>
+              </dialognpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{青稞,20,1,566,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8株青稞</Value>
+              </txt>
+              <txt>
+                <Value>收集足够的青稞。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1894,3690
+1893,3694
+1896,3695
+1898,3696
+1898,3700
+1902,3700
+1903,3705
+1909,3708
+1913,3709
+1916,3713</Value>
+              </string>
+              <string>
+                <Value>15</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5055</Value>
+              </dialognpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采集中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{野山参,20,1,565,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8株野山参</Value>
+              </txt>
+              <txt>
+                <Value>收集足够的野山参。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1579,3175
+1588,3180
+1582,3184
+1590,3179
+1596,3184
+1603,3184
+1598,3187</Value>
+              </string>
+              <string>
+                <Value>15</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>60000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将这些材料交给塔拉吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5054</Value>
+              </dialognpc>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5054&gt;：“哈哈，青稞和人参！好久好久没这么上好的材料了。这是我塔拉秘制的上等佳酿。老朋友啊你可有福了，快将这秘制的人参酒带给我的故友吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{秘制人参酒,20,1,572,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与塔拉对话</Value>
+              </txt>
+              <txt>
+                <Value>与塔拉对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把人参酒带给凤翔府的老徐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{565,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{566,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5047</Value>
+              </dialognpc>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“徐师傅，我乃义军&lt;playername&gt;，这次前来是因一位故人。”&lt;end&gt;
+&lt;npc=5047&gt;：“故人？”&lt;end&gt;
+&lt;playername&gt;：“徐师傅你可曾记得二十年前共同战斗过的战友塔拉，是他托我给你带来了上等的佳酿。”&lt;end&gt;
+&lt;npc=5047&gt;：“你是说酒鬼塔拉吗？哈哈，他还活着！那老鬼在什么地方，他过得可还好？”&lt;end&gt;
+&lt;playername&gt;：“他如今在天忍教内为别人酿酒，日子也是逍遥自在无拘无束，却是总记挂着年轻时的战友们。这不，他特地去弄了些很珍贵的材料，说是让我无论如何将这酒送到你的手中呢！”&lt;end&gt;
+&lt;npc=5047&gt;：“塔拉，他年轻时是最滑头的一个，说不好汉语的他经常夹杂着蒙古语和我们笑骂，却也心地最好。许多年了，感谢他还没忘记我这个老朋友，希望他一切安好。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与老徐对话</Value>
+              </txt>
+              <txt>
+                <Value>与老徐对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{572,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

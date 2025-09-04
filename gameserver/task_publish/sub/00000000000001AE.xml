@@ -1,0 +1,341 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001AE" name="收服马贼" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1856&gt;：“我们收到的情报中，李安全近来在大力拉拢各大马贼，手段无所不用其极。但究竟到了什么规模却一无所知，希望你能探查探查。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1867</Value>
+              </dialognpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“瞎子，想向你打听打听马贼的消息。”&lt;end&gt;
+&lt;npc=1867&gt;：“嘿嘿，有钱好办事，无钱难通天。有钱没钱？”&lt;end&gt;
+&lt;playername&gt;：“要多少？”&lt;end&gt;
+&lt;npc=1867&gt;：“白银十万两。”&lt;end&gt;
+&lt;playername&gt;：“你抢钱啊!”&lt;end&gt;
+&lt;npc=1867&gt;：“没有银子，就替瞎子我办一件事情。”&lt;end&gt;
+&lt;playername&gt;：“说来听听。”&lt;end&gt;
+&lt;npc=1867&gt;：“替我去嘉峪关，从守军那里偷来楠木的首饰盒。里面是什么东西不需要知道，偷来我自然告诉你。”&lt;end&gt;
+&lt;playername&gt;：“好。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去崔瞎子处打听马贼的情况</Value>
+              </txt>
+              <txt>
+                <Value>去崔瞎子处打听马贼的情况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替崔瞎子去嘉峪关窃取一只楠木的首饰盒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2259</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1645</Value>
+              </dialognpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>楠木首饰盒拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{楠木首饰盒,20,1,284,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10个楠木首饰盒</Value>
+              </txt>
+              <txt>
+                <Value>收集了足够数量的首饰盒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将首饰盒交给崔瞎子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>72000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1867</Value>
+              </dialognpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“瞎子，首饰盒在此，可以将西夏马贼的情况告知我了吧。”&lt;end&gt;
+&lt;npc=1867&gt;：“嘿嘿，西夏马贼有三股大势力，分别是吴黑子，祁毒，柳叶儿。都有几千人的规模。首饰盒拿来。”&lt;end&gt;
+&lt;playername&gt;：“这盒子却是不能给你。”&lt;end&gt;
+&lt;npc=1867&gt;：“你你你……不守信诺吗？”&lt;end&gt;
+&lt;playername&gt;：“你还得告诉我，这些马贼，究竟哪几个与李安全有关系。”&lt;end&gt;
+&lt;npc=1867&gt;：“这条消息，十万两银子可买不到。”&lt;end&gt;
+&lt;playername&gt;：“那这首饰盒你就别想拿到手了。”&lt;end&gt;
+&lt;npc=1867&gt;：“你够狠，算你抓住瞎子的软肋了。西夏的马贼，除了柳叶儿一伙，其余俱已归附李安全！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将首饰盒交给崔瞎子</Value>
+              </txt>
+              <txt>
+                <Value>将首饰盒交给崔瞎子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{284,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

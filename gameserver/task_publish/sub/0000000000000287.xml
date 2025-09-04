@@ -1,0 +1,416 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000287" name="深入秘穴" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5089&gt;：“&lt;playername&gt;，你来得正好。我毕家军在这灵壁泊已经驻守了几月有余，我军粮草弹药也消耗了不少，可我派探子前去金军营地查询，金军营地之中军备不多，却未见补给，这事情确实蹊跷。”&lt;end&gt;
+&lt;playername&gt;：“大将军的意思可是想&lt;playername&gt;前去仔细调查此事？” &lt;end&gt;
+&lt;npc=5089&gt;：“还不急，要知己知彼方可常胜啊。” &lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5089</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5089&gt;：“涟水河北岸的情况要比涟水河南岸复杂的多，纳兰邦烈带领的辽军正规部队也比往常的小股金军更难对付，要打败他们是一件不太容易的事情，单靠军队的战斗力……恐怕……”&lt;end&gt;
+&lt;playername&gt;：“宋金战役刚刚打响，我们不能输在起跑线上，金军的异常可有什么根据？”&lt;end&gt;
+&lt;npc=5089&gt;：“两军对垒，一方面打得是正面交锋的战役，往往更多时候打的是信息和情报仗啊。所以现在我们需要一个人的帮助，他也是我大宋军机情报部的老将，那便是肖毕平。”&lt;end&gt;
+&lt;npc=5089&gt;：“他不仅武功高强，而且作为我军卧底他已经成功打入敌营，他熟悉金军的地形和军事机密，现在若能联络到他，对我方战局定是大有好处。你若见到他可告诉他一句话---蒲草韧如丝，磐石无转移，他便知你身份。”&lt;end&gt;
+&lt;playername&gt;：“大将军果然思维缜密，&lt;playername&gt;这就去办。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到我大宋潜伏在敌营的卧底肖毕平</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5180</Value>
+              </dialognpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5180&gt;：“大胆贼人，胆敢擅自闯我金兵营地，来人！给我拿下！” &lt;end&gt;
+&lt;playername&gt;：“等等……大人可知道，蒲草韧如丝磐石无转移……我的意志如磐石般坚固，想必大人是误会了，我并不是什么贼人，而是有事向大人禀报。” &lt;end&gt;
+&lt;npc=5180&gt;：“哈哈……误会误会啊！好了，尔等都退下吧，这位是为我大金送情报的情报兵！”&lt;end&gt;
+&lt;playername&gt;：“肖将军，我乃……”&lt;end&gt;
+&lt;npc=5180&gt;：“嘘，莫要声张，一句磐石无转移我已然明白。我几年来一直潜伏在金营内部，也为我大宋提供了不少有利情报，可这一次的灵璧泊战役的重要性想必你我都明白，所以万事不得有任何差错。”&lt;end&gt;
+&lt;playername&gt;：“将军说的在理，今日我才知道这金军地下竟然有如此庞大的地下密道，这其中究竟有多少阴谋是我们未知的。”&lt;end&gt;
+&lt;npc=5180&gt;：“这地下密道便是金军扣押重要犯人，存放大量军火以及军备的秘密场所，现在还不是细说的时候。” &lt;end&gt;
+&lt;npc=5180&gt;：“最近金军有一个重要的反扑计划，这计划的具体细节便在一个叫做宝龙的金军总教头手中，你且将他拿下后速速将这计划送与毕将军，事不宜迟，万万小心！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与大宋卧底肖毕平对话</Value>
+              </txt>
+              <txt>
+                <Value>与大宋卧底肖毕平对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败金军总教头宝龙并得到反攻计划书</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5181</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,861,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>事不宜迟，速将金军反攻计划交予毕大将军。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5089</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“毕将军，&lt;playername&gt;从金军密营中回来了，有重要的情报向将军禀报！”&lt;end&gt;
+&lt;npc=5089&gt;：“&lt;playername&gt;辛苦了，此去是否见到了肖将军？可否带回什么新情报？”&lt;end&gt;
+&lt;playername&gt;：“此去得知金军秘密营地建在地下，内藏有大量军备甚至有大宋的俘虏等，不过时间紧急，我一个人的力量又有限，只得挑了最重要的事情做，便是击败了金军总教头宝龙，并且从他身上搜到了一份对我军的反攻计划。”&lt;end&gt;
+&lt;npc=5089&gt;：“&lt;playername&gt;，你真乃我大宋良将，借这计划书我们可以好好的给敌军来个将计就计，哈哈……真是天助我也！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{861,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

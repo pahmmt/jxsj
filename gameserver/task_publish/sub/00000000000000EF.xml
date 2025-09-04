@@ -1,0 +1,151 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000EF" name="护花使者" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=510&gt;：“何方的贼子，真是欺负我翠烟无人，欺负我尹筱雨吗！”&lt;end&gt;</Pop>
+      <Start>&lt;npc=510&gt;：“今早有大胆的采花贼居然仗着人多势众，冲入我翠烟门掳掠了一名女弟子柔柔。目前贼子们已被困在百花阵中。我希望你能去将柔柔解救出来，并替我狠狠教训教训那些不知深浅，生性下作的采花贼。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=2&gt;
+&lt;npc=510&gt;：“柔柔没事，你立了首功！”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2058</Value>
+              </fightnpc>
+              <number>
+                <Value>62</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>28000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">510</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>509</Value>
+              </dialognpc>
+              <number>
+                <Value>2077</Value>
+              </number>
+              <number>
+                <Value>3642</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“柔柔，我是来解救你的，请随我走吧。”&lt;end&gt;
+&lt;npc=509&gt;：“有劳你了。柔柔不怕的，柔柔知道尹姐姐会派人来救我。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>511</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>62</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1837</Value>
+              </number>
+              <number>
+                <Value>3604</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value>1995,3731
+1973,3691
+2051,3607
+2024,3569
+2002,3575
+1950,3539
+1863,3545
+1834,3575
+1851,3604</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>28000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,252 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000202" name="百尺竿头" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“&lt;Playername&gt;你终于回来了，近来感觉武艺可有进境？”&lt;end&gt;
+&lt;Playername&gt;：“不敢隐瞒秋姨，最近总觉得所学武艺已经无法继续精炼，我也常为此事而苦恼。”&lt;end&gt;
+&lt;npc=3570&gt;：“你也莫急，此为习武者所必经之路。拳歌有云：百丈竿头不动人，虽然得入未为真，百尺竿头须进步，十方世界是全身。这句话说的便是习武者需要突破自身极限才能获得更高成就。而然知易行难，想要突破这种体力的极限则需求助伏牛山庄的《百尺经》，此书据说妙用无穷，而我费尽唇舌，也只借来“精进”一篇供你参阅。”&lt;end&gt;
+&lt;Playername&gt;：“那此书现在何处？”&lt;end&gt;
+&lt;npc=3570&gt;：“伏牛山庄的庄主房少龙虽然答应借阅，但是却需要你亲自去取。伏牛山庄位于伏牛山军营，那里是我义军的新营地，你可以通过军营传送人王苍恩前往那里。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4057</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>我来求借《百尺经》</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“房庄主，我是义军的&lt;Playername&gt;，奉首领白秋琳之命前来贵庄求借《百尺经》。”&lt;end&gt;
+&lt;npc=4057&gt;：“唔！是你啊！我看看！果然是人中龙凤！《百尺经》是我祖师爷灵慧禅师由佛经中参悟出来的武经，是武林各派均想借阅的奇书。我父亲临终之前曾经说过《百尺经》只能借阅“精进”一篇给外人看，借此打通他们各路经脉并突破体力限制，发挥他们的潜力，其他各篇则不可借阅。”&lt;end&gt;
+&lt;Playername&gt;：“若能借阅“精进”一篇已是莫大福气，不敢奢求别章。”&lt;end&gt;
+&lt;npc=4057&gt;：“如此甚好，看过《百尺经》便算半个同门，你带着这些香火前往灵慧禅院给祖师爷上炷香吧；上完香找我师兄大通禅师借阅即可。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{香火,20,1,627,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到房少龙</Value>
+              </txt>
+              <txt>
+                <Value>找到房少龙</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往灵慧禅院上香</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,627,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>306</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1436</Value>
+              </number>
+              <number>
+                <Value>2998</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4049&gt;：“善哉！善哉！有缘人终于来了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>向大通禅师求借《百尺经》</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4049</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>请借《百尺经》一读</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“大师！”&lt;end&gt;
+&lt;npc=4049&gt;：“佛曰：不可说，不可说，拿着此物走吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>求借《百尺经》</Value>
+              </txt>
+              <txt>
+                <Value>求借《百尺经》</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

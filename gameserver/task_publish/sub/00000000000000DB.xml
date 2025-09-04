@@ -1,0 +1,66 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DB" name="神秘棋子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>完颜襄：“据说前任教主完颜宏烈曾经安排一批少年斥候秘密潜入南宋境内，长期潜伏，这支力量如果能运用起来，会产生极大的作用。”</Pop>
+      <Start>完颜襄：“前代教主完颜宏烈曾经在生前派出一批少年斥候，打入中原各大门派，长期扎根下来。如今其中的一些人已经死去，另外一些却成了中原各派举足轻重的人物。只是这些人一旦成名，极少有再为天忍效力的，全因名册都掌握在完颜宏烈手中，他一死，证据便灰飞湮灭掉。都是享有侠名之人，没有谁愿意再走回头路。不过终于被我发觉，那份名册应该就藏在冥府归客的身上。请你替我搜索出来，我有大用处。”</Start>
+      <Procedure>完颜襄：“记住，名册可能在任何一个冥府归客的身上。”</Procedure>
+      <Error />
+      <Prize>完颜襄：“有了这本名册，真是如虎添翼，可以大有作为了。”</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>451</Value>
+              </fightnpc>
+              <number>
+                <Value>57</Value>
+              </number>
+              <taskitem>
+                <Value>{28,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

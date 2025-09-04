@@ -1,0 +1,183 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000188" name="襄阳老兵" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1457&gt;：“怒发冲冠，凭阑处，潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。”&lt;end&gt;
+&lt;playername&gt;：“老爷子，这是岳飞将军的《满江红》吧。”&lt;end&gt;
+&lt;npc=1457&gt;：“是啊，每当念起这首词，我就想起了当年跟随岳将军南征北战的日子。我等跟随岳将军大破兀术的“铁浮图”和“拐子马”，乘胜进军朱仙镇，那是何等的威风八面，眼见得收复旧疆，报亡国之耻，指日可待。”&lt;end&gt;
+&lt;playername&gt;：“哦，原来老爷子是岳飞将军的老部下。”&lt;end&gt;
+&lt;npc=1457&gt;：“怎奈朝廷昏庸，奸臣当道，十二道金牌接连而至，岳武穆无奈班师，这抗金大计就没人再提了。驱除鞑虏，还我河山，看来是见不到了。”&lt;end&gt;
+&lt;playername&gt;：“如今金兵屡次犯我大宋，朝廷也派兵抵抗，听说战果丰硕。”&lt;end&gt;
+&lt;npc=1457&gt;：“是吗？我老了，没有力气了，我这有生之年，只希望能再次见到如岳家军那样的神勇无匹，犹如神兵天降，杀得金兵落花流水，收复失地，把金人赶出家园。就没有任何遗憾了。”&lt;end&gt;
+&lt;playername&gt;：“老爷子的爱国热情不减当年。”&lt;end&gt;
+&lt;npc=1457&gt;：“还有一件事，有一些当年我打仗时候用的物品，就已落在战场中。时间太久了，我记性又不太好，希望你能把它们找出来。”&lt;end&gt;
+&lt;playername&gt;：“好的，我这就去。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1623</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>战枪拾取中</Value>
+              </txt>
+              <txt>
+                <Value>得到老兵的战枪</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{老兵的战枪,20,1,263,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>去宋金战场中搜集老兵的战枪</Value>
+              </txt>
+              <txt>
+                <Value>去宋金战场中搜集老兵的战枪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1457</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1457&gt;：“这些都是我当年在岳家军打仗时候用的，看到它们，又让我想起了那段日子，可惜光阴一去不复返了。”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;
+&lt;npc=1457&gt;：“金国又来扰我大宋，双方对峙在襄阳城外，蓄势待发，不知道情况如何。”&lt;end&gt;
+&lt;npc=1457&gt;：“僵卧孤村不自哀，尚思为国戌轮台。夜阑卧听风吹雨，铁马冰河入梦来。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将遗落的武器归还襄阳老兵</Value>
+              </txt>
+              <txt>
+                <Value>将遗落的武器归还襄阳老兵</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{263,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

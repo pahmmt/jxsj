@@ -1,0 +1,167 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000122" name="血腥复仇" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1007&gt;：“剑门关地处大宋和西夏边境，乃是兵家必争之地。由于两国互不相让导致摩擦不断，苦的却是居住在这里的老百姓。那些西夏骑兵常以巡边为由出来劫掠，首领为了保护这里的百姓，这才派我率领义军前来这里驻守。”&lt;end&gt;
+&lt;Playername&gt;：“原来是这样，聂将军辛苦了！”&lt;end&gt;
+&lt;npc=1007&gt;：“苦倒是没什么，只是义军人数不多，加之守关宋军不愿出力，龟缩不前，西夏骑兵仍是劫掠如常。我看你武艺高强，非我等所能匹敌。所以想请你前去好好教训那些擅入宋境的黑水云骑兵，你看怎么样？”&lt;end&gt;
+&lt;Playername&gt;：“此乃义之所在，我必定尽全力而为！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2188</Value>
+              </fightnpc>
+              <number>
+                <Value>111</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1091</Value>
+              </fightnpc>
+              <number>
+                <Value>111</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“如若再敢来犯，定不轻饶！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回转义军营地向聂文成复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1007</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“一切已照将军所说行事！”&lt;end&gt;
+&lt;npc=1007&gt;：“真是辛苦你了！我替这里的百姓谢谢你！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向聂文成复命</Value>
+              </txt>
+              <txt>
+                <Value>向聂文成复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

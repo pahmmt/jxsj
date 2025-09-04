@@ -1,0 +1,181 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000011" name="影者出逃" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=50&gt;：“事已至此，林东山有没有可能还在藏在阵内？”&lt;end&gt;
+&lt;npc=51&gt;：“老巩你真当我瞎了啊，他要还在阵内，就是被老虎吞到肚子里我都给他拽出来，不可能。”&lt;end&gt;
+&lt;npc=52&gt;：“看来林东山是真跑了，咱们分头追吧。追回来看我怎么收拾这小子。”&lt;end&gt;
+&lt;npc=50&gt;：“我们分头追。&lt;playername&gt;对这里的地形不熟，你再去猛虎巷内搜搜，看有没有留下什么蛛丝马迹。一顿饭的功夫后在这里汇合，再做下一步计议。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>54</Value>
+              </fightnpc>
+              <number>
+                <Value>407</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我从虎嘴中找到了一张简易地图，去找巩少榛回报此事吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>50</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“我从虎嘴里找到了这个。”&lt;end&gt;
+&lt;npc=50&gt;：“恩，从地图上看，应该是向北跑了。”&lt;end&gt;
+&lt;npc=51&gt;：“和我发现的脚印一致，就是往那个方向跑了。”&lt;end&gt;
+&lt;npc=50&gt;：“这小子挺精的，那个方向出去就是个镇子，混到人流里就不好找了。”&lt;end&gt;
+&lt;npc=51&gt;：“还说啥，追吧。”&lt;end&gt;
+&lt;npc=52&gt;：“如果是他醉酒被抓之后准备的地图还好办，如果不是，最坏的打算，林东山可能是个奸细！”&lt;end&gt;
+&lt;npc=51&gt;：“老冷你不要大白天吓唬人好不好，我这冷汗都出来了。”&lt;end&gt;
+&lt;npc=50&gt;：“一起追吧，谁追到了发烟火为信。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找巩少榛回报此事吧</Value>
+              </txt>
+              <txt>
+                <Value>去找巩少榛回报此事吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000012</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

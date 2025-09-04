@@ -1,0 +1,450 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000018E" name="老默尔" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=839&gt;：“你路过虎口镇的时候有见过大默尔和小默尔吗？我是他们的姑姑呢！这两个孩子很淘气，总是喜欢给我惹事，不过他们的父亲老默尔可是个了不起的人呢。他一直潜心于医术，立志要写一部《百草图谱》囊括所有草药的功效。所以每年他都没多少时间在家，一直在外游历。”&lt;end&gt;
+&lt;playername&gt;：“他们家的名字可真怪……”&lt;end&gt;
+&lt;npc=839&gt;：“是啊！老默尔并不是我亲哥哥，而是我的义兄，自从我嫂子去世以后这两个孩子就全由我照顾。如今大默尔已经不小了，我给想给他张罗一门亲事，但是我义兄却迟迟不归。我记得他临走时说会去伏牛山的崇山峻岭中采药，要是你遇上他，请一定让他回家一趟。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>1838</Value>
+              </number>
+              <number>
+                <Value>3388</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>在伏牛山找到老默尔</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=645&gt;：“求求你们，让我回家吧，我家里还有两个孩子等我回去……”&lt;end&gt;
+&lt;npc=952&gt;：“我们大当家让你留在这里看病，你就要留在这里看病。你要是再罗嗦，小心我抽你！”&lt;end&gt;
+&lt;playername&gt;：“你是老默尔？你义妹小樱请我转告你回家一趟呢。”&lt;end&gt;
+&lt;npc=645&gt;：“你看我现在哪里回得去啊！我来伏牛山不久就被这伙山贼掳来这里，他们大当家要我留下来给他们治病。三当家李裘抢了我用了几十年的渡厄金针，四当家朱大棚又夺了我的《百宝图谱》，这可都是我的命根子啊！”&lt;end&gt;
+&lt;playername&gt;：“你先耐心等等，等我帮你夺回这些东西就带你离开这里。李裘和朱大棚现在何处？”&lt;end&gt;
+&lt;npc=645&gt;：“李裘在山寨周围看守，朱大棚听说带人去夺人家的庄园去了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>夺回老默尔的《百草图谱》和渡厄金针</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>573</Value>
+              </fightnpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,91,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>574</Value>
+              </fightnpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,92,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去牛栏寨带老默尔逃离那里</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>645</Value>
+              </dialognpc>
+              <number>
+                <Value>1830</Value>
+              </number>
+              <number>
+                <Value>3382</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这是你的金针和图谱，此地不宜长谈，我们还是离开这里吧！”&lt;end&gt;
+&lt;npc=645&gt;：“好！”&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>644</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1758</Value>
+              </number>
+              <number>
+                <Value>3234</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1830,3386
+1829,3396
+1825,3409
+1819,3422
+1815,3434
+1811,3442
+1799,3416
+1787,3390
+1776,3360
+1774,3330
+1772,3285
+1762,3246
+1758,3234</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.1</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“到这里应该安全了，你一路多保重！”&lt;end&gt;
+&lt;npc=645&gt;：“请问恩人是出自哪门哪派？日后遇到贵门弟子，老夫也好略尽绵力！”&lt;end&gt;
+&lt;playername&gt;：“我们是大宋义军，些许小事，老丈不必记在心上。”&lt;end&gt;
+&lt;npc=645&gt;：“义军？喔！看来是自己人了呢，老夫早些年和义军有些交情。请转告你们首领，日后有什么吩咐尽管开口，老默尔一定不会含糊。告辞！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将伏牛山发生的事情禀告给义军首领白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{91,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{92,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“难得你有闲暇回来，住几日再走吧！”&lt;end&gt;
+&lt;playername&gt;：“我在伏牛山牛栏寨救出一名叫老默尔的郎中，他说早些年和义军有过交情，还说以后要我们有话尽管开口，秋姨知道怎么回事吗？”&lt;end&gt;
+&lt;npc=3570&gt;：“老默尔……老默尔……你说的难道是默尔？以前我们义军曾感染过瘟疫多亏他相助呢。那个时候我还小，只记得他是一个非常执着的人。看来冥冥之中真是有天意注定，不然他也不会被我们义军所救了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将此事禀告白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>将此事禀告白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

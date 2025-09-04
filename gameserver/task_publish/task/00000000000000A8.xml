@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="00000000000000A8" name="香螺花" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>1</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="000000000000014B" name="香螺花" describe="替卢笑贫去采集一些香螺花。他答应了五毒教红旗旗主蝶飘飘要替她采摘些青螺岛上独有的美丽花朵。&#xD;&#xA;&lt;stepdesc&gt;&lt;pos=香螺花,55,1712,3359&gt;就分布在飞云台附近，但这种花扎根较深，采集它们可能需要一定时间。&#xD;&#xA;&lt;stepdesc&gt;采到了足够多的香螺花，可以回去将他交给&lt;pos=卢笑贫,55,1672,3318&gt;了。" refer="000000000000014B">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>18</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=100000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=100,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>18</Value>
+          </dialognpc>
+          <txt>
+            <Value>采到了足够多的香螺花，可以回去将他交给&lt;pos=卢笑贫,55,1870,3600&gt;了。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>20</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=卢笑贫,55,1672,3318&gt;，可以接到任务【香螺花】。</Value>
+          </txt>
+          <number>
+            <Value>1</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>20</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

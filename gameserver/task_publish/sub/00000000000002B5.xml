@@ -1,0 +1,164 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002B5" name="趣味竞技" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3561&gt;：“是&lt;playername&gt;啊，你好久没来看我老人家啦，怎么今天有空啊。”&lt;end&gt;
+&lt;playername&gt;：“甜酒叔瞧你说的，我这不是来看您了嘛。我最爱听甜酒叔您说故事了。” &lt;end&gt;
+&lt;npc=3561&gt;：“嘿嘿，最近听闻金山大侠举办家族趣味竞技大赛，并委托了晏若雪负责相关事宜。村里的年轻人很多都去参加了，据说既充满乐趣而且奖励丰厚。你要是有兴趣可以去参加一下。”&lt;end&gt;
+&lt;playername&gt;：“嗯，我这就去参加。”&lt;end&gt;
+&lt;npc=3561&gt;：“你说是老叔我让你去参加的，晏若雪会在你完成第一场竞技后额外给你些礼物。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>238</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>参加一场家族趣味竞技</Value>
+              </txt>
+              <txt>
+                <Value>参加一场家族趣味竞技</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去看看晏若雪给我准备了什么礼物。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3603</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3603&gt;：参加完一场比赛了啊，感受如何？&lt;end&gt;
+&lt;playername&gt;：太有意思了！&lt;end&gt;
+&lt;npc=3603&gt;：以后有空多来参加，这些是我特地给你准备的。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和晏若雪交谈</Value>
+              </txt>
+              <txt>
+                <Value>和晏若雪交谈</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>鬼话连篇的小鬼</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

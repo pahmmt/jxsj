@@ -1,0 +1,801 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000001C" name="身陷蛇窝[男]" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=84&gt;：“剩下的事情交给我这老头子来处理，你回去向红旗旗主复命吧。”&lt;end&gt;
+&lt;playername&gt;：“关老爷子一切珍重，我走了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>82</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“旗主，狩猎营寨的事情我已处理好。黑旗管事关老爷子也感激我旗的鼎力相助。”&lt;end&gt;
+&lt;npc=82&gt;：“关万山说的话那还不是跟放屁一样，也只有你相信咯。”&lt;end&gt;
+&lt;playername&gt;：“怎么？老爷子的话不可信？”&lt;end&gt;
+&lt;npc=82&gt;：“那倒不是。可黑旗是韩破山的天下，哪里轮得到他来话事。”&lt;end&gt;
+&lt;playername&gt;：“原来如此。”&lt;end&gt;
+&lt;npc=82&gt;：“我这里现在暂时也没有太要紧的任务，不过殷氏兄妹是我五毒的宝贝，不能出一点闪失。上次夷人袭击他们，是我疏于防范了，这种事绝不能再出现。我的部署中，你与他们是最投契的，还是你去吧。有事情多分担一些，别累坏了他俩。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=82&gt;：“松涛别院离此不远，你不会笨到找不到吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>把黑旗狩猎营寨的事情回报给蝶飘飘</Value>
+              </txt>
+              <txt>
+                <Value>把黑旗狩猎营寨的事情回报给蝶飘飘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>28</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>蝶飘飘派我去松涛别院保护殷氏兄妹这对宝贝的安全</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>88</Value>
+              </dialognpc>
+              <number>
+                <Value>422</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=88&gt;：“啊，一楼哥哥，你这么快就回来啦！”&lt;end&gt;
+&lt;playername&gt;：“呵呵，是啊。旗主派我回来给你们打下手。”&lt;end&gt;
+&lt;npc=88&gt;：“太好了，有一楼哥哥这样的高手在，我和哥哥就可以想去哪里采药就去哪里采药咯。”&lt;end&gt;
+&lt;playername&gt;：“呵呵，可别累坏了我这条老命哟。”&lt;end&gt;
+&lt;npc=88&gt;：“嘻嘻，放心吧。太远的路，小童不会让一楼哥哥跑的。对了，我知道在金莓林附近有一种叫朱红果的东西，吃了能令人增长功力，一楼哥哥去采些来，小童配好药给你，这样你又可以增长几分功力了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=88&gt;：“朱红果在金莓林附近一楼哥哥去采些来，小童好配好药给你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>返回松涛别院找殷童</Value>
+              </txt>
+              <txt>
+                <Value>返回松涛别院找殷童</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>殷童让我去采一些朱红果来，她制好成药送给我</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1511</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>红脸耀明珠，绛唇含白玉</Value>
+              </txt>
+              <txt>
+                <Value>得到一枚朱红果!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{朱红果,20,1,156,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/6个朱红果</Value>
+              </txt>
+              <txt>
+                <Value>采集到了朱红果</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1742,3631
+1744,3609
+1749,3646
+1759,3627
+1758,3641
+1753,3668
+1770,3641
+1762,3660
+1775,3686
+1778,3666
+1790,3678
+1788,3648</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>35000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>采摘到朱红果，回去将果子交给守门童子吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>89</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“童子，来把朱红果拿着。”&lt;end&gt;
+&lt;npc=89&gt;：“一楼哥哥大事不好了！”&lt;end&gt;
+&lt;playername&gt;：“怎么了？慢慢讲。”&lt;end&gt;
+&lt;npc=89&gt;：“童童姐姐为了替你取朱红果的药引小舌草，不顾我的劝告跑去了赤练蛇窝。恰好赤练蛇王捕食回来，将她堵在洞里了。我赶回来找人，却谁都找不到。”&lt;end&gt;
+&lt;playername&gt;：“你放心，我立即去救她。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=89&gt;：“童童姐姐被赤练蛇王堵在洞里了。快去救她啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>采摘到朱红果，回去将果子交给守门童子吧</Value>
+              </txt>
+              <txt>
+                <Value>采摘到朱红果，回去将果子交给守门童子吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{156,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>80</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>11000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>殷童孤身犯险，被赤练蛇王堵在了洞中，赶快去救她</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>90</Value>
+              </fightnpc>
+              <number>
+                <Value>412</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>23000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>杀掉了歹毒的赤练蛇王，赶紧护送殷童返回松涛别院吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>92</Value>
+              </dialognpc>
+              <number>
+                <Value>1638</Value>
+              </number>
+              <number>
+                <Value>3068</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“童童妹妹，你也太不小心了，我刚和你说过不要孤身犯险，回头你就给忘了。”&lt;end&gt;
+&lt;npc=92&gt;：“我，我是想替一楼哥哥把这小舌草早日采到，这样才好早日制出能增加功力的良药。”&lt;end&gt;
+&lt;playername&gt;：“可那赤练蛇王哪是好相与的？我都颇费了番功夫才制伏它。”&lt;end&gt;
+&lt;npc=92&gt;：“这个时辰它一般都是在外觅食的，以前我来这里也没有遇到过凶险，偏是这次……”&lt;end&gt;
+&lt;playername&gt;：“好了，快些回家吧。别让你大哥担心。”&lt;end&gt;
+&lt;npc=92&gt;：“哥哥你看，小舌草我拿到了哦。”&lt;end&gt;
+&lt;playername&gt;：“妹子真是能干。”&lt;end&gt;
+&lt;npc=92&gt;：“其实……其实……我们这教中许多人，都是当年朝廷清剿五毒教时逃出的遗孤，舅舅不疼姥姥不爱的，一切都得靠自己。哥哥以后不要对小童那么凶好不好？”&lt;end&gt;
+&lt;playername&gt;：“恩，我一定好好照顾你，此地不宜久留，我们快走吧。”&lt;end&gt;
+&lt;npc=92&gt;：“好的。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>94</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>412</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>1200</Value>
+              </number>
+              <number>
+                <Value>1595</Value>
+              </number>
+              <number>
+                <Value>3124</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1605,3092
+1602,3107
+1598,3118
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=92&gt;：“侠士就请送到这里吧，此地离洞口不远了。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>23000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>80</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>终于成功将殷童送回了松涛别院，她嘱咐我空闲时去东厢见她</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>88</Value>
+              </dialognpc>
+              <number>
+                <Value>422</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“童童妹子，是不是又有什么药草需要采集？”&lt;end&gt;
+&lt;npc=88&gt;：“哈哈，哪里来那么多药草的嘛。”&lt;end&gt;
+&lt;playername&gt;：“我见山谷森林中都是大把大把的草药啊。”&lt;end&gt;
+&lt;npc=88&gt;：“傻哥哥，那些寻常的花草我们想要多少有多少。我和大哥要寻的，都是那种百十年才出一味，或者生在绝地的奇花异草。既然是奇花异草，怎么可能一年四季每天都碰得上。”&lt;end&gt;
+&lt;playername&gt;：“哦，那我这差使还真清闲。”&lt;end&gt;
+&lt;npc=88&gt;：“是啊，所以今天反正无事，想与哥哥聊聊家常。”&lt;end&gt;
+&lt;playername&gt;：“聊什么呢？”&lt;end&gt;
+&lt;npc=88&gt;：“我记得十多年前，那时我还很小，爹爹妈妈都很疼我。我们隐居在一个靠山的小镇里，过着与世无争的日子。可惜他们始终出身五毒。当一个当年五毒教的旧友遭人追杀，逃到那小镇里时，爹爹妈妈收留了她。”&lt;end&gt;
+&lt;playername&gt;：“这个消息，在当时的武林足以掀起风波。当年朝廷对五毒的剿杀令，几乎令五毒灭绝。”&lt;end&gt;
+&lt;npc=88&gt;：“是，终于被那五毒故人的仇家知道了爹爹妈妈的所在。仇家遍邀所谓的白道大侠追杀而来。母亲护着当时不到三岁的我们兄妹逃跑，父亲留下断后，被乱剑捅成了刺猬。后来走到关帝庙，母亲也箭伤发作，大出血而亡。”&lt;end&gt;
+&lt;npc=88&gt;：“是一同逃亡的那个故人，一位五毒教的丑妇救了我们，教我们医术。所以长大后我们兄妹发誓，绝不医治一个所谓白道中人。大侠，不过是靠杀的人多杀出的名声，哪个手上沾的人血多，哪个就是大侠。”&lt;end&gt;
+&lt;playername&gt;：“没有料到，童童妹子的经历这样坎坷。”&lt;end&gt;
+&lt;npc=88&gt;：“我这都不算什么，毕竟还有个哥哥可以依靠。五毒教里更苦的大有人在，我只是不明白，那些正道人士难道就没有一点怜悯之心吗？”&lt;end&gt;
+&lt;playername&gt;：“这些深层的问题，不是你一个小女孩该去想的。照顾好自己，就是对九泉之下父母的最好安慰了。”&lt;end&gt;
+&lt;npc=88&gt;：“恩，我一定会的，一楼哥哥。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去松涛别院找殷童</Value>
+              </txt>
+              <txt>
+                <Value>去松涛别院找殷童</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000001D</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

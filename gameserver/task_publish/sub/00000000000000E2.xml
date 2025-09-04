@@ -1,0 +1,183 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E2" name="无念劫" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=467&gt;：“此人花这么多的心思设计，究竟是为了什么？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=467&gt;：“近日有人将一封信辗转交到了我的手中。此人自己却未露面。”　&lt;end&gt;
+&lt;playername&gt;：“是怎样一回事情呢？”&lt;end&gt;
+&lt;npc=467&gt;：“根据寄信人的说法，在我峨嵋山的九老峰上埋藏着一个箱子。这箱子里藏有一封书信，信中提到了毒医张善德当年的一桩密闻。那老毒医曾经予我有救命之恩，如今恰好找到机会能报答，所以此行我是希望去的。”　&lt;end&gt;
+&lt;playername&gt;：“那寄信人善恶尚不可知，师太就这样去太危险了。”&lt;end&gt;
+&lt;npc=467&gt;：“恩，也好。那便如此，你替我去开那箱子，我在暗中保护你，你看如何？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1538</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>神秘箱子开启中</Value>
+              </txt>
+              <txt>
+                <Value>得到书信一封</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{毒医的来历,20,1,55,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1封信笺。</Value>
+              </txt>
+              <txt>
+                <Value>前往神秘林地取得信笺</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>得到了张善德的书信，带回给无念师太吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>467</Value>
+              </dialognpc>
+              <number>
+                <Value>454</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=467&gt;：“这书信上有毒，不过还害不着我。是封空白的书信，是谁在作弄老尼？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{毒医的来历,20,1,55,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将取得的信件交给无念师太</Value>
+              </txt>
+              <txt>
+                <Value>将取得的信件交给无念师太</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{55,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

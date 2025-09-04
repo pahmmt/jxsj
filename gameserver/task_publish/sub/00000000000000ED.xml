@@ -1,0 +1,132 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000ED" name="永不凋谢的花" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=506&gt;：“公子近来郁郁不开心，如此长久下去，定要忧郁成疾。我们这些做下人的，也不知能分担些什么。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=506&gt;：“公子唐晓近来极为忧郁，连惯有的出游行猎都少了。我等下人甚为不安，千方百计的套话，才从公子口中打听到，原来是他曾经为之倾倒的女子，公子的爱人叶雯看破了红尘，要入峨嵋山为尼。公子昼思夜想，终于想到了一条妙计。”&lt;end&gt;
+&lt;npc=506&gt;：“在湖畔的白面客，乃是一个神秘教会的弟子，她们每人身上携带着一朵以特殊手法栽种出的红棉花，永不凋谢。公子唐晓要取九十九朵红棉，单人闯峨嵋，对叶雯做最后一次努力。希望你能玉成此事，军容不胜感激！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2082</Value>
+              </fightnpc>
+              <number>
+                <Value>73</Value>
+              </number>
+              <taskitem>
+                <Value>{72,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>99</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>取得了九十九朵红棉花，回去交给唐军容吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>506</Value>
+              </dialognpc>
+              <number>
+                <Value>73</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=506&gt;：“如此一来，也算我们替公子出了一份力。希望叶小姐能回心转意，我们公子虽然有些玩闹，心却是很好很好的啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{红棉花,20,1,72,1,0,99}</Value>
+              </string>
+              <txt>
+                <Value>将取得的红棉花交给唐军容吧</Value>
+              </txt>
+              <txt>
+                <Value>将取得的红棉花交给唐军容吧</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

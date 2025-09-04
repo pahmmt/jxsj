@@ -1,0 +1,497 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001DE" name="前哨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“我义军生于百姓，隐于草莽，虽多年的经营初具规模，但并无逐鹿中原之心。义军上下只盼望着在这乱世之中能凭一己之力，保护天下百姓免遭生灵涂炭。别无他念。”&lt;end&gt;
+&lt;npc=3570&gt;：“如今蒙古人的铁蹄已经逼近中原，金国日益衰败，大宋苟且度日。”&lt;end&gt;
+&lt;playername&gt;：“那在这乱世之中，我们应该怎样应对呢？”&lt;end&gt;
+&lt;npc=3570&gt;：“近年来，义军广纳志同道合之士，在各地建立义军营地。一方面了解各方势力的动向，一方面维护和照料当地百姓。”&lt;end&gt;
+&lt;playername&gt;：“如此甚好。”&lt;end&gt;
+&lt;npc=3570&gt;：“人多了，需要处理的事情也多了，这不，漠北草原的义军前哨，好久都没有音信，不知道发生了什么事情，我想派个人前去探查。这季节，北方天寒地冻，我正琢磨着该派谁去看看好。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;愿自告奋勇。”&lt;end&gt;
+&lt;npc=3570&gt;：“好，在这义军里，论人品武功，你办事我放心。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>1930</Value>
+              </number>
+              <number>
+                <Value>3638</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>是否出发去漠北草原？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就和秋姨道别出发去漠北草原</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就和秋姨道别出发去漠北草原</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到驻守漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4342</Value>
+              </dialognpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大哥，这里就是义军在漠北的前哨吧，怎地如此破败不堪。”&lt;end&gt;
+&lt;npc=4342&gt;：“本来今年年头不错，一场蝗灾，把这周围的十里八村都毁了。这前哨也是靠着为数不多的存粮活。”&lt;end&gt;
+&lt;playername&gt;：“存粮不是长久之计，该当想想办法向周围没有受灾的村庄求援才是。”&lt;end&gt;
+&lt;npc=4342&gt;：“是啊，刚收到消息，运粮的车辆已经到达漠北边缘。但被一伙强贼阻住，我正要起身前往，你就来了。”&lt;end&gt;
+&lt;playername&gt;：“大哥，前哨重要，你还是留守此处吧，区区蟊贼，我去会会他们。”&lt;end&gt;
+&lt;npc=4342&gt;：“那倒也是，那就拜托&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到驻守漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value>找到驻守漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>驱散围困粮车的拦路蟊贼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4343</Value>
+              </fightnpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>护送装满粮食的大车回到义军前哨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4344</Value>
+              </dialognpc>
+              <number>
+                <Value>1976</Value>
+              </number>
+              <number>
+                <Value>3218</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“快将大车送回义军营地吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4345</Value>
+              </fightnpc>
+              <number>
+                <Value>105</Value>
+              </number>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>1913</Value>
+              </number>
+              <number>
+                <Value>3613</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1943,3259
+1930,3298
+1911,3323
+1811,3328
+1870,3375
+1869,3410
+1894,3439
+1920,3473
+1924,3529
+1934,3569
+1949,3605
+1926,3631</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将运送粮食的大车交给漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4342</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大哥，粮食已经安全送来了。”&lt;end&gt;
+&lt;npc=4342&gt;：“辛苦你了，这些粮食够草原的义军将士和百姓们吃一阵子了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将运送粮食的大车交给漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value>将运送粮食的大车交给漠北草原的义军将领钟奎</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

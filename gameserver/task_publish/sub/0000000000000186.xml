@@ -1,0 +1,234 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000186" name="义军任务" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“&lt;playername&gt;，你来了。 ”&lt;end&gt;
+&lt;playername&gt;：“是。”&lt;end&gt;
+&lt;npc=3570&gt;：“加入义军这段时间，秋姨我本该好好照顾你，但看到你成长了许多，心中也颇感欣慰，也算对得起你父母的在天之灵。”&lt;end&gt;
+&lt;playername&gt;：“这段时间秋姨和各位义军的前辈都教了我不少东西。”&lt;end&gt;
+&lt;npc=3570&gt;：“我义军向来以治军严谨著称，从不向黎民百姓伸手，还会尽可能的为乡亲们提供些帮助，所以我义军所到之处无不为老百姓所拥戴。这其中有一人不得不提，就是包万同，他组织义军中的有能力的人士，为百姓做事，除暴安良，同时也让义军的好多事迹在江湖上广为流传。”&lt;end&gt;
+&lt;playername&gt;：“包万同大哥的事情我也有所耳闻，如果可以的话我也想为义军出一分力。”&lt;end&gt;
+&lt;npc=3570&gt;：“正好包万同这几天来找我说人手不够，你真的可以吗？”&lt;end&gt;
+&lt;playername&gt;：“秋姨放心，我一定努力完成任务，不能辱没了父母的赫赫声名。”&lt;end&gt;
+&lt;npc=3570&gt;：“好，秋姨相信你，完成包万同的任务，可以获得义军精英令牌，这是义军中荣誉的象征，你也去试试看吧，不得勉强。”&lt;end&gt;
+&lt;playername&gt;：“秋姨等我的好消息吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3573</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“包万同大哥，秋姨让我来帮忙。”&lt;end&gt;
+&lt;npc=3573&gt;：“我很忙，废话不说，完成十环义军任务就可以得到义军精英令牌，快点开始吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与包万同对话领取义军任务</Value>
+              </txt>
+              <txt>
+                <Value>与包万同对话领取义军任务</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>116</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,261,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，我在包万同大哥那里得到了义军荣誉勋章了。”&lt;end&gt;
+&lt;npc=3570&gt;：“真不错，我们的小鹰已经长大了，可以飞了呢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将得到的义军精英令牌带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>将得到的义军精英令牌带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{261,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>116</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

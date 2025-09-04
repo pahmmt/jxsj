@@ -1,0 +1,186 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F2" name="北方来客" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=513&gt;：“凭我的直觉，那些闯入百花阵的男子似乎并非坏人。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=513&gt;：“近来翠烟门外有一群人徘徊不去。掌门人怀疑对方乃在窥探翠烟门，且为首男子居然还会翠烟的功夫，这就更为蹊跷了。翠烟门功夫向来是传女不传男的。为此，掌门人特意派我调查此事。不知你可愿意替我走上一趟。”&lt;end&gt;
+&lt;playername&gt;：“没有问题。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=513&gt;：“那人是我本家，居然有北方口音？手下还异常强悍。难道，难道是传闻中蒙古萨满教的人？那他又怎么会我翠烟门武功呢。雁北天，江湖中似乎没有这样一个人。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>517</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>518</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>519</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败了神秘人的护卫，终于可以一览他的庐山真面目了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>516</Value>
+              </dialognpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄台，不知你在翠烟门的阵法中盘旋做甚？”&lt;end&gt;
+&lt;npc=516&gt;：“呵呵，不过是观赏观赏沿途风光罢了。”&lt;end&gt;
+&lt;playername&gt;：“观赏沿途风光？有这样直闯入人家阵眼中观赏的吗？”&lt;end&gt;
+&lt;npc=516&gt;：“如此的话，在下告退便是。”&lt;end&gt;
+&lt;playername&gt;：“你是何人，姓甚名谁？”&lt;end&gt;
+&lt;npc=516&gt;：“啊，小客姓雁，草字北天。这便去了，不敢打扰大侠。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=516&gt;：“在下即刻便走，蹈扰之处，还望赎罪。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>终于可以一览他的庐山真面目了</Value>
+              </txt>
+              <txt>
+                <Value>终于可以一览他的庐山真面目了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

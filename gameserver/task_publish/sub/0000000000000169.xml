@@ -1,0 +1,484 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000169" name="魔女" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1800&gt;：“四十年前，蜀川一带有位唐门高手，以鬼神莫测的镖艺横行无忌。此女生性刻薄，但凡与之为敌者，莫不横死当场，欠下了一身血债。然而她在三十岁那一年，忽然出家为尼，遍施善举，成了闻名遐迩的活菩萨。三十年前，少林武当两大派掌门联名建议，在藏剑山庄为此女树立雕塑。她的名字，叫柳青青。”&lt;end&gt;
+&lt;playername&gt;:“此女为何有如此大的转变？”&lt;end&gt;
+&lt;npc=1800&gt;：“说来话长。这柳姓女子乃是当年唐门镖王唐问僧所收养的孤女，你若想知道详情，只有询问唐家后人方可明白。唐问僧有一子一女，如今都在成都府中。儿子名叫唐珈，女儿名叫唐雅。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1801</Value>
+              </dialognpc>
+              <number>
+                <Value>27</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐珈先生，在下&lt;playername&gt;，有一事请教。”&lt;end&gt;
+&lt;npc=1801&gt;：“哦，原来是近来江湖上声名鹊起的&lt;playername&gt;，你有何事？”&lt;end&gt;
+&lt;playername&gt;：“在下想打听一个人。她名唤柳青青，乃是唐先生父亲的养女。”&lt;end&gt;
+&lt;npc=1801&gt;：“你来问她？此事休要再提，你走吧！”&lt;end&gt;
+&lt;playername&gt;：“先生，在下受剑奴指引前来，只为了解柳青青性情转变的真相，并无其他用意。”&lt;end&gt;
+&lt;npc=1801&gt;：“哼，那姓冷的剑奴也不是什么好人。早年不也是满手血腥？如今倒做起好人，一副菩萨相貌。”&lt;end&gt;
+&lt;playername&gt;：“唐先生何出此言。”&lt;end&gt;
+&lt;npc=1801&gt;：“你走吧走吧，我什么也不会告诉你的！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去成都府找到唐珈询问究竟吧</Value>
+              </txt>
+              <txt>
+                <Value>去成都府找到唐珈询问究竟吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>704</Value>
+              </dialognpc>
+              <number>
+                <Value>463</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“唐姑娘，在下&lt;playername&gt;，为打听柳青青一事前来，请务必告诉我柳氏的往事。”&lt;end&gt;
+&lt;npc=704&gt;：“看你如此急切，莫非从我兄长那里前来？”&lt;end&gt;
+&lt;playername&gt;：“正是。”&lt;end&gt;
+&lt;npc=704&gt;：“唉，事情过去这么多年了，哥哥还是不愿意原谅青青姐。”&lt;end&gt;
+&lt;playername&gt;：“莫非令兄与柳青青？”&lt;end&gt;
+&lt;npc=704&gt;：“你想到哪里去了。我父亲收养青青姐时，我俩都未出生。算年纪，青青姐足比我俩大了十多岁。”&lt;end&gt;
+&lt;playername&gt;：“唐先生好福气！”&lt;end&gt;
+&lt;npc=704&gt;：“青青姐的父母皆是江湖大盗，当年被一伙自命正派的人士所杀。家父路过时，只见到襁褓中的青青姐尚有一口活气。家父当时患有不得子嗣的病症，便收养了青青姐，视如己出。青青姐是沉静的性子，在唐家堡又自小听多了关于父母的传言，没有人与她玩耍，长大后越发孤僻了。”&lt;end&gt;
+&lt;npc=704&gt;：“有一回掌门选拔门中新锐，青青姐本以武功夺魁，却因为身世与血统的关系不被重用。自此便自甘沉沦，在江湖上约斗成名高手，比武时无所不用其极，手上多了好些人命。人也越发不说话，冷得像块冰。”&lt;end&gt;
+&lt;playername&gt;：“那与唐珈先生之间又有何关系呢？”&lt;end&gt;
+&lt;npc=704&gt;：“父亲后来一心向佛，不料老来得子，而且是双胞胎，便是我两兄妹。青青姐觉得受了冷落，居然在父亲五十五岁的寿诞上公然约战。家父伤心之余，也懊悔没有照顾好青青姐。对决时处处相让，却被青青姐抓住破绽一镖取了性命！”&lt;end&gt;
+&lt;playername&gt;：“原来如此，难得唐姑娘能宽恕柳青青。”&lt;end&gt;
+&lt;npc=704&gt;：“唉，青青姐出手时已有悔意，酿成大错后幡然醒悟，出家为尼。此身长伴青灯，与人为善。后来在抵挡金兵侵袭川中的战斗中，青青姐为了救唐家堡众人，独自前往金军大营行刺敌酋，却被发现。苦战三个时辰，毙敌上百人后，力战而亡！再大的仇恨，人死了，也散掉了啊。”&lt;end&gt;
+&lt;playername&gt;：“我明白了，多谢姑娘！”&lt;end&gt;
+&lt;npc=704&gt;：“不要记恨我哥哥，他嘴上不原谅青青姐，但心思已经松动了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去湖畔竹林的别雅小筑找到唐雅</Value>
+              </txt>
+              <txt>
+                <Value>去湖畔竹林的别雅小筑找到唐雅</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3099</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你可要重返藏剑山庄？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“剑奴先生，我想我已知道柳姑娘往事里所包含的意味。”&lt;end&gt;
+&lt;npc=1800&gt;：“是吗？说说看。”&lt;end&gt;
+&lt;playername&gt;：“善恶存于一念，大爱方能涤荡心胸，杀身成佛。”&lt;end&gt;
+&lt;npc=1800&gt;：“许多人想做侠客，可要做个真正的侠客，需要付出的东西，实在太多太多了。去长明灯前为柳姑娘点燃几只火烛，愿诸天神佛保佑她在天之灵吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{火烛,20,1,252,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>向剑奴先生回报寻访经历</Value>
+              </txt>
+              <txt>
+                <Value>向剑奴先生回报寻访经历</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,252,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1663</Value>
+              </number>
+              <number>
+                <Value>3029</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“剑奴先生，我已为柳姑娘燃烛祷告过了。请问你还有何事可以赐教？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>110</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

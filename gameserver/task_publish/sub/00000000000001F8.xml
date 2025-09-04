@@ -1,0 +1,421 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001F8" name="姜氏父子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4385&gt;：“我乃大理城东三十里外牛家村五里屯村长的老婆子。听说大侠乃义军精锐，特有一事相求！”&lt;end&gt;
+&lt;playername&gt;：“大娘如此焦急的神情，可是碰到了什么难事？”&lt;end&gt;
+&lt;npc=4385&gt;：“我老头子和我儿子前些日子都因为大理城内招壮丁，被拉去干些苦力活儿了，具体感谢啥我也不清楚，只知道挣的是辛苦钱。这家里的农活儿都耽搁下来了倒是小事儿，可我那老头子和儿子却连个信儿都没给我回，让人好生担心。”&lt;end&gt;
+&lt;playername&gt;：“大娘莫着急，我如何才能帮你。”&lt;end&gt;
+&lt;npc=4385&gt;：“老头子和儿子不知所踪，这农忙时期眼看就要到了，我一个人干起来实在有些吃力。”&lt;end&gt;
+&lt;playername&gt;：“现下农田中有何事务要忙，不知道&lt;playername&gt;可否帮帮大娘，虽&lt;playername&gt;对农务方面不能算得心应手，却也懂得个大概。”&lt;end&gt;
+&lt;npc=4385&gt;：“我这里东面有些肥料，你去帮大娘挑过来一些吧，我身子骨不行了，这些力气活干起来确实有些吃力。”&lt;end&gt;
+&lt;playername&gt;：“大娘放心，就包在我身上吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1675</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>开始搬运肥料</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经搬运了%d/10个担肥料</Value>
+              </txt>
+              <txt>
+                <Value>已经帮助桑大娘搬完了所有肥料</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1784,3692
+1793,3688
+1790,3696
+1797,3697
+1790,3705</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>解决了农田中的燃眉之急</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4385</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这些肥料应该能使上一阵子了，大娘。”&lt;end&gt;
+&lt;npc=4385&gt;：“这世道乱是乱了些，却还是有些好人的，大娘先谢谢你了，不知道这位大侠能否替我找到我那失去联络的老头子和儿子？”&lt;end&gt;
+&lt;playername&gt;：“大娘的心情我能体会，只是人海茫茫，可有什么搜寻妙法？”&lt;end&gt;
+&lt;npc=4385&gt;：“我老伴儿和儿子姓姜是三个月前跟着一个名叫孙连的人进城的，找到孙连也许就能找到我老伴儿。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与桑大娘对话</Value>
+              </txt>
+              <txt>
+                <Value>与桑大娘对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前去打探一个名叫孙连的人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>1886</Value>
+              </number>
+              <number>
+                <Value>3192</Value>
+              </number>
+              <dialognpc>
+                <Value>4383</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4384&gt;：“什么事？没看爷忙着呢吗？”&lt;end&gt;
+&lt;playername&gt;：“有一对姓姜的父子是否是跟你进城干苦力？如今他们人可在此？”&lt;end&gt;
+&lt;npc=4384&gt;：“什么姓姜姓狗……老子不认得，老子只知道这寺庙什么时候能建好，银子啥时候能他娘的拿到手！”&lt;end&gt;
+&lt;playername&gt;：“说话如此霸道，留着你也是祸害人间！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4384</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>前去打探一个名叫孙连的人</Value>
+              </txt>
+              <txt>
+                <Value>前去打探一个名叫孙连的人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4384&gt;：“饶命！饶命！神仙祖宗，别打了，小的遇到高人了，以后再不作威作福了，其实小的也是奉上面儿的命令才加紧佛寺的施工进度的，大爷您还要明察莫要冤枉了小的啊。”&lt;end&gt;
+&lt;playername&gt;：“狗嘴里吐不出象牙！说，姜氏父子先在何方？”&lt;end&gt;
+&lt;npc=4384&gt;：“姜……姜氏父子已经在几天以前逃跑，逃回家了……”&lt;end&gt;
+&lt;playername&gt;：“你说的可是实话？你应该知道欺骗我的后果……”&lt;end&gt;
+&lt;npc=4384&gt;：“是，那父子的去向我骗你何用？句句属实。”&lt;end&gt;
+&lt;playername&gt;：“你走吧，日后不得再欺负这些百姓了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将消息尽快通知桑大娘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4385</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“桑大娘，我回来了，带回了您老伴儿和儿子的消息。”&lt;end&gt;
+&lt;npc=4385&gt;：“真是多亏了你，我老伴儿和儿子都平安回来了，他们似乎受了不少的苦啊……”&lt;end&gt;
+&lt;playername&gt;：“他们真的平安归来了？那便好了，&lt;playername&gt;先行告辞了，请大娘您保重身体，我们有缘还会再见。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将消息尽快通知桑大娘</Value>
+              </txt>
+              <txt>
+                <Value>将消息尽快通知桑大娘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

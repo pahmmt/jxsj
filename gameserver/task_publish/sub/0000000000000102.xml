@@ -1,0 +1,281 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000102" name="危急情况" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=562&gt;：“眼看就来不及了这该如何是好……”&lt;end&gt;
+&lt;playername&gt;：“什么事如此惊慌？”&lt;end&gt;
+&lt;npc=562&gt;：“漕帮、丐帮等帮明着和李后作对，多次相助嘉王逃脱李后的追捕，已经引起了李后的痛恨。那些捉拿嘉王的爪牙更是将自己的无能都推在了这些江湖义士身上，并说在汉水古渡若不是漕帮的顾重颜出来搅局，嘉王早已被擒。李后盛怒之下，决定给重创漕帮，给江湖中人点厉害看看。这个消息一定要尽快传到漕帮，只是……”&lt;end&gt;
+&lt;playername&gt;：“只是如何？”&lt;end&gt;
+&lt;npc=562&gt;：“你看我这身衣服便可得知我是官差，官差是不许和草莽结交的。此次被袭的将会是漕帮在采石矶的分舵，那里的舵主申若年对我有活命之恩。采石矶又是漕帮的一大根本重地，大部分的生意都来源于此。若能相助将此消息带给申若年兄弟，龙某感激不尽！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>563</Value>
+              </dialognpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <txt>
+                <Value>危急情况</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“扬州的龙一现要我通知你，朝廷欲不利于贵帮此处分舵，还请你早作准备！”&lt;end&gt;
+&lt;npc=563&gt;：“这几日采石矶的驻军正在不断增多，我便觉得事情有点不妙。这些新来的驻军叫做先锋营，是由神射手组成的，正是我们江湖中人的克星，没想到正是冲着我们帮的。前段时间听殷帮主说，我帮相助嘉王必然会得罪李后，没想到会来得这么快。”&lt;end&gt;
+&lt;playername&gt;：“那申舵主有何打算？”&lt;end&gt;
+&lt;npc=563&gt;：“这些官兵久未操练，贪生怕死，还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;暗中教训教训。如此一来，他们必然胡乱了事，我也好下令兄弟们暂避风头。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>通知申若年做好准备</Value>
+              </txt>
+              <txt>
+                <Value>通知申若年做好准备</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>申若年请我教训一下先锋营的官兵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1222</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>436</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>435</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找申若年</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>563</Value>
+              </dialognpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“已经按照申舵主所说的做了！”&lt;end&gt;
+&lt;npc=563&gt;：“我替兄弟们多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;了，人已经疏散得差不多了，只等官兵前来虚晃一枪就可以了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找申若年</Value>
+              </txt>
+              <txt>
+                <Value>回去找申若年</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,164 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000EC" name="怀疑" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=486&gt;：“唐缺乃是我的兄长，他断不会做这种有损家声之事，你们是不是搞错了？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=486&gt;：“原本以为有鹤叟替我把那些个杂事都处理掉了，结果还是有人来烦我，这一门之主当起来令人烦闷哪。”&lt;end&gt;
+&lt;playername&gt;：“公子为何事烦恼？”&lt;end&gt;
+&lt;npc=486&gt;：“有门下弟子几番禀报，峨嵋山无念师太为了凌风雁遭擒之事怒闯唐门，其实是我的兄长唐缺从中挑拨造成的。此报不可信，平时兄长有礼有节，处事谨慎，怎会做出这种事来？可那弟子却言之笃笃，由不得本公子不怀疑。所以想请你扮做峨嵋弟子，去湖畔竹林西部大量的攻击弄蛇人和带刀武士。那里是唐门境内，唐缺必知此事，若他放任你行事，便可断定是有挑拨两家关系的可能了。”&lt;end&gt;
+&lt;playername&gt;：“那我打到何时？”&lt;end&gt;
+&lt;npc=486&gt;：“就以百人为限吧，这个时辰内都不到，我看唐缺他怎么解释。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2242</Value>
+              </fightnpc>
+              <number>
+                <Value>73</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2243</Value>
+              </fightnpc>
+              <number>
+                <Value>73</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将情况回报唐晓吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>486</Value>
+              </dialognpc>
+              <number>
+                <Value>73</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=486&gt;：“恩，我知道了，该怎么处理，我有分寸。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报唐晓吧</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报唐晓吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,266 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000016D" name="江湖往事" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1800&gt;：“好了，这五岳厅中四个人的故事你都已知晓，还有最后一人无需赘述。他便是前代武林盟主独孤剑！其实我本名冷山河，乃独孤盟主随身的侍剑童子。三十年前采石之战，独孤盟主率领丐帮豪杰，以及天下英豪协助虞允文大人抵御金国大军入侵。”&lt;end&gt;
+&lt;npc=1800&gt;：“横江大雾之中，独孤盟主亲自驾着一叶扁舟，率军与金狗展开决战。是役双方都损失惨重，而战后大雾散去时，独孤盟主却失去了踪迹。据当时在他身边的人讲，独孤盟主中箭落水，已然陨命。三十年转眼便过去了，我想请你替我去一趟采石矶，在附近查探一番，看能否找出些独孤盟主的消息。若老盟主真已驾鹤离去，则替冷某放几盏孔明灯祭奠盟主。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1805</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <taskitem>
+                <Value>{260,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>看来独孤盟主确实已经长辞人世了，就让我放一盏孔明灯来祭奠他，略表敬仰之心。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkill</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,257,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>696</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3099</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你可要重返藏剑山庄？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“冷先生，我已尽全力探访，可惜依然查不到独孤盟主的任何消息。看来老盟主已经……我已替您点燃了九盏孔明灯，漂在采石矶上空，老盟主在天有灵，会心存慰藉的。”&lt;end&gt;
+&lt;npc=1800&gt;：“唉……纵死侠骨香， 不惭世上英。 谁能书阁下，白首太玄经。”&lt;end&gt;
+&lt;npc=1800&gt;：“老盟主终归是去了，我想静一静。五岳厅的故事你已尽悉，龙五推荐你来，当是一代英才。成魔成侠只在一念之间，望你好自为之！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将老盟主的消息带给剑奴先生</Value>
+              </txt>
+              <txt>
+                <Value>将老盟主的消息带给剑奴先生</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,171 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B9" name="季候落难" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=324&gt;：“小猴子这回闹得太过分了，居然惹出这么大的麻烦来。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=324&gt;：“本帮总管事的小儿子自小贪玩，岛上哪里有稀奇古怪的东西都要去瞧瞧。这芦苇荡中部是大家千叮咛万嘱咐不许来的，结果他不听，这下好，出事了吧。”&lt;end&gt;
+&lt;playername&gt;：“出了什么事？”&lt;end&gt;
+&lt;npc=324&gt;：“这芦苇荡中藏着一些朝廷要犯。他们躲藏到岛上，连官兵都缉拿不着。总管事的儿子如此金贵，他们怎么会放过。小猴子让人给绑了肉票啦。”&lt;end&gt;
+&lt;playername&gt;：“小猴子是总管事的儿子吧。”&lt;end&gt;
+&lt;npc=324&gt;：“对的。他本名季侯，季管事最疼爱这孩子。如今新帮主杨铁心即位不久，游龙珏又惊现江湖，正是焦头烂额的时候，无论如何不能再让管事操心。你能否帮我个忙，进去芦苇荡内救出小猴子？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=2&gt;
+&lt;npc=324&gt;：“非常感谢你，这会管事一定对我大为赞赏，我裘老哥的事有希望了。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>1967</Value>
+              </number>
+              <number>
+                <Value>3238</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>找到被绑架的季候</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把季候安全的护送回熊挺身边</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">324</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>323</Value>
+              </dialognpc>
+              <number>
+                <Value>1968</Value>
+              </number>
+              <number>
+                <Value>3233</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=323&gt;：“我要回家，请你救我出去！呜呜……”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>289</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>1200</Value>
+              </number>
+              <number>
+                <Value>1723</Value>
+              </number>
+              <number>
+                <Value>3262</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <string>
+                <Value>1967,3242
+1957,3260
+1937,3254
+1929,3241
+1920,3262
+1912,3270
+1907,3281
+1894,3293
+1886,3301
+1875,3302
+1865,3291
+1845,3308
+1810,3317
+1765,3326
+1718,3333
+1694,3313
+1710,3289</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,695 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000029F" name="新的资源" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=7396&gt;:"原来是义军首领叫你来我这里看看。古时有人把宝石镶嵌在装备之上，往往气血大提升从而战斗无往不利，义军首领和元老们也打算把这些方法用在义军作战上。&lt;playername&gt;你这些年来已在江湖上历练成了一代侠客，义军首领是希望你能来把此法发扬光大。”&lt;end&gt;
+&lt;playername&gt;：“好，我就来看看这具体的法子。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>7396</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："我们已经能够娴熟地把任何与装备对应的宝石镶嵌出来，如果你有兴趣，也可以在我这里先尝试一下，对个人能力提升十分大。在这之前你可以先看看我的宝石。"&lt;end&gt;
+&lt;playername&gt;："我已经从秋姨那里得知了一些，此番正是为了宝石而来。烦劳您详细介绍一下，我洗耳恭听！"&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："我们已经能够娴熟地把任何与装备对应的宝石镶嵌出来，如果你有兴趣，也可以在我这里先尝试一下，对个人能力提升十分大。在这之前你可以先看看我的宝石。"&lt;end&gt;
+&lt;playername&gt;："我已经从秋姨那里得知了一些，此番正是为了宝石而来。烦劳您详细介绍一下，我洗耳恭听！"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>60000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>请把一件装备交给苏梦珍，选择装备打孔</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1026</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>任意一件装备打孔</Value>
+              </txt>
+              <txt>
+                <Value>任意一件装备打孔</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>90000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>你需要再继续了解一下关于宝石和镶嵌的一些事情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>7396</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："装备打好孔之后则需要镶嵌宝石，不同的装备有对应不同的宝石镶嵌，当然宝石种类也不同,有的提升气血，有的提升攻击，总的来说都是大有好处的。你购买与你装备孔相对应的宝石之后，再镶嵌上给我看看。"&lt;end&gt;
+&lt;playername&gt;：“好的，我会听从您的建议，把精美的宝石镶嵌在装备上！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："装备打好孔之后则需要镶嵌宝石，不同的装备有对应不同的宝石镶嵌，当然宝石种类也不同,有的提升气血，有的提升攻击，总的来说都是大有好处的。你购买与你装备孔相对应的宝石之后，再镶嵌上给我看看。"&lt;end&gt;
+&lt;playername&gt;：“好的，我会听从您的建议，把精美的宝石镶嵌在装备上！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>75000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>购买一块宝石然后镶嵌到刚才打的孔里吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1026</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>给打好孔的装备镶嵌对应的宝石</Value>
+              </txt>
+              <txt>
+                <Value>给打好孔的装备镶嵌对应的宝石</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>120000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>问问宝石工匠苏梦珍关于特殊孔的事情吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>7396</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："除了普通的装备孔之外，宝石工匠这里还提供一种额外的装备孔，叫特殊装备孔，可以镶嵌对应的特殊宝石.你可以试试打个特殊孔来看看。"&lt;end&gt;
+&lt;playername&gt;：“除了普通的装备孔还能打特殊装备孔吗？那太好了，我准备一下材料，然后来试试看是否有更大的提升！”&lt;end&gt;
+&lt;npc=7396&gt;："这打造特殊孔的材料名叫金刚钻。家族副本中掉落一种贵重的原石叫金刚矿石，你取得金刚矿石之后，用精活加工可制得金刚钻，拿来给我，我便可以帮你打特殊装备孔。"&lt;end&gt;
+&lt;playername&gt;：“好，我知道了，我去拿了那金刚钻便来！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=7396&gt;："除了普通的装备孔之外，宝石工匠这里还提供一种额外的装备孔，叫特殊装备孔，可以镶嵌对应的特殊宝石.你可以试试打个特殊孔来看看。"&lt;end&gt;
+&lt;playername&gt;：“除了普通的装备孔还能打特殊装备孔吗？那太好了，我准备一下材料，然后来试试看是否有更大的提升！”&lt;end&gt;
+&lt;npc=7396&gt;："这打造特殊孔的材料名叫金刚钻。家族副本中掉落一种贵重的原石叫金刚矿石，你取得金刚矿石之后，用精活加工可制得金刚钻，拿来给我，我便可以帮你打特殊装备孔。"&lt;end&gt;
+&lt;playername&gt;：“好，我知道了，我去拿了那金刚钻便来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>与苏梦珍对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>105000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>取得特殊材料再来找宝石工匠苏梦珍打特殊孔吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1026</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>带好金刚钻去找苏梦珍打磨特殊孔</Value>
+              </txt>
+              <txt>
+                <Value>带好金刚钻去找苏梦珍打磨特殊孔</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1500000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>苏梦珍叫你去回复秋姨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;："相信你从宝石工匠处了解宝石知识归来之后，对于宝石和装备镶嵌已经熟悉了所有相关的常识，由于宝石和装备镶嵌对战斗力的重大提升，所以你，我乃至全部义军都要熟练的运用这些常识，并且最好全部能够在作战中用好这些宝石。多说无益，那接下来就自己琢磨这些并尝试提升自己能力吧！"&lt;end&gt;
+&lt;playername&gt;：“我会努力的，等我的好消息吧。知道了这些，相信能给我很大的帮助！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;："相信你从宝石工匠处了解宝石知识归来之后，对于宝石和装备镶嵌已经熟悉了所有相关的常识，由于宝石和装备镶嵌对战斗力的重大提升，所以你，我乃至全部义军都要熟练的运用这些常识，并且最好全部能够在作战中用好这些宝石。多说无益，那接下来就自己琢磨这些并尝试提升自己能力吧！"&lt;end&gt;
+&lt;playername&gt;：“我会努力的，等我的好消息吧。知道了这些，相信能给我很大的帮助！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>回报秋姨</Value>
+              </txt>
+              <txt>
+                <Value>回报秋姨</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1026</Value>
+              </number>
+              <number>
+                <Value>4</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>300000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,276 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000010B" name="捕捉紫玉冰蛇" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“对了，有一件重要的事情要你去做！”&lt;end&gt;
+&lt;playername&gt;：“秋姨请讲！”&lt;end&gt;
+&lt;npc=3570&gt;：“听说在响水洞出产一种稀有的紫玉矿石，将它研磨成粉以后对刀伤有非常高的疗效。还有一种冰蛇，就生活在紫玉的附近，也是一种非常稀有的药材。不动先生想用这两样东西给张斩经大爷贺寿，所以来求我借个人手。我想这事对义军也是一件好事，所以决定派你前去。离张斩经大爷寿诞还有些日子，你也无需太过着急。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>593</Value>
+              </fightnpc>
+              <number>
+                <Value>97</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,98,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1528</Value>
+              </dialognpc>
+              <number>
+                <Value>97</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采掘中</Value>
+              </txt>
+              <txt>
+                <Value>得到紫玉矿石</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{紫玉矿石,20,1,99,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>采掘%d/10个紫玉矿石</Value>
+              </txt>
+              <txt>
+                <Value>采集紫玉</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1613,3358
+1622,3325
+1620,3340
+1617,3373
+1624,3363
+1641,3340
+1634,3329
+1659,3294
+1663,3315
+1674,3288
+1673,3320
+1675,3305
+1693,3295
+1692,3308
+1686,3331
+1741,3214
+1741,3235
+1757,3196
+1775,3212
+1768,3222
+1766,3236
+1780,3196
+1782,3365
+1795,3442
+1796,3427
+1809,3383
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将得到的紫玉和冰蛇带给不动先生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3565</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3565&gt;：“听说是你去找紫玉和冰蛇了，可找到了？”&lt;end&gt;
+&lt;playername&gt;：“找到了，请看！”&lt;end&gt;
+&lt;npc=3565&gt;：“哎呀！真是太好了！张老头就等着偷着乐吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到不动先生</Value>
+              </txt>
+              <txt>
+                <Value>找到不动先生</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{99,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{98,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

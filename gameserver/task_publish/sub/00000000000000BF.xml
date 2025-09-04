@@ -1,0 +1,201 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000BF" name="蝰蛇祸" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=359&gt;：“为什么我刚一回来就遇到这种事，难道五毒这个名字如此晦气吗？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=359&gt;：“哎，昨日才回来，结果就听手下报了一桩丧气之事。”&lt;end&gt;
+&lt;playername&gt;：“何事令公子如此颓丧？”&lt;end&gt;
+&lt;npc=359&gt;：“这原始森林中的土著们原本活得自由自在，可自从我五毒教来后，便屡遭厄运。昨日居然出现了大群蝰蛇攻击蒙可人村落的情况。蛇乃有灵性之动物，平时绝计不会攻打在一片土地上生存的人类，你说不是天怒人怨是什么？我五毒的气数难道真的尽了吗？”&lt;end&gt;
+&lt;playername&gt;：“只是一场蛇祸，不必如此上心吧。”&lt;end&gt;
+卢笑贫：“哎，朝廷下了绝杀令，我等避入这荒山野岭，已经够难堪了，还屡有不顺。如此吧……我恰好从外间采办了些蛇药回来，你替我走一趟，送一车蛇药去蒙可人村落。估计此时蛇群已退，不会有什么大的凶险了。”</Start>
+      <Procedure />
+      <Error>&lt;npc=359&gt;：“护送药车去蒙可人的村落之后，找到他们的村长，将药交给他们便好。就说乃五毒教赠送的便是，不必提卢某名字了。”&lt;end&gt;</Error>
+      <Prize>&lt;npc=360&gt;：“没料到，五毒教也有好人哪，是老朽以偏概全了。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>288</Value>
+              </dialognpc>
+              <number>
+                <Value>1792</Value>
+              </number>
+              <number>
+                <Value>3291</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>护送药品的大车</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“可以走了。”</Value>
+              </txt>
+              <fightnpc>
+                <Value>362</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1853</Value>
+              </number>
+              <number>
+                <Value>3784</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value>1802,3293
+1813,3321
+1813,3347
+1794,3370
+1796,3436
+1775,3475
+1768,3564
+1789,3582
+1825,3607
+1825,3655
+1837,3693
+1831,3709
+1838,3752
+1845,3771</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>安全将救灾物资车辆送到，蒙可村长正等着我们呢</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>360</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大叔，这是五毒教长老托我转赠予你的一大车蛇药，赶紧给村民们治伤吧。”&lt;end&gt;
+&lt;npc=360&gt;：“什么蛇药？是蛇毒吧。五毒教的药，我不敢用。”&lt;end&gt;
+&lt;playername&gt;：“为何您对五毒教存有如此偏见呢？难道坏人中就不能有好人吗？”&lt;end&gt;
+&lt;npc=360&gt;：“坏人中是有好人，可百人中出一个便是大幸，难道要我拿村民的性命去赌吗？”&lt;end&gt;
+&lt;playername&gt;：“你不赌可以吗？不赌便是等死。去救人，可以先对一人用药，见效了便全村获救。”&lt;end&gt;
+&lt;npc=360&gt;：“恩……你说得有理。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到蒙可村长</Value>
+              </txt>
+              <txt>
+                <Value>找到蒙可村长</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

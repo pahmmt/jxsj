@@ -1,0 +1,184 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DC" name="试手之战" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=254&gt;：“若当年我天忍教实力再强些，恐怕也不会失败得如此彻底了。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=254&gt;：“几十年前的采石之战，我教中人随大军出征，原想一战而霸，岂料遭遇宋人的顽强抵抗，最终右护法耶律辟离战死，教主完颜宏烈与丐帮前任帮主何人我比拼内力双双而亡。硕果仅存的左护法端木睿也心灰意冷，隐居山林。”&lt;end&gt;
+&lt;playername&gt;：“原来天忍曾经历过这样一段消沉的时期。”&lt;end&gt;
+&lt;npc=254&gt;：“嗯，后来世宗皇帝即位，嫌天忍耗费国家巨资供养，却无所作为，在完颜宏烈死后，连教主都没有委派。天忍乃大金国教，非国主任命不可被看做正统，是以天忍确曾有过一段人心思走的日子。后来章宗陛下即位，认识到天忍非同寻常的价值，这才命完颜教主出掌天忍教。”&lt;end&gt;
+&lt;playername&gt;：“如今看起来，教内似乎又重新兴旺起来了。”&lt;end&gt;
+&lt;npc=254&gt;：“只是重治的开始。如今许多高手都纷纷希望加入我教，天忍却不是养闲人的地方。教主希望天忍的每个手下都精明干练，能够独挡一面。这样才能避免当年那样的惨祸。有三名江湖中人正等待入门考较，可惜我公务繁忙抽不出身，你是否可以代我走一趟？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>452</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>453</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>454</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>收复了三大高手，可以回去中成殿把这个消息告诉兀萨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>254</Value>
+              </dialognpc>
+              <number>
+                <Value>453</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=254&gt;：“做得好。人先自强后人强，我们天忍要复兴，大金要复兴，需得先从内部抓起。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>可以回去中成殿把这个消息告诉兀萨了</Value>
+              </txt>
+              <txt>
+                <Value>可以回去中成殿把这个消息告诉兀萨了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

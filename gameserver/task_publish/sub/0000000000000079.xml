@@ -1,0 +1,524 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000079" name="冒名顶替" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=972&gt;：“元哲哥哥看起来是一个很冷漠的人，但其实他的心肠非常好。以前我在梁项林手下当差的时候，每次被处罚，元哲哥哥都会帮我说情。后来发生了一些事情，元哲哥哥就离开西夏了。前一段时间元哲哥哥突然回转西夏，我才知道原来他一直在唐门待着，听说是给一个叫做唐缺的人当下人。”&lt;end&gt;
+&lt;playername&gt;：“那你知道他为什么会离开西夏给唐缺当了下人吗？”&lt;end&gt;
+&lt;npc=972&gt;：“我不知道，元哲哥哥也不愿意告诉我。但是我知道他自己回来是为了报恩，不过我也是在元哲哥哥喝醉的时候才知道的。他说唐缺一直想要做唐门的门主，但是却被唐晓后来者居上占了位置。唐缺后来得知游龙珏在唐门，就暗中找到了藏宝的地方，没想到竟然被他发现了游龙珏的秘密。”&lt;end&gt;
+&lt;playername&gt;：“你说什么？游龙珏真的是在唐门？唐缺发现了什么秘密？”&lt;end&gt;
+&lt;npc=972&gt;：“我不知道什么是游龙珏，元哲哥哥说唐缺发现游龙珏分成内外两层，他从外层得到了一幅图案，内层却怎么都打不开。他恨唐一尘隐瞒了太多秘密，就让元哲哥哥带着这个图案离开唐门。自己又贼喊捉贼，想要引起武林注意，引那些想要夺宝的人来唐门，让唐晓和唐一尘不得安宁。”&lt;end&gt;
+&lt;playername&gt;：“那他直接说游龙珏在唐门不就好了，为什么要费这么大的周折？”&lt;end&gt;
+&lt;npc=972&gt;：“元哲哥哥说，唐缺是一个很小心的人，他不敢太明目张胆，所以才会设下这样的巧计。他说真正聪明的人都会剥茧抽丝找到唐门。元哲哥哥把他带出的图案交给了我姐姐小樱，他们很早就认识了，也许她能告诉你更多元哲哥哥的事。不过我劝你在见我姐姐之前先去土狗岭采一些木材杆子，到时候你就会知道做什么用了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>845</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采集中</Value>
+              </txt>
+              <txt>
+                <Value>得到树枝</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{树枝,20,1,316,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>采集%d/6根树枝</Value>
+              </txt>
+              <txt>
+                <Value>在居延泽</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1913,3509
+1927,3424
+1928,3451
+1922,3483
+1929,3586
+1942,3411
+1938,3527
+1949,3567
+1937,3552
+1954,3404
+1955,3442
+1957,3487
+1962,3537
+1980,3384
+1973,3443
+1980,3475
+1968,3511
+1981,3529
+1969,3571
+1983,3562
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带着树枝去找小樱</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>839</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=839&gt;：“你是救出元哲的人吧？”&lt;end&gt;
+&lt;playername&gt;：“不错，郭正说你可以告诉我更多李元哲的事情，不知道你是否愿意说给我听？”&lt;end&gt;
+&lt;npc=839&gt;：“说吧，也许说出来对元哲有好处。说实话，我并没有想到元哲会用这么愚蠢的方式来报恩，不过这也正是他让我着迷的地方，你说不是吗？当初元哲因为一个爱慕的女子和别人大打出手，差点被人家打死，救他的人便是唐缺。也许是心灰意冷，也许是因为别的吧，他离开了西夏随着唐缺去了大宋，默默地生活在那里直到离开。”&lt;end&gt;
+&lt;playername&gt;：“原来李元哲是因为这个才去了唐门。”&lt;end&gt;
+&lt;npc=839&gt;：“是啊，元哲是一个很直率的，做事不会瞻前顾后。相比梁项林，元哲的心就像是水晶做的。他不想梁项林卷入到这种随时可能丧命的阴谋中，却引起了梁项林的猜忌。他不知道现在的梁项林已经不是当初那个和他一起在街头混日子的小混混了，他的良知早就被抛在脑后了。若不是所有顾忌，只怕元哲早就遭了他们的毒手。”&lt;end&gt;
+&lt;playername&gt;：“想不到梁项林是这样的人！对了，郭正说李元哲带出的东西在你这里，可以给我看看吗？”&lt;end&gt;
+&lt;npc=839&gt;：“这……我并不没有料想到会有人来找我要这件东西。说实话，我将它丢在这片湖里面了。这种害人的东西，还是沉在这里会好一些。你还真有先见之明，我给你做个钓竿，你去把包袱钩上来吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{钓竿,20,1,317,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到小樱</Value>
+              </txt>
+              <txt>
+                <Value>找到小樱</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>拿着钓竿将湖里的包袱捞上来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{316,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>299000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <txt>
+                <Value>捞起包袱</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <txt>
+                <Value>正在捞取包裹</Value>
+              </txt>
+              <taskitem>
+                <Value>{317,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{20,1,318,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value>{湿淋淋的包裹,20,1,318,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>1643</Value>
+              </number>
+              <number>
+                <Value>3671</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>右键点击使用背包中的钓竿捞出包裹</Value>
+              </string>
+              <string>
+                <Value>右键点击使用背包中的钓竿捞出包裹</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将捞到的包裹带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“这么快就回来了，可有什么好消息？”&lt;end&gt;
+&lt;playername&gt;：“我想所有的秘密都在这个包里。”&lt;end&gt;
+&lt;npc=3570&gt;：“我看看，这是什么……好象是什么暗示着什么的图案，不过我似乎看不出其中有什么寓意。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{神秘图案,20,1,319,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将包裹带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>将包裹带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000006F</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>29</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{318,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

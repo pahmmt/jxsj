@@ -1,0 +1,341 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000016A" name="龙枪" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1800&gt;：“上代江湖中，成名高手众多，人人都讲自己是天下第一。可真正的天下第一，却没有公论。唯一人被多数高手所承认，也并非因为他能天下无敌。此人真名不为人知，只有个绰号大马虎。要知道此人的故事，就必须从跟随了他多年的武器，继业之奔雷钻龙枪开始。”&lt;end&gt;
+&lt;playername&gt;：“那不是传说中的黄金之枪吗？”&lt;end&gt;
+&lt;npc=1800&gt;：“正是。此枪已断做两截，如今分藏于寒山古刹和大散关，你先去取来，再与我说话。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1802</Value>
+              </fightnpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <taskitem>
+                <Value>{258,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1803</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <taskitem>
+                <Value>{259,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3099</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你可要重返藏剑山庄？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“先生，我已取回两截断开的龙枪。保有这枪的强人好难应付，我几乎无法匹敌。”&lt;end&gt;
+&lt;npc=1800&gt;：“终于知道其中艰辛了吗?”&lt;end&gt;
+&lt;playername&gt;：“恩，可这枪为何会断开呢?”&lt;end&gt;
+&lt;npc=1800&gt;：“乃是在大马虎修练武术时断裂。只因他日日勤奋修习，数十年风雨不误，再坚硬的枪，也比不上人的意志。”&lt;end&gt;
+&lt;playername&gt;：“竟是被生生练断的？”&lt;end&gt;
+&lt;npc=1800&gt;：“传说中大马虎的枪术出神入化，已臻无上境界。他一生勤奋修行，达到的程度，非你我所能思议。”&lt;end&gt;
+&lt;playername&gt;：“这样的人，岂不是无敌？”&lt;end&gt;
+&lt;npc=1800&gt;：“他平身从未与人因仇怨一战。”&lt;end&gt;
+&lt;playername&gt;：“从未一战？”&lt;end&gt;
+&lt;npc=1800&gt;：“武道的化境，不是与人为敌，而是与己为敌。可胜自己，不战又何妨？万人敌可期，心魔难克啊。”&lt;end&gt;
+&lt;playername&gt;：“先生的意思是，纵然生生练断钢枪，也未必能胜自己。只有战胜心魔，才能达到武学宗师的境界吗？”&lt;end&gt;
+&lt;npc=1800&gt;：“是与不是，都在你自己的领悟。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>111</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{258,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{259,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

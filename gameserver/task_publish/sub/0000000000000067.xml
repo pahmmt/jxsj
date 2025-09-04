@@ -1,0 +1,637 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000067" name="艰难调查" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=823&gt;：“这些日子以来，我一直都在暗中说服朝中大臣合力反对皇后，但是这些人要么闭门不见，要么劝我不要生事，这种明哲保身的态度真让我感到气愤。有道是食君之禄，担君之忧，哪里有这样的臣子？好在我又想到了另外一条路子。”&lt;end&gt;
+&lt;Playername&gt;：“什么路子？”&lt;end&gt;
+&lt;npc=823&gt;：“你不在朝中有所不知，历代以来的文人中有一个秘密的组织，原是一些文人为了考校文学而组成。后来渐渐壮大，不断有人做了高官，便自称一派，号称长歌门。朝中严禁结党，这些人便从不对外言讲，但是势力也大的惊人，朝中各类职务，均有涉及。我知道枢密院知士赵汝愚便是长歌门中人，若能得到他的相助，事情便好办的多。”&lt;end&gt;
+&lt;Playername&gt;：“如此大的组织朝廷怎么会允许他们存在？赵汝愚又能起什么作用？”&lt;end&gt;
+&lt;npc=823&gt;：“你有所不知，长歌门又号称富贵门，门内好多人不是皇亲国戚便是天子门生，说来也算是有身份的人，牵连甚多，再则从未有过异心，门规又严，无贪官无暴吏，也算得上是辅弼国家的良臣的社团。赵汝愚既是皇室贵族，又是长歌门中人，有他出面相劝，效果就好办的多了。只是他受到李后监视，我不能亲自拜见，就只有靠你去说服他了。”&lt;end&gt;
+
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>玉笔令</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=832&gt;：“如今玉笔令失去了，只怕将来形势会更糟！”&lt;end&gt;
+&lt;npc=827&gt;：“我想丹青生应当不会答应李后的聘请吧？”　&lt;end&gt;
+&lt;npc=832&gt;：“殊难预料！”&lt;end&gt;
+&lt;Playername&gt;：“赵大人！郭统领派我暗中来见大人！”&lt;end&gt;
+&lt;npc=832&gt;：“郭节是么？这几日他的举动我已经知道了。身为皇室子弟却要忍受别姓高高凌驾在上，我早已忍无可忍。可是凡事总要有人牵头才行。我门内弟子早已团结一心对抗奸后，这几日我便想和郭节、韩侂胄等人商议，却不料他先找到了我。”&lt;end&gt;
+&lt;npc=827&gt;：“大人，玉笔令该怎么办？”&lt;end&gt;
+&lt;npc=832&gt;：“看你着装必是郭节手下高手，我请你代办一事，算是相助的条件。我有一支玉笔令，凭令可见我门中长老丹青生。此令被皇后强行索去要将丹青生聘请入朝。丹青生虽然学识广博却贪图富贵，一旦他答应入朝则必定不利于我们。我要你夺回玉笔令，并说服丹青生拒绝皇后的聘请。”&lt;end&gt;
+&lt;Playername&gt;：“那玉笔令现在何处？”&lt;end&gt;
+&lt;npc=827&gt;：“已被皇后的红枪侍卫取走前往浣花溪寻访丹青生了。你若现在出发，还能在她们见到丹青生之前夺回玉笔令。”　&lt;end&gt;
+&lt;Playername&gt;：“那我即刻出发！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>说服赵汝愚</Value>
+              </txt>
+              <txt>
+                <Value>说服赵汝愚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往浣花溪从红枪侍卫手中夺回玉笔令</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>828</Value>
+              </fightnpc>
+              <number>
+                <Value>90</Value>
+              </number>
+              <taskitem>
+                <Value>{440,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带着玉笔令去见丹青生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>130000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>510</Value>
+              </number>
+              <number>
+                <Value>1594</Value>
+              </number>
+              <number>
+                <Value>3173</Value>
+              </number>
+              <dialognpc>
+                <Value>829</Value>
+              </dialognpc>
+              <txt>
+                <Value>玉笔令</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=829&gt;：“来者何人？”&lt;end&gt;
+&lt;Playername&gt;：“我从赵汝愚大人那里前来，赵大人托我转告先生不要为皇后所惑，受聘入朝！”&lt;end&gt;
+&lt;npc=829&gt;：“可有玉笔令？”&lt;end&gt;
+&lt;Playername&gt;：“请先生过目！”&lt;end&gt;
+&lt;npc=829&gt;：“玉笔令倒是真的，不过凭什么要我听他的？受聘入朝乃是多么荣耀的一件事情？我虽学富五车，却无功名在身。难得有此机会受皇后亲邀入朝，我为何要拒绝？”&lt;end&gt;
+&lt;Playername&gt;：“李后干政，朝纲已乱。先生自称学富五车，不知为国分忧，铲除奸后，竟然只顾个人荣耀，觍颜索取功名，也不怕天下人耻笑？长歌门历来无贪官无暴吏，那先生这般行径又作何论？”&lt;end&gt;
+&lt;npc=829&gt;：“你……你竟敢对我无礼！”&lt;end&gt;
+&lt;Playername&gt;：“像你这种人只会被人人唾弃！”&lt;end&gt;
+&lt;npc=829&gt;：“小辈！待我教训于你！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>860</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>说服丹青生</Value>
+              </txt>
+              <txt>
+                <Value>说服丹青生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“口气挺大，也不过尔尔！像你这样的人杀了你只会脏了我的手！若是你敢为虎作伥，我绝对不会手软！”&lt;end&gt;
+&lt;npc=829&gt;：“你……你……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过告诉赵汝愚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{440,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>173000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>玉笔令</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=832&gt;：“如何？”&lt;end&gt;
+&lt;Playername&gt;：“没想到丹青生竟然打算答应皇后聘请，所说言语更是让我气愤不已。受我指责之后他恼羞成怒动起手来，被我狠狠教训了一顿！”&lt;end&gt;
+&lt;npc=832&gt;：“什么？你竟然和他动手了？不过也好，丹青生这个人出了名的好面子，虽然极想功名利禄，被你这样一搅，定会觉得颜面无光，就算李后再请也不会去了。”&lt;end&gt;
+&lt;Playername&gt;：“这也是误打误撞罢了！”&lt;end&gt;
+&lt;npc=832&gt;：“结局满意即可！你去告诉郭节，就说我会尽力说服门内的人，请他等我消息。”　&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找赵汝愚</Value>
+              </txt>
+              <txt>
+                <Value>回去找赵汝愚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将赵汝愚的话带给郭节</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>823</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=823&gt;：“事情进展如何？赵大人可有答应？”&lt;end&gt;
+&lt;Playername&gt;：“赵大人请你等他的消息，他会去说服其他人。李后的人曾强取了他的玉笔令打算请丹青生入朝为官，被我给搅黄了。让你久等了。”&lt;end&gt;
+&lt;npc=823&gt;：“丹青生？据说他博古通今，却屡屡落第。长歌门注重学问，因此他在门中威望很高。此人甚是热衷功名，既然他不会入朝，倒也是一件好事。韩大人托人来找你，你速速去他那里。顺便告诉他一声，让他耐心等我消息。”&lt;end&gt;
+&lt;Playername&gt;：“是！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到郭节</Value>
+              </txt>
+              <txt>
+                <Value>找到郭节</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往韩府找韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>556</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=556&gt;：“你总算来了，嘉王现在有难，需要你去救他！”&lt;end&gt;
+&lt;Playername&gt;：“这究竟是怎么一回事？”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value>找到韩侂胄</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000068</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

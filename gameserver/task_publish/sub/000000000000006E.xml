@@ -1,0 +1,309 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000006E" name="五篇八卦" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1193&gt;：“如今朝中局势已定，皇太后虽然先前那般作为，朕也愿如生母一般侍奉，不再追究，诸位意下如何？”&lt;end&gt;
+&lt;npc=1197&gt;：“皇上圣明！百行孝为先，此举为社稷之福，百姓之福！”&lt;end&gt;
+&lt;npc=1193&gt;：“那好！&lt;=me.szName&gt;，你去灵隐寺知会杨、石两位帮主，请他们不必再为难皇太后，任其回宫。另外请代朕向他二人致谢，多谢他们连日以来倾力相助。朕不会有负于支持朕的英雄，不会有负朕的百姓。朕另外给丐帮和天王帮封赏，请他们务必收下。”&lt;end&gt;
+&lt;npc=1197&gt;：“万岁！万岁！万万岁！”&lt;end&gt;
+&lt;Playername&gt;：“草民告退！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>524</Value>
+              </number>
+              <number>
+                <Value>1639</Value>
+              </number>
+              <number>
+                <Value>3246</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>前往灵隐寺大殿</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1184&gt;：“&lt;=me.szName&gt;，宫内形势如何？”&lt;end&gt;
+&lt;Playername&gt;：“嘉王殿下已经登基即位，请我向两位帮主致谢，丐帮和天王帮相助之恩皇上铭记在心，定会做个好皇帝。他会择日封赏你们。”&lt;end&gt;
+&lt;npc=1185&gt;：“我们又如何会贪图封赏，只要朝廷安定，百姓安居，我们就算没白忙乎！”&lt;end&gt;
+&lt;npc=1184&gt;：“正是！”&lt;end&gt;
+&lt;npc=950&gt;：“你说什么？赵扩这小子当了皇帝？我不信，我不同意，皇上没死他凭什么登基？”&lt;end&gt;
+&lt;Playername&gt;：“我看你还是知足吧！照你先前作为，已是百死莫赎。如今皇上在群臣前允诺不再追究，你还不快快谢恩！”&lt;end&gt;
+&lt;npc=950&gt;：“哈哈……哈哈哈……赵扩那小子当了皇帝……哈哈……”&lt;end&gt;
+&lt;npc=1185&gt;：“唉！皇后怕是疯了！&lt;=me.szName&gt;，你有什么打算？”&lt;end&gt;
+&lt;Playername&gt;：“当日我秋姨请我随同两位帮主一同协助嘉王，如今嘉王即位，我需回转复命。两位帮主，就此别过，告辞！”&lt;end&gt;
+&lt;npc=1185&gt;：“后会有期！”&lt;end&gt;
+&lt;npc=1184&gt;：“后会有期！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“秋姨，我回来了！”&lt;end&gt;
+&lt;npc=3570&gt;：“你终于回来了！皇上登基的皇榜已经贴出，皇榜内竟然会提到我们义军，大家正在庆祝呢！”&lt;end&gt;
+&lt;npc=3572&gt;：“&lt;=me.szName&gt;，想不到你这&lt;if me.nSex==0&gt;小子&lt;else&gt;丫头&lt;endif&gt;竟然如此厉害！当初你被村外的野猴子欺负得哭着跑回来，他们说你长大了肯定没出息，只有我说你肯定会成为一代大侠，果然给我说中了吧？”&lt;end&gt;
+&lt;Playername&gt;：“大哥说笑了！”&lt;end&gt;
+&lt;npc=3570&gt;：“好了，你们都别开玩笑了！&lt;=me.szName&gt;，上次你不是说回来的时候要去见龙五太爷吗？他这几天一直在念叨，你快去他那里吧。要不然等下他又要派人来问你是不是回来了。”&lt;end&gt;
+&lt;Playername&gt;：“好的，我这就去。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回去找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前去拜见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“太爷，我回来了！”&lt;end&gt;
+&lt;npc=3571&gt;：“哎呀！是&lt;=me.szName&gt;啊，我看看，果然是你，你可回来了，想死我了！”&lt;end&gt;
+&lt;Playername&gt;：“上次回来没来得及拜见您老人家就出去了，这次一回来就来见您老人家，你老人家身体还好吗？”&lt;end&gt;
+&lt;npc=3571&gt;：“好！好！听秋琳那丫头说你去办大事去了，是什么大事啊？”&lt;end&gt;
+&lt;Playername&gt;：“太爷，您先坐好听我说，事情是这样的……”&lt;end&gt;
+&lt;npc=3571&gt;：“嗯……嗯……后来呢？”&lt;end&gt;
+&lt;Playername&gt;：“后来我们就……然后……”&lt;end&gt;
+&lt;npc=3571&gt;：“原来是这样啊，你真的是出息了呢！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>拜见龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000074</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>28</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

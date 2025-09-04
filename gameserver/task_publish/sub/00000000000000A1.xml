@@ -1,0 +1,1354 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000A1" name="解围天龙寺" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“盐帮果然另有派人潜伏在黄鹤楼，我已经在徐彬剑前来指挥之前将之击溃了！不知道蝶旗主要说的是什么事？”&lt;end&gt;
+&lt;npc=1001&gt;：“我……唉……真是羞于启齿……教主和杨、石两位帮主在行功之时遭四名红衣人偷袭，杨石两位帮主深受重伤，而教主被来人重创……我……我真是愧对教主对我的期望，竟然丝毫未察觉对手的踪迹……”&lt;end&gt;
+&lt;playername&gt;：“既然连杨、石两位帮主这样的高手都会重伤，那想来来敌武艺之强依然超乎想象了。蝶旗主莫要难过，我这就进去探望三位帮主。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>86</Value>
+              </number>
+              <txt>
+                <Value>提升等级到86级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到86级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往探望杨铁心和石轩辕等人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1070</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“杨帮主、石帮主，这究竟是怎么一回事？听说古教主受到重创，可是真的？”&lt;end&gt;
+&lt;npc=1070&gt;：“唉……确是如此，我等都太大意，没有想到他会前来夺宝。这本该是意料中的事情，怪我，怪我啊……”&lt;end&gt;
+&lt;playername&gt;：“不知道杨帮主口中的他指的是谁？”&lt;end&gt;
+&lt;npc=1071&gt;：“这些暂且莫论，以我三人眼下实情已无力追讨游龙珏，还是先设法将古教主救转才是。”&lt;end&gt;
+&lt;npc=1070&gt;：“正是！古教主中了敌人惑心之术，已近混乱、不省人事，此症唯有峨嵋无嗔师太能够医治。&lt;playername&gt;，你速速前往峨嵋派向无嗔师太求取灵药，古教主的伤势是一刻都不能延误了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>找到杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往峨嵋派找无嗔师太求取灵药</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>183000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3526</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过师太！我奉天王帮帮主杨铁心差遣，前来向师太求取灵药救治古嫣然古教主。古教主遭人暗算，陷入昏乱之中，还请师太慈悲，赐我灵药。”&lt;end&gt;
+&lt;npc=3526&gt;：“陷入混乱？江湖中能够令对手昏乱的武学不少，不过尽是些旁门左道，对付寻常百姓绰绰有余。若说能令古教主也着了道，那不是至亲之人便是至强之人，且此人一定是修习天忍教魔音噬魂奇术之人。我知杨帮主等人近来热衷于争夺游龙珏，这种宝物归属早有天定，又何必多此一举，引来强敌环伺。”&lt;end&gt;
+&lt;playername&gt;：“师太慈悲为怀，请赐我灵药搭救古教主，晚辈感恩不尽！”&lt;end&gt;
+&lt;npc=3526&gt;：“非是贫尼不肯救治，只因制作七檀降心丹的佛泪花已然告罄，实在为难……眼下是佛泪花种植的大好季节，不如我教你佛泪花的种植之法，几日之内定会有所收获。这是佛泪花的种子，这是一支水瓶。你可先在我前面的池塘取满水，再将佛泪花的种子种在我峨嵋的佛泪台。隔一段时间浇一次水，佛泪花自会长出。你千万不要心急，否则定然功亏一篑。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{佛泪花种,20,1,372,1,0,1}
+{空瓶子,20,1,373,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value>找到无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>用空瓶子装满池塘的水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>91000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>得到装满水的水瓶</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <txt>
+                <Value>正在取水</Value>
+              </txt>
+              <taskitem>
+                <Value>{373,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{20,1,374,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value>{装满水的瓶子,20,1,374,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1449</Value>
+              </number>
+              <number>
+                <Value>3226</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>用池塘的水装满空瓶</Value>
+              </string>
+              <string>
+                <Value>用池塘的水装满空瓶</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(水已经打满，佛泪花要种植在佛泪台才会生长！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往佛泪台将佛泪花的种子播下</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>183000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <txt>
+                <Value>你播下了佛泪花的种子</Value>
+              </txt>
+              <txt>
+                <Value>你挑出了一粒坏种子</Value>
+              </txt>
+              <txt>
+                <Value>正在播种</Value>
+              </txt>
+              <taskitem>
+                <Value>{372,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>2887</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>在佛泪台种下佛泪花种</Value>
+              </string>
+              <string>
+                <Value>在佛泪台种下佛泪花种</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(佛泪花已经种下，是时候给它浇点水了！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>为佛泪花种浇水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>366000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0.7</Value>
+              </number>
+              <txt>
+                <Value>你浇下了适量的水</Value>
+              </txt>
+              <txt>
+                <Value>你浇水过多淹死了种子</Value>
+              </txt>
+              <txt>
+                <Value>正在浇水</Value>
+              </txt>
+              <taskitem>
+                <Value>{374,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>2887</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>为佛泪花的种子浇水</Value>
+              </string>
+              <string>
+                <Value>为佛泪花的种子浇水</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(佛泪花浇点水以后需要等待一段时间才可以继续浇水，否则就会淹死种子，前功尽弃！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>等待佛泪花的种子吸水萌芽</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>366000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(是时候再一次浇水了！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>再次为佛泪花的种子浇水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>91000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0.7</Value>
+              </number>
+              <txt>
+                <Value>花苗破土而出</Value>
+              </txt>
+              <txt>
+                <Value>你浇水过多淹死了花苗</Value>
+              </txt>
+              <txt>
+                <Value>正在浇水</Value>
+              </txt>
+              <taskitem>
+                <Value>{374,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>2887</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1594</Value>
+              </number>
+              <string>
+                <Value>为佛泪台的种子浇水</Value>
+              </string>
+              <string>
+                <Value>为佛泪台的种子浇水</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(这一次浇水的时候佛泪花的嫩苗便开始破土而出了，这个时候不能着急浇水，否则嫩苗就会烂掉！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>等待嫩苗生长</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>366000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(嫩苗的涨势渐渐缓慢了下来，看来是时候浇水了！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>为生长的嫩苗浇水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>91000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>0.7</Value>
+              </number>
+              <txt>
+                <Value>花苗开始迅速生长</Value>
+              </txt>
+              <txt>
+                <Value>花苗被水淹死了</Value>
+              </txt>
+              <txt>
+                <Value>正在浇水</Value>
+              </txt>
+              <taskitem>
+                <Value>{374,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1630</Value>
+              </number>
+              <number>
+                <Value>2887</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1020</Value>
+              </number>
+              <string>
+                <Value>为佛泪花的嫩苗浇水</Value>
+              </string>
+              <string>
+                <Value>为佛泪花的嫩苗浇水</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(最后一次浇水以后，佛泪花便舒展开了蔓藤开出了鲜艳的花朵，将这些花朵摘下来带给无嗔师太。佛泪花有的已经开花，有的还是花蕾，我要细心分辨才好。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>摘下佛泪花带给无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>366000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1556</Value>
+              </dialognpc>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>摘下佛泪花</Value>
+              </txt>
+              <txt>
+                <Value>你得到一朵佛泪花</Value>
+              </txt>
+              <txt>
+                <Value>花蕾被你损坏了</Value>
+              </txt>
+              <string>
+                <Value>{佛泪花,20,1,371,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经采集了%d/1朵佛泪花</Value>
+              </txt>
+              <txt>
+                <Value>在佛泪台摘下佛泪花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1627,2885
+1624,2990
+1634,2888
+1631,2908
+1632,2881
+1652,2899
+1660,2907
+1625,2903
+1625,2895
+1636,2917
+1635,2882</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将摘下的佛泪花带给无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>183000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3526</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过师太！佛泪花我已经采到了，请师太为我炮制七檀降心丹吧！”&lt;end&gt;
+&lt;npc=3526&gt;：“施主真是有心人！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{七檀降心丹,20,1,375,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value>找到无嗔师太</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000000A2</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>36</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{371,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,1156 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001D2" name="祸起长歌" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“朱老先生为国为民用心良苦,却落得个结党营私和伪学之罪，&lt;playername&gt;，对于此事你心里做何想法？”&lt;end&gt;
+&lt;playername&gt;：“秋姨，我陪同朱老先生一同为嘉王旬讲数日，也算是他的半个弟子吧。朱老先生对于经学、史学、文学、佛学、道教，都有所涉猎或有著述，知识广博宏富，是难得的国学大师。可树大招风，朱老先生被贬也未必就是件坏事。”&lt;end&gt;
+&lt;npc=3570&gt;：“你说的在理，塞翁失马焉知非福。但现如今这事情不会就这么结束，人心险恶难以预测。”&lt;end&gt;
+&lt;playername&gt;: “秋姨可是遇到什么难处？只管吩咐，我定当全力以赴。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“怎么？秋姨得到了什么其他的消息吗？”&lt;end&gt;
+&lt;npc=3570&gt;：“是，我最近接到了长歌门门主窦昊密信，你看……”&lt;end&gt;
+&lt;playername&gt;：“……这……”&lt;end&gt;
+&lt;npc=3570&gt;：“事情紧急，且不说这伙神秘高手围攻长歌门是否与朱老先生有关，相信你也知道，长歌门弟子尽是些手无缚鸡之力的儒雅书生，怎么敌得过那些蛮汉？”&lt;end&gt;
+&lt;playername&gt;：“秋姨，我知道了，我立马赶去长歌门一探究竟，上次护送朱老先生回到武夷山精舍后便未曾见过窦门主，我本也应当与窦门主交代妥当。”&lt;end&gt;
+&lt;npc=3570&gt;：“本想让你好好休息休息，可这事情有些棘手，你与窦门主有些交情去解围也在情理之中，你一路上要多加小心！”&lt;end&gt;
+&lt;playername&gt;：“是，我这便星夜赶往。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>向秋姨询问长歌门近况</Value>
+              </txt>
+              <txt>
+                <Value>向秋姨询问长歌门近况</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到2级</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到2级</Value>
+              </txt>
+              <string>
+                <Value>2</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>100</Value>
+              </number>
+              <txt>
+                <Value>将等级提升到100级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到100级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我要立马星夜兼程赶往长歌门</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3485</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3485&gt;：“&lt;playername&gt;，别来无恙！”&lt;end&gt;
+&lt;playername&gt;：“窦门主，许久不见。本打算护送完先生后与您好好叙叙，不想义军内事务繁忙给耽搁了。我已看过先生给秋姨的密信，先生在信中提及长歌门近来遇到一股神秘势力围攻，门主可有什么权衡……”&lt;end&gt;
+&lt;npc=3485&gt;：“这事情说来有些蹊跷……你们先下去罢。”&lt;end&gt;
+&lt;playername&gt;：“左右已屏退，门主但说无妨。”&lt;end&gt;
+&lt;npc=3485&gt;：“自上次你因护送老师与我一别，我回到长歌门发现门内弟子因老师被贬以及“伪学”之事显得异常不满，有些弟子长书十卷意欲为老师上书洗去污名。”&lt;end&gt;
+&lt;playername&gt;：“理学成伪学，门内弟子又尽是追随朱老先生理学多年的儒生，有此等反应亦在情理之中啊。”&lt;end&gt;
+&lt;npc=3485&gt;：“话是这么说，可我经过观察发现，门内弟子们的言论尖利苛刻，不时有有辱朝廷的话语放出。这并不似我门内弟子的做派，我怀疑长歌门内有细作混入，且不说幕后主使者是谁，他们的目的定然不简单。&lt;playername&gt;，我想你帮我将此事查个水落石出。”&lt;end&gt;
+ &lt;playername&gt;：“门主放心，&lt;playername&gt;定不负门主重托。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去长歌门找到窦昊先生</Value>
+              </txt>
+              <txt>
+                <Value>去长歌门找到窦昊先生</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>长歌门弟子之中难道混入了细作，我决定去查个水落石出</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>1562</Value>
+              </number>
+              <number>
+                <Value>3327</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>偷听长歌门内细作对话</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4300&gt;：“我发觉这长歌门内的书生舞文弄墨确实有一套，我上次差点被揭穿咯！密信可有带回去？”&lt;end&gt;
+&lt;npc=4301&gt;：“书信已经安全送达了，这门中也不全是书呆子，有一部分武功不弱，要提醒兄弟们万万不可掉以轻心了。”&lt;end&gt;
+&lt;npc=4300&gt;：“说的是！我会传令给兄弟们……”&lt;end&gt;
+&lt;npc=4301&gt;：“门外什么人！给老子滚出来。”&lt;end&gt;
+&lt;npc=4300&gt;：“小的们给我上啊！咱们被这小兔崽子发现啦！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>击败混入长歌门的细作们</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>151</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4300</Value>
+              </fightnpc>
+              <number>
+                <Value>800</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4301</Value>
+              </fightnpc>
+              <number>
+                <Value>800</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看来窦门主的担忧不是空穴来风，我要先回去报告门主</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>64000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3485</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“门主，我已经侦察完毕……请屏退左右。”&lt;end&gt;
+&lt;npc=3485&gt;：“你我是老相熟了，门主门主的叫法显得好不生疏，若不嫌弃便唤我一声窦大哥。”&lt;end&gt;
+&lt;playername&gt;：“能有你这样的大哥是我的荣幸……窦大哥，方才我偷偷听到两名细作间的对话，言谈间还提及什么密信，我并没有打草惊蛇，还是先来问问你的意见。”&lt;end&gt;
+&lt;npc=3485&gt;：“现在还不能轻举妄动，我倒要看看这幕后竟是个怎样的高手在操控这棋盘，你先把这消息告诉给门内几位管事儿的，让大家都提防起来，我们来个瓮中捉鳖！”&lt;end&gt;
+&lt;playername&gt;：“窦大哥高见，我这就去办。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况先回去报告门主</Value>
+              </txt>
+              <txt>
+                <Value>将情况先回去报告门主</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将门内出现细作的事情告诉给几个管事儿的</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3481</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3481&gt;：“&lt;playername&gt;，见你气喘吁吁，有什么急事？”&lt;end&gt;
+&lt;playername&gt;：“我气喘？看来我要多加强内功练习才行……我今日来此主要是想帮窦门主传话。现长歌门弟子中有一部分因“伪学”之事出现偏激言论，实则是有细作从中挑拨离间，窦门主之意是顺藤摸瓜，揪出幕后主使人。此段时间内请您多加提防莫要打草惊蛇了！”&lt;end&gt;
+&lt;npc=3481&gt;：“果真有此事？我也察觉到一些苗头，却未曾深究因果，真是不该大意了……”&lt;end&gt;
+&lt;playername&gt;：“防人之心不可无，&lt;playername&gt;先行告辞了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与陆旋对话</Value>
+              </txt>
+              <txt>
+                <Value>与陆旋对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3482</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3482&gt;：“&lt;playername&gt;，本想与你对弈几局，不想你自己来啦！”&lt;end&gt;
+&lt;playername&gt;：“哈哈，蒙您赐教&lt;playername&gt;求之不得！不过现在有更紧要的事情。我今日来此主要是想帮窦门主传话。现长歌门弟子中有一部分因“伪学”之事出现偏激言论，实则是有细作从中挑拨离间，窦门主之意是顺藤摸瓜，揪出幕后主使人。此段时间内请您多加提防莫要打草惊蛇了！”&lt;end&gt;
+&lt;npc=3482&gt;：“这，我知道了……我会多加留意！”&lt;end&gt;
+&lt;playername&gt;“好，对弈一事晚辈会放在心上，改日定然专程前来。”&lt;end&gt;
+&lt;npc=3482&gt;：“哈哈!好，老身记下你的承诺了，你也要倍加小心！”&lt;end&gt;
+&lt;playername&gt;：“晚辈告辞！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与朱逊对话</Value>
+              </txt>
+              <txt>
+                <Value>与朱逊对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3483</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3483&gt;：“是&lt;playername&gt;！听说你最近为我长歌门内事务四处奔波，辛苦你了。”&lt;end&gt;
+&lt;playername&gt;：“我奉义军之命，帮助窦门主和长歌门乃分内之事。此次前来主要想告诉您现长歌门弟子中有一部分因“伪学”之事出现偏激言论，实则是有细作从中挑拨离间，窦门主之意是顺藤摸瓜，揪出幕后主使人。此段时间内请您多加提防莫要打草惊蛇了！”&lt;end&gt;
+&lt;npc=3483&gt;：“我也感觉到门内气氛有些异常，不想竟然是有细作，看来事情并不简单。”&lt;end&gt;
+&lt;playername&gt;：“是，我将竭尽全力追查下去，&lt;playername&gt;先行告退，改日再来拜会！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与赵盛对话</Value>
+              </txt>
+              <txt>
+                <Value>与赵盛对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3484</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3484&gt;：“是&lt;playername&gt;啊，久闻你的事迹，今日一见果然气度不凡！”&lt;end&gt;
+&lt;playername&gt;：“您过奖了，今日来此主要是想帮窦门主传话。现长歌门弟子中有一部分因“伪学”之事出现偏激言论，实则是有细作从中挑拨离间，窦门主之意是顺藤摸瓜，揪出幕后主使人。此段时间内请您多加提防莫要打草惊蛇了！”&lt;end&gt;
+&lt;npc=3484&gt;：“竟有此事！我知道了，&lt;playername&gt;你也要多加小心。”&lt;end&gt;
+&lt;playername&gt;：“就此别过。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与叶然对话</Value>
+              </txt>
+              <txt>
+                <Value>与叶然对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在是时候回去与窦大哥商议下一步的计划了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>34000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3485</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“窦大哥，我已与门内几个管事的说明情况，他们都会多加提防。”&lt;end&gt;
+&lt;npc=3485&gt;：“做的好，&lt;playername&gt;。瓮中捉鳖也要各方面配合不出岔子。我琢磨着此事还是要从长计议。既然他们提及密信，你便去探上一探看看能否查出什么蛛丝马迹来。”&lt;end&gt;
+&lt;playername&gt;：“倒是个好办法，我这便前去寻找。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>现在是时候回去与窦大哥商议下一步的计划了</Value>
+              </txt>
+              <txt>
+                <Value>现在是时候回去与窦大哥商议下一步的计划了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先去长歌门附近查探一番看看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>1639</Value>
+              </number>
+              <number>
+                <Value>3447</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>探查长歌门别院</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>1762</Value>
+              </number>
+              <number>
+                <Value>3361</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>探查长歌门学堂</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>1656</Value>
+              </number>
+              <number>
+                <Value>3282</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>探查长歌门藏书房</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>64000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我这便回去窦门主处复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3485</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“窦大哥, 我探查长歌门内几处重要场地均未发现密信的踪迹，看来事情有些棘手。”&lt;end&gt;
+&lt;npc=3485&gt;：“我了解了，想必是这幕后的主使者非草芥之辈，我们一定不可气馁，也幸好还有你这个义军侠士在我身边，我窦昊代表长歌门弟子感谢你！”&lt;end&gt;
+&lt;playername&gt;：“大哥万不可如此客套，我不是一个人在战斗，我的身后有义军千万个兄弟，他们个个都是骁勇善战的好汉。我做这一点实在不值一提！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去窦门主处复命</Value>
+              </txt>
+              <txt>
+                <Value>回去窦门主处复命</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>142</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000001D3</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,161 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E4" name="唐家仇怨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=473&gt;：“唐门弟子敢上我峨嵋，我定要给他们点颜色看看！”&lt;end&gt;</Pop>
+      <Start>&lt;npc=473&gt;：“当年我学艺有成，初下峨嵋时，曾因助拳一位少女，而遭到唐家堡弟子的围攻。虽然后来才知道，那少女乃一名惯偷，可唐家子弟早就看峨嵋派不过，借机囚禁了我。无念师傅找到当年的唐家堡主事唐缺，讨还我时，已经受尽了酷刑的折磨，遍体鳞伤，奄奄一息。”&lt;end&gt;
+&lt;npc=473&gt;：“无念师傅震惊之下怒挑唐家堡，唐缺揽下此事，怎料在师傅手下十招都走不过，从此沦为江湖笑柄。不过我凌风雁对唐家人简直恨入骨髓。听说近来有唐门弩手在九老洞一层出没，真要活撕了这帮狗贼我才开心。不过我峨嵋行事正义，切不可要了他们的性命。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2062</Value>
+              </fightnpc>
+              <number>
+                <Value>61</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2230</Value>
+              </fightnpc>
+              <number>
+                <Value>61</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>惩罚了唐家来客，出了气，回去找到凌风雁吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>473</Value>
+              </dialognpc>
+              <number>
+                <Value>61</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=473&gt;：“恩，其实打了他们一顿，也并不觉得如何解气。这么多年的仇恨，也该放下了吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找到凌风雁吧</Value>
+              </txt>
+              <txt>
+                <Value>回去找到凌风雁吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

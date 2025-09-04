@@ -1,0 +1,242 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000042" name="耸人听闻" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=210&gt;：“好消息好消息！方丈大师，好消息！”&lt;end&gt;
+&lt;npc=219&gt;：“何事惊慌，慢些讲。”&lt;end&gt;
+&lt;npc=210&gt;：“派往河北的弟子，费劲周折收购来了几车粮食！有几千斤哪。”&lt;end&gt;
+&lt;npc=219&gt;：“哦？倒真是个好消息，解了寺中的燃眉之急。”&lt;end&gt;
+&lt;npc=210&gt;：“不过，不过粮车被饥饿的难民堵在山下了。若不是有弟子们拼死护着，怕是要被抢空了。”&lt;end&gt;
+&lt;npc=220&gt;：“方丈，让我去开道吧！”&lt;end&gt;
+&lt;npc=219&gt;：“你这个牛脾气，去了指不定又惹出什么祸来。&lt;playername&gt;。”&lt;end&gt;
+&lt;playername&gt;：“弟子在。”&lt;end&gt;
+&lt;npc=219&gt;：“劳烦你去一趟，将粮车护送到这草堂来，老衲会让玄苦的弟子接应你。一路上行事要谨慎，不要惹恼了饥民们。”&lt;end&gt;
+&lt;playername&gt;：“弟子省得。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>796</Value>
+              </dialognpc>
+              <number>
+                <Value>1708</Value>
+              </number>
+              <number>
+                <Value>4012</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位师傅，我奉方丈大师之命前来护送粮车。”&lt;end&gt;
+&lt;npc=222&gt;：“好，你带一辆车在前面开道，我等跟随你走。”&lt;end&gt;
+&lt;playername&gt;：“可以出发了。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>797</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1756</Value>
+              </number>
+              <number>
+                <Value>3980</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1745,4000
+1751,3983
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>护车弟子趁我不备，竟驾车抄起了近道，一溜烟地消失在视线里。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>69</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>104000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>救命粮让少林寺内的僧众安静下来，回报玄慈大师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>223</Value>
+              </dialognpc>
+              <number>
+                <Value>449</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=225&gt;：“方丈，请您无论如何要相信俺们啊！”&lt;end&gt;
+&lt;playername&gt;：“方丈大师！您没事吧。这些人怎么跑到草堂来捣乱了？”&lt;end&gt;
+&lt;npc=225&gt;：“俺们，俺们不是来捣乱的呀。”&lt;end&gt;
+&lt;npc=223&gt;：“阿弥陀佛。确实有饥民上山来，不过不是来闹事的。这些好心的民众将近来带头闹事者抓了起来。有些民众道，这人在黄河未决堤前便在村里散布谣言，咒这河堤必垮，结果居然被他说中了。”&lt;end&gt;
+&lt;npc=226&gt;：“冤枉啊，俺冤枉啊。”&lt;end&gt;
+&lt;npc=223&gt;：“你有何冤情只管道来，又何必在少室山下捣乱呢？”&lt;end&gt;
+&lt;npc=226&gt;：“俺本是个看瓜田的农人，那日夜间起来撒尿时，见到几个黑影鬼鬼祟祟的在瓜田边说着什么，以为是要偷瓜，便悄悄跟过去偷听，居然他们是在商量掘穿堤坝，放洪淹田！俺见他们带着兵器，不敢招惹，便偷偷跑了。可是俺讲出来，乡亲们不相信哪。”&lt;end&gt;
+&lt;npc=225&gt;：“那你这厮为何要鼓动大家上山抢粮？”&lt;end&gt;
+&lt;npc=226&gt;：“俺，俺在难民中见到了当日的那些人。他们鼓动民众劫粮，俺，俺看着眼红，利欲熏心，才干出这等龌龊事情。求方丈开恩，求方丈开恩哪！”&lt;end&gt;
+&lt;npc=223&gt;：“哦？朱施主讲，当日夜间商量掘开堤坝之人，如今就在这少室山下的难民之中，还挑拨难民抢粮？”&lt;end&gt;
+&lt;npc=226&gt;：“正是正是。”&lt;end&gt;
+&lt;npc=223&gt;：“&lt;playername&gt;你过来一下。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>这些救命粮让少林寺内的僧众安静下来吧，该去回报玄慈大师了</Value>
+              </txt>
+              <txt>
+                <Value>这些救命粮让少林寺内的僧众安静下来吧，该去回报玄慈大师了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000043</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

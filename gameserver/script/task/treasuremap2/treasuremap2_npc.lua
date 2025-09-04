@@ -1,0 +1,6 @@
+-- 文件名  : treasuremap2_npc.lua
+-- 创建者  : zounan
+-- 创建时间: 2010-08-04 17:20:06
+-- 描述    : 藏宝图对话NPC
+--Require("\\script\\task\\treasuremap2\\treasuremap2_def.lua");
+--NULL

@@ -1,0 +1,528 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000028A" name="舍凝眉" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“师太面色不太好看，是碰到了什么棘手的事情让你发愁么？”&lt;end&gt;
+&lt;npc=5113&gt;：“原来是&lt;playername&gt;，太好了，老身确实遇到了棘手的事情，正在设法处理。”&lt;end&gt;
+&lt;playername&gt;：“那便请师太说将出来，看看&lt;playername&gt;能否帮忙。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5113</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5113&gt;：“我峨嵋众弟子来到这灵壁泊已经有三个月了，这么久以来一直做着医治伤患等后勤工作，前几日我峨嵋众弟子出山采药，不想遭遇了金军部队，弟子凝眉急中生智引开了大部队，而自己却……”&lt;end&gt;
+&lt;playername&gt;：“师太莫要焦急，将事情说仔细了才好分析。”&lt;end&gt;
+&lt;npc=5113&gt;：“恩……凝眉她引开了金军大部队，众弟子才得以脱逃，而她自己却被金军抓了去，况且她身上还带着我峨嵋派此次来到灵壁泊参战的峨嵋名册。凝眉自幼在峨嵋长大，从小伶俐懂事，处处为师姐师妹们着想，真希望她能够逢凶化吉，这次的事情老身希望&lt;playername&gt;能够出手相助。”&lt;end&gt;
+&lt;npc=5113&gt;：“我派了几个轻功利落的弟子前去营救均告失败，不过已经确定凝眉就被关押在金军秘营之中，但是她却被看押兵和看押头领监视，而那峨嵋名册便在她的身旁。希望你能将她救出秘营，老身自当感激不尽。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;义不容辞，师太等着我的好消息吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与无想师太对话</Value>
+              </txt>
+              <txt>
+                <Value>与无想师太对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>闯入金军秘营，干掉看押士兵及头领。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5191</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5192</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将秘营中的峨嵋名册找到</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5212</Value>
+              </dialognpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{峨嵋名册,20,1,863,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1本峨嵋名册。</Value>
+              </txt>
+              <txt>
+                <Value>你已经收集了1本峨嵋名册。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1649,3035
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将凝眉姑娘护送出这不见天日的秘营</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5193</Value>
+              </dialognpc>
+              <number>
+                <Value>1650</Value>
+              </number>
+              <number>
+                <Value>3033</Value>
+              </number>
+              <number>
+                <Value>40</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“嘘，凝眉姑娘不要惊慌，是贵派掌门无想师太让我来救你出去的。”&lt;end&gt;
+&lt;npc=5193&gt;：“凝眉先谢过少侠的救命之恩了。”&lt;end&gt;
+&lt;playername&gt;：“姑娘不必客套，事不宜迟，我们现在就出发吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>5194</Value>
+              </fightnpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>400</Value>
+              </number>
+              <number>
+                <Value>1590</Value>
+              </number>
+              <number>
+                <Value>3207</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value>1636,3057
+1628,3074
+1647,3095
+1666,3116
+1692,3150
+1716,3177
+1693,3204
+1682,3204
+1666,3189
+1657,3189
+1634,3213
+1604,3209
+1592,3207
+</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将凝眉得救的消息告知无想师太</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5113</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“师太，凝眉姑娘已经安全了，这峨嵋名册我也已经找到，现在便物归原主了。”&lt;end&gt;
+&lt;npc=5113&gt;：“这么多日以来，我派上下都在为凝眉担心，今日终于放下心中一块大石。这峨嵋名册也有惊无险的回来了，这次多亏了&lt;playername&gt;涉险相助，我代表派中弟子表示感谢。”&lt;end&gt;
+&lt;playername&gt;：“前辈哪里话，峨嵋派在我战场上治病救人，付诸的心血是将士们都能看到的，前辈无须谢我，这都是我份内之事。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与无想师太对话</Value>
+              </txt>
+              <txt>
+                <Value>与无想师太对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{863,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

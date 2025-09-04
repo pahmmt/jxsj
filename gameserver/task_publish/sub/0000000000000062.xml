@@ -1,0 +1,475 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000062" name="勇闯剑冢" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=807&gt;：“自你离去之后，嘉王在老夫这里逗留了几日。但是此处也是李后势力所及之处。老夫的飞龙阵能挡得了一时却挡不了一世，因此老夫遣人将嘉王一行送到大散关的千琼宫。大散关是宋金交界之地，又常有西夏骑兵侵扰，是敏感之地，李后也不敢太过放肆。”&lt;end&gt;
+&lt;Playername&gt;：“如此也好，只是不知千琼宫是什么所在？”&lt;end&gt;
+&lt;npc=807&gt;：“那里是老夫挚友不死先生的潜修之地，深处地下，内部机关重重，嘉王躲在那里当会无恙。你若放心不下，老夫可以送你前往那里，你跟随在嘉王身边，也少了顾虑。”&lt;end&gt;
+&lt;Playername&gt;：“既是这样，那就有劳先生了，时局随时会有变动，我还是随在嘉王身边较为稳妥。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>807</Value>
+              </dialognpc>
+              <number>
+                <Value>511</Value>
+              </number>
+              <txt>
+                <Value>飞龙谷</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>87</Value>
+              </number>
+              <number>
+                <Value>1897</Value>
+              </number>
+              <number>
+                <Value>3354</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>大散关据此路有千里，你又路途不熟，老夫可以送你前往，你即刻便要动身前去吗？</Value>
+              </txt>
+              <txt>
+                <Value>劳烦先生送我前去！</Value>
+              </txt>
+              <txt>
+                <Value>容我再想一想！</Value>
+              </txt>
+              <txt>
+                <Value>前往千琼宫</Value>
+              </txt>
+              <txt>
+                <Value>前往千琼宫</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>我来到了千琼宫外，发现四周的树后竟然潜伏着一批高手，一种不祥的感觉涌上了我的心头，我决定潜入千琼宫，一探究竟。</Value>
+              </txt>
+              <txt>
+                <Value>潜入千琼宫</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>513</Value>
+              </number>
+              <number>
+                <Value>1578</Value>
+              </number>
+              <number>
+                <Value>3245</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>潜入千琼宫</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1177&gt;："各位师兄弟定要齐心协力拦住玄棺入口，不要让他们冲进去。"&lt;end&gt;
+&lt;npc=1178&gt;："女弟子随我守在玄棺入口！"&lt;end&gt;
+&lt;npc=816&gt;："全力猛攻，看他们能撑到什么时候！"&lt;end&gt;
+&lt;npc=815&gt;："是！"&lt;end&gt;
+&lt;playername&gt;：(看来又是李后的鹰犬，一定不能让他们得逞！)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>相助千琼宫弟子击退李后的鹰犬</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>815</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1178&gt;："不好！陆展元冲进玄棺了，快点拦住他！莫要让他冲到天外天！"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进入玄棺拦截陆展元</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>260000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>513</Value>
+              </number>
+              <number>
+                <Value>1648</Value>
+              </number>
+              <number>
+                <Value>3120</Value>
+              </number>
+              <dialognpc>
+                <Value>822</Value>
+              </dialognpc>
+              <txt>
+                <Value>千琼宫</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=822&gt;："你是谁，快点给我让开，要不然你就是嘉王的陪葬！"&lt;end&gt;
+&lt;playername&gt;："李后的走狗，也敢口出狂言，我们手底下见真章！"&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>816</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>击退陆展元</Value>
+              </txt>
+              <txt>
+                <Value>击退陆展元</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1057&gt;："这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，请来天外天一叙！"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进去天外天见冷云</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>130000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1057</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1057&gt;：“想不到李后的鹰犬会来的这么快，&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;出力击退陆展元，我代家师谢过&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;。”&lt;end&gt;
+&lt;Playername&gt;：“路见不平，拔刀相助，更何况我为了嘉王而来，怎么能眼看着他们如此胡来！”&lt;end&gt;
+&lt;npc=1057&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;快人快语，不愧为江湖儿女！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和冷云交谈</Value>
+              </txt>
+              <txt>
+                <Value>和冷云交谈</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000063</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

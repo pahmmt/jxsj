@@ -1,0 +1,674 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000218" name="前路漫漫" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4554&gt;：“你……你……”&lt;end&gt;
+&lt;npc=4555&gt;：“完颜襄，你这禽兽，都对筱雨做了什么？”&lt;end&gt;
+&lt;npc=4556&gt;：“这丫头要回家乡去，我怎能让她如愿，而如今蒙金战事正酣，大宋也开始不安分起来，我哪里还有闲心顾及到这丫头，但又不舍得放她走，只得出此下策，我却是未动她半根毫毛，我把她留下了不是也正中了你的意么,耶律将军？”&lt;end&gt;
+&lt;npc=4555&gt;：“混帐！枉你还是一教之主，枉为堂堂大金国第一武将，哈哈哈可笑啊耶律楚材，我就是在这样一条狗都不如的家伙手下活着……”&lt;end&gt;
+&lt;npc=4554&gt;：“耶律……大人，不……不要杀他，不要杀完……颜襄！”&lt;end&gt;
+&lt;npc=4555&gt;：“筱雨，你醒了，身体如何是不是很难受？你刚才说什么不要杀他？为何为何你要帮这禽兽求情？难道你真的对他有情？”&lt;end&gt;
+&lt;npc=4554&gt;：“其实，我的真实身份乃是翠烟门门主。此次前来北方正是想经历江湖的历练。我恨完颜襄，恨他破坏了我们的友情，恨他把事情做得如此绝情不留余地。”&lt;end&gt;
+&lt;npc=4555&gt;：“为何还维护这禽兽？”&lt;end&gt;
+&lt;npc=4554&gt;：“ 耶律将军请听我说。完颜襄乃金国第一武将，手中兵力和权利不在金国皇帝之下，今日若他因我而死，遭殃的不仅是翠烟门，更是整个宋朝的百姓。那时，金国人将挑起这场战争，不把中原占去，不把战火烧到黄河他们怎解心头恨。”&lt;end&gt;
+&lt;npc=4555&gt;：“原来，原来筱雨你竟考虑得这么远，你说的对，说的对，我只想着自己的愤怒和怨恨，却忘记了杀了他后将会带来的灾难……”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>129</Value>
+              </number>
+              <txt>
+                <Value>提升等级到129级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到129级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>25490</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到4级25490点</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到4级25490点</Value>
+              </txt>
+              <string>
+                <Value>4</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击退完颜襄的亲兵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4552</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4553</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>200000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>563</Value>
+              </number>
+              <number>
+                <Value>1595</Value>
+              </number>
+              <number>
+                <Value>2968</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>退回尹筱雨身边</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=4556&gt;：“完颜众部听命！速速停手。”&lt;end&gt;
+&lt;npc=4556&gt;：“完颜众部听命！速速停手。再有未停手者，斩！“&lt;end&gt;
+&lt;Playername&gt;:“你这是耍的哪一出？”&lt;end&gt;
+&lt;npc=4556&gt;：“你们走吧，一切错皆因我而起，是我太自私，想将筱雨占为己有，就在初次听见筱雨抚琴那日，我的心已经系在她身上了，然而爱情这东西是最让人恼怒和琢磨不透的……你们，都走吧，筱雨你也……保重……”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>和尹筱雨一起离开</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4554</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>561</Value>
+              </number>
+              <number>
+                <Value>1529</Value>
+              </number>
+              <number>
+                <Value>2905</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>我们这便离开这个伤心地吧!</Value>
+              </txt>
+              <txt>
+                <Value>好的</Value>
+              </txt>
+              <txt>
+                <Value>稍等</Value>
+              </txt>
+              <txt>
+                <Value>离开完颜襄密室</Value>
+              </txt>
+              <txt>
+                <Value>离开完颜襄密室</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;:“你先乘马车离去，我来断后！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>送尹筱雨坐马车离开</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4523</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“小姐快走！”&lt;end&gt;
+&lt;npc=4554&gt;：“我们在翠烟门再见!”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>送尹筱雨离开</Value>
+              </txt>
+              <txt>
+                <Value>送尹筱雨离开</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>似乎并没有来人追来,我也回翠烟门先吧!</Value>
+              </txt>
+              <txt>
+                <Value>返回翠烟门和尹筱雨会合</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3536</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4554&gt;：“&lt;playername&gt;，我们可是已经来回到翠烟门了？”&lt;end&gt;
+&lt;playername&gt;：“筱雨，我们已经回来了，我们回到了大理，回到了你的家呀。”&lt;end&gt;
+&lt;npc=4554&gt;：“我记得……我们正在完颜府邸的密室中激烈的厮杀着，后来……后来……”&lt;end&gt;
+&lt;playername&gt;：“后来你便昏了过去，完颜襄竟是一声大喝命其部下全部停手。他让我们走……”&lt;end&gt;
+&lt;npc=4554&gt;：“完颜襄，他竟然有如此觉悟吗？总算没有泯灭那最后一点的良知啊！那耶律大人，他？”&lt;end&gt;
+&lt;playername&gt;：“耶律大人在将你安全送离金国境内后独自离去了，临走托我给你带句话。他说终有一日，他会过那花魁阵。”&lt;end&gt;
+&lt;npc=4554&gt;：“这，这真的是耶律将军亲口所说？那么代表了他对我的承诺了……你可知道花魁阵乃翠烟门独有阵法，外来男子若想要娶得翠烟女子为妻，必须来要闯过这花魁阵啊！”&lt;end&gt;
+&lt;playername&gt;：“我知道，我知道筱雨，我也替你高兴。此去虽然历经艰险，还险些性命不保却终究收获了爱情！”&lt;end&gt;
+&lt;npc=4554&gt;：“是，这一路上多亏有&lt;playername&gt;相助，对了，就在完颜襄地下囚室内，我捡到了完颜襄身上掉落的金国军事布防图。”&lt;end&gt;
+&lt;playername&gt;：“这……此乃天意，竟然误打误撞得到了我最想要的东西，看来若人心诚，就连老天也会帮助我们的！”&lt;end&gt;
+&lt;npc=4554&gt;：“我会每日抚琴等他到来，每天每夜为他，为你，为整个大宋的百姓祈福。”&lt;end&gt;
+&lt;playername&gt;：“筱雨只管安心静养。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与尹筱雨对话</Value>
+              </txt>
+              <txt>
+                <Value>与尹筱雨对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>返回白秋琳处复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“&lt;playername&gt;，总算把你盼回来了，你和筱雨的事筱雨都在信中跟我说了。”&lt;end&gt;
+&lt;Playername&gt;:“哈，想不到这鸽子比我飞得快呀。”&lt;end&gt;
+&lt;npc=3570&gt;：“筱雨在信中提及此去经历种种艰险与磨难，回忆起来更多的却是快乐和欢笑，我想此去的经历她并不后悔。”&lt;end&gt;
+&lt;Playername&gt;:“秋姨说的是，不经患难怎能见真情？这金国军力的布防图秋姨可要收好咯，为了这张纸。可是差点儿赔上几条命哟！”&lt;end&gt;
+&lt;npc=3570&gt;：“秋姨知道了，小滑头，就知道贫嘴儿！你一路也辛苦了，好生歇息一段时间吧。前路漫漫，还等着我们共同去闯呢！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与白秋林对话</Value>
+              </txt>
+              <txt>
+                <Value>与白秋林对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

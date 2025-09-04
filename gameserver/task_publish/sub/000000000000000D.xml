@@ -1,0 +1,702 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000000D" name="东山再起" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=30&gt;：“离祭奠大礼开始的时辰已不远了，咱们这就去外英雄冢吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>44</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=44&gt;：“大礼即将开始，闲杂人等速速回避。”&lt;end&gt;
+&lt;playername&gt;：“我是&lt;playername&gt;，放我进去。”&lt;end&gt;
+&lt;npc=44&gt;：“请。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到执法弟子进入外英雄冢</Value>
+              </txt>
+              <txt>
+                <Value>找到执法弟子进入外英雄冢</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>听外冢的石轩辕宣讲祭奠主旨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:NewWorldWithState</Function>
+            <Parameter>
+              <number>
+                <Value>405</Value>
+              </number>
+              <number>
+                <Value>1588</Value>
+              </number>
+              <number>
+                <Value>3206</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>405</Value>
+              </number>
+              <number>
+                <Value>1620</Value>
+              </number>
+              <number>
+                <Value>3171</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>在外冢找到石轩辕，听他宣讲祭奠主旨</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17600</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=46&gt;：“各位远道而来的江湖朋友，我丐帮各地分舵的弟兄们，英雄冢上一年一度的祭奠礼立刻便要开始，石某替丐帮死去的英烈谢谢大家了。但是在祭奠礼开始之前，有一件事我要宣布。”&lt;end&gt;
+&lt;npc=46&gt;：“众所周知，这英雄冢内埋骨者，无一不是为当年大宋安危慷慨捐躯的烈士。就是在这样一个神圣的地方，我丐帮淮北分舵的弟子们，醉酒闹事，杀伤同胞，当着亡故的烈士们，令我丐帮蒙羞！”&lt;end&gt;
+&lt;npc=46&gt;：“今日，我丐帮必须给死去的人，更要给亲眼目睹此事的天下英雄们一个交代！亲手杀害我丐帮执法弟子的淮北分舵五袋弟子边良，其罪不赦，依律诛杀！”&lt;end&gt;
+&lt;npc=46&gt;：“其余犯事者两两组合，互相拼斗。胜者留帮待查，罚俸半年，进入白山石场服苦役。败者逐出丐帮，永不复用！”&lt;end&gt;
+&lt;npc=33&gt;：“这石帮主好凌厉的手段。”&lt;end&gt;
+&lt;npc=34&gt;：“杀罚决断，律令严明；若能一直坚持，丐帮他日定能练出一支铁军来。”&lt;end&gt;
+&lt;npc=46&gt;：“&lt;playername&gt;，你过来一下。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>46</Value>
+              </dialognpc>
+              <number>
+                <Value>405</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，找我有何事？”&lt;end&gt;
+&lt;npc=46&gt;：“是这样。那些犯事弟子都是受淮北分舵的长老崔出尘节制，醉酒闹事就是他带的头。当年崔出尘也是条汉子，在金军阵中几进几出，立过汗马功劳。采石之战后却变得消沉颓废，终日不离酒色。这次更是凭哥们意气办事，硬要去闯英雄冢祭奠故人，视帮规法典如无物。”&lt;end&gt;
+&lt;playername&gt;：“几进几出金军阵中，倒也是条汉子。请帮主开恩，崔长老没有功劳总有苦劳。”&lt;end&gt;
+&lt;npc=46&gt;：“不处置出尘，我无法向全帮的弟兄交代，将来上下仿效，这个帮就管不了了。为了丐帮的将来，他必须离开。可是犯事弟子中没有人武功比他更高，即使有一二人能胜之，也不敢用全力。所以与崔出尘这一场，我希望你来比。”&lt;end&gt;
+&lt;playername&gt;：“帮主用心良苦，我照做便是。”&lt;end&gt;
+&lt;npc=46&gt;：“你办完回报，我自有话说。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=46&gt;：“西南角的擂台已经准备好了，首犯崔出尘一定不能放过。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与石轩辕对话看他有什么事情吩咐</Value>
+              </txt>
+              <txt>
+                <Value>与石轩辕对话看他有什么事情吩咐</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>79</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>奉石轩辕之命出场击败崔出尘并将他逐出丐帮</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>47</Value>
+              </fightnpc>
+              <number>
+                <Value>405</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>79</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18800</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将击败了崔出尘的结果回报石轩辕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>46</Value>
+              </dialognpc>
+              <number>
+                <Value>405</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，崔长老已经自己离开燕子坞了。”&lt;end&gt;
+&lt;npc=46&gt;：“哎，我知道你们心中有些不满，将来会懂的。”&lt;end&gt;
+&lt;npc=46&gt;：“各位江湖朋友，自当年采石矶一战，丐帮老帮主何人我率领四大长老与数千子弟奔赴抗金前线，联手虞允文大人，力阻海陵王完颜亮的入侵，这英雄冢内的骨殖都是当年先烈留存。朝廷也曾以为国尽忠的褒奖赐予丐帮。”&lt;end&gt;
+&lt;npc=46&gt;：“惜乎是役后，我丐帮精英损失殆尽，四大长老两死两伤，两位受伤长老先后接掌丐帮，皆因内伤严重而无法作为，堂堂中原第一大帮却人心惶惶，人人得过且过。今日，我石轩辕向丐帮十万弟兄发誓，请各路江湖英雄好汉见证，三年内若丐帮不复往日声威，石某便退位让贤。”&lt;end&gt;
+&lt;npc=46&gt;：“丐帮要想恢复往日的赫赫声威，要仰仗各位弟兄。不能再像从前那样毫无斗志，要得到江湖同道、得到朝廷的尊重，就必须先自己尊重自己！不再醉生梦死，得过且过，让天下人看到，我丐帮的男儿，都是顶天立地的汉子！”&lt;end&gt;
+&lt;npc=46&gt;：“祭奠礼毕！&lt;playername&gt;。”&lt;end&gt;
+&lt;playername&gt;：“属下在。”&lt;end&gt;
+&lt;npc=46&gt;：“拿起烟火，去外英雄冢北面施放，祭拜于采石矶一役战死的丐帮先烈们。”&lt;end&gt;
+&lt;playername&gt;：“是。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=46&gt;：“拿起烟火，去外英雄冢北面施放，祭拜于采石矶一役战死的丐帮先烈们。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{烟火丁,20,1,208,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将击败了崔出尘的结果回报石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>将击败了崔出尘的结果回报石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19400</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>祭奠礼毕，在外英雄冢北面施放烟火</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,208,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>307</Value>
+              </number>
+              <number>
+                <Value>405</Value>
+              </number>
+              <number>
+                <Value>1624</Value>
+              </number>
+              <number>
+                <Value>3118</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20600</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回报石轩辕商议下一步安排</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>46</Value>
+              </dialognpc>
+              <number>
+                <Value>405</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=46&gt;：“此间事了，石某的决心你该看得出来。丐帮正在用人之际，我不会看错你，办好这些事情，对你自己的历练也大有裨益。韩大人的事我时刻挂在心上，罗锋的手下也正密切跟踪事态的发展，你可以放心。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回报石轩辕商议下一步安排</Value>
+              </txt>
+              <txt>
+                <Value>回报石轩辕商议下一步安排</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000000E</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddGatherPoint</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddMakePoint</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

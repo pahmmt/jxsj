@@ -1,0 +1,217 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000176" name="唐门接引任务" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3513&gt;：“掐指算来&lt;playername&gt;你进入我派也有一段时日了，感受如何。”&lt;end&gt;
+&lt;playername&gt;：“承蒙掌门人和众家师兄师姐的关照，自认为略有小成。”&lt;end&gt;
+&lt;npc=3513&gt;：“不怪掌门人每每总是提到你，都说在新一代弟子中，以你的资质最为精良，日后必有成就。我在这里接引新弟子入门，可谓阅人无数，向你这般谦虚自敛的年轻人还真不多见，不错不错，孺子可教。”&lt;end&gt;
+&lt;playername&gt;：“岂敢岂敢，师兄过奖了。”&lt;end&gt;
+&lt;npc=3513&gt;：“闲话少说，掌门人有令交给我，让我推荐凡是新一代弟子中出类拔萃的，掌门人要亲自接见，并给与一颗修炼珠，据说此物可以在一定时间能让你的修为大幅提升，颇为神奇。”&lt;end&gt;
+&lt;playername&gt;：“那我…………”&lt;end&gt;
+&lt;npc=3513&gt;：“不用怀疑，你就是我们选定的人，我们这就准备送你去见掌门人，准备好了没有？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1652</Value>
+              </number>
+              <number>
+                <Value>3187</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>让唐济民带我到唐门</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3518</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“掌门人，我来了。”&lt;end&gt;
+&lt;npc=3518&gt;：“来到此处，想必是已经通过了接引弟子那一关，来我看看。”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;
+&lt;npc=3518&gt;：“不错不错，刚入门派不久，内功就略有小成，果然是块练武的好料，这枚修炼珠应该可以助你一臂之力，功力突飞猛进，更上一层楼。但要记住，此物每日只可使用大半个时辰，多则无效。”&lt;end&gt;
+&lt;playername&gt;：“是，我记住了，多谢掌门人。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找我派掌门人唐晓吧</Value>
+              </txt>
+              <txt>
+                <Value>去找我派掌门人唐晓吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{18,1,16,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3513</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3513&gt;：“海空凭鱼跃，天高任鸟飞，更大的世界在等着你呢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>让门派传送人送我回新手村找唐济民</Value>
+              </txt>
+              <txt>
+                <Value>让门派传送人送我回新手村找唐济民</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

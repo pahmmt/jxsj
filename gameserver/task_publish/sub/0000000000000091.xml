@@ -1,0 +1,298 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000091" name="吴才吴德" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“不知道那名小妾走漏出来的是什么消息？”&lt;end&gt;
+&lt;npc=3517&gt;：“慈云庵的妙青女尼原是吴曦的爱妾，后来因故出家。那名小妾为了取悦吴曦而经常前去探望妙青，并说一些关于吴曦的话题。据她所说吴曦在最近一段时间总在梦里念叨游龙珏三字，且府内常有陌生人出入，按照她说的时间推断恰好便是游龙珏被窃的那段时间。”&lt;end&gt;
+&lt;Playername&gt;：“那唐门又是怎么知道的？”&lt;end&gt;
+&lt;npc=3517&gt;：“当时峨嵋派的凌风雁女侠恰好在彼，便托人带信给我知会了此事。吴曦此人素有野心， 在川蜀一带称王称霸。若说他有此贼心窃走游龙珏，也不无可能。不过唐门地处川蜀，一旦和他撕破脸皮势难共存。家父因此才修书请义军相助。”&lt;end&gt;
+&lt;Playername&gt;：“那我们又当如何相助？”&lt;end&gt;
+&lt;npc=3517&gt;：“照家父的意思是要混入吴曦身边查探此事，吴曦此人最好能人异士，此事又恰值征兵之期，若能设法混入军中，当最好不过。我听说若是能剿灭剑阁蜀道匪营的黑虎首领，就可以直接任命为校尉。这倒是一个好机会。募兵官吴才正在吴曦军中，若你有心相助，我可以送你前去剑阁蜀道。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3517</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>1590</Value>
+              </number>
+              <number>
+                <Value>3695</Value>
+              </number>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value>现在就要前往剑阁蜀道的匪营吗？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>前往剑阁蜀道匪营</Value>
+              </txt>
+              <txt>
+                <Value>前往剑阁蜀道匪营</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>剿灭黑虎及其手下</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>92000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1098</Value>
+              </fightnpc>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1099</Value>
+              </fightnpc>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往吴曦军营找募兵官吴才</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>928000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1124</Value>
+              </dialognpc>
+              <number>
+                <Value>104</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“听说吴大将正在征兵，我来投军。匪营的黑虎已经被我剿灭，大人若是不信可以派人前去查探。”&lt;end&gt;
+&lt;npc=1124&gt;：“当真，你且稍等片刻！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到募兵官吴才</Value>
+              </txt>
+              <txt>
+                <Value>找到募兵官吴才</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000092</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

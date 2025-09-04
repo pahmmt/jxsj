@@ -1,0 +1,315 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000070" name="官匪勾结" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=978&gt;：“这……这是我纳斯人的徽记，你是从何处得来的？”&lt;end&gt;
+&lt;Playername&gt;：“我也是无意中得知，不知老人家所说的纳斯人指的是？”&lt;end&gt;
+&lt;npc=978&gt;：“我纳斯人是隐居在彭蠡古泽中的民族，那里是一片桃源般的地方。我们遵循祖训，决不离开那里半步。老夫是不肖子孙，不愿过那种山居的生活而离乡，从此无颜再回去。纳斯人自古相传守护着一个秘密，这也是我们不能离开那里的原因。可是到底是什么秘密，却无人知道。不过依老夫看，这个秘密离揭晓的日子不远了。”&lt;end&gt;
+&lt;Playername&gt;：“老人家是否知道什么内情，不知可否相告？”&lt;end&gt;
+&lt;npc=978&gt;：“老夫不是小孩子，你既然问起一个隐居上百年的部族，应当不是好奇而已。老夫只希望你能善待老夫的族人，说不定这也是解开他们束缚的一个机缘。我们纳斯人最害怕生活在北部恶鬼滩的土龙，认为它们是来自地狱的恶鬼所化。凡是能够得到土龙皮的人便被认定是勇者。如果你想要和纳斯人结交，就先去猎取土龙皮吧。”&lt;end&gt;
+&lt;Playername&gt;：“那纳斯人又生活在哪里呢？”&lt;end&gt;
+&lt;npc=978&gt;：“他们生活在彭蠡古泽的中部，族长生活的地方叫做水月居，和别人生活的地方是分开的。你要是猎取到土龙皮便可以径直去水月居，族长会亲自接见你。”&lt;end&gt;
+&lt;Playername&gt;：“那晚辈就先告辞了！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>65</Value>
+              </number>
+              <txt>
+                <Value>提升等级到65级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到65级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往彭蠡古泽的恶鬼滩</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1451</Value>
+              </number>
+              <number>
+                <Value>2665</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>前往彭蠡古泽恶鬼滩</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在恶鬼滩猎取土龙皮</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>119000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>847</Value>
+              </fightnpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <taskitem>
+                <Value>{320,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带着土龙皮前往水月居</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>419000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>979</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“这位想必就是纳斯人的族长吧？”&lt;end&gt;
+&lt;npc=979&gt;：“你是何人？怎么会出现在我纳斯人隐居的地方。哎呀！看你手上所持莫非是土龙皮，真是勇士啊！只可惜我纳斯部族眼下陷入纷乱之中，无法召开盛大的欢庆仪式了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>前往水月居</Value>
+              </txt>
+              <txt>
+                <Value>前往水月居</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000071</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

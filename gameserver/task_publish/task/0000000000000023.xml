@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="0000000000000023" name="叛旅之谜" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>4</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="00000000000000B7" name="叛旅之谜" describe="在青螺岛的坠马渊中，一队全副武装的天王战士将谷口团团围住。总道领娄一关亲自下令处决谷内的叛军。经过调查你才知道，原来在昨日深夜，由各地天王帮分舵转运而来的银车被锐捷营的弟兄给劫了。负责押运的一百多人均被以刀逼住麻倒，而叛军在即将逃离青螺岛时被闻讯赶来的兄弟拦截了下来。锐捷营战士且战且退，终于退入坠马渊内困守。娄一关震怒于他们的反叛，决心全部处决。然而事出有因，忠心耿耿的天王战士，为何会做出如此大逆不道之事呢？更奇怪的是，明明已反的他们，却没有杀掉一个押运人。&#xD;&#xA;&lt;stepdesc&gt;首先得清除守在谷口的&lt;pos=锐捷营辎兵,55,1686,3602&gt;。&#xD;&#xA;&lt;stepdesc&gt;深入谷中，驱散&lt;pos=锐捷营精锐,55,1651,3609&gt;。&#xD;&#xA;&lt;stepdesc&gt;坠马渊尽头，叛军首领&lt;pos=楚忠良,55,1613,3624&gt;应该就在那里。&#xD;&#xA;&lt;stepdesc&gt;平定了叛乱，但心中不免疑虑重重，一向忠心耿耿的天王将士怎么会突然变成叛军。疑惑中，&lt;pos=楚杰,55,1674,3589&gt;叫住了我。&#xD;&#xA;&lt;stepdesc&gt;楚杰的突然出现，让我知道了事情的真相。可以回报&lt;pos=前锋营统领白普,55,1728,3561&gt;了。" refer="00000000000000B7">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>317</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=112000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=400,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="item",varValue={18,1,1,2,-1,-1,},nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",szAddParam1=6,},{szType="makepoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="gatherpoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>28</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>317</Value>
+          </dialognpc>
+          <txt>
+            <Value>可以回报&lt;pos=前锋营统领白普,55,1820,3484&gt;了。</Value>
+          </txt>
+          <number>
+            <Value>6</Value>
+          </number>
+          <number>
+            <Value>25</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=前锋营统领白普,55,1728,3561&gt;，可以接到任务【叛旅之谜】。</Value>
+          </txt>
+          <number>
+            <Value>2</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>25</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

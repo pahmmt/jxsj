@@ -1,0 +1,214 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000100" name="编管太学生" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=557&gt;：“吕祖俭这头犟驴，非要和皇上拧着干。这下好了吧，给流放了。你说你们这些学生也真是的，没事跟着起什么哄啊，这倒好，你自己要来书院思过，还累得我要一路跟随你！”&lt;end&gt;
+&lt;npc=558&gt;：“皇上偏心偏听，满朝之中唯有吕祖俭吕大人一人敢于言论，我们这些学生自当誓死捍卫吕大人。”&lt;end&gt;
+&lt;npc=557&gt;：“我也不想和你们这些文人溜嘴皮子，我这里要事很多，只好托人带你前去学院了，你可别想着跑，后果你自己是知道的。”&lt;end&gt;
+&lt;npc=558&gt;：“我为了国家落得如此，为什么要跑？”&lt;end&gt;
+&lt;npc=557&gt;：“书院的许学院负责管理那里，要记得和他打声招呼！”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>567</Value>
+              </dialognpc>
+              <number>
+                <Value>1646</Value>
+              </number>
+              <number>
+                <Value>3254</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=558&gt;：“怎么？是你带我前往书院？那我们走吧，我对你们这些每天动刀动枪的人没什么好说的！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>558</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1804</Value>
+              </number>
+              <number>
+                <Value>3259</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <string>
+                <Value>1645,3258
+1645,3265
+1645,3273
+1648,3287
+1651,3295
+1656,3301
+1662,3305
+1676,3301
+1690,3303
+1703,3299
+1718,3298
+1730,3314
+1746,3326
+1755,3339
+1764,3333
+1772,3325
+1779,3320
+1788,3311
+1796,3302
+1806,3295
+1815,3287
+1813,3280
+1810,3273
+1805,3264
+1803,3259</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=558&gt;：“终于到了，一路上走得累死我了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>已经将杨宏中带到了书院，和书院的许学院打声招呼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>566</Value>
+              </dialognpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这是被发配到这里思过的杨宏中，还请许学院收容！”&lt;end&gt;
+&lt;npc=566&gt;：“好的，一路上辛苦你了！”&lt;end&gt;
+&lt;npc=558&gt;：“什么叫收容？我可是奉旨来此思过的！”&lt;end&gt;
+&lt;npc=566&gt;：“好大的口气，以后有你好受的！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和许学院打声招呼</Value>
+              </txt>
+              <txt>
+                <Value>和许学院打声招呼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,419 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000105" name="执子之手" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=603&gt;：“&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;一路过来可曾看见一名扛着枪的少年吗？”&lt;end&gt;
+&lt;playername&gt;：“不曾看见，他是？”&lt;end&gt;
+&lt;npc=603&gt;：“他是我弟弟小默尔。早上他吵着要和我比试枪法，输了以后却又哭哭啼啼的离家出走了。我想出去找他，又害怕他会突然回家，所以一直等在这里。小默尔以前生气的时候都会一个人跑去死木林那里玩，&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;要是没有要事在身的话，帮我去找找我弟弟好吗？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>602</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=602&gt;：“呜呜……呜呜……”&lt;end&gt;
+&lt;playername&gt;：“你就是小默尔吧？你哥哥大默尔让我来找你回去呢，你别再生他的气了！”&lt;end&gt;
+&lt;npc=602&gt;：“呜呜……我刚刚去死木林玩，发现好多弄蛇人在那里，他们不让我进去，还放蛇咬我。我的腿好麻，&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;你帮我去死木林找点蛇药回来好吗？死木林的树下有好多可以治疗蛇毒的草药。你要小心那些弄蛇人，他们很凶的！”&lt;end&gt;
+&lt;playername&gt;：“这些人太猖獗了，你在这里等等，我很快就回来了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去死木林找小默尔</Value>
+              </txt>
+              <txt>
+                <Value>去死木林找小默尔</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>惩戒一下死木林中的弄蛇人并取一些蛇药</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>598</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>601</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采集中</Value>
+              </txt>
+              <txt>
+                <Value>得到蛇药</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{蛇药,20,1,341,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>采集%d/5份蛇药</Value>
+              </txt>
+              <txt>
+                <Value>前往死木林</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1981,3816
+1980,3874
+1961,3890
+1981,3915
+1968,3940
+1971,3966
+1956,3961
+1941,3974
+1940,3897
+1960,3881
+1912,3864</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将蛇药带给小默尔</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>602</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=602&gt;：“呜呜……呜呜……”&lt;end&gt;
+&lt;playername&gt;：“这是蛇药，你赶紧敷在伤口上吧。”&lt;end&gt;
+&lt;npc=602&gt;：“呜呜……我再也不离家出走了……&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;请你带一句话给我哥哥大默尔，就说我等下就回去，让他不要着急。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将解药带给小默尔</Value>
+              </txt>
+              <txt>
+                <Value>将解药带给小默尔</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将小默尔的消息带给大默尔</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{341,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>603</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=603&gt;：“&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;见到我弟弟了吗？”&lt;end&gt;
+&lt;playername&gt;：“见到了，他被蛇咬伤了，不过我已经给他敷药了。他让我告诉你，他很快就会回来了，你别着急。”&lt;end&gt;
+&lt;npc=603&gt;：“谢天谢地！谢谢&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;！要不然我爹回来会打死我！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到大默尔</Value>
+              </txt>
+              <txt>
+                <Value>找到大默尔</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

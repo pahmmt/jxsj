@@ -1,0 +1,368 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000125" name="将帅失和" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“自从李升阳回转西夏以后，西夏实力平衡陡变。以李升阳为主的拥皇派和以李安全为主的新政派之间由于政见不同，彼此争斗不断。依我看，李安全与李升阳为敌多半是因为其父不明身亡，李升阳又阻止其承袭爵位之故。不过李安全似乎底气不足，两相交锋之时常为李升阳的锐气所折。”&lt;end&gt;
+&lt;Playername&gt;：“秋姨似乎意有所指！”&lt;end&gt;
+&lt;npc=3570&gt;：“此事尚有未明之处，不过李升阳已故的军师清风先生必定知道内情。我知道清风先生的近侍徒子丹眼下正在龙门石窟的真言寺中，你可以向他问出一些内情。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>649</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“请问这位可是清风先生身边的徒子丹徒大哥？”&lt;end&gt;
+&lt;npc=649&gt;：“正是，你找我有何事？”&lt;end&gt;
+&lt;Playername&gt;：“想找大哥请教一下越王暴卒之事和其爵位世袭之事，还请大哥透露一二。”&lt;end&gt;
+&lt;npc=649&gt;：“是谁派你来问此事的？不过也没什么关系了，先生已经去世，也未禁止我们谈及此事。当初李升阳竭力劝阻皇上将越王的爵位世袭给越王之子李安全，说他为人阴戾将来必生反心。我家先生却说李安全此人只有给其丰厚利益才可安宁，若是不许其子承父业，必然适得其反。我家先生也曾透露说越王之死与李升阳有莫大关联，不过具体却并未明言。对了，先生留下一封遗嘱，在七妹手里。”&lt;end&gt;
+&lt;Playername&gt;：“七妹？她是何人？”&lt;end&gt;
+&lt;npc=649&gt;：“当日追随先生的共有七人，如今仅有我和七妹尚在人世。先生临终将一封遗嘱交给七妹，说日后定会有人询问越王死因，让她妥善保管。七妹脾气暴躁，素不服人。若是你找她索要遗嘱，她必定不与，不过你若能将她战胜则另当别论。七妹此刻正在思过台静思，你可以在那里找到她。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到徒子丹</Value>
+              </txt>
+              <txt>
+                <Value>找到徒子丹</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往思过台寻找七妹</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>652</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{383,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“得罪了，还请将清风先生的遗嘱赐予一观。”&lt;end&gt;
+&lt;npc=652&gt;：“原来如此，先生遗嘱的内容不过是说李升阳唯恐越王权势高过新皇，而设毒计将其慢慢治死的事，其他并未言及。既然你对此事如此感兴趣，拿去便是。”&lt;end&gt;
+&lt;Playername&gt;：(看来秋姨所料不差，越王之死的背后果然有巨大的阴谋。若是将此遗嘱带给李安全，则其必定与李安全不能并存。倘使此二人开始争斗，则李升阳必定再无余力觊觎江南之事。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将清风先生的遗嘱带给李安全</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>986</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“见过郡王，我这里有清风先生留下遗嘱一份，请郡王过目！”&lt;end&gt;
+&lt;npc=986&gt;：“清风先生？他的遗嘱为何要给本王看？……这……这……好贼子……我与你势不两立！！”&lt;end&gt;
+&lt;Playername&gt;：(看来李安全果然中计，先返回秋姨身边将此事经过告诉她。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到李安全</Value>
+              </txt>
+              <txt>
+                <Value>找到李安全</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{383,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“秋姨我回来了，已经按照秋姨的意思办了。我找到了清风先生的遗嘱，内中有李升阳谋害越王之事。李安全看了遗嘱之后暴怒，声称要与李升阳势不两立。”&lt;end&gt;
+&lt;npc=3570&gt;：“如此结局甚好，李升阳这下有点忙了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

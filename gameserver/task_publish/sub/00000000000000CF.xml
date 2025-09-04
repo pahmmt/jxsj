@@ -1,0 +1,99 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000CF" name="受伤弟子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=406&gt;：“在木人巷内巷中，一名欲闯关下山的弟子了凡遭机关兽击倒在地，身受重伤，若不及时加以救治，恐怕命将不保。现下我必须控制机关们不再攻击他，不知阁下可否进入木人巷内巷，将这名弟子护送出来。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=1&gt;
+&lt;npc=406&gt;：“快去救他吧，应该就在木人巷的最深处。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=1&gt;
+&lt;npc=406&gt;：“了凡能平安出来，贫僧总算能舒口气了。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="1">406</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>405</Value>
+              </dialognpc>
+              <number>
+                <Value>1974</Value>
+              </number>
+              <number>
+                <Value>3670</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：不要怕，我这就救你出去！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>410</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>56</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1879</Value>
+              </number>
+              <number>
+                <Value>3871</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value>1989,3705
+1994,3751
+1966,3776
+1933,3786
+1914,3752
+1888,3757
+1871,3784
+1871,3826
+1887,3854</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

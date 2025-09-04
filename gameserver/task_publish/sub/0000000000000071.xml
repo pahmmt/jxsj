@@ -1,0 +1,326 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000071" name="礼尚往来" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“老人家适才说纳斯人陷入了纷乱，所指的是何意？”&lt;end&gt;
+&lt;npc=979&gt;：“我纳斯人数百年来隐居在此从不外出，乃是古训。如今以金佐为首的年轻人竟然公然反对祖训，执意要离开此地。老夫用尽办法都无法说服他们，纳斯部族已然分成了金、土两部。金部以金佐为首，定要离开此地。土部则以老夫为首，愿意遵循祖训仍居这里。但是金部的人较之土部多之又多，老夫心有余而力不足矣！”&lt;end&gt;
+&lt;Playername&gt;：“老先生这话是什么意思？”&lt;end&gt;
+&lt;npc=979&gt;：“根据祖宗规矩，受拥戴多者便是族长，不仅可决定族人的栖息之地，还可以继承祖宗守护多年的秘密。老夫按理已不是族长，但又怕金佐将此秘密公诸于众，便拒不吐露，也引起了金部的不满。”&lt;end&gt;
+&lt;Playername&gt;：“原来是这样！金佐此举想必也有他自己的道理，不如由我做个说客，前往金佐那里，探询一下他的心意。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>981</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你便是金佐吗？”&lt;end&gt;
+&lt;npc=981&gt;：“你是谁？怎么会出现在我纳斯人山寨？快快出去，免得自讨没趣！等等，你手里拿着的可是土龙皮？你从哪里得到的？是你自己猎杀的吗？”&lt;end&gt;
+&lt;Playername&gt;：“不错！是我在恶鬼滩猎杀的！我听说你们纳斯人因为是否居住在此产生分歧，特地来找你聊聊，听听你的想法，也许能够帮得上你。”&lt;end&gt;
+&lt;npc=981&gt;：“当真？你是猎杀土龙的勇者，我应该相信你的能力。我们纳斯部族数百年来一直生活在此，你可知道这是多么痛苦的一件事情？我们纳斯人有最精巧的技艺，可以修建最精美的宫殿，最精密的机关，每一个人都称得上是建筑的天才，却偏偏要躲在这里过着隐居的生活，这究竟是为什么？”&lt;end&gt;
+&lt;Playername&gt;：“听李古纳斯说你们在守护一个秘密，这不就是你们留下的理由吗？”&lt;end&gt;
+&lt;npc=981&gt;：“李古纳斯？你见过他？他是我最佩服的人，听说他当年毅然决然的离开了这里，独自去外面闯荡，没想到还会遇到他的朋友。是啊，秘密！一个也许根本不存在的秘密，既然要我们这些子孙守护这个秘密，那为什么不告诉我们究竟守护的是什么东西？难道我们将一辈子都耗在这里却连知道自己在干什么的权利都没有吗？所谓的承诺，所谓的报恩，也许也只是一个谎言罢了。”&lt;end&gt;
+&lt;Playername&gt;：“也许这是一个不能让太多人知道的秘密吧！”&lt;end&gt;
+&lt;npc=981&gt;：“是啊，如果真的是这样，那为什么不让它变成一个神话，变成一个传说，从此不再提它？这样既不用再守护，担心它会被泄露，又可以给我们自由的生活，为什么不那样做？我已经决定了，如果老族长还是不愿意说出秘密是什么，那我宁愿不去继承这个秘密。不过，我仍旧会离开这里，带着拥戴我的金部。”&lt;end&gt;
+&lt;Playername&gt;：“也许他也有自己的苦衷，我会帮你去劝说他，你再耐心等等。不管怎么样，我都会给你一个答复。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>探询金佐心意</Value>
+              </txt>
+              <txt>
+                <Value>探询金佐心意</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将金佐的决议带给老族长</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>979</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“老族长，我回来了！看来金佐是一心想要离开这里，出去闯荡了。他说如果你执意不愿将秘密告诉他，他就会放弃继承这个秘密，带着他的金部离开这里。”&lt;end&gt;
+&lt;npc=979&gt;：“他……他可真是铁了心了。不是我不愿意告诉他，是我害怕他知道之后更加不愿意留在这里。说实话，这不仅仅是一个秘密，也是一个承诺。是我们祖先对恩人的一个承诺。当年我们部族面临灭族的危险，是一位大恩人拯救了我们部族。他将一个秘密留在了这里，请我们守护这个秘密，但是这个秘密究竟是什么，其实我们也不知道！”&lt;end&gt;
+&lt;Playername&gt;：“连你们都不知道？就为了一个承诺？原来金佐所说的竟然是这回事。”&lt;end&gt;
+&lt;npc=979&gt;：“是啊，也许年轻人并不能理解祖辈们生存的艰辛，他们只知道自己掌握了精湛的技艺，只知道自己出去闯荡，生活在这里的他们又怎么能体会当年祖辈们被逼得走投无路的那种窘迫？我老了，也累了，不想再坚持了。如果金部可以打败我们部族的守护神兽，我就将这个秘密公诸于众。在此之前，我希望你能够替我保守，不要告诉金佐。”&lt;end&gt;
+&lt;Playername&gt;：“我会将你的心意转达给金佐的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到神木纳斯</Value>
+              </txt>
+              <txt>
+                <Value>找到神木纳斯</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{320,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将老族长的话带给金佐纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>59000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>981</Value>
+              </dialognpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=981&gt;：“怎么样？他还是坚持不愿意说出来吗？”&lt;end&gt;
+&lt;Playername&gt;：“老族长也有自己的苦衷，他说要是金部能够打败纳斯族的守护神兽，他就会将这个秘密公诸于众。不知道你们的守护神兽到底是什么？”&lt;end&gt;
+&lt;npc=981&gt;：“那是噬龙兽，是守护我们村子的神兽，如果有人指挥，可以击退数十只土龙。想不到他竟然会提出这样的条件。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到金佐纳斯</Value>
+              </txt>
+              <txt>
+                <Value>找到金佐纳斯</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000072</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

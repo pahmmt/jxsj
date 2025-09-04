@@ -1,0 +1,1151 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000004E" name="因爱生恨" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=672&gt;:“恩，歇了个好觉，如今真是神清气爽啊！我这轻身功夫也好久不曾施展了，你且自己往峨嵋下院仇雪姑娘的房子走，看我们谁先到一步。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>672</Value>
+              </dialognpc>
+              <number>
+                <Value>457</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大人，没想到你的轻功这样高强。”&lt;end&gt;
+&lt;npc=672&gt;:“哈哈，一般一般，成都第三。”&lt;end&gt;
+&lt;playername&gt;：“……”&lt;end&gt;
+&lt;npc=672&gt;:“仇雪姑娘，今日想请你带着我们游览游览这九老峰的风景啊。”&lt;end&gt;
+&lt;npc=470&gt;：“吴大人，我有一事相求，不知大人可否应允？”&lt;end&gt;
+&lt;npc=672&gt;:“何事呀？”&lt;end&gt;
+&lt;npc=470&gt;：“昨日听大人所言，也是极为痛恨金狗。仇雪回来之后，整整一夜难以入眠，当年种种惨况历历在目，我要报仇！请大人答应仇雪，加入吴家军，杀贼报国！”&lt;end&gt;
+&lt;npc=672&gt;:“好啊！……慢着慢着，你是要从军啊，那不可。你一个姑娘家家的，怎么能到军队中来呢？诸多不便的。何况金人是很凶残的啊，你还没有见识过他们的厉害吧。”&lt;end&gt;
+&lt;npc=470&gt;：“大人！”&lt;end&gt;
+&lt;npc=672&gt;:“好了好了，方才听说见雪亭的风景很不错，想请仇雪姑娘带我去见识见识。&lt;playername&gt;啊，你过来一下。”&lt;end&gt;
+&lt;playername&gt;：“属下在。”&lt;end&gt;
+&lt;npc=672&gt;:“我听说这九老峰有一处极险的地方，叫滑鱼台，连鱼都在那台上呆不稳当啊。不过那里生长着一种极为罕见的花朵，叫合欢花。你悄悄过去，替我采摘九朵来，我在见雪亭等你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>赶到峨嵋下院找仇雪</Value>
+              </txt>
+              <txt>
+                <Value>赶到峨嵋下院找仇雪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>13000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替吴大人采摘九朵合欢花来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1501</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>文彩双鸳鸯，裁为合欢被</Value>
+              </txt>
+              <txt>
+                <Value>得到一朵合欢花!</Value>
+              </txt>
+              <txt>
+                <Value>采集失败!</Value>
+              </txt>
+              <string>
+                <Value>{合欢花,20,1,192,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/9朵合欢花</Value>
+              </txt>
+              <txt>
+                <Value>去滑鱼台摘取9朵合欢花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1720,3385
+1739,3352
+1729,3368
+1742,3380
+1734,3397
+1752,3362
+1748,3413
+1759,3393
+1760,3347
+1769,3377
+1775,3413
+1763,3425
+1779,3357
+1784,3396
+1799,3340
+1792,3378</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>38</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>55000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>37</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>合欢花采到了，该去见雪亭了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>1415</Value>
+              </number>
+              <number>
+                <Value>3413</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>找到见雪亭</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>13000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将合欢花交给吴曦大人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>1411</Value>
+              </number>
+              <number>
+                <Value>3411</Value>
+              </number>
+              <dialognpc>
+                <Value>673</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大人，合欢花已替您采来了。”&lt;end&gt;
+&lt;npc=673&gt;:“好！仇姑娘，那滑鱼台你是知道的，合欢花这样美丽的花朵，世上只有你才配得上它。你即使要天上的月亮，吴某人也替你摘下来。&lt;playername&gt;，这里没有你什么事了，先下去吧。”&lt;end&gt;
+&lt;npc=675&gt;：“我不要这什么花，你不必多说。”&lt;end&gt;
+&lt;npc=673&gt;：“好，既然如此，我就把话撂在这里了！只要仇雪姑娘肯随我回成都，军营不能住，吴家的房子随便挑，爱住几间住几间，而且定是明媒正娶。到时候，你的仇恨，就是我的仇恨，谁杀的你父母，我把他碎尸万段！”&lt;end&gt;
+&lt;npc=675&gt;：“父母之仇，我自会报，不需要大人操心。若没有别的事，仇雪就走了，请大人自己珍重。”&lt;end&gt;
+&lt;npc=673&gt;:“大胆！老子还从没吃过这种鳖！你一个小小的峨嵋弟子，妈拉个把子比朝廷官员的女儿还难搞，你今天要不答应，就别想走出这见雪亭了。”&lt;end&gt;
+&lt;playername&gt;：“大人……这，这不是强抢民女吗？到时候又落个妙青的下场，又何苦呢？”&lt;end&gt;
+&lt;npc=673&gt;:“你住嘴！你算个什么东西？有什么资格对老子指指点点？滚出去！”&lt;end&gt;
+&lt;playername&gt;：“……”&lt;end&gt;
+&lt;npc=673&gt;:“仇雪你个小娘皮，我告诉你，今天你不从也得从。老子在你们这峨嵋山上遇刺，刺客一直没找到。我怎么就觉得你像呢？刺杀朝廷命官，是要诛九族的！”&lt;end&gt;
+&lt;npc=675&gt;：“好个卑鄙小人。”&lt;end&gt;
+&lt;npc=673&gt;:“&lt;playername&gt;，给我把她拿下！”&lt;end&gt;
+&lt;playername&gt;：“在下不能从命。”&lt;end&gt;
+&lt;npc=673&gt;:“还反了你了！那老子就先杀了你，再对付这小娘皮！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>674</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>将合欢花送给吴曦大人吧</Value>
+              </txt>
+              <txt>
+                <Value>将合欢花送给吴曦大人吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{192,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>27000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>吴曦撕破脸皮强娶仇雪，我决定出手相救</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>675</Value>
+              </dialognpc>
+              <number>
+                <Value>1418</Value>
+              </number>
+              <number>
+                <Value>3398</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“仇雪姑娘，快跟我走。”&lt;end&gt;
+&lt;npc=675&gt;：“你？我怎么知道你不是那姓吴狗贼的手下，串通一气来害我。”&lt;end&gt;
+&lt;playername&gt;：“愚蠢。如果我是他手下，至于将这厮打伤吗？他那么大权势，需要用这种手段来害你吗？随便派一队兵你双拳又怎么敌得过四手？”&lt;end&gt;
+&lt;npc=675&gt;：“……”&lt;end&gt;
+&lt;playername&gt;：“快走！时间紧迫。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>676</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1444</Value>
+              </number>
+              <number>
+                <Value>3430</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <string>
+                <Value>1430,3416
+1441,3438</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>后山小径的出口好象有官兵把守，现在看不清楚局势，先歇会儿调息下功力吧。</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=677&gt;：“不好，小径上那些官军都暗藏着绳索，看来事情已经败露了，我们只能硬闯。”&lt;end&gt;
+&lt;playername&gt;：“没想到会在这样的地方死掉，不过能有&lt;if me.nSex==0&gt;姑娘&lt;else&gt;姐姐&lt;endif&gt;这样的人物一起，便死了也没有遗憾了。”&lt;end&gt;
+&lt;npc=677&gt;：“说什么丧气话，放手一搏或许会有奇迹。我们分开走，分散他们的注意力，在山下汇合！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>38</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>41000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>678</Value>
+              </fightnpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>679</Value>
+              </fightnpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>55000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>杀退了围追堵截的吴家军，穿过小径前方就是一片坦途</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>1382</Value>
+              </number>
+              <number>
+                <Value>3302</Value>
+              </number>
+              <dialognpc>
+                <Value>680</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=680&gt;：“我乃是威震蜀川十二郡，御赐世袭尚方宝剑的吴曦吴大人，手下的四大家将之一，风流倜傥玉树临风，人送绰号成都一条小金龙的，从海。”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;
+&lt;npc=680&gt;：“你二人好大胆量，竟敢伤害我英明神武，多才多艺，举世无双，天下无匹，胸怀蜀川锦绣河山的吴曦大人。你们可知道后果有多严重吗？”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;
+&lt;npc=680&gt;：“谅你们也没胆分辨，多说无用，接下来你就看我用手中的这副那光芒四射，炉火纯青，登峰造极，震古烁今的拐子流星飞蝗锤，把你们锤在此处。”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;
+&lt;npc=680&gt;：“你们不害怕吗？那就看招。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1404</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>击败小径尽头拦路的从海</Value>
+              </txt>
+              <txt>
+                <Value>击败小径尽头拦路的从海</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>27000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>眼看凶多吉少，电光火石间，有人帮我解了围</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>683</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“&lt;if me.nSex==0&gt;仇姑娘&lt;else&gt;仇姐姐&lt;endif&gt;你没事吧？”&lt;end&gt;
+&lt;npc=677&gt;：“还好。”&lt;end&gt;
+&lt;npc=671&gt;：“跑啊，你们再跑啊，怎么不跑了？哈哈哈哈，就算跑到天边也别想跑出我吴某的手掌心。”&lt;end&gt;
+&lt;npc=681&gt;：“吴大人！”&lt;end&gt;
+&lt;npc=671&gt;：“是师太啊，这档子事你别管。”&lt;end&gt;
+&lt;npc=681&gt;：“呵呵，老尼不是来管事，是峨嵋山上来了几位贵客，想替吴大人引荐引荐。”&lt;end&gt;
+&lt;npc=671&gt;：“我这不正忙着吗？稍候。”&lt;end&gt;
+&lt;npc=683&gt;：“吴大人，是不认得一尘了吧。”&lt;end&gt;
+&lt;npc=671&gt;：“你是……哎呀！你不是前代唐门门主唐一尘先生吗？哎哟，这不是尹仙子吗？当年我也追求过的呀。”&lt;end&gt;
+&lt;npc=682&gt;：“含烟见过吴大人。多年不见，越发的英武了。”&lt;end&gt;
+&lt;npc=671&gt;：“哪里哪里，不能和你们比。听说贤伉俪去海外仙山隐居，怎么又跑回四川来了？”&lt;end&gt;
+&lt;npc=682&gt;：“我门中出了些事，只能回来一趟。”&lt;end&gt;
+&lt;npc=671&gt;：“哎呀呀，可惜翠烟门在大理，不由我管，否则怎么样都要帮上一帮的。”&lt;end&gt;
+&lt;npc=682&gt;：“大人一片心我们领了。晓儿，雨儿，来见过吴叔叔。”&lt;end&gt;
+&lt;npc=684&gt;：“吴叔叔好。”&lt;end&gt;
+&lt;npc=685&gt;：“叔叔好。”&lt;end&gt;
+&lt;npc=671&gt;：“这是你们的儿女。啊呀呀，瞧着模样长得多俊啊，真是人见人爱，人见人爱。一尘兄好福气啊，羡慕死我老吴咯。”&lt;end&gt;
+&lt;npc=683&gt;：“呵呵，我方才见你与两个小辈在纠缠，我们都一把年纪了，又何必呢？你老吴风流倜傥，在巴蜀谁人不知？这两个小孩恰好与我都有些旧缘，能不能看在我的面子上，放他们一马？”&lt;end&gt;
+&lt;npc=671&gt;：“这不行，他们实在太气人了。”&lt;end&gt;
+&lt;npc=682&gt;：“吴大人，当年我们唐门和翠烟也受过大人不少照顾，也为大人效过犬马之劳。将来大家打交道的机会也多，承情承情，就放他们一马吧。”&lt;end&gt;
+&lt;npc=685&gt;：“吴叔叔，早就听父亲母亲讲您是四川头一号的英雄人物，今日一见果不其然。以吴叔叔的胸怀，这两个毛孩子又怎么会放在眼里呢？对吧。”&lt;end&gt;
+&lt;npc=671&gt;：“嘿嘿嘿嘿，那是那是。恩？哎……罢了。既然是我一尘兄弟和尹掌门替他们求情，我就饶过这回。不过话说回来，将来若再让我见到你们俩，绝不放过！滚吧！”&lt;end&gt;
+&lt;npc=671&gt;：“一尘兄弟，去我行在喝两杯吧。好些年不见，想得紧呀。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>快去见过与大侠唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>快去见过与大侠唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>13000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>准备妥当就让执事师太送我们去唐门呆一阵子吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>91</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>681</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>18</Value>
+              </number>
+              <number>
+                <Value>1633</Value>
+              </number>
+              <number>
+                <Value>3179</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>准备好了吗？我这就送你们去唐门。</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>准备妥当就让执事师太送我去唐门吧</Value>
+              </txt>
+              <txt>
+                <Value>准备妥当就让执事师太送我去唐门吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>13000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先找到唐门四老之一的唐鹤吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3516</Value>
+              </dialognpc>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3516&gt;：“&lt;playername&gt;，此次一尘夫妇回返唐家堡，定必有一场空前的迎接典礼免不掉。你可随我等同往，借此机会在唐家人前露露脸，这样将来办起事来也方便许多。”&lt;end&gt;
+&lt;playername&gt;：“能承蒙先生收留，&lt;playername&gt;已经感激不尽，哪里还敢有其他想法。”&lt;end&gt;
+&lt;npc=3516&gt;：“孺子可教，这也是对你的历练。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到唐门四老之一的唐鹤</Value>
+              </txt>
+              <txt>
+                <Value>找到唐门四老之一的唐鹤</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000004F</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>41</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

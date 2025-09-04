@@ -1,0 +1,693 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002EB" name="谁书离别" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start />
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10263</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金国副将：“要杀要剐，随便你们宋人崽子，老子什么都不会说的。”&lt;end&gt;
+&lt;playername&gt;：“哼。你以为你硬气？义军早已赶到，你们的头儿早就跑了！”&lt;end&gt;
+金国副将：“你个狗崽子胡说八道！我军统领正在审问吕家那个老不死的！”&lt;end&gt;
+&lt;playername&gt;：“你说什么？！书青！我们快走！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金国副将：“要杀要剐，随便你们宋人崽子，老子什么都不会说的。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>俘虏副将，叱问其目的何在</Value>
+              </txt>
+              <txt>
+                <Value>俘虏副将，叱问其目的何在</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10258</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10257</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打开背包，右键药箱，取出金创药</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>和书青去镇中查探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“到了这里基本安全了，前方重兵把守，我和书青先去探查，大伙先沿着灯廊逃去渡头。”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10900</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>80</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>躲在屋檐后，看发生何事</Value>
+              </txt>
+              <txt>
+                <Value>躲在屋檐后，看发生何事</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12890</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10259</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“许大哥？你怎么也在此？快和我们……”&lt;end&gt;
+吕家侍从：“就、就是他带着金兵进来的！绝对不放过你！绝对不能放过你！”&lt;end&gt;
+&lt;Playername&gt;：“你不要胡说八道！许大哥还帮镇里解了毒，他最恨的就是金……”&lt;end&gt;
+&lt;npc=10261&gt;：“就是我。毒也是我所下。而我最恨的……不是金兵却是宋廷！当然，还有为宋廷马首是瞻的——吕家。”&lt;end&gt;
+&lt;npc=10249&gt;:“许大哥你……怎么可能会是你……书青不信……书青不信。”&lt;end&gt;
+&lt;npc=10261&gt;：“书青，怪就怪你吕家，始终站在朝廷的那一边……五年前若不是你吕家，朝廷如何会知道我义军部署……丫头，不要怪你许大哥。”&lt;end&gt;
+
+
+
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:AddXuShiwei(me.nMapId)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14920</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10261</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“许大哥你、你为什么不躲？！”&lt;end&gt;
+&lt;npc=10246&gt;：“呵……咳、咳咳……许某以谋士自居……咳、可从来不是武将……我为报仇，陷桃溪于战火，咳咳、就是一死又何妨！”&lt;end&gt;
+&lt;npc=10249&gt;:：“那好……书青所识的许大哥，是沙场抗金的大英雄，是不屑官场一心向民的真君子。今日与金军勾结，与水贼为伍的人，书青并不认识，便当是替天行道！”&lt;end&gt;
+&lt;npc=3582&gt;：“别、别杀他。他是好、好人。我的，兄弟……为我……为我……全是因为我……不要解药……我不要解药！”&lt;end&gt;
+我与书青对望一眼，顿时明了，对方都从沈大哥含糊的只言片语中，得知了许仕伟大哥联手金军的原因……可我并不能原谅他。即使我知道他比谁都希望沈大哥能好起来，我还是不能原谅他……&lt;end&gt;
+他透析世事，笑谈峥嵘，怎么会不明白其中是非，他从来不需要我们原谅……他只盼能以一命抵这对错。&lt;end&gt;
+&lt;npc=10249&gt;：“沈大哥，你带他走吧……书青要他活着，为今日之事终生后悔。”&lt;end&gt;
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16720</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1826</Value>
+              </number>
+              <number>
+                <Value>3494</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去码头与众人汇合</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;Playername&gt;：“前辈！你如何在此地？快帮我带书青离开！”&lt;end&gt;
+&lt;npc=10278&gt;：“你先去渡头找龙五老头儿，我自会带她出镇。”&lt;end&gt;
+&lt;Playername&gt;：“不……你不会。你也想要游龙珏的线索……你一直在找的就是游龙珏……”&lt;end&gt;
+&lt;npc=10249&gt;：“你傻啊你，快走！没错，游龙珏的线索在我身上，你……”&lt;end&gt;
+&lt;npc=10278&gt;：“是，我一直在找游龙珏的下落，我也知道你不会丢下这小姑娘。傻孩子……出手吧！”&lt;end&gt;
+&lt;Playername&gt;：“前辈……我敬你为师，现下与你交手，乃我不义，事后我定会自废武功！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:AddShenmiren(me.nMapId)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19480</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10256</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20470</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10180</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“秋姨……陆前辈与我父母……到底当年发生何事？”&lt;end&gt;
+&lt;npc=10180&gt;：“我早已立誓此生对你绝不欺瞒，却不想是此种境况下告之你真相……你父亲是麻衣神相之徒，也是保护游龙珏的高手之一。他设下谜中谜，告诉护珏后人游龙珏的线索在你体内，又让知情人以为是吕家所持有。而游龙珏的存在本身又是一个秘密……”&lt;end&gt;
+&lt;npc=10180&gt;：“……这天下，无人可敌他智谋。当年那一役，到如今我也不知是何人背叛于他。他与你娘亲，还有陆往生，就此下落不明。我找遍整个战场，都未找到他们……”&lt;end&gt;
+&lt;Playername&gt;：“那书青……吕家果然是因我……因我……秋姨你捎信于我，其实是为了让她保护我吗？”&lt;end&gt;
+&lt;npc=10180&gt;：“是……我让义军兄弟先行一步带她离开……即使，吕家是自愿以命掩埋这个秘密，秋姨……也甚是愧疚。”&lt;end&gt;
+&lt;Playername&gt;：“哈哈，太爷骂我骂得好！若不是我冲动逞勇，触怒水贼，他们也不会和金兵联手！”&lt;end&gt;
+&lt;npc=10180&gt;：“&lt;Playername&gt;！此事与你无关，你怎……”&lt;end&gt;
+&lt;playername&gt;：“秋姨，这十多年来，我有眼有心，会看会悟。我或许不懂善恶，却知道何谓好坏，什么是应该、什么是不该……我知此次我脱不了责任，我绝不推卸。”&lt;end&gt;
+&lt;npc=10180&gt;：“……傻孩子，都过去了。这回金兵为得逞，必不会善罢甘休，你不宜再留于镇中。吕夫人乃天王帮杨瑛之妹，她早就交代于我，若事情有变，将你先送往天王帮。义军也要重新找地方驻扎了……我们速速离开镇子，再不可连累镇民。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10180&gt;：“想不到，这一天来得这么快……”</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>随秋姨去渡头，离开桃溪镇</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Task.NewPrimerLv20:DeleteFollowNpc()</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>23100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10250</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“书青？你不是已经跟着义军兄弟先走了……”&lt;end&gt;
+&lt;npc=10250&gt;：“祖父有一好友，我自去投靠。更何况现在吕家……也无须再与义军联手。”&lt;end&gt;
+&lt;Playername&gt;：“书青……对不起……对不起……”&lt;end&gt;
+&lt;npc=10250&gt;：“说什么傻话，吕氏一家奉命保护游龙珏，如今方是不辱使命！并无对不起。吕家宗谱虽无我子书青，可我亦是吕家之魂，死得其所，夫复何恨。”&lt;end&gt;
+&lt;npc=10250&gt;：“……更何况……我怎么能让你死……”&lt;end&gt;
+&lt;Playername&gt;：“书青，你就随我一起，留在义军中可好？”&lt;end&gt;
+&lt;npc=10250&gt;：“有谁真能陪谁一辈子？书青同&lt;Playername&gt;能走到今日已是幸事……嘻嘻，还是你真以为书青武功不如你？你有你应该做的事，书青也有书青要走的路。从今往后，江湖路远，各自仗剑……保重。”&lt;end&gt;
+她还是平时那个子书青，温柔而倔强，伶牙俐齿不给我留半条退路。江南细雨，满纸温柔，我知道我已踏上这江湖，而她被我留在了那场永远的江南暮雨中……&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10250&gt;：“此番一别……恐怕，真的不会再见了。”</Value>
+              </txt>
+              <txt>
+                <Value>与等在渡头的书青道别</Value>
+              </txt>
+              <txt>
+                <Value>与等在渡头的书青道别</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>Npc:GetClass("chuanfu"):ClimbBoat(10250, me.nMapId)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>25170</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

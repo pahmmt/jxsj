@@ -1,0 +1,421 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B7" name="叛旅之谜" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=317&gt;：“&lt;if me.nSex==0&gt;侠士&lt;else&gt;侠女&lt;endif&gt;，在下有一个不情之请。”&lt;end&gt;</Pop>
+      <Start>&lt;playername&gt;：“各位为何围在这谷口？”&lt;end&gt;
+&lt;npc=317&gt;：“哎……一言难尽。昨日夜间，本帮各大分舵解送岁银回岛的银车在下船后不久遭人劫夺。有一名押送的士兵机灵，跑脱了回来报信，娄道领与季管事震怒之下，派我前锋营全员出动，追捕劫银之人。这些人夜里蒙着面，看不真切。可武功却做不得假，一场仗打下来，立刻被我瞧出是天王子弟。”&lt;end&gt;
+&lt;npc=317&gt;：“我出声道破对方身份，岛内也源源不断派来救兵，对方支撑不住，护着银车节节败退到这坠马渊内困守。我却已知道，这些劫银之人，乃是锐捷营的弟兄。”&lt;end&gt;
+&lt;playername&gt;：“锐捷营？”&lt;end&gt;
+&lt;npc=317&gt;：“此事事关机要，我不便多言。总之当下天王弟子中的精锐，皆被以营划分，多加操练。那锐捷营新建不久，统领楚忠良又不愿附和，是以遭到同僚排挤。可锐捷营要反，却事先丝毫瞧不出端倪。”&lt;end&gt;
+&lt;playername&gt;：“造反劫银，放到哪里，都是死罪了吧。”&lt;end&gt;
+&lt;npc=317&gt;：“是。所以想请你帮忙。今晨我们查清劫银者身份后不敢隐瞒，即刻上报。娄道领盛怒之下，命人颁下绝杀令！哎……那楚忠良为人最是正直，手下弟兄各个愿为其效死。且不说我等份属同门，下不了手；即使真拼起来，锐捷营困兽犹斗，死伤难免。”&lt;end&gt;
+&lt;playername&gt;：“其实，并非没有办法。”&lt;end&gt;
+&lt;npc=317&gt;：“纵火焚谷，我怎么想不到。可如此阴毒之法，有伤天合，怎能用在自己帮内兄弟身上？何况押运银车的上百弟兄，楚忠良一个也没有加害。只是以刀逼住后麻翻在地。况且……我总觉得，其中事有蹊跷。”&lt;end&gt;
+&lt;playername&gt;：“那白统领需要我做些什么？”&lt;end&gt;
+&lt;npc=317&gt;：“事已至此，无可挽回，只希望将损失降到最少。白某知道&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;英勇过人，不知可否入谷取下……取下忠良兄弟的首级！白某以个人性命做保，也要去娄道领面前为其余兄弟求情，饶他们一命。如果翼飞在的话，就好办了，他能说得上话，可惜他现在离岛在外，一切都看天命吧……”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>&lt;npc=317&gt;：“定是过程中出了什么意外，这任务竟是进行不下去了！”&lt;end&gt;</Error>
+      <Prize>&lt;npc=317&gt;：“哎……可惜了忠良兄弟大好人才。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>312</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>深入谷中，驱散锐捷营精锐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>313</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>坠马渊尽头，叛军首领楚忠良应该就在那里</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>314</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>315</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>平定了叛乱，但心中不免疑虑重重</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>316</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=316&gt;：“父亲实在是没有办法，才出此下策。锐捷营中的叔伯们，多为沅江人士。今年洪水肆虐，家乡变做一片泽国。父老乡亲无处投身，又身无分文，眼见是不能活了。”&lt;end&gt;
+&lt;npc=316&gt;：“父亲受叔伯们推举，向道领求情。先是请准将父老们移居青螺岛，不准。后又告假回乡省亲，仍是不准。最后希望预支三月俸禄，寄回家安顿老幼，仍是不准！”&lt;end&gt;
+&lt;npc=316&gt;：“娄一关他根本不是人，是畜生！如果不是实在走投无路，父亲绝不会反。如今落到这般田地，怎么是我们所愿？”&lt;end&gt;
+&lt;npc=316&gt;：“当年加入天王帮时，父亲他们都立过血誓，怎会忘记当初的承诺。请您千万放过父亲，放弃这个任务吧！求您了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=316&gt;：“请您千万放过父亲，放弃这个任务吧！求您了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>楚杰向我说出了事情的真相</Value>
+              </txt>
+              <txt>
+                <Value>楚杰向我说出了事情的真相</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>可以回报前锋营统领白普了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>317</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=317&gt;：“阁下大恩，白某愧受了，也替锐捷营兄弟谢过。纵是一死，我也要去道领面前争他一争。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>可以回报前锋营统领白普了</Value>
+              </txt>
+              <txt>
+                <Value>可以回报前锋营统领白普了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

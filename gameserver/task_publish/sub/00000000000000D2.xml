@@ -1,0 +1,337 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D2" name="彩蝶仙子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=414&gt;：“这彩蝶仙子倒真是个毫不气馁的女子，若不让她死心，天天都要来纠缠的了。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=414&gt;：“那蝶飘飘乃是岭南五毒教旗主，江湖传闻轻功高强，倒是没有什么劣闻。不过身处五毒教这种藏污纳垢之地，想来也非良善人家。”&lt;end&gt;
+&lt;playername&gt;：“她为何要来纠缠真人呢？”&lt;end&gt;
+&lt;npc=414&gt;：“此事还得从三年前说起。当时我武当门下年少气盛，在洞庭湖边开罪了天王帮众。恰逢我途经该处，得到弟子报信便赶去阻止双方动手。无奈之下，摘叶为舟，施展了梯云纵中登萍渡水的绝技，被围观的江湖人物看去，大肆宣扬，从此自恃轻功高强者，多有上武当山挑战之人，真是不胜其烦。”&lt;end&gt;
+&lt;playername&gt;：“既如此，真人打发走那蝶姓女子便是了。”&lt;end&gt;
+&lt;npc=414&gt;：“如何没有？可她几次三番找上门来，这小姑娘最是古灵精怪，编织各种理由诓我出手，说来倒真令人又好气又好笑。若不给她个交代，此事怕还有手尾。”&lt;end&gt;
+&lt;playername&gt;：“看来真人已有妙计。”&lt;end&gt;
+&lt;npc=414&gt;：“恩。你可假扮做我的弟子，与她挑战轻功，我必在暗中助你。那蝶飘飘若见连你也斗不过，自然心灰意冷，便就这样去了。你现下可去与她商量个比试之法。”&lt;end&gt;
+&lt;playername&gt;：“蝶飘飘，一叶真人是我恩师，你几番纠缠，烦是不烦？师傅派我来打发你走，要如何比，你说出来便是。”&lt;end&gt;
+&lt;npc=415&gt;：“那牛鼻子道士居然找个弟子来糊弄我？哼，好，就让你尝尝厉害。恩……哈哈，有了！这龙虎幻境东部有四尊雕像，我们从每个牛鼻子道士的雕像上拔一根石头胡须下来，再回到这里，快者便是赢了。哈哈，真是好玩，真是好玩。”&lt;end&gt;
+&lt;playername&gt;：“……”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=3&gt;
+&lt;npc=417&gt;：“此事交由我办理，你尽可放心……那叫蝶飘飘的女子……真是清丽脱俗啊。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1570</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>真人胡须拔取中...</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{真人胡须,20,1,43,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>4</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/4个真人胡须</Value>
+              </txt>
+              <txt>
+                <Value>在龙虎幻境的四座真人雕像拔取真人胡须。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1292,2488
+1284,3041
+1491,2903
+1553,2593</Value>
+              </string>
+              <string>
+                <Value>90</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>取得了真人胡须，可以回去找一叶真人了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>414</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=414&gt;：“恩，蝶姑娘，你的轻身功夫的确了得，我这徒儿不是你的对手。”&lt;end&gt;
+&lt;npc=415&gt;：“一叶真人，该是你亲自下场走几个回合了吧。”&lt;end&gt;
+&lt;npc=414&gt;：“且慢，贫道记得蝶姑娘来见我时，曾携有一柄削铁如泥的宝剑，可曾记错？”&lt;end&gt;
+&lt;npc=415&gt;：“没错，那是我师傅传予我的避邪剑，你是不是动了凡心想看一看呢？没有问题呀……我的剑呢？我的避邪剑……一定是路上遗落在哪里了，我去找。”&lt;end&gt;
+&lt;npc=414&gt;：“不必了！蝶施主，你且看来，贫道手中这柄，是不是你的宝剑避邪？”&lt;end&gt;
+&lt;npc=415&gt;：“正是……刚刚去取那四个老牛鼻子雕像的时候，避邪分明还在，定然是一叶这家伙趁我不备，在施展轻功的时候窃去了，不过话说回来，我自己居然一些察觉都没有，从轻功上讲，他高我实在太多，已经很留面子了。我虽是姑娘家，却不能像那些个臭男人一般不知羞耻，输了就输了吧。”&lt;end&gt;
+&lt;npc=414&gt;：“施主在想什么？”&lt;end&gt;
+&lt;npc=415&gt;：“一叶牛鼻子，我输了。”&lt;end&gt;
+&lt;npc=414&gt;：“呵呵呵，哈哈哈，你这个小姑娘，倒是爽利得紧。”&lt;end&gt;
+&lt;npc=415&gt;：“那是。”&lt;end&gt;
+&lt;npc=414&gt;：“不过你这套轻功，贫道似曾相识，绝非五毒教功夫。小友可否告知师承何处？”&lt;end&gt;
+&lt;npc=415&gt;：“这……不瞒道长。飘飘幼年时家乡战乱，母亲带我避祸他处。母亲却在一天夜里……被神秘人给杀害了……后来五毒教的一位老妇人救下了飘飘，将我抚养成人。后来朝廷围剿教派中人，飘飘便跟随老妈妈去到了岭南。一身武艺，都是老妈妈传授。”&lt;end&gt;
+&lt;npc=414&gt;：“是个可怜的孩子啊……你可知那老妪的姓氏？”&lt;end&gt;
+&lt;npc=415&gt;：“不知。老妈妈一直不肯告诉我她的名讳，只说将来总有一天我会知道。”&lt;end&gt;
+&lt;npc=414&gt;：“恩，这避邪剑想必是她传予你的了。”&lt;end&gt;
+&lt;npc=415&gt;：“确是如此。”&lt;end&gt;
+&lt;npc=414&gt;：“那我大致能猜出此人来历了。不过为了更进一步证明，我希望将这避邪剑的剑模拓印下来，交给我的一位故人查验。若我所猜不错，那位故人与你的师傅乃亲生姐妹。你的仇人，也一定能查得出来。因为那故人乃是当今武林中享有无上尊荣之人。”&lt;end&gt;
+&lt;npc=415&gt;：“若是能报得家母大仇，飘飘愿一世做牛做马，服侍真人！”&lt;end&gt;
+&lt;playername&gt;：“真人，此事可否交由我来处置。”&lt;end&gt;
+&lt;npc=414&gt;：“那是再好不过。洞虚真人的徒弟钟志铭就在这龙虎洞的试剑坪中，与他的师兄弟们练剑。此事你可交托给他办理。蝶施主虽然轻功过人，武艺上却不能超过你。我希望你安全护送她去试剑坪，沿途弟子若在练剑中发觉你们，恐怕会以为是偷窥武技之人，可能不得不出手打败他们，才能安全护送女施主找到志铭。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>可以回去找一叶真人了</Value>
+              </txt>
+              <txt>
+                <Value>可以回去找一叶真人了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{43,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>轻功造诣上，显然是一叶真人胜了，护送蝶飘飘去试剑坪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">417</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>415</Value>
+              </dialognpc>
+              <number>
+                <Value>1499</Value>
+              </number>
+              <number>
+                <Value>2447</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：准备好了吗？我们出发了！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>416</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1243</Value>
+              </number>
+              <number>
+                <Value>2447</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value>1491,2470
+1479,2494
+1431,2499
+1391,2547
+1365,2596
+1300,2583
+1236,2566
+1243,2495</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

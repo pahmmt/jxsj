@@ -1,0 +1,365 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F4" name="昆仑情种" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=522&gt;：“关关雎鸠，在河之舟，窈窕淑女，君子好俅。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=522&gt;：“前些时候，小生在大理采购药材，迎面忽的来了一阵香风。一个仙子一般的姑娘迎面走来，小生差点没晕过去。后来找人一打听，才知是翠烟门的冷月观音。”&lt;end&gt;
+&lt;playername&gt;：“那又怎样？”&lt;end&gt;
+&lt;npc=522&gt;：“小生从此竟茶饭不思，寝食难安。对冷月观音姑月华念念不忘，可无论小生怎样努力，姑观音也不置可否，若即若离。如此下去，我诸葛卓云非疯了不可。”&lt;end&gt;
+&lt;playername&gt;：“那你要如何处置？”&lt;end&gt;
+&lt;npc=522&gt;：“事到如今，只有一策，就是逼亲。请你代我传话，说卓云愿为姑观音做任何事情。只要她愿意与我定下终生，诸葛这条命都可以豁出去不要！”&lt;end&gt;
+&lt;playername&gt;：“哎，真是个痴情种子。我便替你走一趟吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>523</Value>
+              </dialognpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“姑观音，我替诸葛卓云做说客来了。”&lt;end&gt;
+&lt;npc=523&gt;：“哦？那小诸葛又发了什么疯癫？”&lt;end&gt;
+&lt;playername&gt;：“他想娶你。”&lt;end&gt;
+&lt;npc=523&gt;：“……这个疯狂的小子……太轻佻了。”&lt;end&gt;
+&lt;playername&gt;：“我来一趟也不容易，况且天巧星行事虽然有些夸张，但心却是实诚的。”&lt;end&gt;
+&lt;npc=523&gt;：“哎，罢了。既然如此，你告诉他，若他能在三柱香的时间内击败我百花阵四大花使，并且击败电光矛，我可以考虑。”&lt;end&gt;
+&lt;playername&gt;：“这不是难为人吗？哎，既然我帮了这个忙，就索性帮到底吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到百花阵外的姑月华探探她的口风</Value>
+              </txt>
+              <txt>
+                <Value>找到百花阵外的姑月华探探她的口风</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>四方花使分处百花阵的四个入口，要打败她们绝非易事</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>524</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>525</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>526</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>527</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败了四大花使，还要通过电光矛的考验</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2080</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>完成了这许多事情，可以回去找姑月华复命了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>523</Value>
+              </dialognpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=523&gt;：“天巧星那里，你暂时不用去了。有些事情，他不知道比知道要好些。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>完成了这许多事情，可以回去找姑月华复命了</Value>
+              </txt>
+              <txt>
+                <Value>完成了这许多事情，可以回去找姑月华复命了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

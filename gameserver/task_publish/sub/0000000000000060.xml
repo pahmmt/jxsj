@@ -1,0 +1,1095 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000060" name="寻找寇锐" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=801&gt;：“舒扬！嘉王目前下榻何处，你跟这位义军&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;说一声。”&lt;end&gt;
+&lt;npc=802&gt;：“据弟子回报，嘉王曾在襄阳停留几日，现在已经乔装出城，前往汉水古渡方向了。”&lt;end&gt;
+&lt;npc=801&gt;：“已经出城？可有派人暗中保护？”&lt;end&gt;
+&lt;npc=802&gt;：“嘉王身边高手不少，我已经请顾大姐暗中跟随，并一路做下记号，应当不会跟丢。”&lt;end&gt;
+&lt;npc=801&gt;：“做的好！汉水古渡是咱们的地盘！你送这位义军&lt;if me.nSex==0&gt;兄弟&lt;else&gt;姑娘&lt;endif&gt;前去，只要沿路留意顾重颜留下的暗记，应当很快就会追上嘉王。”&lt;end&gt;
+&lt;npc=802&gt;：“属下遵命！”&lt;end&gt;
+&lt;Playername&gt;:“多谢殷帮主！有劳毕大哥了！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>802</Value>
+              </dialognpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <txt>
+                <Value> &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>今天天气很好，还是自己一路看风景一路走过去吧！</Value>
+              </txt>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1577</Value>
+              </number>
+              <number>
+                <Value>3427</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>船已经备好，那就即刻动身吧！</Value>
+              </txt>
+              <txt>
+                <Value>现在就动身！</Value>
+              </txt>
+              <txt>
+                <Value>再等片刻！</Value>
+              </txt>
+              <txt>
+                <Value>让毕舒扬送我去汉水古渡</Value>
+              </txt>
+              <txt>
+                <Value>让毕舒扬送我去汉水古渡</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=802&gt;:“我们到了！咦，这不是顾大姐留下的暗记么？看来嘉王果然是从这里离去的，我们走对路了。你只要去北面寻找她留下的&lt;color=red&gt;暗记&lt;color&gt;，定会追上嘉王。我还需回去复命，你要多加小心！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去北面寻找顾重颜留下的暗记</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1593</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>查看暗记</Value>
+              </txt>
+              <txt>
+                <Value>查看完毕</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>寻找暗记</Value>
+              </txt>
+              <txt>
+                <Value>渡口北面</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1645,3354</Value>
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>标记上划有向东的箭头，看来顾重颜随着嘉王向东边去了，东边一定有她留下的暗记。</Value>
+              </txt>
+              <txt>
+                <Value>去东面寻找顾重颜留下的暗记</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1602</Value>
+              </dialognpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>查看暗记</Value>
+              </txt>
+              <txt>
+                <Value>查看完毕</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>寻找顾重颜的暗记</Value>
+              </txt>
+              <txt>
+                <Value>去东面</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1700,3479</Value>
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=803&gt;："什么人？"&lt;end&gt;
+&lt;playername&gt;："可是顾重颜大姐？"&lt;end&gt;
+&lt;npc=944&gt;："我正是顾重颜！你快快进来，恕我有伤在身，不能亲迎了！"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进屋找到顾重颜</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>944</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;："我是义军&lt;=me.szName&gt;，在殷帮主指点下一路随暗记来到此处，看你的情形可是受伤了？是否和人有过搏斗？嘉王此刻身在何处？"&lt;end&gt;
+&lt;npc=944&gt;："原来是义军的兄弟，从嘉王出城以后我便一直暗中跟着他。在渡口附近嘉王遭到了伏击，为了掩护他突围，我现身加入战斗，不想被田氏兄妹打了一记赤尸镖，好在嘉王身边高手众多，终于还是突围而去了。"&lt;end&gt;
+&lt;playername&gt;："顾大姐的侠义行为定会受到江湖同道敬仰，你刚说的田氏兄妹是谁？看你的样子似乎伤得很厉害！"&lt;end&gt;
+&lt;npc=944&gt;："田氏兄妹本是阴山老怪的徒弟，擅使赤尸镖，不知何时成为李后鹰犬。中了赤尸镖的人时间一长就会五官失灵，七窍封闭，九感迷昧如同行尸走肉一般四处杀人，光是想就让我感到毛骨悚然。好在我也不是好惹的，逃生时赏了他们一记黄蜂针，也够他们受的。只是赤尸毒非独门解药无解，倒是让我头痛的很。"&lt;end&gt;
+&lt;playername&gt;："顾大姐为救嘉王才会身受此毒，解药我定会为你带回。不知那田氏兄妹可是渡口那些人？"&lt;end&gt;
+&lt;npc=944&gt;："正是！中了我黄蜂针后只有将毒逼出才可自由行动。解药在他们三人身上，必须全部取到方可救我。我口渴的很，你顺路从渡口给我取些水吧。"&lt;end&gt;
+&lt;playername&gt;："好的，你再忍耐一下！"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=944&gt;："此事甚为艰难，&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;你要想好了再去，以免无端送命，令我死尤愧颜！"&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{空瓶,20,1,460,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>和顾重颜交谈</Value>
+              </txt>
+              <txt>
+                <Value>和顾重颜交谈</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1024</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>从田氏兄妹手中夺解药救助顾重颜</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>804</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,457,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>805</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,458,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>806</Value>
+              </fightnpc>
+              <number>
+                <Value>88</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,459,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>用背包中的空瓶在渡口取水</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>258000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>取到了水</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <txt>
+                <Value>正在取水</Value>
+              </txt>
+              <taskitem>
+                <Value>{460,}</Value>
+              </taskitem>
+              <string>
+                <Value />
+              </string>
+              <itemid>
+                <Value>{20,1,300,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value>{水瓶,20,1,300,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>88</Value>
+              </number>
+              <number>
+                <Value>1590</Value>
+              </number>
+              <number>
+                <Value>3398</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>306</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>在渡口取水</Value>
+              </string>
+              <string>
+                <Value>在渡口取水</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将解药和水带给顾重颜</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>43000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>502</Value>
+              </number>
+              <number>
+                <Value>1620</Value>
+              </number>
+              <number>
+                <Value>3208</Value>
+              </number>
+              <dialognpc>
+                <Value>803</Value>
+              </dialognpc>
+              <txt>
+                <Value>尾随</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=803&gt;："&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;回来了啊……我……我想我快不行了……"&lt;end&gt;
+&lt;playername&gt;："怎么会这样？这是解药，你快点服下吧！"&lt;end&gt;
+&lt;npc=803&gt;："晚……晚了……毒已经侵入我的五脏……你……你……听我说……嘉王也许会……去……去……浣花溪飞龙谷……你……你……快点把我杀了吧……我太难受了……我不要……我不要变成一个……一个……"&lt;end&gt;
+&lt;playername&gt;："顾大姐……顾大姐……"&lt;end&gt;
+&lt;npc=803&gt;："杀了我！！"&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>814</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>将解药带给顾重颜</Value>
+              </txt>
+              <txt>
+                <Value>将解药带给顾重颜</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>没想到我最终还是没能挽救顾重颜的性命。她在临终前挣扎着想要告诉我什么呢？嘉王……浣花溪……飞龙谷……对了，她一定是要告诉我嘉王前往浣花溪的飞龙谷了，我应该前往那里寻找嘉王的下落。</Value>
+              </txt>
+              <txt>
+                <Value>前往浣花溪飞龙谷寻找嘉王下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>86000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{457,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{458,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{459,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{300,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>807</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=807&gt;：“你是什么人？来老夫谷中何事？”&lt;end&gt;
+&lt;Playername&gt;:“这里便是飞龙谷吗？请问老先生高姓大名？”&lt;end&gt;
+&lt;npc=807&gt;：“你倒是个懂礼貌的娃娃！老夫是这飞龙谷的主人，自号飞龙先生。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=807&gt;：“今夜又是月圆……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>前往飞龙谷</Value>
+              </txt>
+              <txt>
+                <Value>前往飞龙谷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000061</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,194 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000142" name="终惩元凶" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3591&gt;：“白先生喝了些水，好转了些，只是连番恶斗费力甚巨，暂时还无法行走。”&lt;end&gt;
+&lt;npc=3585&gt;：“我不打紧，我不打紧，让我好好看看少主人。”&lt;end&gt;
+&lt;npc=3585&gt;：“呵，时间过得太快了……”&lt;end&gt;
+&lt;npc=3590&gt;：“少主人，白先生，刺客们又围上来了。奇怪的是，这些刺客装束各异，似乎不是同一派系。”&lt;end&gt;
+&lt;npc=3585&gt;：“说到这里我想起来了！有一群金国人自当年汉水边便一直追踪我，他们使的不是天忍教的火劲，而是奇寒无比的阴劲。中者寒毒侵脑，生不如死。”&lt;end&gt;
+&lt;playername&gt;：“白先生说的，有一群金国人会使寒毒掌劲？”&lt;end&gt;
+&lt;npc=3585&gt;：“正是！”&lt;end&gt;
+&lt;playername&gt;：“那个将沈铁石大哥害得生不如死的畜生定在其中！真是得来全不费功夫。卷轴之事稍缓，我先去将那些金狗杀个干净，报了铁石大哥的深仇大恨！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>3588</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在任务面板中对选中任务使用跟踪按钮，可以显示任务完成情况</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我已尽屠金狗，那厮难逃一死！得赶紧回去汇合白疆先生与义军兄弟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>35000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3585</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“先生，我已尽屠仇人！替义军中一位情深义重的勇士报了大仇！方才见先生言有未尽，可是有何事？”&lt;end&gt;
+&lt;npc=3585&gt;：“我此行实在是有件极为重要之事！我身上藏着一个卷轴，那里面有当年汉水之战时，少主人父亲在临战前留下的最后一首谶言诗，老主人说其中有少主人一生命运的写照。”&lt;end&gt;
+&lt;playername&gt;：“那包袱现在何处？”&lt;end&gt;
+&lt;npc=3585&gt;：“哎，这十八年我隐姓埋名，用尽各种方法都不能摆脱敌人的追踪，一直无法将卷轴安全送抵义军营地。今日眼看着成功在望，却在最后时刻，被贼人劫去了。那卷轴被两方刺客撕碎，各劫走了一些残片。”&lt;end&gt;
+&lt;npc=3590&gt;：“如此说来，卷轴里定然有重大秘密。贼人们会第一时刻将劫到手的碎片送走，同时抢夺其他人的所得。”&lt;end&gt;
+&lt;playername&gt;：“恩。方才我打斗之时，感觉其中有&lt;color=red&gt;蒙古武士&lt;color&gt;，也有&lt;color=red&gt;南宋高手&lt;color&gt;。现下当务之急便是追回卷轴，我立即动身！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与白疆先生对话</Value>
+              </txt>
+              <txt>
+                <Value>与白疆先生对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000143</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

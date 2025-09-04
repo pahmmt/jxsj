@@ -1,0 +1,277 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000005" name="铁证" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=19&gt;：“&lt;playername&gt;，此间事了，我们必定将大人安全送走，你也可以回去复命了。”&lt;end&gt;
+&lt;playername&gt;：“袭击韩大人的乃是五毒教高手，他们极可能受朝廷中人指使，这些你可知道？”&lt;end&gt;
+&lt;npc=19&gt;：“竟有此事？如此吧，你去杀掉一些神秘杀手，从他们身上找找是否有证明身份的信物，若证据确凿，可将他们交给裴统领处理，他刚回帮不久，就奉命上山了，现在应该已经走到烟波亭附近了。”&lt;end&gt;
+&lt;playername&gt;：“这主意不错，那我也走了。”&lt;end&gt;
+&lt;npc=19&gt;：“一路保重。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;playername&gt;：“我奉裴统领之名前来援助！”&lt;end&gt;
+&lt;npc=11045&gt;：“终于来人了，悬龙滩上出现了许多不明刺客。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1170</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{135,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将刺客的真实身份告诉烟波亭附近的裴翼飞</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>12</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“裴统领，韩大人已由本帮高手护送，成功从秘密水道离开青螺岛了。而且，属下在路上查明，那些刺客乃是五毒教的高手。这里是他们身上暗藏的毒火草，可为凭证。”&lt;end&gt;
+&lt;npc=12&gt;：“干得不错！这毒火草只在南夷之地生长，据传可避百毒，只有避居的五毒教才拥有此物。看来，真是五毒的人了。”&lt;end&gt;
+&lt;playername&gt;：“而且，途中一位五毒教白旗香主曾偷看过韩大人的信筒，道什么妇人误国，忠孝之礼，光宗皇帝不懂，他卢某一个江湖中人却也懂之类的话。”&lt;end&gt;
+&lt;npc=12&gt;：“山雨欲来风满楼……兹事体大，我这就启程回去向帮主禀报，你也随我一道回帮吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{毒火草,20,1,135,1,0,3}</Value>
+              </string>
+              <txt>
+                <Value>将刺客是五毒高手的消息回报杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>将刺客是五毒高手的消息回报杨铁心</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>15000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>霎时，传信飞奴有信来报，裴翼飞打开密信看了起来</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>12</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“发生什么事了？”&lt;end&gt;
+&lt;npc=12&gt;：“门下弟子来报，有大量来历不明的船只出现在悬龙滩沿岸，意图停靠登陆！”&lt;end&gt;
+&lt;playername&gt;：“这可如何是好？”&lt;end&gt;
+&lt;npc=12&gt;：“计划有变，你先去援助鸽舍的天王弟子，去悬龙滩查明那些神秘人的身份，全力阻止他们登陆此地！”&lt;end&gt;
+&lt;playername&gt;：“遵命。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=12&gt;：“悬龙滩有敌情，速去速回！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>与裴翼飞对话</Value>
+              </txt>
+              <txt>
+                <Value>与裴翼飞对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000006</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,0,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去悬龙滩寻找鸽舍弟子，协助他查明真相</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

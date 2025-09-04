@@ -1,0 +1,382 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000028B" name="焚粮" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5195&gt;：“贫僧已入佛门多年，对于俗事红尘早就了无牵挂。这茫茫人世，任何人任何事情上天已有定数，是福不是祸，是祸躲不过。不过此次随玄慈大师来到灵璧泊战场却是个例外。”&lt;end&gt;
+&lt;playername&gt;：“静心师傅，可是遇到了什么棘手的问题。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5195</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5195&gt;：“这些日子我少林部分弟子负责保护我军粮草，可部分粮草却是被金军秘营的士兵夺走，事前我已经派少林中身手极佳的弟子前去摸底，结果却被那机关难住，且那金军秘营路线极为复杂，想将囤粮运回恐怕很难，既是这样便将它们焚毁吧。”&lt;end&gt;
+&lt;playername&gt;：“敌方营地我倒是潜入过，也知道他们的囤粮之地，难道他们有更秘密的场所存放军备军需？”&lt;end&gt;
+&lt;npc=5195&gt;：“正是，他们营地之中所堆放的囤粮等军备物资只是极少数的一部分，真正的大批军需乃是存放在金军秘密营地之中。你这便前去解开机关，然后用我给你的特质火种烧毁金军囤粮吧。” &lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <txt>
+                <Value>与静心和尚对话</Value>
+              </txt>
+              <txt>
+                <Value>与静心和尚对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按静心的意思先击败埋伏的护粮机关人吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessAddNpc</Function>
+            <Parameter>
+              <number>
+                <Value>5196</Value>
+              </number>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>1680</Value>
+              </number>
+              <number>
+                <Value>3122</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <number>
+                <Value>5197</Value>
+              </number>
+              <number>
+                <Value>135</Value>
+              </number>
+              <string>
+                <Value>1678,3125
+1678,3119
+1676,3122
+1682,3119
+1683,3125
+1680,3115
+1684,3122
+1684,3117
+1683,3129
+1680,3129
+
+</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>已经击败护粮机关人%d/10个。</Value>
+              </txt>
+              <txt>
+                <Value>已经击败护粮机关人10个。</Value>
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>机关已被铲除，用特制火种焚烧囤粮</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>UseItem2AddNpc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,842,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>5104</Value>
+              </number>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>1685</Value>
+              </number>
+              <number>
+                <Value>3124</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1699,3128
+1696,3131
+1692,3129
+1696,3123
+1691,3123
+1692,3118
+1689,3122
+</Value>
+              </string>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>已经成功焚烧金军囤粮</Value>
+              </txt>
+              <txt>
+                <Value>已经成功焚烧金军囤粮</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将战况告知静心和尚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5195</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“静心师父，那金军果然有一处秘密营地，而军粮军备等也大量的堆积其中，不过那里的守卫也极为森严，机关林立，我将机关顺利破除之后又成功焚毁了囤粮。”&lt;end&gt;
+&lt;npc=5195&gt;：“一 方 一 净 土 一 笑 一 尘 缘，可惜你我都还未悟得到如此之境界。&lt;playername&gt;，今日你所为本质乃恶性，却终是为了天下苍生，也算是行善积德了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与静心和尚对话</Value>
+              </txt>
+              <txt>
+                <Value>与静心和尚对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,325 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DE" name="刺客的下场" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=458&gt;：“那宋人年纪轻轻，却是一派风度翩翩，显是名家弟子。就这样死了真是不值。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=458&gt;：“近日从南宋潜入了一名剑客，在意图行刺纥石烈执中将军时被俘。如今囚禁在这皇陵监牢中，只待朝廷旨意颁布下来，就要问斩了。”&lt;end&gt;
+&lt;playername&gt;：“是个什么样的剑客？”&lt;end&gt;
+&lt;npc=458&gt;：“武当百里剑客魏长风。”&lt;end&gt;
+&lt;playername&gt;：“啊，是中原正统武林的高手。”&lt;end&gt;
+&lt;npc=458&gt;：“是，就如此死了真是可惜。”&lt;end&gt;
+&lt;playername&gt;：“可惜？”&lt;end&gt;
+&lt;npc=458&gt;：“我荣某……说起来，也曾是……一个汉人。乃是当年大内带刀护卫，只可惜当年翠烟……哎，罢了罢了，如今有家不能归，其中苦楚，也只有那姓魏的青年人了解几分吧。”&lt;end&gt;
+&lt;playername&gt;：“荣堂主不希望他死吗？”&lt;end&gt;
+&lt;npc=458&gt;：“都是宋人，据我所知，那魏长风并非无事寻仇，他乃金汉混血，纥石烈执中曾害了魏氏一族，令其满门抄斩。于情于理，都没有必死的理由。”&lt;end&gt;
+&lt;playername&gt;：“那么……”&lt;end&gt;
+&lt;npc=458&gt;：“我常喝些小酒，喝醉了便不记得牢狱的钥匙放在何处。若有人窃去开了监牢大门，打昏看守，将魏长风救走，我也是不知情的。”&lt;end&gt;
+&lt;playername&gt;：“我明白了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1433</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>解除了守卫，去找到被关押着的魏长风吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1548</Value>
+              </number>
+              <number>
+                <Value>3557</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>找到魏长风</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将魏长风救出来，护送他到达皇陵入口才算安全</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>461</Value>
+              </dialognpc>
+              <number>
+                <Value>1548</Value>
+              </number>
+              <number>
+                <Value>3550</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你就是武当派百里剑客魏长风吧，我受荣屠长老之托送你出去！！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>459</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1809</Value>
+              </number>
+              <number>
+                <Value>3367</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <string>
+                <Value>1535,3546
+1526,3540
+1516,3531
+1505,3547
+1528,3573
+1556,3601
+1594,3564
+1635,3522
+1655,3520
+1694,3481
+1732,3442
+1774,3401</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过回去告诉荣屠吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>458</Value>
+              </dialognpc>
+              <number>
+                <Value>453</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=458&gt;：“恩，此事我并不知情，钥匙也没有借给过你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过回去告诉荣屠吧</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过回去告诉荣屠吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

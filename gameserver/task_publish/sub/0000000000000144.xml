@@ -1,0 +1,84 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000144" name="初级心得书" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start />
+      <Procedure>这些心得看起来还不完全呢，请再去修炼修炼吧，到时候回来我帮你装订成册。</Procedure>
+      <Error />
+      <Prize>你的心得书已经装订好了，后人看了这份心得书武艺一定会大涨的吧，真是了不起！</Prize>
+      <End>这些是你自己写下的心得吗？看来你已经对自己的能力有相当的领悟了呢，不过这些书页散了点，让我帮你装订成册吧。</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="1">3571</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>InsightBook</Function>
+            <Parameter>
+              <number>
+                <Value>2000000</Value>
+              </number>
+              <itemid>
+                <Value>{18,1,43,1,-1,-1,}</Value>
+              </itemid>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>你通过刻苦的修炼终于写出了一本心得书！</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFailed</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

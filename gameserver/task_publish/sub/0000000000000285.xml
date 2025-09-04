@@ -1,0 +1,911 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000285" name="侠骨柔情" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;:“秋姨，&lt;playername&gt;真的活着回来了。”&lt;end&gt;
+&lt;npc=5154&gt;：“&lt;playername&gt;，我亲爱的孩子。秋姨知道你有很多很多话想说，不过还是先听我说完吧。”&lt;end&gt;
+&lt;npc=5154&gt;：“这段日子里，我军战线拉的过长，自从四川吴曦反叛以后，朝廷再次派出大将重返西南线进行了艰苦的作战，无奈西南巴蜀地区地势陡峭，我军西南线的将士不过五千余人，想要与吴曦的叛军以及当地金军抗衡实在是机会微小啊。”&lt;end&gt;
+&lt;playername&gt;：“那么就请秋姨细细说来。”&lt;end&gt;
+
+
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5154</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“让秋姨操心了！&lt;playername&gt;遇险的这段时间里，整个战线面临崩溃，难道真的没有挽回的余地了么？”&lt;end&gt;
+&lt;npc=5154&gt;：“我军战线拉的过长，自从四川吴曦反叛以后，朝廷再次派出大将重返西南线进行了艰苦的作战，无奈西南巴蜀地区地势陡峭，我军西南线的将士不过五千余人，想要与吴曦的叛军以及当地金军抗衡实在是机会微小啊。”&lt;end&gt;
+&lt;playername&gt;：“如此说来，西南线不保，朝廷对目前的战局又是做何安排呢？”&lt;end&gt;
+&lt;npc=5154&gt;：“更可怕的则是朝廷的态度，宋军内讧，主战派与主和派在朝廷内吵的不可开交。由我义军和民众武装发展起来的大好形势，又被一帮庸臣破坏了。金国方面要求加岁币，方可议和。若不是在灵壁泊有着毕再遇、郭倪两位大将军死守灵壁泊，恐怕整个战局溃败的更快。”&lt;end&gt;
+&lt;playername&gt;：“想不到在我昏迷的这段时间里，战场局势每况愈下，不过现在或许还能做最后一拼。我在昏迷的这段时间进入了一个从未有过的幻境。”&lt;end&gt;
+&lt;npc=5154&gt;：“这些还需要从长计议，你先帮我军将那些军内的叛徒揪出来吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>惩罚那些卖国投敌的叛徒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5163</Value>
+              </fightnpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击杀卖国求荣的叛军首领吴曦</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>110000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5150</Value>
+              </fightnpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这卖国求荣的走狗到死也不知悔改</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5154</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，我已经将吴曦那狗贼除去，相信这个消息也能让我宋军为之振奋。”&lt;end&gt;
+&lt;npc=5154&gt;：“确实，这个消息让军内将士为之振奋，却也未必能挽回目前的劣势啊……”&lt;end&gt;
+&lt;playername&gt;：“秋姨且听我说，在&lt;playername&gt;昏迷的这段日子以来，经历了一些不可解释的奇幻景像，现在我有一个好消息要带给秋姨，在梦境之中我得知了自己的身世，原来我的父母多年来守护的是大宋朝的秘密，那便是游龙珏。”&lt;end&gt;
+&lt;npc=5154&gt;：“你的父母……游龙珏？救你一命的宝物是少林派的镇派之宝，果然不可思议，游龙珏不是已经尘埃落定？这次我大宋军备的资金一大部分正是来自那游龙珏啊。”&lt;end&gt;
+&lt;playername&gt;：“秋姨有所不知，那游龙珏乃太祖时流传下来的宝物，也是启动宝库的秘密所在，游龙珏分雌雄两边，我们已经发现的乃雌珏，雄珏还未被世人所知。而这珏便是打开宝库的关键所在，或许这正是我们翻盘的机会啊！”&lt;end&gt;
+&lt;npc=5154&gt;：“这确实让人振奋的一个消息，可眼下的局势你也清楚，我军内讧，朝廷内的明争暗斗，杨皇后和史弥远试图趁混乱篡位夺权，还有一系列复杂的状况并非一个游龙珏便能扭转乾坤，何况这游龙珏的消息一放出定会引起各方的绞杀，到时候情况会比现在更加混乱。”&lt;end&gt;
+&lt;playername&gt;：“秋姨分析的在理，是我考虑不周了。”&lt;end&gt;
+&lt;npc=5154&gt;：“现下，朝廷部分官员内讧，金军提出拿韩相首级交换后方可谈议和之条件，我怀疑杨皇后与史弥远勾结怂恿皇上献上韩相首级，他们甚至会暗下毒手，韩相捐出自家白银二十万两竟终究逃不过悲惨的下场吗？你这便去探查史弥远府邸，必要时我们要采取特殊措施了……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>探查临安史弥远府邸</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>29</Value>
+              </number>
+              <number>
+                <Value>1696</Value>
+              </number>
+              <number>
+                <Value>3938</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>探查史弥远府邸</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>史弥远：“皇后，金国要韩侂胄的狗头，我们依了便是。”&lt;end&gt;
+杨皇后：“想他死哪有那么容易，瘦死的骆驼比马大，要想办法把他搬倒才是。”&lt;end&gt;
+史弥远：“索性我们一不做二不休，把他给……”&lt;end&gt;
+杨皇后：“不可，此事需要光明正大的借皇上的手来办，顺便也可以给那些老不死的主战派一个下马威，还是劝皇上亲自下手谕吧。”&lt;end&gt;
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看来必须采取特殊措施先行一步救出韩相了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4562</Value>
+              </dialognpc>
+              <number>
+                <Value>564</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“&lt;playername&gt;参见皇上！”&lt;end&gt;
+&lt;npc=4562&gt;：“原来是&lt;playername&gt;啊，免礼了。”&lt;end&gt;
+&lt;npc=4562&gt;：“近段时间来，我军在各条战线上节节败退，除了叛军的原因，也是因为我军将士平日操练不足，除了毕再遇将军的部下一路所向披靡以外，其他的不过是酒囊饭袋！”&lt;end&gt;
+&lt;playername&gt;：“皇上请息怒。”&lt;end&gt;
+&lt;npc=4562&gt;：“就在大散关失守的十六天后，四川宣抚副使吴曦公开亮出叛旗，自称蜀王……信孺去金国归来后所带回了金国五条谈判条件便是割地、称臣、归战俘、罪首谋、增岁币。竟然还要送上我朝宰相的首级！”&lt;end&gt;
+&lt;npc=4562&gt;：“我大宋朝何时到了这么不堪的地步？难道我赵扩要成为大宋罪人吗？韩相，朕……”&lt;end&gt;
+&lt;playername&gt;：“皇上切莫激动，议和的事情可否迟些再议？我们再想想办法？”&lt;end&gt;
+&lt;npc=4562&gt;：“迟些……前线的将士一天死伤无数，百姓流离失所，如何让我不担忧呢？妥协也是没有办法的办法。罢了，这些日子辛苦你也辛苦义军了，下去吧，让我一个人好好静静吧……”&lt;end&gt;
+
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>或许皇上真能舍了那份心，将韩相首级送给金朝作为议和的砝码吧……&lt;end&gt;
+时间紧迫，不如就按照秋姨的意思，将计就计，利用救出韩相吧。&lt;end&gt;
+我需按照秋姨暗中部署的计划，首先要得到易容术所必须的药材石兰。&lt;end&gt;
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5152</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{石兰,20,1,856,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8株石兰</Value>
+              </txt>
+              <txt>
+                <Value>你已经收集了8株石兰草。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1315,2967
+1319,2972
+1318,2963
+1322,2968
+1321,2960
+1325,2964
+1324,2956
+1328,2961
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>根据秋姨的意思用易容术帮韩相瞒天过海</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5153</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“韩相，&lt;playername&gt;参见韩相。”&lt;end&gt;
+&lt;npc=5153&gt;：“&lt;playername&gt;，好久不见，再见面许多话涌上心头，却不知从何说起。”&lt;end&gt;
+&lt;npc=5153&gt;：“义军的救命之恩，我韩某毕生不会忘记，我韩某一直觉得易容术是邪术，想不到今天竟用到自己身上了，那个替我韩某死去的死囚，我已妥善安顿好了他的家人……”&lt;end&gt;
+&lt;playername&gt;：“想不到皇上到最后，还是妥协了，送上您的首级。或许他也是有苦衷的……”&lt;end&gt;
+&lt;npc=5153&gt;：“我韩某心中有数，几十年为人，尤其在那血雨腥风的朝中。以史弥远为首的政变派之所以必置我于死地，是要以我的死作为向金求和的筹码……皇帝御批‘未欲轻从’。”&lt;end&gt;
+&lt;npc=5153&gt;：“尽管有人指出送交宰相首级的做法有辱国体，但迫于所谓公论，皇上放弃了自己的初衷，同意将我的枭首函送金朝。金章宗在京城举行了献受首函的庆祝仪式，并将我韩某与苏师旦两颗头颅高悬在旗杆之上示众。”&lt;end&gt;
+&lt;npc=5153&gt;：“此间的事情我韩某知道的一清二楚，我将他扶上王座，他却将我送上断头台！不过……我并不恨他，我始终是他的臣子。”&lt;end&gt;
+&lt;playername&gt;：“韩相能这么想也好，今后可有什么打算？”&lt;end&gt;
+&lt;npc=5153&gt;：“孩子，莫再叫我韩相了，我是一个已死之人，韩侂胄已死。”&lt;end&gt;
+&lt;npc=5153&gt;：“今后的日子剩下的便是一个寄情于山水的老人了……时候不早了，秋琳她还有话跟你说，去吧，去吧……”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition>
+          <Grid>
+            <Function>TaskCond:RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>11</Value>
+              </number>
+              <number>
+                <Value>11</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{856,}</Value>
+              </taskitem>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5154</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5154&gt;：“孩子，你来了。你与韩相见过面了？他可还好？”&lt;end&gt;
+&lt;playername&gt;：“恩，我在！&lt;playername&gt;已与韩相见过，这次的事情对他打击很大，能冲淡这一切的恐怕只有时间了。”&lt;end&gt;
+&lt;npc=5154&gt;：“这么多年来，秋姨觉得&lt;playername&gt;你就像是我的孩子一般，多少风风雨雨，多少危机和磨难，你也从一个懵懂的孩子成长为一个有担当的侠客。”&lt;end&gt;
+&lt;npc=5154&gt;：“以后的日子，义军还是你的家，义军中将士一部分已经返乡与家中妻儿团聚，还有一部分便做闲散状态在军中自给自足。”&lt;end&gt;
+&lt;playername&gt;：“这么多年来，义军早已经是我的家，我回过头去看自己成长的道路，一天一天地观望，我站在路边上，偶尔有人停下来对我微笑，灿若桃花。我知道这些停留下来的人终究会成为我生命中的温暖，看到他们，我会想起不离不弃。死无惧，只惧守护不了国土，生何畏，只畏身为一个亡国奴。可今天这结局，我真的猜不到。”&lt;end&gt;
+&lt;npc=5154&gt;：“孩子，不要哭，也许天会遮住你的眼睛，大地会埋住你的心灵，但终有一天乌云会散去。义军永远是你的家……”&lt;end&gt;
+&lt;npc=5154&gt;：“还有一件事，孩子，五年前，我接到一封神秘来信，落款是你的母亲，你的母亲尚在人间。”&lt;end&gt;
+&lt;playername&gt;：“谢谢秋姨告知我这一切。父母给了我生命，却不能撼动我对义军和对秋姨的这份情，我要对您说一声谢谢！再大的风雨有你挡，在我快乐时在我成功时，我第一时间想与您分享；在我烦恼时，在我迷茫时，您总能解我烦忧。”&lt;end&gt;
+&lt;playername&gt;：“总有一天，我要让这天，再遮不住我眼；我要让这地，再埋不了我心；要让这众生，都明白我意；要那诸佛，都烟消云散！”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

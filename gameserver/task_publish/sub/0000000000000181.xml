@@ -1,0 +1,224 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000181" name="峨嵋门派竞技" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3525&gt;：“多日不见，你的武功日渐精进呢。”&lt;end&gt;
+&lt;playername&gt;：“多谢师姐夸奖。”&lt;end&gt;
+&lt;npc=3525&gt;：“是时候带你去参加门派竞技了。”&lt;end&gt;
+&lt;playername&gt;：“门派竞技？”&lt;end&gt;
+&lt;npc=3525&gt;：“呵呵，你有所不知，我门派定期会举行同门师兄弟进行切磋演武，获胜者可获得“峨嵋新人王”称号，同门竞技，以武会友，点到为止。”&lt;end&gt;
+&lt;playername&gt;：“以我现在的功力，恐怕……”&lt;end&gt;
+&lt;npc=3525&gt;：“谁让你去参加了，跟我去长长见识就不错了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>1712</Value>
+              </number>
+              <number>
+                <Value>2908</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>让玄静带我到峨嵋派</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2668</Value>
+              </dialognpc>
+              <number>
+                <Value>245</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2668&gt;：“噢，你果然来了，看到这场面了吗？每次我来都能感受到我派精英辈出，声势日隆的盛事。”&lt;end&gt;
+&lt;playername&gt;：“真的是，我派当真是精英云集。”&lt;end&gt;
+&lt;npc=2668&gt;：“凡事都讲究个规矩，这门派竞技也不例外。你是第一次来，我来给你介绍一下这里的规则吧。”&lt;end&gt;
+&lt;npc=2668&gt;：“首先说下活动开放时间，每周开放2次，周二和周五晚上开放，每次活动结束后产生一名冠军。每四周（8次比赛），在这些冠军中产生一名总冠军。如果某些门派的竞技活动没有能够召开，则该次的冠军记为空。当日活动结束后，玩家找报名官，离开门派竞技地图，传送回门派地图。”&lt;end&gt;
+&lt;npc=2664&gt;：“其次说下参加条件。玩家已加入门派即可进入门派竞技地图，低于50级不能够参加活动，玩家只能参加与自己同门派的门派竞技赛。注意：若玩家在门派竞技地图内，则无法找报名官报名。在活动开启后，如果玩家符合参赛的条件，找玩家所在门派的掌门人对话，即可进入门派竞技地图。”&lt;end&gt;
+&lt;npc=2668&gt;：“最后讲讲比赛规则，门派竞技赛分为两个阶段：第一阶段为自由切磋，时间为半个小时，在这段时间内，玩家可以随意找人切磋，切磋获胜后即可获得积分。半个小时结束后，按积分大小排序，排名前16名可以有资格进入下一阶段。”&lt;end&gt;
+&lt;npc=2668&gt;：“第二阶段为淘汰赛，时间约为一个半小时，获得16强的玩家，在固定时间点进入地图中的擂台，两两PK，胜者晋级，败者淘汰，直至最后的获胜者，获得“门派新人王”的称号。”&lt;end&gt;
+&lt;npc=2668&gt;：“都记住了吗？”&lt;end&gt;
+&lt;playername&gt;：“恕弟子驽钝，只明白了十之三四。”&lt;end&gt;
+&lt;npc=2668&gt;：“没关系，我们来看看比赛吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>报名官应该已在竞技场等我了</Value>
+              </txt>
+              <txt>
+                <Value>报名官应该已在竞技场等我了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>1200</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3525</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“观摩了这许多师兄师姐们的竞技演武。各个武功高强，功力深厚，于我之不可及。”&lt;end&gt;
+&lt;npc=3525&gt;：“台上一分钟台下十年功，你潜力很大，假以时日必当出人头地，记住，我很看好你啊。”&lt;end&gt;
+&lt;playername&gt;：“………………”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回新手村去找玄静汇报见闻经过吧</Value>
+              </txt>
+              <txt>
+                <Value>回新手村去找玄静汇报见闻经过吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

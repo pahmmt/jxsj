@@ -1,0 +1,910 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001EB" name="神秘蛊术" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“罗姑娘打算如何？目前形势对你来说很不利，宫廷中的斗争，皇上的猜疑，西夏一品堂的穷追不舍，都会逼得你喘不上气来。”&lt;end&gt;
+&lt;npc=4395&gt;：“只要能跟皇爷在一起，我什么都不在乎，什么都可以放弃。”&lt;end&gt;
+&lt;npc=4395&gt;：“&lt;playername&gt;，你现已知晓我的身份，请先不要告知别人！这也是我对你的信任。”&lt;end&gt;
+&lt;playername&gt;：“罗姑娘多虑了，能帮助你我很高兴，那么目前你又有何打算？”&lt;end&gt;
+&lt;npc=4395&gt;：“双重的身份，争斗的后宫，一品堂的苦苦相逼，这些对我来说都不算什么，只要能和皇爷一起，这些定要一一克服。我再也不可以懦弱和失败了，不然的话也无法保护自己。”&lt;end&gt;
+&lt;npc=4395&gt;：“我曾经想过要摆脱一品堂，但从我的身体到我的内心，从小到大那是我生长的地方，纵使它再坏也好，我想我没有办法摆脱了吧……而我唯一能做的或许是尽我所能的帮助我大理国走出目前的纷乱。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=8&gt;
+&lt;npc=4400&gt;：“玛丽玛丽轰，玛丽轰！”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=8&gt;
+&lt;npc=4400&gt;：“&lt;playername&gt;，我卜到了，根据罗盘的方位和感应，师父应该就在洱海摩岩之中，不过卦象中显示的是你此去并不顺利，前路凶险，你还要多想一想呀！”&lt;end&gt;
+&lt;playername&gt;：“好弟弟，谢谢你，我很厉害的不需要担心哟！好了我这就去找到你师父，只有她可以帮到你的罗雪姐姐了！”&lt;end&gt;
+&lt;npc=4400&gt;：“好呐，你快去吧……不过记得回头交我武功哟！”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;走了，以后还会回来看你的！”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>113</Value>
+              </number>
+              <txt>
+                <Value>将等级提升到113级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到113级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>3045</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到3级3045点</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到3级3045点</Value>
+              </txt>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4395</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4395&gt;：“现在，为了能和皇爷时刻永远都在一起，我必须主动站出来迎接挑战和战斗。&lt;playername&gt;，你会帮我的吧？”&lt;end&gt;
+&lt;playername&gt;：“当初在翠烟门救下你便觉得你不是个一般的人物。但心性却善良若水。在不危害大理国利益的情况下，我个人将会竭尽所能的帮助你。”&lt;end&gt;
+&lt;npc=4395&gt;：“这我便放心了，我罗雪在这深宫之中没有一个能够信赖的朋友，你&lt;playername&gt;算是第一个了。”&lt;end&gt;
+&lt;playername&gt;：“谢谢罗姑娘看得起我。&lt;playername&gt;能做到的事一定相帮！”&lt;end&gt;
+&lt;npc=4395&gt;：“在刚刚来到大理之时我曾经从恶人手中救下过一个衣衫褴褛的小乞丐，与其说是乞丐倒不如说他是个衣衫不整却很机灵的小孩子，喜欢新鲜玩意儿，同时也会一些蛊术。通过言谈我得知他是药王灵洞鬼母的关门小弟子，灵洞鬼母曾经答应罗雪将来需要之时可以无条件的帮她一次。”&lt;end&gt;
+&lt;playername&gt;：“罗姑娘想通过灵洞鬼母帮助自己，那么具体的计策是？”&lt;end&gt;
+&lt;npc=4395&gt;：“时间紧迫，等找到了鬼母后我自会将全盘打算告诉你，现在……还不是时机，你先去帮我找到小乞丐吧，因为鬼母行踪诡异，只有小乞丐才知道如何能够找到鬼母。若你见到鬼母便说是罗雪相求鬼母给予我一颗迷魂丹，她自会明白。”&lt;end&gt;
+&lt;playername&gt;：“恩！&lt;playername&gt;这便前去。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与罗雪对话</Value>
+              </txt>
+              <txt>
+                <Value>与罗雪对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照罗雪的指示找到小乞丐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4400</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4400&gt;：“是谁啊，没看我正玩儿着呢嘛？”&lt;end&gt;
+&lt;playername&gt;：“我乃义军特使&lt;playername&gt;，你可能不认得我，但是有一位叫罗雪的姐姐你总该记得吧？”&lt;end&gt;
+&lt;npc=4400&gt;：“罗姐姐！你认识罗姐姐吗？她现在在哪里哟，过得好不好呀？”&lt;end&gt;
+&lt;playername&gt;：“我和罗姐姐很熟呢！她现在过得……并不好，因为遇到了困难，所以她需要知道你师父鬼母的下落。”&lt;end&gt;
+&lt;npc=4400&gt;：“这……罗姐姐不开心吗？师父的下落我现在并没有办法知道，前些天，师父送我的灵洞罗盘被一伙儿可恶的家伙抢了去，没有了那个的话我是无法与师父感应的。”&lt;end&gt;
+&lt;playername&gt;：“一伙贼人？小弟弟你还记得那些贼人样貌如何？”&lt;end&gt;
+&lt;npc=4400&gt;：“记得！俺死掉了都记得呢！是兄弟俩，他们说着一口奇怪的方言，一个叫田容，另外一个叫田易，俺的罗盘和定位银针就在他们身上，&lt;playername&gt;去帮我抢回来吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>按照罗雪的指示找到小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>按照罗雪的指示找到小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去帮小乞丐取回罗盘和定位银针</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4401</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <taskitem>
+                <Value>{524,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4402</Value>
+              </fightnpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <taskitem>
+                <Value>{525,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将东西带回给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4400</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小弟弟，我回来了！看我把你的东西抢回来了！”&lt;end&gt;
+&lt;npc=4400&gt;：“哇！你真了不起，你们义军里的人物是不是个个都这么厉害啊，快交几招武功给我吧，我懒得学师父传授予我的什么蛊术啦。”&lt;end&gt;
+&lt;playername&gt;：“小弟弟，听话呀，武功哪里有蛊术威风！等我有机会一定教你两招。现在有了罗盘可以知道鬼母的下落了吗？”&lt;end&gt;
+&lt;npc=4400&gt;：“呃……不行哟，要用罗盘找师父还需要一样东西，那便是在神女峰之上的黄灵香。可否帮我弄一些来呢？”&lt;end&gt;
+&lt;playername&gt;：“当然，我这便前去了，你在这里等着姐姐回来哟！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将东西带回给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>将东西带回给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>给小乞丐弄些神女峰之上的黄灵香</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{524,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{525,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2335</Value>
+              </fightnpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <taskitem>
+                <Value>{526,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将搜集到的黄灵香交给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4400</Value>
+              </dialognpc>
+              <number>
+                <Value>91</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小弟弟，我回来了，黄灵香也带回来了。”&lt;end&gt;
+&lt;npc=4400&gt;：“恩，&lt;playername&gt;果然厉害，我也要学习武功，哈哈哈！”&lt;end&gt;
+&lt;playername&gt;：“弟弟乖，先不说这个，现在东西应该齐了吧……能不能找到你师父鬼母，早一点找到他你罗姐姐也会开心的！”&lt;end&gt;
+&lt;npc=4400&gt;：“找到师父并非容易的事，我要卜卦，我的蛊术并不高明，所以不可有外界因素打扰的，你先等我一会儿，我这便开始占卜师父的去向。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将搜集到的黄灵香交给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>将搜集到的黄灵香交给小乞丐</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{526,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">4400</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照小乞丐的指示找到灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4403</Value>
+              </dialognpc>
+              <number>
+                <Value>818</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4403&gt;：“魑魅魍魉四处游走，瘴气蕴绕山林。异动……异动……”&lt;end&gt;
+&lt;playername&gt;：“前辈，您……”&lt;end&gt;
+&lt;npc=4403&gt;：“来者何人，所谓何事，又是如何找到我的？”&lt;end&gt;
+&lt;playername&gt;：“回禀前辈，在下乃义军&lt;playername&gt;，在下应罗雪姑娘请求来此向前辈讨要一颗迷魂丹。至于是如何找到您的……是方才您的小徒帮我问挂找到您在此地。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>按照小乞丐的指示找到灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value>按照小乞丐的指示找到灵洞鬼母</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>158</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000001EC</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

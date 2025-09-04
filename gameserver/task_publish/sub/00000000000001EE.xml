@@ -1,0 +1,921 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001EE" name="惩治贪官" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4430&gt;：“寒风长漠漠，武侯征四方，季季皆离伤，傲雪独飞扬……”&lt;end&gt;
+&lt;playername&gt;：“罗姑娘，时间紧迫啊！现下可不是吟诗作对的时候。”&lt;end&gt;
+&lt;npc=4430&gt;：“&lt;playername&gt;，你来到大理境内也已半月有余，觉得我大理的情况如何？”&lt;end&gt;
+&lt;playername&gt;：“在下已到达大理半月有余，上次帮助段皇爷铲除了一些闹事的村民，家中的劳动力也经常被征去做活，大理，或许没有想象中那样繁华吧。”&lt;end&gt;
+&lt;npc=4430&gt;：“&lt;playername&gt;是心细之人。要知道大理是一个及其崇尚佛的地方，皇帝延僧入内，朝夕焚咒。最近，大理城外出现了一伙以朝夕焚咒为名的僧人，这些僧人表面上朝夕焚咒，实际上却淫乱不堪，酒池肉林。甚至仗势欺人，当地百姓叫苦连天，咒骂声四起。”&lt;end&gt;
+&lt;playername&gt;：“对于这些不义之徒，我绝不手软。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>116</Value>
+              </number>
+              <txt>
+                <Value>将等级提升到116级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升到116级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>6240</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到3级6240点</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到3级6240点</Value>
+              </txt>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2339</Value>
+              </fightnpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败梵咒僧回去找罗雪吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4430</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我当真遇到了你说的那一群梵咒生。他们作风极其腐败，哪里还有个和尚的样子。我已经将他们教训了一番现在估计已经落荒而逃了。相信一方百姓可以安宁一阵子了。”&lt;end&gt;
+&lt;npc=4430&gt;：“关于兴建寺庙的问题我曾经多次提起劝说过他，但他对此并不以为然。如今只能找你帮忙。我在这里替大理的百姓谢谢你。”&lt;end&gt;
+&lt;playername&gt;：“……罗姑娘太过客气了，想当年我们在翠烟门后就未曾遇见，那时救下你后你亦是如此客套。”&lt;end&gt;
+&lt;npc=4430&gt;：“皇爷大修佛寺，建寺院祠堂不计其数。而负责具体事宜的礼部礼官昏庸贪婪，为节约成本，修建寺筑庙的常常偷工减料，导致大理国内年轻的劳动力们常常死伤于建筑事故。伤民伤财，导致国力渐衰，我大理国百姓怨声载道。此种情况下去必然要被人得渔人之利。有一位名孟德的礼部官员是我一品堂的家丁，此人人品可信，你现在就帮我去将我的亲笔信件送给此人，他看过后自有定夺。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>击败梵咒僧回去找罗雪吧</Value>
+              </txt>
+              <txt>
+                <Value>击败梵咒僧回去找罗雪吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去找一名礼部叫做孟德的官员</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4411</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4411&gt;：“你难道就是义军中威望颇高的&lt;playername&gt;？”&lt;end&gt;
+&lt;playername&gt;：“正是，这里有罗雪的一封亲手书信，请过目。”&lt;end&gt;
+&lt;npc=4411&gt;：“小……小姐，她还好吗？”&lt;end&gt;
+&lt;playername&gt;：“她很好，只是心中的伤痛无法很快的愈合，况且现在早已没有让我们悲伤的时间了……我此次前来是专程来看望孟德的。这是罗姑娘的亲笔信。”&lt;end&gt;
+&lt;npc=4411&gt;：“……小姐的身心正在受到的是怎样的煎熬，如此心思缜密，一点也没有变。可惜孟某不能一直在身边照料着小姐。孟某安身在此多年了，等候的正是小姐用得上的一天。好了废话以后有时间再说，先挑要紧的。”&lt;end&gt;
+&lt;npc=4411&gt;：“礼部礼官长薛万福便是这罪恶的始作俑者，他为人乖张，处事外表和善实则阴毒无比，不过要想干掉这个人恐怕没这么容易。单是他的那几个手下就够你受的的，他有三个侍卫分别叫做容大，田二，葛三。先将他身边的侍卫干掉吧！”&lt;end&gt;
+&lt;playername&gt;：“说的是。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找一名礼部叫做孟德的官员</Value>
+              </txt>
+              <txt>
+                <Value>去找一名礼部叫做孟德的官员</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我必须先打败礼官长手下的三大侍卫长</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4412</Value>
+              </fightnpc>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4413</Value>
+              </fightnpc>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4414</Value>
+              </fightnpc>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>除掉礼部大贪官薛万福</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>46000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1592</Value>
+              </number>
+              <number>
+                <Value>3608</Value>
+              </number>
+              <dialognpc>
+                <Value>4415</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4415&gt;：“你究竟是何人，我手下三大侍卫长都无法撼动之人吗？说吧你想要多少？说个数儿，只要我有的我都可以给你！”&lt;end&gt;
+&lt;playername&gt;：“呸！狗官，你良知何在？大理境内上上下下的佛寺经费皆经过你手流通，材料偷工减料导致劳动力们频频死伤，就只为了能多贪些银子？”&lt;end&gt;
+&lt;npc=4415&gt;：“大人别激动啊！这年头儿人不为己天诛地灭啊,我不贪，那其他人也要在我这位置上贪，你到底想要什么东西。”&lt;end&gt;
+&lt;playername&gt;：“混账话！狗嘴里吐不出象牙。你可有朝中参与寺庙建筑贪污钱财的名册？”&lt;end&gt;
+&lt;npc=4415&gt;：“大人你可问着了人了这次，朝廷内的官员一个个清高自大实际上比谁都黑啊，你看过那名册就知道了，不过要想得到名册您得绕了小的啊！”&lt;end&gt;
+&lt;playername&gt;：“就绕你这条狗命。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4416</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>礼部大贪官薛万福</Value>
+              </txt>
+              <txt>
+                <Value>礼部大贪官薛万福</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4431</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“段皇爷，&lt;playername&gt;回来了，事情的发展有些超出我们的预料。”&lt;end&gt;
+&lt;npc=4431&gt;：“我一直在等你，你那边的情况详细讲来听听吧。”&lt;end&gt;
+&lt;playername&gt;：“罗雪王妃蕙质兰心，很多独到的观点怕是男人也赶不上，不愧是大理国的皇妃。她身为皇妃却无时不刻不在为大理的百姓着想，这段时间里我惩戒了大理周边的梵咒僧，并且制服了礼部礼官薛万福。而薛万福仿佛并不服气，他给了我一本秘密账本，上面记载的东西不像是刻意伪造的。”&lt;end&gt;
+&lt;npc=4431&gt;：“……佛曰：菩提本无树，明镜亦非台，本来无一物，何处惹尘埃……朕修建佛寺本是好意为何现如今的局面这般混乱，难道我是个昏君？”&lt;end&gt;
+&lt;playername&gt;：“皇爷，现在还不是感慨的时候，这些事情还等待着你去决策，不过不论怎样我知道罗雪将永远支持你。”&lt;end&gt;
+&lt;npc=4431&gt;：“这名册上的贪污大头便是兰贵人的哥哥杨忠仁。外戚们的触角伸向我大理的每一个角落，一直以来我采取的都是隐忍的方法。这次为了天下苍生要定要将他一军！你将我这封信件亲自交给兰贵人的哥哥杨忠仁。他看了后自会明白我的用意。用募捐的名义逼他吐出赃款，他一来落得了个好名声，二来免去了我拆穿他丑陋本质的尴尬。至于那些银子，相信他也就不会那么在意了。”&lt;end&gt;
+&lt;playername&gt;：“我这便去办，皇爷等我回来的好消息吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>逼杨忠仁进行慈善捐助吐出赃款</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4417</Value>
+              </dialognpc>
+              <number>
+                <Value>28</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位可是国舅杨忠仁？”&lt;end&gt;
+&lt;npc=4417&gt;：“大胆，来人那！哪里来的没规矩的野人竟敢直呼我的姓名，给我拖下去。”&lt;end&gt;
+&lt;playername&gt;：“哎！杨大人啊，这么性急可不好。您就不想看看段皇爷给您写的亲笔信吗？”&lt;end&gt;
+&lt;npc=4417&gt;：“……他怎么会知道，这小子怎么忽然……”&lt;end&gt;
+&lt;playername&gt;：“国舅的所作所为自己应该心中有个小算盘，那么同样在段皇爷心中也有个算盘。你吃的是大理百姓的钱，偷工减料的结果是导致佛寺修建之时频发事故，进度缓慢，民怨逐渐加剧。相信这些您应该懂得……怎么，国舅这笔善款您还是捐了吧？”&lt;end&gt;
+&lt;npc=4417&gt;：“……狮子开大口一下子就要几百万两银子！好，来人呐！拟书面文字，我杨忠仁愿为大理笃修佛寺中因事故死伤的百姓捐款七百六十万两银子。”&lt;end&gt;
+&lt;playername&gt;：“此次杨大人是名利双收还有何委屈？&lt;playername&gt;告辞，请您好自为之！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>逼杨忠仁进行慈善捐助吐出赃款</Value>
+              </txt>
+              <txt>
+                <Value>逼杨忠仁进行慈善捐助吐出赃款</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4431</Value>
+              </dialognpc>
+              <number>
+                <Value>819</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“皇爷，&lt;playername&gt;回来了！事情已经办妥，杨大人已拟书面文字答应捐款七百六十万两。”&lt;end&gt;
+&lt;npc=4431&gt;：“如此甚好！这样我心中也能好过一些，我心向佛，却不知因修笃佛寺而犯下的大错，现在只希望我大理的百姓能够过得好些。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过禀报段智兴</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>161</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000001EF</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

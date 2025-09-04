@@ -1,0 +1,655 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002E4" name="往事难寻" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=3583&gt;：“铁石……你可还记得，当年我们约定平定四方，令黎民安居乐业……可如今，只有我一人身在战场，不知，是否真能得偿所愿……”&lt;end&gt;</Pop>
+      <Start />
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10255</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{449,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>战斗前来一盘素炒竹肉，为您快速回复血量与内力！</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>趁鹿血温热给许大哥送去</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2150</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3583</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;:“许大哥！鹿血我取来了！”&lt;end&gt;
+&lt;npc=3583&gt;：“铁石？把这个喝了……唉，这样下去我如何跟荷叶姐交代。”&lt;end&gt;
+&lt;Playername&gt;:“许大哥，铁石大哥如何会变成这样？据我所知，鹿血……也并非医治癔症。”&lt;end&gt;
+&lt;npc=3583&gt;：“他确实……并非癔症。唉，此事说来话长……”&lt;end&gt;
+&lt;npc=3583&gt;：“我许沈两家为世交，又同朝为官。谁知朝中变乱，皆遭贼人污蔑获罪。只有我、铁石、荷叶姐三人险逃出城，遇秋琳姐好心收留，更钦佩义军为民之心，就此安顿。哈哈，想我先祖恐怕也料不得，我许家世代忠君竟也得个如此下场……” &lt;end&gt;
+&lt;npc=3583&gt;：“本以为天高海阔……谁知五年前，襄阳城外那场仗我们惨败。朝廷背信、主营被袭，全部守营弟兄根本……是以血肉之躯护我！铁石从前线折回，顶着数箭生生将我救下。却被藏于敌军中的高手连拍三掌，身中了莫名寒毒，时常发作癔症……”&lt;end&gt;
+尔等坚守山河万里，宁毋战死，绝不断送。朝廷为求一时安宁，竟陷吾等于死地……是他们将铁石害到如斯地步的……
+&lt;Chahua:chahua_save_people.spr,2000,3000,1000&gt;&lt;end&gt;
+&lt;npc=3583&gt;：“这些年来，许某无时无刻不想找到那仇人，亲手将他碎尸万段……”&lt;end&gt;
+&lt;Playername&gt;:“……我&lt;Playername&gt;一定努力练好武功，总有一天能站在许大哥身侧，屠尽金狗定我四方！”&lt;end&gt;
+&lt;npc=3583&gt;：“屠尽金狗，定我四方……当年我们何尝不是这样想，可赢了又如何？赢了朝廷一样将我们卖予金狗！想当年他吕家……我不该和你说这些，你快回镇上，别让龙五太爷操心。我许久没见铁石，想与他好好叙叙。”&lt;end&gt;
+&lt;npc=3583&gt;：“……铁石，你可还记得，当年我们约定平定四方，令黎民安居乐业……可如今，只有我一人身在战场，不知，是否真能得偿所愿……”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3583&gt;：“铁石……你可还记得，当年我们约定平定四方，令黎民安居乐业……可如今，只有我一人身在战场，不知，是否真能得偿所愿……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>趁鹿血温热速给许大哥送去</Value>
+              </txt>
+              <txt>
+                <Value>趁鹿血温热速给许大哥送去</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{449,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3740</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1739</Value>
+              </number>
+              <number>
+                <Value>3402</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>离开此地让许大哥静静</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>湖边一人的背影着实眼熟……前辈？！</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4320</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10155</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>湖水粼粼，那人背对着我，笔直的脊背，总是给人一种威严的压迫感。已经不记得他是哪一天来到镇上，偷偷教我武功，却不许我告诉别人他的存在。这些年来，他总是会离开一段时间，又出现，习以为常。我不知道他来这的目的是什么，我只知道他一直奔走各地在找一样东西……&lt;end&gt;
+&lt;playername&gt;:“前辈你回来了？这次可寻到你想要的那东西？”&lt;end&gt;
+&lt;npc=10155&gt;：“未曾。不过已有线索，很快就能找到……前几日教你的心法练得如何？”&lt;end&gt;
+&lt;playername&gt;:“&lt;playername&gt;当然不会让前辈失望！容我演示一二！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=10155&gt;：“你们究竟……将它藏于何处……”</Value>
+              </txt>
+              <txt>
+                <Value>询问前辈此回可有收获</Value>
+              </txt>
+              <txt>
+                <Value>询问前辈此回可有收获</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>以桃花树为敌给前辈演示</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10157</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=10155&gt;:“你……并未接触桃树。哈哈！不错！不愧是我选中之人！你以我所授心法运转内力，施加给树干，再辅以气劲，才使得花枝摇曳。现下，你待怒意积满转为内力，且再去一试。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将怒意转为内力击打桃花树</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.CastSkill(2928,1,-1,me.GetNpc().nIndex)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6040</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>10157</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=10155&gt;:“哈哈！小儿做的不错！能否融会贯通就看你自己的造化了。”&lt;end&gt;
+&lt;playername&gt;:“多谢前辈传授之恩！这些年前辈一直授业于我，为何却不愿收我为徒？”&lt;end&gt;
+&lt;npc=10155&gt;:“与你说过多次，不必谢我，我教你的不过是武功本身，教你武学信念的才是你的师父。而我……是始终没法教你这点的。有的时候，我自己都会怀疑，我是不是错了……”&lt;end&gt;
+&lt;npc=10155&gt;：“习武之道，若无信念只求胜败，那不过是具傀儡。你必须知道，自己是为何而出拳，为何而收剑！多说无益，你自己好好体会。”&lt;end&gt;
+&lt;playername&gt;:“&lt;playername&gt;原本只是想上阵杀敌，证明自己并非无为之辈！可是……我现在觉得，应该有别的答案。”&lt;end&gt;
+&lt;npc=10155&gt;:“哈哈！这个我可帮不了你，千秋功业谁不想成就，你却得分清楚，对自己来说，它是否分量最重！你在这逗留太久了，近日我还会在镇上盘桓几日，你速速回去镇里吧。”&lt;end&gt;
+
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.CastSkill(2932,1,-1,me.GetNpc().nIndex);me.CallClientScript{"GM:DoCommand", "me.CastSkill(289, 1, -1, me.GetNpc().nIndex)"}</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“太爷……”&lt;end&gt;
+&lt;npc=3571&gt;：“你却还知道回来？这几日都躲着太爷，可是对太爷有所不满？”&lt;end&gt;
+&lt;playername&gt;:“&lt;playername&gt;并非对太爷不满！只是太爷所授武学，我……”&lt;end&gt;
+&lt;npc=3571&gt;：“那就是又不想练武？秋琳将你交予老夫，可是想看你如此荒废武学？！还是你觉得老夫昔年神勇不过空谈！”&lt;end&gt;
+&lt;playername&gt;:“太爷，&lt;playername&gt;绝无此意！太爷对义军、对百姓所立汗马，更是毋庸置疑！&lt;playername&gt;并非不愿练武……只是不想再打那木头桩子了。我想习更高深的武学，还望太爷成全！”&lt;end&gt;
+&lt;npc=3571&gt;：“呵，好大的志向。你初生虎犊，尚且不识武之根本，就如此大言不惭。你去练一个时辰，再来与我理论。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“秋琳……我该拿这孩子怎么办……”</Value>
+              </txt>
+              <txt>
+                <Value>回去桃溪镇</Value>
+              </txt>
+              <txt>
+                <Value>回去桃溪镇</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>无奈之下只能以训练假人为对手</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002E5</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,153 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000014C" name="天王弟子的委托" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1165&gt;：“哎唷……哎唷……。”&lt;end&gt;
+&lt;playername&gt;：“这位兄弟怎么鼻青脸肿的，被谁欺负了吗？”&lt;end&gt;
+&lt;npc=1165&gt;：“别提了！最近岛上来了许多来历不明的人，帮主原本派我们去打探那些人的身份。嘿，没想到他们个个是高手，咱们任务没完成，反而挨了一顿揍，你说这可咋整呢？”&lt;end&gt;
+&lt;playername&gt;：“不知兄弟要探明谁的身份？我或许可以帮上忙。”&lt;end&gt;
+&lt;npc=1165&gt;：“真的吗？那感情好，那些高手就在半松坡附近，你替我出口恶气，好好教训教训他们，查明他们是哪条路子上的人吧！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>24</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>原来是五毒教之人，将这个消息告诉天王弟子吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1165</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“真相大白了，我抓住了一个那些神秘人的统领，他承认自己受五毒教教主指示，带领部下来青螺岛欲行不轨。”&lt;end&gt;
+&lt;npc=1165&gt;："来敌是五毒教派来的吗？原来如此，我这就去向帮主禀报，你可帮了我大忙了，这是你应得的，嘿嘿。"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找郁闷的天王弟子吧</Value>
+              </txt>
+              <txt>
+                <Value>回去找郁闷的天王弟子吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

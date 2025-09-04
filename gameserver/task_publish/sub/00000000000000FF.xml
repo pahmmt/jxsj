@@ -1,0 +1,291 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000FF" name="把柄惹来的祸端" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=553&gt;：“如今李后一手遮天，她的娘家和亲信在朝中也是要风得风要雨得雨。那一干朝臣们为了巴结这些权贵使出了浑身解数，不是请客，便是送礼，为的也就是能够沾点富贵气。在这些人中，却有一个人留了个心眼，做了一件了不得的事。”&lt;end&gt;
+&lt;playername&gt;：“这又是何事？”&lt;end&gt;
+&lt;npc=553&gt;：“此人将这些朝臣和李后党羽之间的来往和馈赠一一记录在一本账册之上，称为《百官谱》。这《百官谱》现在看似无用，将来却有用的紧。你想，将来李后一旦失势，此人只要将这账册献给新皇，会有多少人因此家破人亡？朝中臣僚得知此事以后纷纷出高价欲得此百官谱，不想此人已经在京师失踪，只有我知道他的下落。”&lt;end&gt;
+&lt;playername&gt;：“他在哪里？”&lt;end&gt;
+&lt;npc=553&gt;：“他的下落你先别着急知道，你若是能相助我拿到这本《百官谱》，到时候少不了你的好处。若是你当真有心帮我，就去采石矶的军营去找我的义兄刘仲麟，他会指点你如何拿到这本《百官谱》。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;npc=553&gt;：“盼了好久终于让我盼到这一天了！”&lt;end&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>554</Value>
+              </dialognpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <txt>
+                <Value>百官谱</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我从刘全保处来，你可有《百官谱》的下落？”&lt;end&gt;
+&lt;npc=554&gt;：“原来是我义弟派来的，我等你很久了。写《百官谱》的人名叫温醉山，和此处驻军统领私交甚厚，由于《百官谱》太招人忌讳便离开京师躲在了此地。温醉山这厮端得可恨，将好端端的一本《百官谱》撕成了好多份，交给不同的守军收藏。此事看来有些棘手，如果你真想帮忙，就想办法从临安守军身上集齐《百官谱》。还有，温醉山也留不得。”&lt;end&gt;
+&lt;playername&gt;：“为何留不得？”&lt;end&gt;
+&lt;npc=554&gt;：“此人心机很重，难免会留有副本和后路，还是将他除掉较为稳妥。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到采石矶的刘仲麟</Value>
+              </txt>
+              <txt>
+                <Value>找到采石矶的刘仲麟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>获得《百官谱》并除掉温醉山</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>555</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2130</Value>
+              </fightnpc>
+              <number>
+                <Value>92</Value>
+              </number>
+              <taskitem>
+                <Value>{88,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将百官谱带给刘全保</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>553</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>百官谱</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=553&gt;：“拿到了吗？”&lt;end&gt;
+&lt;playername&gt;：“应该就是这个了！”&lt;end&gt;
+&lt;npc=553&gt;：“你爷爷的，就是这个！哈哈！看来我刘全保要发达了。我会兑现我的承诺的，这些谢礼请你收下吧，不久咱就是有身份的人了……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将百官谱带给刘全保</Value>
+              </txt>
+              <txt>
+                <Value>将百官谱带给刘全保</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{88,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

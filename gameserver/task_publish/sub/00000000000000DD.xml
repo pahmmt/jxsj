@@ -1,0 +1,208 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DD" name="内忧外患" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=255&gt;：“山雨欲来，国家却腐烂成了这个样子，难道我女真人就从此灭亡了吗？”</Pop>
+      <Start>&lt;npc=255&gt;：“女真氏自阿骨打建立起大金王朝，从白山黑水的险境一步步走到今日，坐拥北方大量的人口牛羊。华丽的宫殿，不尽的美酒，这都是前辈拿血换给我们这些子孙的。难道没有人觊觎吗？藏在暗地里的红眼睛太多了！”&lt;end&gt;
+&lt;playername&gt;：“完颜教主莫非得到了什么消息？”&lt;end&gt;
+&lt;npc=255&gt;：“需要我刻意去查吗？明眼人一眼便能看出，北方塔塔尔部，西北夏国，甚至南方的宋国朝廷，都不是温顺的绵羊，而是眯缝着眼睛的狮子！真到他们打开眼睛再来后悔，恐怕为时已晚了。”&lt;end&gt;
+&lt;playername&gt;：“可是黄河三次连续的决堤，国家确实没有力量拿出更多的钱财来打仗了。”&lt;end&gt;
+&lt;npc=255&gt;：“不是打仗不打仗的问题。就是黄河决堤这件事，竟然就有人敢拿着朝廷援助灾民修建堤防的钱中饱私囊！这样的人，是国家的蛀虫，也是子民的祸患啊。”&lt;end&gt;
+&lt;playername&gt;：“教主为何如此感慨？”&lt;end&gt;
+&lt;npc=255&gt;：“我自幼读圣贤书，学礼义，修帝王之学。近年来一直在想，大金的天下不能就这样亡了。病症都是从内部发作的，既然国家出了这种蛀虫，就要将他们一个一个的碾死！我已派人秘密抓捕了那几个贪污的墨吏，就关押在暗室之中，你去替我将他们处决掉。若有人胆敢反抗，格杀勿论！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>456</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>接下来去铲除贪官章白羽</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>457</Value>
+              </fightnpc>
+              <number>
+                <Value>67</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>处决了两个贪官污吏，可以回去中成殿向完颜襄交差了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>255</Value>
+              </dialognpc>
+              <number>
+                <Value>453</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=255&gt;：“这只是其中极少的一个部分。处理这种事情，好比裱糊被风吹破的窗纸，糊好了这处，又破了那处，不是治本之法。真要使国家有一个新的面貌，还是必须重权在手才施展得开吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>可以回去中成殿向完颜襄交差了</Value>
+              </txt>
+              <txt>
+                <Value>可以回去中成殿向完颜襄交差了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

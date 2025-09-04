@@ -1,0 +1,373 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001AA" name="夏主桓宗" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=813&gt;：“近日朝中杂事繁多，周边诸国的动向我也没有精力再关注太多。探查分析的职责，都交给我府中的江洪灵先生负责。今后他若有事相托，请你尽量帮忙。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1856</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“江先生，你好。”&lt;end&gt;
+&lt;npc=1856&gt;：“&lt;playername&gt;，早就听先生和窦昊提起过你，只是一直无缘得见。今日能认识，真是三生有幸。”&lt;end&gt;
+&lt;playername&gt;：“哪里哪里。丞相已吩咐我，今后与周边诸国相关的情报侦知，要多多与你协作。”&lt;end&gt;
+&lt;npc=1856&gt;：“太好了。之前我主管谍报分析，对于获取情报这一环实在是力不从心，如今有你相助，真是求之不得。”&lt;end&gt;
+&lt;playername&gt;：“近来可有什么我能帮得上忙的事情？”&lt;end&gt;
+&lt;npc=1856&gt;：“嗯。恰有一桩。西夏在去年更换了皇帝，新的夏桓宗我等都不了解。当下虽然西夏与我国相安无事，却不可放松警惕。在下一直苦于找不到熟悉当地情况之人，若你能去探查一番，实在是最合适的人选。”&lt;end&gt;
+&lt;playername&gt;：“这有何难？”&lt;end&gt;
+&lt;npc=1856&gt;：“我在凤翔安插有自己人，名唤呼延力，你有事皆可找他。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>先去与江先生见上一面</Value>
+              </txt>
+              <txt>
+                <Value>先去与江先生见上一面</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>江先生说西夏桓宗即位请我前往西夏打探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2257</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我潜入凤翔，抓个将领来打探打探吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>1771</Value>
+              </number>
+              <number>
+                <Value>3006</Value>
+              </number>
+              <fightnpc>
+                <Value>1857</Value>
+              </fightnpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <dialognpc>
+                <Value>1858</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你们国君桓宗是个怎样的人物？”&lt;end&gt;
+&lt;npc=1858&gt;：“这个……我也说不上来。好像国君登基以来，老皇上的那些国政并没有变化。国君也不穷兵黩武，也不妄杀朝臣，但是好像也没有什么大的作为。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>抓个将领来打探打探吧</Value>
+              </txt>
+              <txt>
+                <Value>抓个将领来打探打探吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将我听来的消息告诉呼延力</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1859</Value>
+              </dialognpc>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“呼延兄弟，我是&lt;playername&gt;。”&lt;end&gt;
+&lt;npc=1859&gt;：“在下已收到了江先生的消息。”&lt;end&gt;
+&lt;playername&gt;：“你这里可有关于桓宗的什么消息？”&lt;end&gt;
+&lt;npc=1859&gt;：“我这边收到的消息都是一些外围，似乎这桓宗皇帝无所作为，倒也不是个昏君。”&lt;end&gt;
+&lt;playername&gt;：“嗯，看来确是如此。不过要有确切了解，还是必须从西夏国的大臣处下手打探打探。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将我听来的消息告诉呼延力</Value>
+              </txt>
+              <txt>
+                <Value>将我听来的消息告诉呼延力</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,187 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C1" name="土山杀手" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=365&gt;：“哎呀这些土山人还真是有够懒！也不知道是真懒呢还是狡猾，居然让老子派人将银子给他们送去。与银子有关的事情，还这样不急不慢。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=365&gt;：“在原始森林东部的飞蝗涧中居住着一群原住民，他们的祖先便生活在这片满是毒瘴虫蛇的野蛮之地，所以他们根本不能算人，人怎么会不怕毒物呢。”&lt;end&gt;
+&lt;npc=365&gt;：“这帮小子好吃懒做，好逸恶劳，却使得一手好刀法，根本不把人命当回事，这点我倒是很欣赏。无米下锅的时候，他们就和插草标贱卖自己一样廉价杀人。”&lt;end&gt;
+&lt;npc=365&gt;：“现在我需要你去与这群土著交易，奉上大笔的财货，换取他们的信任，将来总有用得着他们的时候。不过要降伏这群杀手，不下点功夫恐怕很难完成的了。”&lt;end&gt;
+&lt;npc=365&gt;：“你恐怕需要干掉一些土山杀手，并且击败土山部的酋长，才能获得他们的信任，让他们知道韩某人的厉害。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>&lt;npc=365&gt;：“你恐怕需要干掉一些土山杀手，并且击败土山部的酋长，才能获得他们的信任，让他们知道韩某人的厉害。”&lt;end&gt;</Error>
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1424</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败了土山杀手，接下来面对的是实力更加强劲的土山酋长</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>367</Value>
+              </fightnpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>真正的勇士！我愿意与你的主人定盟，无论将来有任何吩咐，土山人都会忠实执行。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>365</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=365&gt;：“辛苦你啦，这些奖励你拿去！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>完成了任务，该是时候回去找韩破山了</Value>
+              </txt>
+              <txt>
+                <Value>完成了任务，该是时候回去找韩破山了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

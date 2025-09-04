@@ -1,0 +1,1046 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000281" name="白府童梦" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5109&gt;：“人生在世如身处荆棘之中，心不动，人不妄动,不动则不伤；如心动则人妄动，伤其身痛其骨于是体会到世间诸般痛苦。”&lt;end&gt;
+&lt;npc=5110&gt;：“欲知世上刀兵劫，但听屠门夜半声。不要光埋怨我军此刻屡战失利，多看看横死在你我刀下的众生又有多少？”&lt;end&gt;
+&lt;playername&gt;：“两位大师所言都是佛家禅语，或许是晚辈太执着了，我真希望这场胜利是属于大宋的，如果可以我愿意以我的生命为代价。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5109</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5109&gt;：“&lt;playername&gt;真乃执着之人，好吧,老衲就将此次我派御敌的详细跟你说说吧。”&lt;end&gt;
+&lt;npc=5109&gt;：“我们在金军营地中发现了大量的机密资料，包括金兵的防御图，以及下一目标的作战计划等，但就在我们准备下一步计划之时，竟有内鬼泄漏了我们的踪迹，我少林与昆仑弟子也惨遭敌人埋伏，幸好毕大将军的部队及时增援救回了一些弟子的性命。”&lt;end&gt;
+&lt;playername&gt;：“晚辈对天忍教的规矩和金国习俗都有所了解，若是能混入大营呢？ ”&lt;end&gt;
+&lt;npc=5109&gt;：“此举过于危险，就算行动，也要有所准备。据昆仑派探子回报，重要的资料就在那金军大将军纳兰邦烈手中，此时金军守卫大多在前线征战，偷袭纳兰邦烈或许有机会。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;愿意去试一试。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与玄慈大师对话</Value>
+              </txt>
+              <txt>
+                <Value>与玄慈大师对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>干掉金军大统领纳兰邦烈</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5122</Value>
+              </fightnpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>就在纳兰邦烈倒下的瞬间，我感到一阵剧痛，我一瞬间便反应过来，这是暗杀……&lt;end&gt;
+冰冷的铁器穿过我的胸膛……一股腥甜涌入口中，是吴曦暗中出招么？&lt;end&gt;
+是谁已经不重要了。殷方，殷童，对不起没能保护你……&lt;end&gt;
+秋姨对不起，我没能完成您的托付，我是真的不想离开。&lt;end&gt;
+父亲母亲，你们在天堂等我吗……再见了，我的义军，我的家，这次真的……再见了……&lt;end&gt;
+</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>酥麻的感觉遍布全身，前面的小女孩儿是谁？</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:NewWorld</Function>
+            <Parameter>
+              <number>
+                <Value>570</Value>
+              </number>
+              <number>
+                <Value>1602</Value>
+              </number>
+              <number>
+                <Value>3273</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5124</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小妹妹，这里是哪里？你叫什么名字？我刚才明明……”&lt;end&gt;
+&lt;npc=5124&gt;：“我堂堂白家大小姐白秋琳都不认得吗？哼，快陪我玩儿，不然你就永远出不去了！”&lt;end&gt;
+&lt;playername&gt;：“白秋琳……这名字怎么这般熟悉，这般亲切……”&lt;end&gt;
+&lt;npc=5124&gt;：“吖，你傻愣着干什么呢？去帮我把这几只小鸡抓回来，我可能会告诉你出去的路哦！”&lt;end&gt;
+&lt;playername&gt;：“真的？只能答应你了……”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>应小白秋琳的要求我要抓鸡哄她开心</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5125</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{走地鸡,20,1,850,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经抓到了%d/8只走地鸡</Value>
+              </txt>
+              <txt>
+                <Value>你已经抓到了8只走地鸡</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1668,3185
+1670,3178
+1675,3182
+1674,3170
+1676,3176
+1664,3185
+1681,3177
+1691,3165
+1688,3155
+1685,3147
+1686,3188
+1692,3179
+1700,3156
+1700,3179
+
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将抓到的走地鸡拿给小白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5124</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小白，你要的鸡我给你抓来了，你可要说话算数告诉我出去的路呀。”&lt;end&gt;
+&lt;npc=5124&gt;：“奇怪，我有答应过你要告诉你出去的路吗？我好像说的是可能会……不过要是你陪我玩儿的开心了我还是真的会告诉你哟！”&lt;end&gt;
+&lt;playername&gt;：“哎呀，你欺负人，好吧！我被你打败了，下一个节目玩什么呢？”&lt;end&gt;
+&lt;npc=5124&gt;：“嗯嗯，态度不错哟！下一个项目,我想想……好吧，让你干一件轻松点的事情。”&lt;end&gt;
+&lt;playername&gt;：“有多轻松？”&lt;end&gt;
+&lt;npc=5124&gt;：“去把我家的猪圈清理一番吧，把里面的猪粪打扫干净，不要吵到里面睡觉的小猪哟！”&lt;end&gt;
+&lt;playername&gt;：“……”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>应小白的要求，我要帮她家清扫猪粪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{850,}</Value>
+              </taskitem>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5126</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>清扫中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{猪粪,20,1,851,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经清理了%d/8担猪粪</Value>
+              </txt>
+              <txt>
+                <Value>清理8担猪粪</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1647,3167
+1656,3160
+1663,3165
+1661,3182
+1672,3155
+1667,3154
+1667,3185
+
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看看小白秋琳还有什么花招</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5124</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小白，我干的活儿可还合格？不比你们家家丁差吧？”&lt;end&gt;
+&lt;npc=5124&gt;：“嗯……勉强可以了，我已经通知我们白府的大管家，决定录用你为我白府本季度第六位家丁，你便暂时给伙房打杂吧，你的编号是九五二八，还有什么疑问吗？”&lt;end&gt;
+&lt;playername&gt;：“等等……我何时说要做你们家家丁了？我只想你告诉我出去的路，嘿嘿，小妹妹你就快快告诉我吧。”&lt;end&gt;
+&lt;npc=5124&gt;：“在我白府服役满十年我便告诉你应该何去何从……哈哈，别人想走后门还进不来呢，要不你去问问我父亲。不过这路上的朝廷守卫可是很厉害哟，父亲都打不过他们。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败朝廷看守并护送白父出府。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{851,}</Value>
+              </taskitem>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5129</Value>
+              </fightnpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5128</Value>
+              </dialognpc>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3189</Value>
+              </number>
+              <number>
+                <Value>40</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“先生，我乃义军&lt;playername&gt;，误入你家别院还请见谅，能告诉我这里是哪里么？我想找到出去的路。”&lt;end&gt;
+&lt;npc=5128&gt;：“义军是什么势力？我怎么不曾听过……想要出府，恐怕现在不行。”&lt;end&gt;
+&lt;playername&gt;:“哦……没听过义军？呵呵，方才我与白大哥的小女儿玩耍，小白实在精灵可爱，她还希望我留在白府做家丁十年，才能放我出去，莫非白大哥也是这个意思？”&lt;end&gt;
+&lt;npc=5128&gt;：“琳琳是这样对你说的？这孩子从小调皮，那都是戏言，希望你不要在意，因为琳琳太寂寞……”&lt;end&gt;
+&lt;npc=5128&gt;：“其实我乃大宋骠骑将军，此时汴京城已被皇族叛军控制，我的府邸自然也逃不过叛军的监视，我手中有一份重要的军事密函必须亲自送出，可外面的叛军已经将白府包围，琳琳也已经半年多没出过家门了，家里又只有这么个独女，自然想你留下来一直与她玩耍。”&lt;end&gt;
+&lt;playername&gt;：“原来是这样，&lt;playername&gt;愿意与白将军一道，掩护将军杀出重围。”&lt;end&gt;
+&lt;playername&gt;：准备好了我们就启程吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>5169</Value>
+              </fightnpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>570</Value>
+              </number>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>240</Value>
+              </number>
+              <number>
+                <Value>1610</Value>
+              </number>
+              <number>
+                <Value>3066</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value>1623,3178
+1630,3169
+1636,3156
+1616,3137
+1611,3116
+1618,3090
+1610,3068
+
+</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>50</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回到白府再和小白玩耍一会儿吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>120000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5124</Value>
+              </dialognpc>
+              <number>
+                <Value>570</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“堂堂白家大小姐，小的回来啦，那些朝廷看守已经被我轰走了，你父亲已经安全出府去办他最重要的事情啦。”&lt;end&gt;
+&lt;npc=5124&gt;：“真的吗？爹爹竟摆脱了那些可恶的官兵？”&lt;end&gt;
+&lt;playername&gt;：“恩，是真的，我把那些可恶的朝廷看守打得满地找牙，他们再也不敢欺负白家了……”&lt;end&gt;
+&lt;npc=5124&gt;：“太好了，你真是个了不起的人。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与小白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

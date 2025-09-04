@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="00000000000000B5" name="共抗官军" describe="天王帮弟子正在被朝廷官军屠戮，我岂可袖手旁观？">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>1</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="0000000000000158" name="共抗官军" describe="青螺岛的渔民正在被朝廷官军屠戮，我岂可袖手旁观？&#xD;&#xA;&lt;stepdesc&gt;帮助青剪码头船夫打击在青螺岛上肆无忌惮，烧杀抢掠的&lt;pos=宋军刀兵,55,1756,3771&gt;。&#xD;&#xA;&lt;stepdesc&gt;解决掉了二十个宋军刀兵，回去找&lt;pos=哑老头的孙子,55,1957,3637&gt;吧。" refer="0000000000000158">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>1173</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=100000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="genieaward",varValue={2,100,0,0,0,0,0,0,0,},nSprIdx="2",szDesc="绑银100两",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>1173</Value>
+          </dialognpc>
+          <txt>
+            <Value>解决掉了二十个宋军刀兵，回去找&lt;pos=哑老头的孙子,55,1957,3637&gt;吧。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>22</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=哑老头的孙子,55,1957,3637&gt;，可以接到任务【共抗官军】。</Value>
+          </txt>
+          <number>
+            <Value>4</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>22</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

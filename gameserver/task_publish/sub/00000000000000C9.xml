@@ -1,0 +1,97 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C9" name="重归人间" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;step=392&gt;：“我的儿子，难道也要一辈子都当野人吗？”&lt;end&gt;</Pop>
+      <Start>&lt;step=392&gt;：“我希望你能帮助我的儿子逃离冰穴。可是并非每个昆仑旧人都愿意回到人间，他们似乎已经习惯了冰穴中原始却简单的生活，因此他们会阻止其他的人离开。一旦开了这个先例，或许仍然留在冰穴中的人会越来越少。所以，请你务必保护我这个唯一的儿子从冰穴从逃亡出去，并将他交给我曾经的好姐妹白苏苏。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=392&gt;：“一切都拜托给您了。”&lt;end&gt;</Procedure>
+      <Error />
+      <Prize>白苏苏：“是自绣的孩子，是自绣的孩子啊！谢谢你，谢谢你！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="1">388</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>48</Value>
+              </dialognpc>
+              <number>
+                <Value>3568</Value>
+              </number>
+              <number>
+                <Value>6195</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>关于 &lt;taskname&gt; - &lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你好！&lt;end&gt;
+&lt;playername&gt;：你好啊！</Value>
+              </txt>
+              <fightnpc>
+                <Value>1</Value>
+              </fightnpc>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>84000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

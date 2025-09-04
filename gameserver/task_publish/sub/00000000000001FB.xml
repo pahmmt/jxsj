@@ -1,0 +1,372 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001FB" name="神秘锦囊" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3571&gt;：“&lt;playername&gt;，听秋琳说你最近忙的像陀螺了，都没时间看看我这老头子了，哈哈！”&lt;end&gt;
+&lt;playername&gt;：“是&lt;playername&gt;不对，都忘了来看您老人家了吗，要不要陪您对弈一局？”&lt;end&gt;
+&lt;npc=3571&gt;：“恩！你有这个心就好啦，对弈就免了，我知道你一定会让我的……这次是有重要的事情要你来办。”&lt;end&gt;
+&lt;playername&gt;：“太爷请讲！”&lt;end&gt;
+&lt;npc=3571&gt;：“你应该还记得前段时间，我曾与你说过吴老太后给义军的锦囊这件事，当时我并未与你提及关于另外一个秘密，便是游龙珏的第二层秘密，游龙珏中提及的宝藏被发现的只是其中一部分。”&lt;end&gt;
+&lt;playername&gt;：“这确实是一件大事。”&lt;end&gt;
+&lt;playername&gt;：“这江湖之中但凡与游龙珏有关的人，事，物都无一能逃过劫难，不管这消息是真是假，都一定会遭到无尽的追逐和杀戮。”&lt;end&gt;
+&lt;npc=3571&gt;：“你分析的很对，这游龙珏的第二层秘密，其中提及宝藏被发现的只是其中一部分。还有其他宝藏分布尚不清晰，提示应该就在锦囊之中，我必须根据提示找到那个对线索有重要作用的人，为避免节外生枝，一定要低调行事。”&lt;end&gt;
+&lt;playername&gt; :”是，&lt;playername&gt;做事一向低调，这次将会更加谨慎！”&lt;end&gt;
+&lt;npc=3571&gt;：“你先去找到曾经服侍过吴老太后的丫鬟，杨彩花吧。根据锦囊中的提示，她的身上有着重要的线索，为了避免引人耳目她已辗转在西夏做起了刺绣的生意。你这便前去，看看能否获得什么信息。”&lt;end&gt;
+&lt;playername&gt;：“是，我收拾收拾便动身前去，太爷保重！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4390</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4390&gt;：“是&lt;playername&gt;！好久不见啊你还好吗！”&lt;end&gt;
+&lt;playername&gt;：“杨彩花，我差点不认得你了！”&lt;end&gt;
+&lt;npc=4390&gt;：“哈哈，真的吗？不认得我那就最好了，我想要达到的就是这个效果呢。嘻嘻……”&lt;end&gt;
+&lt;playername&gt;：“我本次来，是有着重要的事情想要询问你，你可知道是什么事情？”&lt;end&gt;
+&lt;npc=4390&gt;：“恩，我大概知道是什么事情，不过这里不是说话的好地方，前些天村中来了一帮满脸横肉的军士，来我店子中买东西竟然不给银两，还……对我动手动脚，但是为了吴老太后交给我的任务，我一直隐忍！今天你来了，就帮我把这些坏蛋赶跑吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去西夏找到杨彩花</Value>
+              </txt>
+              <txt>
+                <Value>去西夏找到杨彩花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替彩花除去袭击村子的匪徒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2334</Value>
+              </fightnpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去找彩花问问关于游龙珏的事情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4390</Value>
+              </dialognpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“彩花姑娘，那些坏蛋已经被我打跑了，他们吓得屁滚尿流，相信日后不敢再来找你麻烦了！”&lt;end&gt;
+&lt;npc=4390&gt;：“如此真要多谢&lt;playername&gt;了，我在这荒山野岭，几个月都遇不到一个中原人，很是孤独，但是我一直在等，我相信你一定会来，这个是吴老太后让我交给义军白首领的三份奏折，这分别是三个地方县官写给皇帝的上书，里面有些关于游龙珏的线索。这东西在我这里保管已经不安全了，尽快把它交给你们义军，我的使命也算完成了。”&lt;end&gt;
+&lt;playername&gt;：“彩花姑娘你小小年纪就懂得为国家大义和江山社稷着想，真了不起！”&lt;end&gt;
+&lt;npc=4390&gt;：“快别这么说说的我都不好意思啦！”快回去将东西交给义军保管吧。”&lt;end&gt;
+&lt;playername&gt;：“好！我这便回去了，姑娘你也要好好保重！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找彩花问问关于游龙珏的事情</Value>
+              </txt>
+              <txt>
+                <Value>去找彩花问问关于游龙珏的事情</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将寻访到的情况回报给龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“&lt;playername&gt;，怎么样？此去有没有找到杨彩花，事情可有什么收获么？”&lt;end&gt;
+&lt;playername&gt;：“恩！见到她了，她出落的越发漂亮了，我都差点儿没人出来呢！”&lt;end&gt;
+&lt;npc=3571&gt;：“这就是所谓的女大十八变吧。”&lt;end&gt;
+&lt;playername&gt;：“杨彩花她交给我几道旧的奏折，想必是当时皇上并没有重视的奏折，但这上面提及的事情竟和游龙珏有着千丝万缕的联系。我得到这些奏折后并未休息，便星夜赶返回来，直到见到您，我心中才算踏实下来。”&lt;end&gt;
+&lt;npc=3571&gt;：“这宝物也好，秘籍也好多是祸水，一旦有什么发现江湖中难免再起风雨。这件事情就暂且搁下吧。奏折我将小心保管，或许将来某天能用得到……”&lt;end&gt;
+&lt;playername&gt;：“太爷的做法&lt;playername&gt;也赞成！就这样吧，不要再让这躁动的江湖再多一层烦恼了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将寻访到的情况回报给龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>将寻访到的情况回报给龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

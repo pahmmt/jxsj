@@ -1,0 +1,919 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000050" name="怒杀" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=696&gt;：“我有个远房侄女，如今是唐家堡中一大分支的重要人物。她男人死得早，家族里的事情一人挑着。也有好几十年不见了，说起来我走的时候，她小女儿唐柔才满月，如今也出落成大姑娘了吧。晓儿，你替为父去看看你小姑。”&lt;end&gt;
+&lt;npc=701&gt;：“儿子与小姑素未谋面，这样去有些唐突了吧。”&lt;end&gt;
+&lt;npc=696&gt;：“只要有颗向好的心，人家自然感受得到。况且为父也替你准备了许多礼物，断不会空手过去。”&lt;end&gt;
+&lt;npc=701&gt;：“既然如此，儿子就走一趟。”&lt;end&gt;
+&lt;npc=696&gt;：“恩，&lt;playername&gt;，你也随晓儿去吧。一路上好生护卫他，早去早回。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=3&gt;
+&lt;npc=706&gt;：“一会再来找我，没看到我正陪姑妈吃酒吗？”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=3&gt;
+&lt;playername&gt;：“公子爷的酒可吃好了？”&lt;end&gt;
+&lt;npc=706&gt;：“吃好了吃好了，唐柔妹子可真逗。若不是许给了唐远，为兄说不定也心动了呢。”&lt;end&gt;
+&lt;npc=704&gt;：“少门主可不敢拿我家女儿逗闷子，说者无心，听者有意啊。”&lt;end&gt;
+&lt;npc=705&gt;：“表哥好坏。”&lt;end&gt;
+&lt;npc=707&gt;：“夫人，夫人！大事不好，大事不好了！”&lt;end&gt;
+&lt;npc=705&gt;：“怎么了？”&lt;end&gt;
+&lt;npc=707&gt;：“奴婢，奴婢去给唐远公子送信。公子就在附近的酒馆中坐等消息。听说少门主将小姐许配给了他，高兴得叫了好些酒，喝得伶仃大醉。就是这时候，忽的闯进来几个汉子，将唐远公子往死里打，那样子，太怕人了！”&lt;end&gt;
+&lt;npc=705&gt;：“是谁这样大的胆子，敢到我别雅小筑上闹事，来人哪！”&lt;end&gt;
+&lt;npc=706&gt;：“不劳姑姑动手。&lt;playername&gt;，你去将那些犯事者擒来！”&lt;end&gt;
+&lt;playername&gt;：“属下遵命。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>702</Value>
+              </dialognpc>
+              <number>
+                <Value>1816</Value>
+              </number>
+              <number>
+                <Value>3411</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“少爷，准备好了吗？我们这就出发了！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>703</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1802</Value>
+              </number>
+              <number>
+                <Value>3433</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1821,3428
+1815,3434
+1806,3428
+
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>“你我小筑再叙，恕鄙人先行一步了。”唐晓话音甫落，一个飞身便消失在苍翠的竹林中。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>43</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>107000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去小筑西厢找到唐雅吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>704</Value>
+              </dialognpc>
+              <number>
+                <Value>462</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=706&gt;：“侄儿参见姑母。这么些年居于海外，生疏了与姑母之间的关系，晓儿深感不安，请姑母见谅。”&lt;end&gt;
+&lt;npc=704&gt;：“是晓儿啊！瞧我这侄儿长得多俊。原本你父亲母亲回来唐家堡，我就要去看的，可此间有件棘手的事情耽搁了，你能来，当姑姑的很开心呢。这是你表妹唐柔，柔儿过来见过表哥。”&lt;end&gt;
+&lt;npc=705&gt;：“表哥好。”&lt;end&gt;
+&lt;npc=706&gt;：“我这妹妹好俊啊，来提亲的人怕要把门槛都踩破啦。”&lt;end&gt;
+&lt;npc=704&gt;：“哎，姑姑正是为此事烦心。”&lt;end&gt;
+&lt;npc=706&gt;：“哦？”&lt;end&gt;
+&lt;npc=704&gt;：“现下唐家堡旁支中最大的两个派系都来提亲，一个是唐远，一个是唐峰。唐远年轻有为，一表人才。唐峰沉着持重，可惜年纪大了一点。姑姑正为此事犯难。晓儿可有择婿的良策，替姑姑分忧？”&lt;end&gt;
+&lt;playername&gt;：“公子，这可是个接近唐雅一族的好机会，万勿错过。”&lt;end&gt;
+&lt;npc=706&gt;：“恩。”&lt;end&gt;
+&lt;npc=706&gt;：“不知道表妹是怎么看的？”&lt;end&gt;
+&lt;npc=704&gt;：“柔儿，你就说说自己的想法吧。母亲也不是刻薄之人，你自己的婚姻大事，你自己也拿个主意。只要不过分，母亲都依得你。”&lt;end&gt;
+&lt;npc=705&gt;：“这……这怎么好意思讲。”&lt;end&gt;
+&lt;npc=706&gt;：“哈哈，不好意思这事才有成的机会。妹子不要担心，有姑母和为兄替你做主，将来嫁到哪家也不敢欺负了你。你只管讲。”&lt;end&gt;
+&lt;playername&gt;：“是不是在下在这里柔姑娘不方便说，那在下先告退了。”&lt;end&gt;
+&lt;npc=704&gt;：“别，这又不是什么机密，有什么方便不方便的。”&lt;end&gt;
+&lt;npc=705&gt;：“既然你们都要人家讲，那我讲了你们可不许反驳。”&lt;end&gt;
+&lt;npc=704&gt;：“那得看女儿你怎么说了。”&lt;end&gt;
+&lt;npc=706&gt;：“哈哈，不反驳不反驳。”&lt;end&gt;
+&lt;npc=705&gt;：“那人家就讲了。唐峰大哥，为我们唐家屡建功勋，我是很佩服的。可是平时唐大哥每次来我们家，就是抢着干这干那，和我也没有话讲……太……木讷了。人家，人家又不是找个佣人。”&lt;end&gt;
+&lt;npc=706&gt;：“妹子的意思是唐远比较合适？”&lt;end&gt;
+&lt;npc=705&gt;：“唐远哥哥活泼开朗，和我性格相投。虽然他没有唐峰大哥本事，也算小有所成。而且，而且每回我们在一起，总也有讲不完的话。柔儿还是觉得，和唐远大哥在一起会更幸福些。希望……母亲和表哥能成全我们。”&lt;end&gt;
+&lt;npc=706&gt;：“哦，原来如此。姑姑怎么看呢?”&lt;end&gt;
+&lt;npc=704&gt;：“人说儿大不由娘。这女儿大了，为娘的也管不了那么多咯。唐远唐峰各有所长，皆是我唐门新一代的俊杰，我倒是没有什么意见。”&lt;end&gt;
+&lt;npc=706&gt;：“恩，听表妹话里的意思，与唐远更为投契。只不知年龄一说，唐峰今年实岁多少？”&lt;end&gt;
+&lt;npc=704&gt;：“三十有三了吧。”&lt;end&gt;
+&lt;npc=706&gt;：“哦，这样大了，那与表妹确实也不合适。好！此事我记下了，便将表妹许给唐远，也算玉成一件好事。唐峰那边，我去想办法，总在年内让他娶个好媳妇。”&lt;end&gt;
+&lt;npc=704&gt;：“如此再好不过。有少门主做媒，是我们柔儿的福气！”&lt;end&gt;
+&lt;npc=706&gt;：“姑姑千万别这样称呼晓儿，我是晚辈，承受不起。”&lt;end&gt;
+&lt;npc=705&gt;：“表哥果断敏决，将来一定能成为一尘伯伯那样的当世豪杰！”&lt;end&gt;
+&lt;npc=706&gt;：“呵呵，希望如此了。”&lt;end&gt;
+&lt;npc=704&gt;：“话便到这里，我这就遣人去传话。时辰还早，我们饮几杯酒行行酒令可好啊？”&lt;end&gt;
+&lt;npc=706&gt;：“姑姑所命，侄儿怎敢不从。&lt;playername&gt;，你暂且出去转转，过段时间再来寻我吧。”&lt;end&gt;
+&lt;playername&gt;：“是。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>随唐晓拜见西厢的唐雅</Value>
+              </txt>
+              <txt>
+                <Value>随唐晓拜见西厢的唐雅</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>过一段时间便去西厢接唐晓公子了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">706</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到唐远所在的小酒馆</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>1778</Value>
+              </number>
+              <number>
+                <Value>3640</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>找到唐远所在的小酒馆</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>21000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>唐远居然已经被打死了，当务之急要迅速抓获行凶者</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>708</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1409</Value>
+              </fightnpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>53000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我将行凶者抓了起来，要把这个消息尽快告诉唐晓公子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>706</Value>
+              </dialognpc>
+              <number>
+                <Value>462</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“公子大事不好！那行凶者虽已被属下抓获，唐远却已遭其殴打至死。”&lt;end&gt;
+&lt;npc=706&gt;：“什么！”&lt;end&gt;
+&lt;npc=704&gt;：“这还了得吗？说！你们究竟是何来历！”&lt;end&gt;
+&lt;npc=705&gt;：“远……远哥！”&lt;end&gt;
+&lt;npc=704&gt;：“快来人！柔儿昏过去了！”&lt;end&gt;
+&lt;npc=706&gt;：“你们为何下此毒手！若不如实招来，今日一个也别想再走出此门！”&lt;end&gt;
+&lt;npc=708&gt;：“打便打了，杀便杀了。要如何处置，任凭少门主发落。”&lt;end&gt;
+&lt;npc=706&gt;：“好大的口气！我便杀了你等替唐远报仇！真当我不敢吗？”&lt;end&gt;
+&lt;playername&gt;：“公子且慢。这些人当众行凶，又不肯招认原由，其中必有隐情。你们究竟是什么来历？从实招来。”&lt;end&gt;
+&lt;npc=707&gt;：“奴婢认得其中一人，曾随唐峰大哥来过小筑。”&lt;end&gt;
+&lt;npc=704&gt;：“你们……你们是唐峰的人！此事是唐峰指派的吗！好一个唐峰，我道唐家堡中人人赞他是七尺男儿，却因为一桩婚约含怒杀人！此事我一定要去找一尘求个公道。”&lt;end&gt;
+&lt;npc=708&gt;：“老太太不必多此一举，此事峰哥毫不知情。全因我等听到老太太和少门主居然将柔姑娘许配给那唐远而心有不甘。那厮又醉酒挑衅我等，这才失手将他打死。”&lt;end&gt;
+&lt;npc=706&gt;：“心有不甘就可以杀人吗？”&lt;end&gt;
+&lt;npc=708&gt;：“少门主所断不公，我等不服。”&lt;end&gt;
+&lt;npc=706&gt;：“好，你们倒说说看我所断如何不公？若讲不清楚，我扒了你的皮。”&lt;end&gt;
+&lt;npc=708&gt;：“少门主才回来唐家堡几天？我家唐峰大哥为唐门立下过汗马功劳，多少次带领本族弟子击败外敌，因此却耽误了娶妻生子。而那唐远虽然有几分人才，却是个浪荡子弟！对唐柔姑娘动情的时候，仍与其他几个女人勾搭不清。我等知道大哥居然输给了那只知沾花惹草的唐远，心中怎么服气！在酒馆等消息时，一言不合打了起来。”&lt;end&gt;
+&lt;npc=708&gt;：“那唐远求亲成功，喝了许多的酒，加之原本疏于武功，这才被我等刺死。试问少门主如此定夺，对唐峰大哥公平吗！若真是如此，今后唐门子弟人人寒心，谁还敢卖死命替唐家堡做事！”&lt;end&gt;
+&lt;npc=706&gt;：“这……”&lt;end&gt;
+&lt;npc=707&gt;：“不好了不好了！唐远被杀之事被他的族人告到了县衙，官府这就要来拿人了！”&lt;end&gt;
+&lt;npc=706&gt;：“这可如何是好……”&lt;end&gt;
+&lt;npc=704&gt;：“族里的事情，闹到公堂上成何体统。小奴速请唐缺总管来别雅小筑，我等在正厅候他！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把这个消息尽快告诉唐晓公子</Value>
+              </txt>
+              <txt>
+                <Value>把这个消息尽快告诉唐晓公子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>43</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>44</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>唐雅派人去请总管唐缺来善后，唐缺已在正厅</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>94</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>709</Value>
+              </dialognpc>
+              <number>
+                <Value>463</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=704&gt;：“总管终于来了，事情是这样的…………”&lt;end&gt;
+&lt;npc=706&gt;：“一切便如姑姑所讲。我有失查之罪，将柔妹的终生定得太草率了。只能请动缺叔来善后。”&lt;end&gt;
+&lt;npc=709&gt;：“恩，此事不难解决。当事双方都在吗？”&lt;end&gt;
+&lt;npc=710&gt;：“唐峰在此，既然是我的手下犯了错，自然由我来扛。不管怎样讲，是我们杀人犯错在先，如何处置但凭总管吩咐。”&lt;end&gt;
+&lt;npc=711&gt;：“求总管给我们少爷做主！”&lt;end&gt;
+&lt;npc=709&gt;：“既然都在，我便来说说我的建议，大家听听能否接受。唐峰御下不严，须将打死唐远的凶手抓拿到县中投案。唐峰向唐远家赔偿白银五千两。另唐远既已死，事情无可挽回，唐柔姑娘还待字闺中，唐峰在唐家堡素有人望，此事也非他所指使，我看这婚事可以定下来，待唐远丧期过后便可完婚。你们双方可有什么意见？”&lt;end&gt;
+&lt;npc=708&gt;：“总管断得好！我等这便自去投案。”&lt;end&gt;
+&lt;npc=710&gt;：“银子明日便送去唐远舍下。唐远兄弟出殡时，唐峰当披麻相送！”&lt;end&gt;
+&lt;npc=711&gt;：“只要杀人凶手被绳之以法，我等也算得了公道。银子不银子不去提他，也不劳烦唐峰来送我家公子。”&lt;end&gt;
+&lt;npc=709&gt;：“那事情便如此议定，只不知唐柔小姑娘可愿嫁唐峰哪？”&lt;end&gt;
+&lt;npc=704&gt;：“方才一番惊吓，小女还未复原，此事过段时间再说吧。”&lt;end&gt;
+&lt;npc=705&gt;：“母亲不必担心柔儿，我愿意。”&lt;end&gt;
+&lt;npc=708&gt;：“既然如此，我等还有何求，这便去投案了！”&lt;end&gt;
+&lt;npc=706&gt;：“多亏了缺叔，才能理清此间之事，晓儿多谢了！”&lt;end&gt;
+&lt;npc=709&gt;：“一家人不说两家话，公子跟唐缺之间不必如此客套。对了，&lt;playername&gt;，我来时一尘叔叫你回去，不知何事。你还是赶紧去一趟布衣阁吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去正厅看总管唐缺如何善后</Value>
+              </txt>
+              <txt>
+                <Value>去正厅看总管唐缺如何善后</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>44</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>唐一尘在布衣阁等我，不知有何事</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>696</Value>
+              </dialognpc>
+              <number>
+                <Value>459</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“一尘先生，您有事找我？”&lt;end&gt;
+&lt;npc=696&gt;：“听说唐雅那边出了命案。唐缺过去处理得如何了？”&lt;end&gt;
+&lt;playername&gt;：“总管办事滴水不漏，都处理好了。先是判唐峰御下不严，将刺死唐远的凶手抓拿到县中投案。唐峰向唐远家赔偿白银五千两。另唐远既已死，事情无可挽回，将唐柔改判给唐峰，待唐远丧期过后便可完婚。”&lt;end&gt;
+&lt;playername&gt;：“杀人者得知公子能娶到意中人，高高兴兴的去投了案。唐峰能保全自己在唐门的声名，怎么还会顾惜一点钱财。唐远家得到了抚恤，杀人者也被抓拿归案，自然没有话讲。唐柔见唐远已死，虽然悲伤不止，却也没有拒绝唐峰的一片深情。四方都很满意。”&lt;end&gt;
+&lt;npc=696&gt;：“这唐缺倒还真是个人才，鹤老所言非虚。我唐门支系的孩子们，越来越能够独挑大梁了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>速去布衣阁找唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>速去布衣阁找唐一尘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000051</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

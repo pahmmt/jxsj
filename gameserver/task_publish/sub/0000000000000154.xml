@@ -1,0 +1,170 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000154" name="物是人非" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=705&gt;：“你且慢走。”&lt;end&gt;
+&lt;playername&gt;：“小姐还有何事要我帮手。”&lt;end&gt;
+&lt;npc=705&gt;：“这件事难以出口，但还务必要委托你去做。唉！”&lt;end&gt;
+&lt;playername&gt;：“且说无妨，我保证不会告诉他人的。”&lt;end&gt;
+&lt;npc=705&gt;：“你也知道，这唐远懂得人家心思，我们一向也都玩得很好，本来这次也就是要少门主作主，和他完结了亲事。我有一家传玉佩，金纹暗藏，实为当今稀罕之物，两天前唐远来是一眼看中要借去赏玩几日。我想本也不是外人，就背着母亲把这金纹玉佩交给唐远带走。”&lt;end&gt;
+&lt;playername&gt;：“小姐的意思是让我把这玉佩拿回来。”&lt;end&gt;
+&lt;npc=705&gt;：“恩，虽然不知道行凶者究竟何许人也，但这玉佩还须拿回来，否则等那天母亲问起来也有个交待。昨天唐远走的时候，我还看到他就带在身上的。”&lt;end&gt;
+&lt;playername&gt;：“好，等我找到唐远的尸身，看看这玉佩还在不在。”&lt;end&gt;
+&lt;npc=705&gt;：“快去吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=705&gt;：“恩，就是这个，辛苦你了。”&lt;end&gt;
+&lt;playername&gt;：“小姐节哀，少门主自然会对事情有个交代。”&lt;end&gt;
+&lt;npc=705&gt;：“唉！去年今日此门中，人面桃花相映红。人面不知何处去，桃花依旧笑春风。”&lt;end&gt;</Prize>
+      <End>&lt;npc=705&gt;：“恩，就是这个，辛苦你了。”&lt;end&gt;
+&lt;playername&gt;：“小姐节哀，少门主自然会对事情有个交代。”&lt;end&gt;
+&lt;npc=705&gt;：“唉！去年今日此门中，人面桃花相映红。人面不知何处去，桃花依旧笑春风。”&lt;end&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1606</Value>
+              </dialognpc>
+              <number>
+                <Value>63</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>唐远尸体搜查中</Value>
+              </txt>
+              <txt>
+                <Value>得到金纹玉佩</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{金纹玉佩,20,1,233,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到金纹玉佩</Value>
+              </txt>
+              <txt>
+                <Value>替唐柔取回唐远身上的金纹玉佩</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将得到的玉佩回来交给唐柔</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>705</Value>
+              </dialognpc>
+              <number>
+                <Value>462</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小姐，你看是这个吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{金纹玉佩,20,1,233,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

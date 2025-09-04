@@ -1,0 +1,170 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F7" name="平定边境" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1215&gt;：“朝廷目前正在张榜悬赏，不论是谁，只要愿意为朝廷效劳，一定可以得到封赏！”&lt;end&gt;
+&lt;playername&gt;：“只是不知道这榜上都写了些什么？”&lt;end&gt;
+&lt;npc=1215&gt;：“大散关是我金国和西夏接壤的边境地带，历来战火不断，如今守边将领办事不力，导致西夏骑兵长驱直入，甚为可虑。更可恨的是西夏马贼趁此机会劫掠我国百姓，朝廷的榜文为的就是此事，无论是谁，只要为剿灭西夏游兵出力，均可获得重赏，若能成功刺杀游兵统领得日乐则赏金加倍。”&lt;end&gt;
+&lt;playername&gt;：“不知赏金找谁去领？”&lt;end&gt;
+&lt;npc=1215&gt;：“耶律楚材大人奉命主管此事，你若成功，可去汴京府找耶律大人领取赏金。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2134</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1217</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往汴京府找耶律楚材领赏</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>441</Value>
+              </dialognpc>
+              <number>
+                <Value>23</Value>
+              </number>
+              <txt>
+                <Value>平定边境</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=441&gt;：“可是杀了得日乐来请赏？”&lt;end&gt;
+&lt;playername&gt;：“幸不辱命！”&lt;end&gt;
+&lt;npc=441&gt;：“拿去吧，那些守边的士兵毫无功绩，真应该克扣他们的军饷！”&lt;end&gt;
+&lt;playername&gt;：“大人万万不可！”&lt;end&gt;
+&lt;npc=441&gt;：“这是为何？”&lt;end&gt;
+&lt;playername&gt;：“大人若是克扣他们军饷，他们必会骚扰百姓来自足，如此和敌军又有何区别？”&lt;end&gt;
+&lt;npc=441&gt;：“说的也是，本官记住了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找耶律楚材领赏</Value>
+              </txt>
+              <txt>
+                <Value>找耶律楚材领赏</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,134 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000DA" name="盗墓贼的财宝" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>兀撒：“近来局势不太平静，越是乱世越容易打仗，令人心烦哪。不过乱世有个好处，就是常有奇珍异宝出世。”</Pop>
+      <Start>兀撒：“近来的局势真是不平静，北边有鞑靼人招惹是非，西边夏国也不老实，这样下去，国家多灾多难啊。”
+PLAYERNAME：“兀先生的真是忧国忧民。”
+兀撒：“谈不上谈不上。我们这些金人贵族，早就已经被汉家文化给熏陶成了半个汉人。真要打起仗来，苦的是天下百姓。真能打仗的人，又有几个是在乎财富的？不过是为了一己私心，便招致生灵涂炭，实在没有什么必要。”
+PLAYERNAME：“没想到金国人中有这样深明大义之人。”
+兀撒：“其实我周遭许多的朋友，都是一样的意思。与其在乎那些个虚名，不如把玩把玩古器，琢磨琢磨老祖宗的鬼斧神工来得妙啊。”
+PLAYERNAME：“看来兀先生对古玩有相当造诣？”
+兀撒：“还可以。对了，近来我的手下告诉我，皇陵修造过程中，有些盗墓贼私混了进来。希望找出机关所在，将来好窃取墓葬。这样的人我的手下已经发现了一个，叫荆乱石。依照我大金律法，是定杀无赦的。不过他还没有发觉机关所在，我也不希望看到死人。这样，希望你替我走一趟，找到此人，告诉他我的身份。就说如想活命，需得交出几件珍宝来交换。这种人身上，决计缺不了好东西的。”</Start>
+      <Procedure>兀撒：“找到那荆乱石，一定撬开他的嘴，从里面掏几件珍奇玩意回来啊。”</Procedure>
+      <Error />
+      <Prize>兀撒：“哈哈，多少年见不着的刀币了！还有五胡乱华时慕容家的配剑，这个人真是值钱哟。”</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>449</Value>
+              </dialognpc>
+              <number>
+                <Value>57</Value>
+              </number>
+              <txt>
+                <Value>财宝的窝藏</Value>
+              </txt>
+              <txt>
+                <Value>PLAYERNAME：“不可是荆乱石？”
+荆乱石：“正是在下。”
+PLAYERNAME：“天忍教长老兀撒派我来通知你，你的身份已被发觉，若想活命，就交出几件宝贝来。”
+荆乱石：“什……什么身份？小人不知。”
+PLAYERNAME：“不需要再伪装了，盗墓人的身份，怎么伪装，都没有用的。若不愿交出宝贝，便将你擒下，到时候重刑伺候不说，这条命也不要想再留下来。要仔细考虑。”
+荆乱石：“……好吧，我说。只希望你能信守承诺，给荆某一条活路。”
+PLAYERNAME：“这个自然。”
+荆乱石：“我随身之物分别埋在这皇陵的三个地方……”</Value>
+              </txt>
+              <txt>
+                <Value>荆乱石：“我已经都老实交待了。”
+</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>36000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">448</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,71,1,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,72,1,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>SearchItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,73,1,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

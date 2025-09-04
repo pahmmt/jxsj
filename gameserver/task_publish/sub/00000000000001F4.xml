@@ -1,0 +1,291 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001F4" name="秋试文考" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3482&gt;：“&lt;playername&gt;，快过来。”&lt;end&gt;
+&lt;playername&gt;：“晚辈在此。” &lt;end&gt;
+&lt;npc=3482&gt;：“上一次你和老夫的约定你可还记得？” &lt;end&gt;
+&lt;playername&gt;：“晚辈不敢忘！是和您的对弈之约。今日让晚辈来此可是为了此事么？” &lt;end&gt;
+&lt;npc=3482&gt;：“非也，非也。老夫今日请你来是想说说伪学之事，朝廷判理学为伪学，许多偏远地区的学子们闭门造车，只知读圣贤书而不知天下局势竟已大变，继续在科举考试之时发表关于理学的见解，朝廷必然不会就此罢休啊。” &lt;end&gt;
+&lt;playername&gt;：“没想到伪学风波过了这么久了，竟还不能平息。”&lt;end&gt;
+&lt;playername&gt;：“关于那些儒生，朝廷是何种态度呢？”&lt;end&gt;
+&lt;npc=3482&gt;：“朝野上下的群臣心中明镜，大多是韩侂胄这贼子对府邸被烧一事怀恨在心，哪里肯放过这些手无缚鸡之力的文弱书生。朝廷的秘密侍卫们已经在鼓浪屿扣押了几个在科举中犯错的儒生，你且去将他们救下来。”&lt;end&gt;
+&lt;playername&gt;：“晚辈这就去办。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2344</Value>
+              </fightnpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2342</Value>
+              </fightnpc>
+              <number>
+                <Value>136</Value>
+              </number>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>护送一名儒生离开此地</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>64000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4375</Value>
+              </dialognpc>
+              <number>
+                <Value>1724</Value>
+              </number>
+              <number>
+                <Value>3431</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位书生，此地是个是非之地，让我带你速速离开。”</Value>
+              </txt>
+              <fightnpc>
+                <Value>4376</Value>
+              </fightnpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>136</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>1574</Value>
+              </number>
+              <number>
+                <Value>3153</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1690,3434
+1662,3372
+1633,3332
+1614,3293
+1606,3189</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这就回去向朱逊前辈交代一声</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3482</Value>
+              </dialognpc>
+              <number>
+                <Value>21</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“前辈，您交代的事情&lt;playername&gt;已经办妥，还将一名儒生安全送离了鼓浪屿。”&lt;end&gt;
+&lt;npc=3482&gt;：“如此我便放心了，如今朝廷内局势并不明朗，遭殃的是百姓，好在有义军从中维持，老夫替这些文弱的儒生谢谢&lt;playername&gt;。”&lt;end&gt;
+&lt;playername&gt;：“晚辈不敢当，我只知道这是我身为义军一分子该做的事，就此拜别，前辈珍重！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>这就回去向朱逊前辈交代一声</Value>
+              </txt>
+              <txt>
+                <Value>这就回去向朱逊前辈交代一声</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

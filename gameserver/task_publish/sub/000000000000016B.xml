@@ -1,0 +1,777 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000016B" name="九绝" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1800&gt;：“北宋年间，有一位使剑高手，天赋绝伦，十四岁初登剑道，二十二岁便洞彻玄机。他通晓各门武艺，琴棋书画无不精熟，因为天赋异禀，此人恃才傲物，放浪形骸，也得罪了不少人。时人总结出他的九门绝艺，都堪称当世无匹。“&lt;end&gt;
+&lt;npc=1800&gt;：“又因他始终使剑，便称其为九绝剑魔。剑魔老年悟道，曾留下毕生心血所著的一部《剑心说》。你现下可去将这部书找来，依我之法行事，必无差池。先前往武当山紫霄殿，找一位扫地的老道士。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1804</Value>
+              </dialognpc>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“道长，晚辈受剑奴先生所托，前来武当寻访当年九绝剑魔所著《剑心说》。”&lt;end&gt;
+&lt;npc=1804&gt;：“是冷山河的朋友啊。”&lt;end&gt;
+&lt;playername&gt;：“什么冷山河？”&lt;end&gt;
+&lt;npc=1804&gt;：“好了，此书确在贫道手中，不过要拿此书，必须先答应贫道一件事。”&lt;end&gt;
+&lt;playername&gt;：“道长只管讲。”&lt;end&gt;
+&lt;npc=1804&gt;：“剑魔晚年时，曾在这山中的荷花池边终日垂钓。你也去荷花池中钓上一条金鲤，我便将书交托予你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{鱼竿,20,1,253,1,0,1}
+{鱼饵,20,1,254,1,0,9}</Value>
+              </string>
+              <txt>
+                <Value>找武当派紫霄殿前的一位扫地老道打听《剑心说》下落</Value>
+              </txt>
+              <txt>
+                <Value>找武当派紫霄殿前的一位扫地老道打听《剑心说》下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>6</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>没有钓到任何东西</Value>
+              </txt>
+              <txt>
+                <Value>没有钓到任何东西</Value>
+              </txt>
+              <txt>
+                <Value>开始钓鱼</Value>
+              </txt>
+              <taskitem>
+                <Value>{253,}</Value>
+              </taskitem>
+              <string>
+                <Value>{鱼饵,20,1,254,1,0,1}</Value>
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>1388</Value>
+              </number>
+              <number>
+                <Value>3057</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>来到池边，右键点击背包中的鱼竿，开始钓鱼</Value>
+              </string>
+              <string>
+                <Value>来到池边，右键点击背包中的鱼竿，开始钓鱼</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1804</Value>
+              </dialognpc>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“道长，真是抱歉。我没有钓到鲤鱼，烦您再给些鱼饵。”&lt;end&gt;
+&lt;npc=1804&gt;：“呵呵。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{鱼竿,20,1,253,1,0,1}
+{鱼饵,20,1,254,1,0,9}</Value>
+              </string>
+              <txt>
+                <Value>去找扫地老道再要一些鱼饵</Value>
+              </txt>
+              <txt>
+                <Value>去找扫地老道再要一些鱼饵</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>6</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>没有钓到任何东西</Value>
+              </txt>
+              <txt>
+                <Value>没有钓到任何东西</Value>
+              </txt>
+              <txt>
+                <Value>开始钓鱼</Value>
+              </txt>
+              <taskitem>
+                <Value>{253,}</Value>
+              </taskitem>
+              <string>
+                <Value>{鱼饵,20,1,254,1,0,1}</Value>
+              </string>
+              <itemid>
+                <Value>{1,6,1,7,-1,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>1388</Value>
+              </number>
+              <number>
+                <Value>3057</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>来到池边，右键点击背包中的鱼竿，开始钓鱼</Value>
+              </string>
+              <string>
+                <Value>来到池边，右键点击背包中的鱼竿，开始钓鱼</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1804</Value>
+              </dialognpc>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“道长，那荷花池中根本没有鲤鱼，又怎么钓得到呢？”&lt;end&gt;
+&lt;npc=1804&gt;：“你说没有，我却说有。”&lt;end&gt;
+&lt;playername&gt;：“我连连钓了几个时辰，也不见鱼咬钩。”&lt;end&gt;
+&lt;npc=1804&gt;：“这诺大的荷花池中，原本就只有一条鲤鱼。没有耐心，又怎么能够钓到鲤鱼呢？你可知九绝当年在这池塘边垂钓了多久？整整十年。”&lt;end&gt;
+&lt;playername&gt;：“道长的意思是？”&lt;end&gt;
+&lt;npc=1804&gt;：“那九绝剑魔恃才傲物，在武功上一心突进，虽然根骨精奇，最终也难免走火入魔。为了克制魔症，九绝前来武当山拜访一位隐居的前辈高人。高人赠他一只鱼竿，塘边垂钓十年，方始悟得真谛。《剑心说》便是这池中鱼，手中竿了。”&lt;end&gt;
+&lt;playername&gt;：“我明白了！是说行事为人，都要守心静气，不急不躁。无论有多么高的禀赋，走旁门左道都无法臻至化境，走得稳才可以去得远。”&lt;end&gt;
+&lt;npc=1804&gt;：“孺子可教。你已尽获《剑心说》的真髓，不过凡事知易行难。要达到知行合一的境界，还需要多多磨砺。这便下山去吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>质问老道士池中是否有鱼</Value>
+              </txt>
+              <txt>
+                <Value>质问老道士池中是否有鱼</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1631</Value>
+              </number>
+              <number>
+                <Value>3099</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你可要重返藏剑山庄？</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>让龙五太爷送我去藏剑山庄</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“剑奴先生，那《剑心说》原来便是钓鱼的道理。”&lt;end&gt;
+&lt;npc=1800&gt;：“九绝剑魔在宋初乱世时便横空出世，他这一辈子的故事，实在太多。《战国策》中讲：前事不忘，后事之师。这位前辈虽然故去，为了他留下的这些道理，去长明灯上点燃三只火烛，祭奠老前辈的在天之灵吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{火烛,20,1,252,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>向剑奴先生回报寻访经历</Value>
+              </txt>
+              <txt>
+                <Value>向剑奴先生回报寻访经历</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtArea</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,252,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>477</Value>
+              </number>
+              <number>
+                <Value>1663</Value>
+              </number>
+              <number>
+                <Value>3029</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1800</Value>
+              </dialognpc>
+              <number>
+                <Value>477</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“剑奴先生，我已为九绝老前辈燃烛祷告过了。请问你还有何事可以赐教？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>此刻剑奴还有什么故事要告诉我呢？</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

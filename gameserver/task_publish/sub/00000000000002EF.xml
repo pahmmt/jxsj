@@ -1,0 +1,166 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002EF" name="仗剑逍遥" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3237&gt;：“少侠……少侠留步啊！”&lt;end&gt;
+&lt;playername&gt;：“你这奇怪的老头儿，大白天挡我去路干嘛？莫不是寻赏钱来了？”&lt;end&gt;
+&lt;npc=3237&gt;：“老夫见少侠天庭饱满、地阁方圆，乃福相之兆；又看少侠佩剑策马、头顶云气勃勃然如火烟之状，乃猛将之象。少侠如此迥然不群，何不放开了手脚，随老夫去逍遥谷干一番大事业？”&lt;end&gt;
+&lt;playername&gt;：“逍遥谷？这名字倒听着耳熟。”&lt;end&gt;
+&lt;npc=3237&gt;：“群峭碧摩天，逍遥不记年……嘿嘿，逍遥谷里有趣的物事可多了，参天入云的玉树齐壁而长、香气扑鼻的琼浆汇地成泽，还有那些隐居清修的老神仙们，他们个个都身怀异宝呢。老夫看少侠是有缘之人，才执意相邀，少侠是否有胆量去逍遥谷一试呢？”&lt;end&gt;
+&lt;playername&gt;：“去就去，这能难住我么？我倒要看看是否真如你说的那么玄乎！”&lt;end&gt;
+&lt;npc=3237&gt;：“好，少侠果然胆识过人！不过请少侠记住，逍遥谷每日启于午时，闭于子时，若早于午时或迟于子时，谷口之隘则为瘴气所掩，众人皆不得而入也。少侠既有心闯谷，还请邀上三五好友，率众按时前来，老夫一定带你们入谷寻奇。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1025</Value>
+              </number>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>完成一次逍遥谷副本</Value>
+              </txt>
+              <txt>
+                <Value>完成一次逍遥谷副本</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将谷内奇遇告诉赵侃吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3237</Value>
+              </dialognpc>
+              <number>
+                <Value>23</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3237&gt;：“谷中的见闻如何？有没有大捞一笔啊？”&lt;end&gt;
+&lt;playername&gt;：“谷内此等奇情异景，竟似南柯一梦，让我半天都没缓过神来呢！”&lt;end&gt;
+&lt;npc=3237&gt;：“少侠真会说笑，我看你那圆鼓鼓的布囊，就知道此行所获颇丰了，又怎会是南柯一梦嘛？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与赵侃对话</Value>
+              </txt>
+              <txt>
+                <Value>与赵侃对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

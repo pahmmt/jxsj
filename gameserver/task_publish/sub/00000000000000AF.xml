@@ -1,0 +1,240 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000AF" name="义胆罗锋" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;end&gt;：“霍四这混人，怎么欠了人家那么多钱？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=32&gt;：“我一个旧时好友几日前来信，说他正遭到江湖人物的追杀，想躲到燕子坞里来。”&lt;end&gt;
+&lt;playername&gt;：“以罗壮士的身手，十个朋友也护得住。”&lt;end&gt;
+&lt;npc=32&gt;：“话不能这样讲，人在江湖，理字当先。我那朋友遭人所骗，欠了笔三万银子的赌债，他倾家荡产也归还不上。千不该万不该，居然还跑了出来。赌坊老板出重金相邀了几位江湖高手追杀他，此事是我那朋友不占理字。庇护他，不是个好做法。”&lt;end&gt;
+&lt;playername&gt;：“那要如何是好？”&lt;end&gt;
+&lt;npc=32&gt;：“我想来想去，只有帮他还上赌债，才能让他避过一劫。”&lt;end&gt;
+&lt;playername&gt;：“那可是笔不小的数目。”&lt;end&gt;
+&lt;npc=32&gt;：“这些年江湖上亏得朋友们关照，我有些存项。再找帮里弟兄凑了些，也够了。当年在难中时，与那朋友同啃过一个馒头，他于我有恩情，患难之交，便死了也不能忘记的。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>罗锋：“我那朋友忽然失踪不见，这钱暂时是无法给他了。”</Error>
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>336</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=336&gt;：“银票？我只是想借罗锋这里暂且避避风头，他居然为我想得这样周到……惭愧得很。但看这些人的架势，好像银票解决不了问题，仿佛是非要了我的命似的，这可如何是好。”&lt;end&gt;
+&lt;playername&gt;：“你这人，看在罗锋的面子上，今天的事情我先帮你扛下来，今后你自己好自为之吧。”&lt;end&gt;
+&lt;npc=336&gt;：“多谢大侠啦。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=336&gt;：“他们拿了银票还不依不饶，一定要把那群人打跑，一定要打跑他们哪！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>要找到霍四把银票给他</Value>
+              </txt>
+              <txt>
+                <Value>要找到霍四把银票给他</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>那些赌场雇佣武士追得太凶，可适当出手解决掉那帮江湖人物</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2065</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把事情的经过回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>32</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=32&gt;：“总算了了一桩心事。人在江湖，总得为朋友设想，大家的路才走得宽啊。”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把事情的经过回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value>把事情的经过回报罗锋吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

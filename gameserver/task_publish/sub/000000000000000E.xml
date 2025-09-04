@@ -1,0 +1,241 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000000E" name="白山石场" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=46&gt;：“&lt;playername&gt;，犯错弟子们中的负者已派专人护送他们回家乡了。剩下的人要立即押往白山石场服役，这件事情还是交给你办，我会比较放心。一路上多加注意。现在他们都由裘长老代为看管，你可去裘长老那里进行交接。”&lt;end&gt;
+&lt;playername&gt;：“知道了。”&lt;end&gt;
+&lt;npc=46&gt;：“巩少榛长老在那边主事，这段日子你先跟随他，石场里事情繁多，他一个人恐怕顾不过来。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=2&gt;
+&lt;playername&gt;：“这林东山我已经送到了，请接收吧。”&lt;end&gt;
+&lt;npc=48&gt;：“恩，辛苦你了。罗锋刚过来不久，和我提到你是个少年英雄。如今一见，果然不凡。”&lt;end&gt;
+&lt;playername&gt;：“过奖。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>31</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=31&gt;：“&lt;playername&gt;，你可算来了。我手上还一大堆事要办，赶紧办完交接押着他走吧。”&lt;end&gt;
+&lt;playername&gt;：“怎么就一个人了？”&lt;end&gt;
+&lt;npc=31&gt;：“罗锋正好要去白山石场办事，先带着一批人过去了。”&lt;end&gt;
+&lt;playername&gt;：“倒是省了我不少事，那走吧。”&lt;end&gt;
+&lt;npc=31&gt;：“这孩子刚和他聊了聊，年纪轻不懂事，你路上多照应着点。”&lt;end&gt;
+&lt;playername&gt;：“我明白。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=31&gt;：“这孩子刚和他聊了聊，年纪轻不懂事，你路上多照应着点。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回到祭奠礼场找到裘止水长老办理交接</Value>
+              </txt>
+              <txt>
+                <Value>回到祭奠礼场找到裘止水长老办理交接</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>21</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>21100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>送林东山去白山石场，在路上多照顾照顾他</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">48</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>53</Value>
+              </dialognpc>
+              <number>
+                <Value>1475</Value>
+              </number>
+              <number>
+                <Value>2966</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value>护送林东山</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我们走吧！”</Value>
+              </txt>
+              <fightnpc>
+                <Value>49</Value>
+              </fightnpc>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1441</Value>
+              </number>
+              <number>
+                <Value>2884</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1477,2978
+1465,2993
+1449,2998
+1436,2978
+1433,2955
+1452,2919
+1441,2898</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000000F</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

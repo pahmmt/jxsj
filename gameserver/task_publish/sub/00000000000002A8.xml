@@ -1,0 +1,226 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002A8" name="不情之请" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3582&gt;：“酒拿来我吃，哈哈哈，好吃，痛快！”&lt;end&gt;
+&lt;npc=3583&gt;：“那你便多吃些，好好养着身体。”&lt;end&gt;
+&lt;npc=3582&gt;：“你个呆人，咋废话一箩筐箩筐的？再多话老子踹死你，呆人！”&lt;end&gt;
+&lt;playername&gt;:“许大哥，他这也太过分了？这不是借酒装疯吗？”&lt;end&gt;
+&lt;npc=3582&gt;：“你是哪个？甚多废话！呆书生，老子吃饱累了，天冷不好歇，拿虎皮来我盖。”&lt;end&gt;
+&lt;playername&gt;:“沈大哥，请你不要太过分！”&lt;end&gt;
+&lt;npc=3583&gt;：“不不不，少主人切莫动怒，铁石心肠极好，只是脑病犯了才会如此。他饱饮鹿血冲化脑中寒气，再在极热之境睡上一觉，方可化解寒毒冲脑之险。现下天气寒冷，以虎皮当被，铁石方能好得快些。”&lt;end&gt;
+&lt;playername&gt;:“哎，许大哥你真是菩萨心肠，这人如此无赖，你还极力护着他。”&lt;end&gt;
+&lt;npc=3583&gt;：“少主便当是可怜仕伟，再替铁石弄几张&lt;color=red&gt;黄虎皮&lt;color&gt;回来。可惜我手无缚鸡之力，奈何不了那凶猛的黄虎，仕伟给少主磕头了。”&lt;end&gt;
+&lt;playername&gt;:“万万不可！男儿膝下有黄金，许大哥切莫如此。哎……罢了，我去弄些虎皮回来便是。这次总要打多一些，不让许大哥今后为难。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2009</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{450,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>6</Value>
+              </number>
+              <bool>
+                <Value>true</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>11</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将打到的黄虎皮交予许世伟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3583</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“许大哥，我打了好些黄虎皮，别说是今冬，便十年，二十年也够用了。”&lt;end&gt;
+&lt;npc=3582&gt;：“皮子拿来我盖，你这人甚罗嗦，俺不欢喜你。”&lt;end&gt;
+&lt;npc=3583&gt;：“皮子要除去湿气才能盖，铁石兄且等等。”&lt;end&gt;
+&lt;npc=3582&gt;：“呆书生，再废话老子踹死你！呼噜，好困啊，俺先歇息，睡醒了再收拾你！”&lt;end&gt;
+&lt;playername&gt;:“许大哥你还是与我一同回村吧，这猎户不可理喻，咱们不要管他了。”&lt;end&gt;
+&lt;npc=3583&gt;：“总算是睡着了。睡着了便好啊，不会被寒毒折磨得生不如死。”&lt;end&gt;
+&lt;playername&gt;:“许大哥你这又是何苦？”&lt;end&gt;
+&lt;npc=3583&gt;：“哎……少主人方才说，打来的黄虎皮够十年之用。但你可知，铁石兄朝不保夕，别说十年，恐怕五年都活不过去了……”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>与许仕伟对话</Value>
+              </txt>
+              <txt>
+                <Value>与许仕伟对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002A9</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{450,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

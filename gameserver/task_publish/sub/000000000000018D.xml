@@ -1,0 +1,274 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000018D" name="马说" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“老人家一脸愁容，可是有什么难事？”&lt;end&gt;
+&lt;npc=865&gt;：“唉！你有所不知，老夫是这一带有名的相马师，经营的马场也是这一带数一数二的大马场，日子过得也算红火。自打梁项林这个狗贼当了这里的驻军统领之后，老夫的好日子就算到头了。他不仅倚仗自己统领的身份压低马价，还总是拖欠马款。老夫不堪重负之下，不愿再卖马给他，他……他竟然……”&lt;end&gt;
+&lt;playername&gt;：“竟然如何？”&lt;end&gt;
+&lt;npc=865&gt;：“他竟然在光天化日之下派人将老夫的马强行给掳去了。老夫最心爱的马王被他这么一惊，也不知道跑到哪里去了，这可是老夫的命根子啊！如今马全没了，叫老夫可怎么活啊……”&lt;end&gt;
+&lt;playername&gt;：“竟然还有这样的人，若是不好好教训下他，百姓还怎么活？请问老丈，你的马被掳到哪里去了？”&lt;end&gt;
+&lt;npc=865&gt;：“黄骢马被虎骑的人分了去，紫骢马则被鹰骑的人分了去，至于老夫的那匹马王，连老夫都不知道去了哪里。也许会在绿洲附近。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2154</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <taskitem>
+                <Value>{337,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2155</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <taskitem>
+                <Value>{338,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.6</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>587</Value>
+              </fightnpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,339,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将找回的马带给马伯乐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>865</Value>
+              </dialognpc>
+              <number>
+                <Value>94</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“老人家你看，你的马我都给你找回来了。”&lt;end&gt;
+&lt;npc=865&gt;：“啊！这真是我的马，还有我的马王，这让老夫怎么感谢你才好啊！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将马带给马伯乐</Value>
+              </txt>
+              <txt>
+                <Value>将马带给马伯乐</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{337,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{338,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{339,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

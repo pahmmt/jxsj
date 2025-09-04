@@ -1,0 +1,479 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000002E3" name="桃落托书" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=10152&gt;：“你若再偷懒，武功可要连我都比不上了。”</Pop>
+      <Start>……秋姨将我送至桃溪镇，好像已经是十年前的事了……</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10152</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“书青？莫非太爷又发现我在偷懒？”&lt;end&gt;
+&lt;npc=10152&gt;：“我又不是专司给你报信，下回自己去瞒。嘻嘻，天道酬勤，你若继续这么偷懒下去，小心哪天我武艺精进，你可再不是我对手。”&lt;end&gt;
+&lt;playername&gt;:“小丫头，别挖苦我了，说吧，到底啥事？”&lt;end&gt;
+&lt;npc=10152&gt;：“喏,许大哥回来了，给你捎了秋姨的信。等等，你把上回那个内家功夫再演一遍！我就把信给你！”&lt;end&gt;
+&lt;playername&gt;:“你还真是聪明伶俐，深谙偷师这一绝学……看好了，我可只演示一遍。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>1</Value>
+              </txt>
+              <txt>
+                <Value>问子书青寻你何事</Value>
+              </txt>
+              <txt>
+                <Value>问子书青寻你何事</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>运气催动地上的桃花枝</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>1460</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>10156</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>运转内力...</Value>
+              </txt>
+              <txt>
+                <Value>获得桃花枝</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{桃花枝,20,1,926,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1枝桃花枝。</Value>
+              </txt>
+              <txt>
+                <Value>以内力拾起地上桃花枝</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;:“我演示完了，再友情赠送一枝桃花，这下能把秋姨的信给我了吧。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2540</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtAreaWithDesc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,926,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>1691</Value>
+              </number>
+              <number>
+                <Value>3212</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>点击图标，赠送桃花枝</Value>
+              </txt>
+              <txt>
+                <Value>点击图标，赠送桃花枝</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=10152&gt;：“啧啧，你这就是夫子说的乱狱滋丰，贿赂并行！一枝桃花就把我给打发了……真亏。给你！快看看秋姨这次又写了什么？”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddItem</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,927,1,0,-1,}</Value>
+              </itemid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{926,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2936,1,1,3*60*18,1,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3610</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkill</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,927,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>305</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>保护书青？秋姨此信语焉不详，又好似意有所指……区区水贼何须忌惮，吕家与其又有何关系……
+说不定还有其他讯息，不如去问问捎信的许大哥。
+&lt;Chahua:chahua_shuxin.spr,2000,5000,1000&gt;&lt;end&gt;
+&lt;playername&gt;:“书青，许大哥现在何处？”&lt;end&gt;
+&lt;npc=10152&gt;：“许大哥？当然是去看沈哥哥了！他俩出生入死这么多年，要不是沈哥哥的病……”&lt;end&gt;
+&lt;playername&gt;:“……你莫要再想了，早些回去。我去找许大哥问问边关的情况。”&lt;end&gt;
+&lt;npc=10152&gt;：“我知道你们都小瞧我，每回讨论边关情势都故意将我支开……快去吧，别忘了晚上一块儿去&lt;color=Gold&gt;花灯会&lt;color&gt;！”&lt;end&gt;
+&lt;playername&gt;:“知道了啦，小丫头。和你约好的事，决不食言。”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4390</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3583</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“许大哥！秋姨她可有其他口信让你带给我？”&lt;end&gt;
+&lt;npc=3583&gt;：“&lt;playername&gt;？不，你秋姨并无其他口信……只是，近来她常常在军帐一呆便是整天，虽说是战事正酣……铁石？铁石你怎么了？铁石他犯癔病了！”&lt;end&gt;
+&lt;playername&gt;：“许大哥！你在此地照顾铁石哥，我去镇上医馆叫人！”&lt;end&gt;
+&lt;npc=3583&gt;：“且慢！此地去镇上甚远，一去一回恐有差池。劳烦你先帮我去取三份鹿血，桃花林里有不少鹿，打晕取血即可，一只取一份，方可不伤其性命。暂且压住了寒气，迟些我就带他去我家医馆。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>许仕伟：“有时候，不知道该恨的是金兵……还是宋廷。”</Value>
+              </txt>
+              <txt>
+                <Value>询问许大哥秋姨可有口信</Value>
+              </txt>
+              <txt>
+                <Value>询问许大哥秋姨可有口信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>沈大哥似是病发，帮许大哥取来3份鹿血</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>00000000000002E4</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>5370</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

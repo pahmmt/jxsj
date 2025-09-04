@@ -1,0 +1,313 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000012C" name="滴血认亲" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3500&gt;：“大日山寨的事情朕已经听皇兄讲过了，这个逍遥子竟敢在我大理国内行此灭佛之事，实在可恶了。好在大日罗对朕还算忠心，尚能宽恕。你且前往大日罗那里打听一下妖妖的来历，并向他敲响警钟，若再执迷不悟听由邪佞狂言定不轻饶。”&lt;end&gt;
+&lt;playername&gt;：“是！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>112</Value>
+              </number>
+              <number>
+                <Value>1890</Value>
+              </number>
+              <number>
+                <Value>3635</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>前往大日山寨寻找大日罗</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=634&gt;：“什么人擅闯寨主居所？”&lt;end&gt;
+&lt;playername&gt;：“我奉皇帝之命带密旨给大日罗寨主！”&lt;end&gt;
+&lt;npc=664&gt;：“快请他进来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>进屋找大日罗</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>664</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“逍遥子无理围困化生寺，以道灭佛之事皇上已经听说，且对逍遥子和妖妖的所作所为有所耳闻。皇上如今龙颜大怒，派我前来调查逍遥子和妖妖的来历，你要老实回答以免天威降临性命难保！”&lt;end&gt;
+&lt;npc=664&gt;：“这……这……妖妖是我去年进宫觐见皇上归来途中遇到的，当时她被歹人追赶，是我救了她。而后她将她师父介绍给我作军师，我并未发现有何不妥……”&lt;end&gt;
+&lt;playername&gt;：“你被美色所迷，又如何得知寨内之事？我问你，逍遥子围困化生寺之事你可知情？”&lt;end&gt;
+&lt;npc=664&gt;：“这……这……我毫不知情……军师说他想要觅一处道场，我说这附近的地方任他挑选，怎知他偏偏选中了化生寺……”&lt;end&gt;
+&lt;playername&gt;：“你仔细想想，妖妖和逍遥子可有什么异常之处？”&lt;end&gt;
+&lt;npc=664&gt;：“异常之处……我想想……对了！军师有一只大雕，凶猛异常，总是在晚上放出，自从军师搬到上仙庄之后我便再未见过。”&lt;end&gt;
+&lt;playername&gt;：“大雕……甚为怪异……皇上让告诉你，若再对此二人言听计从、荒唐行事，必定重责。”&lt;end&gt;
+&lt;npc=664&gt;：“不敢……不敢……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到大日罗</Value>
+              </txt>
+              <txt>
+                <Value>找到大日罗</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1084</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1084&gt;：“咕咕……”&lt;end&gt;
+&lt;playername&gt;：(这大雕腿上似乎系着一个纸条，我且打开看看……信是写给逍遥子的，上面有些文字我并不明白，但是夹杂的几个字我却看明白了，似乎是光复西夏国……难道逍遥子等人是西夏人？带着这个疑问去找段智兴。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到逍遥子的大雕</Value>
+              </txt>
+              <txt>
+                <Value>找到逍遥子的大雕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将对逍遥子身份的疑惑带给段智兴</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3500</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3500&gt;：“调查的如何？”&lt;end&gt;
+&lt;playername&gt;：“我在逍遥子的大雕那里找到这张纸条，似乎他们是西夏人！”&lt;end&gt;
+&lt;npc=3500&gt;：“西夏人？他们来这里做什么？此事定要好好查查。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到段智兴</Value>
+              </txt>
+              <txt>
+                <Value>找到段智兴</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

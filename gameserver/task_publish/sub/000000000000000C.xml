@@ -1,0 +1,599 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000000C" name="高下立判" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=30&gt;：“那陆沉舟倒不失为一条汉子。现在我丐帮求贤若渴，若能将他收服，是一大助力。你替我去探望探望他吧。”&lt;end&gt;
+&lt;playername&gt;：“恩。我对这粗直汉子倒也颇有好感。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>41</Value>
+              </dialognpc>
+              <number>
+                <Value>410</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“沉舟兄，在小楼里住得还习惯吗？”&lt;end&gt;
+&lt;npc=41&gt;：“哈哈，是&lt;playername&gt;啊。习惯习惯，骨头都快住软了。我老陆江湖上风雨了多少年，还真没享过几天清福。若不是你把俺抓起来，也没这福分。要感谢你哟。”&lt;end&gt;
+&lt;playername&gt;：“……太客气了。”&lt;end&gt;
+&lt;npc=41&gt;：“不过我老陆就是个劳苦的命，若石帮主放我走，我便回盐帮；若不放，俺就在这小楼里吃空你们帮会，哈哈。”&lt;end&gt;
+&lt;playername&gt;：“你这个家伙，还真是……无赖啊。”&lt;end&gt;
+&lt;npc=42&gt;：“陆沉舟，下来受死吧。”&lt;end&gt;
+&lt;npc=41&gt;：“苏有想？你们不是也潜入丐帮了吗？怎么又来找我。是来救我的？”&lt;end&gt;
+&lt;npc=43&gt;：“救你？你这个卖主求荣的混蛋！帮主知道计划败露，已经改命弟兄们来杀掉你这个叛徒了。”&lt;end&gt;
+&lt;npc=41&gt;：“叛徒？苏有想，老子在盐帮出位的时候还没你呢！你说话嘴巴里放干净点。”&lt;end&gt;
+&lt;npc=43&gt;：“哈哈哈，反正你今天横竖一死，不如告诉你真相。就是我给帮主报的信，你死了，你的位置就是我的了。”&lt;end&gt;
+&lt;npc=41&gt;：“帮主他就信了吗？”&lt;end&gt;
+&lt;npc=43&gt;：“哼。你这一门心思干死事的东西，帮主也早看你不惯了，要不为何将这等危险的差使派给你来做？黄泉路上再想个明白吧。”&lt;end&gt;
+&lt;playername&gt;：“有我在，你们杀得了陆大侠吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=41&gt;：“苏有想武功不错，一切小心。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去藏云轩听听陆沉舟近日的想法</Value>
+              </txt>
+              <txt>
+                <Value>去藏云轩听听陆沉舟近日的想法</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18200</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>替陆沉舟打败前来追杀的盐帮高手苏有想</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>43</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将打败盐帮杀手的事情告诉陆沉舟</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>41</Value>
+              </dialognpc>
+              <number>
+                <Value>410</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“陆兄，你不要焦虑，事情总有解决的办法。”&lt;end&gt;
+&lt;npc=41&gt;：“我陆某人八岁流落江湖，十三岁加入盐帮，如今三十有三。整整二十年啊，二十年的耿耿忠心，竟然敌不过一张嘴，让人心寒啊。”&lt;end&gt;
+&lt;playername&gt;：“陆兄……”&lt;end&gt;
+&lt;npc=41&gt;：“唉……罢了。我即使回去，也已不容于盐帮，那便跟随石帮主，干他娘的几件大事！”&lt;end&gt;
+&lt;playername&gt;：“太好了，我这就去禀告帮主。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=41&gt;：“加入丐帮之后，不知道还有没有这么好的招待！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将打败盐帮杀手的事情告诉陆沉舟</Value>
+              </txt>
+              <txt>
+                <Value>将打败盐帮杀手的事情告诉陆沉舟</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>16</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20100</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将陆沉舟决定归顺丐帮的好消息回报给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，陆沉舟已答应加入丐帮了。”&lt;end&gt;
+&lt;npc=30&gt;：“哦？他这样的人，怎么会轻易回心转意的。”&lt;end&gt;
+&lt;playername&gt;：“说来话长，原来盐帮潜入祭奠礼场的高手并不只陆沉舟一支人马。另外一支由一个叫苏有想的人为首，他们知道扰乱礼场的计划无法完成，便伪称陆沉舟叛入了我丐帮，将计划全盘泄露给我们。”&lt;end&gt;
+&lt;npc=30&gt;：“以徐彬剑多疑狭隘的心胸，他是不是相信了。然后命这批人改为诛杀陆沉舟。”&lt;end&gt;
+&lt;playername&gt;：“正是。”&lt;end&gt;
+&lt;npc=30&gt;：“真是件喜事，你干得不错。不过祭奠礼举行在即，我这里急等处理的事太多，稍后才能与陆兄弟详谈。”&lt;end&gt;
+&lt;npc=44&gt;：“报！”&lt;end&gt;
+&lt;npc=30&gt;：“不要大声喧哗，让宾客们看到成什么样子。”&lt;end&gt;
+&lt;npc=44&gt;：“帮主，淮北分舵的弟子在外英雄冢……”&lt;end&gt;
+&lt;npc=30&gt;：“怎么了？”&lt;end&gt;
+&lt;npc=44&gt;：“醉酒闹事，高呼要进入封锁的墓园祭奠前辈，与执法弟子起了冲突，将我执法弟子打死一人打伤三人。而且……被围观的宾客们全看到了。”&lt;end&gt;
+&lt;npc=30&gt;：“醉酒？闹事？就在这礼场之外，当着我丐帮先烈的千百双眼睛，当着世人的千百双眼睛，这是耻辱！奇耻大辱！&lt;playername&gt;，把他们全给我抓起来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=30&gt;：“&lt;playername&gt;，把醉酒闹事的全给我抓起来！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>将陆沉舟决定归顺丐帮的好消息回报给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>将陆沉舟决定归顺丐帮的好消息回报给石轩辕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>21600</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>石轩辕命我将所有醉酒闹事者抓起来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>45</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,144,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>22800</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将捉到的醉汉带到石轩辕处</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>30</Value>
+              </dialognpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“帮主，人都抓来了。”&lt;end&gt;
+&lt;npc=30&gt;：“通知下去，祭奠大礼准时举行！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将捉到的醉汉带到石轩辕处</Value>
+              </txt>
+              <txt>
+                <Value>将捉到的醉汉带到石轩辕处</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000000D</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{144,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

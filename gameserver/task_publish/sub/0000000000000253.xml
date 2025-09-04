@@ -1,0 +1,408 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000253" name="马帮行" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4639&gt;：“你看起来面生，不是我马帮内部的成员吧。” &lt;end&gt;
+&lt;playername&gt;：“回禀乌拉帮主，我乃义军&lt;playername&gt;奉朝廷之命特来与帮主商议一件重要的事情。” &lt;end&gt;
+&lt;npc=4639&gt;：“哈哈哈，我们马帮的人都是贫苦的马夫和穷人。成年累月的行山运货，都是提着脑袋干事儿的！莫非皇帝老儿要我们运送东西去临安？” &lt;end&gt;
+&lt;playername&gt;：“不，不，马帮的兄弟做事讲义气，讲原则这都是在江湖之中出了名的。请帮主将左右摒去。” &lt;end&gt;
+&lt;npc=4639&gt;：“小五，小六你们先下去吧。” &lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4639</Value>
+              </dialognpc>
+              <number>
+                <Value>128</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4639&gt;：“义军我倒是听过，江湖中很多侠客愿意为义军出力办事，前几年我马帮运货途中遇险还是义军中的士兵帮我们解了围。你此次来到底所为何事。”&lt;end&gt;
+&lt;playername&gt;：“我大宋休养生息几十年，时下又值北方金国与蒙古散部交战频繁，朝中上下一致认为现在是北伐金国收复故土的好时机，打仗讲究兵马未动粮草先行。而粮草的运输还要通过陆路和水路，水陆路方面我想没有比马帮更在行的朋友了，若乌拉帮主愿意协助战事的后勤工作，怕是再好不过了！”&lt;end&gt;
+&lt;npc=4639&gt;：“我倒是有心帮你，可现在马帮里目前的情况比较混乱，相信你也感觉到了。由于这一带山高林密、气候炎热，是有名的烟瘴之乡，而且路上有峭壁深涧，山中有饿虎猛兽，沿途还有土匪的骚扰。我帮内的几名兄弟已经被饿虎咬伤，帮中接的茶叶等货物也开始短缺，若你肯帮我将这些烦忧解决，我自然有余力帮你。”&lt;end&gt;
+&lt;playername&gt;：“帮主无须烦忧，这些事情包在&lt;playername&gt;身上吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与乌拉查帮主对话</Value>
+              </txt>
+              <txt>
+                <Value>与乌拉查帮主对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>应乌拉查帮主的请求将猛兽干掉</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4640</Value>
+              </fightnpc>
+              <number>
+                <Value>128</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4641</Value>
+              </fightnpc>
+              <number>
+                <Value>128</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>猛兽隐患已除，我还要帮乌拉帮主采摘些茶叶。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>120000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4642</Value>
+              </dialognpc>
+              <number>
+                <Value>128</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{普洱茶,20,1,837,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>采集普洱茶%d/8份。</Value>
+              </txt>
+              <txt>
+                <Value>采集8份新鲜的普洱茶</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将普洱茶带给乌拉查帮主。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4639</Value>
+              </dialognpc>
+              <number>
+                <Value>128</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4639&gt;：“&lt;playername&gt;，我代表马帮所有兄弟感谢你。”&lt;end&gt;
+&lt;npc=4639&gt;：“自古以来马帮所行走的各条线路，自然环境都异常危险艰苦。风霜雨雪，大山大川，毒草毒水，野兽毒虫，瘟疫疾病，随时随地都能置我马帮于死地。”&lt;end&gt;
+&lt;npc=4639&gt;：“绝大部分时间的野外生活，对任何一个赶马人和马锅头都是严峻的考验。不知有多少赶马人和马锅头就这样弃尸荒野，有时甚至连收尸的人都没有。马帮有冒险精神，几乎所有买卖兄弟们都是提着头去做的。对于恩人我们更是滴水之恩涌泉相报，你所说的帮助朝廷伐金这件事我已与帮众兄弟商议过了，大部分人是赞成的。”&lt;end&gt;
+&lt;playername&gt;：“如此甚好。马帮兄弟们重情重义，吃苦耐劳，我今天算是见识到了，&lt;playername&gt;实在佩服。时候不早了，我也该告辞了，后会有期。” &lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与乌拉查帮主对话</Value>
+              </txt>
+              <txt>
+                <Value>与乌拉查帮主对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{837,}</Value>
+              </taskitem>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

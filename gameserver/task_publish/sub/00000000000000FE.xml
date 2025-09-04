@@ -1,0 +1,324 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000FE" name="找出奸细" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=552&gt;：“看&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;一身正气，也算是同道中人。不知可否助我一臂之力？”&lt;end&gt;
+&lt;playername&gt;：“请讲！”&lt;end&gt;
+&lt;npc=552&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;既然来此，当知此处历来为兵家必争之地。此地为金和西夏接壤之地，历来摩擦不断，着实苦了这一带的百姓。但更为可恨的是这些守军不能固守阵地，却要出来劫掠百姓。”&lt;end&gt;
+&lt;playername&gt;：“还有这样的事情？”&lt;end&gt;
+&lt;npc=552&gt;：“这里地处边关，很多时候补给不上，这些守军就打起了百姓的主意。他们扮作马贼四处劫掠，将劫掠所得瓜分一空，却上报给朝廷是敌军所为。这种行为在金军和西夏军中均有发生，却以金军为甚。此番我便是奉宫主之命来制止这些丧尽天良的守军。”&lt;end&gt;
+&lt;playername&gt;：“那你打算怎么做？”&lt;end&gt;
+&lt;npc=552&gt;：“ 马贼和守军本是一路人，他们所用马匹均有马牌，而这些马牌的制式是一摸一样的。只要取到马贼和守军的马牌，拿到守军统领察将军那里，他便知道所为何事了。我在宫里修行多年，不想和这等恶人交往，我看&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;也是侠义中人，所以才想请代我前往转告察将军，若执迷不悟，千琼宫必不会放过他。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2133</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <taskitem>
+                <Value>{87,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2132</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <taskitem>
+                <Value>{304,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将马牌带给金军察将军</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1214</Value>
+              </dialognpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1214&gt;：“你是何人？竟然给闯入我金军大营？”&lt;end&gt;
+&lt;playername&gt;：“察将军请看这个！”&lt;end&gt;
+&lt;npc=1214&gt;：“你这是什么意思？”&lt;end&gt;
+&lt;playername&gt;：“明人不说暗话，这一边是我从马贼身上取到的马牌，这一边是我从将军的铁鹞子身上取得的马牌，察将军难道真的不明白吗？”&lt;end&gt;
+&lt;npc=1214&gt;：“你……你怎么会知道？”&lt;end&gt;
+&lt;playername&gt;：“要想人不知，除非己莫为。我来是想告诉将军，此事以后一旦发生，小心你的脑袋。我是无名小卒，不过此话却是代千琼宫所传。察将军你就掂量着办吧！”&lt;end&gt;
+&lt;npc=1214&gt;：“什么？千琼宫……千琼宫……”&lt;end&gt;
+&lt;playername&gt;：“告辞！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将马牌带给察将军</Value>
+              </txt>
+              <txt>
+                <Value>将马牌带给察将军</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将结果告诉苏莫扬</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{87,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{304,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>552</Value>
+              </dialognpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <txt>
+                <Value>震慑之力</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“已按苏兄所说办妥当了！”&lt;end&gt;
+&lt;npc=552&gt;：“多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，若是他执迷不悟，我必定依照前言将他治死！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找苏莫扬复命</Value>
+              </txt>
+              <txt>
+                <Value>找苏莫扬复命</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

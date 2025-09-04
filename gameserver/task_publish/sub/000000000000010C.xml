@@ -1,0 +1,243 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000010C" name="警告太学" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=586&gt;：“我一定要将李本源这个狗贼赶出点苍山……”&lt;end&gt;
+&lt;playername&gt;：“这位兄弟这么气冲冲的所为何事？”&lt;end&gt;
+&lt;npc=586&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;有所不知，前几日铸剑坊来了新的总管事，名叫李本源。此人是大理城内出了名的昏官，由于草菅人命才被发放到这里。铸剑坊的那帮狗贼已经闹得我们山寨鸡飞狗跳了，要是来了李本源那岂不是雪上加霜，哪里还会有活路？”&lt;end&gt;
+&lt;playername&gt;：“那你有何打算？”&lt;end&gt;
+&lt;npc=586&gt;：“李本源这个狗官，就算死一百次也不足为过。可惜我学艺不精，功败垂成。看&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;也是武林中人，要是能为我山寨除此大害，我们必定感激不尽。若是能蒙你带回一些生铁矿石为我们铸造农具，那就是拜谢了！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>585</Value>
+              </fightnpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>584</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>拾取中</Value>
+              </txt>
+              <txt>
+                <Value>得到生铁矿石</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{生铁矿石,20,1,118,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>寻找%d/10份生铁矿石</Value>
+              </txt>
+              <txt>
+                <Value>获得生铁矿石</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1600,3737
+1610,3751
+1614,3749
+1630,3704
+1617,3716
+1629,3744
+1631,3746
+1616,3746
+1634,3705
+1646,3692
+1646,3699
+1647,3747
+1650,3667
+1649,3673
+1658,3723
+1648,3745
+1665,3703
+1668,3711
+1669,3743
+1672,3739
+1664,3753</Value>
+              </string>
+              <string>
+                <Value>35</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将生铁矿石带给点苍山山寨的哈嘎</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>586</Value>
+              </dialognpc>
+              <number>
+                <Value>98</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=586&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;回来了，事情进展如何？”&lt;end&gt;
+&lt;playername&gt;：“还算顺利，这些是我顺手取回的生铁矿石，你拿去给寨民们做农具吧！”&lt;end&gt;
+&lt;npc=586&gt;：“真是太感激你了，我一定会把你的恩德广为传播的！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将矿石带给哈嘎</Value>
+              </txt>
+              <txt>
+                <Value>将矿石带给哈嘎</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{118,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

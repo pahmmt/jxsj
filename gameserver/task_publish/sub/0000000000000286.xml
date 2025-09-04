@@ -1,0 +1,381 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000286" name="巫之惑" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“前辈可是白蛮大长老，古羽纳斯？这灵壁泊如今甚危险， 前辈来此意欲为何？”&lt;end&gt;
+&lt;npc=5176&gt;：“我白蛮一族受到大理皇帝的特别照顾，许多年来一直休养生息。我白蛮一族本是在那苗疆之地自给自足，可乌蛮族多年来不断的侵扰，近来更是与金军勾结用巫蛊之术对付大宋军队，因我白蛮一族对巫蛊之术比较了解，所以大理皇帝特地派我族来帮助宋军。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5176</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5176&gt;：“&lt;playername&gt;，我听长辈说以前乌蛮族和白蛮族和睦相处，就像一家人一样，最近一百年才出现两族的战争，对于这件事情，老族长和一些族里的老人都觉得很疑惑，但是没有人可以解开这个疑团。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;早年曾与乌蛮一族的人有过接触，其实他们并非如外界所说那般十恶不赦。”&lt;end&gt;
+&lt;npc=5176&gt;：“&lt;playername&gt;说的有理，可乌蛮族部分力量此次也来到了灵壁泊，他们却是受了金人的指使，据我所知，他们正在金军营地的秘道中进行着不可告人的交易。”&lt;end&gt;
+&lt;playername&gt;：“这乌蛮一族竟然如此狡猾，他们做的究竟是什么样的交易？”&lt;end&gt;
+&lt;npc=5176&gt;：“乌蛮族擅用巫蛊之术，这巫蛊之术腐蚀人心，会使人恶念丛生，在白蛮中这是大禁忌，而要使用这巫蛊之术必定有巫蛊兽在此间作怪。”&lt;end&gt;
+&lt;npc=5176&gt;：“老夫想请你进入金军密地，铲除乌蛮一族，并从巫蛊兽身上拿到巫蛊灵珠。这一去甚是危险，你要多加小心才是。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与古羽纳斯对话</Value>
+              </txt>
+              <txt>
+                <Value>与古羽纳斯对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按长老要求击杀乌蛮一族女巫和祭司</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5177</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5178</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>这乌蛮一族似乎在进行着某种仪式，想必便是白蛮族长老口中提到的巫蛊之术吧。&lt;end&gt;
+古羽纳斯长老还曾经提及到巫蛊兽身上的巫蛊灵珠，这巫蛊兽正被一群乌蛮女巫和祭司围在中间，我必须得到这神兽身上的巫蛊灵珠才能化解这场对大宋的危机。&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>150000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5179</Value>
+              </fightnpc>
+              <number>
+                <Value>573</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,860,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将得到的巫蛊灵珠交予古羽纳斯长老吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5176</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“古羽纳斯前辈，晚辈回来了，那金军果然有庞大的秘密基地，我偷偷潜入其中果真见到了乌蛮众人正在进行着祭祀仪式，经过一番纠缠终于得到了蛊灵珠。”&lt;end&gt;
+&lt;npc=5176&gt;：“多少年了……乌蛮族很多离开寨子，自从他们修炼了巫蛊之术后，都有些心智不明，他们变的残暴嗜血，对我们白蛮族进行袭击，白蛮族的族人不甘被乌蛮族欺负，于是奋力还击，引发了黑白蛮之间的战争和近百年来不共戴天之仇。“&lt;end&gt;
+&lt;npc=5176&gt;：“不过这并不是我想看到的……不管怎样今天你立了大功！等打了胜仗回去后，我定然用白蛮族最高的礼节款待你一番，哈哈……哈哈……”&lt;end&gt;
+&lt;playername&gt;：“这些是&lt;playername&gt;应该做的。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与古羽纳斯对话</Value>
+              </txt>
+              <txt>
+                <Value>与古羽纳斯对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{860,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

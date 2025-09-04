@@ -1,0 +1,323 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000CD" name="神秘窃贼" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=212&gt;：“藏经阁遇盗，玄难大师忙于整理被盗典籍名册，一时无暇捕盗，此事贫僧义不容辞。”&lt;end&gt;</Pop>
+      <Start>&lt;playername&gt;：“大师，藏经阁被盗了？怎会忽然出了这等匪夷所思之事。”&lt;end&gt;
+&lt;npc=212&gt;：“哎，乃是为内贼所盗。昨日夜间，藏经阁把守弟子被人打晕，几部重要典籍失踪，连空相大师东渡的法器也遭窃走。方丈大为震惊，要求我等务必在三日内捉拿盗贼，查明原委。”&lt;end&gt;
+&lt;playername&gt;：“这四海之大，若让他们出得寺来，又如何去找？”&lt;end&gt;
+&lt;npc=212&gt;：“恩，贼子既然早有所备，必然事先想好了逃逸线路。如今各条大小要道上皆有我少林弟子追查，却一无所获，证明贫僧所断不差。”&lt;end&gt;
+&lt;playername&gt;：“照这样看，大师该是获得了什么线索？”&lt;end&gt;
+&lt;npc=212&gt;：“藏经阁玄难大师是贫僧好友，如今他正清查典籍名册，这个忙贫僧当然要帮他。所幸平日里交了些朋友，据名医张善德透露，这伙人目前躲在一座废庙中避风头，似乎在等待什么人来接。若果是如此，则时不我待，需要尽快找到掌管废庙钥匙的僧人，打开庙宇，夺回典籍，并将首犯澄乾押送回贫僧这里。我总觉得此事事有蹊跷，需得盘问他一翻查清原委。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;step=4&gt;
+&lt;npc=212&gt;：“澄乾竟是遭人所迫，那些人乃天忍教众。他们设计以美色引诱澄乾，又以同样计谋将其他僧人强逼为己用。竟真让他们窃走了镇寺之宝《易筋经》。亏得施主及时阻止，再迟一刻，恐怕他们便要逃逸了。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1709</Value>
+              </number>
+              <number>
+                <Value>3820</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>找到破庙</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到那独自把风的假冒僧人，从他身上可以搜出进入废庙的钥匙</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>401</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <taskitem>
+                <Value>{39,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.4</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>进入佛塔打败众潜逃僧人，抓住罪魁祸首的澄乾</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>402</Value>
+              </fightnpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{39,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将元凶澄乾押回玄苦大师处亲自弄个清楚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">212</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>397</Value>
+              </dialognpc>
+              <number>
+                <Value>1683</Value>
+              </number>
+              <number>
+                <Value>3766</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“好个贼和尚，还要跑吗？”&lt;end&gt;
+&lt;npc=397&gt;：“哎……你有所不知，在下也是遭人所迫。”&lt;end&gt;
+&lt;playername&gt;：“你乃堂堂少林武僧，什么人可以胁迫你。出家人不要打诓语。”&lt;end&gt;
+&lt;npc=397&gt;：“哎……在下下山办事时，遭人以药迷晕，破了酒色二戒，若被说破，便不要在这世上活了。贼人们说了，窃走这几部典籍，他们抄写后必当原物送还的。”&lt;end&gt;
+&lt;playername&gt;：“好个原物送还！澄乾你糊涂！已经错了一步，还要错下去吗！”&lt;end&gt;
+&lt;npc=397&gt;：“……我……或许你是对的。无论结果如何，我都不该再做有辱少林之事了。罢了罢了，我随去吧。什么责罚，我都认了。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>403</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1826</Value>
+              </number>
+              <number>
+                <Value>3570</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1701,3770
+1701,3808
+1708,3818
+1744,3785
+1772,3678
+1778,3617
+1793,3582
+1801,3551
+1822,3530
+1834,3550</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

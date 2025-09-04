@@ -1,0 +1,277 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001A5" name="故辽奇才" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=813&gt;：“&lt;playername&gt;，要辛苦你再走一趟。金国近来似乎出了一位奇才。此人是故辽国人，被完颜襄所挖掘重用。但我们对此人的消息一无所知。如果说鞑靼人与我国之间还隔着一个金国的话，那金国的动向就必须引起我们的高度警惕了。”&lt;end&gt;
+&lt;playername&gt;：“在下这就去办。”&lt;end&gt;
+&lt;npc=813&gt;：“你可前往汴京，与我安插在那里的细作王小七接头，从他那里入手调查此人。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1843</Value>
+              </dialognpc>
+              <number>
+                <Value>23</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小七兄弟，我是赵相派来与你接头之人。”&lt;end&gt;
+&lt;npc=1843&gt;：“此处并不隐秘，我似乎被人暗中跟踪了。那辽国人十分警醒，我只查到，近日他派人秘赴蜀冈秘境。你可从此入手，之后不要再找我，恐怕我已经暴露了。”&lt;end&gt;
+&lt;playername&gt;：“ 那你一切小心！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与南宋在汴京的细作王小七接头</Value>
+              </txt>
+              <txt>
+                <Value>与南宋在汴京的细作王小七接头</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>迅速去蜀冈秘境查明辽国人所为的动机</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1844</Value>
+              </fightnpc>
+              <number>
+                <Value>117</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1845</Value>
+              </fightnpc>
+              <number>
+                <Value>117</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1846</Value>
+              </fightnpc>
+              <number>
+                <Value>117</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“这辽国人手下所绘制的，居然是蜀冈秘境的地图，而且山川河流无不绘制精确。我从未在大宋见过这种准确详实的地图，看来辽国人果然是为入侵大宋在做准备。”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>56000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>813</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“赵相，我查到辽国人的手下正在蜀冈秘境绘制地图，而且极为精确，看来他在着手准备入侵大宋了。此人在对付鞑靼人的同时，已经未雨绸缪，对我大宋地形打探得细致入微，实在不可小觑。”&lt;end&gt;
+&lt;npc=813&gt;：“嗯，我已得到消息，此人名唤耶律楚材，天文地理无不精通，琴棋书画俱臻化境。实在是个难缠的对手。我已请动翠烟门主尹筱雨北上查探此人弱点，辛苦你了。”&lt;end&gt;
+&lt;playername&gt;：“尹门主也是心有七窍的机灵过人之女子，必然能马到成功。”&lt;end&gt;
+&lt;npc=813&gt;：“唉，如今周遭强敌都得到了有力臂助，我大宋若再不励精图强，则形势危已。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将此事速速禀明赵相</Value>
+              </txt>
+              <txt>
+                <Value>将此事速速禀明赵相</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

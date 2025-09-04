@@ -1,0 +1,242 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000119" name="找出“线头”" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=569&gt;：“如果明天再找不回子母环，那兄弟们都要枉死了……”&lt;end&gt;
+&lt;playername&gt;：“这是怎么回事？”&lt;end&gt;
+&lt;npc=569&gt;：“你有所不知，前些日子有一伙采砂人在河滩上发现了一副子母环。齐王知道后花高价买来这副子母环欲献给皇上，没想到此宝在押送的过程中从小弟手里失了去。齐王责令我和众位兄弟三日内寻回子母环否则就上书给皇上，到时候我等就只有死路一条了。”&lt;end&gt;
+&lt;playername&gt;：“这子母环是什么宝贝值得齐王如此大动肝火？又有谁会对此物如此动心，竟敢拦截贡品？”&lt;end&gt;
+&lt;npc=569&gt;：“子母环的妙处在若是一人带子环，一人带母环，则子环可以感受到母环的方向所在。齐王曾经当面试过，带着母环的人无论在什么方位都会被子环找到。国内近来崛起一个叫做影子会的组织，据说其中有一队叫做如影的成员专门负责夺取异宝再寻找买主。我想子母环十有八九是被他们夺去。”&lt;end&gt;
+&lt;playername&gt;：“既然知道为何不去追还反而在此唉声叹气？”&lt;end&gt;
+&lt;npc=569&gt;：“我乃御前侍卫统领，需随时待命，若是前去则是擅离职守也是死罪，再则当日已有交锋，实在不是对方敌手。我听闻如影在风陵渡设有秘密基地，因此才四处寻人前往夺宝。可是这人海茫茫，谁又能帮我？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>100</Value>
+              </number>
+              <number>
+                <Value>1737</Value>
+              </number>
+              <number>
+                <Value>3394</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>去风陵渡的如影秘密基地</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：(此处果然有众多如影隐匿在此，看看子母环是否在他们身上。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>从如影处寻回子母环</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1032</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{104,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将夺回的子母环带给汴京府郜楠</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>569</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你且看下丢失的是否此物？”&lt;end&gt;
+&lt;npc=569&gt;：“待我看看……果然是子母环，恩人哪！这次我等兄弟都有救了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将子母环带给郜楠</Value>
+              </txt>
+              <txt>
+                <Value>将子母环带给郜楠</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{104,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

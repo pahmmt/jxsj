@@ -1,0 +1,187 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000209" name="消失的人-队友" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>在这座古城的入口，竖有一块残旧的石碑，上面的文字早已被沙漠中的风沙磨蚀得斑驳不堪，似乎是记录了一段关于这座城市的往事。&lt;end&gt;
+已经无法从仅有的文字中得知这里究竟发生了什么样的事情，然而从城墙上的残砖破瓦、随风飘扬的破白幡和满地散落的纸钱上我感受到了凄凉与无助，这绝对不会是一段普通的故事。&lt;end&gt;
+拿起武器，来解开这座古城的秘密吧！&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>RequireTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>2015</Value>
+              </number>
+              <number>
+                <Value>302</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <txt>
+                <Value>去到古城的天火祭坛，解开那里的秘密</Value>
+              </txt>
+              <txt>
+                <Value>去到古城的天火祭坛，解开那里的秘密</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在废墟的深处找到这座城市原来的主人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2725</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“终于还是出现了，这座城市以前的主人。”&lt;end&gt;
+&lt;npc=2725&gt;：“多少年前，这里曾经是那么的繁华，安定，城墙是那么的牢固，将士们手中的武器是那么的锋利。然而……现在，你看看这里变成了什么样的地方！”&lt;end&gt;
+&lt;npc=2725&gt;：“走吧，陌生人，走吧……即使你把那些蛮人赶跑，也无法再让这里回复到从前般了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>在废墟的深处找到这座城市原来的主人</Value>
+              </txt>
+              <txt>
+                <Value>在废墟的深处找到这座城市原来的主人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValueOnFinish</Function>
+            <Parameter>
+              <number>
+                <Value>2015</Value>
+              </number>
+              <number>
+                <Value>302</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

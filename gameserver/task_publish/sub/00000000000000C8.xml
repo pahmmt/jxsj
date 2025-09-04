@@ -1,0 +1,121 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C8" name="昆仑旧事" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=390&gt;：“那些野人都有着不低的武功，究竟是谁教给他们的呢？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=390&gt;：“在冰穴中居住的野人们四肢粗壮，身上长满了厚厚的绒毛，这些身体特征都帮助他们抵御严寒。奇怪的是，这些野人们都有着不低的武功，而且嘴中含混不清，却时而滚出几句类似人类的语言。究竟这些野人是一出生便在这迷宫中，还是曾经遇到什么变故才被迫逃亡进来的呢？我希望能查个清楚。我这里有一柄长青剑，是上代昆仑派大侠剑皇楚欺天的信物，希望野人们看在剑的面子上，能够给一个答案。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=2&gt;
+&lt;npc=390&gt;：“原来，他们竟然也是我昆仑前辈！这个世上，这个世上……同门之争，让多少人的天良都沦丧掉了啊。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,29,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>48</Value>
+              </dialognpc>
+              <txt>
+                <Value>召唤的小雨</Value>
+              </txt>
+              <number>
+                <Value>20</Value>
+              </number>
+              <number>
+                <Value>3568</Value>
+              </number>
+              <number>
+                <Value>6195</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>江津村出生点上方</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">390</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>391</Value>
+              </dialognpc>
+              <number>
+                <Value>68</Value>
+              </number>
+              <txt>
+                <Value>冰穴野人的秘密</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=391&gt;：“好吧，我已经见到……那柄剑了……那是我师傅的信物。当年，昆仑三子争雄，师傅远遁他乡。我们这些弟子被排挤……到后来，青莲子误信谗言，以为我们也反对他……那天夜里，只有我们跑到了这冰穴中，其他的师兄弟……都被杀死了！人垒着人，血将整个雪山上的冰都融化了！那，那不是人能够做得出来的！我们不敢再出去了，出去了也不知道怎样生活了。便在这雪洞里度过……余生吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=391&gt;：“希望世界和平。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,489 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000021B" name="金卢锤" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3571&gt;：“&lt;playername&gt;，快过来。”&lt;end&gt;
+&lt;playername&gt;：“晚辈在此。” &lt;end&gt;
+&lt;npc=3571&gt;：“上一次你和老夫的赌约你可还记得？”&lt;end&gt;
+&lt;playername&gt;：“晚辈不敢忘！是和您的对弈之约。今日让晚辈来此可是为了此事么？”&lt;end&gt;
+&lt;npc=3571&gt;：“非也，非也。老夫今日请你来是有另外一件事想要拜托你去办。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“你可听说过有一把名为金卢锤的武器？”&lt;end&gt;
+&lt;playername&gt;：“晚辈似有耳闻，却并不清楚这武器的详细情况。”&lt;end&gt;
+&lt;npc=3571&gt;：“金卢锤乃从前辽国第一铁匠小鲁班历时十年吸取天地精华锻造出的神器，传言得此神器者武艺日进百倍，能服天下。数十年后风云再起，传闻此锤在金国与西夏边境出现，心怀叵测的一品堂众堂主们想夺得此锤，攫取天下。”&lt;end&gt;
+&lt;playername&gt;：“原来世间真有这般神器，怪不得引来众人纷争，我们可以做些什么呢？”&lt;end&gt;
+&lt;npc=3571&gt;：“希望你尽快查探此事，若有可能将此物物归原主便是，但要注意莫要殃及无辜者性命。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;这便前去。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与龙五太爷对话</Value>
+              </txt>
+              <txt>
+                <Value>与龙五太爷对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>暗访西夏一品堂</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>13</Value>
+              </number>
+              <number>
+                <Value>1710</Value>
+              </number>
+              <number>
+                <Value>3380</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>暗访西夏一品堂</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=3495&gt;：“那件事办的怎么样了？”&lt;end&gt;
+&lt;npc=3491&gt;：“属下已安排人日夜看守，并已请了一神秘武器匠加紧研究其中奥妙，不过近来似乎有走漏风声的嫌疑，很多来历不明的恶徒也打起那锤子的主意。”&lt;end&gt;
+&lt;npc=3495&gt;：“宁可错杀一百，不可放过一个。再加派些人手，务必看好宝物不得有半点闪失。”&lt;end&gt;
+&lt;npc=3491&gt;：“是，属下明白。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>看来事情不妙，要想办法将金卢锤夺回来才行。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5051</Value>
+              </fightnpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <taskitem>
+                <Value>{564,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>11</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将金卢锤物归原主</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>80000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5052</Value>
+              </dialognpc>
+              <number>
+                <Value>1841</Value>
+              </number>
+              <number>
+                <Value>3793</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“阁下可是武器匠小鲁班？”&lt;end&gt;
+&lt;npc=5052&gt;：“正是在下，你是？”&lt;end&gt;
+&lt;playername&gt;：“我乃义军中人，此次前来只因那金卢锤。”&lt;end&gt;
+&lt;npc=5052&gt;：“哈哈哈……金卢锤，竟又是金卢锤！都是些利欲熏心的人啊！义军？我听闻义军乃仁义实力兼备的大军，今日竟也为那锤子而来么？义军也不过尔尔啊。”&lt;end&gt;
+&lt;playername&gt;：“前辈你误解我的意思了。我是受了义军之托，特从西夏一品堂手中将这宝贝抢了回来，我正要将这神器物归原主。要知道这宝贝若是被西夏一品堂占了去，必定要起纷争，将对百姓不利啊！”&lt;end&gt;
+&lt;npc=5052&gt;：“这……物归原主？此话当真？如此我真是要感谢你们了，刚才的话失礼了，万望后生你莫见怪。可话说回来，这个武器放在我这里也不安全，指不定何时又被那些贼子夺了去。”&lt;end&gt;
+&lt;playername&gt;：“请放心，我必然将您护送到隐蔽安全的地方！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>5053</Value>
+              </fightnpc>
+              <number>
+                <Value>120</Value>
+              </number>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>300</Value>
+              </number>
+              <number>
+                <Value>1978</Value>
+              </number>
+              <number>
+                <Value>3764</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <string>
+                <Value>1840,3794
+1827,3778
+1838,3751
+1853,3746
+1886,3723
+1917,3706
+1947,3728
+1977,3763</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过禀告龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{564,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3571</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3571&gt;：“&lt;playername&gt;，你回来啦，我交代的事情可是已经办妥了？”&lt;end&gt;
+&lt;playername&gt;：“太爷，这金卢锤果然在西夏一品堂众堂主手中，我夺回以后又将此锤交给了小鲁班，并将他送到了安全的地方。”&lt;end&gt;
+&lt;npc=3571&gt;：“你做的很好，神器固然是好，但它来到这世上应当是一把仁器，而不是用来杀戮。”&lt;end&gt;
+&lt;playername&gt;：“太爷您说的对。好武器应当让侠义之士使用才是。”&lt;end&gt;
+&lt;npc=3571&gt;：“&lt;playername&gt;真是越来越明理了！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回禀龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value>回禀龙五太爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

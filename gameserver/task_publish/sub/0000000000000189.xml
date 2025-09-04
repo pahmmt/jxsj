@@ -1,0 +1,531 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000189" name="擂台赛" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1458&gt;：“我这百川镖局在成都府的分号，一直是我大哥乌云骢帮忙打理。大哥膝下一子，名曰小龙，是我乌家独苗，视为掌上明珠。今年又逢大举之年，朝廷选拔人才，是个博取功名的好机会，大哥便想让小龙也来试试，出人头地，光宗耀祖。”&lt;end&gt;
+&lt;playername&gt;：“是啊。”&lt;end&gt;
+&lt;npc=1458&gt;：“按照大哥的意思，我就提前在临安为小龙上下疏通，哪知这孩子来到之后很快便和城中的阔少们混在一起，每天出入酒色之所，对武科举之事漠不关心，我镖局的事情无力分身，只能尽心帮大哥维护此事。”&lt;end&gt;
+&lt;playername&gt;：“乌总镖头如果有用得到的，我可以帮忙。”&lt;end&gt;
+&lt;npc=1458&gt;：“那太好了，&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;和小龙年纪相仿，想必能有好办法开导小龙，这眼看着武科场就要开赛了，可否替我督促小龙参加武科场的比试，乌某在此感激不尽了。”&lt;end&gt;
+&lt;playername&gt;：“自当竭力而为，总镖头太客气了。”&lt;end&gt;
+&lt;npc=1458&gt;：“那就好，现在这武科场的皇榜应该已经贴出来了，少侠可以先到公平子那里，把皇榜上考试的具体规范条文记录下来，以通知小龙报考。”&lt;end&gt;
+&lt;playername&gt;：“好说，我这就去办。”&lt;end&gt;
+&lt;npc=1458&gt;：“小龙生性好玩，应该就在临安的烟酒茶肆中，以后的事情就都拜托少侠了。”&lt;end&gt;&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2501</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2501&gt;：“奉天呈运，皇帝诏曰，今颁布武科举考试制度如下：”&lt;end&gt;
+&lt;npc=2501&gt;：“1.开放时间：全天开放。”&lt;end&gt;
+&lt;npc=2501&gt;：“2.报名地点：七大城市的公平子。”&lt;end&gt;
+&lt;npc=2501&gt;：“3.报名入场时间：1分钟，准备时间：1分钟，战斗时间：10分钟。”&lt;end&gt;
+&lt;npc=2501&gt;：“4.擂台比赛形式：允许1 v 1和多对多比赛。”&lt;end&gt;
+&lt;npc=2501&gt;：“5.比赛中任意一方将对方重伤时判胜，在比赛过程中如其中一方离开擂台地图，则另一方直接获胜。”&lt;end&gt;
+&lt;npc=2501&gt;：“6.在擂台中没有重伤惩罚，重伤后，自动转为观战状态。”&lt;end&gt;
+&lt;npc=2501&gt;：“7.在擂台中，无法使用任何传送符。”&lt;end&gt;
+&lt;npc=2501&gt;：“8.擂台记录：玩家参与擂台赛的参赛总场次数。”&lt;end&gt;
+&lt;npc=2501&gt;：“9.朝廷根据参赛举子取得的称号选材，高官厚禄，择优录取。”&lt;end&gt;
+&lt;npc=2501&gt;：“欢迎各位举子踊跃报名，出身不限，广纳贤才。钦此。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>听公平子宣读本次武科举大赛的皇榜</Value>
+              </txt>
+              <txt>
+                <Value>听公平子宣读本次武科举大赛的皇榜</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1459</Value>
+              </dialognpc>
+              <number>
+                <Value>478</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“乌少爷，总镖头让我把这个武科举的皇榜带给你，然后带少爷去武科场报名。”&lt;end&gt;
+&lt;npc=1459&gt;：“老爷子可真行，竟然找到这里来了，麻烦啊，麻烦~~”&lt;end&gt;
+&lt;npc=1459&gt;：“规矩大概都知道了，等我和两位姑娘饮了这杯中酒之后我们在报名处见吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去临安的知春台找到乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>去临安的知春台找到乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>2501</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=2501&gt;：“二位报名参加今年的武科场考试吗？”&lt;end&gt;
+&lt;npc=1459&gt;：“你怎么刚来啊？好慢啊，我这宝马良驹，一盏茶的功夫就到了。”&lt;end&gt;
+&lt;playername&gt;：“我家这位公子报名。”&lt;end&gt;
+&lt;npc=2501&gt;：“好，把名字，家乡住址写在这里就可以了。”&lt;end&gt;
+&lt;playername&gt;：“填好了。”&lt;end&gt;
+&lt;npc=2501&gt;：“武科场规定，来参加考试的举子，要先来观看一下擂台场地，以便做到心中有数，可能会有举子在比赛呦，二位只可观战，不得喧哗。”&lt;end&gt;
+&lt;npc=1459&gt;：“好，那我就先进去了。”&lt;end&gt;
+&lt;playername&gt;：“乌少爷，你等等我啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>到公平子处和乌小龙汇合</Value>
+              </txt>
+              <txt>
+                <Value>到公平子处和乌小龙汇合</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1460</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“咦？小龙怎么不见了。难道观擂的半路就跑回去了？这家伙。”&lt;end&gt;
+&lt;npc=1460&gt;：“少爷，刚才还在这里的，这一转眼的工夫就不见人影了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>报名进入擂台赛场地，在擂台赛场地中寻找乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>报名进入擂台赛场地，在擂台赛场地中寻找乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1459</Value>
+              </dialognpc>
+              <number>
+                <Value>478</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1459&gt;：“有个事帮我解决一下。”&lt;end&gt;
+&lt;playername&gt;：“少爷请说。”&lt;end&gt;
+&lt;npc=1459&gt;：“小声点，今天出来带的银两有些不够，能否今天的酒钱，先帮我付了，改天我加倍还你，如何啊？”&lt;end&gt;
+&lt;playername&gt;：“这个好说，等下我去结账就是了，呵呵。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>这小子半路退缩，去知春台找到乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>这小子半路退缩，去知春台找到乌小龙</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1461</Value>
+              </dialognpc>
+              <number>
+                <Value>478</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1461&gt;：“有乌少侠这样的贵客常驻，真是太有财了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到知春台老鸨，替乌小龙结算酒饭账</Value>
+              </txt>
+              <txt>
+                <Value>找到知春台老鸨，替乌小龙结算酒饭账</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1458</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1458&gt;：“谢谢你这段时间照顾小龙，乌某感激不尽。如果少侠日后有用得到乌某的地方，尽管开口。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将所有的经过回报给乌山青</Value>
+              </txt>
+              <txt>
+                <Value>将所有的经过回报给乌山青</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

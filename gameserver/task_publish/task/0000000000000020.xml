@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="0000000000000020" name="哑老头" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>4</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="00000000000000B4" name="哑老头" describe="青螺岛上有一处隐秘之所，多年来一直打铁锻造，为将士们提供称手的兵器，在这大乱之际，不知道那边情况如何，季叔班总管委托我前去探查一番。&#xD;&#xA;&lt;stepdesc&gt;找到季总管所说的&lt;pos=哑老头,55,1953,3636&gt;。&#xD;&#xA;&lt;stepdesc&gt;按照哑老头的天王枪制作图纸搜集5块&lt;pos=废铁片,55,1943,3643&gt;。&#xD;&#xA;&lt;stepdesc&gt;收集到足够的废铁片，在&lt;pos=哑老头,55,1953,3636&gt;的指点下进行天王枪制作。&#xD;&#xA;&lt;stepdesc&gt;将做好的长枪交给&lt;pos=哑老头,55,1953,3636&gt;。&#xD;&#xA;&lt;stepdesc&gt;将武器的生产情况回报给&lt;pos=季叔班,55,1807,3563&gt;总管吧。" refer="00000000000000B4">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>6</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=92000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=400,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="makepoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="gatherpoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>21</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>6</Value>
+          </dialognpc>
+          <txt>
+            <Value>将武器的生产情况回报给&lt;pos=季叔班,55,1810,3460&gt;总管吧。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>22</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=季叔班,55,1807,3563&gt;，可以接到任务【哑老头】。</Value>
+          </txt>
+          <number>
+            <Value>1</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>22</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

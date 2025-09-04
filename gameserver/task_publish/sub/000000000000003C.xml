@@ -1,0 +1,523 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000003C" name="功亏一篑" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=177&gt;：“那老者讲，要买这掉脑袋的大消息，必须出大价钱。如此重大的事情，付出代价是应当的，可我武当派克己清廉，哪里来这么多银两。”&lt;end&gt;
+&lt;playername&gt;：“我记得&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;曾说过，法人渊中良莠不齐，有些犯了重罪的逃犯，这些人身上往往携带着大笔银两，以便随时逃亡。”&lt;end&gt;
+&lt;npc=177&gt;：“这样恐怕不妥吧？”&lt;end&gt;
+&lt;playername&gt;：“事情紧要，在下并非武当弟子，行事没有制肘，由我来办！”&lt;end&gt;
+&lt;npc=177&gt;：“情况紧急，确实不该被陈规束缚，你来办要方便得多。得到五千两银票后，你可前往老君岩，我与那老者约在石山见面。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1134</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <taskitem>
+                <Value>{176,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去老君岩与魏长风所言那老者交易情报</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>197</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“老先生，我是替百里剑客来与你完成交易的。”&lt;end&gt;
+&lt;npc=197&gt;：“人换不换老夫不关心，钱有没有带足？”&lt;end&gt;
+&lt;playername&gt;：“银票在这里，你点一点。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{逃犯的银票,20,1,176,1,0,3}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>老者将详情写在一封书信中现在兰陵王墓中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=197&gt;：“恩，果然守信，倒是老夫小心眼了。”&lt;end&gt;
+&lt;playername&gt;：“怎么说？”&lt;end&gt;
+&lt;npc=197&gt;：“老夫防着你们一手，预备了一封书信，你们想知道的东西都藏在其中。若你们抓住老夫，老夫死不开口，你们依然问不到一点东西。”&lt;end&gt;
+&lt;playername&gt;：“有书信也好，口传总怕出个差错。那信现在何处？”&lt;end&gt;
+&lt;npc=197&gt;：“便埋在兰陵王墓中。”&lt;end&gt;
+&lt;playername&gt;：“我即刻去取。老先生该知道，那里距此处并不遥远，您若想跑，武当上千弟子，你是跑不掉的。”&lt;end&gt;
+&lt;npc=197&gt;：“老夫自然省得，你不必管我自去取信吧。”&lt;end&gt;
+&lt;playername&gt;：“也好。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1180</Value>
+              </number>
+              <number>
+                <Value>2869</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>找到兰陵王墓</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>4000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先找到老者书信吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1522</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>裁得尺锦书，欲寄东飞凫</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{老者书信,20,1,177,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d个老者书信。</Value>
+              </txt>
+              <txt>
+                <Value>在兰陵王墓取得老者书信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>12000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>书信已经被这些蒙面刺客毁掉了，一定不能放过他们</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2225</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>29000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>信被毁了，老者也不见了踪迹，将这个遗憾的结果回报王重阳吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>198</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“哎，道长，我辜负了你的希望！”&lt;end&gt;
+&lt;npc=198&gt;：“怎么一回事？”&lt;end&gt;
+&lt;playername&gt;：“原本我已经从魏长风那里找到了一位知情人，他在当年曾亲眼目睹天目道长秘闯金人设在襄阳的据点。可惜就在我要从此人口中获取详情时，一伙蒙面刺客忽然出现，将他写明当年之事详情的书信也毁去了。回头去找那位老者，也不见了踪迹！”&lt;end&gt;
+&lt;npc=198&gt;：“这样吗，不必灰心。对方若对那老者早有察觉，他活不过今日。能在如此短的时间内获知消息，还能秘密潜入武当实施狙杀，一击得手，不是一般江湖门派能够办得到的。看来此事与金国脱不了干系。既然知道了这点，总比什么都不知道要强。”&lt;end&gt;
+&lt;playername&gt;：“可是，距离真相，也许我们只差了一步。”&lt;end&gt;
+&lt;npc=198&gt;：“有了头绪，这一步的距离总能被跨越。不必灰心，若整件事的背后是金国人在暗中操纵，我们遇到的困难或许比想象中要大得多。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去南天门找到王重阳</Value>
+              </txt>
+              <txt>
+                <Value>去南天门找到王重阳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000003D</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{177,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

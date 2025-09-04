@@ -1,0 +1,487 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000289" name="太祖秘史" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“小妹妹，你也是这游龙宝库的游龙使者吗？”&lt;end&gt;
+&lt;npc=5188&gt;：“我叫冉冉，宝库入口处的香香便是我的姐姐，我们家族一代之中游龙使者只有一位，也只有这个人所继承的家族技艺是最强悍的，不过我与姐姐也已经守护着这宝库三年有余。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5188</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5188&gt;：“三年前，这宝库还算宁静。在那以前，江湖之上很多贼人对宝库起了歹心，好在大宋朝廷加强了对宝库的防守，加上上一代游龙使武艺超群，三年来都不曾有人前来打搅，不过自从宋金大战展开以来，这宝库便不再太平了。”&lt;end&gt;
+&lt;playername&gt;：“这灵壁泊距离游龙宝库很近，现在上头战役正酣，想是这守库的兵力一部分已经移到了前线，才给了这些盗宝贼机会吧。”&lt;end&gt;
+&lt;npc=5188&gt;：“恩，少侠分析的正是，这宝库最近被夺宝机关人搞的不得安宁，更让人头疼的是这些机关人还威胁到了宝库中一本重要的书籍，那便是太祖秘史，这太祖秘史乃前朝重要遗物，其中记载的是大宋开国以来的重要事件甚至许多秘密，若是落入了贼人之手后果不堪设想，还望大侠能出手相助，将这机关人消灭并且将这秘史夺回来。”&lt;end&gt;
+&lt;playername&gt;：“妹妹切莫焦急，待我前去收拾这些趁虚而入的夺宝机关人，并帮你夺回那书籍。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与徐冉冉对话</Value>
+              </txt>
+              <txt>
+                <Value>与徐冉冉对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先解决了那些可恶的夺宝机关人吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5189</Value>
+              </fightnpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>解决了夺宝机关人，速速将太祖秘史夺回吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5190</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{太祖秘史,20,1,862,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/1本太祖秘史。</Value>
+              </txt>
+              <txt>
+                <Value>你已经收集了1本太祖秘史。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1694,3142
+</Value>
+              </string>
+              <string>
+                <Value>30</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将这重要的书籍带回给冉冉吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5188</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“冉冉妹妹，我已经铲除了那些夺宝机关人，并将这太祖秘史带回来了，这往后你便再不用担心这么重要的书籍会落入他人之手了！”&lt;end&gt;
+&lt;npc=5188&gt;：“小妹在这里先谢过少侠了，不过这宝库已经不再如往日那般安全了，今日隐患已经解决，可指不定哪日贼人又来盗宝，这么重要的书籍还烦请少侠带给灵壁泊战场上的毕再遇大将军，传闻中毕将军有黑马铁面的绰号，毕家军世代良臣值得信任，他日战胜便可将此书带回朝中了。”&lt;end&gt;
+&lt;playername&gt;：“那妹妹在这库中切要小心谨慎，我这便将这太祖秘史带回给毕再遇大将军。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与徐冉冉对话</Value>
+              </txt>
+              <txt>
+                <Value>与徐冉冉对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将太祖秘史带给灵壁泊的毕大将军</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5089</Value>
+              </dialognpc>
+              <number>
+                <Value>569</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5089&gt;：“&lt;playername&gt;，来来来，我灵壁泊战场战事正酣，全赖我军将士训练有素，以及各江湖势力的鼎力支持，你此次前来可是有最新情况禀报？”&lt;end&gt;
+&lt;playername&gt;：“毕大将军，我此次前来乃是带来了那游龙宝库的太祖秘史。那游龙宝库中的游龙使者乃是徐家军的两位小姑娘，她们纵然有天生神力却终是难以对付诸多盗宝贼，这太祖秘史便是我从夺宝机关人手中得到，还望将军妥善保管，待日后我军班师回朝交予皇上。”&lt;end&gt;
+&lt;npc=5089&gt;：“游龙宝库的情况我已经有所了解，最近正打算增派兵力前往驻守，这太祖秘史乃前朝重要的秘密，差点落入贼人的手里，还多谢&lt;playername&gt;及时将其安全送回啊。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value>与毕再遇大将军对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{862,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

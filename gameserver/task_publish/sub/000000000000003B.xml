@@ -1,0 +1,499 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000003B" name="柳暗花明" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=193&gt;：“只是有一个心愿，我现在没有能力去完成了。希望你可以帮我这个忙。”&lt;end&gt;
+&lt;playername&gt;：“你说，只要我能办到的，一定尽力。”&lt;end&gt;
+&lt;npc=193&gt;：“三日后，就是老师的六十寿辰。我这个当徒弟的，这么多年，学艺不精没有闯出什么名堂，身上也没有钱财，不曾给过老师任何安慰，倒是添了不少乱子。这回好不容易寻找到一柄古剑，就藏在这龙虎幻境中，现在身子太虚，怕是无法前去取来了。希望，你可以替我走一趟。”&lt;end&gt;
+&lt;playername&gt;：“这有何难，剑在何处？我这就去取。”&lt;end&gt;
+&lt;npc=193&gt;：“武当可称剑派，门下多有剑痴，若被其他弟子夺去献给了师傅，虽然能要回来，彼此面子上难看。因了这个缘故，我不敢将剑放到自家，而是藏在了虎山石穴中。那里时有猛虎出没，你取剑时定要小心。”&lt;end&gt;
+&lt;playername&gt;：“&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;放心，我必替你取此剑来。”&lt;end&gt;
+&lt;npc=193&gt;：“我一个残废之人，你何必左跑一趟，右跑一趟。若取了剑，便替我送给师傅吧，我也没有脸再见他老人家了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2057</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1521</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>古剑寒黯黯，铸来几千秋</Value>
+              </txt>
+              <txt>
+                <Value>恭喜你!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{古剑无痕,20,1,175,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d把古剑无痕</Value>
+              </txt>
+              <txt>
+                <Value>得到古剑无痕</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>51000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将此剑送呈一叶真人，不知他的心里会有怎样的感觉</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>788</Value>
+              </dialognpc>
+              <number>
+                <Value>434</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“真人，这柄古剑无痕，乃是&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;在伤前费尽周折取来，献给您六十大寿的礼物。”&lt;end&gt;
+&lt;npc=788&gt;：“……”&lt;end&gt;
+&lt;playername&gt;：“真人，您怎么了？”&lt;end&gt;
+&lt;npc=788&gt;：“……没什么。永昌虽然有错，可他自废武功，天大的罪责也已经补偿了。从今日起，遍寻天下，我这个老头子也要找到治愈徒弟的灵药。”&lt;end&gt;
+&lt;playername&gt;：“真人，您有任何的需要，都可以找我。”&lt;end&gt;
+&lt;npc=788&gt;：“&lt;playername&gt;，谢谢你。像你这样的年轻人越来越少了，可惜你不是我的徒儿。”&lt;end&gt;
+&lt;playername&gt;：“真人现下是太伤心了，从&lt;if me.nSex==0&gt;永昌兄&lt;else&gt;永昌大哥&lt;endif&gt;的身上，我学到了许多。”&lt;end&gt;
+&lt;npc=788&gt;：“客座掌教刚才来信找你，说已经有些游龙珏的消息。你过去吧，我想一个人看看这柄剑。”&lt;end&gt;
+&lt;playername&gt;：“那我就退下了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=788&gt;：“客座掌教刚才来信找你，说已经有些游龙珏的消息。你过去吧。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>将此剑送呈一叶真人</Value>
+              </txt>
+              <txt>
+                <Value>将此剑送呈一叶真人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{175,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>62</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>已查到些游龙珏的消息，我必须即刻去找王重阳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>190</Value>
+              </dialognpc>
+              <number>
+                <Value>436</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=190&gt;：“&lt;playername&gt;来了。”&lt;end&gt;
+&lt;playername&gt;：“听说道长已有了游龙珏的消息。”&lt;end&gt;
+&lt;npc=190&gt;：“恩，你可知为何我乃是武当的客座掌教，而非掌教人？”&lt;end&gt;
+&lt;playername&gt;：“在下不知，也奇怪得紧。”&lt;end&gt;
+&lt;npc=190&gt;：“事情要从十年前说起。那时贫道做客武当，与当时的武当掌教天目道长聊得好不投契。有一天清晨，天目道长接到师弟湘江剑侠周云泉的书信，信中言明即将回山探望他。夜间周大侠居然就到了武当山下，但就在上山途中，在数十名武当弟子的簇拥下遭人狙杀。”&lt;end&gt;
+&lt;playername&gt;：“周大侠乃上代武林中人，功力深厚，竟有人可以在武当弟子中取他性命？这也太匪夷所思了。”&lt;end&gt;
+&lt;npc=190&gt;：“当时我也如你这般想。更奇怪的是，天目道长得知此事后愤然一声长啸，将武当之事托付贫道，并言明此事若没有数年光阴，恐难解决。让贫道一定替他守护好武当一派，说罢便率领数名有掌教资格的绝顶高手匆匆下山。从此音信全无。”&lt;end&gt;
+&lt;playername&gt;：“此事也太过蹊跷了。”&lt;end&gt;
+&lt;npc=190&gt;：“不错。据天目道长当年透露的一星半点推测，周云泉与这游龙珏之间恰好有着极大的联系，似乎是护珏者之一。如今游龙珏重现江湖，必与当年之事有莫大干系。若能找到天目道长，这个谜团才能真正解开。”&lt;end&gt;
+&lt;playername&gt;：“护珏者又是何人？”&lt;end&gt;
+&lt;npc=190&gt;：“这一点贫道也苦思不解，唯一接近真相的，或许这游龙珏历代都有守护他的人。后来听你一讲，游龙珏与一张藏宝图必须并用，更让贫道相信自己的推断，这块玉珏的主人在留下他时，定然做过精心的安排以保护玉珏不落入歹人手中。”&lt;end&gt;
+&lt;playername&gt;：“道长莫非发觉了护珏者的下落？”&lt;end&gt;
+&lt;npc=190&gt;：“若贫道猜得不错，周大侠正是护珏者之一！”&lt;end&gt;
+&lt;playername&gt;：“那暗杀他的人，也是为游龙珏而来？”&lt;end&gt;
+&lt;npc=190&gt;：“正是。自天目道长离山之后，多年来贫道一直派得力弟子多方打听，可惜他们却如泥牛入海，消失得不见踪影。近来才让我发现了一些端倪。那是当年曾护送过周大侠的一位道友，他患病将死之时，忽然邀我去探望他。二人独处的时候，这道友讲出了一桩当年的秘闻。在周大侠死去当日，这道友曾见到杀人者以极快的手法从周大侠身上取走了一样东西。”&lt;end&gt;
+&lt;playername&gt;：“莫非，莫非是游龙珏？”&lt;end&gt;
+&lt;npc=190&gt;：“非也。那道友曾是宫廷侍卫，后来看破红尘，出家为道。他的绝技能隔空取物，眼力不同常人。他看清那样东西，心头竟狂跳不已。因为那是一面绣有龙纹的黄帕子，从前在宫廷中的侍卫经历，使他能够分辨出那是只有南宋宫廷中才有的贡绣。”&lt;end&gt;
+&lt;npc=190&gt;：“而杀人者虽然巧妙掩饰，仍被他看出这些人的武功出自关外一路，定与金国有极密切的联系。天目道长正是听到这些消息，才勃然大怒，放下整个武当穷追而去。由于此事极端隐秘，天目道长当年嘱咐他对任何人都不能讲。”&lt;end&gt;
+&lt;playername&gt;：“金国！那这游龙珏为何又出现在了大理，整件事情真是扑朔迷离。”&lt;end&gt;
+&lt;npc=190&gt;：“据武当弟子暗查，凡替金廷从事秘密任务的金人，来到武当附近必会去设在襄阳的秘密据点，由联络人安排其起居行止，行动以及撤离方案和路线。盖因一旦金人落单，必会遭到南宋人的报复。”&lt;end&gt;
+&lt;npc=190&gt;：“当年那刺杀者若真的来自关外，也脱离不了这条路线。从中或许可以查出些什么。此刻我派去调查金国据点的弟子魏长风业已返回，贫道希望你能接手此事。”&lt;end&gt;
+&lt;playername&gt;：“在下必不负所托，将当年天目道长失踪之事查个水落石出。”&lt;end&gt;
+&lt;npc=190&gt;：“十年的时间过去，仿佛是一次眨眼。贫道也不再着急了，去吧。对了，有一位故人来访，你那边有了确凿消息，可来南天门，我在那里见你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=190&gt;：“十年的时间过去，仿佛是一次眨眼。贫道也不再着急了，去吧。对了，有一位故人来访，你那边有了确凿消息，可来南天门，我在那里见你。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>即刻去找王重阳探究游龙珏的消息</Value>
+              </txt>
+              <txt>
+                <Value>即刻去找王重阳探究游龙珏的消息</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>2000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去找调查金人据点的弟子魏长风</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>177</Value>
+              </dialognpc>
+              <number>
+                <Value>443</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“长风道长，在下受掌教所托前来接替你。不知事情进行得如何了？”&lt;end&gt;
+&lt;npc=177&gt;：“渴得慌，容我先喝两口水。”&lt;end&gt;
+&lt;playername&gt;：“不急不急，你慢慢讲。”&lt;end&gt;
+&lt;npc=177&gt;：“我已找到了当年在金国秘密据点任事的一个宋朝老者，此人现已赋闲在家。找到他问起当年之事，这老者透露天目道长确曾秘闯过此处。只是当年知道此事的金人，都纷纷被调离回国。而宋人则一个接一个的离奇死亡，老者因当夜假寐而逃过一劫，实际上他躲在窗内将一切看得清清楚楚。”&lt;end&gt;
+&lt;playername&gt;：“他究竟看到了什么？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>去找调查金人据点的弟子魏长风</Value>
+              </txt>
+              <txt>
+                <Value>去找调查金人据点的弟子魏长风</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000003C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

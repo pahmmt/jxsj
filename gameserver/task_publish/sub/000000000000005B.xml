@@ -1,0 +1,445 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000005B" name="劫难过后" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=759&gt;：“我夫妇也是风闻翠烟门有变，因此星夜赶来，不敢稍有停顿，好在来得还算及时，看来人的武功路数甚为怪异，连我都看不出什么来路。烟儿你可曾看出什么没有？”&lt;end&gt;
+&lt;npc=760&gt;：“呸！你也不怕人笑话！这等腻死人的称呼你也叫得出口。你说的没错，来人武功诡异，我也未曾看出是什么来路。”&lt;end&gt;
+&lt;npc=761&gt;：“这个不简单嘛！前往阵中抓个手下过来不就成了吗？”&lt;end&gt;
+&lt;npc=759&gt;：“丫头真是没大没小，这里这么多长辈哪里有你说话的份！”&lt;end&gt;
+&lt;npc=738&gt;：“这丫头想必就是师妹的千金吧，模样长得真俊俏，脑子也挺灵活的。我等多年未见，想要叙叙旧情，此事不如就由&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;代劳吧，抓几个黑衣人前来询问一番。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CatchNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1146</Value>
+              </fightnpc>
+              <number>
+                <Value>72</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,203,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>44000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>黑衣人捉到了，带回去春梅雅筑看掌门如何发落吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>746</Value>
+              </dialognpc>
+              <number>
+                <Value>466</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=746&gt;：“快说！是谁主使你们来我门中行凶的？”&lt;end&gt;
+&lt;npc=750&gt;：“我等不过是一干小兵而已，都统要我们做什么我们就做什么了，你莫问我，问我也不知道！”&lt;end&gt;
+&lt;npc=759&gt;：“这方圆百里之内，若是能有都统称呼的只怕只有大理段家，我且问你，你可知道都统是几品官衔，都统之上是何官职？”&lt;end&gt;
+&lt;npc=750&gt;：“这……唔唔……啊……”&lt;end&gt;
+&lt;npc=761&gt;：“好狡猾的东西，竟然服用了毒药！”&lt;end&gt;
+&lt;npc=759&gt;：“一个小小兵卒怎么会为了这种事情连自己的性命都不要了，此中果然尚有蹊跷。”&lt;end&gt;
+&lt;npc=747&gt;：“是啊，我也曾听这些黑衣人说什么都统之类的话，而且时不时杂有蛮语，看似极像大理的士兵，不过越是这样越让人觉得可疑。”&lt;end&gt;
+&lt;npc=738&gt;：“想来此事也大有玄机了，游龙珏有富国倾城之力，想要得到他的人自然是多如牛毛了。”&lt;end&gt;
+&lt;npc=749&gt;：“不好了，三妹受了重伤，连丹姥姥都束手无策，这可怎么是好？”&lt;end&gt;
+&lt;npc=738&gt;：“一事不烦二主，大理城中有名医数位，就劳烦&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;带着三妹前往大理城中求医吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>黑衣人捉到了，带回去春梅雅筑看掌门如何发落吧</Value>
+              </txt>
+              <txt>
+                <Value>黑衣人捉到了，带回去春梅雅筑看掌门如何发落吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{203,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>14000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>郦秋水请我带三妹前往大理城中寻医</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>762</Value>
+              </dialognpc>
+              <number>
+                <Value>2118</Value>
+              </number>
+              <number>
+                <Value>3335</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：准备好了吗？我们启程吧！&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>763</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>72</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>2117</Value>
+              </number>
+              <number>
+                <Value>3370</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <string>
+                <Value>2124,3358
+2119,3372
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>52</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>104000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>到春梅雅筑去找钟灵秀</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>746</Value>
+              </dialognpc>
+              <number>
+                <Value>466</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=746&gt;：“三妹的身体怎么样了？”&lt;end&gt;
+&lt;playername&gt;：“她请我带话给掌门，一旦身体好转，就会回到门中。”&lt;end&gt;
+&lt;npc=746&gt;：“如此多谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;了，我自知才疏学浅，很多事情处理不当，才让翠烟门招致如此大祸，现在师姐已从海外归来，此后我翠烟门便由尹含烟做掌门了。”&lt;end&gt;
+&lt;playername&gt;：“这是什么时候的事情？怎么会这么快？”&lt;end&gt;
+&lt;npc=738&gt;：“非常时期，当行非常之治！烟儿你要好好振兴我翠烟门啊！”&lt;end&gt;
+&lt;npc=760&gt;：“是，烟儿一定不辜负师姐和师妹的重托！”&lt;end&gt;
+&lt;npc=738&gt;：“此事了结之后，我便要踏上寻觅的旅途了，我不在门中，你们要照顾好自己啊！”&lt;end&gt;
+&lt;npc=760&gt;：“师姐……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>到春梅雅筑去找钟灵秀</Value>
+              </txt>
+              <txt>
+                <Value>到春梅雅筑去找钟灵秀</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000005C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>54</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

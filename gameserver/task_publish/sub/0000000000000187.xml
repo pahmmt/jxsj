@@ -1,0 +1,179 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000187" name="勇闯白虎堂" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“秋姨，你找我。”&lt;end&gt;
+&lt;npc=3570&gt;：“是的，有个大事要你办，你且听我从头讲来。”&lt;end&gt;
+&lt;npc=3570&gt;：“江湖传闻，盐帮私贩盐货，富可敌国。可自从当代掌门徐彬剑继位后，却大不如前，沦为朝廷鹰犬。据风媒透露，盖因盐帮前代帮主“绝江海”晁显神秘失踪所致。据说这晁显在位时，曾花费十余年时间，倾尽心力，打通大江南北各处关节，与朝廷官吏私下勾结诱以重利，致使盐帮私货所到之处畅通无阻。”&lt;end&gt;
+&lt;npc=3570&gt;：“晁显失踪，那份记录盐帮与三教九流往来联系的名录也一并失踪。这名录中不仅有各处联络人的姓名，更有晁显与官吏们勾结的账簿，若获此物必可胁迫众人就范，做那一本万利的买卖。因此，无论盐帮还是江湖人物，都在疯狂搜寻这名录。”&lt;end&gt;
+&lt;npc=3570&gt;：“近日有消息传来，说晁显乃是在白虎堂被一白衣剑客刺杀，那书录便遗落在当地。因此，江湖人物莫不对白虎堂趋之若鹜，为的就是拿到那本利抵万金的书录。以至于最近白虎堂内贼人为患，白虎堂堂主无技可施，只好请江湖上的各位侠客帮忙除贼，好处就是那些贼人身上的东西都可以拿走。于是各路江湖侠士均云集在白虎堂，一场风雨就要开始了……”&lt;end&gt;
+&lt;playername&gt;：“秋姨，你的意思是，让我也去白虎堂，拿这本书录。”&lt;end&gt;
+&lt;npc=3570&gt;：“是啊，这本书录事关重大，我义军是无论如何也要拿到手的，这事十分凶险，但给别人做我又着实放心不下。白虎堂每个时辰都有，你去找白虎堂接引弟子就可以报名参加。记得，千万不要提及你是义军的人。”&lt;end&gt;
+&lt;playername&gt;：“秋姨放心，您就等我的好消息吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1622</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>神秘帐簿搜取中</Value>
+              </txt>
+              <txt>
+                <Value>得到神秘帐簿</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{秘密帐簿,20,1,262,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>去白虎堂一层取得盐帮的秘密帐簿</Value>
+              </txt>
+              <txt>
+                <Value>去白虎堂一层取得盐帮的秘密帐簿</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨，我拿到了秘密帐簿。”&lt;end&gt;
+&lt;npc=3570&gt;：“孩子，真是辛苦你了，义军应该为你记上一笔大功。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将得到的秘密帐簿带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>将得到的秘密帐簿带给白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{262,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

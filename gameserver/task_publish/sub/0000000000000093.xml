@@ -1,0 +1,825 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000093" name="大理报信" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1105&gt;：“看来还是我哥哥有眼力，不过以你的实力，在军中作一名校尉统领也是屈才。我打算将你举荐到将军直属的亲卫兵那里去，你在那里会有更好的前途。亲卫兵的首领是大将的亲侄子，叫吴信。你可以直接去找他，他就在北边将军的别院里。”&lt;end&gt;
+&lt;playername&gt;：“多谢特使大人栽培！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>72</Value>
+              </number>
+              <txt>
+                <Value>提升等级到72级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到72级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前去拜见吴曦别院的吴信</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1104</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过大人，吴特使派我来加入大人率领的亲卫兵。”&lt;end&gt;
+&lt;npc=1104&gt;：“喔，你便是吴叔叔说的那个人？新兵能够同时获得募兵官和特使两位大人赏识的，只怕近些年来只有你一人了。”&lt;end&gt;
+&lt;playername&gt;：“都是两位大人抬爱，小的不敢居功。”&lt;end&gt;
+&lt;npc=1104&gt;：“两位叔叔既然举荐，我也不能说什么。说起来这也是吴家军的军规，任人唯贤。只要你有足够的能力，就一定可以获得赏识。不过亲卫兵有亲卫兵的规矩，一要保证将军的安全，二要对将军绝对的忠诚，三要绝对服从命令。这些你都可以做到吗？”&lt;end&gt;
+&lt;playername&gt;：“小的可以做到！”&lt;end&gt;
+&lt;npc=1104&gt;：“那好，每一个加入亲卫兵的人为示忠诚和服从都需要经过一个考验，而你的考验就是杀死一名叫做南宫智祥的主簿。此刻就在西南边的小屋一带，你去吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜见吴信</Value>
+              </txt>
+              <txt>
+                <Value>拜见吴信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往西南边的小屋找到一名叫做南宫智祥的主簿</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1113</Value>
+              </dialognpc>
+              <number>
+                <Value>1592</Value>
+              </number>
+              <number>
+                <Value>3591</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“南宫智祥，我奉命来杀死你，你有什么遗言就赶快说吧！”&lt;end&gt;
+&lt;npc=1113&gt;：“我……我……就知道会有这一天的，吴曦此人当真是容不得别人，你杀吧，杀了我他也不会有什么好下场。”&lt;end&gt;
+&lt;playername&gt;：“等等，你说这话是什么意思？”&lt;end&gt;
+&lt;npc=1113&gt;：“什么意思？难道你还不知道吗？没有朝廷的旨意，一再扩兵，这可是造反的迹象。再说，吴曦自从承袭老将军的爵位之后，变得狂妄暴戾，川蜀百姓都受其害。像我们这干追随过老将军的人若是善意规劝，也一样落得个痛斥收场。如今又要派人来杀我，我真是愧对老将军的临终遗言……”&lt;end&gt;
+&lt;playername&gt;：“老先生莫要难过，我带你离开此地。你远走他乡，莫要再回来了，也免得我为难。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1112</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>104</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1537</Value>
+              </number>
+              <number>
+                <Value>3712</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1597,3599
+1611,3612
+1601,3637
+1600,3670
+1592,3694
+1576,3706
+1555,3716
+1537,3712</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.1</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“你远走他乡，莫要再回来了，也免得我为难。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>回去找吴信谎称南宫智祥已被杀死</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>557000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1104</Value>
+              </dialognpc>
+              <number>
+                <Value>104</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过大人，大人吩咐的事情已经办妥了。”&lt;end&gt;
+&lt;npc=1104&gt;：“很好，我果然没有看错你。你有所不知，将军的爵位是世袭自他父亲，这种世袭在我们川蜀之地是很普遍的，不过也最容易引起争议，毕竟我们吴家是一个很大的家族。将军世袭之后，很多人都不服气。将军为了安定人心只是装作未知，孰料这帮奸徒竟然以为将军可欺，想要暗中反叛，要求朝廷革去他的爵位。南宫智祥便是其中一人，枉费将军对他的信任，却勾结将军的堂兄吴喜。”&lt;end&gt;
+&lt;playername&gt;：“吴喜又是何人？”&lt;end&gt;
+&lt;npc=1104&gt;：“此人是将军的堂兄，论战功资历都要胜将军一筹，所以对将军素来不服。如今将军发下密令，要我打击这些顽徒。我已嘱咐雪月筹划此事，你可去助她一臂之力。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到吴信</Value>
+              </txt>
+              <txt>
+                <Value>找到吴信</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>相助雪月打击反对吴曦的势力</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1106</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我奉吴信首领的命令前来相助你打击反对将军的势力。”&lt;end&gt;
+&lt;npc=1106&gt;：“什么势力，不过就是一群无知的喽罗。将军虽然说要我等略作惩戒，我却觉得不然。以将军今日的势力，对付这些人只能是杀一儆百，以儆效尤。若是简简单单的小风小浪，倒会让他们觉得将军有妇人之仁。吴喜虽然是其堂兄，一山容不得二虎，该除掉就要除掉。”&lt;end&gt;
+&lt;playername&gt;：“姑娘这么说我并不同意。统御部下，应当以德服人，若是以兵止兵，无异于火上浇油。虽说眼下也许能收奇效，毕竟治标不治本。依我之见，不如遣人暗中将其兵符盗出，以作警示。这等作法效法红线盗盒，提醒吴喜人头随时掌握在将军手里。事后再遣人将兵符送回，以示将军不愿为难他，让他感恩在心，岂不更好。”&lt;end&gt;
+&lt;npc=1106&gt;：“不错，你的计谋果然要高我一筹，既然这样，这件事情就由你来办，速速将吴喜的兵符盗来与我。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到雪月</Value>
+              </txt>
+              <txt>
+                <Value>找到雪月</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往吴喜所在军营取出吴喜兵符</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1117</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>获取中</Value>
+              </txt>
+              <txt>
+                <Value>得到吴喜兵符</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value>{吴喜兵符,20,1,350,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>取出%d/1个吴喜兵符</Value>
+              </txt>
+              <txt>
+                <Value>从吴喜军营获得吴喜兵符</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将兵符带给雪月</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>464000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1106</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“兵符已经取回来了。”&lt;end&gt;
+&lt;npc=1106&gt;：“你做的很好，看你的样子，似乎在江湖中闯荡过，可曾听说过游龙珏这样东西？”&lt;end&gt;
+&lt;playername&gt;：“听说是一件藏有无尽宝藏的东西，不过却没见过，听说而已。”&lt;end&gt;
+&lt;npc=1106&gt;：“是啊，要是将军能够得到这件宝物，我等的前途可就无量了。对了，将军说是要见你。将军最喜和你这样的后起之秀叙谈，你也别有顾忌。将军此刻就在别院中。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将兵符带给雪月</Value>
+              </txt>
+              <txt>
+                <Value>将兵符带给雪月</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>参见别院中的吴曦</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{350,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1125</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“属下参见将军！”&lt;end&gt;
+&lt;npc=1125&gt;：“不用这么多礼，亲卫兵中都是自己人。我听说你的表现很不错，以后要继续努力。”&lt;end&gt;
+&lt;playername&gt;：“属下一定不负将军所望！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>参见吴曦</Value>
+              </txt>
+              <txt>
+                <Value>参见吴曦</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000094</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

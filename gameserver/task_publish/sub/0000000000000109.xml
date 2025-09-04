@@ -1,0 +1,276 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000109" name="邪月三星仪式" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=588&gt;：“&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;可以帮我一个忙吗？”&lt;end&gt;
+&lt;playername&gt;：“什么忙？”&lt;end&gt;
+&lt;npc=588&gt;：“我叫银羽纳斯，我哥哥叫金羽纳斯。我哥哥小的时候被一只叫做阿利斯的母狼叼了去，他们都说已经被它吃掉了。从那以后我父亲就立志要作一名神射手，杀死阿利斯为我哥哥报仇。不过阿利斯非常狡猾，我父亲同它追逐了好几年都没有得手。前几天我父亲做足了准备，又去捕杀阿利斯了，我有点担心……”&lt;end&gt;
+&lt;playername&gt;：“担心什么？”&lt;end&gt;
+&lt;npc=588&gt;：“我也说不上来，就是有些担心。阿利斯和野狼总会在北方的废墟一带活动，我父亲也是去了那里。&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;可以帮我去那里看看我父亲现在情况怎么样吗？村里的人都不愿意去那里，他们说那里太危险了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>599</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>阿利斯</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=599&gt;：“嘘！小心被野狼发现你的踪迹，它们非常凶残！”&lt;end&gt;
+&lt;playername&gt;：“你便是村里的怒侯纳斯吧？你儿子银羽纳斯很担心你，所以让我来看看！”&lt;end&gt;
+&lt;npc=599&gt;：“唉！银羽这孩子从小就很懂事，要是他哥哥金羽还活着应该也这么懂事吧？……我在这里守了几日了，一直不敢轻举妄动。这群野狼非常警觉，它们对我身上的气味非常熟悉。一旦全扑上来，我也没有应付的法子。所以我准备了有毒的饲饵，想要毒死它们。不过这只对一般的狼有用，但是那头母狼是绝对不会上当的。你愿意帮我这个忙吗？”&lt;end&gt;
+&lt;playername&gt;：“怎么帮你？”&lt;end&gt;
+&lt;npc=599&gt;：“我追逐这头母狼已经几年了，凭我的力量想要杀死它只怕有些困难。比起靠自己的力量杀死它，我宁愿让它被早点被别人杀掉。所以我要请求你的事情便是杀死阿利斯这头母狼，将我做好的毒饵放在野狼活动的地方。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{毒饵,20,1,342,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>找到怒侯纳斯</Value>
+              </txt>
+              <txt>
+                <Value>找到怒侯纳斯</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>杀死阿利斯，放下毒饵</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddObj</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,342,1,0,-1,}</Value>
+              </itemid>
+              <dialognpc>
+                <Value>540</Value>
+              </dialognpc>
+              <txt>
+                <Value>毒饵</Value>
+              </txt>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1572</Value>
+              </number>
+              <number>
+                <Value>2562</Value>
+              </number>
+              <number>
+                <Value>15</Value>
+              </number>
+              <txt>
+                <Value>野狼活动的废墟一带</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>600</Value>
+              </fightnpc>
+              <number>
+                <Value>99</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将阿利斯被杀死的消息带给怒侯纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>599</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“我已经帮你杀死那头母狼了，毒饵也放在那里了。”&lt;end&gt;
+&lt;npc=599&gt;：“太好了！你有没有发现这一带有狼孩出现，我总是觉得这个狼孩有点奇怪，但是却又说不出来哪里奇怪！算了，还是不管了。先回家吧，银羽还在家等我呢。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到怒侯纳斯</Value>
+              </txt>
+              <txt>
+                <Value>找到怒侯纳斯</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

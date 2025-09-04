@@ -1,0 +1,162 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000CA" name="犯戒之僧" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=394&gt;：“恶僧拦路，许多和尚都没有饭吃了，这样下去怎么行？”</Pop>
+      <Start>&lt;npc=394&gt;：“施主你看这佛塔之下，许多僧人头陀低头修行。他们或多或少犯过寺庙中的戒条。原本也无大错，惜乎如今金国统一北方，有些当权者对少林嫉恨如眼中铁钉。少林僧人每犯一丁点过失，都有可能引来金人，招致大祸。是以主持玄慈方丈从大局出发，要求贫僧从严治寺。由此，塔林的犯戒僧人便不断增加。为了安抚弟子们，贫僧便命他们人人挑水往返于塔林之间。”&lt;end&gt;
+&lt;playername&gt;：“这倒是条好主意。既修习了武艺，又磨练了心志。”&lt;end&gt;
+&lt;npc=394&gt;：“不过每天寺里只需一百担水，而僧人们人数又多于一百，因此他们在河边常以比试武艺来决出由哪些人挑水，而挑不到的和尚就要挨饿了。有些恶僧霸占了河口，不允许其他僧人去那里挑水，所以贫僧希望施主能给这些僧人一点惩戒。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2054</Value>
+              </fightnpc>
+              <number>
+                <Value>46</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2055</Value>
+              </fightnpc>
+              <number>
+                <Value>46</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将情况回报给玄悲大师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>394</Value>
+              </dialognpc>
+              <number>
+                <Value>46</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=394&gt;：“阿弥陀佛，虽是受了责罚进入这塔林中，却希望弟子们能明白师傅的苦心。修行之道，吃一分苦，便是离佛又近了一分。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报给玄悲大师</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报给玄悲大师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

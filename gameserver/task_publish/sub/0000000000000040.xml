@@ -1,0 +1,583 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000040" name="哀鸿遍野" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“此事干系重大，有人假冒少林寺空无大师前往武当，讲述了一桩极为重要的秘密。师傅可将此信交予方丈，他自会见我。”&lt;end&gt;
+&lt;npc=3509&gt;：“阿弥陀佛，请施主稍等片刻。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3509</Value>
+              </dialognpc>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>1935</Value>
+              </number>
+              <number>
+                <Value>3648</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>方丈此刻正在塔林西部处理些杂务，请施主立刻前往相见</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让玄悲大师带我过去塔林西部吧</Value>
+              </txt>
+              <txt>
+                <Value>让玄悲大师带我过去塔林西部吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>107000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去塔林西部与少林派方丈玄慈大师相见</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>211</Value>
+              </dialognpc>
+              <number>
+                <Value>446</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“方丈大师，晚辈&lt;playername&gt;，奉武当掌教重阳真人之命，前来少林查询游龙珏现世一事。得蒙方丈相见，不胜感激。”&lt;end&gt;
+&lt;npc=211&gt;：“阿弥陀佛，&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;不必客气，重阳道长将你的来意在信中都已言明。令老衲诧异的是，那假冒的空无所言，堪称一字不差。”&lt;end&gt;
+&lt;playername&gt;：“那假冒空无的话竟全是真的？”&lt;end&gt;
+&lt;npc=211&gt;：“正是。我少林寺多年来一直追查游龙珏的下落，便是想将此玉置于可以控制的范围内，不致歹人得之为祸一方。这假空无在武当出现的前后，大理的翠烟门，川蜀的唐门皆传出了游龙珏惊现的消息。老衲怀疑，其中有人在暗中捣鬼，故意混淆视听。”&lt;end&gt;
+&lt;playername&gt;：“这样做，对他们有什么好处呢？”&lt;end&gt;
+&lt;npc=211&gt;：“这正是老衲担心之处。根据重阳真人的推断，此事应该与西夏一品堂相关。可那李升阳已被囚于文曲洞，这就令人费解了；恐怕此事之中另有玄机？”&lt;end&gt;
+&lt;playername&gt;：“重阳真人正是觉得此事蹊跷，才派晚辈快马赶来少林寺。”&lt;end&gt;
+&lt;npc=211&gt;：“阿弥陀佛，&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;一片仁心，难得之致。现如今的江湖后进，个个惟利是图，鲜少有仁厚胸怀的&lt;if me.nSex==0&gt;侠士&lt;else&gt;侠女&lt;endif&gt;了。&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;只管放心，这件事情老衲定会立即着人调查。”&lt;end&gt;
+&lt;playername&gt;：“既如此，那晚辈就先告辞了。”&lt;end&gt;
+&lt;npc=211&gt;：“何需急于一时。游龙珏之事的端倪，老衲相信可在月内有个交代。重阳真人在信里提到，希望老衲能相助&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;在少林历练一番。等有了游龙珏的消息，再回去报信也不迟。”&lt;end&gt;
+&lt;playername&gt;：“若能在天下武宗少林学艺，晚辈哪有不从的道理。”&lt;end&gt;
+&lt;npc=211&gt;：“如此甚好。老衲有种感觉，少林定要借助&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;的长才。你现下可去寻药王院首座玄苦，随他办事。”&lt;end&gt;
+&lt;playername&gt;：“晚辈遵命！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=211&gt;：“你现下可去寻药王院首座玄苦，随他办事。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去塔林西部与玄慈大师相见</Value>
+              </txt>
+              <txt>
+                <Value>去塔林西部与玄慈大师相见</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>35000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>药王院首座玄苦大师不知是不是个好相处的和尚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>212</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“玄苦大师，在下&lt;playername&gt;，奉方丈大师之命，前来跟随您办事。”&lt;end&gt;
+&lt;npc=212&gt;：“霍霍，怎么从来没有在少林见过你呀。”&lt;end&gt;
+&lt;playername&gt;：“在下，在下是受武当重阳道长所荐，来少林修炼的。”&lt;end&gt;
+&lt;npc=212&gt;：“霍霍，是王掌教的弟子呀，那一定很不错咧。”&lt;end&gt;
+&lt;npc=292&gt;：“大师！大师！”&lt;end&gt;
+&lt;npc=212&gt;：“阿弥陀佛，怎么了哦？”&lt;end&gt;
+&lt;npc=292&gt;：“有几个俺们村的老头，在外面站着站着忽然倒了，是不是中暑了？大师赶紧去看看吧。”&lt;end&gt;
+&lt;npc=212&gt;：“这阴凉的天气，中的哪门子暑？放心，贫僧知道他们是怎么回事。&lt;playername&gt;&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;小姑娘&lt;endif&gt;。”&lt;end&gt;
+&lt;playername&gt;：“弟子在。”&lt;end&gt;
+&lt;npc=212&gt;：“你替贫僧去摘一些橡实过来。”&lt;end&gt;
+&lt;playername&gt;：“弟子遵命。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=212&gt;：“你替贫僧去摘一些橡实过来。&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去找在塔林西部的玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>去找在塔林西部的玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>35000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>玄苦大师命我去橡树岭采摘九颗橡实来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1525</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>岁暮锄犁傍空室，呼儿登山收橡实</Value>
+              </txt>
+              <txt>
+                <Value>得到一个橡实</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{橡实,20,1,182,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/3个橡实</Value>
+              </txt>
+              <txt>
+                <Value>采集到了橡实</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>321000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>采齐了橡实回去交给玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>212</Value>
+              </dialognpc>
+              <number>
+                <Value>66</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大师，橡实我采来了。”&lt;end&gt;
+&lt;npc=212&gt;：“刘贫啊，拿着这些果实回去研碎，捣成粉泡些煮沸的水，做几碗橡实糊糊喂老先生们吃了。”&lt;end&gt;
+&lt;npc=292&gt;：“难道是饿的？不能够啊。寺里每天都舍粥给我们，几个老头在村里也不见得吃得更好些。”&lt;end&gt;
+&lt;npc=212&gt;：“这是一路上饿饱了，吃下些东西，身体反而跟不上咯。照贫僧的话去做吧。”&lt;end&gt;
+&lt;npc=292&gt;：“是，是！谢谢大师，谢谢大师！”&lt;end&gt;
+&lt;npc=212&gt;：“&lt;playername&gt;，橡实不太好采吧。”&lt;end&gt;
+&lt;playername&gt;：“是有些麻烦，有些强壮之辈霸占着，大家都没法靠近。”&lt;end&gt;
+&lt;npc=212&gt;：“呵呵，如果你有空闲的话，可以多去采些橡实，交给刘贫再分发给大家，也算是在这大灾之年帮这些苦命的人做点好事。”&lt;end&gt;
+&lt;playername&gt;：“好的，弟子谨遵教诲。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将采集来的橡实回去交给玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>将采集来的橡实回去交给玄苦大师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000041</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{182,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>97</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

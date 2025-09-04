@@ -1,0 +1,632 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000222" name="生死相阔" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“&lt;playername&gt;，你过来，秋姨正有事找你商量。”&lt;end&gt;
+&lt;playername&gt;：“秋姨，可是朝内又发生了什么事？”&lt;end&gt;
+&lt;npc=3570&gt;：“不，这次秋姨是想你替我义军之中亡故的情报兵办些事情。”&lt;end&gt;
+&lt;playername&gt;：“秋姨请讲！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“梁山泊陆家村有一个叫紫寰的姑娘，紫寰亡夫为大宋安插在金国内部的密探，不幸在执行任务时身亡，而其妻并不知事情来龙去脉。竟是一直在误解着他的丈夫。”&lt;end&gt;
+&lt;playername&gt;：“这女子竟是这般误解了他的丈夫吗？”&lt;end&gt;
+&lt;npc=3570&gt;：“这也怪不得紫寰，我义军中负责打入敌国内部的密探身份都是绝对保密，即便是和家里人也不能透露半分，如若违反便是军法处置。你与紫寰见上一面吧，顺便看看她在生活上可有什么难处。”&lt;end&gt;
+&lt;playername&gt; ：“&lt;playername&gt;即刻启程。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value>与白秋琳对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到紫寰姑娘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5072</Value>
+              </dialognpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5072&gt;：“他抛弃了我，抛弃了他嗷嗷待哺的儿子，他抛弃了他的民族和信仰去为那所谓的大金国而战！”&lt;end&gt;
+&lt;playername&gt;：“紫寰姑娘，请冷静些，事情并没你想像中那般不堪，你误会了！”&lt;end&gt;
+&lt;npc=5072&gt;：“你住口，我不要听！我现在什么也不想听，什么也不想想。”&lt;end&gt;
+&lt;npc=5072&gt;：“看看他叛变带给他的好处吧！他死了！而我和儿子却要遭受到整个大宋的骂名！去把这个手镯放到他的坟墓上吧，这是他临行前送我的东西，我再也不想看到任何和他有关的东西了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{精致的手镯,20,1,568,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与紫寰对话</Value>
+              </txt>
+              <txt>
+                <Value>与紫寰对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将紫寰的手镯放到荒弃的坟包上</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5073</Value>
+              </dialognpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你已经将手镯放在坟包上%d/1次</Value>
+              </txt>
+              <txt>
+                <Value>将精致的手镯放到坟包上</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>竟意外发现了一张便笺，将这个发现带给紫寰吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5072</Value>
+              </dialognpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“紫寰，你看我从手镯中无意间发现的便笺。”&lt;end&gt;
+&lt;npc=5072&gt;：“寰寰，我奉命潜入金国搜取情报，此去金国凶多吉少，若不幸，我为大宋亡，望将孩儿抚养长大——生死相阔，执手相望，今世缘尽，来生缘起。”&lt;end&gt;
+&lt;npc=5072&gt;：“夫君他，他不是叛徒！我夫君不是叛徒，你看见了吗？我夫君是个英雄，是个精忠报国的英雄。”&lt;end&gt;
+&lt;playername&gt;：“是！我此次来正是受义军首领所托前来告知你事情的真相，不想真相自己解开了，这真是天意。”&lt;end&gt;
+&lt;npc=5072&gt;：“我太不应该怀疑他了，我就说他不是那种见利忘义的人！国难当前他怎么会是叛徒？是我紫寰不够了解丈夫，我不是一个合格的妻子啊。”&lt;end&gt;
+&lt;playername&gt;：“姑娘莫要自责，你的夫君九泉之下得知你能理解他想必也会高兴的！”&lt;end&gt;
+&lt;npc=5072&gt;：“对了，这里还有一件重要的事情，夫君生前跟我提过，说是有一些重要的情报被他藏在了一块玉佩中，这玉佩如今落到了一个叫做胡汉五的金国将领手中，若他短期内不能回来，一定要设法取得这玉佩，我当时只顾着骂他的不是，现在想来，夫君似乎早有作出牺牲的准备。”&lt;end&gt;
+&lt;playername&gt;：“这是个重要的消息，我且去将那玉佩取来带回军中，姑娘你也万万保重！”&lt;end&gt;
+&lt;npc=5072&gt;：“紫寰知道，紫寰一定坚强的生活下去并将孩儿抚养长大！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与紫寰对话</Value>
+              </txt>
+              <txt>
+                <Value>与紫寰对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>从胡汉五身上获得梨花佩</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{568,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5074</Value>
+              </fightnpc>
+              <number>
+                <Value>133</Value>
+              </number>
+              <taskitem>
+                <Value>{569,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将藏有秘密的梨花佩交给秋姨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“&lt;playername&gt;，此去可对紫寰姑娘说清楚了？”&lt;end&gt;
+&lt;playername&gt;：“恩！见到她了，也将她的心结解开了，并得知紫寰的丈夫将曾经搜集到的情报落在了一个金国将领身上，我顺利得到了这个梨花佩，相信情报就在这玉佩之中。”&lt;end&gt;
+&lt;npc=3570&gt;：“你做的很好，我义军还有成千上万像你一样的侠客，在国家患难民族兴亡的时刻，他们放下了江湖，放下了彼此的怨与情，都义无反顾的加入到了拯救黎民百姓的行列中来，让我们为这些英雄致敬！”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;只愿我朝百姓丰衣富足，福泽绵长。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{569,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

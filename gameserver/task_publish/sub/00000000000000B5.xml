@@ -1,0 +1,444 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B5" name="鳄鱼之灾" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=308&gt;：“毒鳄害人，一日不除一日不得安宁啊！”&lt;end&gt;</Pop>
+      <Start>&lt;npc=308&gt;：“这岛上的池塘中有些凶狠的鳄鱼，常危害往来岛民，近来又有一个妇人带着孩子路过池塘，人却自那之后就失踪了。”&lt;end&gt;
+&lt;playername&gt;：“这些鳄鱼既然危害如此之大，为何不早日清除？”&lt;end&gt;
+&lt;npc=308&gt;：“阁下有所不知。多年前，杨瑛帮主曾带领帮中得力弟兄围剿过这群鳄鱼，可惜让为首的毒鳄跑掉，如今它们又繁殖了起来，为害一方。我们大哥原本欲出手除害，却遇到意外之事不得不离岛查探。”&lt;end&gt;
+&lt;playername&gt;：“请问阁下的大哥是哪位？”&lt;end&gt;
+&lt;npc=308&gt;：“便是情报房统领裴翼飞了。我们大哥江湖人送外号‘铁手神龙’，武功端的高强。可惜因游龙珏重现江湖之事无法抽身。他离开前告诉我等，鳄鱼经过上次一役，必定多有戒备。若无一味草药，实在没有诱其离开池塘的良计。”&lt;end&gt;
+&lt;playername&gt;：“那如何不去寻找这草药？”&lt;end&gt;
+&lt;npc=308&gt;：“阁下有所不知。这味草药名唤雄胆草，青螺岛上并无出产。一时之间去哪里找？待从外间购买回来，又为时已晚，那群毒鳄不知要害多少岛民。”&lt;end&gt;
+&lt;playername&gt;：“在下倒愿意代劳，跑一跑腿。”&lt;end&gt;
+&lt;npc=308&gt;：“如此甚好。只是大可不必长路跋涉，这岛上的神秘商人便携有此种药材。只是可恨这些奸诈之徒，悬价高昂，根本不是我等负担得起。大哥行前曾言，万不得已之下……便暗抢这帮奸商。可惜我等在岛上多日，都混得脸熟，若被商人们发觉，将来不好相与。若你肯出手相助，那是最好不过了。”&lt;end&gt;
+&lt;playername&gt;：“恩，我知道了。”&lt;end&gt;
+&lt;npc=308&gt;：“但这雄胆草夺来之后，还得经过一番加工，熬制成雄胆香才能起到效果，正好这些日子我帮精通炼药的熊挺长老正在岛上，拿到雄胆草之后，去找熊挺长老，他会传授你这加工药材的技艺。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>情报房弟子：“不知什么缘故，帮主忽然下令禁止抢掠商旅，这任务你是进行不下去了。”</Error>
+      <Prize>&lt;npc=308&gt;：“我们裴大哥是神一般潇洒的人物，凡事不拘小节，凭心而断，弟兄们对他无不万分景仰。”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1171</Value>
+              </fightnpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <taskitem>
+                <Value>{3,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把雄胆草带回给熊挺制药</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1166</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1166&gt;："雄胆草采集到了吗？拿着这口锅，在旁边的火堆熬制片刻就可制成。"</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把雄胆草带回给熊挺制药</Value>
+              </txt>
+              <txt>
+                <Value>把雄胆草带回给熊挺制药</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照熊挺的指点开始熬制雄胆香</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProductWithProcess</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>恭喜你制成了雄胆香</Value>
+              </txt>
+              <txt>
+                <Value>不好意思</Value>
+              </txt>
+              <txt>
+                <Value>开始熬制雄胆香</Value>
+              </txt>
+              <taskitem>
+                <Value>{225,}</Value>
+              </taskitem>
+              <string>
+                <Value>{雄胆草,20,1,3,1,0,0}</Value>
+              </string>
+              <itemid>
+                <Value>{20,1,226,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>3</Value>
+              </number>
+              <string>
+                <Value>{雄胆香,20,1,226,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>1953</Value>
+              </number>
+              <number>
+                <Value>3528</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>305</Value>
+              </number>
+              <number>
+                <Value>0</Value>
+              </number>
+              <string>
+                <Value>右键点击包内大锅熬熊胆香</Value>
+              </string>
+              <string>
+                <Value>右键点击包内大锅熬熊胆香</Value>
+              </string>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>18000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把雄胆香带回给情报房弟子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>308</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=308&gt;：“有了这些雄胆香，便再多鳄鱼老子也要将它逼出来，多谢阁下！今后有用得到在下的地方，只管言语。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把雄胆香带回给情报房弟子</Value>
+              </txt>
+              <txt>
+                <Value>把雄胆香带回给情报房弟子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{226,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{3,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

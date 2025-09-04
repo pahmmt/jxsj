@@ -1,0 +1,183 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D8" name="旧仇" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=431&gt;：“十八年，我等了足足十八年！”&lt;end&gt;</Pop>
+      <Start>&lt;npc=431&gt;：“当年我父一门乃金国望族，母亲确实汉人。一家原本美满，记得那时候，父亲母亲的笑容时常挂在嘴边。可后来父亲为奸臣所害，全家惨遭灭门。”&lt;end&gt;
+&lt;npc=431&gt;：“是时尚且年幼的我恰好与仆人回到宋境省亲，遭此惨况，奴仆们四散而去，我呆在那里，举目无亲，望着云天和远山，心想世道怎会如此？一眨眼，全变了。”&lt;end&gt;
+&lt;npc=431&gt;：“当时恰巧前任掌门天目道长路过，他于心不忍之下搭救了我，从此便在武当山中苦心学艺，希望报当年夙仇。”&lt;end&gt;
+&lt;npc=431&gt;：“如今我邀约了著名风媒婴九问的徒弟前来武当山，就是要查出当年谋害我魏氏一门的仇人下落。那人如今便在龙虎洞二层的墨池水台上等你。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>69</Value>
+              </number>
+              <number>
+                <Value>1496</Value>
+              </number>
+              <number>
+                <Value>2447</Value>
+              </number>
+              <dialognpc>
+                <Value>433</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=433&gt;：“想知道魏长风的身世？谁是他的仇家？哈哈哈哈，老子就是杀他满门之人，今日诓不来他，想必事机已然败露，你既然赶来送死，也不能让你白跑一趟啊。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>432</Value>
+              </fightnpc>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>去墨池中央的石台找到婴九问的徒弟</Value>
+              </txt>
+              <txt>
+                <Value>去墨池中央的石台找到婴九问的徒弟</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过回报给魏长风</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>431</Value>
+              </dialognpc>
+              <number>
+                <Value>69</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“那人根本不是婴九问的徒弟，而是伪装的杀手！”&lt;end&gt;
+&lt;npc=431&gt;：“如此吗？天不助我啊。只要魏某还在世一日，便一日不会放弃，定要手刃仇人！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给魏长风</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给魏长风</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

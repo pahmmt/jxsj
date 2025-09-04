@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="0000000000000022" name="神秘商人" describe="">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>4</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="00000000000000B6" name="神秘商人" describe="在天王帮的青螺岛上，总会有一些通过审查的游方商人以及旅客。这些人为岛民们带来了外面世界的药材，玩具，珠玉，以及各种各样的新奇物件。据说，这些人的头儿是三个来历奇怪之人，有人说他们是朝廷的逃犯，有人讲他们是羽林军的校尉，甚至有人说是临安城派来的六扇门捕头。先前时局动荡时，这些商人倒也没有捣乱，现下稍微安稳一些后，这倒成了一件奇怪的事情。所以天王帮的元老娄一关希望你去查探出这些商人首领究竟是什么来历。&#xD;&#xA;&lt;stepdesc&gt;按照天王弟子打探的消息，找到那些商人头领混迹的&lt;pos=附近村庄,55,1916,3470&gt;。&#xD;&#xA;&lt;stepdesc&gt;找到了&lt;pos=却商,55,1886,3439&gt;，&lt;pos=李戬,55,1964,3464&gt;，&lt;pos=公羊孙,55,1928,3439&gt;，按照娄一关道领的指示，打败这些商人首领应该会得到些什么。&#xD;&#xA;&lt;stepdesc&gt;得到了密信，可以回去找&lt;pos=娄一关,55,1817,3528&gt;道领复命了。" refer="00000000000000B6">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>301</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=122000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=400,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="makepoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="gatherpoint",varValue=5,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>25</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>301</Value>
+          </dialognpc>
+          <txt>
+            <Value>得到了密信，可以回去找&lt;pos=娄一关,55,1816,3456&gt;道领复命了。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>25</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=娄一关,55,1817,3528&gt;，可以接到任务【神秘商人】。</Value>
+          </txt>
+          <number>
+            <Value>2</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>25</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

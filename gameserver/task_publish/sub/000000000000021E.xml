@@ -1,0 +1,511 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000021E" name="狐仙咒" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5060&gt;：“我不知是前世作了什么孽啊！作孽啊！老天你告诉我你到底要什么？”&lt;end&gt;
+&lt;playername&gt;：“大叔，你哀嚎如斯可是遇到了什么伤心事？”&lt;end&gt;
+&lt;npc=5060&gt;：“说什么呀，每个人都问我，说的我口舌都干了，不还是什么事情也没解决？”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5060</Value>
+              </dialognpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5060&gt;：“我那闺女瑞儿昏睡至今已将近一年，她也未遭遇什么不测，一年前便是一觉睡到现在不曾起来过，也不进食，身体又未见消瘦，似是灵魂出窍般的蹊跷。”&lt;end&gt;
+&lt;playername&gt;：“竟有如此之事，真是怪异，大叔你可有请过郎中前来诊治？”&lt;end&gt;
+&lt;npc=5060&gt;：“郎中请了不下几十个，就连那皇宫中的御医，江湖传说中的神医，甚至是西南的蛊术师都来看过小女，均没有什么好办法呀。本来今年打算让瑞儿与司马家的公子成亲，现在看来，真是一点儿指望也没有，唉。”&lt;end&gt;
+&lt;playername&gt;：“这……大叔可曾记得小姐病发前后的情形？”&lt;end&gt;
+&lt;npc=5060&gt;：“老夫自是记得，今年年初正值开春，瑞儿与贴身丫鬟上山祈福，那丫头性子野得很，我也从来不曾约束她，就在当日，她便是一睡不醒，那几日她在梦中还常常念念有词，什么狐仙有命……”&lt;end&gt;
+&lt;playername&gt;：“大叔莫要焦急，待我前去那当日小姐曾经去过的寺庙查探一番，说不定可以找些蛛丝马迹。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与上官哲对话</Value>
+              </txt>
+              <txt>
+                <Value>与上官哲对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>事情有点棘手，先去上官小姐当初去过的寺庙附近查探一番把。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>1740</Value>
+              </number>
+              <number>
+                <Value>3323</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去观音庙外围查探一番</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>观音庙外围并没什么异常，去附近的民居看看吧。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>1875</Value>
+              </number>
+              <number>
+                <Value>3368</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去观音庙附近民居处查探一番</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>观音庙后山之中会不会有隐秘？</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>2002</Value>
+              </number>
+              <number>
+                <Value>3357</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>去观音庙后山查探一番</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>有异样的发现，制服姑月荣。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>2009</Value>
+              </number>
+              <number>
+                <Value>3343</Value>
+              </number>
+              <dialognpc>
+                <Value>5061</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“妖女，山下上官家闺女的病可是与你有关,速速招来！” &lt;end&gt;
+&lt;npc=5061&gt;： “且告诉你吧，我因偷练翠烟门禁止修炼的邪路武功被那该死的姓尹的赶下山来，就在这里安了家，为了修成狐仙大法，我美丽的容颜竟变成了如此骇人的模样，偏偏那日上官家的女子竟探到我这里来，她是来向我炫耀她的貌美如花吗？”&lt;end&gt;
+&lt;npc=5061&gt;： “我一气之下对那女人下了狐仙咒，诅咒她永世长眠，哈哈哈哈……”&lt;end&gt;
+&lt;playername&gt;：“你疑心如此之重又歹毒，山下的村民都心地善良，今天我定不饶你！”&lt;end&gt;
+&lt;npc=5061&gt;： “哼哼……我不相信这旮旯小的地方竟也有能打败我的高手！今天我姑月荣就让你输的心服口服！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>5077</Value>
+              </fightnpc>
+              <number>
+                <Value>125</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>制服姑月荣</Value>
+              </txt>
+              <txt>
+                <Value>制服姑月荣</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将消息带给上官哲吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5060</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“那观音庙山后确有蹊跷，里面竟是住着一个修炼狐仙术的魔女，上官小姐的病正是拜此魔女所赐，所幸我已将她击败，她也承诺再不做这伤天害理的事情，小姐的心魔相信很快便可解开，这病自然也将好了。”&lt;end&gt;
+&lt;npc=5060&gt;：“老夫代小女多谢少侠救命之恩！来日若有机会我上官家定当涌泉相报。”&lt;end&gt;
+&lt;playername&gt;：“前辈不用客气，我义军相助百姓不求回报。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与上官哲对话</Value>
+              </txt>
+              <txt>
+                <Value>与上官哲对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

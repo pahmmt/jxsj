@@ -1,0 +1,351 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D4" name="神秘金人" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=420&gt;：“哎，没想到圪石烈乱岗会误入了法人渊，倒真是个麻烦事啊。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=420&gt;：“贫道这些年一直在金国境内游历，结交金国的皇族贵胄，三教九流，为的就是向他们宣扬道家止杀的观念，救民于水火。早些时候，却让我遇上一桩怪事。”&lt;end&gt;
+&lt;playername&gt;:“哦？”&lt;end&gt;
+&lt;npc=420&gt;：“有一名唤圪石烈乱岗的刽子手发夜梦，梦到有厉鬼在房内走动，起身时便四肢瘫软，腿脚无力，无法再举得动鬼头大刀。此人乃当今金国朝廷的第一刽子手，多少皇亲国戚的性命断送在他手里，如今却也难逃报应啊。”&lt;end&gt;
+&lt;playername&gt;：“如此之人，即便死了也不可惜。”&lt;end&gt;
+&lt;npc=420&gt;：“话虽不错，可金国中我一个要好朋友却将他托付于我，希望我能以药石治好此人。盛情难却，我也无法推脱，只好将此人安置在这龙虎洞中，一来安心调养，二来也可封锁消息，否则必有宋人来杀他。”&lt;end&gt;
+&lt;playername&gt;：“真人竟如此维护金人，真是令在下百思不得其解。”&lt;end&gt;
+&lt;npc=420&gt;：“都是已疯之人，又还有什么好计较呢。何况，他身上藏有一本名册，那本名册将决定国家的兴亡，我必须拿到手。”&lt;end&gt;
+&lt;playername&gt;：“原来如此，那他怎会失踪呢？”&lt;end&gt;
+&lt;npc=420&gt;：“圪石烈乱岗已是神智不清，估计是自己走了出去。这龙虎洞内我搜了个遍，仅有法人渊不曾去过，想必就在那里。”&lt;end&gt;
+&lt;playername&gt;：“法人渊？”&lt;end&gt;
+&lt;npc=420&gt;：“不错，那法人渊内聚集着各道道友。这些人一直希望加入武当，可惜各有慧缘，皆不在我武当范围内。他们又不愿走，聚集着论道修法，也不滋事，但其中绝不乏高手。这圪石烈乱岗若是去了那里，要救他出来可非易事。”&lt;end&gt;
+&lt;playername&gt;：“这点我清楚，可救他是为了哪般？”&lt;end&gt;
+&lt;npc=420&gt;：“他藏有一本与宋人有关的名册，此事事关数百条人命，不能不救。若法人渊内有人阻挡，便击败阻挡者，务必不惜一切代价问到名册下落。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize>&lt;npc=420&gt;：“哎，说来话长。这名册中载录的都是我中原巨富的名字。金国这些年来秘密掳掠了许多在金境内进行贸易的巨商。此事做得极为隐秘，外人不得而知，亲人也以为是绑匪所为。凭此，金国敲诈了数以亿万的财富。如今能弄到这部名册，真相将水落石出。如此一来，相信会大大削弱金国的贸易收入，减弱其国力！”&lt;end&gt;</Prize>
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1227</Value>
+              </number>
+              <number>
+                <Value>3047</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>找到神秘金人的藏身之地法人渊</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>四个在法人渊颇具势力的头领也盯上了这本名册</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>422</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>423</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>424</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>425</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>救出神秘金人，并从他嘴中问出名册的下落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>421</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=421&gt;：“谢谢你来救我，这名册于我已如身外之物。请替我交给灵鹤真人，并转告真人，在下愿皈依道家，从此戒杀，希望能用下半生赎回曾犯下的罪孽。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{囚犯名册,20,1,46,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>从神秘金人问出名册的下落</Value>
+              </txt>
+              <txt>
+                <Value>从神秘金人问出名册的下落</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>得到了名册，可以回去交给灵鹤真人了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>420</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=420&gt;：“名册拿到了吗？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{囚犯名册,20,1,46,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

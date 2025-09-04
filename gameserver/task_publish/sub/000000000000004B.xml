@@ -1,0 +1,988 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000004B" name="白衣妙青" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“师太，义军首领白秋琳遣我前来峨嵋学艺，望师太收留。”&lt;end&gt;
+&lt;npc=3526&gt;：“秋琳是我峨嵋的大恩人，她的托付，峨嵋派绝不会怠慢。&lt;if me.nSex==0&gt;不过峨嵋山中都是女尼，施主在这里恐怕也施展不开。&lt;else&gt;不过这九老峰乃是苦修尼修行之所，你年纪轻轻，还有锦绣前程，呆在这里太委屈你了。&lt;endif&gt;我倒是有一个主意，只不知&lt;if me.nSex==0&gt;施主&lt;else&gt;女施主&lt;endif&gt;愿不愿意听上一听？”&lt;end&gt;
+&lt;playername&gt;：“师太所言都是为我着想，怎么不愿意听？”&lt;end&gt;
+&lt;npc=3526&gt;：“我峨嵋山有一位大的香火客，整个巴蜀一多半都由他管，此人是当今的宣抚副使，姓吴名曦。他手下的吴家军更是世镇巴蜀，颇多一方豪杰。你去那里，才能得到真正的历练。”&lt;end&gt;
+&lt;playername&gt;：“有这等好事情，师太认识吴大人吗？”&lt;end&gt;
+&lt;npc=3526&gt;：“有过数面之缘。恰好吴大人现下便在这峨嵋山上。”&lt;end&gt;
+&lt;playername&gt;：“这真是太巧了。”&lt;end&gt;
+&lt;npc=3526&gt;：“如何不是？不过要受吴大人的重用，还需先由我一位老朋友引荐。吴大人真正卖面子的人还是他。”&lt;end&gt;
+&lt;playername&gt;：“请师太吩咐。”&lt;end&gt;
+&lt;npc=3526&gt;：“你去慈云庵求见他，就说是老尼引荐。此人乃成都府路通判凌若虚。至于他是否引荐你，关键还是要靠你自己了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3526</Value>
+              </dialognpc>
+              <number>
+                <Value>16</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>51</Value>
+              </number>
+              <number>
+                <Value>1626</Value>
+              </number>
+              <number>
+                <Value>3137</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>准备好了吗？我们这就出发去九老峰。
+&lt;color=green&gt;（此行吉凶难测，在出发前建议您去找门派物品保管人记录回城点。合理的记录回城点位置可以有效节省花费在路程上的时间。）&lt;color=white&gt;</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就随无嗔师太出发去九老峰</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就随无嗔师太出发去九老峰</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>36</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去九老峰慈云庵找到凌若虚大人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>273</Value>
+              </dialognpc>
+              <number>
+                <Value>456</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“草民&lt;playername&gt;拜见凌大人。”&lt;end&gt;
+&lt;npc=273&gt;：“何事啊？”&lt;end&gt;
+&lt;playername&gt;：“草民受峨嵋执事师太所荐，希望前往吴家军统帅吴曦大人帐下任职。烦劳大人引荐。”&lt;end&gt;
+&lt;npc=273&gt;：“哦，是师太的弟子啊，那一切好说。”&lt;end&gt;
+&lt;playername&gt;：“真的吗？真是有劳大人了。”&lt;end&gt;
+&lt;npc=273&gt;：“且慢，要到吴大人军中任职，总得露两手本事。我这里要先考一考你，有没有胆子接招呢？”&lt;end&gt;
+&lt;playername&gt;：“不知大人是要文考还是武考？”&lt;end&gt;
+&lt;npc=273&gt;：“上兵伐谋，自然是文考。”&lt;end&gt;
+&lt;playername&gt;：“请大人出题。”&lt;end&gt;
+&lt;npc=273&gt;：“九老峰上有一座闭月山堂，其中有一位叫妙青的尼姑，喜着白衣。你若能在今日内查清这妙青的来历，我便将你荐到吴大人帐下。”&lt;end&gt;
+&lt;playername&gt;：“一言为定。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>去九老峰慈云庵找到凌若虚大人</Value>
+              </txt>
+              <txt>
+                <Value>去九老峰慈云庵找到凌若虚大人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>第一个任务便很棘手，门房大伯应该会知道些什么吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>274</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大伯，瞧您精神头很不错，在这闭月山房中养得挺滋润啊。” &lt;end&gt;
+&lt;npc=274&gt;：“滋润什么啊，你别以为是我老头子愿意来这九老峰，实在是主人之命啊。这山峰上又无酒又无菜，天天对着个读书念经的女娃娃，有啥滋润的，淡出鸟来了。”&lt;end&gt;
+&lt;playername&gt;：“哈哈，原来大伯是个风尘中人。” &lt;end&gt;
+&lt;npc=274&gt;：“不谈这个，不谈这个。你能陪老头子说两句话，我就很满足了。”&lt;end&gt;
+&lt;playername&gt;：“您口中那个读书念经的女娃娃，指的又是谁呢？” &lt;end&gt;
+&lt;npc=274&gt;：“还不就是这闭月山房中修行的女尼妙青咯。”&lt;end&gt;
+&lt;playername&gt;：“老人家是被派来伺候妙青的？她什么来历啊，这么大的派头？” &lt;end&gt;
+&lt;npc=274&gt;：“可不敢讲，可不敢讲。好了，老头子要去眯一觉，午后还有要事呢。”&lt;end&gt;
+&lt;playername&gt;：“这老爷子的嘴还挺严实。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>找到门房大伯问问究竟</Value>
+              </txt>
+              <txt>
+                <Value>找到门房大伯问问究竟</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>这老爷子的嘴还挺严实，接下来去问问伙房大娘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>275</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“恩，好香啊，大娘在做饭吗？”&lt;end&gt;
+&lt;npc=275&gt;：“可不是嘛。也就是几个斋菜，没啥好夸耀的。”&lt;end&gt;
+&lt;playername&gt;：“看来大娘的手艺相当了得。”&lt;end&gt; 
+&lt;npc=275&gt;：“呵呵，老身先头在成都府的青天阶酒楼也干过不少日子，菜还做得几个。”&lt;end&gt;
+&lt;playername&gt;：“青天阶那可是大酒楼，大娘如何肯屈尊来这小山堂中做斋菜？难道是为了那叫妙青的女尼？可苦修尼哪能享到这种福气啊？那还能叫苦修吗？” &lt;end&gt;
+&lt;npc=275&gt;：“哎呀你还真以为她这是在修行啊？这尼姑，连峨嵋派的掌门人都得客客气气的对她。”&lt;end&gt;
+&lt;playername&gt;：“她究竟什么来头？” &lt;end&gt;
+&lt;npc=275&gt;：“说不得说不得，说出去老身这颗脑袋都要丢咯。做菜啦做菜啦。”&lt;end&gt;
+&lt;playername&gt;：“大娘！您是好人，您就告诉我吧，不然我晚上总想着这事，都睡不着觉。”&lt;end&gt;
+&lt;npc=275&gt;：“哎呀，别拉老身。这样吧，老身这里有一个漂亮的金丝绣袋，你拿去问伴读女尼，她看在礼物的份上，也许会告诉你。反正小妮子也不怕死。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=275&gt;：“老身这里有一个漂亮的金丝绣袋，你拿去问伴读女尼，她看在礼物的份上，也许会告诉你。反正小妮子也不怕死。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{金丝绣袋,20,1,189,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>接下来去问问伙房大娘</Value>
+              </txt>
+              <txt>
+                <Value>接下来去问问伙房大娘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>拿了伙房大娘的香袋，陪读女尼应该会开口的</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>276</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小尼姑，问你一下，这房里住的可是妙青姐姐。” &lt;end&gt;
+&lt;npc=276&gt;：“正是，你找姐姐何事啊？”&lt;end&gt;
+&lt;playername&gt;：“没事，就是羡慕这位神仙姐姐。那么多的苦修尼都不能有这样好的清修环境哦。” &lt;end&gt;
+&lt;npc=276&gt;：“哼哼，这个自然。我们妙青姐姐可是大有来头！”&lt;end&gt;
+&lt;playername&gt;：“什么来头？” &lt;end&gt;
+&lt;npc=276&gt;：“说漏嘴了，你走吧，姐姐一会见我与陌生人讲话，又要骂我了。”&lt;end&gt;
+&lt;playername&gt;：“好小尼，乖小尼，你就告诉&lt;if me.nSex==0&gt;哥哥&lt;else&gt;姐姐&lt;endif&gt;吧。你看，这个漂亮的金丝绣袋，送给你好不好？” &lt;end&gt;
+&lt;npc=276&gt;：“哇，拿来拿来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{金丝绣袋,20,1,189,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“好了，绣袋你也拿到了，总可以告诉我了吧。”&lt;end&gt; 
+&lt;npc=276&gt;：“还是不可以讲。”&lt;end&gt;
+&lt;playername&gt;：“……你是要气死我啊你。” &lt;end&gt;
+&lt;npc=276&gt;：“不过呢，我可以告诉你，妙青姐姐出家前在一个非常有钱的大户人家。她以前的贴身丫鬟如意就在九老峰上，找到如意，给她点甜头，她一定会跟你讲的。如意现在住在紫槐林中。”&lt;end&gt;
+&lt;playername&gt;：“为什么一定要这样绕来绕去呢？”&lt;end&gt;
+&lt;npc=276&gt;：“因为妙青姐姐的身世，是一个大秘密！”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>277</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“如意姑娘，我此来有一事请教。”&lt;end&gt;
+&lt;npc=277&gt;：“那些狗强盗，土匪！把我的嫁妆都偷走了，都偷走了。”&lt;end&gt;
+&lt;playername&gt;：“是怎么回事啊？”&lt;end&gt;
+&lt;npc=277&gt;：“我随小姐来这九老峰上居住，谁知道整个山里都是尼姑，无聊透了。只好每天跑到山谷里去看花，结果回来时见到一帮臭男人，打扮得阴阳怪气，手里提刀弄剑，还对我直吊眉。我提心吊胆的跑回家，结果发现家里全被翻乱了，首饰还有妙青姐姐送给我的嫁妆都给那帮人偷走了！”&lt;end&gt;
+&lt;playername&gt;：“不用担心，我这就替你去追回来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>找到紫槐林中的如意</Value>
+              </txt>
+              <txt>
+                <Value>找到紫槐林中的如意</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>打败紫槐林强贼，把如意的嫁妆夺回来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2213</Value>
+              </fightnpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <taskitem>
+                <Value>{190,}</Value>
+              </taskitem>
+              <number>
+                <Value>0.5</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>34000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>把嫁妆归还给如意</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>277</Value>
+              </dialognpc>
+              <number>
+                <Value>51</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“如意姑娘，你看看这包东西是不是你的嫁妆，少什么没有？”&lt;end&gt;
+&lt;npc=277&gt;：“我看看，我看看。没有少没有少，真是太谢谢&lt;if me.nSex==0&gt;少侠&lt;else&gt;侠女&lt;endif&gt;了。”&lt;end&gt;
+&lt;playername&gt;：“不客气，我对如意姑娘也是有所求。”&lt;end&gt;
+&lt;npc=277&gt;：“你说你说。”&lt;end&gt;
+&lt;playername&gt;：“在下在山中听香客们讲，妙青的来历是个迷，又恰好知道，如意姑娘从前与妙青是好姐妹，所以一时好奇想知道知道。”&lt;end&gt;
+&lt;npc=277&gt;：“你真是一时好奇？”&lt;end&gt;
+&lt;playername&gt;：“绝无虚言。”&lt;end&gt;
+&lt;npc=277&gt;：“那好，我可以告诉你，但你绝不能对别人讲，这不是件好事。”&lt;end&gt;
+&lt;playername&gt;：“在下自当守口如瓶。”&lt;end&gt;
+&lt;npc=277&gt;：“妙青在俗世的名字叫刘蓉蓉，是我家小姐。后来被吴家军的几个校尉得闻其美色，强抢了去送给吴曦吴大人为妾。这吴大人对小姐倒是一见倾心，明媒正娶过门。吴大人权倾巴蜀，小姐的家人哪里敢说不字。过门后，吴大人对小姐也确实宠爱有加，事情若就如此，倒不失为一个好的结局。”&lt;end&gt;
+&lt;playername&gt;：“其中难道又横生出什么枝节，导致你家小姐出家为尼？”&lt;end&gt;
+&lt;npc=277&gt;：“要怪都怪那个穷书生郑公子。他家原本也是官宦人家，曾在小姐还在襁褓中时与刘家结了娃娃亲。后来他父亲被人在朝中参了一本，家产抄没，这郑公子便窘迫得很了。偏偏他又极爱小姐，小姐对他的人才也是喜欢的，原本因了小姐嫁入吴门，这档子事就过去了。没成想，去年庙会上，又让他二人撞见了。这么一勾搭，便有了说不清的事。”&lt;end&gt;
+&lt;playername&gt;：“这种事情，又如何瞒得住吴大人？”&lt;end&gt;
+&lt;npc=277&gt;：“怎么不是。他们的丑事没过多久就被发现了，还在市井中广为宣扬。吴大人一来极喜欢小姐的，二来也好个名声，也就从轻处置，将那郑公子发配边疆充军，小姐则上峨嵋为尼了。”&lt;end&gt;
+&lt;playername&gt;：“难怪妙青独居一庵，还有老妈子和从人们伺候。”&lt;end&gt;
+&lt;npc=277&gt;：“那吴大人是个情种，将小姐遣上峨嵋，又心有不甘，这不现在又带着一帮子随从追上山来了。”&lt;end&gt;
+&lt;playername&gt;：“妙青看来是尘缘未了啊……”&lt;end&gt;
+&lt;npc=277&gt;：“郑生一走，小姐真真儿的是心死如灰了，只愿此生常伴青灯。等吴大人寻她无果，我也算完成了自己的差使，回去向老太太辞别，返乡寻个郎君嫁咯。”&lt;end&gt;
+&lt;playername&gt;：“如意姑娘是说，妙青已下了归依佛门的决心，不会再回头了？”&lt;end&gt;
+&lt;npc=277&gt;：“正是。”&lt;end&gt;
+&lt;playername&gt;：“我知道了，谢过如意姑娘。”&lt;end&gt;
+&lt;npc=277&gt;：“我和你讲的，你可别乱告诉别人。”&lt;end&gt;
+&lt;playername&gt;：“我晓得。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>把嫁妆归还给如意</Value>
+              </txt>
+              <txt>
+                <Value>把嫁妆归还给如意</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{190,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>17000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过回报给凌若虚</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>273</Value>
+              </dialognpc>
+              <number>
+                <Value>456</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=273&gt;：“哈哈哈，哈哈哈。”&lt;end&gt;
+&lt;playername&gt;：“大人笑甚？您让我查的事已弄了个水落石出。”&lt;end&gt;
+&lt;npc=273&gt;：“那你可愿讲？”&lt;end&gt;
+&lt;playername&gt;：“这……在下实在受人之托，不可将此事……”&lt;end&gt;
+&lt;npc=273&gt;：“哈哈哈，不必多说了。没想到啊，你居然从如意那丫头处打开了缺口。”&lt;end&gt;
+&lt;playername&gt;：“大人竟全都知道了？”&lt;end&gt;
+&lt;npc=273&gt;：“你不要忘记，本官乃一州通判，此地人情世故，军务民生无不需细禀朝廷。你做的这么件事，如何能瞒过我？”&lt;end&gt;
+&lt;playername&gt;：“既如此，那草民就不说了。”&lt;end&gt;
+&lt;npc=273&gt;：“恩，你入吴家军为官的事包在我身上。只希望将来有用得着你的时候，不要忘记是谁引荐你的。”&lt;end&gt;
+&lt;playername&gt;：“大人放心，草民懂得知恩图报的古训。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给凌若虚</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给凌若虚</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000004C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1) </Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

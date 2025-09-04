@@ -1,0 +1,354 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000001F" name="绝壁奇花[男]" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=82&gt;：“殷氏兄妹遣童子来问你何时过去玩了，反正离下次巡视还有些时日，你就过去陪陪他们吧。”&lt;end&gt;
+&lt;playername&gt;：“这？”&lt;end&gt;
+&lt;npc=82&gt;：“怕什么！你光明正大，又不是心中有鬼，人家都不怕你怕什么劲，新鲜！快去快回。人家又不是老虎，还能把你吃了。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>88</Value>
+              </dialognpc>
+              <number>
+                <Value>422</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=88&gt;：“一楼哥哥，你过来啦。”&lt;end&gt;
+&lt;playername&gt;：“啊，是啊。”&lt;end&gt;
+&lt;npc=88&gt;：“那增长功力的朱红丹我已经炼成了，就在这小瓶瓶里。”&lt;end&gt;
+&lt;playername&gt;：“啊，这我绝对不能受。”&lt;end&gt;
+&lt;npc=88&gt;：“为什么呀？”&lt;end&gt;
+&lt;playername&gt;：“教中那样多的人，比我更需要朱红丹的大有人在，我入教这几日的功夫，怎么可以坏了规矩。”&lt;end&gt;
+&lt;npc=88&gt;：“这朱红果是你冒着那么大的危险采来的，又不是人家采的。再说，小童只会为你才做，换了别人，我才懒得理呢。”&lt;end&gt;
+&lt;playername&gt;：“这，这，我受之有愧，无论如何不能接受。”&lt;end&gt;
+&lt;npc=88&gt;：“哎呀你真是个死顽固。那不如这样，我知道红杉崖上有一种花叫绿闪儿，又叫叶子花，特别的漂亮。你替我摘三朵回来，就当是谢谢我了。这总可以吧？也算你没有无功受禄。”&lt;end&gt;
+&lt;playername&gt;：“这样啊，那好吧，我试试。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=88&gt;：“红杉崖上有一种花叫绿闪儿，又叫叶子，特别的漂亮。你替我摘三朵回来，就当是谢谢我了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>去松涛别院看望殷童</Value>
+              </txt>
+              <txt>
+                <Value>去松涛别院看望殷童</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去红杉崖替殷童采摘三朵绿闪儿花，做为谢礼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1)</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1520</Value>
+              </dialognpc>
+              <number>
+                <Value>74</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>艾叶绿花谁翦刻，中藏祸机不可测</Value>
+              </txt>
+              <txt>
+                <Value>得到绿闪儿花</Value>
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{绿闪儿花,20,1,167,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/3朵绿闪儿花</Value>
+              </txt>
+              <txt>
+                <Value>采集到了绿闪儿花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1836,3643
+1855,3615
+1855,3638
+1847,3672
+1869,3602
+1869,3630
+1864,3663
+1862,3688
+1884,3562
+1886,3575
+1878,3686
+1901,3579
+1899,3561
+1901,3622
+1889,3616
+</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>58000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>成功摘取到了绿闪儿花，将花朵交给殷童吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>88</Value>
+              </dialognpc>
+              <number>
+                <Value>422</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=88&gt;：“一楼哥哥，回来得这么快哦。”&lt;end&gt;
+&lt;playername&gt;：“呵呵，还算比较顺利。”&lt;end&gt;
+&lt;npc=88&gt;：“我看看，哇！好漂亮的叶子花哦，小童早就想要了。缠着大哥帮忙去采，结果大哥是废物，老是采不来。还是一楼哥哥有办法。”&lt;end&gt;
+&lt;playername&gt;：“呵呵，只要小童喜欢就好了。”&lt;end&gt;
+&lt;npc=88&gt;：“真的啊！”&lt;end&gt;
+&lt;playername&gt;：“恩。”&lt;end&gt;
+&lt;npc=88&gt;：“嘻嘻，一楼哥哥真好。这里是朱红丹，可以一次全部服用完的。”&lt;end&gt;
+&lt;playername&gt;：“谢谢小童。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将花朵交给殷童吧</Value>
+              </txt>
+              <txt>
+                <Value>将花朵交给殷童吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000020</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{167,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

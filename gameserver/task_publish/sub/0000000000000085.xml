@@ -1,0 +1,554 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000085" name="力夺异宝" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;Playername&gt;：“眼下贵派中人一部分将丐帮弟子拦截在分舵，另一部分还需留守贵帮分舵。此处仅有的这些弟子当真可以将这些金国人制服吗？依我之见，这些金国人凶悍异常，胜负之数实难预料。难道贵帮在这种情况下仍要再树强敌不成？”&lt;end&gt;
+&lt;npc=999&gt;：“你是什么人？你怎么会知道这么多？就凭你也配自认为我帮的强敌？”&lt;end&gt;
+&lt;npc=1023&gt;：“孔贤弟莫急，正如这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;所说，眼下我们确实不易再树强敌。看&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;的相貌，像是我们教主所说的义军新秀&lt;Playername&gt;，不知是也不是？”&lt;end&gt;
+&lt;Playername&gt;：“正是，不知阁下是？”&lt;end&gt;
+&lt;npc=1023&gt;：“我乃教主派来的密使，本教已经决定和天王帮结成同盟共同寻回游龙珏，你既是义军门下，咱们也算是同盟。本教虽然不为外教所喜，但也一言九鼎，绝不会瞒你。眼下我教弟子已有不支，还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;仗义援手先将阵脚稳住，稍后我自会将此中详情一一相告。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>76</Value>
+              </number>
+              <txt>
+                <Value>提升等级到76级</Value>
+              </txt>
+              <txt>
+                <Value>提升等级到76级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往相助五毒教弟子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>983</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>局势较为稳定回去找五毒教密使钟祥</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>743000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1023</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“此时贵帮阵脚依然稳住，相信这些金国人已无反抗之力。适才贵使未说完的话，就请继续说完吧。”&lt;end&gt;
+&lt;npc=1023&gt;：“如今大家都是盟友，我也无需隐瞒什么。我们追着这伙金国人已有多日了，一来他们过于谨慎，二来我教追踪的人手不足，所以才会迟到今日才发起猛击。不过看眼下的情形，想来还是有一部分人闻风而逃了。据我观察，他们中仍有一名首领在此处，我们要尽快将其制服，莫要让他趁机逃走，兴许从他那里可以问出点什么。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和钟祥对话</Value>
+              </txt>
+              <txt>
+                <Value>和钟祥对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>制服金国人首领</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>106</Value>
+              </number>
+              <number>
+                <Value>1892</Value>
+              </number>
+              <number>
+                <Value>3585</Value>
+              </number>
+              <fightnpc>
+                <Value>984</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <dialognpc>
+                <Value>987</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“你这鞑子，游龙珏是不是你们偷去的，快快如实招来！”&lt;end&gt;
+&lt;npc=984&gt;：“%…………&amp;@#@#%%……#……”&lt;end&gt;
+&lt;Playername&gt;：“你说什么？”&lt;end&gt;
+&lt;npc=984&gt;：“%…………&amp;@#@#%%……#……”&lt;end&gt;
+&lt;Playername&gt;：(对方果然狡猾，留下了一名只懂得金国文字的小首领押后。看来此事有些棘手，还是找五毒教密使合计一下吧。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>制服金国人首领</Value>
+              </txt>
+              <txt>
+                <Value>制服金国人首领</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找五毒教密使钟祥商议对策</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>371000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1023</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“对方想来已经早有准备，留下了一些只会讲金国话的部下，问什么都是徒然。”&lt;end&gt;
+&lt;npc=1023&gt;：“事到如今，也只有寄希望于本帮负责追踪的弟子了。孔兄弟，你手下都派了些谁去？”&lt;end&gt;
+&lt;npc=999&gt;：“我已经派老谭带着最擅长追踪的几名兄弟尾随突围的金国人去了，这几名弟子绝对信得过。相信他们一有消息就会通知我们的。”&lt;end&gt;
+&lt;npc=1023&gt;：“既然这样，还请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;先回转义军，将我教和天王结盟的消息带给白秋琳女侠，请她告知义军，以免将来或有冲突。另外，一旦有了金国人的下落，我们定会及时通知你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到钟祥</Value>
+              </txt>
+              <txt>
+                <Value>找到钟祥</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>185000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“你一去多日没有消息，让我有些担心。好在你安然回来，可有游龙珏的消息？”&lt;end&gt;
+&lt;Playername&gt;：“游龙珏此刻当已落入金国人手中，此番回来是特地相告秋姨五毒教和天王帮结盟一事。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>回新手村找白秋琳</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000086</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

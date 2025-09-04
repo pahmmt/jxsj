@@ -1,0 +1,203 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000014B" name="香螺花" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=18&gt;：“嗯……对了，此行古教主曾托我带几朵香螺花回去，教主早听闻香螺花乃世间独有之奇花，其翠欲滴，其芳沁脾。你既然对岛上如此熟悉，就劳烦你走一趟，替我采几株香螺花回来吧。”&lt;end&gt;
+&lt;playername&gt;：“这有何难，我去去就回。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1595</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>香螺花采集中...</Value>
+              </txt>
+              <txt>
+                <Value>采到一朵香螺花!</Value>
+              </txt>
+              <txt>
+                <Value>不好意思，采集失败!</Value>
+              </txt>
+              <string>
+                <Value>{香螺花,20,1,218,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/5个香螺花</Value>
+              </txt>
+              <txt>
+                <Value>在飞云台附近采集5朵香螺花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1709,3323
+1708,3331
+1711,3336
+1716,3339
+1721,3336
+1718,3346
+1715,3353
+1712,3359
+1712,3368
+1713,3377
+1722,3358
+1719,3362
+1725,3377
+1720,3386
+
+</Value>
+              </string>
+              <string>
+                <Value>3</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>采到了足够多的香螺花，可以回去将他交给卢笑贫了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>18</Value>
+              </dialognpc>
+              <number>
+                <Value>55</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=18&gt;："辛苦你了，这些香螺花带回去给飘飘旗主，保准让她心花怒放。"&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{香螺花,20,1,218,1,0,5}</Value>
+              </string>
+              <txt>
+                <Value>将采集到的香螺花交给卢笑贫</Value>
+              </txt>
+              <txt>
+                <Value>将采集到的香螺花交给卢笑贫</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{218,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

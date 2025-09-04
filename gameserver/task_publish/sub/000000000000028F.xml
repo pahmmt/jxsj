@@ -1,0 +1,459 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000028F" name="火鲁一族" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5208&gt;：“这位少侠，我乃这游龙宝库之中的守库使者，我见你举止之间气宇非凡，想必有着上乘的功夫啊。”&lt;end&gt;
+&lt;playername&gt;：“呃，兄台这般客气，可是有什么事情有求于我？若能帮得上的便不必客套。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5208</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5208&gt;：“这位少侠说话好不幽默啊！哈哈，我就喜欢直爽的人，你是不是觉得我的话又点儿多了？唉，我不是话太多而是因为太寂寞……”&lt;end&gt;
+&lt;npc=5208&gt;：“那边两个丁点儿大的女娃儿与她们没几句话说，这宝库来者非善类，不是盗宝贼便是邪灵，连个能说上几句话的人都没有。”&lt;end&gt;
+&lt;playername&gt;：“辛苦了，在这暗不见天日宝库中，确实要能守得住寂寞。”&lt;end&gt;
+&lt;npc=5208&gt;：“今日能遇到少侠，我高兴啊！我还想拜托少侠一事，便是那火鲁一族的事，这事情说来还真让人恼火。”&lt;end&gt;
+&lt;npc=5208&gt;：“那火鲁一族本是狼人，以群居为原则，几百年来在那深山之中过着逍遥的生活，他们有自己的语言和沟通方式，也不做伤天害理之事，可不想天忍教的一帮混蛋请了苗疆巫师给这些狼人喝药下蛊，他们的心中都中了蛊毒，对天忍教唯命是从。若想解这蛊毒，只能以他们心脏的血为药引，方能让更多的火鲁一族免去灾祸。”&lt;end&gt;
+&lt;playername&gt;：“这天忍教教众还真是可恨，为了贪欲，什么办法都能想得出来。”&lt;end&gt;
+&lt;npc=5208&gt;：“要想拯救这火鲁一族，必须以他们的心脏之血为药引……还望大侠能出手相帮。”&lt;end&gt;
+&lt;playername&gt;：“我明白了，大宋一日未收复故土，我们便要战斗，为了更美的明天……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败火鲁狼人并得到蛊惑之心</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5209</Value>
+              </fightnpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <taskitem>
+                <Value>{868,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将蛊惑之心交给守库使</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5208</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5208&gt;：“少侠果然身手不凡，那火鲁一族的狼人攻击凶狠且身手及其敏捷，能制服他们实属不易。现在有了这蛊惑之心便有了药引子，不出月余，火鲁一族的蛊便可解除了，真是一桩大好事啊，不过……”&lt;end&gt;
+&lt;playername&gt;：“不过什么？兄台有话但说无妨，若真能解救了火鲁一族，&lt;playername&gt;辛苦一些也值得。”&lt;end&gt;
+&lt;npc=5208&gt;：“这游龙宝库之中火鲁狼人的首领是一个名为火鲁怒怒的人，此人中蛊更深，并且嗜财如命，已从我这宝库之中盗走不少宝物，这火鲁怒怒一日不除，祸患一日尚在啊。”&lt;end&gt;
+&lt;playername&gt;：“如此恶人，就让我&lt;playername&gt;去会会他。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{868,}</Value>
+              </taskitem>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>击败火鲁狼人的首领火鲁怒怒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>5210</Value>
+              </fightnpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将火鲁怒怒被击败的消息告知守库使</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5208</Value>
+              </dialognpc>
+              <number>
+                <Value>574</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5208&gt;：“少侠所作所为令我实在佩服，他日我大宋成功收复故土，我定要好好与&lt;playername&gt;聚上一聚，以答谢少侠今日之恩。”&lt;end&gt;
+&lt;playername&gt;：“相逢何必曾相识，你只需记住我乃一名普通的义军战士，我也是一个渴望大宋能够北伐中原，收复故土，再展辉煌的普通人便行了，你我若有缘他日必定能再相见，保重！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value>与守库使对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

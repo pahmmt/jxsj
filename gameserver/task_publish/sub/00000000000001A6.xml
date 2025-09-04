@@ -1,0 +1,269 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001A6" name="攻防并举" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=813&gt;：“&lt;playername&gt;，近来听闻金国打算对鞑靼人大举用兵，你去替我探查一番吧。”&lt;end&gt;
+&lt;npc=1914&gt;：“子直兄，这都什么时候了，你还打探金人的消息！”&lt;end&gt;
+&lt;npc=813&gt;：“国家大事，不敢偏废。情况紧急，你查明后，可与我安插在敕勒川的探子联络，让他飞鸽传书回来。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2254</Value>
+              </fightnpc>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我得擒住一名金国将领打探</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>24000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>FightNpc2DialogNpc</Function>
+            <Parameter>
+              <number>
+                <Value>114</Value>
+              </number>
+              <number>
+                <Value>1781</Value>
+              </number>
+              <number>
+                <Value>3733</Value>
+              </number>
+              <fightnpc>
+                <Value>1847</Value>
+              </fightnpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <dialognpc>
+                <Value>1848</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你们金国对鞑靼人究竟有何图谋？若不直说，我必杀你。”&lt;end&gt;
+&lt;npc=1848&gt;：“在下也是汉人，只是生于北地，为金人所用。侠客不要杀我。我也心怀大宋，你想问的我尽数告诉你便是。”&lt;end&gt;
+&lt;playername&gt;：“那好，金国人是不是打算对鞑靼人大举用兵？”&lt;end&gt;
+&lt;npc=1848&gt;：“侠客大概对金国当下情况缺乏了解。目前金国境界义军四起，军队忙于剿灭匪军……喔，是义军。腾不出手来解决鞑靼人。是以采取攻防并举之策。一边将鞑靼人分而歼之，一边在北方深挖界壕，阻挡骑兵入境。”&lt;end&gt;
+&lt;playername&gt;：“算你老实！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>我得擒住一名金国将领打探</Value>
+              </txt>
+              <txt>
+                <Value>我得擒住一名金国将领打探</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我要立即告诉细作，让他通知赵相</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>32000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1849</Value>
+              </dialognpc>
+              <number>
+                <Value>114</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1849&gt;：“&lt;playername&gt;，有你来真是太好了。我朝探子，多数为金狗所杀，现在我们的细作网几乎崩溃。”&lt;end&gt;
+&lt;playername&gt;：“时间紧迫，请速将消息传予赵相。金国目前内乱频生，他们腾不出手解决鞑靼人，采用的乃是攻防并举之策。”&lt;end&gt;
+&lt;npc=1849&gt;：“那完颜襄果然是厉害角色，好，我立即飞鸽传书给丞相。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>我要立即告诉细作，让他通知赵相</Value>
+              </txt>
+              <txt>
+                <Value>我要立即告诉细作，让他通知赵相</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

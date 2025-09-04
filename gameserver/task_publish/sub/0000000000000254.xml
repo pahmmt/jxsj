@@ -1,0 +1,407 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000254" name="跳河子" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“义军情报兵又有新情报反馈，宋金边境一带不断有人“跳河子”，这些人往往与大宋有着千丝万缕的联系。” &lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;不解，何为跳河子？还请秋姨详细说来。” &lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“所谓跳河子是时下宋金边境的一种隐晦说法。特指金国境内的百姓投奔我大宋，这样说是为了避人耳目。”&lt;end&gt;
+&lt;playername&gt;：“这些人投奔大宋意欲为何?” &lt;end&gt;
+&lt;npc=3570&gt;：“金国时下正值与蒙古发生大大小小的冲突，又是持续几年的干旱，大部分农耕地收成并不理想，连温饱也成了问题，而金国之中不乏与大宋百姓有亲戚关系的人，这些人时而报告金国困于北方人民的情况。而金国朝廷方面对此事防范甚严，抓到跳河子的人严惩不贷，甚至牵连其家人。” &lt;end&gt;
+&lt;npc=3570&gt;：“我得到朝廷密令，对那些欺负当地百姓的金国士兵还以颜色，并且保护这些有意投靠我大宋的人们，其中有一名为崔什江的金朝官员乃大宋遗孤，有意投靠我们，你需将崔大人护送到安全地带。不过那地方或许有金国士兵看守，你万万要注意安全。” &lt;end&gt;
+&lt;playername&gt;：“请秋姨等着我的好消息吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>破坏边境金军情报组织</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4643</Value>
+              </fightnpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4644</Value>
+              </fightnpc>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>3</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将崔大人护送到安全地带</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>150000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4645</Value>
+              </dialognpc>
+              <number>
+                <Value>1620</Value>
+              </number>
+              <number>
+                <Value>3459</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“请问可是崔什江大人？” &lt;end&gt;
+&lt;npc=4645&gt;：“正是，少侠这一身打扮不像是金国人，你是？”&lt;end&gt;
+&lt;playername&gt;：“我乃大宋义军&lt;playername&gt;，奉大宋朝廷之命来到此地，负责护送跳河子到我大宋的金国官员。”&lt;end&gt;
+&lt;npc=4645&gt;：“原来白首领在信中提到的就是你。说来惭愧，我的祖父乃宋朝孝宗时期一名得力干将，后来被奸臣所害，使得全家到金国苟且偷生过活，后来我发奋读书官试高中，被金国朝廷录用，真可谓是身在曹营心在汉啊。”&lt;end&gt;
+&lt;playername&gt;：“这也不是崔大人的本意，毕竟世事无常……” &lt;end&gt;
+&lt;playername&gt;：“此地不宜久留，我还是先护送大人到安全的地方去吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>4646</Value>
+              </fightnpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <number>
+                <Value>132</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1733</Value>
+              </number>
+              <number>
+                <Value>3859</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1629,3452
+1649,3479
+1648,3510
+1666,3535
+1682,3577
+1681,3625
+1666,3655
+1675,3695
+1703,3737
+1733,3774
+1746,3802
+1745,3828
+1735,3845
+</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将崔大人安全的消息带给秋姨</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3570&gt;：“&lt;playername&gt;，崔大人已经于昨天到达临安了。”&lt;end&gt;
+&lt;playername&gt;：“恩，我在宋金边境击退了那些在当地为非作歹的金国情报兵。崔大人在金国为官，但却身在曹营心在汉，他一直记挂着大宋，他的家乡。”&lt;end&gt;
+&lt;npc=3570&gt;：“昨日与崔大人交谈，得知金国内部的百姓由于连年的天灾和战争，日子过得相当困苦。有这么多人跳河子到我大宋也是一个表现啊。” &lt;end&gt;
+&lt;playername&gt;：“得道多助，失道寡助。希望我们做的能给百姓带来幸福。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

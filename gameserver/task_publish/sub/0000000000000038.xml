@@ -1,0 +1,727 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000038" name="偷天换日" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;:“先生自己也被封死在文曲洞中了，昆仑刚刚并派，头绪纷乱，这可怎么办啊？”&lt;end&gt;
+&lt;npc=153&gt;：“不必着急，先生对此事已经给雨田有嘱咐了的，我只管去找他。告诉他后山镇山石下压着一封信，上面的三条计策可助他率领昆仑度过合宗之初的乱局；往后的事情，就只能靠他自己了。”&lt;end&gt;
+&lt;playername&gt;:“飘萍先生，您为何不助谢先生一臂之力？”&lt;end&gt;
+&lt;npc=153&gt;：“我？我不过是个武人，没有谋略；况且，我要守着这里，不怕一万怕万一，哪天主人出来了，我好接他。”&lt;end&gt;
+&lt;playername&gt;:“那，&lt;playername&gt;这就走了。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=4&gt;
+&lt;npc=180&gt;：“急什么急，没看正忙着呢吗！”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=4&gt;
+&lt;playername&gt;：“过了这许久时间，将军们的搜查可曾有什么发现！”&lt;end&gt;
+&lt;npc=180&gt;：“来人，把昆仑山给我封起来。你们等着，这件事情不弄个水落石出，不算完！”&lt;end&gt;
+&lt;playername&gt;：“是非曲直总有水落石出的时候，我们等得起。我还有事得回去面陈谢师兄，这就告辞了。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;:“谢先生，掌门……”&lt;end&gt;
+&lt;npc=146&gt;：“别说了，一切我都知道。现在关键是如何善后。”&lt;end&gt;
+&lt;playername&gt;:“这个，我也没有法子。不过掌门吩咐，他在后山镇山石下留了封信，上面有助昆仑历劫度难之法。”&lt;end&gt;
+&lt;npc=146&gt;：“恩，我会派人去取。刚刚合宗，一时半会掀不起风浪。你立刻去告诉一品堂的人，说李升阳半路被人劫走了，是谁不知道。只知道他们说起什么游龙珏。”&lt;end&gt;
+&lt;playername&gt;:“这样一品堂的人怎么肯信？”&lt;end&gt;
+&lt;npc=146&gt;：“让他们搜山吧，一品堂不是善予之辈，他们搜不出来就真的是搜不出来。会把矛头指向李安全，以李安全的脾气，即使他没有做，这样的事情出来，李升阳不在了，他一样会默认。这个人唯一的缺点是太骄傲。”&lt;end&gt;
+&lt;playername&gt;:“可文曲洞那里的痕迹？”&lt;end&gt;
+&lt;npc=146&gt;：“文曲洞是昆仑从前一个神仙一样的前辈修建，当时是战乱，用来藏民，可到现在开启的方法已经遗失了。多少代聪明绝顶的人也没有想出来，一品堂更加看不破。”&lt;end&gt;
+&lt;playername&gt;:“昆仑弟子能放他们进来吗？”&lt;end&gt;
+&lt;npc=146&gt;：“所以要让我们自己的弟子受点苦。”&lt;end&gt;
+&lt;playername&gt;:“我明白了。”&lt;end&gt;
+&lt;npc=146&gt;：“过了这一关，还有更重要的事情需要你做。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=146&gt;：“让他们搜山吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>和谢雨田商量对应的策略</Value>
+              </txt>
+              <txt>
+                <Value>和谢雨田商量对应的策略</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>佯装将阻拦一品堂众人搜山的昆仑弟子教训一番</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1728</Value>
+              </number>
+              <number>
+                <Value>3433</Value>
+              </number>
+              <dialognpc>
+                <Value>181</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“不好了，李升阳堂主在半路被一伙神秘人劫走了。”&lt;end&gt;
+&lt;npc=180&gt;：“什么？……你撒谎的伎俩也太差了。我们堂主武功盖世，谁能劫走他？即使不敌，以他的轻功要走也不是难事。”&lt;end&gt;
+&lt;playername&gt;：“千真万确。那伙人口里喊着什么游龙珏的东西，李堂主不肯讲，他们便招呼上去。十多人全是绝顶高手。”&lt;end&gt;
+&lt;npc=180&gt;：“你要是敢撒谎，我一品堂一定血洗昆仑！兄弟们，上山搜。”&lt;end&gt;
+&lt;npc=181&gt;：“好大的胆子！昆仑是由得你们想来就来，想搜就搜的地方吗？”&lt;end&gt;
+&lt;npc=180&gt;：“怎么？爷的路你也敢挡？”&lt;end&gt;
+&lt;playername&gt;：“这位师兄，谢先生吩咐，任由他们搜查，不要阻拦。”&lt;end&gt;
+&lt;npc=181&gt;：“谢先生？就是掌门说了也不行！”&lt;end&gt;
+&lt;playername&gt;：“如此我就对不住了。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>182</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>佯装教训阻止一品堂搜山的昆仑弟子</Value>
+              </txt>
+              <txt>
+                <Value>佯装教训阻止一品堂搜山的昆仑弟子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在是进行下一步的时候了，放一品堂武士搜山</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>180</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“请吧。”&lt;end&gt;
+&lt;npc=180&gt;：“这还差不多，来啊，兄弟们开搜昆仑山！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>放一品堂武士搜山</Value>
+              </txt>
+              <txt>
+                <Value>放一品堂武士搜山</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>看来得静待武士们的搜索结果了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">180</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>38000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将事情的经过回报给谢雨田</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“先生，一品堂武士搜山虽然没有结果，可是他们已经封锁了整个昆仑山，发誓要查个水落石出。如果他们一直这样查下去，我恐怕会被他们找到蛛丝马迹。”&lt;end&gt;
+&lt;npc=371&gt;：“这方面你不必担心。如今这样的局面，你留在我昆仑已经学不到更多东西。掌门与李升阳的对话中，一品堂主提到了游龙珏。这块凶玉出世，关系到的是天下的安危，怠慢不得。师傅正是因听到游龙珏现世的消息，才会下锁死文曲洞的决心。现在有件更重要的事情，需要你去做。”&lt;end&gt;
+&lt;playername&gt;：“先生只管吩咐。”&lt;end&gt;
+&lt;npc=371&gt;：“当年武当客座王重阳曾与我有过一面之缘，游龙珏似乎与上代武当掌门李天目的失踪大有干系，若真如师傅所料，则游龙珏出，天下必乱。你可前去武当，向王重阳真人禀明此事，我这里修书一封，拜托他替我照顾好你。江湖磨难，一切自己小心。他日若你有所成就，昆仑山必有需要仰仗之处。”&lt;end&gt;
+&lt;playername&gt;：“可是让我这样离开，我怎么放心得下？”&lt;end&gt;
+&lt;npc=371&gt;：“师傅心系天下安危，这是我昆仑弟子必有的觉悟。若游龙珏被西夏人夺去，就不是一个小小的昆仑派遭不遭殃的事情。王重阳真人德高望重，定能将此事圆满解决。你在他那里可以得到更大的历练，将来才更可能帮助昆仑。你的心思我都明白，相信谢某，没了李升阳，一品堂的人我还应付得来。”&lt;end&gt;
+&lt;playername&gt;：“哎，既如此，我再无多话可说，先生自己一切珍重。他日昆仑有需要&lt;playername&gt;的地方，先生捎个信，天涯海角，&lt;playername&gt;必然赶到。”&lt;end&gt;
+&lt;npc=371&gt;：“哎，&lt;playername&gt;，若换个时候，你我当夜饮百杯。趁着一品堂还没有完全封锁昆仑，速速下山去吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给谢雨田</Value>
+              </txt>
+              <txt>
+                <Value>将事情的经过回报给谢雨田</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>准备好了就让谢雨田送我去武当派吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>14</Value>
+              </number>
+              <number>
+                <Value>1442</Value>
+              </number>
+              <number>
+                <Value>2992</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>准备好了吗？我们这就去武当派</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就让谢雨田送我去武当派吧</Value>
+              </txt>
+              <txt>
+                <Value>准备好了就让谢雨田送我去武当派吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>9000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按照谢玉田的交待，去找到武当派的一叶真人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3552</Value>
+              </dialognpc>
+              <number>
+                <Value>14</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“真人您好，我乃义军子弟。承蒙昆仑谢雨田先生看得起，推荐在下前来武当山历练，还望先生引荐。”&lt;end&gt;
+&lt;npc=3552&gt;：“哦，是谢先生的朋友，那必是不可多得的人才。只是我此刻忙着下山，你先留在武当历练一段时间，我便送你去龙虎幻境，客座掌教正在那里静修。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到武当派的一叶真人</Value>
+              </txt>
+              <txt>
+                <Value>找到武当派的一叶真人</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000039</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

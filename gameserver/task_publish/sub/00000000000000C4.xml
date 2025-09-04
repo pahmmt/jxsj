@@ -1,0 +1,219 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000C4" name="宋秋石的来历" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=146&gt;：“新任掌门的来历，居然和白纸一样，没有人知道吗？这件事太奇怪了。”</Pop>
+      <Start>&lt;npc=146&gt;：“在一个下雨的夜晚，秋石先生独自登上西昆仑山。这个看起来有些寂寞的男人背着一只洗白了的包袱，包袱里装着我昆仑派掌门的信物，落英神剑。此剑一直由璇玑子的师傅叹息老人保存，即使宣布前代掌门时，叹息老人也只是口授给众弟子，这也间接导致了当年的璇玑子无法服众。如今落英剑重现西昆仑山，秋石先生无疑被叹息老人选为了新任掌门。”&lt;end&gt;
+&lt;playername&gt;：“昆仑一脉有了新的掌舵者，这是好事情。只是，这掌门人的来历，也真令人神思。”&lt;end&gt;
+&lt;npc=146&gt;：“恩，确实是这样。掌门人的来历过于神秘了，这件事情，终究要对弟子们有一个答复。”&lt;end&gt;
+&lt;playername&gt;：“谢先生有什么好的办法吗？”&lt;end&gt;
+&lt;npc=146&gt;：“如果说这世上还有一个人知道掌门的来历，那只可能是我昆仑的老前辈，如今雪山派的门主殷婆婆了。你可去见性峰上寻找她，便说是愚钝弟子谢雨田求教。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>379</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“婆婆，谢雨田先生让我来找您，求教一个问题。”&lt;end&gt;
+&lt;npc=379&gt;：“呵呵，不必讲了。婆婆我一早就知道，这个孩子早晚会来找我的。你的事情，去雪峰上找我的徒弟们吧，其中有一个人，就是宋秋石那小子的女儿。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与雪山派掌门人殷婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value>与雪山派掌门人殷婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>宋果儿就在女弟子中间，这些雪山派女弟子有先考教考教我的意思</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1454</Value>
+              </fightnpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>宋果儿：“是的，宋秋石是我的父亲。不过当年他习武成痴，抛弃了我与母亲。后来母亲实在忍受不了，和一个西域汉子跑了。父亲练剑回来，知道此事，悲愤欲绝。便独自一人跑去了西域，将我交给婆婆抚养。”</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=146&gt;：“原来，秋石先生真是昆仑门下，这样的话，真是我昆仑幸事啊！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>该回去向谢雨田先生复命了</Value>
+              </txt>
+              <txt>
+                <Value>该回去向谢雨田先生复命了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

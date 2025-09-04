@@ -1,0 +1,710 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000034" name="合宗大典" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“谢先生，在下&lt;playername&gt;，受义军首领白秋琳所托，前来昆仑听候谢先生调遣。”&lt;end&gt;
+&lt;npc=3557&gt;：“&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;快快请起，秋姨早年于谢某有过大恩，她所托付我必当尽力而为。”&lt;end&gt;
+&lt;playername&gt;：“先生，现下有什么需要我的地方？”&lt;end&gt;
+&lt;npc=3557&gt;：“&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;稍安毋躁。我昆仑五派十六宗的合宗大典举行在即，事务繁忙。你可先随我去参礼，会后我自有吩咐。”&lt;end&gt;
+&lt;playername&gt;：“是。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Send2Aim</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3557</Value>
+              </dialognpc>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>你已经达成此目标</Value>
+              </txt>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>1652</Value>
+              </number>
+              <number>
+                <Value>3625</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value>让谢雨田带我去见性峰。
+&lt;color=green&gt;（此行吉凶难测，在出发前建议您去找门派物品保管人记录回城点。合理的记录回城点位置可以有效节省花费在路程上的时间。）&lt;color=white&gt;</Value>
+              </txt>
+              <txt>
+                <Value>是</Value>
+              </txt>
+              <txt>
+                <Value>否</Value>
+              </txt>
+              <txt>
+                <Value>让谢雨田带我去见性峰。</Value>
+              </txt>
+              <txt>
+                <Value>让谢雨田带我去见性峰。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>6000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>见性峰的礼台下，先问问守台弟子合宗大典的事情</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>84</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>145</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位小哥，我想打听打听，究竟合宗大典是怎么一回事？”&lt;end&gt;
+&lt;npc=145&gt;：“你是刚来昆仑的新人吧？居然连五宗十六派都没有听过。一时半会我也和你说不清，你等着听谢先生讲话就好了，他口才好，一讲你就能听明白。”&lt;end&gt;
+
+&lt;npc=146&gt;：“昆仑山各宗各派的师兄师弟们，今天是个特殊的日子。三十年前的今日，由于我昆仑前代掌门师兄弟祸起阋墙，导致数十年间人心失散，最终有能力的高手纷纷开宗立派；昆仑的声威与实力都在内耗中丧失殆尽。但今时不同往日，新一任掌门人秋石先生素浮众望，希望大家摒弃前嫌，和睦共处，重新统一到昆仑的宗派下，宏扬本门武学，将昆仑发扬光大。”&lt;end&gt;
+&lt;npc=146&gt;：“没有规矩，不成方圆。大家既然都同意重归宗派，便必须受本门规矩的约束。秋石先生亲笔拟定了一份刑典，在这里我就不细讲了，只说说第一款：今后凡意图分裂本门，另立门户者，尽废其功，逐出昆仑！同门中有没有对此条款不认同的？若有请及早站出来，在没有正式完成合派仪式前，不会遭到责罚。”&lt;end&gt;
+&lt;npc=146&gt;：“再问一次，有没有？”&lt;end&gt;
+&lt;npc=148&gt;：“有！”&lt;end&gt;
+&lt;npc=146&gt;：“玉虚子，你玉虚剑宗有什么话要讲？”&lt;end&gt;
+&lt;npc=148&gt;：“我玉虚宗的弟子们都习惯了本门律令，不愿再受昆仑门规束缚。我玉虚宗五十三人愿取消宗派，脱离昆仑一脉归隐山林，从此生死与昆仑无关。”&lt;end&gt;
+
+&lt;npc=147&gt;：“玉虚子，今日乃我昆仑合派大典，你他娘的别的日子不选，偏偏选择今日来说不合派了，你成心的是不是？”&lt;end&gt;
+&lt;npc=149&gt;：“哼，与他废什么话？咱们这里这么多人，将玉虚宗的人拿下挑断筋脉，看他们还喊不喊了。”&lt;end&gt;
+&lt;npc=150&gt;：“不能这么便宜他们！三十年了，老子等了三十年才能重归本门，这狗贼居然要坏众人兄弟的兴头，杀了他！”&lt;end&gt;
+&lt;npc=151&gt;：“对，杀了他！”&lt;end&gt;
+&lt;npc=152&gt;：“杀了他！”&lt;end&gt;
+
+&lt;npc=146&gt;：“大家请安静一下，听谢某说几句。玉虚子所为确实不是君子行径，可他并没有坏了规矩。在未完成并派前，昆仑尊重玉虚宗离开的意见，并捍卫其权利。”&lt;end&gt;
+&lt;npc=148&gt;：“谢谢代掌门高风亮节。”&lt;end&gt;
+&lt;npc=146&gt;：“不过玉虚子你听好了，玉虚宗将来若另立门户，阴谋分裂昆仑，昆仑即使战至最后一人也会将祸事者斩尽杀绝，绝不留情。”&lt;end&gt;
+&lt;npc=148&gt;：“我……我知道了。”&lt;end&gt;
+
+&lt;npc=147&gt;：“这样也行？不能够答应。”&lt;end&gt;
+&lt;npc=149&gt;：“这么轻易放过他，我飞光剑派也不合这个派了。”&lt;end&gt;
+&lt;npc=150&gt;：“奶奶个熊，兄弟们跟我上，杀了这狗贼，不然得坏事。”&lt;end&gt;
+&lt;npc=151&gt;：“代掌门说的，也在理啊。”&lt;end&gt;
+&lt;npc=152&gt;：“就是就是。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>先问问守台弟子合宗大典的事情</Value>
+              </txt>
+              <txt>
+                <Value>先问问守台弟子合宗大典的事情</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>且看合宗大典主持人大弟子谢雨田怎么说</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>146</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=146&gt;：“既然大家不满意，那便由掌门人来决定吧。秋石先生不喜欢出席这种热闹的场面，现正在阴山别院中静待消息。&lt;playername&gt;！”&lt;end&gt;
+&lt;playername&gt;：“在。”&lt;end&gt;
+&lt;npc=146&gt;：“你带着玉虚子去一趟阴山别院，向掌门人请示此事。”&lt;end&gt;
+&lt;playername&gt;：“是。”&lt;end&gt;
+&lt;npc=146&gt;：“路上要小心，不满玉虚子的人虽不少，居心叵测，意图挑起昆仑合宗矛盾的人才最可怕。要提防他们趁乱出手，保护好玉虚子。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>且看大弟子谢雨田怎么说</Value>
+              </txt>
+              <txt>
+                <Value>且看大弟子谢雨田怎么说</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>谢雨田担心局势失控，吩咐我护送玉虚子前往阴山别院</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>148</Value>
+              </dialognpc>
+              <number>
+                <Value>1674</Value>
+              </number>
+              <number>
+                <Value>3592</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“玉虚子，我们走吧。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>156</Value>
+              </fightnpc>
+              <number>
+                <Value>25</Value>
+              </number>
+              <number>
+                <Value>48</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1644</Value>
+              </number>
+              <number>
+                <Value>3579</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1657,3599
+1648,3614
+1643,3585
+
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>霎时，秋石先生捏符施诀，脚力蓦地加快，转眼就把我远远甩在了后头。</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>19000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与护卫秋石先生的高手飘萍剑客对话，道明来意</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>153</Value>
+              </dialognpc>
+              <number>
+                <Value>48</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“飘萍先生，谢雨田先生遣我护送玉虚子前来向掌门辞行。”&lt;end&gt;
+&lt;npc=153&gt;：“辞行？”&lt;end&gt;
+&lt;playername&gt;：“玉虚子打算率领玉虚宗五十二名弟子归隐山林，取消玉虚宗的派名，而且也不再与昆仑有瓜葛。”&lt;end&gt;
+&lt;npc=153&gt;：“等着。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与护卫秋石先生的高手飘萍剑客对话</Value>
+              </txt>
+              <txt>
+                <Value>与护卫秋石先生的高手飘萍剑客对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:SetTaskValue</Function>
+            <Parameter>
+              <number>
+                <Value>1022</Value>
+              </number>
+              <number>
+                <Value>57</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>3000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>进入阴山别院内室，终于见到了昆仑掌门秋石先生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>154</Value>
+              </dialognpc>
+              <number>
+                <Value>431</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“掌门人，玉虚子求见。”&lt;end&gt;
+&lt;npc=155&gt;：“掌……掌门……”&lt;end&gt;
+&lt;npc=154&gt;：“玉虚真人，不要急，坐下说话。”&lt;end&gt;
+&lt;npc=155&gt;：“是……是……”&lt;end&gt;
+&lt;npc=154&gt;：“如果没有记错，我重归昆仑的这些年我们见面的次数不超过两次。近年我逐渐潜心静修，咱们就更没有打过照面了。今日这是？”&lt;end&gt;
+&lt;playername&gt;：“掌门人，玉虚子前辈希望率领玉虚宗五十二人归隐山林，退出昆仑。”&lt;end&gt;
+&lt;npc=154&gt;：“哦，真有此事？”&lt;end&gt;
+&lt;npc=155&gt;：“掌门……我豁出去了。这些年虽然您将昆仑派从一盘散沙重又拧成一股绳，建立了不朽功业，可玉虚子始终认为……昆仑身上的毒根没有清除。昆仑一脉内斗的风气、自相残杀的传统还在，只是被您以一己之力压制着。这么多年，我和我的门徒都累了，真的想离开这个江湖。”&lt;end&gt;
+&lt;npc=154&gt;：“你有没有想过，在这个时候离开，会给昆仑造成多大的被动？”&lt;end&gt;
+&lt;npc=155&gt;：“正是虑及此点，我才反反复复的考虑，无法决断。可是到了合宗大典，若还不讲，弟子们是绝计不能答应的。”&lt;end&gt;
+&lt;npc=154&gt;：“看来，你们都下了极大的决心。”&lt;end&gt;
+&lt;npc=155&gt;：“是。”&lt;end&gt;
+&lt;npc=154&gt;：“唉……去吧。”&lt;end&gt;
+&lt;npc=155&gt;：“掌门。”&lt;end&gt;
+&lt;npc=154&gt;：“走吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋石先生对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋石先生对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000035</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DoExecute</Function>
+            <Parameter>
+              <txt>
+                <Value>me.AddSkillState(2929,10,1,90*18,1,1,1,0,1) </Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

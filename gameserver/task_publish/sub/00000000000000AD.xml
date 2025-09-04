@@ -1,0 +1,232 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000AD" name="秋云深重" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=326&gt;：“官军老这样围着不是个办法，帮里众人情绪有些不稳定，再这样下去怕是要出事。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=326&gt;：“近来大批的官军来到燕子坞，设卡盘查，稍通武功之人便要被扣押下来审查。帮众对此事不甚了解，多有猜测，近日来怨声载道，我担心长此以往，会闹出些大乱子。”&lt;end&gt;
+&lt;playername&gt;：“我看那些官军的旗帜，该是李忠所部。此人不是李后的亲信吗？”&lt;end&gt;
+&lt;npc=326&gt;：“不错。李忠意欲拉拢石帮主，借助丐帮分布全国各地的庞大网络，控制人心，发展实力。石帮主一时不曾答允，他等不急便大兵压境，企图武力胁迫。”&lt;end&gt;
+&lt;playername&gt;：“这样的话，若双方起了冲突，岂非鸡飞蛋打？”&lt;end&gt;
+&lt;npc=326&gt;：“虽然如此，最终丐帮是经不起如此折腾的。你看看五毒教，因朝廷一道追杀令而沦落到在原始森林与野兽混处的地步。真与朝廷冲突起来，吃亏的是咱们。李忠就是算准了这一点，才会有恃无恐。”&lt;end&gt;
+&lt;playername&gt;：“这样一来，岂非必须就范？”&lt;end&gt;
+&lt;npc=326&gt;：“非也。恰好被我知道，昨日夜间，左近归鸿村遭到强匪血洗。此事我丐帮弟子报来时，官军该还不知晓。他们等我号令，没有轻易去碰强匪。若我们假借官军名义，杀掉强匪，然后制造情报，宣扬官军在缴匪时屠戮无辜民众，那么方圆百里之内的百姓必然沸腾。如此他们想不收兵也难。”&lt;end&gt;
+&lt;playername&gt;：“这样岂能不被李忠察觉？”&lt;end&gt;
+&lt;npc=326&gt;：“时间上控制好便行。我会派人将消息传给官军，他们去时，留几个强匪给他们杀。然后安排一两个强匪逃跑。官军必然以为这消息是强匪所宣扬，与我们一些干系也没有了。”&lt;end&gt;
+&lt;playername&gt;：“可要如何让强匪认定是官军所为？”&lt;end&gt;
+&lt;npc=326&gt;：“你可先去官军营地偷取一套军装，乔装伪办后再前去归鸿村。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2044</Value>
+              </fightnpc>
+              <number>
+                <Value>50</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2043</Value>
+              </fightnpc>
+              <number>
+                <Value>50</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>在乔装打扮后去归鸿村将强匪杀尽</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2215</Value>
+              </fightnpc>
+              <number>
+                <Value>50</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>事情都办妥了，将情况回报冷秋云吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>326</Value>
+              </dialognpc>
+              <number>
+                <Value>50</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=326&gt;：“这样一来，够那帮家伙折腾半天了。不出三天，方圆百里的民众定要闹起来的，希望这步棋能收到想象中的效果。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报冷秋云吧</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报冷秋云吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

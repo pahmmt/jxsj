@@ -1,0 +1,888 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000023B" name="心病心药" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4562&gt;：“早在几天前，杨氏便与我提起过此事，她的一个远方表亲从金国来投奔她，希望杨氏能够为他在宫中某一份差事，可杨氏觉得她的表亲身份特殊，乃金国皇家后裔，更不希望他出现在宫中的其他地方引人话柄，想必那天的事情是一个误会吧。” &lt;end&gt;
+&lt;Playername&gt;：“事情竟然是这样的……”&lt;end&gt;
+&lt;npc=4562&gt;：“杨氏为人聪明机警，却也贤惠，断不会做出通敌卖国之事，这一点无需怀疑。” &lt;end&gt;
+&lt;Playername&gt;：“是&lt;playername&gt;多虑了。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=5&gt;
+&lt;npc=4590&gt;:“帮人把脉需要足够的时间，你且等待一会儿吧。”&lt;end&gt;
+&lt;playername&gt;：“对不起，&lt;npc=4590&gt;，我继续等。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>PlayerLevelUp</Function>
+            <Parameter>
+              <number>
+                <Value>135</Value>
+              </number>
+              <txt>
+                <Value>将等级提升至135级</Value>
+              </txt>
+              <txt>
+                <Value>将等级提升至135级</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>ReputeValue</Function>
+            <Parameter>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <number>
+                <Value>5930</Value>
+              </number>
+              <txt>
+                <Value>军营声望达到5级5930点</Value>
+              </txt>
+              <txt>
+                <Value>军营声望达到5级5930点</Value>
+              </txt>
+              <string>
+                <Value>5</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4562</Value>
+              </dialognpc>
+              <number>
+                <Value>564</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4562&gt;：“&lt;playername&gt;，你可知道当下朝廷中都在议论些什么？” &lt;end&gt;
+&lt;playername&gt;：“是立后的议题吗？&lt;playername&gt;已经略有耳闻，可是皇上已经有了决定？”&lt;end&gt;
+&lt;npc=4562&gt;：“恩，这些日子我一直在想立后的事情，曹美人贤良淑德，对我体贴万分，我甚是喜欢。但是作为一名皇后，要母仪天下，除了具有品德以外，还要有坚强果断的性格，在这点上曹美人不如杨氏。”&lt;end&gt;
+&lt;npc=4562&gt;：“经过这段时间的思量，我最终决定杨氏为新后。圣旨将在几日后发出。你且先将这个消息告诉韩相吧，就说我意已决，不会再做更改。” &lt;end&gt;
+&lt;playername&gt;：“既然皇上已经考虑清楚了，我这便告退，将消息带给韩相吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将杨氏为新后的消息带给韩相</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>556</Value>
+              </dialognpc>
+              <number>
+                <Value>516</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“韩大人，今日身子感觉如何，好些了么？”&lt;end&gt;
+&lt;npc=556&gt;：“感觉身体没什么力气，不过没什么大碍。杨氏通敌的证据呈给皇上了吗？他怎么说呢？”&lt;end&gt;
+&lt;playername&gt;：“杨氏已经先发制人的将那天发生的事情解释给皇上了。”&lt;end&gt;
+&lt;playername&gt;：“她说那天的人确是金国人，但只是她娘家的一个远亲，却又和金国皇室有联系，她想为那人在宫中某份差事。却忌惮这人与金国皇室有着某种联系一直没有安排。按她的说法，事情确是如此简单。”&lt;end&gt;
+&lt;npc=556&gt;：“一定不是这样的。那皇上做何表态？”&lt;end&gt;
+&lt;playername&gt;：“皇上……皇上完全相信杨氏。并说新后应该母仪天下，除了具有品德以外，还要有坚强果断的性格，在这点上曹美人不如杨氏。并最终决定杨氏为新后。”&lt;end&gt;
+&lt;npc=556&gt;：“这……不可能啊，皇上竟然没有征求我的意见就擅立新后，我要去劝他改变主意！”&lt;end&gt;
+&lt;playername&gt;：“韩大人莫要冲动，皇上此意已决，怕是不会再做改变。”&lt;end&gt;
+&lt;npc=556&gt;：“这……杨氏素来对我印象不佳，若她真的做了新后，这……这怎么可能……我觉得胸，好闷……”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到胡太医为韩相诊治</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4590</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“胡太医，不好了，韩相晕倒了。” &lt;end&gt;
+&lt;npc=4590&gt;：“竟有此事，为何忽然昏倒？”&lt;end&gt;
+&lt;playername&gt;：“这……&lt;playername&gt;一时半会儿也说不清。”&lt;end&gt;
+&lt;npc=4590&gt;：“莫要着急，待我前去诊治一番，你就在屋外稍候片刻吧。” &lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与胡太医对话</Value>
+              </txt>
+              <txt>
+                <Value>与胡太医对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>等待太医为韩相诊治</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>10000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>180</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>不知韩相何故晕倒，我要问问太医才行。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4590</Value>
+              </dialognpc>
+              <number>
+                <Value>29</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4590&gt;：“少侠放心，韩大人并无大碍，只是气急攻心加上过度操劳，气血虚弱，只要安心静养不出月余应该就能下床了。”&lt;end&gt;
+&lt;playername&gt;：“如此便好了，有劳太医。”&lt;end&gt;
+&lt;npc=4590&gt;：“不敢当，这是我份内之事。对了，我知道在神女峰有一些奇特的药材对治疗气血虚弱这种症状有奇效，若少侠有心可以去弄些回来为韩相煎制药品，韩相会恢复的更快。”&lt;end&gt;
+&lt;playername&gt;：“既是这样，我便前去神女峰收集些药材回来。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与胡太医对话</Value>
+              </txt>
+              <txt>
+                <Value>与胡太医对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>去神女峰弄些稀罕草药回来</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4NormalItem</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2337</Value>
+              </fightnpc>
+              <number>
+                <Value>134</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,823,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>0.3</Value>
+              </number>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>快马加鞭将药材带回给韩相</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>556</Value>
+              </dialognpc>
+              <number>
+                <Value>516</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=556&gt;：“&lt;Playername&gt;你回来了，看我这老骨头，不中用了。”&lt;end&gt;
+&lt;playername&gt;：“韩相昏迷这段时间里我从神女峰中收集了些对您身体有好处的药材，您是一国的宰相，一定要快快好起来啊。”&lt;end&gt;
+&lt;npc=556&gt;：“想起朝中的这些明争暗斗，和那新立的皇后我便气闷。我有些倦也有些乱，还要劳烦&lt;Playername&gt;去宫里一趟，帮我跟皇帝告个假，就说我身体抱恙，一段时间不去朝中了，边角事务自有苏师旦帮忙打理。这些天我一直在想一些事情。”&lt;end&gt;
+&lt;npc=556&gt;：“一个人活在世上究竟应该干些什么，又应该为世人留下些什么？一个人拥有再大的权力却不被世人所记住和赞扬也是无济于事。罢了……我还没想清楚呢，你先去帮我向皇上告假吧。” &lt;end&gt;
+&lt;playername&gt;：“大人切莫太操劳了，只管安心养病吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value>与韩侂胄对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮韩相向皇帝告假</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{823,}</Value>
+              </taskitem>
+              <number>
+                <Value>12</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4562</Value>
+              </dialognpc>
+              <number>
+                <Value>564</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4562&gt;：“&lt;playername&gt;你来的正好，韩相的病如何了？听太医说并无大碍。但治疗初期不便受到打扰，我也便没有前去探望。” &lt;end&gt;
+&lt;playername&gt;：“韩相的病系终年劳碌加之心中气闷所致，已经每日按时服药调理，相信不久便会康复了。”&lt;end&gt;
+&lt;npc=4562&gt;：“希望如此。我从义军之中把你借来看来是明智的选择啊，许多事情有了你的帮忙感觉顺手多了。这段时间多亏你相助。韩相身体微恙，还望你多多操心照料。”&lt;end&gt;
+&lt;playername&gt;：“义军承蒙皇恩，这些都是&lt;playername&gt;该做的事情，皇上过誉了。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value>与宁宗皇帝对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>000000000000023C</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

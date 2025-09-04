@@ -1,0 +1,955 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000133" name="义军老板" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>甜酒叔：“来来来，再和我赌一铺，可不能就这么耍赖跑掉啊。给点勇气出来嘛。”</Pop>
+      <Start>&lt;npc=3561&gt;:“来来来，再和我赌一铺，可不能就这么耍赖跑掉啊。给点勇气出来嘛。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按F4打开任务面板，点击跟踪按钮，可在主界面上追踪该任务</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3561</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3561&gt;:“哎，还是不难为你了！把鼠标移到武器上，用鼠标右键单击就可以装备啦。老叔我不仅告诉你怎么用武器，还慷慨的送给你一件防具，一副首饰，还有一张回城符！就是没有东西。”&lt;end&gt;
+
+&lt;npc=3561&gt;:“嘿嘿，其实是有的，不过这些东西不在俺手里，全在村子里其他老板的柜子里藏着。他们玩色子输给我老甜酒咯，又不认账，嘿嘿，你如果能替我要回来，东西就归你。&lt;color=red&gt;防具铺老板沈荷叶&lt;color&gt;是前朝兵部侍郎的干女儿，大户人家的小姐，最喜欢绕圈圈，你就从她那里开始吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>3</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>听说防具铺老板沈荷叶雅好诗词，不知她是否会刁难我</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AnsewerTheQuestion_A</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3562</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3562&gt;：“‘风住尘香花已尽，日晚倦梳头。物是人非事事休，欲语泪先流。’易安居士真是深得词中三味，清浅淡雅，不高深不造作……&lt;playername&gt;来了呀，快坐吧。来，吃个雪梨。是铁匠铺那个老酒鬼让你来拿防具的哦，拿去拿去。不过你荷叶姑姑今天无趣极了，咱们来猜个谜语好不好？”</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3562&gt;：“聪明的&lt;playername&gt;，东西你拿去吧。你接下来要去的&lt;color=red&gt;郝漂靓&lt;color&gt;那里，可就没有姑姑这样好讲话咯。她是小户人家的女子，颇多市井气，凡事爱斤斤计较，要好自为之哦。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value>再来一次吧</Value>
+              </txt>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>13,14</Value>
+              </string>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>4</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>荷叶姐告诉我首饰铺老板郝漂靓乃市井女子，看来她俩之间有些疙瘩</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AnsewerTheQuestion_A</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3563</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3563&gt;：“哦哦，是甜酒那老不死的让你来拿首饰的啊，我什么时候输给他首饰了，他这不是讹诈吗！甜酒猪太坏了，太坏了。不过既然是&lt;playername&gt;过来，我当然是要送给你当礼物的。”
+
+“什么？沈荷叶也送了你一件装备？还让你猜了谜语？那不行，你也得猜对我的题目才可以把首饰给你，否则显得我郝漂靓掉价似的。”</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3563&gt;：“哈哈，&lt;playername&gt;真是乖地很，来来来，首饰送给你咯。你此行去找药材铺那个&lt;color=red&gt;赤脚医生张斩经&lt;color&gt;。他是很严肃的，你不要害怕哦。”</Value>
+              </txt>
+              <txt>
+                <Value>再来一次吧</Value>
+              </txt>
+              <number>
+                <Value>10</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>15,16</Value>
+              </string>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>郝漂靓虽称药铺先生张斩经为赤脚医生，言辞间似乎并无不敬</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3564</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3564&gt;：“尽屠金狗，复我山河！”&lt;end&gt;
+
+&lt;npc=3564&gt;：“是替甜酒来收债了，这个铁匠真是狡猾。好吧，看在秋姑的面子上，我不仅将欠他的药品给你，再另送一套。江湖上行走，刀头舔血在所难免，关键的时刻一定要多用药品续命。我这里无事了，去寻杂货铺的&lt;color=red&gt;不动先生&lt;color&gt;吧。这位先生是个出奇的懒人，吃饭睡觉也不愿动，所以才诨名不动先生。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>斩经先生说，杂货老板不动先生是个出奇的懒人，我倒要见识见识</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>道具可在背包中单击鼠标右键使用或装备</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3565</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3565&gt;：“尽屠金狗，复我山河！”&lt;end&gt;
+
+
+&lt;npc=3565&gt;:“人生无非吃喝拉撒，能不动就不动吧，一动就要消耗元气精力的呢，很亏的呢。啊？什么是元气？你算问对人了！这个元气呢,就是元气的元，元气的气！喂，……喂不要打人好不啦，素质，注意素质！”&lt;end&gt;
+
+&lt;npc=3565&gt;:“好，不扯淡啦。拿我这铺子里的回城符说吧，万一到战场上去收些兵甲器皿，我一用它就能飞回村里，那个时候就感觉生活是如此惬意，哼哼哈嘿。来，我这里有些&lt;color=red&gt;烟火&lt;color&gt;，你替我到&lt;color=red&gt;酒楼前&lt;color&gt;放掉，全当祝贺大老白的新店开张。”&lt;end&gt;
+
+&lt;npc=3565&gt;:“还有还有！放完之后记得找他拿一封银子，那是我寄存在他处的。一定不要忘记！你要是敢忘，我……我晚上就去刨你家祖坟。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3565&gt;:“好，不扯淡啦。来，我这里有些&lt;color=red&gt;烟火&lt;color&gt;，你替我到&lt;color=red&gt;酒楼前&lt;color&gt;放掉，全当祝贺大老白的新店开张。”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{不动先生的烟火,20,1,406,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与不动先生对话</Value>
+              </txt>
+              <txt>
+                <Value>与不动先生对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>不动先生让我去酒楼前放烟火</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>CastSkillAtAreaWithDesc</Function>
+            <Parameter>
+              <itemid>
+                <Value>{20,1,406,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>307</Value>
+              </number>
+              <number>
+                <Value>7</Value>
+              </number>
+              <number>
+                <Value>1558</Value>
+              </number>
+              <number>
+                <Value>3234</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>去酒楼前燃放烟火，烟火在背包中，可右键点击施放</Value>
+              </txt>
+              <txt>
+                <Value>去酒楼前燃放烟火，烟火在背包中，可右键点击施放</Value>
+              </txt>
+              <string>
+                <Value>1,1406,3096,10
+2,1811,3509,10
+3,1601,3260,10
+4,1655,3199,10
+5,1595,3151,10
+6,1642,3098,10
+7,1559,3228,10
+8,1776,3405,10
+</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TipPopo</Function>
+            <Parameter>
+              <number>
+                <Value>6</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddMoney</Function>
+            <Parameter>
+              <number>
+                <Value>1000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>烟火已放，该替不动先生去找酒楼老板大老白讨要红包了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>按下回车键(Enter)打开聊天栏，输入你想说的话，再按回车就可以发送</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3566</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3566&gt;：“尽屠金狗，复我山河！”&lt;end&gt;
+
+&lt;npc=3566&gt;：“哈哈哈，是不动那老贼叫你来的吧，他诓骗你呢。今日我家酒楼开张，来道贺的按惯例有一封碎银，不动是懒得走这几脚路，又舍不得那点银子，才托你走这一趟。”&lt;end&gt;
+
+
+&lt;npc=3566&gt;：“既然你来了，银子还是拿去给不动，我这里呢，还有个开张的头彩，讲给你听。那就是对对联。上联是‘一二三四五六七一’，谁能对出下联，我封个最厚的利事给他！”&lt;end&gt;
+
+&lt;npc=3566&gt;：“好了，你想到答案随时可以来找我，用近聊的方式输入下联，在我身边敲出来。正确的话我当面重谢你。现在回去将银子交还给&lt;color=red&gt;不动老贼&lt;color&gt;吧。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <string>
+                <Value>{银票,20,1,129,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与大老白对话要赏银</Value>
+              </txt>
+              <txt>
+                <Value>与大老白对话要赏银</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>500</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>大老白慷慨的给了我一封银子，让我交给不动先生</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>AddTaskItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{129,}</Value>
+              </taskitem>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>StepEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>点中目标角色，在弹出的该角色面板下部选择好友按钮，可结成好友</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TalkNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3565</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3565&gt;:“哈哈哈，我还以为大老白会反悔呢。像他这样讲信用的人，就值得做朋友了。那么在这个江湖中怎样结交好友呢？还是得不动我来和你讲。”&lt;end&gt;
+
+&lt;npc=3565&gt;:“现在加好友的方式为鼠标左键点击一个玩家后在左上角弹出的界面上选择添加好友。”&lt;end&gt;
+
+&lt;npc=3565&gt;:“怎样？我聪不聪明？哼哼！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>金刚：你现在可以回去交任务了。</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000134</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:GiveActiveMoney</Function>
+            <Parameter>
+              <number>
+                <Value>6</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,83 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Task id="00000000000000A9" name="天王弟子的委托" describe="最近天王帮青螺岛附近来了很多江湖人士，这些人行踪诡异，武功高强，天王帮门下弟子前去查探都碰了硬钉子，还折损了不少人手，天王众弟子郁闷之下只能委托我这个外人来解决此事，击败来敌首领，查清他们的目的。">
+  <Attribute>
+    <Order>linear</Order>
+    <Repeat>false</Repeat>
+    <Context />
+    <Share>true</Share>
+    <TaskIconIndex>1</TaskIconIndex>
+    <TaskType>2</TaskType>
+    <AutoTrack>true</AutoTrack>
+    <ShowInfo>false</ShowInfo>
+  </Attribute>
+  <Managed>
+    <Sub id="000000000000014C" name="天王弟子的委托" describe="最近天王帮青螺岛附近来了很多江湖人士，这些人行踪诡异，武功高强，天王帮门下弟子前去查探都碰了硬钉子，还折损了不少人手，天王众弟子郁闷之下只能委托我这个外人来解决此事，击败来敌首领，查清他们的目的。&#xD;&#xA;&lt;stepdesc&gt;击败&lt;pos=杀手统领,55,1730,3327&gt;，查探这批人此行的目的。&#xD;&#xA;&lt;stepdesc&gt;来敌原来是五毒教之人，将这个消息告诉&lt;pos=郁闷的天王弟子,55,1749,3579&gt;吧。" refer="000000000000014C">
+      <Attribute>
+        <Parameter>
+          <dialognpc>
+            <Value>1165</Value>
+          </dialognpc>
+          <itemid>
+            <Value>{}</Value>
+          </itemid>
+          <award>
+            <Value>{{szType="exp",varValue=100000,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},{szType="money",varValue=100,nSprIdx="",szDesc="",szCondition1="TaskAwardCond:None",szCondition2="TaskAwardCond:None",szCondition3="TaskAwardCond:None",},}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <award>
+            <Value>{}</Value>
+          </award>
+          <bool>
+            <Value>true</Value>
+          </bool>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+          <faction>
+            <Value>-1</Value>
+          </faction>
+          <txt>
+            <Value />
+          </txt>
+          <dialognpc>
+            <Value>4</Value>
+          </dialognpc>
+          <txt>
+            <Value>来敌原来是五毒教之人，先将这个消息回报给&lt;pos=杨铁心,55,1812,3456&gt;帮主吧。</Value>
+          </txt>
+          <number>
+            <Value>0</Value>
+          </number>
+          <number>
+            <Value>21</Value>
+          </number>
+          <txt>
+            <Value>去青螺岛找到&lt;pos=郁闷的天王弟子,55,1749,3579&gt;，可以接到任务【天王弟子的委托】。</Value>
+          </txt>
+          <number>
+            <Value>1</Value>
+          </number>
+          <number>
+            <Value>0</Value>
+          </number>
+        </Parameter>
+        <Condition />
+        <Condition>
+          <Grid>
+            <Function>TaskCond:IsLevelAE</Function>
+            <Parameter>
+              <number>
+                <Value>21</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Condition>
+      </Attribute>
+    </Sub>
+  </Managed>
+</Task>

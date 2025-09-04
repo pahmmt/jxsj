@@ -1,0 +1,598 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001F3" name="黑米娃娃" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=4107&gt;：“三个月前，我义军驻西南部将士为保护当地白蛮部落百姓，与当地乌蛮部族激战数十天。我义军将士作战勇猛，却绝不伤害当地老弱妇孺，此次归来还带回一名白蛮孤儿。”&lt;end&gt;
+&lt;playername&gt;：“战争的受害者永远是黎民百姓，好在有义军这样的情义之师。他应该很快能适应这里吧。” &lt;end&gt;
+&lt;npc=4107&gt;：“说的没错，我义军将士都很喜爱萌萌，不过可能是因为战争失去了亲人的缘故，这孩子性格依然很孤僻，不愿意和人交流，却能和狼说话。我记起从前在义军中的孩子们都喜欢你，若你能够前去帮助他走出阴影便是再好也不过了。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;这便去试上一试。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4374</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“小弟弟，你是叫萌萌吧！我是&lt;playername&gt;。嘿嘿，你一定还不认识我吧！”&lt;end&gt;
+&lt;npc=4374&gt;：“恩……”&lt;end&gt;
+&lt;playername&gt;：“我小时候便是在这个军营之中长大的哦！这里的大官儿是一个姓白的女侠，武功可威风了呢！”&lt;end&gt;
+&lt;npc=4374&gt;：“是吗……真好……”&lt;end&gt;
+&lt;playername&gt;：“小弟弟，你是不是想你的家人了，他们现在一定在天国过的很快乐，要是你不开心，他们也不会开心哟。”&lt;end&gt;
+&lt;npc=4374&gt;：“&lt;playername&gt;，我听义军里的人说了你很厉害的！我想求你一件事情……”&lt;end&gt;
+&lt;playername&gt;：“是什么呢？我一定尽力帮你哦！”&lt;end&gt;
+&lt;npc=4374&gt;：“我的家里人在乌蛮与白蛮部族的战争中全都离开了……义军的哥哥和姐姐们带着我翻越山岭来到了这里，可是我的黑米娃娃落在了我家附近，那是妈妈做给我的礼物，&lt;playername&gt;你能把它找回来吗？”&lt;end&gt;
+&lt;playername&gt;：“好的，萌萌你乖乖在这里等着哦，我这便前去把娃娃给你找回来。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与义军军营中的孤儿萌萌对话</Value>
+              </txt>
+              <txt>
+                <Value>与义军军营中的孤儿萌萌对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>赶往萌萌的故乡，先把娃娃的几个部分都找到再说吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>8000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1688</Value>
+              </dialognpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜集拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{破旧的娃娃,20,1,538,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到破旧的娃娃</Value>
+              </txt>
+              <txt>
+                <Value>找到破旧的娃娃</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1595,3317</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1689</Value>
+              </dialognpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜集拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{娃娃的衣服,20,1,539,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到娃娃的衣服</Value>
+              </txt>
+              <txt>
+                <Value>找到娃娃的衣服</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1616,3321</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1690</Value>
+              </dialognpc>
+              <number>
+                <Value>135</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>搜集拾取中</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{娃娃的帽子,20,1,540,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>找到娃娃的帽子</Value>
+              </txt>
+              <txt>
+                <Value>找到娃娃的帽子</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1592,3336</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>先找荷叶姐姐看能不能给娃娃缝补一下</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3562</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“荷叶姐，&lt;playername&gt;来了，好久不见，你越来越漂亮了。”&lt;end&gt;
+&lt;npc=3562&gt;：“&lt;playername&gt;你说话还是那么中听啊，你是无事不登三宝殿，说吧要求我什么事儿？”&lt;end&gt;
+&lt;playername&gt;：“荷叶姐，瞧你说的，以后一定多来看望军中各位。今天来想请你帮个忙，这里有个破损的娃娃，帮&lt;playername&gt;补好吧！”&lt;end&gt;
+&lt;npc=3562&gt;：“哈哈，就这点儿小事啊，荷叶姐干别的不行，干起针线活儿的话你还是可以放一百个心哟！”&lt;end&gt;
+&lt;playername&gt;：“谢谢荷叶姐，我先行告辞！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{完好的黑米娃娃,20,1,541,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>先找荷叶姐姐看能不能给娃娃缝补一下</Value>
+              </txt>
+              <txt>
+                <Value>先找荷叶姐姐看能不能给娃娃缝补一下</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将完好的黑米娃娃交给萌萌</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{538,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{540,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{539,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4374</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4374&gt;：“&lt;playername&gt;，你回来了！啊……我的娃娃！”&lt;end&gt;
+&lt;playername&gt;：“ 萌萌，&lt;playername&gt;答应过你的事情没有食言吧？你的娃娃又完好的回到你身边啦！不要想太多了，义军中的哥哥姐姐都是你的亲人，若有什么困难和想法要和我们大家说，我们现在便是一家人了。”&lt;end&gt;
+&lt;npc=4374&gt;：“恩，谢谢&lt;playername&gt;。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将完好的黑米娃娃交给萌萌</Value>
+              </txt>
+              <txt>
+                <Value>将完好的黑米娃娃交给萌萌</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{541,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

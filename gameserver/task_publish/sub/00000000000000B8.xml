@@ -1,0 +1,184 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000B8" name="叛乱证据" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=320&gt;：“这些捕快真是烦人，抓也抓不完，如何是好？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=320&gt;：“&lt;if me.nSex==0&gt;侠士&lt;else&gt;侠女&lt;endif&gt;，在下有一事相求，不知你能否出手相助。”&lt;end&gt;
+&lt;playername&gt;：“但说无妨。”&lt;end&gt;
+&lt;npc=320&gt;：“朝廷不知从哪里获悉，本帮正大规模整军备武，图谋不轨。由于事发突然，季管事未来得及防备，帮内被这个莫名的消息弄得相当被动。而且假消息的制造者显然预谋已久，不仅将消息散布出去，还安排了大量的伪证，其中以本帮与各大势力的联络信函为主。乔装密探与捕快身上都藏有这些信，务必全部夺回，否则一场血雨腥风将无法避免。”&lt;end&gt;
+&lt;npc=320&gt;：“原本如此重要之事，管事都交给裴翼飞裴大哥办理，可惜近来他离岛在外，这棘手之事才交到我手中，还真是难办啊。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error>季叔班门下弟子：“一定是哪里出了问题，这个任务进行不下去了。”</Error>
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2066</Value>
+              </fightnpc>
+              <number>
+                <Value>65</Value>
+              </number>
+              <taskitem>
+                <Value>{5,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>40</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2067</Value>
+              </fightnpc>
+              <number>
+                <Value>65</Value>
+              </number>
+              <taskitem>
+                <Value>{5,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>40</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将夺回的伪造信函带回给季叔班门下弟子</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>320</Value>
+              </dialognpc>
+              <number>
+                <Value>65</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=320&gt;：“呼……总算是完成了，太不容易了。将来这种苦差，还是让给裴大哥来做吧。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{伪造的联络信函,20,1,5,1,0,40}</Value>
+              </string>
+              <txt>
+                <Value>将夺回的伪造信函带回给季叔班门下弟子</Value>
+              </txt>
+              <txt>
+                <Value>将夺回的伪造信函带回给季叔班门下弟子</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{5,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,541 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000018C" name="问候" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3514&gt;：“&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;若有闲暇，能不能替我前往虎丘剑池的碧光禅院一趟，唐某必有重谢！”&lt;end&gt;
+&lt;playername&gt;：“不知先生要我前去那里所为何事？”&lt;end&gt;
+&lt;npc=3514&gt;：“事情是这样的，我和碧光禅院的碧光禅师是忘年之交，我们约定每隔两年就会互访一次。今年轮到碧光禅师来唐门作客，但是约定的日子过了几天仍不见他的人影。碧光禅师是有道高僧，精研佛法，不修武学。我怕他遇到什么意外，所以想请你前去碧光禅院看一看。”</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>988</Value>
+              </dialognpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“见过禅师！唐门的唐如先生要来我拜见禅师，看看禅师因何事未能按时赴约。”&lt;end&gt;
+&lt;npc=988&gt;：“唉！事情荒谬的很！前些日子来了一名叫做格桑平措的番僧，初始还同老衲研究佛法颇知礼仪，后来就渐渐有些蛮横了。他明知老衲不修武学，却非要同老衲切磋武学。老衲推说不会，他便借故赖着不走。老衲门子弟子同他理论，却被他门下两大弟子以武逼回。说来惭愧，老衲的弟子中也无人习武，只能忍气吞声在此，哪里还有心情赴约。”&lt;end&gt;
+&lt;playername&gt;：“岂有此理，我看这番僧比武是假，想要谋夺禅师的禅院倒像是真的。他现在何处，让我去会会他。”&lt;end&gt;
+&lt;npc=988&gt;：“此人每日都会去佛塔朝拜，手下两名弟子比其师更加凶狠，你可要加倍小心。”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜访碧光禅师</Value>
+              </txt>
+              <txt>
+                <Value>拜访碧光禅师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找番僧格桑平措理论</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>992</Value>
+              </dialognpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你这番僧，不在吐蕃潜修却来我大宋撒野。识相的就趁早离去，也免得我妄动无名！”&lt;end&gt;
+&lt;npc=992&gt;：“施主好大的口气，也不怕风大闪了舌头！大宋高手本座见过不少，成才的也不过寥寥。休提本座，就是本座门下弟子就足以令你肝胆俱裂。你若不服就去比比，若是两人皆败，本座二话不说立刻走人。”&lt;end&gt;
+&lt;playername&gt;：“比就比，也叫你见识见识我大宋武学的精髓所在。你那两名弟子现在何处？”&lt;end&gt;
+&lt;npc=992&gt;：“本座座下有两大弟子，一名魔音鼓，一名搜魂铃。魔音鼓就在禅院，搜魂铃此刻当在剑池修行。本座劝你不要造次，以免自取其辱。”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找番僧格桑平措理论</Value>
+              </txt>
+              <txt>
+                <Value>找番僧格桑平措理论</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>挑战魔音鼓和搜魂铃</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>993</Value>
+              </fightnpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>996</Value>
+              </fightnpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将挑战的结果告诉格桑平措</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>992</Value>
+              </dialognpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“你这番僧就知道口吹大气，如今你门下弟子皆败在我手下，看你还有何话说！”&lt;end&gt;
+&lt;npc=992&gt;：“什么？看不出你竟然有这样的本事。本座向来言出法随，绝不变更。你放心好了，待本座弟子归来便会当即离开此地。”&lt;end&gt;
+&lt;playername&gt;：“你这番僧倒是蛮守信用，他日相见当会亲自请教！”&lt;end&gt;
+&lt;npc=992&gt;：“随时候教！”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到格桑平措</Value>
+              </txt>
+              <txt>
+                <Value>找到格桑平措</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将番僧答应离去的消息带给碧光禅师</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>988</Value>
+              </dialognpc>
+              <number>
+                <Value>96</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“恭喜禅师，这帮番僧稍后就会离开禅院了。”&lt;end&gt;
+&lt;npc=988&gt;：“阿弥陀佛！老衲代合寺众僧谢过施主了！请你转告唐如施主，待老衲料理一些杂事，不日便会前往唐门。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>通知碧光禅师</Value>
+              </txt>
+              <txt>
+                <Value>通知碧光禅师</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将碧光禅师的话转达给唐如</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3514</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“禅师被一番僧阻扰误了行期，好在现在已经无事。他请我转告先生，不日就会抵达唐门。”&lt;end&gt;
+&lt;npc=3514&gt;：“这真是太好了！”</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>通知唐如</Value>
+              </txt>
+              <txt>
+                <Value>通知唐如</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

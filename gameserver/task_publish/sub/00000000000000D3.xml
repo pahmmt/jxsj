@@ -1,0 +1,244 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D3" name="情痴志铭" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=417&gt;：“那叫蝶飘飘的女子，怎么总让我觉得在哪里见过呢？”&lt;end&gt;</Pop>
+      <Start>&lt;npc=417&gt;：“我总觉得，五毒教的彩蝶仙子与我之间，有一种说不清道不明的联系，似乎有什么东西是共同的，可又想不起来。究竟是什么呢？”&lt;end&gt;
+&lt;playername&gt;：“你不要犯贱了，人家是大美女，连富可敌国的屠家公子慕容湘君都在追求她，怎么看得上你一个武当穷小子。”&lt;end&gt;
+&lt;npc=417&gt;：“犯贱？……犯贱……啊，对了！我想起来了，答案就在那柄剑上！蝶飘飘的避邪剑纹与我的青冥剑纹似乎相互吻合，这两柄剑，应该是一对雌雄双剑！若真是如此，我俩岂非天作之合！”&lt;end&gt;
+&lt;playername&gt;：“做梦吧你。”&lt;end&gt;
+&lt;npc=417&gt;：“不要这样打击人嘛！”&lt;end&gt;
+&lt;playername&gt;：“……你想让我帮什么忙，就直接说。”&lt;end&gt;
+&lt;npc=417&gt;：“咳咳……这个……其实……我的青冥剑被两个顽皮的小师弟无忧子和无嗔子偷去了，你看，这试剑坪内三代弟子众多，我必须督导他们勤奋练习，实在脱不开身。你能否替我走一趟，分别找他们要回宝剑和剑鞘。不过这两个小子很淘气，若你不教训教训他们，恐怕不会乖乖就范。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>418</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,44,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>419</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,45,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>取得了青冥宝剑，可以回去交给钟志铭了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GiveItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>417</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=417&gt;：“辛苦你了。那叫蝶飘飘的女子，怎么总让我觉得在哪里见过呢？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{青冥宝剑,20,1,44,1,0,1}
+{青冥剑套,20,1,45,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将青冥宝剑回去交给钟志铭</Value>
+              </txt>
+              <txt>
+                <Value>将青冥宝剑回去交给钟志铭</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{44,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{45,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

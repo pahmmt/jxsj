@@ -1,0 +1,515 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000250" name="草原雄鹰" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“&lt;playername&gt;，你可知道，打一场胜仗所需要的条件都有哪些。” &lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;对兵法研究不深，只知道需要天时、地利、人和等多方因素的配合才能成就一场胜利。”&lt;end&gt;
+&lt;npc=3570&gt;：“是，天时地利往往无法改变，但人为因素却是我们可以控制的。”&lt;end&gt;
+</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3570</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“秋姨可是有了什么新的打算？”&lt;end&gt;
+&lt;npc=3570&gt;：“我已经秘密的与韩相协商过，若要攻打金国，最好的情况便是赢取蒙古各部的暗中配合，我们来个两面夹击，那时的金国便是瓮中之鳖了。” &lt;end&gt;
+&lt;playername&gt;：“此招甚妙，可是蒙古各部是否愿意与我大宋配合伐金呢？”&lt;end&gt;
+&lt;npc=3570&gt;：“事在人为，站在朝廷的立场上，没有永远的敌人也没有永远的朋友。蒙古时下正与金国发生冲突，其中蒙古铁木真部纪律严明，在百姓之中口碑甚好，秋姨希望你北上蒙古铁木真部做一次说客。”&lt;end&gt;
+&lt;playername&gt;：“我明白了，事不宜迟，&lt;playername&gt;即刻启程。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value>与秋姨对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到草原铁木真部落</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4627</Value>
+              </dialognpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4627&gt;：“来者何人？没见我们几位部落首领正在议事吗？”&lt;end&gt;
+&lt;playername&gt;：“万分抱歉，&lt;playername&gt;稍作等待吧。” &lt;end&gt;
+&lt;npc=4627&gt;：“算了，既然都来了，你且说说急着找我有什么事。” &lt;end&gt;
+&lt;playername&gt;：“我乃大宋义军&lt;playername&gt;，此次前来是奉义军首领之命有重要的事情想跟贵部商议。”&lt;end&gt;
+&lt;npc=4627&gt;：“原来是义军中人啊，你怎么不早说呢，早年我与你们白首领是打过交道的，也算是老朋友啊。不过我现在有更重要的事情要办，前些日子蒙古里乞部落偷袭我部，当时正值我部男人们外出狩猎，我的妻子朵兰被里乞王掳了去。我此次一定要给里乞王一个教训！”&lt;end&gt;
+&lt;playername&gt;：“若是贵部与里乞部发生正面冲突，难免又要有所牺牲，若是您信得过我，就让我前去里乞部替您将妻子救出如何？” &lt;end&gt;
+&lt;npc=4627&gt;：“此话当真，那里乞王可不是好惹的。也罢，你且去试试，若不成我部再派兵前去营救朵兰。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与铁木真对话</Value>
+              </txt>
+              <txt>
+                <Value>与铁木真对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>偷偷杀进里乞部大营</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4631</Value>
+              </fightnpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>4628</Value>
+              </fightnpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>我从守卫的口中得到了朵兰的消息，要抓紧营救才好</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>130000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4629</Value>
+              </dialognpc>
+              <number>
+                <Value>1690</Value>
+              </number>
+              <number>
+                <Value>3616</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“朵兰姐姐，莫怕，我已经将那里乞王击败，是你丈夫铁木真派我来救你回去的。”&lt;end&gt;
+&lt;npc=4629&gt;：“谢谢你，这些天我一直告诉自己，铁木真一定会来救我的！”&lt;end&gt;
+&lt;playername&gt;：“朵兰姐姐，你能有如此信念我真替你高兴，现在我们就赶快回到营寨中吧。” &lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>4630</Value>
+              </fightnpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <number>
+                <Value>122</Value>
+              </number>
+              <number>
+                <Value>30</Value>
+              </number>
+              <number>
+                <Value>600</Value>
+              </number>
+              <number>
+                <Value>1908</Value>
+              </number>
+              <number>
+                <Value>3282</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1709,3598
+1728,3554
+1729,3503
+1710,3510
+1704,3458
+1682,3376
+1682,3328
+1720,3284
+1762,3250
+1808,3297
+1856,3323
+1885,3295
+1898,3283
+
+
+</Value>
+              </string>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>0</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>与铁木真对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>50000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>4627</Value>
+              </dialognpc>
+              <number>
+                <Value>122</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=4627&gt;：“&lt;playername&gt;，你帮了我的大忙，我铁木真一生都不会忘记。” &lt;end&gt;
+&lt;playername&gt;：“不必如此，既然您与秋姨是朋友，那么这些便是我应该做的。对了，此次前来我是奉秋姨之命请贵部相助。” &lt;end&gt;
+&lt;npc=4627&gt;：“只要是我能办到的，只要不是伤天害理的事情，你只管开口。”&lt;end&gt;
+&lt;playername&gt;：“我大宋朝正在谋划北伐金国，收复故土，朝廷和义军经商议有意请蒙古贵部在我朝北伐之时配合伐金。” &lt;end&gt;
+&lt;npc=4627&gt;：“哈哈哈，是这样，真的是这样吗？此事关系重大，我一个小小的铁木真部又能起的了多少作用呢，不过既然是义军开口，我便答应就是。何况&lt;playername&gt;还是我的大恩人。” &lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;看得出，您对待百姓有如自己的家人，对待士兵也像自己的亲人般，&lt;playername&gt;相信，您会像草原中的雄鹰一样展翅高飞。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与铁木真对话</Value>
+              </txt>
+              <txt>
+                <Value>与铁木真对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

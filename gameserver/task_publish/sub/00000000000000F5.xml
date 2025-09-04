@@ -1,0 +1,300 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F5" name="打劫劫匪的人" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=438&gt;：“官兵来到这里后，不仅加倍欺压我们，还屡屡出来劫掠我们的粮食和财物，如今我们都已经到了山穷水尽的地步了，唉！”&lt;end&gt;
+&lt;playername&gt;：“竟然还有这样的事情，待我为你们取回你的东西。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1600</Value>
+              </dialognpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>拾取中……</Value>
+              </txt>
+              <txt>
+                <Value>得到被劫的粮草</Value>
+              </txt>
+              <txt>
+                <Value>被打断</Value>
+              </txt>
+              <string>
+                <Value>{被劫的粮草,20,1,48,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>取回%d/9袋被劫的粮草</Value>
+              </txt>
+              <txt>
+                <Value>太行古径的官兵所在处</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1788,3384
+1801,3357
+1825,3381
+1832,3406
+1863,3348
+1868,3319
+1894,3324
+1911,3349
+1938,3364
+1929,3426
+1894,3443
+1767,3284
+1779,3273
+1799,3288
+</Value>
+              </string>
+              <string>
+                <Value>20</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1601</Value>
+              </dialognpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>拾取中</Value>
+              </txt>
+              <txt>
+                <Value>得到被劫的细软</Value>
+              </txt>
+              <txt>
+                <Value>被打断</Value>
+              </txt>
+              <string>
+                <Value>{被劫的细软,20,1,49,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>9</Value>
+              </number>
+              <txt>
+                <Value>取回%d/9袋被劫的细软</Value>
+              </txt>
+              <txt>
+                <Value>太行古径的官兵所在处</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1795,3296
+1791,3306
+1843,3353
+1853,3383
+1872,3404
+1922,3359
+1942,3366
+1926,3420
+1890,3438
+1885,3237
+1868,3242
+1834,3234
+1876,3267</Value>
+              </string>
+              <string>
+                <Value>20</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将拿到的东西带给月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>438</Value>
+              </dialognpc>
+              <number>
+                <Value>86</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=438&gt;：“我们也没有什么好的东西，这些就请&lt;if me.nSex==0&gt;少侠&lt;else&gt;女侠&lt;endif&gt;收下吧！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>回去找月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value>回去找月影沙丘</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{48,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{49,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

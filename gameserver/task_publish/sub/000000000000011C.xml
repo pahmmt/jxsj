@@ -1,0 +1,197 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000011C" name="修复机关" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1042&gt;：“看&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;神情不像是此间恶人，可否相助老身一事？”&lt;end&gt;
+&lt;playername&gt;：“大嫂请讲！”&lt;end&gt;
+&lt;npc=1042&gt;：“我是附近村子里的吴嫂，来这里找我丈夫吴老四。前些日子道一天教的人来我们村子里传道，我丈夫竟然听信了他们的话丢下老婆孩子跟着来了此地。我听人家说这道一天教是一个邪教，经常用活人做祭品。心里害怕极了，就来这里想找我丈夫回去，可这个洞这么大，到处是他们的人，我都不敢动。你能帮我找到我丈夫吗？”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1043</Value>
+              </dialognpc>
+              <number>
+                <Value>1278</Value>
+              </number>
+              <number>
+                <Value>3200</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“吴大哥，快跟我走，吴大嫂前来找你回去呢！”&lt;end&gt;
+&lt;npc=1043&gt;：“唉，我早就待不下去了，只是有人守着我走不了。现在你来搭救我可真是太好了！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1044</Value>
+              </fightnpc>
+              <number>
+                <Value>75</Value>
+              </number>
+              <number>
+                <Value>102</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1149</Value>
+              </number>
+              <number>
+                <Value>3002</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <string>
+                <Value>1264,3185
+1266,3170
+1288,3151
+1315,3121
+1308,3098
+1292,3070
+1276,3049
+1284,3032
+1261,3001
+1232,2988
+1208,3003
+1181,3007
+1149,3002</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.5</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1042&gt;：“老头子我可找到你了！&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;，老身有点谢礼给你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>和吴嫂对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1042</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1042&gt;：“我们是穷苦人，也没什么值钱的东西。老四是我们家的顶梁柱，&lt;if me.nSex==0&gt;少侠&lt;else&gt;姑娘&lt;endif&gt;将他救了出来，老身无论如何要谢谢你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>和吴嫂对话</Value>
+              </txt>
+              <txt>
+                <Value>和吴嫂对话</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

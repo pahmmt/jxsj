@@ -1,0 +1,603 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="000000000000021A" name="老徐的忏悔" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=5047&gt;：“每个人心里，都有一块净土。我老徐做人坦坦荡荡，心中却一直被一块大石喘得透不过气来。那已经是多少年了……”&lt;end&gt;
+&lt;playername&gt;：“徐师傅究竟所谓何事，我乃义军中人，不知可否帮上什么忙？”&lt;end&gt; 
+&lt;npc=5047&gt;：“我本也是宋人，二十年前战火烧到家乡，为了一家老小能吃饱穿暖，我参加了宋军抵抗金狗入侵。没过几个月，我那年近古稀的老母患上重病，家中又有嗷嗷待哺的孩子，全靠妻子一个劳动力根本无法维持家中生计。母亲常常饿的老眼昏花，孩子们的肚子里也是没半点荤腥。”&lt;end&gt;</Start>
+      <Procedure>&lt;step=3&gt;
+&lt;npc=5048&gt;：“&lt;playername&gt;，我还在站岗，给点耐心嘛。”&lt;end&gt;
+&lt;playername&gt;：“对不起，&lt;npc=5048&gt;，我继续等。”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error />
+      <Prize />
+      <End>&lt;step=3&gt;
+&lt;npc=5048&gt;：“看你不似我蒙古人，找我何事？”&lt;end&gt;
+&lt;playername&gt;：“我乃义军人士，此次北上特意来寻一名叫腾格巴尔的蒙古人，我四处打探得知附近姓腾格的就只有阁下了，你可认识腾格巴尔？”&lt;end&gt;
+&lt;npc=5048&gt;：“腾格巴尔，你找他何事？他是我的叔父。”&lt;end&gt;
+&lt;playername&gt;：“真的？太好了！真是踏破铁鞋无觅处，得来全不费功夫啊！我其实是受了故人所托想亲自见上巴尔一面，不知你可愿意引荐？”&lt;end&gt;
+&lt;npc=5048&gt;：“我也想有这个机会，可惜叔父叔母二老已经不在了……”&lt;end&gt;
+&lt;playername&gt;：“这……也许是天意吧。其实我是替一位故人来向你的叔父道歉的。二十年前有一个叫老徐的士兵在蒙古大草原上抢了你叔父家的口粮，这些年来老徐一直感觉歉疚，特此托我前来带了一些银票，虽不能挽回错误，却也当作是一点点补偿吧。”&lt;end&gt;
+&lt;npc=5048&gt;：“此事我小时候听叔父提及过，叔母还说那人下手并不重不似要人性命，醒来发现只是少了些吃的，想来也是个饿得慌了的士兵吧……他二老并未对那人表示过怨恨。你这银票我要来也没多大用处，我准备用这些银子把叔父叔母的坟好好修葺修葺。”&lt;end&gt;
+&lt;playername&gt;：“如此甚好，多谢兄弟了！”&lt;end&gt;
+&lt;npc=5048&gt;：“哎！等等，我看少侠目光明亮，乃习武之人，不知可否帮在下一个忙？”&lt;end&gt;
+&lt;playername&gt;：“只要不是损害百姓利益的事情，你只管开口我必定竭尽全力。”&lt;end&gt;
+&lt;npc=5048&gt;：“少侠果然爽快人！我部所负责的这片范围内由于牧民们迁徙频繁，每搬迁至一个新的草场便要找上许多搭建蒙古包的材料，现在的材料尚缺，而我一个人的力量毕竟有限，少侠可愿帮百姓们采些木材和麻绳回来？”&lt;end&gt;
+&lt;playername&gt;：“既然答应了你，那么就包在我身上吧！”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5047</Value>
+              </dialognpc>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5047&gt;：“一次军队在蒙古设下埋伏，我和几个士兵轮流放哨。我趁休息的时机偷偷溜到一个牧民家中打晕了他家的女主人，将他们家中的一些银票，两罐荞麦粉和一些马奶干等食物偷偷拿走并带回家中以解家中老小的燃眉之急。”&lt;end&gt;
+&lt;npc=5047&gt;：“想这些口粮对那蒙古人一家也是极其重要的吧。许多年了这件事一直压在我心头，真想找到他们做些补偿，以示我的愧疚和忏悔。”&lt;end&gt;
+&lt;playername&gt;：“蒙古人向来以游牧生活为主，居无定所，&lt;playername&gt;倒是想帮你，但却该如何入手呢？”&lt;end&gt;
+&lt;npc=5047&gt;：“我在当年抢来的荞麦粉罐的罐底发现了四个字——腾格巴尔。我估计这名字应该是这一家的男主人的吧。你且将这些银票带上，我老徐这些年来积攒了些银两，我不求他们的原谅，就当作是一点点补偿吧。”&lt;end&gt;
+&lt;playername&gt;：“&lt;playername&gt;自当尽力找寻。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{银票,20,1,571,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与老徐对话</Value>
+              </txt>
+              <txt>
+                <Value>与老徐对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>找到腾格家人</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5048</Value>
+              </dialognpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5048&gt;：“没看见我在站岗吗，有什么事待我换岗后再说吧？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与腾格木合对话</Value>
+              </txt>
+              <txt>
+                <Value>与腾格木合对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>等待腾格木合换岗</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">5048</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>Timer</Function>
+            <Parameter>
+              <number>
+                <Value>180</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>帮腾格木合收集搭建蒙古包所必须的材料</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>30000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5049</Value>
+              </dialognpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{木板,20,1,562,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8块木板</Value>
+              </txt>
+              <txt>
+                <Value>帮腾格木合收集8块木板</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1596,3691
+1584,3703
+1591,3664
+1584,3667
+1590,3689
+</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5050</Value>
+              </dialognpc>
+              <number>
+                <Value>130</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>进行中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{麻绳,20,1,563,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>8</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/8根麻绳</Value>
+              </txt>
+              <txt>
+                <Value>帮腾格木合收集8根麻绳</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>1868,3449
+1865,3454
+1868,3464
+1861,3457
+1869,3447
+</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将搜集好的材料交给腾格木合</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>40000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5048</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=5048&gt;：“&lt;playername&gt;乃性情中人，有我蒙古人的豪爽性格啊！哈哈，答应我的事情干的如此漂亮。”&lt;end&gt;
+&lt;playername&gt;：“对了，我这里还有老徐积攒多年的银票，他千叮万嘱一定要我带给你，如今巴尔夫妇不在了，能为他们的后人做点事情也算替老徐了却一桩心愿吧，何况这些材料也是为老百姓所用，不必言谢！”&lt;end&gt;
+&lt;npc=5048&gt;：“老徐的道歉我替叔父叔母接受了，少侠日后有什么用的上的地方只管开口。”&lt;end&gt;
+&lt;playername&gt;：“一定，一定！&lt;playername&gt;告辞了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与腾格木合对话</Value>
+              </txt>
+              <txt>
+                <Value>与腾格木合对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{562,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{563,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{571,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

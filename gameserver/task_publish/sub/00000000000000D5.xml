@@ -1,0 +1,231 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000D5" name="虎洞谜踪" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=1416&gt;：“卦相大凶，大凶啊！”&lt;end&gt;</Pop>
+      <Start>&lt;npc=1416&gt;：“武当山三真人，灵鹤真人主外事，一叶真人执功教，而洞虚真人则是执法长老。说是执法，本代弟子都克守本分，洞虚真人也便成了个闲人。好在真人自己精研河图洛书，占卜问卦上的造诣堪称一代宗师。”&lt;end&gt;
+&lt;npc=1416&gt;：“不过几日便是客座王重阳接掌武当五年的佳期，洞虚真人为他卜了一卦，岂料居然是凶上加凶。再细细恰指一算，问题就出在这龙虎洞中。有刺客潜伏在这洞内，将凶器藏于老虎皮内，只待庆典开始便要动手。”&lt;end&gt;
+&lt;npc=1416&gt;：“这刺客与当年谋刺周云泉之人必有莫大干系，是以抓捕他便成了武当山的第一要务。希望你能助我一臂之力，查出刺客下落，找到凶器所在，问明当年刺杀周云泉之事的始末。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>DialogNpc2FightNpc</Function>
+            <Parameter>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>1323</Value>
+              </number>
+              <number>
+                <Value>3164</Value>
+              </number>
+              <dialognpc>
+                <Value>430</Value>
+              </dialognpc>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位兄台，你可是在找什么东西？”&lt;end&gt;
+&lt;npc=430&gt;：“恩，正在洞中等一位武当的朋友。”&lt;end&gt;
+&lt;playername&gt;：“这洞内时有猛虎出没，哪里来的什么朋友？”&lt;end&gt;
+&lt;npc=430&gt;：“那朋友在此洞中修习剑术，正是以猛虎为靶。”&lt;end&gt;
+&lt;playername&gt;：“如此吗？在下乃武当弟子，不知你等的那位朋友姓甚名谁呢？修习的又是什么剑术？莫不是杀人的朋友，刺客的剑术吧！”&lt;end&gt;
+&lt;npc=430&gt;：“你究竟是何人！竟然知道老子的来历，就留你不得了！”&lt;end&gt;
+&lt;playername&gt;：“果然是你！贼子，其实我是诈你的。”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>427</Value>
+              </fightnpc>
+              <number>
+                <Value>35</Value>
+              </number>
+              <number>
+                <Value>60</Value>
+              </number>
+              <txt>
+                <Value>尽快找到刺客的行踪</Value>
+              </txt>
+              <txt>
+                <Value>尽快找到刺客的行踪</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>必须尽早找到刺客与凶器，否则到庆典之日便危险了</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2057</Value>
+              </fightnpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <number>
+                <Value>20</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>找到了刺客的武器钨金长剑</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1416</Value>
+              </dialognpc>
+              <number>
+                <Value>59</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1416&gt;：“刺客居然什么都不肯说吗？此中蹊跷难道真要成了一个解不开的谜团？”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>可以将情况告诉晓音了</Value>
+              </txt>
+              <txt>
+                <Value>可以将情况告诉晓音了</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,492 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000219" name="布衣情" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3562&gt;：“&lt;playername&gt;，这正月刚过你又忙起来了！”&lt;end&gt;
+&lt;playername&gt;：“是啊，荷叶姐，军中大小事务正等着我们去处理。回到军中这些天却不曾与荷叶姐好好叙叙。”&lt;end&gt;
+&lt;npc=3562&gt;：“这些年来我与铁石在义军之中为士兵们操持着后勤，虽是力量微薄，心中却是暖暖的呢！我虽是出身不俗，却也有过一段幼年生长在寻常百姓之家的经历。”&lt;end&gt;
+&lt;playername&gt;：“哦？此前并未听荷叶姐你提起过这段经历。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3562</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3562&gt;：“家父乃前朝兵部尚书，由于一些特殊的原因，我和弟弟铁石自小隐姓埋名，被寄养在一位裁缝家里。我们唤她作黄婆婆。我今日在衣装制作方面的出众技艺也与当年的耳濡目染有着莫大的关系！”&lt;end&gt;
+&lt;npc=3562&gt;：“近日我听闻西夏境内小规模冲突不断，而就在两年前我与黄婆婆的联络也莫名中断，若你此去北上的话可否顺便帮我打探下黄婆婆的情况是否安好？”&lt;end&gt;
+&lt;playername&gt;：“此事不难，我此去正要相助翠烟门北上处理一些事情，但是西夏如此之大如何寻一老妇？荷叶姐若是有什么信物，&lt;playername&gt;也好找寻。”&lt;end&gt;
+&lt;npc=3562&gt;：“这儿有我亲手缝制的一件帛衫，上面有着一种独门的裁缝手艺叫做千针连，你将这帛衫带给黄婆婆，她看了便会明了。”&lt;end&gt;
+
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value>{帛衫,20,1,561,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>现在就去找黄婆婆吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5046</Value>
+              </dialognpc>
+              <number>
+                <Value>131</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“老人家，我乃大宋义军&lt;playername&gt;，专程受沈荷叶之托来看望您老！”&lt;end&gt;
+&lt;npc=5046&gt;：“什么，荷叶让你来看我的？她可好啊？自从两年前与她断了书信来往后我便一直记挂着那丫头。”&lt;end&gt;
+&lt;playername&gt;：“她很好，铁石也很好。荷叶姐还特意为您老做了一件帛衫，说里面有一道叫做千针连的工艺，您一定会认得！”&lt;end&gt;
+&lt;npc=5046&gt;：“千针连，连千针。这竟真的是荷叶为我做的帛衫，我老太婆即使当下闭了眼又有什么遗憾啊！”&lt;end&gt;
+&lt;playername&gt;：“黄婆婆，你这些年来过的可好？为何这村庄如此荒凉。”&lt;end&gt;
+&lt;npc=5046&gt;：“有什么好不好的，我一把老骨头了，也不想折腾挪窝了。只可怜了现在的后生啊!我们黄村本是个富足的大村子，可近些年来村子里的壮劳力都被官府征去充军，剩下些老弱妇孺也整天遭到一些恶匪的欺凌，村子里能走的都走咯。”&lt;end&gt;
+&lt;playername&gt;：“婆婆莫急，那些恶匪想也是为了抢些钱财，并无势力撑腰，&lt;playername&gt;这便前去给他们点颜色看看！”&lt;end&gt;
+&lt;npc=5046&gt;：“如此多谢你了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与黄婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value>与黄婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>给那些抢夺黄家村的恶徒点颜色看看</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{561,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2323</Value>
+              </fightnpc>
+              <number>
+                <Value>131</Value>
+              </number>
+              <number>
+                <Value>40</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>恶霸已被铲除，将情况告知黄婆婆。</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>100000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>5046</Value>
+              </dialognpc>
+              <number>
+                <Value>131</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“婆婆，那些恶徒已被我揍的满地找牙，承诺再不敢来黄家村闹事！”&lt;end&gt;
+&lt;npc=5046&gt;：“太好了……日后我黄家村老弱妇孺能过上些个安静日子了。请你回去转告荷叶，青山常在，绿水长流，她缝的衣裳能穿在百姓身上，那才是一个裁缝的至高境界。”&lt;end&gt;
+&lt;playername&gt;：“黄婆婆一定放心，我必将此话带到，还望婆婆多加保重。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与黄婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value>与黄婆婆对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>20000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将黄婆婆的近况回报给荷叶姐</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3562</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=3562&gt;：“&lt;playername&gt;，来！快告诉姐姐是不是找到黄婆婆了？她老身体还健康吧？她拿到那帛衫高兴吗？”&lt;end&gt;
+&lt;playername&gt;：“黄婆婆现在还住在黄家村，她老身体还算硬朗，但连年的战事已让整个村子破败不堪，我把经常来村里抢夺粮草的一群恶徒教训了一番，相信黄家村日后可以安宁了。”&lt;end&gt;
+&lt;playername&gt;：“黄婆婆见了荷叶姐你亲手做的帛衫后很高兴，还让我转告你，要多为百姓做事谋福。”&lt;end&gt;
+&lt;npc=3562&gt;：“打小儿她老人家就是这么教导我的，既然她老身体健康那我也放心了。为百姓做衣狩猎，我和铁石一直是这么做的。荷叶姐这次又欠你一个人情了。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value>与沈荷叶对话</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,360 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001AF" name="妖道玄合" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1856&gt;：“我近来收到一条绝秘的消息，消息的渠道来自西夏王宫。据说近期有一名道士经常出入太后寝宫，此人似乎是李安全引入之人，行事隐秘。所以想请&lt;playername&gt;前去查探查探。”&lt;end&gt;
+&lt;npc=1856&gt;：“据说那道士玄合与镇夷郡王李安全过从甚秘。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>1565</Value>
+              </number>
+              <number>
+                <Value>3070</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>偷听李安全与道士玄合的对话</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:Talk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1865&gt;：“你那还童丹太后可在按时进服？”&lt;end&gt;
+&lt;npc=1868&gt;：“郡王放心，贫道所配之药，分量都是精心掌握，不敢出丝毫差错。太后服用后效果显著，很受鼓舞，现下已经离不开还童丹了。”&lt;end&gt;
+&lt;npc=1865&gt;：“甚好。这丹药服用多久能够见效？”&lt;end&gt;
+&lt;npc=1868&gt;：“初时服用，可乌白发，去皱纹，令人年轻一轮。三个月后，药效入脑已深，便可收郡王所需之奇效。”&lt;end&gt;
+&lt;npc=1865&gt;：“哼哼哼哼，好。”&lt;end&gt;
+&lt;npc=1868&gt;：“这药需得现行熬制，不可久放。制这还童丹的两味主药虚空花、幻生草都已告磬，贫道想告假几日去嘉峪关再采摘一些回来。”&lt;end&gt;
+&lt;npc=1865&gt;：“路上小心，切勿走露了消息。”&lt;end&gt;
+&lt;npc=1868&gt;：“郡王安心。”&lt;end&gt;</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>16000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1646</Value>
+              </dialognpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>虚空花采集中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{虚空花,20,1,282,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10株虚空花</Value>
+              </txt>
+              <txt>
+                <Value>收集了足够的虚空花</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1503,2915
+1518,2934
+1531,2885
+1548,2843
+1539,2904
+1551,2964
+1555,2896
+1567,2951
+1571,2925
+1585,2883</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>WithProcess</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1647</Value>
+              </dialognpc>
+              <number>
+                <Value>115</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>幻生草采集中...</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>不好意思!</Value>
+              </txt>
+              <string>
+                <Value>{幻生草,20,1,283,1,0,1}</Value>
+              </string>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你已经收集了%d/10份幻生草</Value>
+              </txt>
+              <txt>
+                <Value>收集了足够的幻生草</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1513,2881
+1531,2856
+1524,2910
+1548,2870
+1537,2932
+1567,2865
+1554,2923
+1572,2897
+1572,2979
+1589,2912</Value>
+              </string>
+              <string>
+                <Value>10</Value>
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将采到的药材交给呼延力</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>48000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1859</Value>
+              </dialognpc>
+              <number>
+                <Value>24</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“呼延兄，我找到了两味药材。麻烦你找精通药理之人查一查药性，看这几味药材合出的丸药，除了能令人容颜变得年轻之外，还有什么功效。李安全勾结道士玄合向西夏罗太后进献此药，恐怕是居心叵测。”&lt;end&gt;
+&lt;npc=1859&gt;：“好，我这便去办。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将采到的药材交给呼延力</Value>
+              </txt>
+              <txt>
+                <Value>将采到的药材交给呼延力</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{282,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{283,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

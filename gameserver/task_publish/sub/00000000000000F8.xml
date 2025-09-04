@@ -1,0 +1,779 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000F8" name="善意的谎言" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;playername&gt;：“这位兄台，你的猎鹰好威风，到这荒郊野岭是来打猎？”&lt;end&gt;
+&lt;npc=1208&gt;：“&lt;if me.nSex==0&gt;小兄弟&lt;else&gt;姑娘&lt;endif&gt;有所不知，我是快刀门的猎鹰手，受成都府钱多多公子委托来这里取白蛇胆。白蛇这种动物非常有灵性，我本来已经找到了它的踪迹，却又被它逃掉，还咬伤了我的宝贝猎鹰。唉……”&lt;end&gt;
+&lt;playername&gt;：“快刀门？这是个什么门派？白蛇胆能做什么？”&lt;end&gt;
+&lt;npc=1208&gt;：“&lt;if me.nSex==0&gt;兄台&lt;else&gt;姑娘&lt;endif&gt;有所不知，我们快刀门由各行各业的能人异士组成，以为人排忧解难赚取佣金度日。我是猎鹰手，专门为人猎取珍奇异兽。白蛇胆是不少疑难杂症的药引，可谓是有价无市。钱公子为了获得歌姬菱花的芳心不惜花高价雇我来此寻找白蛇，哪曾想这白蛇这么滑溜。钱没赚到是小事，要是砸了我快刀门的招牌就……就……唉……”&lt;end&gt;
+&lt;playername&gt;：“看你这么为难，不如我帮你这个忙吧。”&lt;end&gt;
+&lt;npc=1208&gt;：“真的？那真是太好了，佣金我一分不要全给&lt;if me.nSex==0&gt;兄台&lt;else&gt;姑娘&lt;endif&gt;，只要能保住我们快刀门的招牌就好了。菱花姑娘若是知道是钱公子高价所得必不肯要，因此取到白蛇胆后你要立刻送到江津村菱花爷爷那里，就说是菱花送来的。事成之后你找钱公子领取酬劳即可，小刀在这里多谢&lt;if me.nSex==0&gt;兄台&lt;else&gt;姑娘&lt;endif&gt;了。”&lt;end&gt;
+&lt;playername&gt;：“些许小事，我尽力而为！”&lt;end&gt;
+&lt;npc=1208&gt;：“以后用得到我快刀门的地方尽管开口！我让我的猎犬黑子带你去找白蛇。黑子，你要听话，带这位&lt;if me.nSex==0&gt;兄台&lt;else&gt;姑娘&lt;endif&gt;找到白蛇再回来。狗不能和蛇斗，你不要逞强！”&lt;end&gt;
+&lt;npc=1209&gt;：“汪汪！”&lt;end&gt;</Start>
+      <Procedure>&lt;step=4&gt;
+&lt;npc=531&gt;：“阿弥陀佛！施主请上香！”&lt;end&gt;
+&lt;stepend&gt;</Procedure>
+      <Error>&lt;npc=529&gt;：“少侠的恩德菱花终身不忘……”&lt;end&gt;</Error>
+      <Prize />
+      <End>&lt;step=4&gt;
+&lt;npc=531&gt;：“施主有礼了！”&lt;end&gt;
+&lt;playername&gt;：“请问大师可有平安符，请赐一道！”&lt;end&gt;
+&lt;npc=531&gt;：“施主，平安符乃是道观之物，我们这里是佛寺，怎么会有此物？”&lt;end&gt;
+&lt;playername&gt;：“这……”&lt;end&gt;
+&lt;npc=531&gt;：“请问施主要此物何用？”&lt;end&gt;
+&lt;playername&gt;：“在下受菱花爷爷的托付求一道平安符给菱花姑娘！”&lt;end&gt;
+&lt;npc=531&gt;：“可是成都歌姬菱花？”&lt;end&gt;
+&lt;playername&gt;：“大师是方外之人，怎么也？？……”&lt;end&gt;
+&lt;npc=531&gt;：“施主说笑了，这菱花姑娘也是一个苦命的人啊，受到同乡的欺骗，满以为可以务工赚钱，却不料反被卖入妓院。他那同乡现在在马贼窝里过着舒坦的日子，只是可怜了菱花姑娘了。”&lt;end&gt;
+&lt;playername&gt;：“他的同乡？大师怎么会知道这些？”&lt;end&gt;
+&lt;npc=531&gt;：“施主不需多问，如果施主可怜菱花姑娘，便去大散关马贼窝找李阿大，杀了他为菱花姑娘出气吧。此人甘做马贼，可见本性极恶，施主也不需手下留情。”&lt;end&gt;
+&lt;stepend&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1209</Value>
+              </dialognpc>
+              <number>
+                <Value>1839</Value>
+              </number>
+              <number>
+                <Value>3279</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=1209&gt;：“汪汪！”&lt;end&gt;</Value>
+              </txt>
+              <fightnpc>
+                <Value>1210</Value>
+              </fightnpc>
+              <number>
+                <Value>60</Value>
+              </number>
+              <number>
+                <Value>90</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>30000</Value>
+              </number>
+              <number>
+                <Value>1746</Value>
+              </number>
+              <number>
+                <Value>3244</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>1839,3279
+1836,3281
+1832,3281
+1828,3281
+1822,3279
+1814,3278
+1802,3275
+1795,3273
+1787,3267
+1781,3262
+1775,3253
+1767,3242
+1758,3240
+1752,3241
+1746,3244
+</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>0.2</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=1209&gt;：“汪汪！汪汪”&lt;end&gt;
+&lt;playername&gt;：(黑子急促的叫声似乎在向我示警，看来白蛇应该就在附近。)&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>杀死白蛇取到白蛇胆</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>533</Value>
+              </fightnpc>
+              <number>
+                <Value>90</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,79,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将取到的蛇胆带给江津村的菱花爷爷</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GivePlayerItem</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>530</Value>
+              </dialognpc>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>善意的谎言</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“您是菱花爷爷吧？这是菱花姑娘给您的白蛇胆！”&lt;end&gt;
+&lt;npc=530&gt;：“唉！我这一个糟老头子就算活到100岁又能怎么样呢？”&lt;end&gt;
+&lt;playername&gt;：“这是菱花的一片孝心，也是您的福气啊！”&lt;end&gt;
+&lt;npc=530&gt;：“菱花是个可怜的孩子，父母都死的早，我这个孤老头子，和她相依为命把她拉扯大，却不料她会落入风尘。我知道这孩子孝顺，怕我知道了难过，说自己在帮人做杂务，也不让我去看她。可是我老头子一大把年纪又怎么能瞒得过我。我就盼能够在死之前多攒点钱给她赎身就死也瞑目了。这蛇胆我还是卖给村里的王老财吧。你可不要告诉菱花。我这病也没什么，多休息就好了！”&lt;end&gt;
+&lt;playername&gt;：“这……”&lt;end&gt;
+&lt;npc=530&gt;：“&lt;if me.nSex==0&gt;公子&lt;else&gt;姑娘&lt;endif&gt;回去的时候当会路过寺院，就请替我老头子上柱香，再找景思禅师求个平安符吧。哦，这是我亲手采来薄荷做成的枕头，菱花有失眠的毛病，希望可以让她睡的安稳一些。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=530&gt;：“菱花啥时候回回来看我啊！”&lt;end&gt;</Value>
+              </txt>
+              <string>
+                <Value>{薄荷枕头,20,1,81,1,0,1}
+{香火,20,1,82,1,0,1}</Value>
+              </string>
+              <txt>
+                <Value>将白蛇胆带给菱花爷爷</Value>
+              </txt>
+              <txt>
+                <Value>将白蛇胆带给菱花爷爷</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{79,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>带着菱花爷爷准备的香火前往成都寺院祈福</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="1">531</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>WithProcessStatic</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1571</Value>
+              </dialognpc>
+              <number>
+                <Value>27</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>正在为菱花祈福</Value>
+              </txt>
+              <txt>
+                <Value>仪式完毕</Value>
+              </txt>
+              <txt>
+                <Value>失败</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>为菱花祈福</Value>
+              </txt>
+              <txt>
+                <Value>前往成都寺院</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>除掉李阿大</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{81,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{82,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillBoss4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>532</Value>
+              </fightnpc>
+              <number>
+                <Value>87</Value>
+              </number>
+              <itemid>
+                <Value>{20,1,80,1,0,-1,}</Value>
+              </itemid>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将李阿大被除的好消息带给菱花</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>529</Value>
+              </dialognpc>
+              <number>
+                <Value>27</Value>
+              </number>
+              <txt>
+                <Value>善意的谎言</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“菱花姑娘，你猜我给你带来了什么？”&lt;end&gt;
+&lt;npc=529&gt;：“原来是&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;你，谢谢你为我爷爷送去了蛇胆，我想他现在一定好多了。爷爷做的枕头子仁大师已经送来了，真的好舒服。你手里这是？？啊……这是人头，你杀人了？”&lt;end&gt;
+&lt;playername&gt;：“你可看仔细了，这是李阿大的头！”&lt;end&gt;
+&lt;npc=529&gt;：“这个奸贼，果然是他！如果不是他，我又怎么会落到今天的下场。真是苍天有眼，报应不爽啊！菱花这里谢过&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;了！”&lt;end&gt;
+&lt;playername&gt;：“区区小事，姑娘言重了！”&lt;end&gt;
+&lt;npc=529&gt;：“我已经知道钱公子聘请快刀门的事情了，钱公子对我一片心意，菱花怎会不知？只是身份悬殊不敢有所奢望。这样好了，你替我转告钱公子，就说我备下酒席，请他前来一叙，我要亲自弹奏一曲以表心意。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到菱花</Value>
+              </txt>
+              <txt>
+                <Value>将李阿大的死讯带给菱花</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{80,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将菱花的邀请转达给钱多多</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>577</Value>
+              </dialognpc>
+              <number>
+                <Value>27</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“钱公子，菱花姑娘请你前往一叙！”&lt;end&gt;
+&lt;npc=577&gt;：“&lt;if me.nSex==0&gt;公子&lt;else&gt;姑娘&lt;endif&gt;来了，这次真是谢谢你了。快刀门的人还真是讲义气，云小刀都告诉我了。实不相瞒，我还是第一次接到菱花姑娘的邀请。我该穿什么去呢……带什么礼物呢……”&lt;end&gt;
+&lt;playername&gt;：“有心就好，有钱的人很多，舍得给别人花钱的又会有几个？如果不是真正心爱的人，谁会费这么大的力气去找这么难找的东西还做得如此滴水不漏？菱花姑娘心思敏捷，怎么会不明白公子的心意？”&lt;end&gt;
+&lt;npc=577&gt;：“话虽如此，菱花必定是嫌弃我的长相配不上她……才会……”&lt;end&gt;
+&lt;playername&gt;：“人不可貌相，公子的一番真心总有一天会感动菱花姑娘的。”&lt;end&gt;
+&lt;npc=577&gt;：“没想到&lt;if me.nSex==0&gt;公子&lt;else&gt;姑娘&lt;endif&gt;如此看透世情，不仅帮我取到蛇胆还打开了我的心结。你放心好了，我一定会用真诚感动菱花姑娘的。这是云小刀的酬劳，给你吧。你放心，他有他的一份，我不会那样吝啬，毕竟他也辛苦了一场。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到钱多多</Value>
+              </txt>
+              <txt>
+                <Value>找到钱多多</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

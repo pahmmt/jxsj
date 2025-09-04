@@ -1,0 +1,407 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000112" name="栖情剑" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=978&gt;：“看到你我突然想起了一个可怜的女娃娃，她叫任玉英。玉英是附近任家庄庄主的女儿，任家祖辈干的都是独脚大盗的行当。所谓的独脚大盗，平日里都以乡绅的身份出现在旁人面前，每隔三月或是半年就会出去作案一次。作案的地方一般都会选择很远的地方，这样就不会有人怀疑到自己。作案的手法也相当毒辣，绝对不会留下活口，以免引火上身。”&lt;end&gt;
+&lt;playername&gt;：“那这和任玉英又有什么关系呢？”&lt;end&gt;
+&lt;npc=978&gt;：“大有关系！玉英这丫头喜欢上了一个书生，两人两情相悦已久。但是按照任家的规矩，只能入赘，不能外嫁，以免家里的秘密泄露出去，引来杀身之祸。若是想要脱离家族便须打败家里的每一位成员，谈何容易。老夫和任老头有过交往，深知他的底细，所以玉英才会来求老夫。但是老夫此刻心有余而力不足，是故想要请你相助。”&lt;end&gt;
+&lt;playername&gt;：“不知玉英姑娘现在何处？先生要我如何相助？”&lt;end&gt;
+&lt;npc=978&gt;：“玉英在西南不远的任家庄，那家的人非常凶悍，容不得外人进出，你可要小心些。至于如何帮她，你见了玉英看她有何善法再说吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>GoPos</Function>
+            <Parameter>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>1698</Value>
+              </number>
+              <number>
+                <Value>3852</Value>
+              </number>
+              <number>
+                <Value>5</Value>
+              </number>
+              <txt>
+                <Value>找到任玉英</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;playername&gt;：“你便是玉英姑娘吧？李古纳斯老先生让我来帮你离开任家庄，你可有什么妙计说来听听？”&lt;end&gt;
+&lt;npc=608&gt;：“妙计……唉……若真有什么妙计就好了。老伯父想必跟你说过我家的规矩了，若是不按规矩来，只怕逃到天涯海角也会被抓回来。好在此刻家里的男丁都出去做那营生去了，只有女眷在家，倒是逃跑的最好时机，只是仍有些难办。”&lt;end&gt;
+&lt;playername&gt;：“怎么个难办法？”&lt;end&gt;
+&lt;npc=608&gt;：“家里留有四名女眷，除了我之外便是我大姑，大嫂和祖母。这三人中，祖母的武艺最深不可测，其次是我大姑，再次是我大嫂。大姑平日里最疼我，若是她能答应暗中相助，那我们就少了一大劲敌。大嫂虽然年轻武艺却不及我，祖母武艺精湛，毕竟年老，气力不长。所以我想请你去说服我大姑暗中助我，莫要与我真的动手。”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value>说服任家庄任玉英的大姑</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>610</Value>
+              </dialognpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“这位大嫂就是玉英姑娘的大姑吧？玉英的心意想必您一定有所了解吧？”&lt;end&gt;
+&lt;npc=610&gt;：“你是何人？怎么会在这里出现，若是被我母亲和侄媳妇看到可是不妙。”&lt;end&gt;
+&lt;playername&gt;：“此事倒是无妨，我来是请您相助玉英姑娘离开任家庄的。想必您也知道玉英姑娘的心意，她不愿意自己心爱的人入赘，便只能选择这条路，所以还请您网开一面，对敌之时莫要真打，也免得她为难。”&lt;end&gt;
+&lt;npc=610&gt;：“唉！可怜的孩子，你去跟她说，大姑不会为难她，让她放心好了。倒是她祖母和大嫂，让她多多留意。实在不行，就说些好话软下来，也免得丢了性命！”&lt;end&gt;
+</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>说服任玉英的大姑</Value>
+              </txt>
+              <txt>
+                <Value>说服任玉英的大姑</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将任玉英大姑的话带给任玉英</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>ProtectNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>608</Value>
+              </dialognpc>
+              <number>
+                <Value>1698</Value>
+              </number>
+              <number>
+                <Value>3852</Value>
+              </number>
+              <number>
+                <Value>100</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=608&gt;：“怎么样？我大姑愿意相助吗？”&lt;end&gt;
+&lt;playername&gt;：“是的，她答应助你，并说实在不行让你说些软话免得无端丢了性命。”&lt;end&gt;
+&lt;npc=608&gt;：“事到如今已经顾不上许多了，我们这就动身吧。好在祖宗家法没说不可以请人相助，一切就要请你多费心了！”&lt;end&gt;
+</Value>
+              </txt>
+              <fightnpc>
+                <Value>897</Value>
+              </fightnpc>
+              <number>
+                <Value>64</Value>
+              </number>
+              <number>
+                <Value>95</Value>
+              </number>
+              <number>
+                <Value>45</Value>
+              </number>
+              <number>
+                <Value>3000</Value>
+              </number>
+              <number>
+                <Value>1620</Value>
+              </number>
+              <number>
+                <Value>3655</Value>
+              </number>
+              <number>
+                <Value>2</Value>
+              </number>
+              <string>
+                <Value>1695,3860
+1689,3864
+1681,3865
+1675,3867
+1668,3868
+1663,3867
+1657,3864
+1654,3857
+1651,3848
+1651,3837
+1653,3835
+1657,3818
+1660,3811
+1665,3801
+1669,3797
+1673,3796
+1677,3796
+1683,3797
+1686,3803
+1689,3809
+1693,3811
+1695,3807
+1698,3805
+1701,3802
+1704,3798
+1705,3793
+1704,3790
+1701,3789
+1698,3787
+1694,3787
+1690,3787
+1686,3786
+1683,3787
+1680,3787
+1678,3786
+1678,3782
+1679,3777
+1680,3774
+1682,3762
+1684,3764
+1686,3761
+1690,3753
+1690,3742
+1678,3730
+1669,3718
+1656,3708
+1644,3696
+1634,3682
+1632,3669
+1629,3663
+1628,3656
+1620,3655</Value>
+              </string>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value>1</Value>
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverWithTalk</Function>
+            <Parameter>
+              <txt>
+                <Value>&lt;npc=667&gt;：“呀！姑娘你终于逃出来了？我每日都来此处等你，终于等到今天了。”&lt;end&gt;
+&lt;npc=608&gt;：“辛苦你了胡伯，是这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;带我逃出来的。此地我不能久留，请你将我托你保管的财物给这位&lt;if me.nSex==0&gt;少侠&lt;else&gt;姐姐&lt;endif&gt;作谢礼吧，我这就走了！”&lt;end&gt;
+&lt;npc=667&gt;：“姑娘一路多加小心，王公子在汴京等着你！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value>向卖炭翁领取任玉英留下的谢礼</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>667</Value>
+              </dialognpc>
+              <number>
+                <Value>95</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=667&gt;：“多谢你将玉英姑娘带了出来，这是给你的谢礼，请你拿好！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找卖炭翁领赏</Value>
+              </txt>
+              <txt>
+                <Value>找卖炭翁领赏</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

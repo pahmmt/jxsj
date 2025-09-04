@@ -1,0 +1,190 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000001BA" name="终有一死" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=1821&gt;：“为何苍天如此造化弄人！为何！！”&lt;end&gt;
+&lt;playername&gt;：“大哥!大哥何事如此悲伤？”&lt;end&gt;
+&lt;npc=1821&gt;：“我收到消息，赵汝愚大人在贬徙途中，暴病身亡了。”&lt;end&gt;
+&lt;playername&gt;：“……唉”&lt;end&gt;
+&lt;npc=1821&gt;：“大人一心为国，忠肝义胆，奈何，奈何啊！”&lt;end&gt;
+&lt;playername&gt;：“大哥节哀。”&lt;end&gt;
+&lt;npc=1821&gt;：“国家兴亡，匹夫有责。我毕再遇如今年近花甲，却一事无成。骤闻国家肱骨暴卒，死因不明，如何能不悲痛？难道一味忍让，忍让到最后的结果，却是客死他乡，魂魄无归吗？”&lt;end&gt;
+&lt;playername&gt;：“大哥，切莫哭坏了自己的身子。”&lt;end&gt;
+&lt;npc=1821&gt;：“唉……我闻听那乱石滩中，有一种奇石，名唤紧身玉。死者口衔此石，可使肉身不腐。你能否去替我取来？”&lt;end&gt;
+&lt;playername&gt;：“我这就动身！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc4Item</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1828</Value>
+              </fightnpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <taskitem>
+                <Value>{267,}</Value>
+              </taskitem>
+              <number>
+                <Value>1</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <bool>
+                <Value>false</Value>
+              </bool>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>速回大营将石头交给毕大哥吧</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>56000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>1821</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“大哥，紧身玉我替你取来了！”&lt;end&gt;
+&lt;npc=1821&gt;：“嗯。我立即命许俊骑乘快马赶赴衡州。为赵大人扶灵返乡。”&lt;end&gt;
+&lt;playername&gt;：“大哥可感觉好些了？”&lt;end&gt;
+&lt;npc=1821&gt;：“唉，人谁不死？我毕德卿便是豁出一条命去，也要完成大人未尽的夙愿。匡扶宋室，收复中原！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>速回大营将石头交给毕大哥吧</Value>
+              </txt>
+              <txt>
+                <Value>速回大营将石头交给毕大哥吧</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:DelItem</Function>
+            <Parameter>
+              <taskitem>
+                <Value>{267,}</Value>
+              </taskitem>
+              <number>
+                <Value>-1</Value>
+              </number>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

@@ -1,0 +1,204 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="00000000000000E7" name="合纵连横" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop>&lt;npc=481&gt;：“恩，五毒教与一品堂的人马都已经来了。”&lt;end&gt;</Pop>
+      <Start>&lt;npc=481&gt;：“近年来我唐门高手四去其三，只有绝春叟硕果仅存。翠烟门自多年前那场劫难中逐渐发展起来，峨嵋山在无想的主持下也蒸蒸日上。要保住西南武林的霸主之位，仅仅靠自己已经不够了。必须得与各方势力结盟，借助他们的力量。”　&lt;end&gt;
+&lt;playername&gt;：“已经有打算了吗？”&lt;end&gt;
+&lt;npc=481&gt;：“三年来我一直布置此事，如今五毒教韩破山、西夏一品堂的李全泰都已是好兄弟，他们已派人抵达翡翠湖畔，与我单方面结盟。将来唐门若欲得此二派襄助，我唐缺当居首功。好了这些暂且不说，两派也是实力强横之人，对弱小者不屑一顾，此番结盟，定是要比武的了。”　&lt;end&gt;
+&lt;playername&gt;：“唐总管武技精深，怕它做甚？”&lt;end&gt;
+&lt;npc=481&gt;：“我虽可战而胜之，却胜之不武，胜之不服。若由我的手下出面，便事半功倍。希望你能替我出战两派高手黑龙、毒蛇、腾力士还有白灵。扬我唐门之威！则唐门复兴之日，阁下居功至伟！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2039</Value>
+              </fightnpc>
+              <number>
+                <Value>53</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2040</Value>
+              </fightnpc>
+              <number>
+                <Value>53</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2212</Value>
+              </fightnpc>
+              <number>
+                <Value>53</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>2211</Value>
+              </fightnpc>
+              <number>
+                <Value>53</Value>
+              </number>
+              <number>
+                <Value>18</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将情况回报唐缺</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>481</Value>
+              </dialognpc>
+              <number>
+                <Value>53</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=481&gt;：“好，好！如此大事可期啊！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>将情况回报唐缺</Value>
+              </txt>
+              <txt>
+                <Value>将情况回报唐缺</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

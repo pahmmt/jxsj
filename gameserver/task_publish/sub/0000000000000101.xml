@@ -1,0 +1,281 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000101" name="朋党之祸" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=827&gt;：“大人相助嘉王的事情有所泄露，据说有人在寒山古刹聚会，商议着将大人相助嘉王的事情呈报给皇后，以换取富贵，这其中也有我们长歌门内部的人。”&lt;end&gt;
+&lt;npc=813&gt;：“什么？还有这样的事情？我怎么没有听说？此事涉及的都有什么人？”&lt;end&gt;
+&lt;npc=827&gt;：“主谋据说是徐范，参与的有数名朝臣，另外听说大智禅师也和他们是一伙的。”&lt;end&gt;
+&lt;npc=813&gt;：“这个老秃驴，每日蛊惑皇后也就罢了，竟然还敢跟着参与朝政，绝对不能容忍姑息。&lt;=me.szName&gt;，你去寒山古刹好好教训一下这些不分黑白的混账。然后告诉那里的驻军张寒，守好自己的地盘，别玩忽职守。&lt;end&gt;
+&lt;npc=827&gt;：“事成之后记得来报！”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End>&lt;npc=556&gt;：“赵汝愚这个老家伙居功自傲，不可一世还不是照样被罢相了。”&lt;end&gt;</End>
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>561</Value>
+              </fightnpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>560</Value>
+              </fightnpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>1</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>KillNpc</Function>
+            <Parameter>
+              <fightnpc>
+                <Value>1223</Value>
+              </fightnpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <number>
+                <Value>10</Value>
+              </number>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>将赵汝愚的话带给张寒</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>559</Value>
+              </dialognpc>
+              <number>
+                <Value>89</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;playername&gt;：“赵大人让我带口讯给你，守好自己的地盘，不要什么人都放进来！”&lt;end&gt;
+&lt;npc=559&gt;：“可是发生了什么事情？”&lt;end&gt;
+&lt;playername&gt;：“有人密谋出卖赵大人，向皇后换取荣华富贵，你说事情大不大？”&lt;end&gt;
+&lt;npc=559&gt;：“还有这样的事情？是我该死，若不是赵大人，也不会有我张某人今天，请转告大人，我今后一定小心处置。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value> 通知张寒</Value>
+              </txt>
+              <txt>
+                <Value> 通知张寒</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>回去找赵盛</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>827</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;npc=827&gt;：“事情办的如何？”&lt;end&gt;
+&lt;playername&gt;：“已经按照赵大人所说做了。”&lt;end&gt;
+&lt;npc=827&gt;：“好，这些恶徒就该如此对待！”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到赵盛</Value>
+              </txt>
+              <txt>
+                <Value>找到赵盛</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action />
+      </Execute>
+    </Process>
+  </Step>
+</Sub>

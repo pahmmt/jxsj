@@ -1,0 +1,199 @@
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<Sub id="0000000000000086" name="护送宝玉" describe="">
+  <Attribute>
+    <Dialog>
+      <Pop />
+      <Start>&lt;npc=3570&gt;：“关于同五毒教结盟一事，杨帮主与我同几位元老聊了很久，得到了我们的认可。不知道你认为此事是否可行？”&lt;end&gt;
+&lt;Playername&gt;：“此事既然秋姨和诸位已经议定，当无可虑，只是不知道杨帮主怎么会突然要和五毒教结盟。”&lt;end&gt;
+&lt;npc=3570&gt;：“当日你同杨帮主在点苍山唐门别院，发现有人从唐门夺去游龙珏。实不知五毒教古教主先你们一步发觉了此事。五毒教一路追踪那帮匪人，从他们的谈话和举止发现乃是金国人。古帮主为防打草惊蛇只是暗令教众一路尾随，人却径直去找杨帮主去了。”&lt;end&gt;
+&lt;Playername&gt;：“这又是为何，以古教主的本事难道还夺不回游龙珏？”&lt;end&gt;
+&lt;npc=3570&gt;：“此事哪有如此简单，古教主察觉出这伙人乃是受人所使，背后定有密谋。商量之下，才决定同杨帮主合作。概因游龙珏宝藏中有化解百毒之宝物，此物一出则五毒教必将难以立足。当日杨帮主曾说若你回来请你前去天王帮一趟，他有要事和你商议，你即刻就动身去吧。”&lt;end&gt;</Start>
+      <Procedure />
+      <Error />
+      <Prize />
+      <End />
+    </Dialog>
+  </Attribute>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3506</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“杨帮主，秋姨派我前来见您，说您有要事找我。”&lt;end&gt;
+&lt;npc=3506&gt;：“正是，关于和五毒教结盟一事，想来你已经知道了。我听五毒教传来消息说，在九嶷溪和你已经有过接触，心里很是欣慰。五毒教的古教主乃当今的奇女子，心思和谋算都非我等这些男子所能比及。游龙珏从唐门失却一事，尽在她的监视当中。考虑到其中种种缘由，我才决定同她协作。”&lt;end&gt;
+&lt;Playername&gt;：“杨帮主如此行事自然有自己的道理，我们义军竭力相助即可。”&lt;end&gt;
+&lt;npc=3506&gt;：“古教主虽然之前和我等正派有过一些罅隙，毕竟各为其主，也不为过。今后相互协助当中，还要义军同心同力才是。我唤你来此一是为了相告结盟一事原委，二则是打算派你去趟五毒面见古教主。关于游龙珏之事前后原委和许舵主送回的密令，她会详细告诉你。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>找到杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>找到杨铁心</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:StepOverEvent</Function>
+            <Parameter>
+              <txt>
+                <Value>前往五毒教拜见古嫣然</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+            </Parameter>
+          </Grid>
+          <Grid>
+            <Function>TaskAct:AddExp</Function>
+            <Parameter>
+              <number>
+                <Value>279000</Value>
+              </number>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+  <Step>
+    <Process>
+      <Event type="3">1</Event>
+      <Target>
+        <Target>
+          <Grid>
+            <Function>TalkWithNpc</Function>
+            <Parameter>
+              <dialognpc>
+                <Value>3524</Value>
+              </dialognpc>
+              <number>
+                <Value>0</Value>
+              </number>
+              <txt>
+                <Value>&lt;subtaskname&gt;</Value>
+              </txt>
+              <txt>
+                <Value>&lt;Playername&gt;：“见过古教主，我奉天王帮杨帮主之命前来拜见古教主。”&lt;end&gt;
+&lt;npc=3524&gt;：“哦，是杨帮主派你前来的？想来你便是义军的&lt;Playername&gt;了。听说近来义军势力很大，你的名头也很响，看起来果然是少年俊才了。本教九嶷溪分舵密使曾向我提起过你，想来从本教夺回金国人密令的也是你了吧。”&lt;end&gt;
+&lt;Playername&gt;：“说来惭愧，彼时大家敌我不分，还请教主见谅。”&lt;end&gt;
+&lt;npc=3524&gt;：“你也无需如此，此令现在我处。关于此令的来历和游龙珏失窃前后一事，听我慢慢道来。唐一尘城府极深，当日游龙珏在翠烟门遭劫之时便暗中将游龙珏取走，却谎称失去。由于翠烟门损伤严重，江湖中人并未怀疑此事。不过自此之后游龙珏再无消息，便引起了我的怀疑。思量再三之后，我认定游龙珏就在唐门，却并未想到是在点苍山。等我想到此地时，却已经晚了。”&lt;end&gt;
+&lt;Playername&gt;：“如何晚了？”&lt;end&gt;
+&lt;npc=3524&gt;：“此事你应当也很清楚，有人在你我之前将游龙珏夺去。我赶到点苍山时刚好他们从唐门离去被我追个正着。为免打草惊蛇，我才一路派人暗中尾随，打算先查出对方底细。不想被丐帮从中搅了一局，我才决定先下手为强，不想仍是被他们漏网。好在我早有准备，令一队弟子潜伏在他们逃离的必经之地，以防不测。”&lt;end&gt;</Value>
+              </txt>
+              <txt>
+                <Value />
+              </txt>
+              <txt>
+                <Value>拜见古嫣然</Value>
+              </txt>
+              <txt>
+                <Value>拜见古嫣然</Value>
+              </txt>
+              <txt>
+                <Value>你好</Value>
+              </txt>
+              <txt>
+                <Value>你太有才了</Value>
+              </txt>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+              <string>
+                <Value />
+              </string>
+            </Parameter>
+          </Grid>
+        </Target>
+      </Target>
+      <Judge>
+        <Condition />
+      </Judge>
+      <Execute>
+        <Action>
+          <Grid>
+            <Function>TaskAct:AskAccept</Function>
+            <Parameter>
+              <referid>
+                <Value>0000000000000087</Value>
+              </referid>
+            </Parameter>
+          </Grid>
+        </Action>
+      </Execute>
+    </Process>
+  </Step>
+</Sub>
