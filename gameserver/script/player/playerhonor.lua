@@ -7,7 +7,7 @@ PlayerHonor.HONOR_CLASS_WULIN		= 1;	-- Hạng mục lớn vinh dự, Vinh dự V
 PlayerHonor.HONOR_CLASS_FACTION		= 2;	-- Hạng mục lớn vinh dự, Vinh dự Môn phái
 PlayerHonor.HONOR_CLASS_WLLS		= 3;	-- Hạng mục lớn vinh dự, Vinh dự Giải đấu
 PlayerHonor.HONOR_CLASS_BATTLE		= 4;	-- Hạng mục lớn vinh dự, Vinh dự Chiến trường
-PlayerHonor.HONOR_CLASS_LINGXIU		= 5;	-- Hạng mục lớn vinh dự, Vinh dự Thủ lĩnh
+PlayerHonor.HONOR_CLASS_LINGXIU		= 5;	-- Hạng mục lớn vinh dự, Vinh dự Thủ Lĩnh
 PlayerHonor.HONOR_CLASS_AREARBATTLE	= 6;	-- Hạng mục lớn vinh dự, Vinh dự Tranh đoạt lãnh thổ
 PlayerHonor.HONOR_CLASS_BAIHUTANG	= 7;	-- Hạng mục lớn vinh dự, Vinh dự Bạch Hổ Đường
 PlayerHonor.HONOR_CLASS_MONEY		= 8;	-- Hạng mục lớn vinh dự, Vinh dự Tài phú
@@ -47,24 +47,24 @@ PlayerHonor.ITEM_FREEPIFENG_GIFT	= {18, 1, 1550, 1, -1};
 PlayerHonor.NEW_HORSE_GET_LIMIT		= 300;	-- Giới hạn nhận Xích Dạ Thiên Tường trên bảng xếp hạng
 
 PlayerHonor.tbHonorName	= {
-		[PlayerHonor.HONOR_CLASS_WULIN] 		= "Vinh dự Võ Lâm";
-		[PlayerHonor.HONOR_CLASS_FACTION]		= "Vinh dự Môn phái";
-		[PlayerHonor.HONOR_CLASS_WLLS]			= "Vinh dự Giải đấu";
-		[PlayerHonor.HONOR_CLASS_BATTLE]		= "Vinh dự Chiến trường Tống Kim";
-		[PlayerHonor.HONOR_CLASS_LINGXIU] 		= "Vinh dự Thủ lĩnh";
-		[PlayerHonor.HONOR_CLASS_AREARBATTLE]	= "Vinh dự Tranh đoạt lãnh thổ";
-		[PlayerHonor.HONOR_CLASS_BAIHUTANG]		= "Vinh dự Bạch Hổ Đường";
-		[PlayerHonor.HONOR_CLASS_MONEY]			= "Vinh dự Tài phú";
+		[PlayerHonor.HONOR_CLASS_WULIN] 		= "Võ Lâm";
+		[PlayerHonor.HONOR_CLASS_FACTION]		= "Môn phái";
+		[PlayerHonor.HONOR_CLASS_WLLS]			= "Giải đấu";
+		[PlayerHonor.HONOR_CLASS_BATTLE]		= "Chiến trường Tống Kim";
+		[PlayerHonor.HONOR_CLASS_LINGXIU] 		= "Thủ Lĩnh";
+		[PlayerHonor.HONOR_CLASS_AREARBATTLE]	= "Tranh đoạt lãnh thổ";
+		[PlayerHonor.HONOR_CLASS_BAIHUTANG]		= "Bạch Hổ Đường";
+		[PlayerHonor.HONOR_CLASS_MONEY]			= "Tài phú";
 		[PlayerHonor.HONOR_CLASS_SPRING]		= "Dân tộc đại đoàn viên";
-		[PlayerHonor.HONOR_CLASS_DRAGONBOAT]	= "Vinh dự Thiền Cảnh Hoa Viên";
-		[PlayerHonor.HONOR_CLASS_WEIWANG]		= "Vinh dự Uy danh giang hồ";
-		[PlayerHonor.HONOR_CLASS_PRETTYGIRL]	= "Vinh dự Mỹ nữ";
+		[PlayerHonor.HONOR_CLASS_DRAGONBOAT]	= "Thiền Cảnh Hoa Viên";
+		[PlayerHonor.HONOR_CLASS_WEIWANG]		= "Uy danh giang hồ";
+		[PlayerHonor.HONOR_CLASS_PRETTYGIRL]	= "Mỹ nữ";
 		[PlayerHonor.HONOR_CLASS_KAIMENTASK]	= "Nhiệm vụ Khai Môn";
 		[PlayerHonor.HONOR_CLASS_FIGHTPOWER_TOTAL]	= "Tổng lực chiến";
 		[PlayerHonor.HONOR_CLASS_FIGHTPOWER_ACHIEVEMENT]	= "Thành tựu";
 		[PlayerHonor.HONOR_CLASS_BEAUTYHERO]	= "Nữ Anh Hùng";
 		[PlayerHonor.HONOR_CLASS_LADDER1] = "Di tích Hàn Vũ";
-		[PlayerHonor.HONOR_CLASS_LADDER2] = "Vinh dự Dạ Lam Quan";
+		[PlayerHonor.HONOR_CLASS_LADDER2] = "Dạ Lam Quan";
 	};
 
 PlayerHonor.tbFacContext = {
@@ -116,19 +116,19 @@ PlayerHonor.tbHonorLevelInfo	= {
 	[HONOR_KEY_WULIN]	= {
 		nHonorId	= PlayerHonor.HONOR_CLASS_WULIN,
 		nLevelTaskId= PlayerHonor.TSK_ID_HONORLEVEL_WULIN;
-		szName		= "Vinh dự Võ Lâm",
+		szName		= "Võ Lâm",
 		tbLevel		= {};
 	},
 	[HONOR_KEY_MONEY]	= {
 		nHonorId	= PlayerHonor.HONOR_CLASS_MONEY,
 		nLevelTaskId= PlayerHonor.TSK_ID_HONORLEVEL_MONEY;
-		szName		= "Vinh dự Tài phú",
+		szName		= "Tài phú",
 		tbLevel		= {};
 	},
 	[HONOR_KEY_LINGXIU]	= {
 		nHonorId	= PlayerHonor.HONOR_CLASS_LINGXIU,
 		nLevelTaskId= PlayerHonor.TSK_ID_HONORLEVEL_LINGXIU;
-		szName		= "Vinh dự Thủ lĩnh",
+		szName		= "Thủ Lĩnh",
 		tbLevel		= {};
 	},
 };
@@ -208,7 +208,7 @@ function PlayerHonor:_InitWuLinHonorSetting()
 	local nClass = self.HONOR_CLASS_WULIN;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Võ Lâm"
+	tbHonorSubList[1].szName	= "Võ Lâm"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;	
 	tbHonorSubList[1].nClass	= nClass;
@@ -219,13 +219,13 @@ function PlayerHonor:_InitWuLinHonorSetting()
 	self.tbHonorSettings[1].szName			= "<color=yellow>Vinh dự Võ Lâm<color>";
 end
 
--- Vinh dự Thủ lĩnh
+-- Vinh dự Thủ Lĩnh
 function PlayerHonor:_InitLingXiuHonorSetting()
 	local nClass = self.HONOR_CLASS_LINGXIU;
 
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Thủ lĩnh"
+	tbHonorSubList[1].szName	= "Thủ Lĩnh"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;	
 	tbHonorSubList[1].nClass	= nClass;
@@ -233,7 +233,7 @@ function PlayerHonor:_InitLingXiuHonorSetting()
 	
 	self.tbHonorSettings[2] = {};
 	self.tbHonorSettings[2].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[2].szName			= "<color=red>Vinh dự Thủ lĩnh<color>";	
+	self.tbHonorSettings[2].szName			= "<color=red>Vinh dự Thủ Lĩnh<color>";	
 end
 
 -- Vinh dự Tài phú
@@ -241,7 +241,7 @@ function PlayerHonor:_InitMoneyHonorSetting()
 	local nClass = self.HONOR_CLASS_MONEY;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Tài phú"
+	tbHonorSubList[1].szName	= "Tài phú"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
@@ -257,13 +257,13 @@ function PlayerHonor:_InitFactionHonorSetting()
 	local nClass = self.HONOR_CLASS_FACTION;
 	local tbHonorSubList = {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Môn phái"
+	tbHonorSubList[1].szName	= "Môn phái"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
 	tbHonorSubList[1].nLevel	= 0;
 	tbHonorSubList[2]			= {};
-	tbHonorSubList[2].szName	= "Vinh dự bản môn"
+	tbHonorSubList[2].szName	= "Bản môn"
 	tbHonorSubList[2].nValue	= 0;
 	tbHonorSubList[2].nRank		= 0;
 	tbHonorSubList[2].nClass	= nClass;
@@ -271,7 +271,7 @@ function PlayerHonor:_InitFactionHonorSetting()
 
 	self.tbHonorSettings[4] = {};
 	self.tbHonorSettings[4].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[4].szName			= "Vinh dự Môn phái";
+	self.tbHonorSettings[4].szName			= "Môn phái";
 end
 
 -- Vinh dự Giải đấu
@@ -279,7 +279,7 @@ function PlayerHonor:_InitWllsHonorSetting()
 	local nClass = self.HONOR_CLASS_WLLS;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Giải đấu"
+	tbHonorSubList[1].szName	= "Giải đấu"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
@@ -287,7 +287,7 @@ function PlayerHonor:_InitWllsHonorSetting()
 
 	self.tbHonorSettings[5] = {};
 	self.tbHonorSettings[5].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[5].szName			= "Vinh dự Giải đấu";	
+	self.tbHonorSettings[5].szName			= "Giải đấu";	
 end
 
 -- Vinh dự Chiến trường Tống Kim
@@ -295,7 +295,7 @@ function PlayerHonor:_InitSongJinBattleHonorSetting()
 	local nClass = self.HONOR_CLASS_BATTLE;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Chiến trường Tống Kim"
+	tbHonorSubList[1].szName	= "Chiến trường Tống Kim"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
@@ -303,7 +303,7 @@ function PlayerHonor:_InitSongJinBattleHonorSetting()
 	
 	self.tbHonorSettings[6] = {};
 	self.tbHonorSettings[6].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[6].szName			= "Vinh dự Chiến trường Tống Kim";	
+	self.tbHonorSettings[6].szName			= "Chiến trường Tống Kim";	
 end
 
 -- Tranh đoạt lãnh thổ
@@ -311,7 +311,7 @@ function PlayerHonor:_InitAreaBattleHonorSetting()
 	local nClass = self.HONOR_CLASS_AREARBATTLE;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Tranh đoạt lãnh thổ"
+	tbHonorSubList[1].szName	= "Tranh đoạt lãnh thổ"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
@@ -319,7 +319,7 @@ function PlayerHonor:_InitAreaBattleHonorSetting()
 	
 	self.tbHonorSettings[7] = {};
 	self.tbHonorSettings[7].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[7].szName			= "Vinh dự Tranh đoạt lãnh thổ";	
+	self.tbHonorSettings[7].szName			= "Tranh đoạt lãnh thổ";	
 end
 
 -- Bạch Hổ Đường
@@ -327,7 +327,7 @@ function PlayerHonor:_InitBaiHuTangHonorSetting()
 	local nClass = self.HONOR_CLASS_BAIHUTANG;
 	local tbHonorSubList		= {};
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Bạch Hổ Đường"
+	tbHonorSubList[1].szName	= "Bạch Hổ Đường"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= nClass;
@@ -335,7 +335,7 @@ function PlayerHonor:_InitBaiHuTangHonorSetting()
 	
 	self.tbHonorSettings[8] = {};
 	self.tbHonorSettings[8].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[8].szName			= "Vinh dự Bạch Hổ Đường";	
+	self.tbHonorSettings[8].szName			= "Bạch Hổ Đường";	
 end
 
 -- Hoạt động năm mới
@@ -349,7 +349,7 @@ function PlayerHonor:_InitEventHonorSetting()
 --	tbHonorSubList[1].nLevel	= 0;	
 	
 	tbHonorSubList[1]			= {};
-	tbHonorSubList[1].szName	= "Vinh dự Thiền Cảnh Hoa Viên"
+	tbHonorSubList[1].szName	= "Thiền Cảnh Hoa Viên"
 	tbHonorSubList[1].nValue	= 0;
 	tbHonorSubList[1].nRank		= 0;
 	tbHonorSubList[1].nClass	= self.HONOR_CLASS_DRAGONBOAT;
@@ -363,7 +363,7 @@ function PlayerHonor:_InitEventHonorSetting()
 	tbHonorSubList[2].nLevel	= 0;
 	
 --	tbHonorSubList[3]			= {};
---	tbHonorSubList[3].szName	= "Anh hùng thiếp Võ Lâm Đại Hội"	--"Vinh dự Mỹ nữ"
+--	tbHonorSubList[3].szName	= "Anh hùng thiếp Võ Lâm Đại Hội"	--"Mỹ nữ"
 --	tbHonorSubList[3].nValue	= 0;
 --	tbHonorSubList[3].nRank		= 0;
 --	tbHonorSubList[3].nClass	= self.HONOR_CLASS_PRETTYGIRL;
@@ -377,7 +377,7 @@ function PlayerHonor:_InitEventHonorSetting()
 	tbHonorSubList[3].nLevel	= 0;
 	
 	tbHonorSubList[4]			= {};
-	tbHonorSubList[4].szName	= "Vinh dự Mỹ nữ"
+	tbHonorSubList[4].szName	= "Mỹ nữ"
 	tbHonorSubList[4].nValue	= 0;
 	tbHonorSubList[4].nRank		= 0;
 	tbHonorSubList[4].nClass	= self.HONOR_CLASS_PRETTYGIRL;
@@ -391,7 +391,7 @@ function PlayerHonor:_InitEventHonorSetting()
 	tbHonorSubList[5].nLevel	= 0;	
 	
 	tbHonorSubList[6]			= {};
-	tbHonorSubList[6].szName	= "Vinh dự Dạ Lam Quan"
+	tbHonorSubList[6].szName	= "Dạ Lam Quan"
 	tbHonorSubList[6].nValue	= 0;
 	tbHonorSubList[6].nRank	= 0;
 	tbHonorSubList[6].nClass	= self.HONOR_CLASS_LADDER2;
@@ -400,7 +400,7 @@ function PlayerHonor:_InitEventHonorSetting()
 	
 	self.tbHonorSettings[9] = {};
 	self.tbHonorSettings[9].tbHonorSubList	= tbHonorSubList
-	self.tbHonorSettings[9].szName			= "Vinh dự Hoạt động";
+	self.tbHonorSettings[9].szName			= "Hoạt động";
 end
 
 -- Lực chiến
@@ -584,7 +584,7 @@ if (MODULE_GC_SERVER) then
 		print("Bảng xếp hạng Tài phú kết thúc");
 	end
 	
-	-- Vinh dự Thủ lĩnh
+	-- Vinh dự Thủ Lĩnh
 	function PlayerHonor:UpdateLeaderHonorLadder()
 		print("Bảng xếp hạng Thủ Lĩnh bắt đầu");
 		local nType = 0;

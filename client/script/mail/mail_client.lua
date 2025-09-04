@@ -1,8 +1,8 @@
 -----------------------------------------------------
---文件名		：	mail.lua
---创建者		：	zouying@kingsoft.net
---创建时间		：	2007-10-17
---功能描述		：	信件系统脚本。
+--Tên tệp		：	mail.lua
+--Người tạo		：	zouying@kingsoft.net
+--Thời gian tạo		：	2007-10-17
+--Mô tả chức năng		：	Script hệ thống thư.
 ------------------------------------------------------
 
 Mail.nMailCount = 0
@@ -16,7 +16,7 @@ function Mail:SwitchWindow()
     UiManager:CloseWindow(Ui.UI_MAIL)
     return
   end
-  -- 防止连续点击
+  -- Chống nhấp liên tục
   if self.nLastOpenTime == os.clock() then
     return
   end
@@ -27,8 +27,8 @@ end
 
 function Mail:OnAcceptOpen(nAccept)
   if nAccept ~= 1 then
-    me.Msg("当前地图不允许打开信箱！")
-    UiManager:CloseWindow(Ui.UI_MAIL) -- 关闭邮箱界面
+    me.Msg("Bản đồ hiện tại không cho phép mở hòm thư!")
+    UiManager:CloseWindow(Ui.UI_MAIL) -- Đóng giao diện hòm thư
   else
     UiManager:OpenWindow(Ui.UI_MAIL)
   end
@@ -88,7 +88,7 @@ end
 
 function Mail:RequestOpenNewMail(tbParam)
   if me.IsAccountLock() ~= 0 then
-    me.Msg("账号处于锁定状态，不能发送信件！")
+    me.Msg("Tài khoản đang bị khóa, không thể gửi thư!")
     Account:OpenLockWindow(me)
     return 0
   end
@@ -105,24 +105,24 @@ function Mail:OnAcceptOpenNewMail()
   end
 end
 
---	emKMAIL_ERR_BOXFULL = 1,			// 邮箱已满
---	emKMAIL_ERR_RECEIVER,				// 收件人错误， 收件人不正确或是收件与发件人相同
---	emKMAIL_ERR_MONEY,					// 金钱不足
---	emKMAIL_ERR_ITEM,					// 物品错误
---	emKMAIL_ERR_MONEY_TONG,				// 帮会钱不够
+--	emKMAIL_ERR_BOXFULL = 1,			// Hòm thư đã đầy
+--	emKMAIL_ERR_RECEIVER,				// Người nhận sai, người nhận không đúng hoặc người nhận và người gửi là một
+--	emKMAIL_ERR_MONEY,					// Không đủ tiền
+--	emKMAIL_ERR_ITEM,					// Vật phẩm sai
+--	emKMAIL_ERR_MONEY_TONG,				// Ngân quỹ bang hội không đủ
 --
 function Mail:MailFailReason(nReason)
-  local szMsg = "发送信件失败，"
+  local szMsg = "Gửi thư thất bại, "
   if nReason == 1 then
-    szMsg = szMsg .. "信箱已满!"
+    szMsg = szMsg .. "hòm thư đã đầy!"
   elseif nReason == 2 then
-    szMsg = szMsg .. "收件人不正确或是收件与发件人相同!"
+    szMsg = szMsg .. "người nhận không đúng hoặc người nhận và người gửi là một!"
   elseif nReason == 3 then
-    szMsg = szMsg .. "银两不足！"
+    szMsg = szMsg .. "không đủ Bạc!"
   elseif nReason == 4 then
-    szMsg = szMsg .. "物品错误"
+    szMsg = szMsg .. "vật phẩm sai"
   elseif nReason == 5 then
-    szMsg = szMsg .. "帮会钱不够"
+    szMsg = szMsg .. "ngân quỹ bang hội không đủ"
   end
   me.Msg(szMsg)
   return
@@ -130,13 +130,13 @@ end
 
 function Mail:MailBoxLoadOk(bShowMsg)
   if bShowMsg and bShowMsg == 1 then
-    me.Msg("信件加载完成！")
+    me.Msg("Tải thư hoàn tất!")
   end
   me.SetMailBoxLoadOk()
   CoreEventNotify(UiNotify.emCOREEVENT_MAIL_LOADED)
 end
 
--- 获取普通邮件内容
+-- Lấy nội dung thư thường
 function Mail:RequireMail(nMailId, byClient)
   if not nMailId or not byClient then
     return 0
